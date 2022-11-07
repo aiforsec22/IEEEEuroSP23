@@ -1,0 +1,84 @@
+Anubis Strikes Again: Mobile Malware Continues to Plague Users in Official App Stores
+IBM X-Force mobile malware researchers have observed several developers actively uploading Android malware downloaders to the Google Play Store.
+
+Following ongoing campaigns against Google Play, our research team has been monitoring banking malware activity in official app stores. The team recently reported that downloader apps in the store are being used as the first step in an infection routine that fetches the Marcher (aka Marcher ExoBot) and BankBot Anubis mobile banking Trojans. Users who unknowingly install the app on their devices are subsequently infected. Cybercriminals use these banking Trojans to facilitate financial fraud by stealing login credentials to banking apps, e-wallets and payment cards.
+
+Starting in June, our team discovered a number of new malware downloader samples that infect users with BankBot Anubis (aka Go_P00t). The campaign features at least 10 malicious downloaders disguised as various applications, all of which fetch mobile banking Trojans that run on Android-based devices. While the number of downloaders may seem modest, each of those apps can fetch more than 1,000 samples from the criminal’s command-and-control (C&C) servers.
+
+Finding new downloaders in the app store in connection with the BankBot Anubis malware could suggest that:
+
+A given malware distributor/cybercrime faction has shifted from using Marcher to distributing BankBot Anubis; or
+The threat actors distributing the malware on Google Play are offering their “expertise” as a service, spreading malware downloaders for different cybercrime factions that use mobile Trojans to facilitate financial fraud — aka “downloader-as-a-service.”
+Such cybercrime services are common in the fraud and malware black markets. They entail a proven ability to infiltrate Google Play and plant malicious downloaders under the guise of benign-looking apps. These services can likely maintain the downloader’s C&C servers long enough to generate a steady stream of new infections, suggesting the thought-out operational security and know-how characteristic of organized cybercrime groups.
+
+An Era of Mobile Malware Downloaders
+As app store operators layer security to stymie the efforts of malicious developers, black-hat app distributors find ways to sidestep them. To circumvent ever-evolving app store defenses, mobile malware distributors rely on a strategy from the PC malware realms: Instead of uploading the actual malware to the store, which can result in sampling and detection at a very early stage in the distribution chain, they upload a downloader that may seem rather innocuous compared to actual malware.
+
+In general, a downloader app is more likely to survive security checks and recurring scans, and once it lands on a user’s device, it can fetch the intended malware app. As the Chinese general Sun Tzu wrote in “The Art of War,” “The greatest victory is that which requires no battle.”
+
+Sample Downloader Campaign From Current Analyses
+In the current campaign, according to X-Force researchers, the downloader apps target Turkish-speaking users. They differ in type and visual style — from online shopping to financial services and even an automotive app — and are designed to look legitimate and enticing to users.
+
+The variety of apps and styles indicates a large investment of resources on the part of the campaign’s operators, suggesting that a cybercrime service, rather than a single cybercrime faction, is likely responsible.
+
+The downloaders themselves are rather stealthy, and VirusTotal missed all but one of the samples. The one that was found had zero detections by antivirus engines.
+
+In this campaign, the malicious downloader apps X-Force detected have the same code base as three apps that ThreatFabric reported in January 2018. The following characteristics show the similarity:
+
+The resemblance is even more striking in the figure below. By removing all the key instances (**pE2**) from the string, we produced the same string from the January sample:
+
+With 10 downloaders at this point, the campaign appears to be scaling up.
+
+Over time, we’ve seen the code evolve. As time went by between downloader versions, the developers added a simple obfuscation and expanded the downloader capabilities. The code was also altered slightly to avoid detection by Google Play’s security controls.
+
+According to X-Force’s analysis, these changes suggest that the downloader app is being maintained on an ongoing basis — another sign that it is a commodity offered to cybercriminals or a specific group that’s focused on defrauding Turkish mobile banking users.
+
+Anubis Masquerades as Google Protect
+After a successful installation of the malicious downloader, the app fetches BankBot Anubis from one of its C&C servers. The BankBot Anubis malware then masquerades as an app called “Google Protect” and prompts the user to grant it accessibility rights.
+
+Why ask for accessibility? BankBot Anubis uses Android’s Accessibility services to perform keylogging as a way to obtain the infected user’s credentials when he or she accesses a targeted mobile banking app. In most Android banking Trojans, the malware launches a fake overlay screen when the user accesses a target app. The user then taps his or her account credentials into the fake overlay, which allows the malware to steal the data. BankBot Anubis streamlines this process.
+
+By keylogging the user’s login information, the attacker can steal credentials from any app while avoiding the need to create custom overlays for each target. This malware is also able to take screen captures of the user’s screen, which it likely uses to steal credentials since the keyboard strokes are visible. These features are staples of PC banking malware and are evolving in Android malware as well.
+
+The downloader apps in this particular campaign were designed to address Turkish users. With different botnets and configurations, BankBot Anubis itself also targets users in the following countries:
+
+Australia
+Austria
+Azerbaijan
+Belarus
+Brazil
+Canada
+China
+Czech Republic
+France
+Georgia
+Germany
+Hong Kong
+India
+Ireland
+Israel
+Japan
+Kazakhstan
+Luxembourg
+Morocco
+Netherlands
+New Zealand
+Oman
+Poland
+Russia
+Scotland
+Slovakia
+Spain
+Taiwan
+Turkey
+U.K.
+U.S.
+While there were 10 downloader apps in the Google Play Store at the time of this writing, the campaign is rather hefty. X-Force estimated the magnitude of campaigns on Google Play by the number of downloads, as well as the number and variety of payloads found. In one case, the researchers fetched more than 1,000 new samples of BankBot Anubis from just one C&C server. Each sample has a different MD5 signature, few of which were documented by any antivirus engine when tested against VirusTotal.
+
+Official App Stores: A Fraudster’s Holy Grail
+When it comes to maximizing the results of infection campaigns, mobile malware operators consider official app stores to be the holy grail. Getting a malicious app into an official store yields greater exposure to more potential victims, a cheap distribution channel and user trust. Moreover, malware apps that have already made it into an official store are more likely to fly under the radar of security controls for longer than those hosted on hijacked sites or rogue servers. IBM X-Force reports malicious apps to the official stores to have them removed before more users can be affected.
+
+Malicious apps are a blight that both store operators and developers work hard to limit. Still, it is a recurring problem: In 2017, X-Force mobile researchers reported numerous occasions on which financial malware had sneaked into the Google Play Store, with the BankBot Android malware family leading the pack. The trend continues to escalate.
+
+X-Force researchers suspect that the cybercrime services spreading mobile Trojans have mastered it as a malware campaign channel and may be monetizing it. While such cybercrime services are rather popular with PC malware distributors, its rise in the mobile malware realm is an escalating risk factor users and organizations should be aware of.
+

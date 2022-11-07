@@ -1,0 +1,127 @@
+Alien - the story of Cerberus' demise
+Intro
+As predicted in our blog 2020 – year of the RAT, 2020 has been an effervescent year for financially motivated threat actors making use of Android malware. Although the ThreatFabric team discovered several new banking Trojans, it also observed the death of some others. Threat actors continue to innovate and try out new ways to steal and monetize personal information. In some cases, actors are successful, with long-running campaigns powered by their malware, in other cases, they are fruitless, resulting in the downfall of their malware, as quickly as it appeared. In this blog, we describe a relatively new and barely known Android banking Trojan with Remote Access Trojan, notification stealing and authenticator-based 2FA theft capabilities, dubbed Alien, and explain how it relates to infamous Cerberus malware, who’s service has recently been discontinued.
+
+The preface, Cerberus
+August 2020 marked the demise of Cerberus, the most successful Android banking Trojan service, or MaaS (Malware as a Service), of the last 12 months. Details about the Trojan can be found in our blog about from August last year. Apparently due to issues related to shortcomings of the staff within the threat actor’s technical team, architectural and technical issues with the Trojan remained unsolved long enough for Google Play Protect to detect all related samples on the spot on all infected devices, of course resulting in unhappy customers.
+
+At the end of July, because of these issues, the actor behind Cerberus tried to sell the service, including the customer portfolio, in the hopes another actor would continue his work. Our telemetry, as seen in the graph below, shows a steady decrease of new Cerberus samples starting from this moment.
+
+After a series of customer complaints and due to his fruitless attempts to sell the source code of the Trojan as a whole, the owner of the malware finally decided to end the rental service and refund active license holders. On August 10th 2020 he shared the source code of Cerberus with the administrator of the underground forum in which he was renting it out. As we forecasted, shortly after, the source code of the Trojan became available to the general public.
+
+You might wonder why the number of samples drops and barely increases again despite the source code being publicly available. There are two reasons: firstly, actors who got their hands on the code need to understand how to setup the backend (C2) and builder, secondly the actors which successfully built samples noticed that their payload is immediately detected by Play Protect when installed on an Android device and therefore are now probably working on rearranging the code (resulting in their own code fork). All samples detected since the official Cerberus service interruption are test samples and no large-scale or successful campaign has been observed so far. However, since Cerberus was such a successful malware, it is likely that other actors will start using it actively once its issues are resolved, therefore we can expect it to resurface at any time.
+
+Despite Cerberus not being actively rented and supported any longer, we still often see some researchers reporting active Cerberus campaigns. To explain why this happens we decided to write this blog and clear up any confusion: currently reported campaigns can be attributed to a fork of Cerberus, called “Alien”.
+
+Behind the scenes
+Our story starts on January 2020, when our analyst team first spotted something which at first glance could have been considered a new version of Cerberus. In those newly found samples the authors revisited the C2 communication protocol, added some new string protection techniques, renamed the side-loaded module filename to bare his nickname and added the TeamViewer based RAT function.
+
+Despite some minor refactoring, the architecture of the Trojan stayed the same. At the same time, the Cerberus team was making announcements about a soon-to-be-published second version of the Trojan in their commercial topic in an underground forum. Therefore, we initially assumed that the samples discovered are in fact the first/test versions of that advertised new version of the Trojan and classified them as such. That held until 5 days later.
+
+Enter the ring
+On January 18th, we discovered an interesting new post from another actor in an underground forum. This actor, whose name matches the newly introduced module name for the malware in question, started to advertise his own private malware with VNC feature.
+
+For the sake of clarity: Although VNC (Virtual Network Computing) is a specific graphical desktop-sharing system, threat actors often label all Trojans with remote access capabilities (RAT) as embedding VNC, regardless of the technology being used.
+
+This discovery also matched the fact that the newly found samples included the RAT feature, making use of TeamViewer to provide remote access to the infected device.
+
+The highly relatable codebase, showing the strong links between this new Trojan and Cerberus was conflicting with the fact that this Trojan was clearly operated by a separate group, therefore we decide to investigate the situation further. Luckily, it was only a matter of weeks before we could confirm what was going on.
+
+Meet the Duke
+In February, it became apparent that the new malware was operated separately and slightly differently than Cerberus. We started to see simultaneous campaigns using both Trojans. Additionally, the malware described by its apparent author was enriched by a 2FA stealing technique that was capable of stealing secret tokens from Google’s Authenticator application, while Cerberus didn’t have such a feature.
+
+Mid-February, the actor who later proclaimed himself author of the BlackRock malware left a review on the profile of the apparent author, reviewing his malware-rental service:
+
+On February 20th 2020, the Cerberus actors made a promotional post in their commercial topic that referenced researchers, sharing the samples of what they thought was the Cerberus malware. Somewhat later, the BlackRock actor replied to the post, condemning the Cerberus actors for taking credit for another malware project, stating that it was a different malware that he uses himself:
+
+Thoughtfully, he included some screenshots with proof:
+
+The tweet made by @pr3wtd that sparked that truly insightful conversation, clearly links provided IOCs with the sample of the malware that the BlackRock author was testing at the time, the Trojan advertised by the actor we already envisaged being author.
+
+That sample indeed belongs to the same malware strain that we discovered earlier January.
+
+The revelation
+After we established a solid link between the actor running the private rental service and the samples, the only aspect we were missing was the name of the Trojan. Fortunately for us, after a while topics showing interest in a certain “Alien” malware started to appear in the underground forum and the author himself confirmed his affiliation to, and the name of, the Trojan:
+
+Based on our in-depth knowledge of the Trojan (available in our Mobile Threat Intelligence portal), we can prove that the Alien malware is a fork of the initial variant of Cerberus (v1), active since early January 2020 and rented out at the same time as Cerberus. Cerberus being discontinued, its customers seem to be switching to Alien, which has become the prominent new MaaS for fraudsters.
+
+Looking at what we know now about what happened with Cerberus and Alien, we could speculate that Cerberus was on the decline as the developers behind the Trojan shifted away from the project with the original source in order to start their own. Interestingly enough, this speculation is corroborated by the fact that when the second version of Cerberus (v2) was released in May 2020, it did not introduce any major new features, except for the one to steal 2FA codes from Google’s authenticator app. The code of that feature code is almost identical to that introduced with the Alien Trojan in February 2020. This indicates that at that time, the developer behind the Cerberus Trojan had access to, and might have been responsible for development of the Alien code.
+
+The code of the Google Authenticator 2FA stealer of the Alien Trojan is visible in following snippet:
+
+The Alien malware
+As described in previous sections, the Alien malware is a rented banking Trojan which offers more than the average capabilities of Android banking Trojans. It has common capabilities such as overlay attacks, control and steal SMS messages and harvest the contact list. It can leverage its keylogger for any use and therefore broaden the attack scope further than its target list. It also offers the possibility to install, start and remove applications from the infected device. Most importantly, it offers a notifications sniffer, allowing it to get the content of all notifications on the infected device, and a RAT (Remote Access Trojan) feature (by abusing the TeamViewer application), meaning that the threat actors can perform the fraud from the victim’s device.
+
+The complete list of features of Alien is as follows:
+
+Overlaying: Dynamic (Local injects obtained from C2)
+Keylogging
+Remote access
+SMS harvesting: SMS listing
+SMS harvesting: SMS forwarding
+Device info collection
+Contact list collection
+Application listing
+Location collection
+Overlaying: Targets list update
+SMS: Sending
+Calls: USSD request making
+Calls: Call forwarding
+Remote actions: App installing
+Remote actions: App starting
+Remote actions: App removal
+Remote actions: Showing arbitrary web pages
+Remote actions: Screen-locking
+Notifications: Push notifications
+C2 Resilience: Auxiliary C2 list
+Self-protection: Hiding the App icon
+Self-protection: Preventing removal
+Self-protection: Emulation-detection
+Architecture: Modular
+Differentiating between Alien and Cerberus
+With two malware families originating from the same code base, we thought it would be useful for the community to be able to distinguish the Trojans. Distinction is the easiest by comparing the C2 protocols. The Alien C2 requests are built as follows:
+
+Based on the same code, the two Trojans share most functionalities, but the Alien authors added two major features that are absent from both versions of Cerberus, respectively TeamViewer based remote control of the infected device and the notification sniffer (stealer).
+
+The RAT
+One of the most distinctive features of the Alien Trojan is its RAT capability. Authors chose to implement it separately from the main command handler, therefore using different C2 endpoints.
+
+The Alien RAT service implements the following set of commands:
+
+Command Description
+rat_disconnect Disables the RAT service
+open_folder Lists files and subfolders in the specified folder
+uploadind_file Uploads the specified file to the C2
+connect_teamviewer Provides credentials for the TeamViewer app and launches it
+open_team_viewer Launches the TeamViewer app
+send_settings Sends the current settings of RAT service to the C2
+get_apps Gets the list of installed applications on the infected device
+After using the Trojan’s commands to install additional apps on the device, TeamViewer is installed but not yet enabled. Once the actor provides the credentials to set up the TeamViewer server connection, the Trojan uses the Accessibility privileges to access the TeamViewer application, logs in using the provided credentials, grant any additional permissions it requires to run and dismiss any warnings issued (if applicable).
+
+The following code snippet is handling those functions:
+
+When TeamViewer is successfully activated, it provides the actors with full remote control of the device’s user interface, enabling them to access and change device settings, install and remove apps, but also to use any app installed on the device (bank applications, messengers and social networks). By monitoring the device in real-time, actors can also gain valuable insight into the user’s behavior.
+
+Note that although TeamViewer supports a wide range of device models, it does not guarantee a 100% coverage. On certain devices it only works in screen streaming mode, only allowing the actors to see what happens on the screen without being able to interact with it.
+
+Notification sniffer
+The Trojan is abusing the android.permission.BIND_NOTIFICATION_LISTENER_SERVICE permission to get the content of status bar notifications on the infected device. This permission is considered “risky”, which means that the user needs to grant it manually in the settings. Malware circumvents this countermeasure by using the Accessibility privileges, performing all necessary UI interaction by itself. After the permission is granted, the bot simply uploads notifications to the C2, as shown in the following snipped of code:
+
+Targets
+Looking at the targets (detailed in the appendix) and keeping in mind that all respective actors renting the Trojan can add their own personalized targets to their botnet, we can consider that Alien is a Trojan actively targeting institutions worldwide.
+
+As visible in the following chart, it seems that actors using Alien have a particular interest in the usual set of most targeted countries, such as but not limited to Spain, Turkey, Germany, United States of America, Italy, France, Poland, Australia and the United Kingdom.
+
+Conclusion
+Once again, 2020 shows interesting changes to the mobile threat landscape. As stated in our blog 2020 – year of the RAT, not only is there an increase in the number of new Android banking Trojans, many of them also bring innovative features. More and more Trojans embed features that enable the criminals to take remote control of the infected device (RAT) - like the Alien Trojan itself - in order to perform the fraud from the victim’s device. We also notice an interest from actors in recording and stealing more information surrounding the victim. How that information will be used or monetized can vary, it is just a matter of time before actors find out about the value of such information.
+
+In the case of Alien, advanced features such as the authenticator-code stealer and notifications-sniffer aside, the features of the Trojan are quite common. As for many Trojans, the target list can be extended dynamically by the renter and applied to all bots enrolled to the botnet. The targeted applications in the appendix of the article are the concatenated list of targets observed in samples found in the wild, growing to over 226 targeted applications so far.
+
+Although it is hard to predict the next steps of the Alien authors, it would be logical for them to improve the RAT, which is currently based on TeamViewer (and therefore visible when installed and executed on the device). They could also build an ATS feature to automate the fraud process. What can be considered for granted is that the number of new banking Trojans will only continue growing, many embedding new and improved features to increase the success rate of fraud.
+
+The last quarter of 2020 will probably come with some additional changes to the threat landscape, especially since the source code of the Cerberus Trojan has been made publicly available. In the coming months we can definitively expect some new malware families, based on Cerberus, to emerge.
+
+The most important aspect to take care of is securing the online banking channels, making fraud hard to perform, discouraging criminals to attempt the attacks and making it less useful for them to build more malware.
+
+We strongly recommend all financial institutions to understand their current and future threat exposure and consequently implement the relevant detection and control mechanisms. We are happy to support them in such steps with our expertise and solutions, built and tailored through the years we have been supporting banks in the fight against fraud.
+

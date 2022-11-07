@@ -1,0 +1,14 @@
+New XLoader Variant Masquerades as Android Security Apps, iOS Configuration Profile
+A new variant of XLoader is masquerading as Android security apps and an iOS configuration profile to target mobile users.
+
+Trend Micro detected the variant while analyzing a smishing campaign that tricked mobile users into visiting one of several fake websites, including a clone of a Japanese mobile phone operator. Whenever an Android user visited a malicious site and/or pressed any of the available buttons, the campaign triggered the download of an Android Package (APK) for fake security software (assuming the user has enabled the installation of third-party apps in their Unknown Sources settings). This APK contained the variant of XLoader, a family of malware that is capable of behaving as spyware and a banking Trojan.
+
+In the event an iOS user visited one of the malicious websites, the campaign redirected to another website that prompted them to download a malicious iOS configuration profile. The campaign claimed this profile would help the user’s device resolve a network issue that’s preventing the site from loading. If the user downloaded the profile, the site loads and reveals an Apple phishing page.
+
+The Growth of XLoader
+Trend Micro first observed efforts to distribute XLoader disguised as legitimate Facebook and Chrome apps in April 2018. Just months later, the security firm observed that the malware had infected 384,748 victims, with the bulk of affected users located in South Korea and Japan.
+
+Also in April 2018, researchers at ESET discovered fake applications available for download on the Google Play store that simply inundated users with unwanted ads. Even as far back as 2012, Kaspersky Lab detected a Trojan using the security app disguise to steal incoming SMS messages from infected devices.
+
+How to Defend Against Android Malware
+Security professionals can help defend their organizations against Android malware like XLoader by using a mobile threat prevention (MTP) platform to monitor devices for suspicious activity and automatically detect and remove malicious apps from infected devices. Organizations should also organize test phishing engagements to strengthen employees’ defenses against social engineering attacks.

@@ -1,0 +1,118 @@
+T1	OS 9 16	Android
+T2	OS 98 105	Android
+T3	OS 301 308	Android
+T4	OS 386 393	Android
+T5	OS 442 449	Android
+T6	OS 491 498	Android
+T7	OS 764 771	Android
+T8	OS 844 851	Android
+T9	OS 963 970	Android
+T10	OS 2064 2071	Android
+T11	OS 2371 2378	Android
+T12	OS 2411 2418	Android
+T13	OS 2521 2528	Android
+T14	OS 2833 2840	Android
+T15	OS 2991 2998	Android
+T16	OS 4120 4129	Android 4
+T17	Organization 41 47	Google
+T19	Organization 134 140	Google
+T21	Organization 224 230	Google
+T29	Organization 1260 1266	Google
+T30	Organization 1356 1362	Google
+T31	Organization 1387 1393	Google
+T33	Organization 2120 2126	Google
+T34	Organization 2339 2345	Google
+T36	Organization 2662 2668	Google
+T37	Organization 2761 2767	Google
+T39	Organization 3100 3106	Google
+T42	Organization 3600 3606	Google
+T43	Malware 0 8	Gooligan
+T44	Malware 2914 2922	Gooligan
+T45	Malware 3649 3657	Gooligan
+T46	Malware 3941 3949	Gooligan
+T47	Malware 4080 4088	Gooligan
+T52	Malware 820 830	Ghost Push
+T53	Malware 900 910	Ghost Push
+T54	Malware 1004 1014	Ghost Push
+T55	Organization 1639 1650	Check Point
+T56	Organization 4315 4326	Check Point
+T57	Application 2818 2829	Verify Apps
+T58	Application 3995 4000	Vroot
+T59	Person 2086 2099	Adrian Ludwig
+T61	Person 2892 2898	Ludwig
+T63	Location 4271 4275	Asia
+T18	Application 65 76	Google Play
+R1	targets Arg1:T43 Arg2:T17	
+R2	targets Arg1:T43 Arg2:T18	
+T20	Application 182 193	Google Play
+T22	Application 321 332	Google Play
+T60	Malware 409 417	Gooligan
+T23	AttackPattern 540 626	nabs email account information and authentication tokens for accessing Google accounts
+R3	uses Arg1:T60 Arg2:T23	
+T24	AttackPattern 642 754	use the tokens to install select apps from Google Play on an infected device to boost in-app advertising revenue
+R4	uses Arg1:T60 Arg2:T24	
+T48	Organization 1053 1064	Check Point
+T51	Organization 1094 1100	Google
+T67	Time 1313 1319	August
+T49	Organization 1408 1419	Check Point
+T50	AttackPattern 1590 1637	fraudulently earning their operators ad revenue
+T69	AttackPattern 1977 2059	forces infected devices to leave positive reviews and a high rating on Google Play
+T32	Malware 2274 2283	Ghost Pus
+T70	Time 2359 2363	2015
+T35	Application 2443 2454	Google Play
+T71	Malware 2474 2484	Ghost Push
+T38	Application 3084 3095	Google Play
+T72	Time 3110 3117	October
+T40	Application 3160 3171	Google Play
+T73	Organization 3254 3260	Google
+T41	Application 3329 3340	Google Play
+T74	Malware 3633 3643	Ghost Push
+T64	OS 3674 3701	pre-Android 6.0 Marshmallow
+T76	Application 4005 4014	Towelroot
+T77	Time 4047 4051	2013
+T78	Time 4056 4060	2014
+T62	OS 4130 4140	Jelly Bean
+T79	OS 4145 4151	KitKat
+T80	OS 4159 4167	Lollipop
+T81	Location 4306 4312	Europe
+R6	targets Arg1:T47 Arg2:T16	
+R7	targets Arg1:T47 Arg2:T62	
+R8	targets Arg1:T47 Arg2:T79	
+R9	targets Arg1:T47 Arg2:T80	
+R10	targets Arg1:T47 Arg2:T63	
+R11	targets Arg1:T47 Arg2:T81	
+T25	AttackPattern 1130 1220	access data from Google Play, Gmail, Google Photos, Google Docs, G Suite, and Google Drive
+R15	uses Arg1:T60 Arg2:T50	
+R13	targets Arg1:T45 Arg2:T58	
+R14	targets Arg1:T45 Arg2:T76	
+R16	targets Arg1:T45 Arg2:T64	
+R17	targets Arg1:T74 Arg2:T64	
+T26	MalwareType 831 837	Trojan
+R18	isA Arg1:T52 Arg2:T26	
+R19	targets Arg1:T43 Arg2:T1	
+R20	uses Arg1:T54 Arg2:T69	
+R5	uses Arg1:T60 Arg2:T25	
+T27	Application 611 617	Google
+T28	Application 685 696	Google Play
+T65	MalwareType 911 917	Trojan
+R21	isA Arg1:T53 Arg2:T65	
+T66	Application 1147 1158	Google Play
+T68	Application 1160 1165	Gmail
+T82	Application 1167 1180	Google Photos
+T83	Application 1182 1193	Google Docs
+T84	Application 1195 1202	G Suite
+T85	Application 1208 1220	Google Drive
+R22	targets Arg1:T54 Arg2:T66	
+R23	targets Arg1:T54 Arg2:T68	
+R24	targets Arg1:T54 Arg2:T82	
+R25	targets Arg1:T54 Arg2:T83	
+R26	targets Arg1:T54 Arg2:T84	
+R27	targets Arg1:T54 Arg2:T85	
+T86	Malware 1422 1430	Gooligan
+T87	Malware 1539 1547	Gooligan
+T88	Application 1666 1682	two million apps
+R28	targets Arg1:T87 Arg2:T88	
+T89	Application 2048 2059	Google Play
+T90	Malware 2868 2876	Gooligan
+T75	OS 3794 3801	Android
+T91	Application 3060 3076	two million apps

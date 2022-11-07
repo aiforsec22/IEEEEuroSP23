@@ -1,0 +1,43 @@
+Android spyware gives attackers total control of your phone: What to do
+A newly discovered strain of multi-stage Android spyware has been lurking in the background since 2016, infecting tens of thousands of users but not activating itself unless the malware operators decided the victim has enough money to be worth stealing from.
+
+The malware, dubbed Mandrake by its discoverers at Bitdefender, can take "complete control of the device" and can steal information and cryptocurrency, break into bank accounts, and even factory-reset infected phones to cover its tracks.
+Mandrake-infected apps have been purged from the Google Play store, but they almost certainly still lurk in "off-road" app markets out of Google's reach. To avoid infection, make sure your phone's settings have not been changed to accept apps from "unknown sources," and install some of the best Android antivirus apps.
+
+A tragedy in three acts
+Mandrake's first stage, the "dropper," comes in the form of benign-looking apps that actually do what they promise. Bitdefender found several of those in Google Play under the names CoinCast, Currency XE Converter, Car News, Horoskope, SnapTune Vid, Abfix and Office Scanner. 
+All have now been removed from Google Play, although Tom's Guide was able to confirm that Facebook and YouTube pages advertising some of them were still up.
+
+If you install one of these innocent-looking apps, it collects information about your device and your surroundings, but otherwise does nothing terrible. 
+
+If the app didn't work well for its advertised purposes and you complained about it on Google Play, the malware operators would apologize and make improvements.
+
+"We estimate the number of victims in the tens of thousands for the current wave, and probably hundreds of thousands throughout the full 4-year period," Bitdefender wrote in its report. 
+
+But the first stage would also tricked you into authorizing app installations from outside the Google Play store, after which it would download and install the second stage — the "loader," which calls itself "Android system" to avoid attention.
+
+The loader lurks in the background, collecting more information about you and sending it to the malware operators until they decide whether you look rich enough to steal from. If so, then the loader downloads the third stage, the core Mandrake malware. 
+
+"Considering the complexity of the spying platform, we assume that every attack is targeted individually, executed with surgical precision and manual rather than automated," Bitdefender wrote.
+
+Mandrake's "ritual suicide"
+Mandrake tricks you by putting fake overlays on your screen, such as an end-user license agreement that must be agreed to. Those are tailored to different phones, screen sizes, languages and versions of Android. But when you click "OK" to accept the agreement, you're really granting it administrative privileges.
+
+Then Mandrake forwards all your text messages to the attackers, forwards phone calls to other numbers, blocks calls, installs or remove apps, steals contact lists, hides notifications, records screen activity, steals passwords to your Facebook and online bank accounts, creates phishing pages to leech your credentials for Gmail and Amazon, and tracks your location.
+
+The coup de grâce is a command built into the malware called "seppuku," named after a form of Japanese ritual suicide. That command would factory-wipe the device, erasing all trace of the malware as well as all user data.
+
+Because you were tricked into granted Mandrake administrative privileges, rebooting the device or uninstalling the first-stage app won't get rid of the core malware.
+
+"The only way to remove Mandrake is to boot the device in safe mode, remove the device administrator special permission and uninstall it manually," Bitdefender wrote.
+
+Because that's where the money is
+Advertisement
+
+Such sophisticated abilities, and such targeted attacks, are normally the sure signs of a state-controlled espionage operation. But the Bitdefender researchers think this was a purely criminal-controlled money grab, even if the operators do appear to be located in Russia.
+
+Following the standard pattern of Russian malware, Mandrake won't infect Android users in Russia or former Soviet republics. But it also avoids all of Africa, any Arabic-speaking country and many poor nations in other regions.
+
+For unknown reasons, it also avoids installing itself on phones with Verizon SIM cards, or SIM cards from a top Chinese cellular carrier.
+
+Its primary target appears to be Australia, followed by North America, western Europe (and Poland) and some of the richer parts of South America. 

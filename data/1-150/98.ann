@@ -1,0 +1,114 @@
+T1	OS 59 66	Android
+T4	Organization 3063 3069	Google
+T5	Organization 3298 3304	Google
+T7	Organization 4950 4956	Google
+T8	Organization 4987 4993	Google
+T11	Malware 24 30	Sphinx
+T13	Malware 1957 1963	Sphinx
+T14	Malware 2099 2105	Sphinx
+T15	Malware 2222 2228	Sphinx
+T16	Malware 781 798	Sphinx (APT-C-15)
+T17	Application 1171 1177	Chrome
+T18	Application 1182 1206	Samsung Internet Browser
+T19	Location 460 474	Middle Eastern
+T20	Location 2783 2797	Middle Eastern
+T21	Location 2900 2905	Egypt
+T22	Location 2978 2989	Middle East
+T24	Indicator 2601 2620	86[.]105[.]18[.]107
+T12	Malware 48 57	AnubisSpy
+T3	Application 510 521	Google Play
+T27	Malware 621 630	AnubisSpy
+T28	Malware 632 651	ANDROIDOS_ANUBISSPY
+*	hasAlias T27 T28
+T29	Malware 727 736	AnubisSpy
+T30	Malware 918 927	AnubisSpy
+T31	Malware 952 958	Sphinx
+T32	Malware 1029 1038	AnubisSpy
+T33	Malware 1047 1056	AnubisSpy
+T34	AttackPattern 1061 1163	steal messages (SMS), photos, videos, contacts, email accounts, calendar events, and browser histories
+R1	uses Arg1:T33 Arg2:T34	
+R2	targets Arg1:T33 Arg2:T17	
+R3	targets Arg1:T33 Arg2:T18	
+T25	AttackPattern 1221 1237	take screenshots
+R4	uses Arg1:T33 Arg2:T25	
+T35	AttackPattern 1280 1334	spy on the victim through apps installed on the device
+R5	uses Arg1:T33 Arg2:T35	
+T36	Application 1416 1421	Skype
+T37	Application 1423 1431	WhatsApp
+T38	Application 1433 1441	Facebook
+T39	Application 1447 1454	Twitter
+R6	targets Arg1:T33 Arg2:T36	
+R7	targets Arg1:T33 Arg2:T37	
+R8	targets Arg1:T33 Arg2:T38	
+R9	targets Arg1:T33 Arg2:T39	
+T40	Malware 1552 1561	AnubisSpy
+T41	AttackPattern 1571 1604	self-destruct to cover its tracks
+R10	uses Arg1:T40 Arg2:T41	
+T42	AttackPattern 1473 1550	After the data are collected, they are encrypted and sent to the (C&C) server
+R11	uses Arg1:T33 Arg2:T42	
+T43	AttackPattern 1613 1656	run commands and delete files on the device
+T2	AttackPattern 1669 1719	install and uninstall Android Application Packages
+R12	uses Arg1:T40 Arg2:T43	
+R13	uses Arg1:T40 Arg2:T2	
+T44	Malware 1731 1740	AnubisSpy
+T45	Malware 1797 1806	AnubisSpy
+T46	Malware 1924 1933	AnubisSpy
+T47	Malware 1945 1951	Sphinx
+T48	AttackPattern 1984 2054	watering hole technique via social media sites to deliver its payloads
+R14	uses Arg1:T13 Arg2:T48	
+T49	AttackPattern 2125 2220	cloaked the malware with icons of legitimate applications to dupe recipients into clicking them
+R15	uses Arg1:T14 Arg2:T49	
+T50	Time 2248 2257	June 2014
+T51	Time 2262 2275	November 2015
+T52	Time 2348 2352	2011
+T53	Malware 2381 2390	AnubisSpy
+T54	AttackPattern 2414 2476	abused a legitimate managed hosting service provider in Belize
+R16	uses Arg1:T53 Arg2:T54	
+T55	Malware 2496 2505	AnubisSpy
+T56	Malware 2518 2524	Sphinx
+R17	indicates Arg1:T24 Arg2:T55	
+R18	indicates Arg1:T24 Arg2:T56	
+T57	Malware 2711 2720	AnubisSpy
+T58	Malware 2725 2731	Sphinx
+R19	targets Arg1:T57 Arg2:T20	
+R20	targets Arg1:T58 Arg2:T20	
+T59	Location 2841 2847	Arabic
+R21	targets Arg1:T57 Arg2:T59	
+R22	targets Arg1:T58 Arg2:T59	
+T26	Location 2925 2930	Egypt
+T60	Location 3152 3163	Middle East
+T61	Malware 3173 3182	AnubisSpy
+T62	Malware 3250 3259	AnubisSpy
+T63	Time 3559 3569	April 2015
+T23	Time 3630 3639	June 2015
+T64	Time 3674 3682	May 2017
+T65	Malware 3687 3696	AnubisSpy
+T6	Application 3722 3733	Google Play
+R23	uses Arg1:T65 Arg2:T6	
+T66	Application 3767 3795	third-party app marketplaces
+R24	uses Arg1:T65 Arg2:T66	
+T67	Location 3870 3881	Middle East
+T68	Malware 4007 4016	AnubisSpy
+T69	Malware 4102 4111	AnubisSpy
+T70	Malware 4340 4349	AnubisSpy
+T71	Malware 4606 4615	AnubisSpy
+T72	Time 4960 4970	October 12
+T73	Malware 5019 5028	AnubisSpy
+T9	Application 5069 5080	Google Play
+T10	Application 5178 5189	Google Play
+T74	Malware 5232 5241	AnubisSpy
+R25	variantOf Arg1:T12 Arg2:T11	
+R26	variantOf Arg1:T29 Arg2:T16	
+R27	variantOf Arg1:T30 Arg2:T31	
+R28	variantOf Arg1:T46 Arg2:T47	
+R29	discoveredIn Arg1:T15 Arg2:T52	
+T75	MalwareType 80 90	ransomware
+R30	isA Arg1:T11 Arg2:T75	
+R31	isA Arg1:T12 Arg2:T75	
+T76	AttackPattern 1242 1271	record audio, including calls
+R32	uses Arg1:T33 Arg2:T76	
+T77	MalwareType 4168 4175	spyware
+T78	Application 561 589	third-party app marketplaces
+T79	Application 2012 2024	social media
+T80	Application 3958 3970	social media
+T81	OS 1691 1698	Android

@@ -1,0 +1,50 @@
+Mobile Rotexy Malware Touts Ransomware, Banking Trojan Functions
+A mobile malware has accelerated its activity in 2018, launching more than 70k attacks in August through October.
+
+Mobile malware, dubbed Rotexy, has evolved from being spyware to now a dangerous banking trojan packing a host of new clever features. Researchers report 70,000 attacks between August and October with targets primarily based in Russia.
+
+In a technical brief released last week, researchers at Kaspersky Lab shed new light on the Rotexy malware, which was first spotted in October 2014 as an SMS spyware trojan.
+
+“The modern version of Rotexy combines the functions of a banking Trojan and ransomware,” wrote Kaspersky Lab researchers Tatyana Shishkova and Lev Pikman. The latest version of the malware goes well beyond eavesdropping on SMS messages and has incorporated advanced device screen manipulation with the intent of stealing bank card numbers, as well carrying out ransomware attacks, they said.
+
+The Kaspersky analysis details four years of steady improvements to Rotexy. The trojan’s staple and unique feature has always been the use of a combination of three command-and-control sources which include conventional C&C servers, SMS messaging and utilizing the Google Cloud Messaging (GCM) platform (where it sends small messages in JavaScript Object Notation format to a mobile device using Google servers).
+
+“This ‘versatility’ was present in the first version of Rotexy and has been a feature of all the family’s subsequent representatives,” researchers said. Originally, the trojan was identified as Trojan-Spy.AndroidOS.SmsThief, but as it grew more sophisticated researchers assigned it to another family – Trojan-Banker.AndroidOS.Rotexy.
+
+Rotexy’s key ability has always been to intercept and read SMS messages, as well as track a list of all running processes and installed applications (including the possible tracking of antivirus or banking applications). The most current version can block the devices’ screen to perform either ransomware or phishing functions.
+
+The New Attack Process
+The most current version of the trojan spreads via links sent in phishing SMSs that prompt the user to install an app. As it launches, the app requests device administrator rights, and then starts communicating with its C&C server.
+
+When first launching, the trojan checks to make sure the victim’s device is located in Russia and that it isn’t an emulator used by security researchers to spot malware. If the device checks out, the trojan registers with the mobile notification service Google Cloud Messaging and launches a service to check if the trojan has device administrator privileges, according researchers.
+
+“If the Trojan detects an attempt to revoke its administrator privileges, it starts periodically switching off the phone screen, trying to stop the user actions,” researchers said. “If the privileges are revoked successfully, the Trojan relaunches the cycle of requesting administrator privileges.”
+
+Once running, the trojan can track when a phone is switched on or rebooted – and whether text-messages are being sent.
+
+To perform SMS tracking capabilities, the trojan sends the infected device’s International Mobile Equipment Identity (IMEI) to the C&C server, and in turn receives a set of rules for processing incoming text messages.
+
+That includes phone numbers and keywords that are applied mainly to messages from banks, payment systems and mobile network operators.
+
+“Rotexy intercepts all incoming SMSs and processes them according to the templates it received from the C&C,” researchers said. “Also, when an SMS arrives, the Trojan puts the phone into silent mode and switches off the screen so the user doesn’t notice that a new SMS has arrived. When required, the Trojan sends an SMS to the specified phone number with the information it has received from the intercepted message.”
+
+This is where the malware’s ransomware capabilities come to life. The latest version of Rotexy is able to block the device’s screen for a “long period of time” and displays an extortion page that demands a ransom for unblocking it.
+
+Rotexy also displays a tricky phishing page purporting to be a bank, that prompts the user to enter their bank card details. The page generally shows a message saying that the user received a money transfer, and they should enter their bank card number so money can then be transferred to their account.
+
+“This page… blocks the device screen until the user enters all the information,” researchers said. “It even has its own virtual keyboard that supposedly protects the victim from keyloggers.”
+
+Interestingly, the trojan is able to check whether the card details are correct. Rotexy does this by intercepting a message from the bank in templates for processing incoming text messages for the victims’ phone. That message may contain the last four digits of the bank card connected to the phone number.
+
+So, once the user enters a card number, the malware checks the entered number against the bank card details in the templates, and only accepts a number that matches one including those last four digits.
+
+Mitigations
+Luckily for victims whose screens are being blocked by the bad actors behind the malware, a simple trick exists that can unblock the phone.
+
+If victims send the numbers ‘3458’ in a text message to the blocked device, and then the command “stop_blocker,” the malware will unblock the screen.
+
+That’s because 3458 is one of the commands programmed for the trojan to revoke device administrator privileges from the app, and the ‘stop_blocker’ command unblocks the screen.
+
+“This will revoke the administrator privileges from the Trojan,” researchers said. “After that it’s necessary to send ‘stop_blocker’ to the same number – this will disable the display of HTML pages that extort money and block the screen. Rotexy may start requesting device administrator privileges again in an infinite loop; in that case, restart the device in safe mode and remove the malicious program.”
+
+However, the trick isn’t perfect, and future iterations of the trojan may changes, researchers said: “it’s possible the set of commands may change in future versions of the Trojan.”

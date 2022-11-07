@@ -1,0 +1,176 @@
+T1	OS 178 185	Android
+T2	OS 5218 5225	Android
+T3	OS 5866 5873	Android
+T5	Organization 213 219	Google
+T15	Malware 0 6	Anubis
+T16	Malware 539 553	BankBot Anubis
+T17	Malware 914 928	BankBot Anubis
+T18	Malware 1336 1350	BankBot Anubis
+T19	Malware 4707 4713	Anubis
+T20	Malware 4822 4836	BankBot Anubis
+T21	Malware 4870 4884	BankBot Anubis
+T25	Malware 6710 6724	BankBot Anubis
+T26	Organization 87 98	IBM X-Force
+T27	Organization 7409 7420	IBM X-Force
+T28	Malware 506 513	Marcher
+T30	Malware 1452 1459	Marcher
+T31	Malware 519 533	Marcher ExoBot
+T32	Malware 934 941	Go_P00t
+T34	Organization 3097 3104	X-Force
+T35	Organization 3775 3782	X-Force
+T36	Organization 6501 6508	X-Force
+T38	Organization 7658 7665	X-Force
+T39	Organization 7874 7881	X-Force
+T40	Organization 3613 3623	VirusTotal
+T50	Malware 5440 5454	BankBot Anubis
+T54	Person 2914 2921	Sun Tzu
+T57	Location 6369 6373	U.K.
+T58	Location 6375 6379	U.S.
+T29	Application 66 85	Official App Stores
+R1	targets Arg1:T15 Arg2:T29	
+R3	targets Arg1:T15 Arg2:T1	
+T6	Application 271 282	Google Play
+*	hasAlias T28 T31
+T33	MalwareType 685 700	banking Trojans
+R4	isA Arg1:T28 Arg2:T33	
+R5	isA Arg1:T16 Arg2:T33	
+T37	AttackPattern 734 805	stealing login credentials to banking apps, e-wallets and payment cards
+R6	uses Arg1:T16 Arg2:T37	
+T59	Time 822 826	June
+*	hasAlias T17 T32
+T43	Malware 1476 1490	BankBot Anubis
+T7	Application 1542 1553	Google Play
+T8	Application 1870 1881	Google Play
+T44	Location 3145 3152	Turkish
+R2	targets Arg1:T43 Arg2:T44	
+T45	Organization 3835 3847	ThreatFabric
+T46	Time 3860 3872	January 2018
+T55	Time 4085 4092	January
+T9	Application 4406 4417	Google Play
+T56	Organization 4455 4462	X-Force
+T60	Location 4674 4681	Turkish
+T10	AttackPattern 4714 4742	Masquerades as Google Protec
+R7	uses Arg1:T19 Arg2:T10	
+T11	AttackPattern 4898 4943	masquerades as an app called “Google Protect”
+T41	AttackPattern 4948 4997	prompts the user to grant it accessibility rights
+R8	uses Arg1:T21 Arg2:T11	
+R9	uses Arg1:T21 Arg2:T41	
+T22	Malware 5029 5043	BankBot Anubis
+T42	AttackPattern 5044 5103	uses Android’s Accessibility services to perform keylogging
+T47	AttackPattern 5116 5208	obtain the infected user’s credentials when he or she accesses a targeted mobile banking app
+R10	uses Arg1:T22 Arg2:T42	
+R11	uses Arg1:T22 Arg2:T47	
+T48	AttackPattern 5255 5321	launches a fake overlay screen when the user accesses a target app
+R12	uses Arg1:T22 Arg2:T48	
+T49	AttackPattern 5327 5438	user then taps his or her account credentials into the fake overlay, which allows the malware to steal the data
+R13	uses Arg1:T22 Arg2:T49	
+T23	AttackPattern 5545 5641	steal credentials from any app while avoiding the need to create custom overlays for each target
+R14	uses Arg1:T50 Arg2:T23	
+T61	AttackPattern 5672 5713	take screen captures of the user’s screen
+T62	AttackPattern 5739 5756	steal credentials
+R15	uses Arg1:T50 Arg2:T61	
+R16	uses Arg1:T50 Arg2:T62	
+T63	Location 5967 5974	Turkish
+R17	targets Arg1:T50 Arg2:T63	
+T24	Malware 6025 6039	BankBot Anubis
+T51	Location 6097 6106	Australia
+T64	Location 6108 6115	Austria
+T65	Location 6117 6127	Azerbaijan
+T66	Location 6129 6136	Belarus
+T67	Location 6138 6144	Brazil
+T68	Location 6146 6152	Canada
+T69	Location 6154 6159	China
+T70	Location 6161 6175	Czech Republic
+T71	Location 6177 6183	France
+T72	Location 6185 6192	Georgia
+T73	Location 6194 6201	Germany
+T74	Location 6203 6212	Hong Kong
+T75	Location 6214 6219	India
+T76	Location 6221 6228	Ireland
+T77	Location 6230 6236	Israel
+T78	Location 6238 6243	Japan
+T79	Location 6245 6255	Kazakhstan
+T80	Location 6257 6267	Luxembourg
+T81	Location 6269 6276	Morocco
+T82	Location 6278 6289	Netherlands
+T83	Location 6291 6302	New Zealand
+T84	Location 6304 6308	Oman
+T85	Location 6310 6316	Poland
+T86	Location 6318 6324	Russia
+T87	Location 6326 6334	Scotland
+T88	Location 6336 6344	Slovakia
+T89	Location 6346 6351	Spain
+T90	Location 6353 6359	Taiwan
+T91	Location 6361 6367	Turkey
+T12	Application 6424 6441	Google Play Store
+T13	Application 6549 6560	Google Play
+T52	Time 7652 7656	2017
+T14	Application 7761 7778	Google Play Store
+T4	Malware 7789 7796	BankBot
+R19	targets Arg1:T24 Arg2:T64	
+R20	targets Arg1:T24 Arg2:T65	
+R21	targets Arg1:T24 Arg2:T66	
+R22	targets Arg1:T24 Arg2:T67	
+R23	targets Arg1:T24 Arg2:T68	
+R24	targets Arg1:T24 Arg2:T70	
+R25	targets Arg1:T24 Arg2:T71	
+R26	targets Arg1:T24 Arg2:T72	
+R27	targets Arg1:T24 Arg2:T73	
+R28	targets Arg1:T24 Arg2:T74	
+R29	targets Arg1:T24 Arg2:T75	
+R30	targets Arg1:T24 Arg2:T76	
+R31	targets Arg1:T24 Arg2:T87	
+R32	targets Arg1:T24 Arg2:T82	
+R33	targets Arg1:T24 Arg2:T79	
+R34	targets Arg1:T24 Arg2:T77	
+R35	targets Arg1:T24 Arg2:T78	
+R36	targets Arg1:T24 Arg2:T80	
+R37	targets Arg1:T24 Arg2:T81	
+R38	targets Arg1:T24 Arg2:T83	
+R39	targets Arg1:T24 Arg2:T84	
+R40	targets Arg1:T24 Arg2:T85	
+R41	targets Arg1:T24 Arg2:T86	
+R42	targets Arg1:T24 Arg2:T69	
+R43	targets Arg1:T24 Arg2:T88	
+R44	targets Arg1:T24 Arg2:T58	
+R45	targets Arg1:T24 Arg2:T90	
+R18	targets Arg1:T24 Arg2:T91	
+R46	targets Arg1:T24 Arg2:T89	
+R47	targets Arg1:T24 Arg2:T57	
+T53	Location 2898 2905	Chinese
+R48	targets Arg1:T4 Arg2:T14	
+T92	MalwareType 554 576	mobile banking Trojans
+R49	isA Arg1:T16 Arg2:T92	
+T93	OS 7797 7804	Android
+T94	MalwareType 5226 5241	banking Trojans
+R50	targets Arg1:T4 Arg2:T93	
+T95	MalwareType 1054 1076	mobile banking Trojans
+T96	MalwareType 322 337	banking malware
+T97	MalwareType 5830 5845	banking malware
+T98	MalwareType 5997 6004	botnets
+T99	MalwareType 1679 1686	Trojans
+T100	MalwareType 7948 7955	Trojans
+T101	Application 4682 4696	mobile banking
+T102	Application 5190 5204	mobile banking
+T103	Application 5059 5072	Accessibility
+T104	Application 220 230	Play Store
+T105	Application 6867 6877	VirusTotal
+T106	Application 359 369	app stores
+T107	Application 7036 7046	app stores
+T108	Application 403 413	downloader
+T109	Application 872 882	downloader
+T110	Application 2649 2659	downloader
+T111	Application 2736 2746	downloader
+T112	Application 3122 3132	downloader
+T113	Application 3759 3769	downloader
+T114	Application 4244 4254	downloader
+T115	Application 4324 4334	downloader
+T116	Application 4506 4516	downloader
+T117	Application 5898 5908	downloader
+T118	Application 6401 6411	downloader
+T119	Application 3705 3714	antivirus
+T120	Application 6830 6839	antivirus
+T121	Application 1303 1312	app store
+T122	Application 2229 2238	app store
+T123	Application 2394 2403	app store
+T124	Application 4729 4735	Google

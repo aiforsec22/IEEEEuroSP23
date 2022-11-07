@@ -1,0 +1,20 @@
+A new Android malware has appeared in the threat landscape, tracked as MobiHok RAT, it borrows the code from the old SpyNote RAT.
+Experts from threat intelligence firm SenseCy spotted a new piece of Android RAT, dubbed MobiHok RAT, that used code from the old SpyNote RAT.
+
+At the beginning of July 2019, the experts spotted a threat actor dubbed mobeebom that was offering for sale an Android Remote Administration Tool (RAT) dubbed MobiHok v4 on a prominent English hacking forum.
+
+The experts discovered that mobeebom is active on multiple Arab-speaking hacking forums under different pseudonyms, a circumstance that suggests that he is an Arab-speaker. Researchers also noticed that the posts published by the hacker were using poor English.
+mobeebom has been promoting the MobiHok RAT through multiple channels, including YouTube and a dedicated Facebook page, since January 2019.
+
+MobiHok is written in Visual Basic .NET and Android Studio, it allows to fully control the infected device. Experts pointed out that the latest release of the RAT implements new features, including a bypass to the Facebook authentication mechanism.
+
+The analysis conducted by the experts suggests that the threat actor obtained SpyNote’s source code and made some minor changes to its code before reselling it online.
+“However, from a research we conducted into mobeebom’s activity in the underground communities, and the analysis of a sample of the malware builder we retrieved, it is apparent that the threat actor based MobiHok on the source code of another prominent Android RAT named SpyNote, which was leaked online in 2016.” continues the report.
+
+“The initial findings of our technical analysis confirmed that mobeebom probably obtained SpyNote’s source code, made some minor changes, and now resells it as a new RAT under the name MobiHok.”
+
+In July 2016, experts from Palo Alto Networks a RAT offered for free called Spynote, much like OmniRat and DroidJack, today the malware can be purchased from a website on the surface web, or downloaded for free from a forum.
+
+MobiHok supports several features, including access to files, access to the camera, keylogging, control over SMS and contacts, the ability to bypass both Samsung security mechanisms and Google Play mechanisms, and to bind itself to another APK app.
+
+“To conclude, despite mobeebom’s attempt to market his MobiHok v4 Android RAT as new and his declared intention to make it the top Android RAT on the market, it appears that this malware is based on the leaked source code of the known SpyNote Android RAT with only minor changes and is being reselled by the threat actor under a different name.” concludes Sensecy.

@@ -1,0 +1,87 @@
+T1	OS 47 54	Android
+T2	OS 159 166	Android
+T3	OS 263 270	Android
+T4	OS 727 734	Android
+T5	OS 2232 2239	Android
+T6	OS 2596 2603	Android
+T7	OS 2128 2135	Windows
+T9	Organization 2564 2570	Google
+T10	Malware 2170 2179	DroidJack
+T11	Malware 62 73	SpyNote RAT
+T12	Malware 869 880	SpyNote RAT
+T13	Malware 1679 1690	SpyNote RAT
+T14	Malware 2297 2308	SpyNote RAT
+T15	Malware 0 7	SpyNote
+T18	Malware 1073 1080	SpyNote
+T19	Malware 1273 1280	SpyNote
+T21	Malware 1759 1766	SpyNote
+T24	Malware 2330 2337	SpyNote
+T25	Application 2356 2373	Google Play Store
+T26	Application 2571 2581	Play Store
+T27	Organization 448 455	Unit 42
+T28	Organization 2030 2037	Unit 42
+T29	Malware 588 595	Spynote
+T32	Malware 2084 2091	OmniRat
+T33	OS 2139 2146	Andriod
+T34	Application 2208 2223	fake Pokémon Go
+T35	Application 2449 2456	Bouncer
+T16	MalwareType 16 19	RAT
+R1	isA Arg1:T15 Arg2:T16	
+R2	targets Arg1:T15 Arg2:T1	
+R3	targets Arg1:T11 Arg2:T2	
+T17	Organization 312 318	Google
+T20	Application 390 400	Play Store
+T23	Organization 436 445	Palo Alto
+T31	MalwareType 469 495	Remote Access Trojan (RAT)
+T36	AttackPattern 501 576	allow attackers to gain remote administrative control of an infected device
+R5	isA Arg1:T11 Arg2:T31	
+T38	AttackPattern 1205 1241	stealing personal and financial data
+R7	uses Arg1:T18 Arg2:T38	
+T39	AttackPattern 1315 1355	installing new APKs and updating itself,
+T40	AttackPattern 1356 1393	copying files from device to computer
+T41	AttackPattern 1395 1426	view all messages on the device
+T42	AttackPattern 1428 1452	access the contact list,
+T43	AttackPattern 1453 1482	make and listen to your calls
+T44	AttackPattern 1485 1529	ecord or listen to audio from the microphone
+T45	AttackPattern 1545 1614	collect Mac address from WI-FI, IMEI number and details about carrier
+T46	AttackPattern 1620 1661	track GPS location of the infected device
+R8	uses Arg1:T19 Arg2:T39	
+R9	uses Arg1:T19 Arg2:T40	
+R10	uses Arg1:T19 Arg2:T41	
+R11	uses Arg1:T19 Arg2:T42	
+R12	uses Arg1:T19 Arg2:T43	
+R13	uses Arg1:T19 Arg2:T44	
+R14	uses Arg1:T19 Arg2:T45	
+R15	uses Arg1:T19 Arg2:T46	
+T47	AttackPattern 1791 1831	accept and give SpyNote many permissions
+R16	uses Arg1:T21 Arg2:T47	
+T22	Malware 1983 1990	SpyNote
+T48	Organization 2011 2021	VirusTotal
+T30	Malware 2054 2060	SpyNot
+T49	Malware 2061 2068	OmniRat
+T50	Malware 2073 2082	DroidJack
+T51	Time 2108 2112	2015
+R17	discoveredIn Arg1:T32 Arg2:T51	
+T52	OS 2123 2126	MAC
+R18	targets Arg1:T32 Arg2:T52	
+R19	targets Arg1:T32 Arg2:T7	
+R20	targets Arg1:T32 Arg2:T33	
+R21	uses Arg1:T10 Arg2:T34	
+R22	targets Arg1:T10 Arg2:T5	
+T53	MalwareType 2180 2183	RAT
+R23	isA Arg1:T10 Arg2:T53	
+T8	Organization 2440 2446	Google
+R4	uses Arg1:T11 Arg2:T36	
+*	hasAlias T15 T11
+T37	MalwareType 8 14	Trojan
+R6	isA Arg1:T15 Arg2:T37	
+T54	MalwareType 210 213	RAT
+T55	MalwareType 619 625	trojan
+T56	Malware 1807 1814	SpyNote
+T57	AttackPattern 1858 1876	edit text messages
+T58	AttackPattern 1878 1905	read call logs and contacts
+T59	AttackPattern 1910 1954	modify or delete the contents of the SD card
+R24	uses Arg1:T21 Arg2:T57	
+R25	uses Arg1:T21 Arg2:T58	
+R26	uses Arg1:T21 Arg2:T59	
+T60	OS 1553 1556	Mac

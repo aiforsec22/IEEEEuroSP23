@@ -1,0 +1,10 @@
+Your Android might be controlled by a malicious Twitter account
+Twitter has quite the storied history of being used for both good and evil, what with its ability to connect millions of people and allow them to communicate faster than ever before. But now, it’s being used to form some particularly malevolent connections.
+According to a recent blog post from ESET, there’s a new kind of mobile malware that makes use of Twitter to control an Android device-based botnet. It’s the first known mobile malware to use this kind of social media account instead of a command-and-control server to exercise its power over infected devices.
+
+It’s called Twitoor, and this Trojan apparently lies dormant on Android devices, and awaits commands from a malicious Twitter account. Commands can either tell Twitoor to download and install other applications — generally of the data-stealing mobile banking malware variety — or switch to another command-and-control Twitter account.
+“Using Twitter instead of command-and-control servers is pretty innovative for an Android botnet,” said Lukas Stefanko, the ESET malware researcher who first found the app. Apparently, it’s been around for about a month, and while it can’t be downloaded from the Google Play store, experts think that devices are infected either with text messages or malicious URLs.
+
+The use of social media networks in the botnet’s communication is rather creative, Stefanko admits, noting, “These communication channels are hard to discover and even harder to block entirely.” He added, “In the future, we can expect that the bad guys will try to make use of Facebook statuses or deploy LinkedIn and other social networks.”
+
+So proceed with great caution, friends. Your Android could indeed be controlled by a rogue Twitter account. “Twitoor serves as another example of how cybercriminals keep on innovating their business,” Stefanko concluded. “The takeaway? Internet users should keep on securing their activities with good security solutions for both computers and mobile devices.”

@@ -1,0 +1,92 @@
+T4	OS 1461 1468	Android
+T5	OS 1485 1504	Android marshmallow
+T6	OS 2395 2402	Android
+T7	OS 2566 2573	Android
+T9	Malware 0 13	Red Alert 2.0
+T10	Malware 106 119	Red Alert 2.0
+T11	Malware 2020 2033	Red Alert 2.0
+T14	Malware 231 240	Red Alert
+T16	Application 604 611	Twitter
+T17	Organization 1542 1551	Trustwave
+T18	Malware 1674 1688	Red Alerts 2.0
+T19	Application 2198 2202	Uber
+T20	Application 2475 2494	Google Play Protect
+T21	Location 1823 1828	India
+T26	Location 1782 1785	U.K
+T29	Location 1777 1780	U.S
+T12	AttackPattern 255 345	stealing tons of sensitive information from infected mobile devices including SMS messages
+T13	AttackPattern 412 456	data about current or recently running tasks
+R3	uses Arg1:T14 Arg2:T12	
+R4	uses Arg1:T14 Arg2:T13	
+T15	AttackPattern 473 542	initiate a phone call without going through the Dialer user interface
+R5	uses Arg1:T14 Arg2:T15	
+R6	targets Arg1:T14 Arg2:T16	
+T22	AttackPattern 825 909	sets itself up as a default telephony provider, mostly for intercepting SMS messages
+R7	uses Arg1:T14 Arg2:T22	
+T23	Application 1230 1244	online banking
+T24	AttackPattern 1144 1186	intercepting 2 factor authentication codes
+T25	AttackPattern 1319 1352	wipe out all data from the device
+T28	Organization 1734 1739	banks
+T30	Location 1833 1838	Italy
+T31	Location 1787 1796	Australia
+T32	Location 1798 1804	Canada
+T33	Location 1806 1813	Germany
+T34	Location 1815 1821	France
+T35	Application 2077 2092	payment systems
+T36	Application 2094 2113	retail applications
+T37	Application 2118 2135	social media apps
+T38	Application 2144 2150	PayPal
+R8	targets Arg1:T18 Arg2:T29	
+R9	targets Arg1:T18 Arg2:T28	
+R10	targets Arg1:T18 Arg2:T26	
+R11	targets Arg1:T18 Arg2:T31	
+R12	targets Arg1:T18 Arg2:T32	
+R13	targets Arg1:T18 Arg2:T33	
+R14	targets Arg1:T18 Arg2:T34	
+R15	targets Arg1:T18 Arg2:T21	
+R16	targets Arg1:T18 Arg2:T30	
+R17	targets Arg1:T11 Arg2:T35	
+R18	targets Arg1:T11 Arg2:T36	
+R19	targets Arg1:T11 Arg2:T37	
+R20	targets Arg1:T11 Arg2:T38	
+R21	targets Arg1:T11 Arg2:T6	
+R22	targets Arg1:T11 Arg2:T20	
+R23	targets Arg1:T11 Arg2:T7	
+T8	Application 2152 2158	Airbnb
+T27	Application 2160 2166	Amazon
+T39	Application 2168 2172	eBay
+T40	Application 2174 2182	WhatsApp
+T41	Application 2184 2189	Viber
+T42	Application 2191 2196	Skype
+R24	targets Arg1:T11 Arg2:T8	
+R25	targets Arg1:T11 Arg2:T27	
+R26	targets Arg1:T11 Arg2:T39	
+R27	targets Arg1:T11 Arg2:T40	
+R28	targets Arg1:T11 Arg2:T41	
+R29	targets Arg1:T11 Arg2:T42	
+R30	targets Arg1:T11 Arg2:T19	
+R31	uses Arg1:T14 Arg2:T24	
+R32	targets Arg1:T14 Arg2:T23	
+R33	uses Arg1:T14 Arg2:T25	
+T1	OS 14 21	Android
+R2	targets Arg1:T9 Arg2:T1	
+T43	MalwareType 22 28	Trojan
+R35	isA Arg1:T9 Arg2:T43	
+T2	OS 120 127	Android
+R1	targets Arg1:T10 Arg2:T2	
+T44	MalwareType 128 134	Trojan
+R36	isA Arg1:T10 Arg2:T44	
+T45	AttackPattern 347 362	contact details
+T46	AttackPattern 364 395	information about WiFi networks
+T47	AttackPattern 397 406	call logs
+R37	uses Arg1:T14 Arg2:T45	
+R38	uses Arg1:T14 Arg2:T46	
+R39	uses Arg1:T14 Arg2:T47	
+T48	AttackPattern 555 577	block calls from banks
+T49	AttackPattern 582 611	connect with bots via Twitter
+R40	uses Arg1:T14 Arg2:T48	
+R41	uses Arg1:T14 Arg2:T49	
+R34	targets Arg1:T14 Arg2:T5	
+T50	MalwareType 2050 2056	Trojan
+T51	Application 2597 2609	Play Protect
+T52	Organization 572 577	banks

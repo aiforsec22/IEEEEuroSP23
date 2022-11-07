@@ -1,0 +1,101 @@
+T1	OS 104 111	Android
+T2	OS 562 569	Android
+T5	OS 4058 4065	Android
+T6	OS 4146 4153	Android
+T7	OS 2453 2456	iOS
+T8	Malware 7 16	Skygofree
+T9	Malware 134 143	Skygofree
+T10	Malware 640 649	Skygofree
+T11	Malware 1570 1579	Skygofree
+T12	Malware 2196 2205	Skygofree
+T13	Malware 2706 2715	Skygofree
+T14	Malware 3119 3128	Skygofree
+T15	Malware 4048 4057	Skygofree
+T16	Malware 2273 2280	Pegasus
+T17	Malware 2308 2315	Pegasus
+T18	Malware 2420 2427	Pegasus
+T22	Application 3794 3802	WhatsApp
+T23	Organization 607 620	Kaspersky Lab
+T24	Organization 1551 1564	Kaspersky Lab
+T25	Organization 2518 2531	Kaspersky Lab
+T26	Organization 3247 3260	Kaspersky Lab
+T27	Organization 4025 4038	Kaspersky Lab
+T28	ThreatActor 1362 1380	Negg International
+T29	Organization 2152 2160	Vodafone
+T30	ThreatActor 2771 2782	HackingTeam
+T32	Person 1090 1103	Nikita Buchka
+T33	Person 1108 1120	Alexey Firsh
+T34	Location 2389 2395	Israel
+T35	Location 2606 2611	Italy
+T19	AttackPattern 155 189	eavesdropping on WhatsApp messages
+T37	AttackPattern 191 224	siphoning private data off phones
+T38	AttackPattern 229 299	allowing adversaries to open reverse shell modules on targeted devices
+R1	targets Arg1:T8 Arg2:T1	
+R2	uses Arg1:T9 Arg2:T19	
+R3	uses Arg1:T9 Arg2:T37	
+R4	uses Arg1:T9 Arg2:T38	
+T40	AttackPattern 818 913	record audio surroundings via the microphone when an infected device is in a specified location
+T20	AttackPattern 919 975	stealing of WhatsApp messages via Accessibility Services
+T41	AttackPattern 996 1069	connect an infected device to Wi-Fi networks controlled by cybercriminals
+R6	uses Arg1:T10 Arg2:T40	
+R7	uses Arg1:T10 Arg2:T20	
+R8	uses Arg1:T10 Arg2:T41	
+T42	ThreatActor 1237 1255	Negg International
+R9	hasAuthor Arg1:T10 Arg2:T42	
+R10	hasAuthor Arg1:T10 Arg2:T28	
+T43	AttackPattern 1600 1728	infected via malicious redirects or man-in-the-middle attacks driving users to landing pages that mimic mobile carrier web sites
+R11	uses Arg1:T11 Arg2:T43	
+T45	Time 2295 2306	August 2016
+R13	discoveredIn Arg1:T16 Arg2:T45	
+T46	ThreatActor 2409 2418	NSO Group
+R14	hasAuthor Arg1:T17 Arg2:T46	
+T47	AttackPattern 2485 2513	spy on a political dissident
+R15	uses Arg1:T18 Arg2:T47	
+R16	targets Arg1:T18 Arg2:T7	
+T48	Malware 2552 2561	Skygofree
+R17	targets Arg1:T48 Arg2:T35	
+T49	ThreatActor 2758 2769	HackingTeam
+T50	ThreatActor 3211 3222	HackingTeam
+T51	Malware 3278 3287	Skygofree
+T3	AttackPattern 3326 3355	recording Skype conversations
+T21	AttackPattern 3382 3479	capture WhatsApp end-to-end encrypted conversations via exploiting Android Accessibility Services
+R18	uses Arg1:T51 Arg2:T3	
+R19	uses Arg1:T51 Arg2:T21	
+T4	AttackPattern 3540 3648	uses the Android Accessibility Service to get information directly from the displayed elements on the screen
+R20	uses Arg1:T51 Arg2:T4	
+R22	targets Arg1:T51 Arg2:T22	
+R23	targets Arg1:T15 Arg2:T5	
+T36	MalwareType 4102 4109	spyware
+R24	isA Arg1:T18 Arg2:T36	
+T52	AttackPattern 4261 4315	usage of multiple exploits for gaining root privileges
+R25	uses Arg1:T15 Arg2:T52	
+R27	targets Arg1:T9 Arg2:T2	
+T54	Application 172 180	WhatsApp
+R28	targets Arg1:T9 Arg2:T54	
+T55	Time 694 701	Tuesday
+T56	Application 931 939	WhatsApp
+R29	targets Arg1:T10 Arg2:T56	
+T57	AttackPattern 2227 2260	capable of a wide range of spying
+R30	uses Arg1:T12 Arg2:T57	
+R31	uses Arg1:T16 Arg2:T57	
+T58	Application 3336 3341	Skype
+R32	targets Arg1:T51 Arg2:T58	
+T59	Application 3390 3398	WhatsApp
+R33	targets Arg1:T51 Arg2:T59	
+T31	AttackPattern 301 341	giving attackers ultimate remote control
+R5	uses Arg1:T9 Arg2:T31	
+T39	Application 953 975	Accessibility Services
+R12	uses Arg1:T10 Arg2:T39	
+T44	ThreatActor 3144 3162	Italian IT company
+R21	hasAuthor Arg1:T14 Arg2:T44	
+T53	Application 3449 3479	Android Accessibility Services
+R26	uses Arg1:T51 Arg2:T53	
+T60	Application 3549 3578	Android Accessibility Service
+R34	uses Arg1:T51 Arg2:T60	
+T61	Application 3877 3898	Accessibility Service
+R35	uses Arg1:T51 Arg2:T61	
+T62	AttackPattern 4319 4344	complex payload structure
+R36	uses Arg1:T15 Arg2:T62	
+T63	AttackPattern 4394 4444	recording surrounding audio in specified locations
+R37	uses Arg1:T15 Arg2:T63	
+T64	OS 2447 2452	Apple

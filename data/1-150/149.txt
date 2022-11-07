@@ -1,0 +1,26 @@
+Anubis Malware Upgrade Logs When Victims Look at Their Screens
+Threat actors are cooking up new features for the sophisticated banking trojan that targets Google Android apps and devices.
+
+The Anubis malware, which threat actors use to persistently attack Google’s Android-based smartphones, is set to evolve once again, this time adding a feature that allows the malware to identify if a victim is looking at his or her screen.
+
+The new feature is one of several that haven’t been released in the wild yet but are a part of an updated control panel for the malware that’s currently in development, researchers from security consulting firm Hold Security discovered, according to a report published online.
+
+The panel is a web-based module that explores devices that have already been infiltrated by Anubis, researchers said. Threat actors use it to view and decide from which device they want to steal data as well as which services on devices to target.
+
+
+
+The new control panel will add features that provide even more insight so attackers can fully take advantage of a device, Alex Holden, founder and chief information security officer of Hold Security, told Bank Info Security.
+
+One key addition to the malware is a small eyeball icon included in the control panel that can be used to recognize whether a user of a device with Anubis installed is looking at the device or not. The idea is that an attacker won’t perform any nefarious activity on the device while the person is looking at it, he said.
+
+The threat actors behind Anubis also are developing a way to integrate Yandex maps into the malware to show the location of infected devices, according to the report. However, this could be a superfluous addition, as the mobile network to which a device is attached is usually can tell a hacker where the phone is located, Holden noted in the report.
+
+Anubis malware has been active since late 2017. The sophisticated malware originally was used for cyber-espionage and later repurposed as a banking trojan.
+
+The most widespread campaign last seen using Anubis was in February, a new phishing campaign targeting more than 250 Android apps was aimed at using the trojan to steal user credentials, install a keylogger, and even hold a device’s data for ransom.
+
+Meanwhile, Google historically has struggled mightily to keep malware off Android devices and apps on the Google Play Store. Anubis is one of the most widespread malwares plaguing these apps and devices, mainly targeting financial and banking apps available for the platform.
+
+Last year, researchers discovered two malicious apps, Currency Converter and BatterySaverMobo, that were infecting devices with Anubis to steal user credentials. At the time, researchers noted the trojan had been distributed to 93 different countries, targeting the users of 377 variations of financial apps to farm account details.
+
+Previous to that, IBM’s X-Force team spotted Anubis in a campaign that used 10 malicious downloaders disguised as various Google Play applications to fetch the mobile banking trojan and run it on Android devices.

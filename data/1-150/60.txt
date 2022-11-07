@@ -1,0 +1,21 @@
+Ginp Malware Not Ready to Hit the Sack Yet
+Ginp malware has become one of the most notorious Android banking malware family. 
+
+What’s going on?
+Ginp malware was first discovered in 2019 and started as an SMS stealer. However, it soon upgraded itself to being one of the most advanced financial fraud landscape actors. Its target set consists mostly of customers of Spanish banks; nevertheless, the operators are planning on evolving their strategies to propagate in Turkey.
+
+Know the history
+The initial version of the malware masqueraded as a Google Play Verificator app. 
+In August 2019, a new variant was launched with banking-specific capabilities, disguised as fake Adobe Flash Player apps.
+The third version was enhanced with payload obfuscation, with the credit card grabber extended with Viber and Snapchat.
+By the end of February 2020, the operators had added screen capture capabilities, and the malware code seemed to be borrowed from the Anubis trojan source code.
+
+Evolving capabilities
+With the operators’ plan to spread the trojan to Turkey, the following capabilities are worth a mention:
+Notifications blockers service
+RAT capabilities
+Injections locker
+How to stay safe?
+Download apps only from the Google Play Store.
+Do not click on suspicious links.
+Do not give the Accessibility permission to just any app, except for antivirus apps.

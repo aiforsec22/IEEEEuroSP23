@@ -1,0 +1,133 @@
+T2	OS 1848 1855	Android
+T3	Malware 1234 1247	Red Alert 2.0
+T4	Malware 1616 1629	Red Alert 2.0
+T5	Malware 0 9	Red Alert
+T10	Organization 584 593	Trustwave
+T11	Application 1073 1101	Unocoin Bitcoin Wallet India
+T12	Application 1216 1224	WhatsApp
+T13	Organization 1763 1773	VirusTotal
+T1	MalwareType 10 24	Android Trojan
+R1	isA Arg1:T5 Arg2:T1	
+T6	AttackPattern 75 165	stealing information from the infected devices, including SMS messages and contact details
+T7	AttackPattern 171 193	block calls from banks
+T8	AttackPattern 208 309	keep in touch with bots via Twitter in the event its command and control (C&C) server is taken online
+R2	uses Arg1:T5 Arg2:T6	
+R3	uses Arg1:T5 Arg2:T7	
+R4	uses Arg1:T5 Arg2:T8	
+T14	Time 347 356	September
+T15	Organization 368 375	SfyLabs
+T16	AttackPattern 406 473	included around 60 60 HTML overlays used to steal login credentials
+R5	uses Arg1:T5 Arg2:T16	
+T17	Location 722 731	Australia
+T18	Location 733 740	Austria
+T19	Location 742 748	Canada
+T20	Location 750 764	Czech Republic
+T21	Location 766 772	Poland
+T22	Location 774 781	Denmark
+T23	Location 783 790	Germany
+T24	Location 792 798	France
+T25	Location 800 809	Lithuania
+T26	Location 811 816	India
+T27	Location 818 823	Italy
+T28	Location 825 832	Ireland
+T29	Location 834 839	Japan
+T30	Location 841 852	New Zeeland
+T31	Location 854 861	Romania
+T32	Location 863 868	Spain
+T33	Location 870 876	Sweden
+T34	Location 878 884	Turkey
+T35	Location 886 900	United Kingdom
+T36	Location 910 923	United States
+R6	targets Arg1:T5 Arg2:T17	
+R7	targets Arg1:T5 Arg2:T18	
+R8	targets Arg1:T5 Arg2:T19	
+R9	targets Arg1:T5 Arg2:T20	
+R10	targets Arg1:T5 Arg2:T21	
+R11	targets Arg1:T5 Arg2:T22	
+R12	targets Arg1:T5 Arg2:T23	
+R13	targets Arg1:T5 Arg2:T24	
+R14	targets Arg1:T5 Arg2:T25	
+R15	targets Arg1:T5 Arg2:T26	
+R16	targets Arg1:T5 Arg2:T27	
+R17	targets Arg1:T5 Arg2:T28	
+R18	targets Arg1:T5 Arg2:T29	
+R19	targets Arg1:T5 Arg2:T30	
+R20	targets Arg1:T5 Arg2:T31	
+R21	targets Arg1:T5 Arg2:T32	
+R22	targets Arg1:T5 Arg2:T33	
+R23	targets Arg1:T5 Arg2:T34	
+R24	targets Arg1:T5 Arg2:T35	
+R25	targets Arg1:T5 Arg2:T36	
+T37	Application 1012 1018	PayPal
+T38	Application 1020 1026	Airbnb
+T39	Application 1028 1036	Coinbase
+T40	Application 1038 1049	Poker Stars
+T41	Application 1051 1059	Neteller
+T42	Application 1061 1067	Skrill
+T43	Application 1124 1130	Amazon
+T44	Application 1132 1136	eBay
+T45	Application 1138 1142	LINE
+T46	Application 1144 1151	GetTaxi
+T47	Application 1153 1161	Snapchat
+T48	Application 1163 1168	Viber
+T49	Application 1170 1179	Instagram
+T50	Application 1181 1189	Facebook
+T51	Application 1191 1196	Skype
+T52	Application 1198 1202	UBER
+T53	Application 1204 1210	WeChat
+R26	targets Arg1:T5 Arg2:T37	
+R27	targets Arg1:T5 Arg2:T38	
+R28	targets Arg1:T5 Arg2:T39	
+R29	targets Arg1:T5 Arg2:T40	
+R30	targets Arg1:T5 Arg2:T41	
+R31	targets Arg1:T5 Arg2:T42	
+R32	targets Arg1:T5 Arg2:T11	
+R33	targets Arg1:T5 Arg2:T43	
+R34	targets Arg1:T5 Arg2:T44	
+R35	targets Arg1:T5 Arg2:T45	
+R36	targets Arg1:T5 Arg2:T46	
+R37	targets Arg1:T5 Arg2:T47	
+R38	targets Arg1:T5 Arg2:T48	
+R39	targets Arg1:T5 Arg2:T49	
+R40	targets Arg1:T5 Arg2:T50	
+R41	targets Arg1:T5 Arg2:T51	
+R42	targets Arg1:T5 Arg2:T52	
+R43	targets Arg1:T5 Arg2:T53	
+R44	targets Arg1:T5 Arg2:T12	
+T54	AttackPattern 1278 1309	intercept and send SMS messages
+T55	AttackPattern 1314 1325	launch APKs
+R45	uses Arg1:T3 Arg2:T54	
+R46	uses Arg1:T3 Arg2:T55	
+T56	AttackPattern 1660 1697	distributed attached to spam messages
+R47	uses Arg1:T4 Arg2:T56	
+R48	targets Arg1:T4 Arg2:T2	
+T57	AttackPattern 1938 2037	requests permissions to write, read, and receive SMS messages, make calls, and change network state
+R49	uses Arg1:T4 Arg2:T57	
+T58	AttackPattern 2104 2167	includes services such as a watchdog that ensures it is running
+T59	AttackPattern 2169 2270	services that register the device bot and wait for commands from the command and control (C&C) server
+T60	AttackPattern 2272 2323	one that ensures the device is connected to the C&C
+T61	AttackPattern 2334 2368	ensures the malware runs at reboot
+T62	AttackPattern 2376 2391	SMS interceptor
+R50	uses Arg1:T4 Arg2:T58	
+R51	uses Arg1:T4 Arg2:T59	
+R52	uses Arg1:T4 Arg2:T60	
+R53	uses Arg1:T4 Arg2:T61	
+R54	uses Arg1:T4 Arg2:T62	
+T63	AttackPattern 2430 2539	requesting permissions from the user and overlaying templates received from the C&C on top of legitimate apps
+R55	uses Arg1:T4 Arg2:T63	
+T64	AttackPattern 2558 2603	sets itself as the default telephony provider
+T65	AttackPattern 2609 2636	equests device admin access
+R56	uses Arg1:T4 Arg2:T64	
+R57	uses Arg1:T4 Arg2:T65	
+T9	AttackPattern 2778 2886	If the website is not available, the malware attempts to connect with the operator through a Twitter message
+R58	uses Arg1:T4 Arg2:T9	
+T66	AttackPattern 2703 2776	C&C communication is performed using HTTP POST requests to a specific URL
+R59	uses Arg1:T4 Arg2:T66	
+T67	MalwareType 682 688	Trojan
+T68	MalwareType 975 981	Trojan
+T69	MalwareType 1513 1519	Trojan
+T70	MalwareType 2092 2098	Trojan
+T71	Application 995 1010	payment systems
+T72	Application 236 243	Twitter
+T73	Application 2871 2878	Twitter
+T74	Organization 713 718	banks

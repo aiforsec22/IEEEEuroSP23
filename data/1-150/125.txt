@@ -1,0 +1,40 @@
+Fake Android apps used for targeted surveillance found in Google Play
+The apps relied on a second-stage component that was downloaded after the apps were installed.
+
+Security researchers have found two separate instances of hackers using Android apps to conduct highly targeted surveillance in the Middle East.
+
+The apps are built from two separate families of surveillance-focused malware, both targeting around a thousand unsuspecting users. The so-called ViperRAT malware was incorporated into two apps, and it has previously targeted members of the Israeli Defense Force. Another app takes two malware types, called Desert Scorpion and FrozenCell, to spy on targets in Palestine.
+
+All three apps are linked to mobile-focused advanced persistent threats, said a new report published Monday by cybersecurity firm Lookout.
+
+In the case of the ViperRAT apps, built with a focus on social networking and chat, the apps, once installed, would profile the device and try to download a second-stage surveillance component. That downloaded component gave an attacker "a considerable amount of control over a compromised device." The threat actor's motivations remain unclear.
+
+Lookout said there is "currently no evidence" the actor successfully deployed it against the Israeli Defense Force this time around, but did not name a new target.
+
+Meanwhile, the Desert Scorpion app also uses a second-stage payload that downloads malicious components when a user interacts with the app. That component gains almost unfettered access to the device -- and the ability to grab devices, metadata, track a user's locations, send messages, record surrounding audio, calls, and video -- all while running silently in the background.
+
+Lookout said an advanced persistent threat group, known as APT-C-23, is likely the suspect behind the malware. Not only that, similarities in the command and control infrastructures of Desert Scorpion and FrozenCell suggest the two malware families may indicate a common actor or developer.
+
+Previously, it's been assumed APT-C-23 is a little-known advanced persistent threat actor dating back to 2015. The attackers are said to be "highly active" hackers, thought to be linked to Hamas, given that previous targets have included rival Palestinian political party Fatah.
+
+In both cases, the actors behind the malicious apps used phishing schemes to trick targets into downloading the apps.
+
+But what makes the apps so effective is that they were downloadable from Android's official app store, Google Play, lending the apps a level of credibility. That's because most rudimentary malware apps don't get installed without an Android users actively lowering their own security settings in order to install apps outside of the supposedly protective wall of Google's app store.
+
+It's not unheard of for malware apps to sneak into the Android app store, but it is rare.
+
+An analysis of the Desert Scorpion app showed that its malicious functionality was not included in the app when submitted to Google Play, said Blaich. Rather, it was downloaded later when the user was interacting with the app.
+
+With ViperRAT, the malicious functionality within one of the apps looks almost indistinguishable from other social networking apps and obfuscated from view during the app store approval process.
+
+Andrew Blaich, Lookout's head of threat intelligence, said the Desert Scorpion app was installed more than a hundred times, while ViperRAT apps had about a thousand combined installs.
+
+What those may seem like a low numbers, Blaich said Desert Scorpion "is a part of a targeted attack and not used for broad global-wide surveillance," and that "this number is in line with what we would expect."
+
+After Lookout reached out, Google removed the apps from the app store.
+
+"When we were notified by Lookout, we removed the apps from Play and updated Play Protect to help ensure users are secured," said a Google spokesperson. "We always appreciate the research community's work to help make Android ecosystem safer."
+
+Got a tip?
+
+You can send tips securely over Signal and WhatsApp at 646-755–8849. You can also send PGP email with the fingerprint: 4D0E 92F2 E36A EC51 DAAE 5D97 CB8C 15FA EB6C EEA5.

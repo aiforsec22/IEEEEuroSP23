@@ -1,0 +1,29 @@
+TrickBot uses a malicious Android app to bypass 2FA by various banks
+Malware authors released a new Android application that can intercept one-time authorization codes sent to various online banking customers via SMS or push notification. This malicious app is developed to intercept one-time password, mobile TAN and pushTAN authentication codes.
+
+The Windows computers infected by TrickBot employed man-in-the-browser (MitB) attacks to ask victims for their online banking mobile phone numbers and device types in order to prompt them to install a fake security app — now called TrickMo.
+
+The Android app, called “TrickMo” by IBM X-Force researchers, is under active development and has exclusively targeted German (in September 2019) users whose desktops have been previously infected with the TrickBot malware. The TrickMo app gets updated and is pushed via infected desktops of victims due to the web injects in online banking sessions.
+
+Given the security threats posed by SMS-based authentication — the messages can be easily hijacked by rogue third-party apps. This contains a lot of code but small part comes in use only.
+
+Features of this Malware contain:
+
+This malware has capability of preventing users from uninstalling the application as it sets itself as a go-to SMS app and monitors running applications, and scrap text from the screen directly.  Android devices have many dialog screens that require user’s permission or denial to take actions. TrickMo can access the service and control these screens.  This is how malware can delete SMS messages and forward them to its masters, so the victim cannot be aware that their device received a text message with the needed 2FA code from the bank service.
+
+Telephony.SMS_DELIVER broadcasts allow the malware to gain persistence too. When the SMS is received, the screen turns on, or the phone is rebooted malicious app can also restart itself.
+
+TrickMo has features to:                                  
+
+Steal pictures and device information from the phone.
+Intercept SMS messages and also lock the phone completely.
+Record applications for OTP, mTAN and pushTAN theft.
+Self-destruct and remove all traces.
+
+Recommendations:
+
+As TrickMo is still under active development as expect to see frequent changes and updates. So be aware, be alert.
+Think twice before opening email attachments. If you suspect that an email is irrelevant and is sent from a suspicious/unrecognizable email address, immediately delete it and certainly do NOT open any attachments.
+Software should be downloaded from official sources only, using direct download links. When downloading, opt-out of all additionally-included programs and if you are unable to do so, cancel the entire process.
+If your computer is already infected with TrickBot, we recommend running a scan with Spyhunter for Windows to automatically eliminate infiltrated malware.
+If you have already removed the malware, it’s very important to change all of your passwords that were entered on the infected machine.

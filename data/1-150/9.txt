@@ -1,0 +1,29 @@
+Super Mario Run Malware #2 – DroidJack RAT
+Gamers love Mario and Pokemon, but so do malware authors.
+A few days back, we wrote about an Android Marcher trojan variant posing as the Super Mario Run game for Android. We have found another instance of malware posing as the Super Mario Run Android app, and this time it has taken the form of DroidJack RAT (remote access trojan). Proofpoint wrote about the DroidJack RAT side-loaded with the Pokemon GO app back in July 2016; the difference here is that there is no game included in the malicious package. The authors are trying to latch onto the popularity of the Super Mario Run game to target eagerly waiting Android users.
+
+Details:
+
+Name : Super Mario Run
+Package Name : net.droidjack.server
+MD5 : 69b4b32e4636f1981841cbbe3b927560
+Technical Analysis:
+
+The malicious package claims to be the Super Mario Run game, as shown in the permissions screenshot below, but in reality this is a malicious RAT called DroidJack (also known as SandroRAT) that is getting installed.  
+DroidJack RAT starts capturing sensitive information like call data, SMS data, videos, photos, etc. Observe below the code routine for call recording. 
+
+This RAT records all the calls and stores the recording to an “.amr” file.
+
+The following is the code routine for video capturing.
+Here, the RAT stores all the captured videos in a “video.3gp” file.
+
+It also harvests call details and SMS logs as shown below.
+Upon further inspection, we have observed that this RAT extracts WhatsApp data too.
+
+The RAT stores all the data in a database (DB) in order to send it to the Command & Control (C&C) server. The following are the DBs created and maintained by the RAT.
+
+We saw the following hardcoded C&C server location in the RAT package:
+
+Conclusion:
+
+The DroidJack RAT is another example of a growing trend in which malware authors seek to exploit public interest as a way to spread malware. In this case, like others before, the event of a popular game release became an opportunity to trick unsuspecting users into downloading the RAT. As a reminder, it is always a good practice to download apps only from trusted app stores such as Google Play. This practice can be enforced by unchecking the "Unknown Sources" option under the "Security" settings of your device.

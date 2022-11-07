@@ -1,0 +1,101 @@
+T3	OS 2907 2914	Android
+T5	Malware 0 4	Ginp
+T6	Malware 274 278	Ginp
+T7	Malware 410 414	Ginp
+T8	Malware 675 679	Ginp
+T9	Malware 819 823	Ginp
+T10	Malware 1238 1242	Ginp
+T11	Malware 1310 1314	Ginp
+T12	Malware 1861 1865	Ginp
+T13	Malware 2790 2794	Ginp
+T14	Malware 1261 1267	Anubis
+T15	Malware 1350 1356	Anubis
+T16	Organization 786 798	ThreatFabric
+T17	Application 2078 2096	Adobe Flash Player
+T18	Application 1896 1906	Play Store
+T19	Person 375 392	Tatyana Shishkova
+T20	Location 451 453	UK
+T21	Malware 1034 1038	Gino
+T1	MalwareType 5 19	Android trojan
+T22	Application 28 40	banking apps
+T24	Malware 69 73	Ginp
+T25	Organization 143 155	ThreatFabric
+T26	MalwareType 250 265	banking malware
+T27	Application 294 312	Adobe Flash Player
+R1	isA Arg1:T5 Arg2:T1	
+R2	targets Arg1:T5 Arg2:T22	
+R4	isA Arg1:T6 Arg2:T26	
+R5	targets Arg1:T6 Arg2:T27	
+T28	Location 458 463	Spain
+T29	Time 524 533	June 2019
+R6	targets Arg1:T7 Arg2:T20	
+R7	targets Arg1:T7 Arg2:T28	
+R8	discoveredIn Arg1:T7 Arg2:T29	
+T2	Organization 1006 1011	banks
+T30	Location 1015 1020	Spain
+T31	Malware 1103 1109	Anubis
+R9	targets Arg1:T9 Arg2:T2	
+R10	targets Arg1:T9 Arg2:T30	
+T32	Malware 1293 1299	Anubis
+T33	AttackPattern 1448 1511	accessing the target device in the disguise of an authentic app
+T34	AttackPattern 1567 1631	hides the app icon and asks for Accessibility Service permission
+T35	AttackPattern 1670 1708	automatically gets dynamic permissions
+T36	AttackPattern 1751 1764	send messages
+T37	AttackPattern 1766 1776	make calls
+T38	AttackPattern 1781 1804	perform overlay attacks
+T39	Time 1846 1855	June 2019
+T4	Application 1914 1937	Google Play Verificator
+T40	AttackPattern 1979 1997	steal SMS messages
+R11	uses Arg1:T11 Arg2:T33	
+R12	uses Arg1:T11 Arg2:T34	
+R13	uses Arg1:T11 Arg2:T35	
+R14	uses Arg1:T11 Arg2:T36	
+R15	uses Arg1:T11 Arg2:T37	
+R16	uses Arg1:T11 Arg2:T38	
+R17	targets Arg1:T12 Arg2:T18	
+R18	targets Arg1:T12 Arg2:T4	
+R19	uses Arg1:T12 Arg2:T40	
+R20	targets Arg1:T12 Arg2:T17	
+T41	Organization 2129 2141	ThreatFabric
+T42	AttackPattern 2210 2269	abusing Accessibility Service to become the default SMS app
+T43	AttackPattern 2274 2300	performing overlay attacks
+T44	Application 2374 2386	social media
+T45	Application 2391 2403	banking apps
+R21	uses Arg1:T12 Arg2:T42	
+R22	uses Arg1:T12 Arg2:T43	
+R23	targets Arg1:T12 Arg2:T44	
+R24	targets Arg1:T12 Arg2:T45	
+T46	Application 2463 2475	banking apps
+T51	Application 2687 2696	Bankinter
+T52	Application 2698 2704	Bankia
+T53	Application 2706 2710	BBVA
+T54	Application 2712 2722	Caixa Bank
+T55	Application 2724 2733	EVO Banco
+T56	Application 2735 2744	Santander
+T57	Application 2750 2759	Kutxabank
+T59	Organization 2922 2930	HackRead
+R25	targets Arg1:T12 Arg2:T46	
+R31	targets Arg1:T12 Arg2:T52	
+R32	targets Arg1:T12 Arg2:T53	
+R33	targets Arg1:T12 Arg2:T54	
+R34	targets Arg1:T12 Arg2:T55	
+R35	targets Arg1:T12 Arg2:T56	
+R36	targets Arg1:T12 Arg2:T57	
+T47	Application 2494 2507	Spanish banks
+T48	Application 2663 2676	Spanish banks
+R26	targets Arg1:T12 Arg2:T47	
+R27	targets Arg1:T12 Arg2:T48	
+R28	targets Arg1:T12 Arg2:T51	
+R3	variantOf Arg1:T21 Arg2:T31	
+R29	variantOf Arg1:T11 Arg2:T15	
+T60	MalwareType 1203 1210	Trojans
+T61	MalwareType 1397 1404	Trojans
+T62	MalwareType 79 85	trojan
+T63	MalwareType 492 498	Trojan
+T64	MalwareType 775 781	Trojan
+T65	MalwareType 1089 1095	Trojan
+T66	Application 3068 3090	third-party app stores
+T67	Application 1599 1620	Accessibility Service
+T68	Application 2218 2239	Accessibility Service
+T69	Application 2262 2269	SMS app
+T70	OS 351 358	Android

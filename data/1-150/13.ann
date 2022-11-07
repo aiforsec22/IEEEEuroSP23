@@ -1,0 +1,336 @@
+T1	OS 14493 14500	Android
+T2	Organization 559 565	Google
+T3	Organization 664 670	Google
+T4	Organization 3164 3170	Google
+T5	Indicator 3950 3960	/[number]”
+T6	Indicator 5484 5548	ba4beb97f5d4ba33162f769f43ec8e7d1ae501acdade792a4a577cd6449e1a84
+T7	Indicator 15063 15127	ba4beb97f5d4ba33162f769f43ec8e7d1ae501acdade792a4a577cd6449e1a84
+T8	Indicator 14601 14665	0ca09d4fde9e00c0987de44ae2ad51a01b3c4c2c11606fe8308a083805760ee7
+T9	Indicator 14667 14731	4378f3680ff070a1316663880f47eba54510beaeb2d897e7bbb8d6b45de63f96
+T10	Indicator 14733 14797	76c9d8226ce558c87c81236a9b95112b83c7b546863e29b88fec4dba5c720c0b
+T11	Indicator 14799 14863	7cc2d8d43093c3767c7c73dc2b4daeb96f70a7c455299e0c7824b4210edd6386
+T12	Indicator 14865 14929	9b2fd7189395b2f34781b499f5cae10ec86aa7ab373fbdc2a14ec4597d4799ba
+T13	Indicator 14931 14995	ac216d502233ca0fe51ac2bb64cfaf553d906dc19b7da4c023fec39b000bc0d7
+T14	Indicator 14997 15061	b1ccb5618925c8f0dda8d13efe4a1e1a93d1ceed9e26ec4a388229a28d1f8d5b
+T15	Indicator 15129 15193	ba9f4d3f4eba3fa7dce726150fe402e37359a7f36c07f3932a92bd711436f88c
+T16	Indicator 15195 15259	e194268bf682d81fc7dc1e437c53c952ffae55a9d15a1fc020f0219527b7c2ec
+T17	Malware 4 10	Rotexy
+T18	Malware 303 309	Rotexy
+T19	Malware 783 789	Rotexy
+T20	Malware 1177 1183	Rotexy
+T21	Malware 1688 1694	Rotexy
+T22	Malware 1843 1849	Rotexy
+T23	Malware 1972 1978	Rotexy
+T24	Malware 2186 2192	Rotexy
+T25	Malware 2796 2802	Rotexy
+T26	Malware 4861 4867	Rotexy
+T27	Malware 5461 5467	Rotexy
+T28	Malware 5956 5962	Rotexy
+T29	Malware 6886 6892	Rotexy
+T30	Malware 7169 7175	Rotexy
+T31	Malware 7725 7731	Rotexy
+T32	Malware 8659 8665	Rotexy
+T33	Malware 10247 10253	Rotexy
+T34	Malware 10833 10839	Rotexy
+T35	Malware 11046 11052	Rotexy
+T36	Malware 11760 11766	Rotexy
+T37	Malware 12227 12233	Rotexy
+T38	Malware 12945 12951	Rotexy
+T39	Malware 13427 13433	Rotexy
+T40	Malware 14060 14066	Rotexy
+T41	Malware 14199 14205	Rotexy
+T42	Malware 14249 14255	Rotexy
+T44	Application 6072 6084	SuperService
+T45	Application 6711 6723	SuperService
+T64	Application 14509 14528	Sberbank Online app
+T76	Location 14407 14413	Turkey
+T77	Indicator 15515 15531	gms-service.info
+T78	Indicator 15356 15367	test2016.ru
+T79	Indicator 15311 15323	holerole.org
+T80	Indicator 1269 1281	AvitoPay.apk
+T81	Indicator 1120 1151	Trojan-Banker.AndroidOS.Rotexy.
+T82	Indicator 15297 15309	darkclub.net
+T83	Indicator 4665 4675	bank.html,
+T84	Indicator 4692 4709	extortionist.html
+T86	Indicator 15454 15469	streamout.space
+T87	Indicator 15485 15500	streamout.space
+T88	Indicator 15412 15427	sync-weather.pw
+T89	Indicator 1367 1380	prodamfkz.ml,
+T90	Indicator 15400 15410	lineout.pw
+T91	Indicator 3434 3441	data.db
+T92	Indicator 3648 3655	data.db
+T93	Indicator 4503 4512	card.html
+T95	Indicator 15369 15382	blackstar.pro
+T96	Indicator 15325 15340	googleapis.link
+T97	Indicator 15437 15452	freedns.website
+T98	Indicator 1036 1066	Trojan-Spy.AndroidOS.SmsThief,
+T100	Indicator 1339 1352	youla9d6h.tk,
+T102	Indicator 1381 1394	avitoe0ys.tk,
+T103	Indicator 15502 15513	sky-sync.pw
+T104	Indicator 15384 15398	synchronize.pw
+T105	Indicator 1353 1366	prodam8n9.tk,
+T106	Indicator 15284 15295	secondby.ru
+T108	Indicator 4676 4687	update.html
+R1	indicates Arg1:T5 Arg2:T25
+R2	indicates Arg1:T6 Arg2:T27
+R3	indicates Arg1:T7 Arg2:T42
+R4	indicates Arg1:T8 Arg2:T42
+R5	indicates Arg1:T9 Arg2:T42
+R6	indicates Arg1:T10 Arg2:T42
+R7	indicates Arg1:T11 Arg2:T42
+R8	indicates Arg1:T12 Arg2:T42
+R9	indicates Arg1:T13 Arg2:T42
+R10	indicates Arg1:T14 Arg2:T42
+R11	indicates Arg1:T15 Arg2:T42
+R12	indicates Arg1:T16 Arg2:T42
+R13	indicates Arg1:T77 Arg2:T42
+R14	indicates Arg1:T78 Arg2:T42
+R15	indicates Arg1:T79 Arg2:T42
+R16	indicates Arg1:T80 Arg2:T20
+R17	indicates Arg1:T81 Arg2:T19
+R18	indicates Arg1:T82 Arg2:T42
+R19	indicates Arg1:T83 Arg2:T25
+R20	indicates Arg1:T84 Arg2:T25
+R21	indicates Arg1:T86 Arg2:T42
+R22	indicates Arg1:T87 Arg2:T42
+R23	indicates Arg1:T88 Arg2:T42
+R24	indicates Arg1:T89 Arg2:T20
+R25	indicates Arg1:T90 Arg2:T42
+R26	indicates Arg1:T91 Arg2:T25
+R27	indicates Arg1:T92 Arg2:T25
+R28	indicates Arg1:T93 Arg2:T25
+R30	indicates Arg1:T95 Arg2:T42
+R31	indicates Arg1:T96 Arg2:T42
+R32	indicates Arg1:T97 Arg2:T42
+R33	indicates Arg1:T98 Arg2:T19
+R35	indicates Arg1:T100 Arg2:T20
+R37	indicates Arg1:T102 Arg2:T20
+R38	indicates Arg1:T103 Arg2:T42
+R39	indicates Arg1:T104 Arg2:T42
+R40	indicates Arg1:T105 Arg2:T20
+R41	indicates Arg1:T106 Arg2:T42
+R43	indicates Arg1:T108 Arg2:T25
+T85	MalwareType 18 24	Trojan
+T109	MalwareType 27 33	banker
+T110	MalwareType 38 48	ransomware
+R44	isA Arg1:T17 Arg2:T85	
+R45	isA Arg1:T17 Arg2:T109	
+R46	isA Arg1:T17 Arg2:T110	
+T111	MalwareType 76 82	Trojan
+T112	Malware 209 215	Asacub
+T113	MalwareType 287 293	Trojan
+R47	isA Arg1:T18 Arg2:T113	
+T114	Time 347 369	August to October 2018
+T115	Location 438 444	Russia
+R48	targets Arg1:T18 Arg2:T115	
+T116	MalwareType 490 504	banking Trojan
+T117	MalwareType 925 931	Trojan
+T119	Time 993 1006	October 2014.
+T121	MalwareType 1776 1782	Trojan
+R52	isA Arg1:T21 Arg2:T121	
+T122	Time 1793 1803	since 2014
+T123	Time 1906 1910	2014
+R53	discoveredIn Arg1:T23 Arg2:T123	
+T124	AttackPattern 1979 2018	spreads via links sent in phishing SMSs
+T125	AttackPattern 2024 2057	prompt the user to install an app
+R54	uses Arg1:T23 Arg2:T124	
+R55	uses Arg1:T23 Arg2:T125	
+T47	AttackPattern 2078 2114	requests device administrator rights
+R56	uses Arg1:T23 Arg2:T47	
+T126	Time 2176 2184	mid-2015
+T70	AttackPattern 2448 2490	sent the infected device’s IMEI to the C&C
+T129	AttackPattern 2730 2791	could automatically reply to an SMS and immediately delete it
+R57	uses Arg1:T24 Arg2:T70	
+R58	uses Arg1:T24 Arg2:T129	
+T130	AttackPattern 2808 2971	sent information about the smartphone to the C&C, including the phone model, number, name of the mobile network operator, versions of the operating system and IMEI
+R59	uses Arg1:T25 Arg2:T130	
+T131	MalwareType 3116 3122	Trojan
+T132	MalwareType 3255 3261	Trojan
+T133	MalwareType 3392 3398	Trojan
+T134	MalwareType 3731 3737	Trojan
+T71	AttackPattern 3744 3836	using the AES algorithm to encrypt data communicated between the infected device and the C&C
+T135	Time 4053 4065	January 2016
+T136	Malware 4192 4198	Rotexy
+T137	Time 4271 4279	mid-2016
+T138	MalwareType 4409 4415	Trojan
+T139	Time 4442 4451	late 2016
+T140	MalwareType 4469 4475	Trojan
+T141	AttackPattern 4578 4608	steal users’ bank card details
+R60	uses Arg1:T26 Arg2:T141	
+T142	Time 4629 4639	early 2017
+T144	Time 4843 4847	2018
+T49	MalwareType 5103 5109	Trojan
+T73	MalwareType 5611 5617	Trojan
+T145	AttackPattern 5618 5719	checks if it is being launched in an emulation environment, and in which country it is being launched
+R61	uses Arg1:T27 Arg2:T145	
+T146	MalwareType 5837 5844	Trojan’
+T43	AttackPattern 5963 6070	registers with GCM and launches SuperService which tracks if the Trojan has device administrator privileges
+R63	uses Arg1:T28 Arg2:T43	
+R64	uses Arg1:T28 Arg2:T44	
+T68	AttackPattern 6090 6137	tracks its own status and relaunches if stopped
+T147	AttackPattern 6142 6271	performs a privilege check once every second; if unavailable, the Trojan starts requesting them from the user in an infinite loop
+R66	uses Arg1:T28 Arg2:T147	
+T148	AttackPattern 6391 6405	hides its icon
+R67	uses Arg1:T28 Arg2:T148	
+T149	AttackPattern 6410 6569	If the Trojan detects an attempt to revoke its administrator privileges, it starts periodically switching off the phone screen, trying to stop the user actions
+T150	AttackPattern 6571 6685	If the privileges are revoked successfully, the Trojan relaunches the cycle of requesting administrator privileges
+R68	uses Arg1:T28 Arg2:T149	
+R69	uses Arg1:T28 Arg2:T150	
+T151	AttackPattern 6772 6865	attempt to revoke the device administrator privileges, the Trojan tries to intimidate the use
+R70	uses Arg1:T29 Arg2:T151	
+T50	MalwareType 7219 7225	Trojan
+T152	MalwareType 7395 7401	Trojan
+T52	AttackPattern 7402 7513	stores information about C&C servers and the data harvested from the infected device in a local SQLite database
+R71	uses Arg1:T29 Arg2:T52	
+T153	MalwareType 7533 7539	Trojan
+T53	AttackPattern 7540 7639	registers in the administration panel and receives the information it needs to operate from the C&C
+R72	uses Arg1:T30 Arg2:T53	
+T154	AttackPattern 7732 7831	intercepts all incoming SMSs and processes them according to the templates it received from the C&C
+R73	uses Arg1:T31 Arg2:T154	
+T155	MalwareType 7864 7870	Trojan
+T156	AttackPattern 7871 7984	puts the phone into silent mode and switches off the screen so the user doesn’t notice that a new SMS has arrived
+R74	uses Arg1:T31 Arg2:T156	
+T157	MalwareType 8005 8011	Trojan
+T158	AttackPattern 8012 8120	sends an SMS to the specified phone number with the information it has received from the intercepted message
+R75	uses Arg1:T31 Arg2:T158	
+T99	AttackPattern 8351 8413	saves all SMSs to a local database and uploads them to the C&C
+R34	uses Arg1:T31 Arg2:T99	
+T159	MalwareType 8471 8477	Trojan
+T160	AttackPattern 8478 8557	sends a list of all the running processes and installed applications to the C&C
+R76	uses Arg1:T31 Arg2:T160	
+T161	MalwareType 14576 14582	Trojan
+T162	Location 14389 14396	Ukraine
+T163	Location 14398 14405	Germany
+T164	MalwareType 14300 14306	Trojan
+T165	Person 14326 14348	Russian-speaking users
+T166	Location 14280 14286	Russia
+R78	targets Arg1:T42 Arg2:T166	
+T54	AttackPattern 8767 8800	start, stop, restart SuperService
+R79	uses Arg1:T32 Arg2:T54	
+T55	AttackPattern 8840 8896	send SMS containing specified text to a specified number
+R80	uses Arg1:T32 Arg2:T55	
+T56	AttackPattern 8991 9042	revoke device administrator privileges from the app
+R81	uses Arg1:T32 Arg2:T56	
+T57	AttackPattern 9055 9096	download APK file from C&C and install it
+R82	uses Arg1:T32 Arg2:T57	
+T58	AttackPattern 9220 9268	send text received from C&C to all user contacts
+T59	AttackPattern 9337 9399	request unique message text for contacts from the address book
+T60	AttackPattern 9523 9593	send C&C all SMSs received and sent by user, as stored in phone memory
+T69	AttackPattern 9610 9652	send all contacts from phone memory to C&C
+T74	AttackPattern 9664 9839	send information about Trojan’s current status to C&C: whether it has device administrator privileges, which HTML page is currently displayed, whether screen is on or off, etc
+T75	AttackPattern 9851 9936	write an SMS to the device memory containing the text and sender number sent from C&C
+T167	AttackPattern 9995 10052	display phishing HTML page for entry of bank card details
+T168	AttackPattern 10084 10119	display HTML page of the ransomware
+T169	AttackPattern 10145 10178	display fake HTML page for update
+T170	AttackPattern 10196 10227	block display of all HTML pages
+R83	uses Arg1:T32 Arg2:T58	
+R84	uses Arg1:T32 Arg2:T59	
+R85	uses Arg1:T33 Arg2:T60	
+R86	uses Arg1:T33 Arg2:T69	
+R87	uses Arg1:T33 Arg2:T74	
+R88	uses Arg1:T33 Arg2:T75	
+R89	uses Arg1:T33 Arg2:T167	
+R90	uses Arg1:T33 Arg2:T168	
+R91	uses Arg1:T33 Arg2:T169	
+R92	uses Arg1:T33 Arg2:T170	
+T171	MalwareType 10340 10346	Trojan
+T172	AttackPattern 10347 10371	intercepts incoming SMSs
+R93	uses Arg1:T33 Arg2:T172	
+T61	AttackPattern 10434 10485	revoke device administrator privileges from the app
+T173	AttackPattern 10502 10537	enable and disable mobile internet;
+T174	AttackPattern 10556 10580	enable and disable Wi-Fi
+T175	AttackPattern 10593 10667	send text “install: [device IMEI]” to phone number from which SMS was sent
+T176	AttackPattern 10687 10725	stop displaying all blocking HTML page
+T177	AttackPattern 10740 10787	change C&C address to that specified in the SMS
+T178	MalwareType 11106 11112	Trojan
+T107	AttackPattern 11165 11191	blocks the device’s screen
+R42	uses Arg1:T35 Arg2:T107	
+T94	MalwareType 11224 11230	Trojan
+T101	AttackPattern 11284 11301	blocks the device
+R29	uses Arg1:T35 Arg2:T101	
+T179	MalwareType 11431 11437	Trojan
+T180	AttackPattern 11438 11462	displays a phishing page
+R36	uses Arg1:T35 Arg2:T180	
+T181	AttackPattern 11538 11638	mimics a legitimate bank form and blocks the device screen until the user enters all the information
+R100	uses Arg1:T35 Arg2:T181	
+T62	AttackPattern 12235 12350	ntercepts a message from the bank that contains the last four digits of the bank card connected to the phone number
+R101	uses Arg1:T37 Arg2:T62	
+T182	MalwareType 12356 12362	Trojan
+T183	AttackPattern 12408 12484	sends a command to display a fake data entry window to check the four digits
+R102	uses Arg1:T37 Arg2:T183	
+T187	AttackPattern 13444 13512	requesting device administrator privileges again in an infinite loop
+R106	uses Arg1:T39 Arg2:T187	
+T46	MalwareType 1212 1226	banking Trojan
+T63	MalwareType 1231 1241	ransomware
+R49	isA Arg1:T20 Arg2:T46	
+R50	isA Arg1:T20 Arg2:T63	
+T72	AttackPattern 2193 2250	used a plain-text JSON format to communicate with its C&C
+R51	uses Arg1:T24 Arg2:T72	
+T118	AttackPattern 2341 2404	a dynamically generated low-level domain was used as an address
+R107	uses Arg1:T24 Arg2:T118	
+R108	uses Arg1:T25 Arg2:T71	
+T48	AttackPattern 5130 5169	using different methods of obfuscation.
+R109	uses Arg1:T26 Arg2:T48	
+R62	uses Arg1:T33 Arg2:T61	
+R94	uses Arg1:T33 Arg2:T173	
+R95	uses Arg1:T33 Arg2:T174	
+R96	uses Arg1:T33 Arg2:T175	
+R97	uses Arg1:T33 Arg2:T176	
+R98	uses Arg1:T33 Arg2:T177	
+R99	targets Arg1:T42 Arg2:T165	
+R77	targets Arg1:T42 Arg2:T162	
+R103	targets Arg1:T42 Arg2:T163	
+R104	targets Arg1:T42 Arg2:T76	
+T51	Application 566 587	Cloud Messaging (GCM)
+T65	MalwareType 952 959	spyware
+T120	MalwareType 960 966	Trojan
+T127	Time 1851 1860	2014–2015
+T128	AttackPattern 2125 2165	starts communicating with its C&C server
+R105	uses Arg1:T23 Arg2:T128	
+T143	MalwareType 2441 2447	Trojan
+R110	isA Arg1:T24 Arg2:T143	
+T184	AttackPattern 2509 2561	received a set of rules for processing incoming SMSs
+R111	uses Arg1:T24 Arg2:T184	
+T185	MalwareType 2723 2729	Trojan
+T186	MalwareType 3138 3144	Trojan
+T188	Application 3171 3192	Cloud Messaging (GCM)
+T189	Time 3692 3701	2015–2016
+T190	Time 4260 4264	2016
+T191	Time 4613 4622	2017–2018
+T192	MalwareType 4780 4786	Trojan
+T193	Time 5335 5339	2018
+T194	Application 5978 5981	GCM
+T195	Application 5995 6007	SuperService
+T196	MalwareType 6028 6034	Trojan
+R65	uses Arg1:T28 Arg2:T68	
+T197	MalwareType 6208 6214	Trojan
+T198	MalwareType 6417 6423	Trojan
+T199	MalwareType 6619 6625	Trojan
+T200	MalwareType 6831 6837	Trojan
+T201	MalwareType 7321 7327	Trojan
+T202	AttackPattern 7337 7386	dynamically generated subdomains can also be used
+R112	uses Arg1:T30 Arg2:T202	
+T203	AttackPattern 7231 7263	send information from the device
+R113	uses Arg1:T30 Arg2:T203	
+T204	Application 8634 8654	banking applications
+T205	Application 8621 8630	antivirus
+T206	AttackPattern 8809 8827	update C&C address
+R114	uses Arg1:T32 Arg2:T206	
+T207	AttackPattern 8917 8954	reregister in the administration pane
+R115	uses Arg1:T32 Arg2:T207	
+T208	AttackPattern 9409 9511	contact URL received from C&C using User-Agent value that was also received from C&C or local database
+R116	uses Arg1:T32 Arg2:T208	
+T209	MalwareType 13265 13271	Trojan
+T210	MalwareType 13694 13700	Trojan
+T211	Time 15270 15279	2014–2015
+T212	Time 15342 15351	2015–2016
+T213	Time 15429 15433	2016
+T214	Time 15471 15480	2017–2018
+R117	has Arg1:T2 Arg2:T51	
+R118	has Arg1:T4 Arg2:T188	
+T215	MalwareType 14175 14181	Trojan
+T216	Application 14461 14488	Kaspersky Internet Security
+T217	Application 2659 2674	payment systems
+T218	Application 8788 8800	SuperService
+T219	Application 9962 9965	GCM
+T220	MalwareType 10109 10119	ransomware

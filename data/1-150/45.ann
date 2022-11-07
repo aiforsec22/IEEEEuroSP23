@@ -1,0 +1,79 @@
+T1	OS 1572 1579	Android
+T2	Malware 0 9	Skygofree
+T3	Malware 46 55	Skygofree
+T4	Malware 531 540	Skygofree
+T5	Malware 657 666	Skygofree
+T6	Malware 1046 1055	Skygofree
+T7	Malware 1649 1658	Skygofree
+T8	Malware 1858 1867	Skygofree
+T9	Malware 2595 2604	Skygofree
+T10	Malware 2855 2864	Skygofree
+T11	Malware 2994 3003	Skygofree
+T12	Malware 3325 3334	Skygofree
+T14	Application 4480 4507	Kaspersky Internet Security
+T15	Application 4756 4785	Kaspersky Security for Mobile
+T16	Application 4803 4843	Kaspersky Endpoint Security for Business
+T18	MalwareType 94 101	spyware
+R1	isA Arg1:T3 Arg2:T18	
+T19	AttackPattern 131 172	turning on audio recording by geolocation
+T20	AttackPattern 177 202	stealing private messages
+R2	uses Arg1:T3 Arg2:T19	
+R3	uses Arg1:T3 Arg2:T20	
+T17	AttackPattern 766 815	track the location of a device it is installed on
+T21	AttackPattern 820 880	turn on audio recording when the owner is in a certain place
+T22	AttackPattern 925 954	start listening in on victims
+R4	uses Arg1:T5 Arg2:T17	
+R5	uses Arg1:T5 Arg2:T21	
+R6	uses Arg1:T5 Arg2:T22	
+T23	AttackPattern 1083 1173	connecting an infected smartphone or tablet to a Wi-Fi network controlled by the attackers
+R7	uses Arg1:T6 Arg2:T23	
+R9	targets Arg1:T7 Arg2:T1	
+T25	AttackPattern 1685 1726	periodically sending system notifications
+R10	uses Arg1:T7 Arg2:T25	
+T27	Application 1970 1988	Facebook Messenger
+T28	Application 1990 1995	Skype
+T29	Application 1997 2002	Viber
+T30	Application 2008 2016	WhatsApp
+R12	targets Arg1:T8 Arg2:T27	
+R13	targets Arg1:T8 Arg2:T28	
+R14	targets Arg1:T8 Arg2:T30	
+R15	targets Arg1:T8 Arg2:T29	
+T13	AttackPattern 2085 2139	reads WhatsApp messages through Accessibility Services
+R16	uses Arg1:T8 Arg2:T13	
+T31	Malware 2367 2376	Skygofree
+T32	AttackPattern 2381 2412	collects messages from WhatsApp
+R17	uses Arg1:T31 Arg2:T32	
+T33	AttackPattern 2618 2698	turn on the front-facing camera and take a shot when the user unlocks the device
+R18	uses Arg1:T9 Arg2:T33	
+T35	AttackPattern 2877 2945	intercept calls, SMS messages, calendar entries, and other user data
+R20	uses Arg1:T10 Arg2:T35	
+T36	Time 3017 3026	late 2017
+R21	discoveredIn Arg1:T11 Arg2:T36	
+T37	Time 3122 3126	2014
+T38	MalwareType 3241 3248	spyware
+R22	isA Arg1:T11 Arg2:T38	
+T40	AttackPattern 3338 3393	disguised as an update to improve mobile Internet speed
+R24	uses Arg1:T12 Arg2:T40	
+T43	Location 3834 3839	Italy
+R27	targets Arg1:T12 Arg2:T43	
+T44	OS 4512 4519	Android
+T45	AttackPattern 1941 2016	monitor popular apps such as Facebook Messenger, Skype, Viber, and WhatsApp
+R28	uses Arg1:T8 Arg2:T45	
+T46	Application 2091 2099	WhatsApp
+R29	targets Arg1:T8 Arg2:T46	
+T47	Application 2404 2412	WhatsApp
+R30	targets Arg1:T31 Arg2:T47	
+T24	MalwareType 56 62	Trojan
+T26	MalwareType 509 515	Trojan
+T34	Application 2117 2139	Accessibility Services
+T39	MalwareType 4057 4063	Trojan
+T41	MalwareType 212 218	Trojan
+T42	MalwareType 2078 2084	Trojan
+T48	MalwareType 3441 3447	Trojan
+T49	AttackPattern 3452 3602	displays a notification that setup is supposedly in progress, conceals itself from the user, and requests further instructions from the command server
+R8	uses Arg1:T12 Arg2:T49	
+R11	uses Arg1:T8 Arg2:T34	
+R19	isA Arg1:T3 Arg2:T24	
+R23	isA Arg1:T4 Arg2:T26	
+T50	MalwareType 2803 2809	Trojan
+T51	Application 2420 2442	Accessibility Services

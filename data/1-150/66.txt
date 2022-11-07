@@ -1,0 +1,35 @@
+Unique Monokle Android Spyware Self-Signs Certificates
+Researchers have linked the surveillance tool to a Russian tech firm that has been sanctioned for interfering with the 2016 U.S. presidential election.
+
+A never-before-publicized mobile spy tool, a mobile surveillanceware remote access trojan (RAT) for Android called Monokle, has been spotted using novel techniques to exfiltrate data.
+
+According to the Lookout researchers who discovered Monokle in the wild, the malware has the ability to self-sign trusted certificates to intercept encrypted SSL traffic. It can also record a phone’s lockscreen activity in order to obtain passcodes, and it can leverage accessibility services to gain access to third-party apps.
+
+“While most of its functionality is typical of a mobile surveillanceware, Monokle is unique in that it uses existing methods in novel ways in order to be extremely effective at data exfiltration, even without root access,” according to a report issued on Wednesday. “Among other things, Monokle makes extensive use of the Android accessibility services to exfiltrate data from third party applications and uses predictive-text dictionaries to get a sense of the topics of interest to a target. Monokle will also attempt to record the screen during a screen unlock event so as to compromise a user’s PIN, pattern or password.”
+
+On the self-signing front, with root access, Monokle is capable of installing additional attacker-specified certificates to the trusted certificates on an infected device, “effectively opening up the target and the device to man-in-the-middle (MITM) attacks against TLS traffic,” the researchers wrote. To do this, it remounts system partition to install attacker specified certificate in /system/etc/security/cacerts/).
+
+Other functionality includes a cornucopia of classic spyware tricks, such as the ability to harvest contacts and calendar information, record audio and calls, retrieve emails and messages (including from WhatsApp, Skype and more), take photos and videos, track device location and take screenshots. Other features include keylogging, retrieving browsing and call histories, interacting with popular office applications to retrieve document text, making calls and sending text messages, device-fingerprinting, retrieving accounts and associated passwords, and screen recordings.
+
+It can also delete arbitrary files and download new ones, reboot a device and execute arbitrary shell code. And, it can also sniff out the salt that was used when storing a user’s password at rest allowing for the plaintext retrieval of a user’s password or PIN code; and further, it can reset a user’s PIN code.
+
+The client applications can be controlled by SMS messages, inbound TCP connections to a listening thread, outbound beaconing TCP connections to a command-and-control, e-mail message exchange through POP3 and SMTP, and by incoming phone calls. Outbound traffic appears to always be tunnelled over TLS in most recent app samples, according to Lookout.
+
+Targets
+Monokle, like most advanced threat weapons, appears to be very targeted: It is spreading by way of a very limited set of trojanized applications that contain legitimate functionality to avoid user suspicion. Lookout has observed samples that go back to March 2016, and its telemetry shows that activity appears to remain small but consistent, peaking during the first half of 2018 and continuing to the present day.
+
+Monokle has likely been used to target individuals in the Caucasus regions and individuals interested in the Ahrar al-Sham militant group in Syria, among others, according to Lookout’s analysis of the apps in question; for instance, a trojanized app called Ahrar Maps made the rounds in Syria during early 2017, offered through a third-party site that advertises association with Ahrar al-Sham.
+
+“There is some evidence pointing to potential targets within configuration files and titles of applications that contained Monokle,” according to the report. “Based on titles and icons of certain applications, we conclude that individuals in the following groups are targets of Monokle: Individuals that are interested in Islam; individuals that are interested in or associated with the Ahrar al-Sham militant group in Syria; individuals living in or associated with the Caucasus regions of Eastern Europe; and individuals that may be interested in a messaging application called ‘UzbekChat’ referencing the Central Asian nation and former Soviet republic Uzbekistan.”
+
+In several Android samples of Monokle, there are unused commands and data transfer objects (DTOs) that suggest the existence of an iOS version of the client, though no iOS versions have been yet seen in the wild.
+
+“These classes and commands appear to serve no purpose as part of the Android client and may have been generated and included in it unintentionally,” according to the report.
+
+Attribution
+After looking at the configuration files of multiple samples from the malware family, Lookout found that they rely on at least 22 different command-and-control servers and have specified control phones that use the +7 country code of Russia.
+
+Researchers attributed the RAT to Special Technology Center (STC), a Russian defense contractor that was previously sanctioned by the U.S. government under President Obama, for interfering in the 2016 presidential elections. Lookout researchers said that the group has a software suite with both defensive and offensive capabilities that it offers to government customers.
+
+“STC’s Android security suite and Monokle are tied to one another with the help of signer certificates and overlapping command-and-control infrastructure,” according to the report. “Command-and-control infrastructure that communicates with the Defender application [a known STC product] also communicates with Monokle samples. The signing certificates used for signing Android application packages overlap between Defender and Monokle as well. Additional overlap was observed by Lookout researchers between Monokle and the defensive security software produced by STC in the authors’ development and implementation choices.”
+

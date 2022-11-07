@@ -1,0 +1,128 @@
+T3	OS 1719 1726	Android
+T4	OS 2988 2995	Android
+T6	OS 3779 3786	Android
+T7	OS 4081 4088	Android
+T8	OS 4415 4418	iOS
+T9	OS 4497 4500	iOS
+T11	Malware 154 161	Monokle
+T12	Malware 365 372	Monokle
+T13	Malware 786 793	Monokle
+T14	Malware 970 977	Monokle
+T15	Malware 2770 2777	Monokle
+T16	Malware 2939 2946	Monokle
+T17	Malware 3070 3077	Monokle
+T18	Malware 3272 3279	Monokle
+T19	Malware 3702 3709	Monokle
+T20	Malware 3757 3764	Monokle
+T21	Malware 4022 4029	Monokle
+T22	Malware 4139 4146	Monokle
+T23	Malware 4243 4250	Monokle
+T24	Malware 4430 4437	Monokle
+T25	Organization 107 114	Lookout
+T26	Organization 216 223	Lookout
+T27	Organization 470 477	Lookout
+T28	Organization 4215 4222	Lookout
+T29	ThreatActor 668 697	Special Technology Centre Ltd
+T31	ThreatActor 700 703	STC
+T32	ThreatActor 4299 4302	STC
+T33	Application 3809 3817	Defender
+T35	Application 4126 4134	Defender
+T36	Application 3978 3998	Defender application
+T38	Location 2828 2836	Caucasus
+T1	MalwareType 8 15	Spyware
+T30	Malware 16 23	Monokle
+R1	isA Arg1:T30 Arg2:T1	
+T34	Location 38 45	Russian
+T43	ThreatActor 186 212	Russian defense contractor
+T37	Time 850 860	March 2016
+T41	AttackPattern 1092 1117	exfiltrate requested data
+R2	uses Arg1:T14 Arg2:T41	
+T42	AttackPattern 1190 1211	Track device location
+T44	AttackPattern 1213 1239	Get nearby cell tower info
+T45	AttackPattern 1241 1283	Retrieve accounts and associated passwords
+T46	AttackPattern 1286 1308	Record audio and calls
+T47	AttackPattern 1310 1360	Suicide functionality and cleanup of staging files
+T48	AttackPattern 1363 1385	Make screen recordings
+T49	AttackPattern 1387 1422	Keylogger and device-fingerprinting
+T50	AttackPattern 1424 1460	Retrieve browsing and call histories
+T51	AttackPattern 1462 1498	Take photos, videos, and screenshots
+T52	AttackPattern 1500 1536	Retrieve emails, SMSes, and Messages
+T53	AttackPattern 1538 1577	Steal contacts and calendar information
+T54	AttackPattern 1579 1612	Make calls and send text messages
+T55	AttackPattern 1614 1656	Execute arbitrary shell commands, as root,
+R3	uses Arg1:T14 Arg2:T42	
+R4	uses Arg1:T14 Arg2:T44	
+R5	uses Arg1:T14 Arg2:T45	
+R6	uses Arg1:T14 Arg2:T46	
+R7	uses Arg1:T14 Arg2:T47	
+R8	uses Arg1:T14 Arg2:T48	
+R9	uses Arg1:T14 Arg2:T49	
+R10	uses Arg1:T14 Arg2:T50	
+R11	uses Arg1:T14 Arg2:T51	
+R12	uses Arg1:T14 Arg2:T52	
+R13	uses Arg1:T14 Arg2:T55	
+T10	Application 1799 1810	Google Docs
+T56	Application 1812 1830	Facebook messenger
+T57	Application 1832 1834	VK
+T58	Application 1836 1844	Whatsapp
+T59	Application 1846 1852	WeChat
+T60	Application 1854 1860	Viber,
+T61	Application 1861 1866	Skype
+T62	Application 1872 1880	Snapchat
+R14	uses Arg1:T14 Arg2:T53	
+R15	uses Arg1:T14 Arg2:T54	
+R16	targets Arg1:T14 Arg2:T10	
+R17	targets Arg1:T14 Arg2:T56	
+R18	targets Arg1:T14 Arg2:T57	
+R19	targets Arg1:T14 Arg2:T58	
+R20	targets Arg1:T14 Arg2:T59	
+R21	targets Arg1:T14 Arg2:T60	
+R22	targets Arg1:T14 Arg2:T61	
+R23	targets Arg1:T14 Arg2:T62	
+R24	targets Arg1:T14 Arg2:T3	
+T63	AttackPattern 1922 1976	read text notifications displayed on a device’s screen
+T64	AttackPattern 2127 2247	attempts to record the phone screen during a screen unlock event in order to obtain the phone’s PIN, pattern or password
+R25	targets Arg1:T15 Arg2:T38	
+T66	Organization 2879 2892	Ahrar al-Sham
+T67	Location 2911 2916	Syria
+T68	AttackPattern 2314 2479	installs attacker-specified root CA certificates to the trusted certificates on an infected device that would attackers to carry out man-in-the-middle (MITM) attacks
+T69	Organization 2495 2502	Lookout
+R26	targets Arg1:T15 Arg2:T66	
+R27	targets Arg1:T15 Arg2:T67	
+R28	uses Arg1:T14 Arg2:T63	
+R30	uses Arg1:T14 Arg2:T64	
+R31	uses Arg1:T14 Arg2:T68	
+R33	targets Arg1:T16 Arg2:T4	
+T71	ThreatActor 3727 3730	STC
+T72	ThreatActor 3773 3776	STC
+R35	targets Arg1:T20 Arg2:T33	
+R36	targets Arg1:T20 Arg2:T36	
+R37	targets Arg1:T21 Arg2:T7	
+R39	targets Arg1:T21 Arg2:T35	
+R40	discoveredIn Arg1:T13 Arg2:T37	
+T39	MalwareType 139 146	spyware
+R41	isA Arg1:T11 Arg2:T39	
+R42	hasAuthor Arg1:T11 Arg2:T43	
+T73	ThreatActor 590 643	Russia-based company, Special Technology Centre, Ltd.
+R44	hasAuthor Arg1:T12 Arg2:T73	
+R47	hasAuthor Arg1:T19 Arg2:T71	
+R48	hasAuthor Arg1:T19 Arg2:T72	
+R49	hasAuthor Arg1:T23 Arg2:T32	
+T74	Indicator 3287 3310	XOR obfuscated DEX file
+R50	indicates Arg1:T74 Arg2:T18	
+T75	OS 0 7	Android
+R51	targets Arg1:T30 Arg2:T75	
+T40	OS 327 334	Android
+T76	MalwareType 335 351	surveillanceware
+R43	isA Arg1:T12 Arg2:T76	
+R45	targets Arg1:T12 Arg2:T40	
+T2	AttackPattern 1712 1787	abuses Android accessibility services to capture data from third party apps
+R46	uses Arg1:T14 Arg2:T2	
+T77	MalwareType 1169 1176	spyware
+T78	MalwareType 2306 2313	spyware
+T79	MalwareType 2508 2515	spyware
+T80	Application 4259 4286	defensive security software
+T81	Application 1727 1749	accessibility services
+T82	MalwareType 1387 1396	Keylogger
+T83	OS 3025 3032	Android
+T84	Organization 460 467	Lookout

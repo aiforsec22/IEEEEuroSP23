@@ -1,0 +1,11 @@
+HACKING TEAM BREACH HANGOVER: ANDROID SPYWARE AVAILABLE TO ANYONE
+When your business is making software, you want to keep the software code safe because it is the intellectual property that your profits hang on.  When your business is writing exploits and malicious code, you want to keep it safe because your profits and the safety of others depend on it.  The Hacking Team breach that occur a few weeks ago has released into the wild the tools necessary to infect Android with spyware.
+Called RCSAndroid it has been termed “one of the most professionally developed and sophisticated Android malware ever exposed” by Trend Micro.  RCSANDROID has the ability to:
+
+Collect Passwords for both networks (your WiFi) and accounts (your bank)
+Collect your location
+Record you calls or what is being said around your device
+Collect you contact information
+Collect you email and texts
+And a lot more.
+RCSAndroid was known about as far back as 2012.  It uses two known vulnerabilities in the default Android Internet browser found in Android versions 4.0 to 4.3 (CVE-2012-2825 and CVE-2012-2871).  There was also fake app on Google Play that helped compromise a system.  According to emails leaked in the Hacking Team data dump work for a fifth version of the software and it is not clear if this was the code that was released.

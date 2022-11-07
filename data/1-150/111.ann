@@ -1,0 +1,41 @@
+T1	OS 42 49	Android
+T2	OS 91 98	Android
+T3	OS 1792 1799	Android
+T5	Organization 976 982	Google
+T8	Organization 2298 2304	Google
+T11	Malware 0 4	Judy
+T12	Malware 676 680	Judy
+T13	Malware 942 946	Judy
+T14	Malware 1053 1057	Judy
+T15	Malware 1333 1337	Judy
+T16	Malware 1761 1765	Judy
+T17	Malware 1848 1852	Judy
+T18	Organization 225 235	Checkpoint
+T19	Organization 417 427	Checkpoint
+T20	Organization 1432 1442	Checkpoint
+T21	Organization 1648 1658	Checkpoint
+T22	Organization 1888 1898	Checkpoint
+T23	Application 139 156	Google Play Store
+T24	Application 1360 1377	Google Play Store
+T25	ThreatActor 1084 1093	Kiniwinia
+R1	targets Arg1:T11 Arg2:T1	
+R2	targets Arg1:T11 Arg2:T23	
+T28	Malware 259 263	Judy
+T29	ThreatActor 507 515	Kiniwini
+T30	ThreatActor 531 545	ENISTUDIO Corp
+*	hasAlias T30 T29 T28
+T31	Application 562 590	Animal Judy: Fennec Fox Care
+T33	Application 592 610	Judy’s Happy House
+T34	Application 616 645	Fashion Judy: Frozen Princess
+R4	uses Arg1:T28 Arg2:T31	
+R5	uses Arg1:T28 Arg2:T33	
+R6	uses Arg1:T28 Arg2:T34	
+T35	AttackPattern 885 913	generating fraudulent clicks
+R8	uses Arg1:T12 Arg2:T35	
+T36	Application 1022 1032	Play Store
+R9	targets Arg1:T16 Arg2:T3	
+T6	Application 2168 2185	Google Play Store
+T7	Time 2292 2296	2012
+T9	Application 2488 2507	Google Play Protect
+T10	Application 2651 2668	Google Play Store
+T26	Application 2865 2889	mobile security software

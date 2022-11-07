@@ -1,0 +1,144 @@
+T1	OS 552 559	Android
+T2	OS 1003 1010	Android
+T3	OS 1189 1196	Android
+T4	OS 1658 1667	Android 4
+T5	OS 2970 2977	Android
+T6	OS 3101 3108	Android
+T8	OS 4629 4636	Android
+T9	OS 4751 4758	Android
+T11	OS 7738 7745	Android
+T12	Organization 205 211	Google
+T17	Organization 666 672	Google
+T18	Organization 775 781	Google
+T19	Organization 1260 1266	Google
+T20	Organization 1381 1387	Google
+T21	Organization 2360 2366	Google
+T22	Organization 2905 2911	Google
+T28	Application 6128 6139	Google Play
+T31	Organization 6840 6846	Google
+T32	Organization 6872 6878	Google
+T33	Organization 6922 6928	Google
+T34	Organization 6989 6995	Google
+T35	Organization 7143 7149	Google
+T40	Organization 7265 7271	Google
+T41	Organization 7374 7380	Google
+T42	Organization 7581 7587	Google
+T43	Organization 7632 7638	Google
+T44	Organization 7687 7693	Google
+T45	Malware 519 527	Gooligan
+T46	Malware 815 823	Gooligan
+T47	Malware 1618 1626	Gooligan
+T48	Malware 3027 3035	Gooligan
+T49	Malware 3521 3529	Gooligan
+T50	Malware 4384 4392	Gooligan
+T51	Malware 4517 4525	Gooligan
+T52	Malware 4953 4961	Gooligan
+T53	Malware 5477 5485	Gooligan
+T55	Malware 5795 5803	Gooligan
+T56	Malware 6080 6088	Gooligan
+T57	Malware 7544 7552	Gooligan
+T58	Application 609 616	SnapPea
+T59	Application 3606 3613	SnapPea
+T60	Organization 635 646	Check Point
+T61	Organization 2167 2178	Check Point
+T62	Organization 4340 4351	Check Point
+T63	Malware 1079 1089	Ghost Push
+T64	Application 1526 1535	SafetyNet
+T65	Application 2179 2188	ZoneAlarm
+T66	Vulnerability 5090 5111	VROOT (CVE-2013-6282)
+T67	Location 1795 1799	Asia
+T70	Indicator 2488 2521	https://gooligan.checkpoint.com/.
+T72	Malware 153 161	Gooligan
+R1	targets Arg1:T72 Arg2:T12	
+T73	AttackPattern 369 397	steals authentication tokens
+R2	uses Arg1:T72 Arg2:T73	
+T13	Application 435 446	Google Play
+T14	Application 448 453	Gmail
+T15	Application 455 468	Google Photos
+T16	Application 470 481	Google Docs
+T74	Application 483 490	G Suite
+T75	Application 492 504	Google Drive
+R3	targets Arg1:T72 Arg2:T13	
+R4	targets Arg1:T72 Arg2:T14	
+R5	targets Arg1:T72 Arg2:T15	
+R6	targets Arg1:T72 Arg2:T16	
+R7	targets Arg1:T72 Arg2:T74	
+R8	targets Arg1:T72 Arg2:T75	
+R9	targets Arg1:T45 Arg2:T58	
+T76	Organization 863 874	Check Point
+T77	Person 967 980	Adrian Ludwig
+T69	Malware 1371 1379	Gooligan
+T78	OS 1669 1679	Jelly Bean
+T79	OS 1681 1687	KitKat
+T80	OS 1696 1704	Lollipop
+R10	targets Arg1:T47 Arg2:T4	
+R11	targets Arg1:T47 Arg2:T78	
+R12	targets Arg1:T47 Arg2:T79	
+R13	targets Arg1:T47 Arg2:T80	
+T81	Location 1820 1826	Europe
+R14	targets Arg1:T47 Arg2:T67	
+R15	targets Arg1:T47 Arg2:T81	
+T23	Application 3167 3178	Google Play
+T71	AttackPattern 3373 3510	installed using phishing scams where attackers broadcast links to infected apps to unsuspecting users via SMS or other messaging services
+R16	uses Arg1:T48 Arg2:T71	
+T82	Malware 3573 3581	Gooligan
+T83	Malware 3746 3755	Ghostpush
+T84	Malware 3757 3767	MonkeyTest
+T85	Malware 3773 3781	Xinyinhe
+T86	Time 3791 3795	2015
+T87	Time 3863 3867	2016
+T88	AttackPattern 4117 4190	simulates clicks on app advertisements provided by legitimate ad networks
+T89	AttackPattern 4195 4232	forces the app to install on a device
+R17	uses Arg1:T82 Arg2:T88	
+R18	uses Arg1:T82 Arg2:T89	
+T90	AttackPattern 4870 4948	sends data about the device to the campaign’s Command and Control (C&C) server
+R19	uses Arg1:T51 Arg2:T90	
+T10	AttackPattern 4967 5064	downloads a rootkit from the C&C server that takes advantage of multiple Android 4 and 5 exploits
+R20	uses Arg1:T52 Arg2:T10	
+T91	Vulnerability 5116 5140	Towelroot (CVE-2014-3153
+R21	has Arg1:T9 Arg2:T66	
+R22	has Arg1:T9 Arg2:T91	
+T92	AttackPattern 5368 5443	has full control of the device and can execute privileged commands remotely
+R23	uses Arg1:T52 Arg2:T92	
+T93	AttackPattern 5486 5578	downloads a new, malicious module from the C&C server and installs it on the infected device
+R24	uses Arg1:T53 Arg2:T93	
+T94	Malware 5765 5775	HummingBad
+T24	AttackPattern 5592 5716	injects code into running Google Play or GMS (Google Mobile Services) to mimic user behavior so Gooligan can avoid detection
+R25	uses Arg1:T53 Arg2:T24	
+T25	AttackPattern 5811 5882	Steal a user’s Google email account and authentication token informatio
+R26	uses Arg1:T55 Arg2:T25	
+T26	AttackPattern 5885 5954	Install apps from Google Play and rate them to raise their reputation
+T27	AttackPattern 5956 5990	Install adware to generate revenue
+R27	uses Arg1:T55 Arg2:T26	
+R28	uses Arg1:T55 Arg2:T27	
+T30	Application 6454 6465	Google Play
+T54	Malware 6598 6608	HummingBad
+T95	AttackPattern 6627 6715	fakes device identification information, such as IMEI and IMSI, to download an app twice
+R30	uses Arg1:T56 Arg2:T95	
+T36	Application 7190 7201	Google Play
+T37	Application 7203 7208	Gmail
+T38	Application 7210 7222	Google Docs,
+T39	Application 7223 7235	Google Drive
+T68	Application 7241 7254	Google Photos
+R31	targets Arg1:T57 Arg2:T42	
+T7	AttackPattern 3934 3986	injects malicious code into Android system processes
+R32	uses Arg1:T82 Arg2:T7	
+T96	Malware 4591 4599	Gooligan
+R33	uses Arg1:T82 Arg2:T59	
+R34	uses Arg1:T94 Arg2:T24	
+R29	uses Arg1:T54 Arg2:T95	
+T29	OS 3962 3969	Android
+T97	OS 5040 5055	Android 4 and 5
+T98	OS 5271 5278	Android
+T99	Application 5618 5629	Google Play
+T100	Application 5633 5661	GMS (Google Mobile Services)
+T101	Malware 5688 5696	Gooligan
+T102	Application 5826 5832	Google
+T103	Application 5903 5914	Google Play
+T104	MalwareType 5964 5970	adware
+T105	Application 6265 6276	Google Play
+T106	AttackPattern 6219 6323	leaves a positive review and a high rating on Google Play using content it receives from the C&C server.
+R35	uses Arg1:T56 Arg2:T106	
+T107	Application 4690 4705	third-party app
+T108	Application 3109 3119	app stores
+T109	Application 2141 2150	antivirus

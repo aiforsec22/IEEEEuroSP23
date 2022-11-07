@@ -1,0 +1,61 @@
+T1	OS 42 49	Android
+T2	OS 113 120	Android
+T3	OS 998 1005	Android
+T4	OS 1173 1180	Android
+T5	Malware 21 31	ViceLeaker
+T6	Malware 145 155	ViceLeaker
+T7	Organization 1045 1054	Kaspersky
+T8	Organization 1504 1513	Kaspersky
+T9	Organization 1562 1571	Kaspersky
+T10	Organization 1777 1786	Kaspersky
+T11	Organization 2233 2242	Kaspersky
+T12	Organization 2430 2439	Kaspersky
+T18	Organization 2481 2486	GReAT
+T19	Location 274 280	Israel
+T20	Location 300 311	Middle East
+T23	Location 2070 2075	China
+T24	Location 2136 2140	U.S.
+T25	Location 2190 2199	Hong Kong
+T26	Organization 2446 2479	Global Research and Analysis Team
+R1	targets Arg1:T5 Arg2:T1	
+R2	targets Arg1:T6 Arg2:T2	
+T29	Time 183 187	2016
+T30	Organization 223 232	Kaspersky
+T31	Malware 354 360	Triout
+R3	targets Arg1:T31 Arg2:T19	
+R4	targets Arg1:T31 Arg2:T20	
+T32	AttackPattern 392 521	steal sensitive information, including call recordings, text messages, photos, videos, and location data without users’ knowledge
+R5	uses Arg1:T31 Arg2:T32	
+T33	AttackPattern 572 593	backdoor capabilities
+T34	AttackPattern 605 635	upload, download, delete files
+T35	AttackPattern 637 661	record surrounding audio
+T36	AttackPattern 663 678	takeover camera
+T37	AttackPattern 684 731	make calls or send messages to specific numbers
+R6	uses Arg1:T31 Arg2:T33	
+R7	uses Arg1:T31 Arg2:T34	
+R8	uses Arg1:T31 Arg2:T35	
+R9	uses Arg1:T31 Arg2:T36	
+R10	uses Arg1:T31 Arg2:T37	
+T38	AttackPattern 857 927	disassemble the code of an original application and add malicious code
+R11	uses Arg1:T31 Arg2:T38	
+T39	Time 936 944	May 2018
+T40	Location 1027 1034	Israeli
+T13	Time 1676 1697	first quarter of 2019
+T14	Time 1710 1720	Q4 of 2018
+T15	Time 1768 1775	Q1 2019
+T16	Location 1891 1897	Moscow
+T17	Malware 2253 2262	AppleJeus
+T21	Location 2289 2300	North Korea
+T22	ThreatActor 2325 2338	Lazarus Group
+R12	hasAuthor Arg1:T17 Arg2:T22	
+R13	has Arg1:T22 Arg2:T21	
+R14	has Arg1:T12 Arg2:T26	
+T27	Location 2566 2570	Asia
+T28	Person 2662 2675	Vitaly Kamlut
+T41	Organization 2689 2694	GReAT
+R15	targets Arg1:T31 Arg2:T23	
+R16	targets Arg1:T31 Arg2:T24	
+R17	targets Arg1:T31 Arg2:T25	
+T42	MalwareType 327 347	surveillance malware
+T43	MalwareType 1055 1062	spyware
+T44	MalwareType 1428 1435	spyware

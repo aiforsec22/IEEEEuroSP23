@@ -1,0 +1,90 @@
+T1	OS 286 293	Android
+T2	OS 455 462	Android
+T3	OS 1391 1398	Android
+T4	OS 3788 3795	Android
+T7	Organization 4401 4407	Google
+T8	Malware 0 8	Mandrake
+T9	Malware 420 428	Mandrake
+T10	Malware 904 912	Mandrake
+T11	Malware 1057 1065	Mandrake
+T12	Malware 1275 1283	Mandrake
+T14	Malware 2121 2129	Mandrake
+T15	Malware 2968 2976	Mandrake
+T16	Malware 3916 3924	Mandrake
+T17	Malware 4311 4319	Mandrake
+T18	Malware 4482 4490	Mandrake
+T19	Organization 4381 4386	ZDNet
+T20	Location 962 968	Europe
+T21	Location 3852 3858	Europe
+T22	Location 977 985	Americas
+T23	Person 3347 3355	Botezatu
+T24	Location 4192 4204	Soviet Union
+T25	Location 4216 4222	Africa
+T26	Location 4351 4361	Kyrgyzstan
+T27	AttackPattern 17 39	hoovers up information
+R1	uses Arg1:T8 Arg2:T27	
+R2	targets Arg1:T8 Arg2:T1	
+T28	AttackPattern 481 597	gain access to everything on the compromised device in attacks that can gather almost any information about the user
+R3	uses Arg1:T9 Arg2:T28	
+T29	AttackPattern 619 660	browse and collect all data on the device
+T30	AttackPattern 662 731	steal account credentials for accounts including banking applications
+R4	uses Arg1:T9 Arg2:T29	
+R5	uses Arg1:T9 Arg2:T30	
+T31	AttackPattern 733 783	secretly take recordings of activity on the screen
+T32	AttackPattern 785 819	track the GPS location of the user
+T33	AttackPattern 840 874	continuously covering their tracks
+R6	uses Arg1:T9 Arg2:T31	
+R7	uses Arg1:T9 Arg2:T32	
+R8	uses Arg1:T9 Arg2:T33	
+R9	targets Arg1:T10 Arg2:T20	
+R10	targets Arg1:T10 Arg2:T22	
+T34	Organization 1044 1055	Bitdefender
+T35	Location 1182 1192	Australian
+R11	targets Arg1:T11 Arg2:T35	
+T36	AttackPattern 1287 1348	complete control of the device, as well as account compromise
+R12	uses Arg1:T12 Arg2:T36	
+T37	Person 1432 1447	Bogdan Botezatu
+T38	Organization 1494 1505	Bitdefender
+T39	Organization 1512 1517	ZDNet
+T13	Malware 1777 1785	Mandrake
+T40	AttackPattern 2130 2186	has a kill-switch that wipes the malware from the device
+R13	uses Arg1:T14 Arg2:T40	
+T41	Malware 2191 2199	Mandrake
+T5	Application 2371 2388	Google Play Store
+T6	Application 2768 2779	Google Play
+T42	AttackPattern 2878 2918	contacts the server to download a loader
+R14	uses Arg1:T15 Arg2:T42	
+T43	AttackPattern 3030 3221	operates in stages, with the first stage being a benign app with no malicious behaviour, other than the ability to download and install a second-stage payload when expressly directed to do so
+R15	uses Arg1:T15 Arg2:T43	
+T44	Organization 3315 3321	Google
+T45	AttackPattern 3382 3456	tricks the user into providing it with additional privileges on the device
+R16	uses Arg1:T15 Arg2:T45	
+T46	AttackPattern 3703 3753	gets complete control of the device and data on it
+R17	uses Arg1:T15 Arg2:T46	
+T47	Malware 4113 4121	Mandrake
+T48	Location 4231 4242	Middle East
+T49	Location 4333 4340	Ukraine
+T50	Location 4342 4349	Belarus
+T51	Location 4366 4376	Uzbekistan
+T52	Time 1088 1092	2016
+T53	AttackPattern 1660 1688	carefully pick their victims
+R18	uses Arg1:T12 Arg2:T53	
+T54	AttackPattern 1745 1773	manually control the actions
+R19	uses Arg1:T13 Arg2:T54	
+T55	AttackPattern 1798 1857	manipulate the most information out of the user as possible
+R20	uses Arg1:T13 Arg2:T55	
+T56	AttackPattern 2241 2288	making sure it has stayed hidden over the years
+R21	uses Arg1:T41 Arg2:T56	
+T57	MalwareType 9 16	spyware
+R22	isA Arg1:T8 Arg2:T57	
+T58	AttackPattern 52 71	account credentials
+T59	AttackPattern 73 87	screen records
+T60	AttackPattern 89 92	GPS
+R23	uses Arg1:T8 Arg2:T58	
+R24	uses Arg1:T8 Arg2:T59	
+R25	uses Arg1:T8 Arg2:T60	
+T61	MalwareType 429 436	spyware
+R26	isA Arg1:T9 Arg2:T61	
+T62	MalwareType 1137 1144	spyware
+T63	Application 711 731	banking applications
+T64	Application 2653 2665	social media

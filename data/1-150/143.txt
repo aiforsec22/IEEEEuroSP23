@@ -1,0 +1,36 @@
+FakeSpy Android Malware Disguised as Postal Service Messages
+The operators behind an updated version of the FakeSpy malware are targeting Android devices using SMS phishing messages to spread the info stealer, according to the security firm Cybereason.
+
+The SMS messages are designed to appear to come from legitimate postal and delivery services, including the U.S. Postal Service, the U.K. Royal Mail, DHL Group, France's Las Poste, Taiwan's Chunghwa Post, several private delivery companies in Japan as well as others in Switzerland and Germany, Cybereason researchers say.
+
+If the recipient clicks on the links in these messages, malicious code is downloaded onto the Android device that installs the FakeSpy malware. The information stealer is capable of exfiltrating data, including financial and contact details, from the device, according to the research report released Wednesday.
+
+FakeSpy has been active in the wild since at least 2017. Its operators have been refining the information stealer’s code over the last three years and adding capabilities, according to Cybereason. The latest version has a larger target list that includes the U.S. and Europe.
+
+"The threat actors are preying on unsuspecting victims because people tend to open emails and messages when it comes to their deliveries," Assaf Dahan, senior director and head of threat research at Cybereason, tells Information Security Media Group. "And one of the main communication methods of these companies - postal services and transportation services - is by SMS. It allows the attackers to easily infiltrate this type of open door. These messages appear reliable because the consumers are already waiting for updates from their postal service or transportation service carrier."
+
+Dahan estimates that the FakeSpy malware has reached "tens of thousands" of potential victims over the years, including in this latest campaign, although he says it's difficult to estimate how many of these attacks have led to the stealing of information.
+
+Mobile Phishing Campaign
+The attacks associated with the latest FakeSpy campaign start with malicious SMS messages, or smishing messages, which notify victims of an undelivered package, the report notes. When the target opens the link within the message, a FakeSpy APK - the file format used by Android to install applications – appears. It resembles a local postal service or delivery app.
+
+"Once the user clicks on the malicious link, the app asks them to approve installation from unknown resources," according to the Cybereason report. "This configuration can be toggled on by going to 'Settings' -> 'Security' -> 'Unknown resources.' Then, PackageInstaller shows the app's permission access and asks for the user's approval. Upon approval, the app is installed."
+
+During the installation process, the FakeSpy malware asks for a number of permissions, including the ability to read the phone's network status; compose and send SMS texts; access contact and external storage; connect to the internet; and reboot the device, the Cybereason report notes.
+
+Once the FakeSpy installation process is complete, the malware begins the data exfiltration process, the report notes. This includes stealing the victim's device information, contact details and SMS messages as well as data from banking or cryptocurrency apps, the report notes.
+
+The malware uses a mobile device feature called sendAll to send SMS messages to the victim's other contacts, which helps to spread the information stealer, according to the report.
+
+The Cybereason researchers note that the malware comes with anti-emulator capability to help evade security tools.
+
+"Our analysis observed multiple pieces of anti-emulator code. It shows that the malware can detect whether it’s running on an emulated environment or a real mobile device, and can change its code pattern accordingly," the report notes.
+
+China Connection?
+The Cybereason analysts believe that the operators behind the FakeSpy malware are likely a group known as "Roaming Mantis," which appears to be based in China.
+
+"However, we do not consider the group to be an advanced persistent threat group or nation-state hacking group," Dahan says.
+
+Evidence that points to China includes command-and-control servers based in that country as well as Chinese characters and language found in some of the malicious code, according to the report.
+
+The Cybereason report supports the findings of a 2018 Fortinet report that also tied the FakeSpy malware to a hacking group based in China.

@@ -1,0 +1,95 @@
+T1	OS 10 17	Android
+T2	OS 128 135	Android
+T3	OS 212 219	Android
+T4	OS 608 615	Android
+T5	OS 2497 2508	Android 8.0
+T6	OS 2586 2593	Android
+T7	OS 2774 2781	Android
+T8	OS 3248 3255	Android
+T9	OS 3980 3987	Android
+T10	Malware 0 9	Skygofree
+T11	Malware 380 389	Skygofree
+T12	Malware 1009 1018	Skygofree
+T13	Malware 1384 1393	Skygofree
+T14	Malware 1549 1558	Skygofree
+T15	Malware 1708 1717	Skygofree
+T16	Malware 1813 1822	Skygofree
+T17	Malware 2231 2240	Skygofree
+T18	Malware 2556 2565	Skygofree
+T19	Malware 2688 2697	Skygofree
+T20	Malware 2903 2912	Skygofree
+T21	Malware 3313 3322	Skygofree
+T22	Malware 4062 4071	Skygofree
+T25	Organization 569 582	Kaspersky Lab
+T26	Organization 1136 1149	Kaspersky Lab
+T27	Organization 1365 1378	Kaspersky Lab
+T28	Organization 1665 1678	Kaspersky Lab
+T29	Organization 1849 1862	Kaspersky Lab
+T30	Organization 3155 3168	Kaspersky Lab
+T31	ThreatActor 1524 1536	Hacking Team
+T32	Organization 2169 2177	Tech Pro
+R1	targets Arg1:T10 Arg2:T1	
+R2	targets Arg1:T10 Arg2:T2	
+T36	Malware 236 245	Skygofree
+R3	targets Arg1:T36 Arg2:T3	
+T37	AttackPattern 251 270	record device audio
+T38	AttackPattern 291 320	steal data from device memory
+T39	AttackPattern 322 343	read geolocation data
+T23	AttackPattern 354 377	steal WhatsApp messages
+R4	uses Arg1:T36 Arg2:T37	
+R5	uses Arg1:T36 Arg2:T38	
+R6	uses Arg1:T36 Arg2:T39	
+R7	uses Arg1:T36 Arg2:T23	
+T40	AttackPattern 413 471	spreading using the same old methods: compromised websites
+R8	uses Arg1:T11 Arg2:T40	
+T41	Malware 700 709	Skygofree
+T42	AttackPattern 802 828	capturing photos and video
+T43	AttackPattern 830 845	recording audio
+T44	AttackPattern 847 901	automatically connecting to compromised Wi-Fi networks
+T24	AttackPattern 903 928	reading WhatsApp messages
+T45	AttackPattern 930 968	stealing data from the device’s memory
+T46	AttackPattern 970 994	reading geolocation data
+R9	uses Arg1:T41 Arg2:T42	
+R10	uses Arg1:T41 Arg2:T43	
+R11	uses Arg1:T41 Arg2:T44	
+R12	uses Arg1:T41 Arg2:T24	
+R13	uses Arg1:T41 Arg2:T45	
+R14	uses Arg1:T41 Arg2:T46	
+T47	AttackPattern 1038 1134	activating geofences that trigger audio recording once the infected device enters a certain area
+R15	uses Arg1:T12 Arg2:T47	
+T48	Time 1655 1659	2015
+T49	Time 1748 1752	2014
+T50	Time 1540 1544	2015
+T51	Time 1320 1337	late October 2017
+T52	Time 1191 1195	2015
+T53	Time 176 180	2015
+T33	Application 2275 2299	Firebase Cloud Messaging
+T54	AttackPattern 2418 2492	built-in process protection to stop Android’s idle process killing feature
+R16	uses Arg1:T17 Arg2:T54	
+R17	targets Arg1:T17 Arg2:T5	
+T35	AttackPattern 2822 2884	hosted on malicious websites designed to mimic legitimate ones
+R18	targets Arg1:T19 Arg2:T7	
+R19	uses Arg1:T19 Arg2:T35	
+R20	targets Arg1:T18 Arg2:T6	
+T34	Malware 3141 3150	Skygofree
+T55	Location 3219 3224	Italy
+R21	targets Arg1:T34 Arg2:T55	
+T56	Malware 3753 3762	Skygofree
+R22	targets Arg1:T56 Arg2:T9	
+R23	targets Arg1:T11 Arg2:T4	
+T57	AttackPattern 1882 1927	multiple exploits for gaining root privileges
+T58	AttackPattern 1931 1956	complex payload structure
+T59	AttackPattern 1958 2056	never-before-seen surveillance features such as recording surrounding audio in specified locations
+R24	uses Arg1:T16 Arg2:T57	
+R25	uses Arg1:T16 Arg2:T58	
+R26	uses Arg1:T16 Arg2:T59	
+T60	AttackPattern 272 277	video
+T61	AttackPattern 283 289	photos
+R27	uses Arg1:T36 Arg2:T60	
+R28	uses Arg1:T36 Arg2:T61	
+T62	MalwareType 85 92	spyware
+T63	MalwareType 721 728	spyware
+T64	Application 499 508	antivirus
+T65	Application 3538 3547	antivirus
+T66	Application 360 368	WhatsApp
+T67	Application 911 919	WhatsApp

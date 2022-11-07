@@ -1,0 +1,89 @@
+T1	OS 1022 1025	iOS
+T2	Malware 951 958	Pegasus
+T3	Malware 1123 1130	Pegasus
+T4	Malware 1251 1258	Pegasus
+T5	Malware 1654 1661	Pegasus
+T6	Malware 1815 1822	Pegasus
+T7	Malware 2445 2452	Pegasus
+T8	Malware 2840 2847	Pegasus
+T9	Malware 2882 2889	Pegasus
+T10	Malware 3155 3162	Pegasus
+T11	Malware 3477 3484	Pegasus
+T12	Malware 3886 3893	Pegasus
+T13	Malware 4314 4321	Pegasus
+T14	Organization 354 361	Twitter
+T15	Organization 366 371	Yahoo
+T16	ThreatActor 2857 2866	NSO Group
+T17	OS 1030 1037	Symbian
+T19	Organization 3628 3649	Amnesty International
+T20	ThreatActor 773 776	NSO
+T23	Organization 4060 4063	NSO
+T25	Hardware 5115 5123	StingRay
+T26	Organization 5483 5507	National Security Agency
+T28	Location 3653 3659	Israel
+T29	Organization 4918 4950	U.S. Patent and Trademark Office
+T30	Organization 4955 4957	AP
+T21	Malware 8 15	Pegasus
+T31	Organization 316 323	Dropbox
+T32	Organization 325 333	Facebook
+T33	Organization 335 341	Google
+T34	Organization 343 352	Microsoft
+T35	Location 748 755	Israeli
+R1	has Arg1:T20 Arg2:T35	
+T36	Malware 821 828	Pegasus
+R2	hasAuthor Arg1:T36 Arg2:T20	
+T37	AttackPattern 847 913	stealthily enter a smartphone and gain access to everything on it,
+R3	uses Arg1:T36 Arg2:T37	
+T38	OS 1001 1008	Android
+T39	OS 1010 1020	Blackberry
+R4	targets Arg1:T2 Arg2:T38	
+R5	targets Arg1:T2 Arg2:T39	
+R6	targets Arg1:T2 Arg2:T1	
+R7	targets Arg1:T2 Arg2:T17	
+T40	AttackPattern 1372 1475	tricking a targeted user into clicking a link or opening a document that secretly installs the software
+R8	uses Arg1:T4 Arg2:T40	
+T41	AttackPattern 1480 1605	can also be installed over a wireless transceiver located near a target, or manually if an agent can steal the target’s phone
+R9	uses Arg1:T4 Arg2:T41	
+T18	AttackPattern 1662 1766	can infiltrate a smartphone via the widely used messaging app WhatsApp without the phone’s user noticing
+R10	uses Arg1:T5 Arg2:T18	
+T27	Person 1768 1784	Christoph Scholz
+T42	Organization 1785 1791	Flickr
+T43	Time 1809 1813	2019
+T45	AttackPattern 1928 1964	delete the record of the missed call
+R11	uses Arg1:T6 Arg2:T45	
+T46	AttackPattern 1847 1913	install the software on smartphones with a missed call on WhatsApp
+R12	uses Arg1:T6 Arg2:T46	
+T44	AttackPattern 2065 2130	sending a message to a user’s phone that produces no notification
+R13	uses Arg1:T6 Arg2:T44	
+T47	AttackPattern 2471 2540	harvest any data from the device and transmit it back to the attacker
+R14	uses Arg1:T7 Arg2:T47	
+T48	AttackPattern 2549 2677	steal photos and videos, recordings, location records, communications, web searches, passwords, call logs and social media posts
+R15	uses Arg1:T7 Arg2:T48	
+T49	AttackPattern 2709 2816	activate cameras and microphones for real-time surveillance without the permission or knowledge of the user
+R16	uses Arg1:T7 Arg2:T49	
+R17	hasAuthor Arg1:T9 Arg2:T16	
+R18	hasAuthor Arg1:T8 Arg2:T16	
+T50	ThreatActor 3174 3192	Mexican government
+T51	Time 3196 3200	2011
+R19	uses Arg1:T50 Arg2:T10	
+T52	Person 3231 3256	Joaquín “El Chapo” Guzmán
+R20	targets Arg1:T50 Arg2:T52	
+T53	Location 3326 3331	Saudi
+T54	Person 3343 3358	Jamal Khashoggi
+T22	ThreatActor 3564 3573	NSO Group
+R21	has Arg1:T19 Arg2:T28	
+T55	ThreatActor 3741 3744	NSO
+T24	Hardware 4777 4785	stingray
+T56	Hardware 4847 4855	StingRay
+T57	Malware 5881 5888	Pegasus
+T58	MalwareType 830 837	spyware
+R22	isA Arg1:T36 Arg2:T58	
+T59	AttackPattern 928 934	camera
+T60	AttackPattern 939 949	microphone
+R23	uses Arg1:T36 Arg2:T59	
+R24	uses Arg1:T36 Arg2:T60	
+T61	MalwareType 57 64	spyware
+T62	MalwareType 2173 2180	spyware
+T63	MalwareType 2272 2279	spyware
+T64	Application 2659 2671	social media
+T65	Application 1724 1732	WhatsApp

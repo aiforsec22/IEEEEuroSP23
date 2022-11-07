@@ -1,0 +1,35 @@
+Millions of Android phones hit by 'Judy' malware
+More than 36 million Android devices may have been infected with ad-click malware, a security firm has said.
+
+Researchers at Check Point said they found the malware, dubbed Judy, on about 50 apps in Google's Play Store.
+
+The apps contain code that sends infected devices to a target webpage, where they generate fraudulent clicks on the site's adverts to make money for its creators.
+
+The infected apps have been removed from the Play Store.
+
+More than 40 of the apps were from the South Korean developer, Kiniwini, which publishes games to the Play Store under the name Enistudio.
+
+The games, all of which feature a character called Judy, have been downloaded between four million and 18 million times.
+
+'Hid undetected'
+The malicious code was also found in several apps from other developers.
+
+"It is possible that one borrowed code from the other, knowingly or unknowingly," said Check Point.
+
+Between them, the infected apps may have been downloaded up to 36.5 million times.
+
+Check Point said it did not know for how long the malicious versions of the apps had been available, but all the Judy games had been updated since March this year.
+The oldest of the apps from other developers was last updated in April 2016, which Check Point suggested, means that "the malicious code hid for a long time on the Play Store undetected".
+
+Because it is unclear when the code was introduced to each of the apps, the actual number of devices likely to have been infected is unknown.
+
+Ad clicks
+The apps got past the Play Store's protection system, Google Bouncer, because they do not contain the malicious part of the Judy code.
+
+Once downloaded, the apps silently register the device to a remote server, which responds by sending back the malicious ad-click software to open a hidden website and generate revenue for the site by clicking on the adverts.
+
+This kind of delivery "has become commonplace", Andrew Smith, a senior lecturer in Networking at the Open University, told the BBC.
+
+"There are many tools available, and the advantage is that the malware distributor can change them remotely, which makes it difficult for anti-malware software to keep up."
+
+The apps also display numerous adverts themselves, some of which cannot be closed until a user has clicked on them.

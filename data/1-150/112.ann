@@ -1,0 +1,39 @@
+T1	OS 12 19	Android
+T3	Application 1616 1630	Google Bouncer
+T4	Malware 1163 1167	Judy
+T5	Malware 1686 1690	Judy
+T6	Organization 177 188	Check Point
+T7	Organization 1050 1061	Check Point
+T8	Organization 1298 1309	Check Point
+T9	Application 603 613	Play Store
+T10	Application 1379 1389	Play Store
+T13	Malware 35 39	Judy
+T14	MalwareType 115 132	ad-click malware,
+R2	isA Arg1:T13 Arg2:T14	
+T15	Malware 225 229	Judy
+T16	Organization 251 257	Google
+T17	Application 260 270	Play Store
+R3	targets Arg1:T15 Arg2:T17	
+R4	targets Arg1:T13 Arg2:T1	
+T18	AttackPattern 302 405	sends infected devices to a target webpage, where they generate fraudulent clicks on the site's adverts
+R5	uses Arg1:T15 Arg2:T18	
+T19	Application 486 496	Play Store
+R6	targets Arg1:T15 Arg2:T19	
+T20	ThreatActor 564 572	Kiniwini
+T21	ThreatActor 629 638	Enistudio
+R7	hasAuthor Arg1:T15 Arg2:T20	
+*	hasAlias T21 T20
+T22	Organization 948 959	Check Point
+T12	Time 1197 1202	March
+T23	Time 1280 1290	April 2016
+R8	targets Arg1:T4 Arg2:T10	
+T24	Application 1584 1594	Play Store
+R9	targets Arg1:T4 Arg2:T24	
+T25	AttackPattern 1735 1837	register the device to a remote server, which responds by sending back the malicious ad-click software
+R10	uses Arg1:T5 Arg2:T25	
+T26	Person 1976 1988	Andrew Smith
+T11	Organization 2029 2044	Open University
+T27	Organization 2055 2058	BBC
+T2	OS 71 78	Android
+T28	Person 540 562	South Korean developer
+T29	Malware 694 698	Judy

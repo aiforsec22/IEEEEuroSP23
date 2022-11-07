@@ -1,0 +1,118 @@
+T1	OS 168 175	Android
+T2	OS 509 516	Android
+T3	OS 1878 1885	Android
+T4	OS 3676 3683	Android
+T5	OS 3959 3966	Android
+T6	OS 4287 4294	Android
+T12	Organization 2882 2888	Google
+T13	Organization 2944 2950	Google
+T16	Organization 3347 3353	Google
+T17	Organization 3464 3470	Google
+T20	Malware 0 8	Cerberus
+T21	Malware 54 62	Cerberus
+T22	Malware 748 756	Cerberus
+T23	Malware 1926 1934	Cerberus
+T24	Malware 3493 3501	Cerberus
+T25	Malware 3510 3518	Cerberus
+T26	Malware 3667 3675	Cerberus
+T27	Organization 2863 2868	Avast
+T29	Organization 2914 2924	Threatpost
+T30	Malware 4183 4195	PhantomLance
+T31	Location 526 531	Spain
+T32	Person 1242 1247	David
+T33	Person 2582 2587	David
+T34	Person 3174 3179	David
+T35	Person 4271 4276	David
+T38	MalwareType 9 23	Banking Trojan
+R1	isA Arg1:T20 Arg2:T38	
+T7	Application 37 48	Google Play
+R2	targets Arg1:T20 Arg2:T7	
+T39	AttackPattern 75 100	steal banking credentials
+T40	AttackPattern 102 126	bypass security measures
+T41	AttackPattern 131 151	access text messages
+R3	uses Arg1:T21 Arg2:T39	
+R4	uses Arg1:T21 Arg2:T40	
+R5	uses Arg1:T21 Arg2:T41	
+T8	Application 206 217	Google Play
+T42	MalwareType 259 273	banking trojan
+T43	Malware 275 283	Cerberus
+R6	isA Arg1:T43 Arg2:T42	
+T44	Application 456 477	Calculadora de Moneda
+T45	Location 538 543	March
+T46	AttackPattern 596 635	steal victims’ bank-account credentials
+T47	AttackPattern 640 707	bypass security measures, including two-factor authentication (2FA)
+R7	uses Arg1:T43 Arg2:T46	
+R8	uses Arg1:T43 Arg2:T47	
+T48	AttackPattern 757 851	disguised itself as a genuine app in order to access the banking details of unsuspecting users
+R9	uses Arg1:T22 Arg2:T48	
+T49	Person 854 866	Ondrej David
+T50	Organization 873 878	Avast
+T51	Time 890 897	Tuesday
+T9	Application 981 998	Google Play Store
+T10	Application 1116 1127	Google Play
+T28	Organization 1411 1437	Google’s Play Protect team
+T37	Person 1454 1459	David
+T53	Time 1467 1475	mid-June
+T54	Time 1609 1615	July 1
+T55	Malware 1913 1921	Cerberus
+T56	AttackPattern 1947 1990	spying and credential-theft functionalities
+R11	uses Arg1:T23 Arg2:T56	
+T57	AttackPattern 1999 2084	sit over an existing banking app and wait for the user to log into their bank account
+R12	uses Arg1:T23 Arg2:T57	
+T58	AttackPattern 2105 2181	layover over the victims’ login screen, and steals their banking credentials
+R13	uses Arg1:T23 Arg2:T58	
+T59	AttackPattern 2215 2336	ability to access victims’ text messages, meaning that it can view two-factor authentication (2FA) codes sent via message
+R14	uses Arg1:T23 Arg2:T59	
+T60	AttackPattern 2345 2382	uses Android’s accessibility function
+T61	AttackPattern 2399 2423	overlay attack mechanism
+R15	uses Arg1:T23 Arg2:T60	
+R16	uses Arg1:T23 Arg2:T61	
+T11	Application 2808 2819	Google Play
+T14	Application 3012 3023	Google Play
+T15	Application 3044 3055	Google Play
+T36	Time 3538 3544	August
+R18	discoveredIn Arg1:T25 Arg2:T36	
+T63	AttackPattern 3791 3816	ability to run TeamViewer
+R19	targets Arg1:T26 Arg2:T4	
+R20	uses Arg1:T26 Arg2:T63	
+T64	Time 3910 3918	February
+T18	Application 3975 3986	Google Play
+T65	Malware 4005 4010	Haken
+T66	AttackPattern 4027 4066	exfiltrates sensitive data from victims
+T67	AttackPattern 4071 4137	covertly signs them up for expensive premium subscription services
+R21	uses Arg1:T65 Arg2:T66	
+R22	uses Arg1:T65 Arg2:T67	
+T68	Time 4146 4152	April,
+R23	discoveredIn Arg1:T65 Arg2:T64	
+R24	discoveredIn Arg1:T30 Arg2:T68	
+T19	Application 4255 4266	Google Play
+R25	uses Arg1:T43 Arg2:T44	
+T69	Application 416 446	Spanish currency converter app
+R26	uses Arg1:T43 Arg2:T69	
+R27	targets Arg1:T43 Arg2:T31	
+R28	targets Arg1:T43 Arg2:T2	
+T52	MalwareType 731 746	banking malware
+R10	isA Arg1:T22 Arg2:T52	
+T62	MalwareType 940 954	banking trojan
+T70	Application 1186 1195	converter
+R17	targets Arg1:T22 Arg2:T70	
+T71	Application 2020 2031	banking app
+R29	targets Arg1:T23 Arg2:T71	
+T72	OS 2350 2357	Android
+T73	MalwareType 2446 2460	banking trojan
+R30	isA Arg1:T23 Arg2:T73	
+T74	Application 2498 2509	banking app
+R31	targets Arg1:T23 Arg2:T74	
+T75	Organization 2593 2603	Threatpost
+T76	MalwareType 2844 2850	trojan
+T77	Organization 3185 3195	Threatpost
+T78	MalwareType 3684 3690	trojan
+R32	isA Arg1:T26 Arg2:T78	
+T79	Application 3806 3816	TeamViewer
+R33	uses Arg1:T26 Arg2:T79	
+T80	MalwareType 4159 4166	spyware
+R34	isA Arg1:T30 Arg2:T80	
+T81	MalwareType 344 350	trojan
+T82	MalwareType 2200 2206	trojan
+T83	Application 1499 1517	currency converter
+T84	Application 2786 2804	currency converter

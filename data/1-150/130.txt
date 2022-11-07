@@ -1,0 +1,36 @@
+Skygofree Android malware is ‘one of the most powerful ever seen’
+The dangerous new spyware kit can gain total control over an Android device, and it's been in the wild since 2015.
+
+A newly discovered form of Android malware, called Skygofree, can record device audio, video, and photos, steal data from device memory, read geolocation data, and even steal WhatsApp messages.
+Skygofree is dangerous, but it’s spreading using the same old methods: compromised websites. Stay protected using good antivirus software and knowing what to watch out for.
+Researchers at Kaspersky Lab have uncovered a form of Android malware they’re saying is one of the most powerful ever seen in the wild.
+
+Dubbed Skygofree, the total spyware package is capable of performing 48 different remote commands, including capturing photos and video, recording audio, automatically connecting to compromised Wi-Fi networks, reading WhatsApp messages, stealing data from the device’s memory, reading geolocation data, and more.
+
+Skygofree is even capable of activating geofences that trigger audio recording once the infected device enters a certain area. Kaspersky Lab says the malware appeared in the wild in 2015, and the campaign to spread it is still active–new spoof domains containing its dropper have been registered as recently as late October 2017.
+
+To make matters worse, Kaspersky Lab says Skygofree has all the hallmarks of a professionally developed spy kit meant to be sold for use to surveill users, like the code stolen from Hacking Team in 2015.
+
+Skygofree has been in development for years, and that makes it dangerous
+It may have hit the internet in 2015, but Kaspersky Lab says its code indicates that Skygofree had been in development since 2014. That long-term, and ongoing, development process has given Skygofree exceptional capabilities, Kaspersky Lab said.
+
+“Usage of multiple exploits for gaining root privileges, a complex payload structure, never-before-seen surveillance features such as recording surrounding audio in specified locations,” are all capabilities of the surveillance kit.
+
+SEE: IT leader’s guide to reducing insider security threats (Tech Pro Research)
+
+For example, cybercriminals can control Skygofree using HTTP, XMPP, binary SMS, and Firebase Cloud Messaging, giving the attacker multiple fallbacks and a high degree of flexibility in accomplishing their goals.
+
+It also has built-in process protection to stop Android’s idle process killing feature (in Android 8.0 and above) from killing its various functions: Skygofree processes will tell Android that they’re updating, so they can’t be disabled.
+
+Dangerous malware, old infection tricks
+Skygofree is definitely a complicated piece of malware, but it’s getting installed on Android devices using the same old tricks: It’s hosted on malicious websites designed to mimic legitimate ones.
+
+In this case, Skygofree has only been found on Italian websites and is mainly targeting cellular service providers. Users are told that they should update their device configuration to ensure faster service, and the APK they’re downloading is actually Skygofree.
+
+Kaspersky Lab says that the only infections they’ve seen are in Italy, but that doesn’t mean Android users in other countries shouldn’t be concerned. Whether Skygofree itself has spread further, or its capabilities have made it into other malware, there’s no room to relax and assume you’re safe.
+
+IT teams should be sure that managed devices, whether company-issued or BYOD, have antivirus software installed and that definitions are up-to-date. Firewalls should also be configured to block known bad websites that host malicious APKs.
+
+Users need to be aware of the existence of malware like Skygofree, and what to watch out for, namely that a legitimate website won’t offer a download that speeds up your device, especially not one that you have to manually navigate to and install yourself. Configuration updates for Android and carrier settings will come over the air, not as a manual download.
+
+Skygofree may be terrifying in terms of what it can do, but cybercriminals are still relying on humans to be the weak link in the cybersecurity chain.

@@ -1,0 +1,101 @@
+T1	OS 6 13	Android
+T2	OS 200 207	Android
+T3	OS 389 396	Android
+T4	OS 939 946	Android
+T5	OS 1569 1576	Android
+T6	OS 2399 2406	Android
+T7	OS 2464 2471	Android
+T8	OS 2576 2583	Android
+T10	Malware 117 124	SpyNote
+T11	Malware 261 268	SpyNote
+T12	Malware 2568 2575	SpyNote
+T13	Malware 784 795	MobiHok RAT
+T14	Organization 169 176	SenseCy
+T15	ThreatActor 350 358	mobeebom
+T16	ThreatActor 517 525	mobeebom
+T17	ThreatActor 752 760	mobeebom
+T18	ThreatActor 1718 1726	mobeebom
+T23	MalwareType 1821 1824	RAT
+T28	Malware 71 78	MobiHok
+T29	Malware 220 227	MobiHok
+T32	Malware 895 902	MobiHok
+T33	Malware 1521 1528	MobiHok
+T34	Malware 2081 2088	MobiHok
+T36	Application 833 840	YouTube
+T37	Application 857 865	Facebook
+T39	Malware 1948 1955	OmniRat
+T41	Version 445 447	v4
+T42	Version 2396 2398	v4
+T44	Time 1623 1627	2016
+R1	targets Arg1:T28 Arg2:T1	
+T20	MalwareType 79 82	RAT
+R2	isA Arg1:T28 Arg2:T20	
+R3	variantOf Arg1:T28 Arg2:T10	
+R4	variantOf Arg1:T29 Arg2:T11	
+T30	Time 297 306	July 2019
+T19	MalwareType 397 423	Remote Administration Tool
+R5	hasAuthor Arg1:T41 Arg2:T15	
+R6	isA Arg1:T41 Arg2:T19	
+R7	targets Arg1:T41 Arg2:T3	
+T31	Time 878 890	January 2019
+T21	AttackPattern 1095 1143	bypass to the Facebook authentication mechanism.
+R9	uses Arg1:T32 Arg2:T21	
+T38	Malware 1225 1232	SpyNote
+T47	ThreatActor 1360 1368	mobeebom
+T22	MalwareType 1577 1580	RAT
+T48	Malware 1587 1594	SpyNote
+R10	isA Arg1:T48 Arg2:T22	
+T49	Malware 1745 1752	SpyNote
+T45	Malware 1840 1847	MobiHok
+R12	isA Arg1:T45 Arg2:T23	
+T50	Time 1856 1865	July 2016
+T51	Organization 1880 1898	Palo Alto Networks
+T24	Malware 1929 1936	Spynote
+T52	Malware 1960 1969	DroidJack
+T53	AttackPattern 2126 2141	access to files
+T54	AttackPattern 2143 2163	access to the camera
+T55	AttackPattern 2165 2175	keylogging
+T56	AttackPattern 2177 2206	control over SMS and contacts
+T9	AttackPattern 2212 2289	ability to bypass both Samsung security mechanisms and Google Play mechanisms
+T40	AttackPattern 2298 2328	bind itself to another APK app
+R13	uses Arg1:T34 Arg2:T53	
+R14	uses Arg1:T34 Arg2:T54	
+R15	uses Arg1:T34 Arg2:T55	
+R16	uses Arg1:T34 Arg2:T56	
+R17	uses Arg1:T34 Arg2:T9	
+R18	uses Arg1:T34 Arg2:T40	
+T43	ThreatActor 2355 2363	mobeebom
+R11	uses Arg1:T18 Arg2:T49	
+T25	Person 2689 2696	Sensecy
+R22	has Arg1:T28 Arg2:T41	
+T26	MalwareType 1901 1904	RAT
+R8	isA Arg1:T24 Arg2:T26	
+R23	isA Arg1:T39 Arg2:T26	
+R24	isA Arg1:T52 Arg2:T26	
+R19	hasAuthor Arg1:T42 Arg2:T43	
+R25	has Arg1:T34 Arg2:T42	
+T27	MalwareType 125 128	RAT
+R26	isA Arg1:T10 Arg2:T27	
+T35	MalwareType 269 272	RAT
+R27	isA Arg1:T11 Arg2:T35	
+T46	MalwareType 228 231	RAT
+R28	isA Arg1:T29 Arg2:T46	
+*	hasAlias T29 T13
+T57	MalwareType 425 428	RAT
+T58	Malware 437 444	MobiHok
+R29	has Arg1:T58 Arg2:T41	
+T59	MalwareType 1054 1057	RAT
+R30	targets Arg1:T33 Arg2:T5	
+R31	targets Arg1:T48 Arg2:T5	
+T60	Malware 2388 2395	MobiHok
+T61	MalwareType 2407 2410	RAT
+R32	has Arg1:T60 Arg2:T42	
+R33	isA Arg1:T42 Arg2:T61	
+T62	MalwareType 2472 2475	RAT
+T63	MalwareType 2584 2587	RAT
+R34	isA Arg1:T12 Arg2:T63	
+R21	hasAuthor Arg1:T33 Arg2:T47	
+R20	hasAuthor Arg1:T45 Arg2:T18	
+T64	Application 2267 2278	Google Play
+T65	Application 1109 1117	Facebook
+T66	Organization 2235 2242	Samsung

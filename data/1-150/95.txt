@@ -1,0 +1,46 @@
+Infostealer, Keylogger, and Ransomware in One: Anubis Targets More than 250 Android Applications
+The Cofense Phishing Defense Center uncovered a phishing campaign that specifically targets users of Android devices that could result in compromise if unsigned Android applications are permitted on the device.
+
+The campaign seeks to deliver Anubis, a particularly nasty piece of malware that was originally used for cyber espionage and retooled as a banking trojan. Anubis can completely hijack an Android mobile device, steal data, record phone calls, and even hold the device to ransom by encrypting the victim’s personal files. With mobile devices increasingly used in the corporate environment, thanks to the popularity of BYOD policies, this malware has the potential to cause serious harm, mostly to consumers, and businesses that allow the installation of unsigned applications.
+
+Here’s how it works:
+
+At first glance, the email shown in Figure 1 looks like any other phishing email that asks the user to download an invoice. However, this particular email downloads an Android Package Kit (APK), which is the common format used by Android to distribute and install applications. Let’s take a closer look at the suspicious file.
+
+When the email link is opened from an Android device, an APK file (Fattura002873.apk), is downloaded. Upon opening the file, the user is asked to enable “Google Play Protect” as shown in Figure 2. However, this is not a genuine “Google Play Protect” screen; instead it gives the app all the permissions it needs while simultaneously disabling the actual Google Play Protect.
+
+A closer look at the code reveals the application gathers a list of installed applications to compare the results against a list of targeted applications (Figure 4). The malware mainly targets banking and financial applications, but also looks for popular shopping apps such as eBay or Amazon. A full list of targeted applications is included in the IOC section at the end of this post. Once an application has been identified, Anubis overlays the original application with a fake login page to capture the user’s credentials.
+
+Based on a thorough analysis of the code, the most interesting technical capabilities include:
+
+Capturing screenshots
+Enabling or changing administration settings
+Opening and visiting any URL
+Disabling Play Protect
+Recording audio
+Making phone calls
+Stealing the contact list
+Controlling the device via VNC
+Sending, receiving and deleting SMS
+Locking the device
+Encrypting files on the device and external drives
+Searching for files
+Retrieving the GPS location
+Capturing remote control commands from Twitter and Telegram
+Pushing overlays
+Reading the device ID
+The malware includes a keylogger that works in every app installed on the Android device. However, the keylogger needs to be specifically enabled by a command sent from the C2 server. The keylogger can track three different events (Figure 5):
+
+ 
+
+TYPE_VIEW_CLICKED Represents the event of clicking on a View-like Button, CompoundButton, etc.
+TYPE_VIEW_FOCUSED Represents the event of setting input focus of a View.
+TYPE_VIEW_TEXT_CHANGED Represents the event of changing the text of an EditText.
+Figure 6 shows one of the most noteworthy functions of Anubis: its ransomware module. The malware searches both internal and external storage and encrypts them using RC4. It adds the file extension .AnubisCrypt to each encrypted file and sends it to the C2.
+
+Anubis has been known to utilize Twitter or Telegram to retrieve the C2 address and this sample is no exception (Figure 7).
+
+As seen in Figure 8, this version of Anubis is built to run on several iterations of the Android operating system, dating back to version 4.0.3, which was released in 2012.
+
+Android malware has been around for many years and will be with us for the foreseeable future. Users who have configured their Android mobile device to receive work-related emails and allow installation of unsigned applications face the most risk of compromise. APK files will not natively open in an environment other than an Android device.  With the increased use of Android phones in business environments, it is important to defend against these threats by ensuring devices are kept current with the latest updates. Limiting app installations on corporate devices, as well as ensuring that applications are created by trusted developers on official marketplaces, can help in reducing the risk of infection as well.
+

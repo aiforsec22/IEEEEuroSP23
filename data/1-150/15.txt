@@ -1,0 +1,69 @@
+Russia Got Targeted By Rotexy Trojan
+Due to the hipe of trojan activity, Kaspersky decided to do a deep analysis of the evolution of popular malware family. And they found one most interesting (Rotexy) trojan malware from Rotexy malware family for androids devices. The interesting thing is this Android (Rotexy) Trojan malware is targeting mostly Russians, in the last 3 months over 70K users primarily located in Russia has been targeted.
+
+Due to the hipe of trojan activity, Kaspersky decided to do a deep analysis of the evolution of popular malware family. And they found one most interesting (Rotexy) trojan malware from Rotexy malware family for androids devices. The interesting thing is this Android (Rotexy) Trojan malware is targeting mostly Russians, in the last 3 months over 70K users primarily located in Russia has been targeted.
+
+Rotexy Trojan Malware:
+The most important and interesting thing about Rotexy trojan malware is, it uses 3 command source simultaneously.
+
+Google Cloud Messaging Service – to send a small message in JSON format to the android device
+2. C&C server
+
+3. SMS monitoring or tracking
+
+During the research of this trojan, Kaspersky found Rotexy trojan (Malware) is the evolution of SMS spyware trojan that was found 4 years back in 2014 and named as Trojan-spy.Androidos.Smsthief. But the modern version of Rotexy Trojan (Malware) combines the functionality of Banking Trojan and Ransomware. It spreads using the name of Avito.pay.apk and downloads from websites with names like youla9d6h.tk, prodam8n9.tk, prodamfkz.ml, avitoe0ys.tk etc. These website names generated on the basis of a clear algorithm: first letter from suggestive ads followed by random characters.
+
+In the first version of Rotexy Trojan (Malware), it spreads via a link sent in Phishing SMS that prompt the user to install an application. When installing the application it asked for the device administrator rights and then start communicating to C&C server. In the next version of Rotexy Trojan Malware, it starts using plain text JSON format to communicate C&C server. Then in the next version of Rotexy trojan malware in 2015-2016, it starts using the AES algorithm to encrypt the data between the user’s device and C&C server.  In 2017-2018 HTML phishing pages bank.html, update.html ad extortionist.html starts appearing in the assets folder.
+
+Later, its start using the various method of obfuscation like DEX file is packed with garbage string, AND/OR operations and containing a key to decipher main executable file from APK.
+
+Present Day, Application Launch (Rotexy Trojan Malware):
+Now today, when these applications get downloaded and start the installation, it checks if it is being launched in an emulation or sandbox environment. Then it checks, to which country this device belongs to or if a device is outside of Russia then application shows a random error page.
+In this case, trojan contains records in logs in Russian with spelling and grammatical mistakes.
+
+Then Rotexy Trojan Malware registers with google cloud messaging service and launches super service which checks if the device has the administrator privilege.  It also checks its own status and relaunches the app if the app gets close or stopped. It checks privilege in every second and if not available, it starts requesting to the user in an infinite loop.
+
+If the application gets the admin privilege then it shows a stub page and hides the application icon from the device. And when Rotexy Trojan detects an attempts to revoke the admin privilege then it starts switching off the user device screen. If privileges are revoked successfully then Rotexy Trojan start requesting for admin privilege again to the user in a loop.
+
+For any reason, Rotexy Trojan Malware or Superservice could not switch off the phone screen when a user attempts to revoke the admin privileges then Rotexy Trojan try to intimidate the user.
+
+While Rotexy Trojan (Malware) Runs in User’s phone, it Tracks a few things:
+
+Rebooting and switching off the phone
+Termination of Rotexy Malware Trojan
+Sending of an SMS using the phone
+Rotexy Trojan Malware Communication:
+Default C&C server IP address 81[.]177[.]135[.]30 is written in Rotexy Malware Trojan’s code. This is the C&C server where Rotecy Trojan Malware will send the infected device information. Remdynamicallyamicaly generated subdomain can also be used.
+
+Rotexy Trojan Malware stores the information about the C&C server and infected device data in a local SQLite database. Once, Rotexy Trojan gets the admin privilege then it receives the information from the C&C server that how it needs to operate for example SMS interception templates and HTML page that it needs to show on the application.
+
+Rotexy Trojan (Malware) intercept all the incoming SMS and process them according to the templates it received from the C&C server. Rotexy Trojan also puts user’s phone in silent mode and switch of the screen when it received an SMS so the user doesn’t get notified about the incoming message. It can also send a message to the specific phone number with the information that has been received in SMS. With the general information, Rotexy trojan also sends other information to the C&C server like running process and application. It is also possible that it can detect banking applications.
+
+Rotexy Trojan will perform the following actions, once it receives the command from its C&C server:
+
+Start, Stop, Restart- start, stop and restart super service
+Unblock- unblock the user device and revoke the admin privileges
+URL- update the C&C address or IP
+Message- Send an SMS with a specified context to a specific phone number
+ONLINE- sends the current status of Rotexy Trojan (Application)
+CONTACTS- Send text received from the C&C server to all contacts, that is how this is spreading
+ALL_CONTACTS- send all contact details to the C&C server
+BLOCKER_BANKING_START- Block the display to show bank’s Phishing HTML page to enter the bank details
+BLOCKER_EXTORTIONIST_START- Block the display to show Ransome page
+BLOCKER_UPDATE_START- Block the Display to show device update
+BLOCKER_STOP- Block display of all HTML pages
+Rotexy Trojan Malware not only use the web browser, but it can also use any device that is able to send Text messages.
+
+Rotexy Trojan Blocking the Display:
+User’s phone display has been blocked for a long duration by showing the fake updating page by Rotexy Trojan Malware.
+
+Rotexy Trojan Malware blocks the user’s phone display and shows a Ransome page with some sexually explicit image (that has been covered within a black box).
+
+Similarly, Rotexy Trojan Malware blocks the user phone screens and display banking page to enter the bank details. Once the user enters the bank detail it sends all information to the C&C server. As Rotexy Trojan already has control on your incoming messages and also received bank details then the attacker can perform any transaction or even can change password, ATM card Debit card PIN.
+
+How to unblock a Phone:
+Now, with this serious problem, the good news is Rotexy Trojan Malware processing module is not well designed. So, once a phone gets blocked then it can be unlocked by sending “3458” in an SMS to the number which is in the blocked phone. This SMS will revoke the admin access of this Trojan over the device then send another message “stop_blocker”. The second message will stop the screen blocker and leads to unlocking the user’s phone. But remember once we revoked the admin access of this Trojan then it will again start for requesting admin privilege because it is very nasty. In that scenario restart the device in safe mode and remove malicious programme.
+
+However, this method will not work if the device has been blocked and Rotexy Trojan (Malware) has been removed by the attacker. In that case first, you need to infect the device by sending “393838” in SMS to the blocked device and then repeat all the instruction mentioned above. By sending “393838” in SMS you will change the C&C address in trojan and it will no longer receive commands from its C&C server.
+
+Please note that all these instruction are based on Analysis performed by Kaspersky on the current version of Rotexy Trojan. However, it is possible that set of command change in future for Rotexy Trojan. Also, As per Kaspersky 98% users are targeted in Russia only rest few cases have seen in Ukraine, Turkey, Germany, and a few other countries.

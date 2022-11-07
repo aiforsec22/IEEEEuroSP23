@@ -1,0 +1,128 @@
+T1	OS 1873 1880	Android
+T4	Organization 260 266	Google
+T5	Organization 286 292	Google
+T10	Malware 201 216	Desert Scorpion
+T11	Malware 421 436	Desert Scorpion
+T12	Malware 1369 1384	Desert Scorpion
+T13	Malware 2060 2075	Desert Scorpion
+T14	Malware 2261 2276	Desert Scorpion
+T15	Malware 4696 4703	Pegasus
+T16	Organization 0 7	Lookout
+T17	Organization 109 116	Lookout
+T18	Organization 243 250	Lookout
+T19	Organization 1158 1165	Lookout
+T21	Organization 2531 2538	Lookout
+T24	Malware 488 498	FrozenCell
+T25	Malware 1906 1916	FrozenCell
+T26	ThreatActor 589 597	APT-C-23
+T27	ThreatActor 4311 4319	APT-C-23
+T28	Organization 1609 1617	Facebook
+T29	Organization 1818 1826	Facebook
+T31	Malware 2571 2578	Dardesh
+T32	Organization 1759 1786	Lookout Threat Intelligence
+T33	Organization 4205 4232	Lookout Threat Intelligence
+T34	Organization 5066 5093	Lookout Threat Intelligence
+T35	Malware 2044 2055	Frozen Cell
+T36	Organization 3787 3792	Fatah
+T38	Location 96 107	Middle East
+T39	Location 1492 1501	Palestine
+T20	MalwareType 18 34	Surveillanceware
+T2	Application 38 49	Google Play
+T22	MalwareType 168 184	surveillanceware
+T3	Application 224 241	Google Play Store
+R1	targets Arg1:T10 Arg2:T3	
+R2	isA Arg1:T10 Arg2:T22	
+R3	targets Arg1:T10 Arg2:T38	
+T6	Application 355 374	Google Play Protect
+T23	MalwareType 458 474	surveillanceware
+R4	isA Arg1:T11 Arg2:T23	
+R5	isA Arg1:T24 Arg2:T23	
+T45	MalwareType 559 575	surveillanceware
+T46	Location 627 638	Middle East
+R6	hasAuthor Arg1:T24 Arg2:T26	
+R7	hasAuthor Arg1:T11 Arg2:T26	
+R8	targets Arg1:T26 Arg2:T46	
+T47	Application 772 780	Facebook
+R9	targets Arg1:T26 Arg2:T47	
+T44	Location 1431 1445	Middle Eastern
+R10	targets Arg1:T12 Arg2:T44	
+R11	targets Arg1:T12 Arg2:T39	
+T7	Application 1742 1753	Google Play
+T8	Application 1851 1863	Google Drive
+T49	ThreatActor 1938 1946	APT-C-27
+R14	hasAuthor Arg1:T25 Arg2:T49	
+T51	Time 2605 2616	February 26
+T52	Time 2635 2643	March 28
+T53	AttackPattern 2776 2810	Get list of installed applications
+T54	AttackPattern 2812 2831	Get device metadata
+T55	AttackPattern 2833 2886	Inspect itself to get a list of launchable activities
+T56	AttackPattern 2888 2965	Retrieves PDF, txt, doc, xls, xlsx, ppt, pptx files found on external storage
+T57	AttackPattern 2967 2975	Send SMS
+T58	AttackPattern 2727 2772	Upload attacker-specified files to C2 servers
+T40	AttackPattern 2977 2999	Retrieve text messages
+T59	AttackPattern 3001 3022	Track device location
+T60	AttackPattern 3024 3086	Handle limited attacker commands via out of band text messages
+T61	AttackPattern 3088 3112	Record surrounding audio
+T62	AttackPattern 3114 3126	Record calls
+T63	AttackPattern 3128 3140	Record video
+T41	AttackPattern 3142 3194	Retrieve account information such as email addresses
+T42	AttackPattern 3196 3213	Retrieve contacts
+T64	AttackPattern 3215 3297	Removes copies of itself if any additional APKs are downloaded to external storage
+T65	AttackPattern 3300 3333	Call an attacker-specified number
+T66	AttackPattern 3335 3349	Uninstall apps
+T67	AttackPattern 3351 3378	Check if a device is rooted
+T68	AttackPattern 3380 3393	Hide its icon
+T43	AttackPattern 3395 3437	Retrieve list of files on external storage
+T69	Hardware 3455 3468	Huawei device
+T70	AttackPattern 3488 3560	add itself to the protected list of apps able to run with the screen off
+T71	AttackPattern 3562 3592	Encrypts some exfiltrated data
+R16	uses Arg1:T14 Arg2:T58	
+R17	uses Arg1:T14 Arg2:T53	
+R18	uses Arg1:T14 Arg2:T54	
+R19	uses Arg1:T14 Arg2:T55	
+R20	uses Arg1:T14 Arg2:T56	
+R21	uses Arg1:T14 Arg2:T57	
+R22	uses Arg1:T14 Arg2:T40	
+R23	uses Arg1:T14 Arg2:T59	
+R24	uses Arg1:T14 Arg2:T60	
+R25	uses Arg1:T14 Arg2:T61	
+R26	uses Arg1:T14 Arg2:T62	
+R27	uses Arg1:T14 Arg2:T43	
+R28	uses Arg1:T14 Arg2:T63	
+R29	uses Arg1:T14 Arg2:T41	
+R30	uses Arg1:T14 Arg2:T42	
+R31	uses Arg1:T14 Arg2:T65	
+R32	uses Arg1:T14 Arg2:T66	
+R33	uses Arg1:T14 Arg2:T67	
+R34	uses Arg1:T14 Arg2:T64	
+R35	uses Arg1:T14 Arg2:T70	
+R36	uses Arg1:T14 Arg2:T71	
+R37	targets Arg1:T70 Arg2:T69	
+T72	Malware 3594 3609	Desert Scorpion
+T73	AttackPattern 3625 3672	masquerades as a generic "settings" application
+R38	uses Arg1:T72 Arg2:T73	
+T74	Malware 3848 3858	FrozenCell
+T75	Malware 3988 4003	Desert Scorpion
+T76	AttackPattern 3892 3986	used file names to lure people associated with the political party to open malicious documents
+R39	uses Arg1:T74 Arg2:T76	
+R41	hasAuthor Arg1:T74 Arg2:T27	
+R42	hasAuthor Arg1:T75 Arg2:T27	
+T9	Application 4526 4543	Google Play Store
+T37	Application 4620 4628	Facebook
+T78	Malware 4707 4716	FinFisher
+T79	ThreatActor 4749 4761	Dark Caracal
+T48	AttackPattern 703 754	trick victims into downloading their malicious apps
+R13	uses Arg1:T26 Arg2:T48	
+T30	Application 1721 1728	Dardesh
+R12	uses Arg1:T12 Arg2:T30	
+T81	Application 2438 2454	chat application
+R46	uses Arg1:T14 Arg2:T81	
+T77	Organization 4141 4162	Fatah political party
+R15	isA Arg1:T10 Arg2:T20	
+R40	isA Arg1:T24 Arg2:T45	
+T80	AttackPattern 2277 2432	resides in a second stage payload that can only be downloaded if the victim has downloaded, installed, and interacted with the first-stage chat application
+R43	uses Arg1:T14 Arg2:T80	
+T82	Application 1697 1713	chat application
+T83	Application 2416 2432	chat application
+T84	Application 1043 1055	social media
+T85	Application 4592 4604	social media

@@ -1,0 +1,25 @@
+TrickBot Mobile App Bypasses 2‐Factor Authentication for Net Banking Services
+The malware authors behind TrickBot banking Trojan have developed a new Android app that can intercept one-time authorization codes sent to Internet banking customers via SMS or relatively more secure push notifications, and complete fraudulent transactions.
+The Android app, called "TrickMo" by IBM X-Force researchers, is under active development and has exclusively targeted German users whose desktops have been previously infected with the TrickBot malware.
+"Germany is one of the first attack turfs TrickBot spread to when it first emerged in 2016," IBM researchers said. "In 2020, it appears that TrickBot's vast bank fraud is an ongoing project that helps the gang monetize compromised accounts."
+The name TrickMo is a direct reference to a similar kind of Android banking malware called ZitMo that was developed by Zeus cybercriminal gang in 2011 to defeat SMS-based two-factor authentication.
+The development is the latest addition in the arsenal of evolving capabilities of the banking trojan that has since morphed to deliver other kinds of malware, including the notorious Ryuk ransomware, act as an info stealer, loot Bitcoin wallets, and harvest emails and credentials.
+Abusing Android's Accessibility Features to Hijack OTP Codes
+Initially spotted by the CERT-Bund last September, the TrickMo campaign works by intercepting a wide range of transaction authentication numbers (TANs), including one-time password (OTP), mobile TAN (mTAN), and pushTAN authentication codes after victims install it on their Android devices.
+CERT-Bund's advisory went on to state that the Windows computers infected by TrickBot employed man-in-the-browser (MitB) attacks to ask victims for their online banking mobile phone numbers and device types in order to prompt them to install a fake security app — now called TrickMo.
+But given the security threats posed by SMS-based authentication — the messages can be easily hijacked by rogue third-party apps and are also vulnerable to SIM-swapping attacks — banks are beginning to increasingly rely on push notifications for users, which contain the transaction details and the TAN number.
+To get over this hurdle of getting hold of the app's push notifications, TrickMo makes use of Android's accessibility features that allows it to record a video of the app's screen, scrape the data displayed on the screen, monitor currently running applications and even set itself as the default SMS app.
+What's more, it prevents users of infected devices from uninstalling the app.
+A Wide Range of Features
+Once installed, TrickMo is also capable of gaining persistence by starting itself after the device becomes interactive or after a new SMS message is received. In addition, it features an elaborate settings mechanism that lets a remote attacker issue commands to turn on/off specific features (e.g., accessibility permissions, recording status, SMS app status) via a command-and-control (C2) server or an SMS message.
+When the malware is run, it exfiltrates a wide range of information, including —
+Personal device information
+SMS messages
+Recording targeted applications for a one-time password (TAN)
+Photos
+But to avoid raising suspicion when stealing the TAN codes, TrickMo activates the lock screen, thereby preventing users from accessing their devices. Specifically, it uses a fake Android update screen to mask its OTP-stealing operations.
+And lastly, it comes with self-destruction and removal functions, which allows the cybercrime gang behind TrickMo to remove all traces of the malware's presence from a device after a successful operation.
+The kill switch can also be activated by SMS, but IBM researchers found that it was possible to decrypt the encrypted SMS commands using a hard-coded RSA private key embedded in the source code, thus making it possible to generate the public key and craft an SMS message that can turn the self-destruct feature on.
+Although this means that the malware can be remotely eliminated by an SMS message, it's fair to assume that a future version of the app could rectify the use of hard-coded key strings for decryption.
+"The TrickBot trojan was one of the most active banking malware strains in the cybercrime arena in 2019," IBM researchers concluded.
+"From our analysis, it is apparent that TrickMo is designed to help TrickBot break the most recent methods of TAN-based authentication. One of the most significant features TrickMo possesses is the app recording feature, which is what gives TrickBot the ability to overcome the newer pushTAN app validations deployed by banks."

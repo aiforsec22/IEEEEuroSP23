@@ -1,0 +1,31 @@
+T1	Malware 0 7	Pegasus
+T2	Time 70 77	July 18
+T3	Organization 136 157	Amnesty International
+T4	Organization 196 207	Citizen Lab
+R1	has Arg1:T3 Arg2:T4	
+T5	Malware 473 480	Pegasus
+T6	Location 502 509	Israeli
+T7	ThreatActor 518 527	NSO Group
+R2	has Arg1:T7 Arg2:T6	
+R3	hasAuthor Arg1:T5 Arg2:T7	
+T8	ThreatActor 667 676	NSO Group
+T9	Malware 737 744	Pegasus
+R4	hasAuthor Arg1:T9 Arg2:T8	
+T10	AttackPattern 847 971	non-consensually and invisibly steals emails, text messages, photos, videos, locations, passwords, and social media activity
+R5	uses Arg1:T9 Arg2:T10	
+T11	Malware 1129 1136	Pegasus
+T12	MalwareType 1140 1147	spyware
+R6	isA Arg1:T11 Arg2:T12	
+T13	Malware 1324 1331	Pegasus
+T14	Time 1421 1442	between 2016 and 2018
+T15	Malware 1529 1536	Pegasus
+T16	Person 1935 1948	Hatice Cengiz
+T17	Organization 1977 1992	Washington Post
+T18	Person 2003 2018	Jamal Khoshoggi
+R7	targets Arg1:T15 Arg2:T16	
+T19	Person 2198 2203	Jamal
+T20	MalwareType 1153 1160	spyware
+T21	MalwareType 8 15	spyware
+T22	MalwareType 278 285	spyware
+T23	MalwareType 825 832	spyware
+T24	Application 950 962	social media

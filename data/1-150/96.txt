@@ -1,0 +1,29 @@
+Anubis Android banking malware returns with extensive financial app hit list
+Thousands of new samples are targeting 188 banking and finance-related apps.
+
+Over 17,000 new samples of the Anubis Android banking malware have been discovered in the wild which are targeting a total of 188 finance and banking applications. 
+
+The attacker behind the development of Anubis has been active for at least 12 years, and in order to stay current, has retooled the malware for use in fresh attack waves, Trend Micro researchers said on Monday. 
+
+The Anubis banking Trojan is often found in social engineering and phishing campaigns, in which unwitting victims are lured to download malicious apps containing the malware. 
+
+In total, 17,490 new samples of the malware have been found on two related servers by Trend Micro.   
+
+Anubis now targets 188 legitimate banking and financial mobile applications, located mainly in the US, India, France, Italy, Germany, Australia, and Poland. 
+
+If a victim downloads and executes an Anubis app masquerading as a legitimate service, they are opening themselves up to the malware's wide variety of hijacking capabilities. Anubis is able to take screenshots, record audio, send, receive, and delete SMS messages, steal contact lists and account credentials, open URLs -- potentially to download additional payloads -- and is also able to disable Google Play Protect.
+
+In addition, the Trojan is able to plunder the deeper settings of a compromised device by enabling or tampering with device administration settings, to view running tasks, and to create a backdoor for remote control through virtual network computing (VNC).
+
+As the malware evolved, the developer also added a feature akin to ransomware; the ability to encrypt files stored on a mobile device and its SD card known as AnubisCrypt.
+
+Furthermore, Anubis is able to receive commands from social media platforms including Twitter and messaging apps such as Telegram. Operators of the malware have been using Twitter and Google short links to send remote commands to the malware. The majority of which appear to be Turkish, according to the language settings used by social media accounts sending commands.  
+
+Once commands have been accepted, Anubis can hijack devices, steal data, and send information to command-and-control (C2) servers which have spread worldwide. 
+
+The new variants are also able to detect if they are running on virtual machines (VMs), a common way for researchers to safely unpack and analyze malware. In Anubis' case, this also includes Android emulators such as Genymotion.
+
+Anubis is not the only Android malware variant which is being constantly improved and refined by its developers. Last week, Fortinet researchers said BianLian -- which began life as a dropper for Anubis and is now an established banking Trojan on its own accord -- is now bypassing Google Android protections to propagate its malicious code. 
+
+Recent variants of BianLian have a new screencast module which gives attackers the opportunity to monitor the screen of a compromised device and steal information, including usernames and passwords. 
+

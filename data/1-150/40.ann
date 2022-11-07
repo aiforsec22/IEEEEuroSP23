@@ -1,0 +1,189 @@
+T1	OS 44 51	Android
+T2	OS 166 173	Android
+T4	OS 3518 3525	Android
+T5	OS 56 59	iOS
+T6	OS 178 181	iOS
+T7	OS 3272 3275	iOS
+T8	OS 3418 3421	iOS
+T9	OS 3801 3804	iOS
+T10	OS 3933 3936	iOS
+T11	OS 4762 4765	iOS
+T12	Organization 462 468	Google
+T15	Indicator 5460 5524	e394e53e53cd9047d6cff184ac333ef7698a34b777ae3aac82c2c669ef661dfe
+T16	Indicator 5550 5614	e8d4713e43241ab09d40c2ae8814302f77de76650ccf3e7db83b3ac8ad41f9fa
+T17	Indicator 5641 5705	29b0d86ae68d83f9578c3f36041df943195bc55a7f3f1d45a9c23f145d75af9d
+T18	Indicator 5732 5796	3a15e7b8f4e35e006329811a6a2bf291d449884a120332f24c7e3ca58d0fbbdb
+T19	Application 0 22	Coronavirus Update App
+T20	Malware 32 43	Project Spy
+T21	Malware 293 304	Project Spy
+T22	Malware 721 732	Project Spy
+T23	Malware 847 858	Project Spy
+T26	Organization 216 227	Trend Micro
+T27	Organization 2108 2119	Trend Micro
+T30	Organization 3904 3909	Apple
+T31	Indicator 5821 5833	cashnow[.]ee
+T32	Indicator 5797 5813	IOS_ProjectSpy.A
+T35	Indicator 5525 5548	AndroidOS_SpyAgent.HRXB
+T36	Indicator 260 277	IOS_ProjectSpy.A,
+T42	Indicator 3470 3489	spy[.]cashnow[.]ee,
+T43	Indicator 5906 5924	spy[.]cashnow[.]ee
+T44	Indicator 2123 2147	AndroidOS_SpyAgent.HRXB)
+T45	Indicator 231 255	AndroidOS_ProjectSpy.HRX
+T46	Indicator 5615 5639	AndroidOS_ProjectSpy.HRX
+T47	Indicator 5706 5730	AndroidOS_ProjectSpy.HRX
+T48	Indicator 5863 5879	ftp[.]XXXX[.]com
+T49	Indicator 5950 5968	xyz[.]cashnow[.]ee
+T34	MalwareType 60 67	Spyware
+R1	isA Arg1:T20 Arg2:T34	
+R2	targets Arg1:T20 Arg2:T1	
+R3	targets Arg1:T20 Arg2:T5	
+R4	uses Arg1:T20 Arg2:T19	
+T50	Malware 140 151	Project Spy
+R5	targets Arg1:T50 Arg2:T2	
+R6	targets Arg1:T50 Arg2:T6	
+T51	MalwareType 195 202	spyware
+R7	indicates Arg1:T45 Arg2:T50	
+R8	indicates Arg1:T36 Arg2:T50	
+T52	Application 378 397	Coronavirus Updates
+R9	uses Arg1:T21 Arg2:T52	
+T53	Location 619 627	Pakistan
+T54	Location 629 634	India
+T55	Location 636 647	Afghanistan
+T56	Location 649 659	Bangladesh
+T57	Location 661 665	Iran
+T58	Location 667 679	Saudi Arabia
+T59	Location 681 688	Austria
+T60	Location 690 697	Romania
+T61	Location 699 706	Grenada
+T62	Location 712 718	Russia
+R10	targets Arg1:T21 Arg2:T53	
+R11	targets Arg1:T21 Arg2:T54	
+R12	targets Arg1:T21 Arg2:T55	
+R13	targets Arg1:T21 Arg2:T56	
+R14	targets Arg1:T21 Arg2:T57	
+R15	targets Arg1:T21 Arg2:T58	
+R16	targets Arg1:T21 Arg2:T59	
+R17	targets Arg1:T21 Arg2:T60	
+R18	targets Arg1:T21 Arg2:T61	
+R19	targets Arg1:T21 Arg2:T62	
+T63	Time 756 766	March 2020
+T64	Application 808 830	coronavirus update app
+R20	uses Arg1:T23 Arg2:T64	
+T29	AttackPattern 959 1021	Upload GSM, WhatsApp, Telegram, Facebook, and Threema messages
+T65	AttackPattern 1023 1113	Upload voice notes, contacts stored, accounts, call logs, location information, and images
+T66	AttackPattern 1115 1171	Upload the expanded list of collected device information
+T67	AttackPattern 1335 1357	Upload SIM information
+T68	AttackPattern 1462 1485	Upload wifi information
+T69	AttackPattern 1646 1731	stealing messages from popular messaging apps by abusing the notification permissions
+T70	AttackPattern 1799 1851	requests permission to access the additional storage
+R21	uses Arg1:T23 Arg2:T29	
+R22	uses Arg1:T23 Arg2:T65	
+R23	uses Arg1:T23 Arg2:T66	
+R24	uses Arg1:T23 Arg2:T67	
+R25	uses Arg1:T23 Arg2:T68	
+R26	uses Arg1:T23 Arg2:T69	
+R27	uses Arg1:T23 Arg2:T70	
+T3	Malware 1856 1867	Project Spy
+T37	Time 2049 2057	May 2019
+T38	Application 1955 1977	coronavirus update app
+R28	uses Arg1:T3 Arg2:T38	
+R29	discoveredIn Arg1:T3 Arg2:T37	
+T39	AttackPattern 2183 2220	Collect device and system information
+T40	AttackPattern 2338 2358	Collect and send SMS
+T71	AttackPattern 2360 2388	Take pictures via the camera
+T72	AttackPattern 2390 2415	Upload recorded MP4 files
+T73	AttackPattern 2417 2430	Monitor calls
+T74	Version 2498 2512	second version
+T24	Version 2066 2079	first version
+R30	indicates Arg1:T44 Arg2:T24	
+R32	uses Arg1:T24 Arg2:T39	
+R33	uses Arg1:T24 Arg2:T40	
+R34	uses Arg1:T24 Arg2:T71	
+R35	uses Arg1:T24 Arg2:T72	
+R36	uses Arg1:T24 Arg2:T73	
+T75	Application 2554 2564	Wabi Music
+R38	uses Arg1:T74 Arg2:T75	
+T76	AttackPattern 2570 2652	copied a popular video-sharing social networking service as its backend login page
+R39	uses Arg1:T74 Arg2:T76	
+T77	ThreatActor 2711 2723	concipit1248
+R40	hasAuthor Arg1:T74 Arg2:T77	
+T13	Application 2728 2739	Google Play
+T78	Time 2774 2782	May 2019
+T79	Time 2786 2799	February 2020
+T14	Time 2863 2873	March 2020
+T80	Application 2848 2859	Google Play
+T25	Version 2882 2888	second
+T82	AttackPattern 2995 3068	Stealing notification messages sent from WhatsApp, Facebook, and Telegram
+T83	AttackPattern 3070 3126	Abandoning the FTP mode of uploading the recorded images
+R43	uses Arg1:T25 Arg2:T82	
+R44	uses Arg1:T25 Arg2:T83	
+T28	Application 3382 3391	App Store
+T84	ThreatActor 3309 3321	Concipit1248
+R45	targets Arg1:T84 Arg2:T28	
+T85	Malware 3427 3439	Concipit1248
+T86	Malware 3537 3548	Project Spy
+R46	indicates Arg1:T42 Arg2:T86	
+T88	AttackPattern 3619 3641	open the device camera
+T89	AttackPattern 3646 3657	read photos
+T90	AttackPattern 3677 3727	upload a self-contained PNG file to a remote sever
+T87	Malware 3576 3588	Concipit1248
+R47	uses Arg1:T87 Arg2:T88	
+R48	uses Arg1:T87 Arg2:T89	
+R49	uses Arg1:T87 Arg2:T90	
+T91	Malware 3749 3761	Concipit1248
+R50	targets Arg1:T87 Arg2:T8	
+T92	Application 3810 3823	Concipit Shop
+T93	Time 3889 3902	November 2019
+T94	Application 4097 4111	Corona Updates
+T95	Location 4149 4157	Pakistan
+T96	Location 4166 4177	Afghanistan
+T97	Location 4159 4164	India
+T98	Location 4179 4189	Bangladesh
+T99	Location 4191 4195	Iran
+T100	Location 4197 4209	Saudi Arabia
+T101	Location 4211 4218	Austria
+T102	Location 4220 4227	Romania
+T103	Location 4229 4236	Grenada
+T104	Location 4242 4248	Russia
+R52	indicates Arg1:T15 Arg2:T86	
+R53	indicates Arg1:T35 Arg2:T86	
+R54	indicates Arg1:T49 Arg2:T86	
+R55	indicates Arg1:T43 Arg2:T86	
+R56	indicates Arg1:T48 Arg2:T86	
+R57	indicates Arg1:T31 Arg2:T86	
+R58	indicates Arg1:T18 Arg2:T86	
+R59	indicates Arg1:T32 Arg2:T86	
+R60	indicates Arg1:T17 Arg2:T86	
+R61	indicates Arg1:T16 Arg2:T86	
+R62	indicates Arg1:T46 Arg2:T86	
+R63	indicates Arg1:T47 Arg2:T86	
+T33	Application 971 979	WhatsApp
+T41	Application 981 989	Telegram
+T105	Application 991 999	Facebook
+T106	Application 1005 1012	Threema
+R64	targets Arg1:T23 Arg2:T33	
+R65	targets Arg1:T23 Arg2:T41	
+R66	targets Arg1:T23 Arg2:T105	
+R67	targets Arg1:T23 Arg2:T106	
+T107	Application 3036 3044	WhatsApp
+T108	Application 3046 3054	Facebook
+T109	Application 3060 3068	Telegram
+R68	targets Arg1:T25 Arg2:T107	
+R69	targets Arg1:T25 Arg2:T108	
+R70	targets Arg1:T25 Arg2:T109	
+T110	AttackPattern 447 476	disguised as a Google service
+R71	uses Arg1:T21 Arg2:T110	
+T111	AttackPattern 354 397	posing as an app called Coronavirus Updates
+R72	uses Arg1:T21 Arg2:T111	
+T112	AttackPattern 790 830	masquerading as a coronavirus update app
+R73	uses Arg1:T22 Arg2:T112	
+T81	Application 501 510	music app
+T113	Malware 2516 2527	Project Spy
+R42	has Arg1:T113 Arg2:T74	
+T114	Malware 2889 2900	Project Spy
+R74	has Arg1:T114 Arg2:T25	
+T115	Malware 2083 2094	Project Spy
+R37	has Arg1:T115 Arg2:T24	
+T116	Application 1677 1691	messaging apps
+T117	OS 1226 1233	Android
+T118	OS 1515 1518	MAC

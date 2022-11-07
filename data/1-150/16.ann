@@ -1,0 +1,56 @@
+T1	OS 2948 2955	Android
+T2	OS 2960 2963	iOS
+T3	Application 1087 1097	Play store
+T8	Organization 1489 1495	Google
+T13	Malware 1368 1372	Judy
+T14	Malware 1573 1577	Judy
+T15	Malware 3370 3374	Judy
+T16	Organization 0 11	Check Point
+T17	Organization 1468 1479	Check Point
+T18	Malware 1344 1354	FalseGuide
+T4	Application 74 85	Google Play
+T23	Organization 87 93	Google
+R1	has Arg1:T23 Arg2:T4	
+T24	Malware 137 141	Judy
+T25	MalwareType 164 170	adware
+R2	isA Arg1:T24 Arg2:T25	
+T26	AttackPattern 266 327	generate large amounts of fraudulent clicks on advertisements
+R3	uses Arg1:T24 Arg2:T26	
+T5	Application 520 531	Google Play
+T6	Application 803 814	Google Play
+T19	Time 1016 1026	April 2016
+T7	Application 1323 1334	Google Play
+R4	targets Arg1:T18 Arg2:T7	
+T20	Malware 1359 1366	Skinner
+R5	targets Arg1:T20 Arg2:T7	
+R6	targets Arg1:T13 Arg2:T7	
+T22	Application 1601 1608	Bouncer
+T9	Application 1610 1621	Google Play
+T27	AttackPattern 1648 1776	create a seemingly benign bridgehead app, meant to establish connection to the victim’s device, and insert it into the app store
+R9	uses Arg1:T14 Arg2:T27	
+T28	AttackPattern 1820 1897	silently registers receivers which establish a connection with the C&C server
+R10	uses Arg1:T14 Arg2:T28	
+T29	AttackPattern 1899 1951	The server replies with the actual malicious payload
+R11	uses Arg1:T14 Arg2:T29	
+T31	AttackPattern 2241 2332	uses the JavaScript code to locate and click on banners from the Google ads infrastructure.
+R13	uses Arg1:T14 Arg2:T31	
+T33	Malware 2779 2783	Judy
+T34	ThreatActor 2851 2859	Kiniwini
+T12	Application 2875 2886	Google Play
+R17	targets Arg1:T34 Arg2:T12	
+T35	ThreatActor 2890 2904	ENISTUDIO corp
+T37	Malware 3681 3690	DressCode
+T38	Malware 3582 3586	Judy
+T39	AttackPattern 3823 3869	manipulate users into leaving positive ratings
+R20	uses Arg1:T37 Arg2:T39	
+R7	hasAuthor Arg1:T33 Arg2:T34	
+T10	Application 105 114	app store
+T11	ThreatActor 213 227	Korean company
+R12	hasAuthor Arg1:T24 Arg2:T11	
+T21	Organization 2306 2312	Google
+T30	Organization 2571 2577	Google
+T32	Organization 2830 2844	Korean company
+*	hasAlias T34 T35
+T40	Application 1554 1564	Play store
+T41	Application 3932 3942	app stores
+T42	Application 1767 1776	app store

@@ -1,0 +1,31 @@
+XLoader: A deep insight into the Android malware’s various campaigns
+XLoader was first spotted in April 2018 posing as legitimate Facebook or Chrome apps.
+Researchers note that XLoader has been found to have links with a Chinese hacker group called the Yanbian Gang.
+XLoader is a backdoor trojan and Android malware that uses Domain Name System (DNS) spoofing to distribute infected Android apps. The malicious apps collect device owners’ personal information and financial information.
+
+XLoader distributed via DNS domains
+
+XLoader was first spotted in April 2018 posing as legitimate Facebook or Chrome apps.
+These apps were distributed via polluted DNS domains that send notifications to victims’ devices.
+Once the malicious app is installed on the mobile device, it can hijack the device and gain persistence via device administrator privileges.
+After which, XLoader can steal device owners’ personal information as well as download additional malware.
+This malware campaign was targeting victims in Japan, Korea, China, Taiwan, and Hong Kong.
+
+XLoader linked to Yanbian hacker group
+
+Researchers noted that the two Android malware families XLoader and FakeSpy have been found to have links with a Chinese hacker group called Yanbian Gang. Researchers who found a connection between the two malware and the Yanbian Gang noted that they initially discovered the connection during a malware campaign that saw XLoader malware disguised as a legitimate app of a major Japanese home delivery service company in June 2018.
+
+Similarities between XLoader and FakeSpy
+
+The malicious domains shared by XLoader and FakeSpy were found to be located in China.
+The C&C servers were similar for both the malware families.
+Moreover, XLoader and FakeSpy have collectively infected almost 384,748 victims across the globe, with the majority of victims located in Japan and South Korea.
+XLoader version 6.0
+
+Researchers detected a new version of the XLoader malware ‘XLoader v 6.0’ that poses as a security app for Android devices and uses a malicious iOS profile to affect iPhone and iPad devices. This variant is distributed via smishing. XLoader version 6.0 abuses Twitter profiles to hide its C&C server. The malware author has made some changes to this XLoader version in line with its new deployment method.
+
+XLoader version 7.0
+
+In April 2019, researchers uncovered ‘XLoader version 7.0’ that poses as a pornography app for Android devices. This variant abuses Instagram and Tumblr profiles to hide its C&C server. XLoader version 7.0 targets South Korean Android users.
+
+This implies that the threat actors behind XLoader are active and constantly making changes to the malware.

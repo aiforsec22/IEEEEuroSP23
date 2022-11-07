@@ -1,0 +1,17 @@
+'Pegasus' iOS malware package also found to impact OS X, Apple issues patch
+Apple in a patch last week blocked a particularly nasty malware package called "Pegasus" from infiltrating iOS devices, and the company is now doing the same for its OS X desktop operating system.
+
+Apple on Thursday issued security updates for OS X 10.10 Yosemite, OS X 10.11 El Capitan and Safari to address a vulnerability that potentially allows nefarious agents to take over a target device with a single click.
+
+Dubbed "Pegasus," the assault package leverages three zero-day vulnerabilities to remotely jailbreak and install a suite of monitoring software onto a victim's device. One of the key tools in the process is an exploit that takes advantage of a memory corruption flaw in Safari WebKit. The vulnerability allows attackers to deliver the malware payload when a target clicks on a link leading to a malicious webpage.
+
+Once installed, Pegasus exploits kernel flaws to upgrade privileges, allowing attackers to intercept text messages, pilfer emails, access contacts and steal information from a variety of third-party apps including Gmail, Facebook, Skype, WhatsApp, WeChat and more.
+
+Apple patched the vulnerability last week when it released iOS 9.3.5.
+
+It appears the same WebKit and kernel vulnerabilities that enable Pegasus to effectively infiltrate iOS devices also exist in OS X. To combat potential exposure, Apple issued a combined security update for OS X Yosemite and El Capitan, as well as a standalone fix for the Safari web browser. The combined OS X update includes the Safari patch.
+
+Pegasus was discovered by Citizen Lab and Lookout after a human rights activist was sent a link leading to a malicious webpage bearing the jailbreak and remote monitoring tools. An investigation into the malware revealed NSO, an Israeli-based organization owned by U.S. company Francisco Partners Management, likely crafted Pegasus to further its "cyber war" line of products.
+
+Mac users are urged to download the security updates via the Mac App Store.
+

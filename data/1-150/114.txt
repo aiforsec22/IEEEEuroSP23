@@ -1,0 +1,24 @@
+Millions of Google accounts breached by new Android malware
+Gooligan affects users of Android 4 and 5 and can be used to steal Google account credentials.
+
+Millions of Google accounts have been compromised in a new attack campaign that uses Android credentials to access data from Google services.
+
+The Gooligan malware is downloaded to smartphone devices through third-party app stores, security firm Check Point found. The apps could also be downloaded if the user clicks on a malicious link in a phishing message.
+
+AndroidFrom there, it proceeds to download a rootkit which exploits vulnerabilities in the user’s device to take it over. It then downloads a malicious module from a command and control (C&C) server which allows Gooligan to steal credentials for email and other services.
+
+In addition, the control can be used to install apps from Google Play and rate them using the user’s Google account or install adware on the user’s device to generate revenue.
+
+Devices that can be affected by the malware include Android 4 and Android 5, which Check Point says includes 74 percent of devices currently in use.
+
+Check Point is currently working with Google Security to find the source of the attack. Google said that it was taking steps to secure victims’ accounts, such as notifying those affected, revoking affected tokens and deploying SafetyNet improvements.
+
+GooliganAccording to Google, there is no evidence that user data has been accessed, and the credentials have been used primarily to promote apps. Google said that the malware was part of a family called Ghost Push all targeted at doing the same thing.
+
+The Check Point Research Team explained the revenue model for attackers as follows:
+
+“Ad servers, which don’t know whether an app using its service is malicious or not, send Gooligan the names of the apps to download from Google Play.
+
+“After an app is installed, the ad service pays the attacker.
+
+“Then the malware leaves a positive review and a high rating on Google Play using content it receives from the C&C server.”

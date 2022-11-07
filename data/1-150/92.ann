@@ -1,0 +1,58 @@
+T1	OS 181 188	Android
+T2	OS 619 626	Android
+T3	OS 1468 1475	Android
+T4	OS 1789 1796	Android
+T6	Organization 1422 1428	Google
+T8	Malware 74 85	MalLocker.B
+T9	Malware 570 581	MalLocker.B
+T10	Malware 691 702	MalLocker.B
+T11	Malware 1736 1747	MalLocker.B
+T12	Malware 1948 1959	MalLocker.B
+T13	Malware 2967 2978	MalLocker.B
+T14	Malware 3008 3019	MalLocker.B
+T15	Organization 1831 1840	Microsoft
+T16	Malware 4414 4425	MalLocker.B
+T17	Malware 3324 3335	MalLocker.B
+T18	Malware 498 509	MalLocker.B
+T19	Malware 48 69	AndroidOS/MalLocker.B
+T21	MalwareType 128 138	ransomware
+R1	isA Arg1:T8 Arg2:T21	
+R2	targets Arg1:T8 Arg2:T1	
+T22	AttackPattern 301 353	uses several new tricks to render the phone unusable
+R3	uses Arg1:T8 Arg2:T22	
+R4	targets Arg1:T9 Arg2:T2	
+T23	AttackPattern 703 775	displays a ransom note that covers the entire screen of infected devices
+R5	uses Arg1:T10 Arg2:T23	
+T24	AttackPattern 830 872	preventing victims from using their phones
+R6	uses Arg1:T10 Arg2:T24	
+T20	OS 1644 1651	Android
+T25	Time 1716 1728	October 2020
+R7	discoveredIn Arg1:T11 Arg2:T25	
+R8	targets Arg1:T11 Arg2:T4	
+T26	AttackPattern 1960 2071	misuses Android’s notification services to create a call notification that displays the ransom note full screen
+R9	uses Arg1:T12 Arg2:T26	
+T5	AttackPattern 2081 2150	overrides an Android function that moves activities to the background
+R10	uses Arg1:T12 Arg2:T5	
+T27	AttackPattern 2168 2206	keep the ransom note in the foreground
+R11	uses Arg1:T12 Arg2:T27	
+T28	AttackPattern 2209 2241	Uses a new obfuscation technique
+R12	uses Arg1:T12 Arg2:T28	
+T29	AttackPattern 2305 2370	part of the ransomware’s code is encrypted and stored in a folder
+R13	uses Arg1:T12 Arg2:T29	
+T30	AttackPattern 2455 2512	Includes code from an open-source machine-learning module
+R14	uses Arg1:T12 Arg2:T30	
+T31	AttackPattern 2633 2692	automatically resizes and crops images based on screen size
+R15	uses Arg1:T12 Arg2:T31	
+T32	AttackPattern 3113 3201	hide it in video players, pirated versions of popular commercial apps, and cracked games
+R16	uses Arg1:T14 Arg2:T32	
+T7	Application 3396 3407	Google Play
+*	hasAlias T8 T19
+R17	has Arg1:T6 Arg2:T3	
+T33	MalwareType 232 242	ransomware
+T34	MalwareType 627 637	ransomware
+T35	MalwareType 2255 2265	ransomware
+T36	MalwareType 2381 2391	ransomware
+T37	MalwareType 2712 2722	ransomware
+T38	Application 4610 4632	accessibility services
+T39	Application 3380 3390	app stores
+T40	OS 2094 2101	Android

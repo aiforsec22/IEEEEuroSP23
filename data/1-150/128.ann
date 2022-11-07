@@ -1,0 +1,50 @@
+T1	OS 35 42	Android
+T2	OS 300 307	Android
+T3	Malware 4 13	TangleBot
+T4	Malware 1444 1453	TangleBot
+T5	Malware 1657 1666	TangleBot
+T14	Application 1325 1343	Adobe Flash Player
+T15	Organization 1644 1654	Proofpoint
+T16	Location 58 60	US
+T17	Location 65 71	Canada
+T18	Location 269 275	Canada
+T19	Location 248 261	United States
+T20	Location 659 673	United Kingdom
+R1	targets Arg1:T3 Arg2:T1	
+R2	targets Arg1:T3 Arg2:T16	
+R3	targets Arg1:T3 Arg2:T17	
+T21	Organization 99 109	Proofpoint
+T22	Organization 110 119	Cloudmark
+T23	AttackPattern 166 213	take over the victim’s mobile phone through SMS
+R4	uses Arg1:T3 Arg2:T23	
+R5	targets Arg1:T3 Arg2:T19	
+R6	targets Arg1:T3 Arg2:T18	
+T6	Malware 397 407	Tangle Bot
+T8	AttackPattern 430 469	takeover a number of device’s functions
+R7	uses Arg1:T6 Arg2:T8	
+T7	Malware 612 619	Flu Bot
+R8	targets Arg1:T7 Arg2:T20	
+T9	Location 688 694	Europe
+R9	targets Arg1:T7 Arg2:T9	
+T24	AttackPattern 740 827	mislead the target to install the tampered software received by a forged Covid-19 alert
+R10	uses Arg1:T6 Arg2:T24	
+T10	AttackPattern 1519 1548	getting control on phone book
+R11	uses Arg1:T4 Arg2:T10	
+T11	AttackPattern 1676 1744	get access to online financial applications by overlaying the screen
+R12	uses Arg1:T5 Arg2:T11	
+T12	AttackPattern 487 499	contact list
+T13	AttackPattern 501 515	phone history,
+T25	AttackPattern 516 522	camera
+T26	AttackPattern 527 537	microphone
+T27	AttackPattern 553 576	ability to use Internet
+R13	uses Arg1:T6 Arg2:T12	
+R14	uses Arg1:T6 Arg2:T13	
+R15	uses Arg1:T6 Arg2:T25	
+R16	uses Arg1:T6 Arg2:T26	
+R17	uses Arg1:T6 Arg2:T27	
+T28	AttackPattern 1550 1566	recording screen
+T29	AttackPattern 1568 1589	opening device camera
+T30	AttackPattern 1594 1597	mic
+R18	uses Arg1:T4 Arg2:T28	
+R19	uses Arg1:T4 Arg2:T29	
+R20	uses Arg1:T4 Arg2:T30	

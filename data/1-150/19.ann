@@ -1,0 +1,147 @@
+T1	OS 339 346	Android
+T2	OS 2371 2378	Android
+T3	OS 2515 2522	Android
+T4	OS 3735 3742	Android
+T5	OS 4000 4011	Android 5.0
+T6	OS 4615 4622	Android
+T7	OS 5128 5135	Android
+T8	OS 6022 6029	Android
+T9	OS 7179 7186	Android
+T10	OS 7251 7258	Android
+T11	OS 331 334	iOS
+T12	OS 7097 7100	iOS
+T16	Malware 0 11	SpyNote RAT
+T17	Malware 796 807	SpyNote RAT
+T18	Malware 835 846	SpyNote RAT
+T19	Malware 1385 1396	SpyNote RAT
+T20	Malware 2173 2184	SpyNote RAT
+T21	Malware 2674 2685	SpyNote RAT
+T22	Malware 3584 3595	SpyNote RAT
+T23	Malware 3852 3863	SpyNote RAT
+T24	Malware 4139 4150	SpyNote RAT
+T25	Malware 4932 4943	SpyNote RAT
+T26	Malware 5041 5052	SpyNote RAT
+T27	Malware 5196 5207	SpyNote RAT
+T28	Malware 5300 5311	SpyNote RAT
+T29	Malware 5640 5651	SpyNote RAT
+T30	Malware 5748 5759	SpyNote RAT
+T31	Malware 6451 6462	SpyNote RAT
+T35	Malware 1237 1248	SpyNote RAT
+T39	Malware 3074 3085	SpyNote RAT
+T49	Malware 5775 5782	SpyNote
+T50	Malware 5971 5978	SpyNote
+T51	Malware 6425 6432	SpyNote
+T53	Malware 6774 6781	SpyNote
+T54	Application 22 29	Netflix
+T55	Organization 308 315	Netflix
+T56	Application 356 363	Netflix
+T57	Application 655 662	Netflix
+T58	Application 743 750	Netflix
+T59	Application 1295 1302	Netflix
+T60	Application 1517 1524	Netflix
+T61	Application 1606 1613	Netflix
+T62	Application 1677 1684	Netflix
+T63	Organization 699 709	ThreatLabZ
+T64	Organization 7079 7087	Nintendo
+T65	Organization 7128 7135	Zscaler
+T69	Application 2797 2809	BootComplete
+T70	Application 2868 2880	BootComplete
+T71	Application 2900 2912	BootComplete
+T74	Indicator 3762 3794	android.permission.RECORD_AUDIO,
+R1	targets Arg1:T16 Arg2:T54	
+T32	MalwareType 809 829	Remote Access Trojan
+R2	isA Arg1:T17 Arg2:T32	
+T33	AttackPattern 922 992	Activating the device’s microphone and listening to live conversations
+R3	uses Arg1:T18 Arg2:T33	
+T34	AttackPattern 996 1028	Executing commands on the device
+R4	uses Arg1:T18 Arg2:T34	
+T36	AttackPattern 1032 1097	Copying files from the device to a Command & Control (C&C) center
+T37	AttackPattern 1101 1126	Recording screen captures
+T38	AttackPattern 1130 1146	Viewing contacts
+T40	AttackPattern 1150 1170	Reading SMS messages
+R5	uses Arg1:T18 Arg2:T36	
+R6	uses Arg1:T18 Arg2:T37	
+R7	uses Arg1:T18 Arg2:T38	
+R8	uses Arg1:T35 Arg2:T40	
+T13	Application 1532 1543	Google Play
+T43	AttackPattern 3608 3628	take screen captures
+T44	AttackPattern 3634 3694	using the device’s microphone, listen to audio conversations
+R11	uses Arg1:T22 Arg2:T43	
+R12	uses Arg1:T22 Arg2:T44	
+R13	indicates Arg1:T74 Arg2:T22	
+T45	AttackPattern 3864 3920	captured the device’s screen activities along with audio
+R14	uses Arg1:T23 Arg2:T45	
+T46	OS 3986 3994	Lollipop
+T47	AttackPattern 4122 4134	SMS stealing
+R15	uses Arg1:T23 Arg2:T47	
+T48	AttackPattern 4169 4216	stealing SMS messages from the affected devices
+R16	uses Arg1:T24 Arg2:T48	
+T52	AttackPattern 4274 4299	ability to steal contacts
+R17	uses Arg1:T24 Arg2:T52	
+T73	AttackPattern 4552 4569	Uninstalling apps
+T75	AttackPattern 4657 4722	target any antivirus protections on the device and uninstall them
+R20	uses Arg1:T24 Arg2:T75	
+T77	AttackPattern 5208 5270	scanning for Wi-Fi and enabling it if a known channel is found
+R21	uses Arg1:T27 Arg2:T77	
+T78	AttackPattern 5318 5384	click photos using the device's camera, based on commands from C&C
+R22	uses Arg1:T28 Arg2:T78	
+T67	AttackPattern 5661 5738	collecting the device’s location to identify the exact location of the victim
+R23	uses Arg1:T29 Arg2:T67	
+T72	MalwareType 5783 5803	Remote Access Trojan
+R24	isA Arg1:T49 Arg2:T72	
+T79	Application 6072 6080	Whatsapp
+T80	Application 6084 6108	YouTube Video Downloader
+T15	Application 6112 6125	Google Update
+T81	Application 6129 6138	Instagram
+T82	Application 6142 6151	Hack Wifi
+T83	Application 6155 6163	AirDroid
+T84	Application 6167 6177	WifiHacker
+T85	Application 6181 6189	Facebook
+T86	Application 6193 6202	Photoshop
+T87	Application 6206 6211	SkyTV
+T88	Application 6240 6249	PokemonGo
+T89	Application 6226 6236	Trump Dash
+T90	Application 6215 6222	Hotstar
+R25	targets Arg1:T50 Arg2:T79	
+R26	targets Arg1:T50 Arg2:T80	
+R27	targets Arg1:T50 Arg2:T15	
+R28	targets Arg1:T50 Arg2:T81	
+R29	targets Arg1:T51 Arg2:T82	
+R30	targets Arg1:T51 Arg2:T88	
+R31	targets Arg1:T51 Arg2:T89	
+R32	targets Arg1:T51 Arg2:T90	
+R33	targets Arg1:T51 Arg2:T87	
+T91	Time 6338 6342	2017
+T92	OS 6998 7005	Android
+T93	Application 7033 7046	SuperMarioRun
+T76	AttackPattern 1804 1840	icon disappears from the home screen
+R34	uses Arg1:T19 Arg2:T76	
+R35	targets Arg1:T19 Arg2:T60	
+R36	targets Arg1:T19 Arg2:T13	
+T14	Application 1692 1703	Google Play
+R9	targets Arg1:T23 Arg2:T46	
+R10	targets Arg1:T23 Arg2:T5	
+R37	targets Arg1:T50 Arg2:T8	
+T41	AttackPattern 2063 2134	For contacting C&C, the spyware was found to be using free DNS services
+R38	uses Arg1:T19 Arg2:T41	
+T42	MalwareType 2087 2094	spyware
+R39	isA Arg1:T20 Arg2:T42	
+T68	Application 2713 2724	AutoStartup
+T94	Application 2756 2768	BootComplete
+T95	Application 2952 2963	AutoStartup
+T96	AttackPattern 4249 4266	Stealing contacts
+R40	uses Arg1:T24 Arg2:T96	
+T66	MalwareType 4623 4630	spyware
+*	hasAlias T30 T49
+T97	MalwareType 5805 5808	RAT
+T98	MalwareType 6782 6788	Trojan
+R18	isA Arg1:T53 Arg2:T98	
+T99	MalwareType 6433 6439	Trojan
+R41	isA Arg1:T51 Arg2:T99	
+T100	MalwareType 1552 1559	spyware
+T101	MalwareType 4326 4333	spyware
+T102	MalwareType 4403 4410	spyware
+T103	MalwareType 6379 6386	spyware
+T104	Application 6905 6927	third-party app stores
+T105	Application 2924 2935	AutoStartup
+T106	Application 4668 4677	antivirus

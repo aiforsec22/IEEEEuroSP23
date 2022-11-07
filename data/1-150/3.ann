@@ -1,0 +1,70 @@
+T3	OS 524 531	Android
+T5	OS 2290 2297	Android
+T6	OS 2311 2318	Android
+T7	OS 3140 3147	Android
+T10	Malware 160 168	Cerberus
+T11	Malware 170 178	Cerberus
+T12	Version 418 420	v2
+T13	Malware 1187 1195	Cerberus
+T14	Malware 2169 2177	Cerberus
+T15	Version 2247 2249	v2
+T16	Malware 1270 1276	Anubis
+T17	Organization 1405 1414	Kaspersky
+T19	Application 3167 3176	App Store
+T20	Application 3731 3755	Kaspersky Security Cloud
+T21	Location 1031 1037	Russia
+T18	Malware 12 20	Cerberus
+T1	MalwareType 30 45	banking malware
+R1	isA Arg1:T18 Arg2:T1	
+T22	Application 91 105	Mobile banking
+R2	targets Arg1:T10 Arg2:T22	
+T2	MalwareType 206 221	banking malware
+R3	isA Arg1:T11 Arg2:T2	
+T23	Time 249 263	summer of 2019
+T24	Malware 552 560	Cerberus
+T25	Time 633 638	April
+T26	Time 693 697	July
+T27	Location 1049 1055	Europe
+T28	Time 1159 1163	2019
+T4	MalwareType 1295 1310	banking malware
+R5	isA Arg1:T16 Arg2:T4	
+T29	Time 1345 1349	2019
+T30	AttackPattern 1630 1663	covertly send and steal SMS codes
+T31	AttackPattern 1668 1715	open tailored overlays for various online banks
+T8	AttackPattern 1724 1775	steal 2FA-codes including from Google Authenticator
+T32	AttackPattern 1809 1859	accessing customer credit card and contact details
+T33	AttackPattern 1865 1890	ability to redirect calls
+T34	AttackPattern 1956 2036	automatically grant required permissions as part of its authentication attribute
+R7	uses Arg1:T13 Arg2:T30	
+R8	uses Arg1:T13 Arg2:T31	
+R9	uses Arg1:T13 Arg2:T8	
+R10	uses Arg1:T13 Arg2:T32	
+R11	uses Arg1:T13 Arg2:T33	
+R12	uses Arg1:T13 Arg2:T34	
+T35	Malware 2197 2205	Cerberus
+T36	Person 2946 2959	Dmitry Galov,
+T37	Organization 2983 2992	Kaspersky
+T38	Organization 2997 3006	Kaspersky
+T9	Application 3125 3136	Google Play
+T39	OS 3180 3183	iOS
+T40	Malware 3821 3829	Cerberus
+T41	OS 22 29	Android
+R13	targets Arg1:T18 Arg2:T41	
+R4	discoveredIn Arg1:T11 Arg2:T23	
+R16	targets Arg1:T11 Arg2:T3	
+T43	OS 1287 1294	Android
+R17	targets Arg1:T16 Arg2:T43	
+T44	OS 198 205	Android
+R18	targets Arg1:T11 Arg2:T44	
+T45	Malware 409 417	Cerberus
+R6	has Arg1:T45 Arg2:T12	
+T42	Malware 2238 2246	Cerberus
+R14	has Arg1:T42 Arg2:T15	
+R15	has Arg1:T9 Arg2:T7	
+R19	has Arg1:T19 Arg2:T39	
+T46	MalwareType 1935 1938	RAT
+T47	Application 1755 1775	Google Authenticator
+T48	Application 3029 3043	mobile banking
+T49	Application 3106 3116	app stores
+T50	Organization 3848 3858	Securelist
+T51	Organization 1384 1389	banks

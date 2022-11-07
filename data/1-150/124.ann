@@ -1,0 +1,67 @@
+T1	OS 1883 1890	Android
+T5	Organization 1224 1230	Google
+T10	Malware 1575 1590	Desert Scorpion
+T11	Malware 2011 2026	Desert Scorpion
+T12	Malware 2492 2499	Pegasus
+T13	Application 259 266	Dardesh
+T14	Application 423 430	Dardesh
+T15	Organization 299 306	Lookout
+T16	Organization 1447 1454	Lookout
+T17	Organization 551 559	Facebook
+T18	Organization 1780 1788	Facebook
+T19	Application 1313 1325	Play Protect
+T20	ThreatActor 1497 1505	APT-C-23
+T21	Malware 1916 1926	FrozenCell
+T22	Malware 1995 2006	Frozen Cell
+T23	Location 1698 1707	Palestine
+T26	MalwareType 26 33	spyware
+T2	Application 43 54	Google Play
+T3	Application 119 130	Google Play
+T29	Malware 350 365	Desert Scorpion
+T4	Application 611 622	Google Play
+R1	uses Arg1:T29 Arg2:T13	
+R3	targets Arg1:T29 Arg2:T3	
+T28	AttackPattern 684 731	masqueraded as a generic “settings” application
+T30	AttackPattern 742 784	capable of tracking the device’s location,
+T31	AttackPattern 785 797	record calls
+T32	AttackPattern 829 894	retrieve files found on external storage and them to a C&C server
+T33	AttackPattern 896 952	retrieve text messages, contacts and account information
+T34	AttackPattern 954 968	uninstall apps
+R4	uses Arg1:T29 Arg2:T28	
+R5	uses Arg1:T29 Arg2:T30	
+R6	uses Arg1:T29 Arg2:T31	
+R7	uses Arg1:T29 Arg2:T32	
+R8	uses Arg1:T29 Arg2:T33	
+R9	uses Arg1:T29 Arg2:T34	
+T6	Application 1252 1263	Google Play
+R11	hasAuthor Arg1:T29 Arg2:T20	
+T35	Location 1637 1651	Middle Eastern
+R12	targets Arg1:T10 Arg2:T35	
+R13	targets Arg1:T10 Arg2:T23	
+T7	Application 1861 1873	Google Drive
+T36	ThreatActor 1948 1956	APT-C-23
+R14	hasAuthor Arg1:T21 Arg2:T36	
+T8	Application 2322 2339	Google Play Store
+T37	Malware 2503 2512	FinFisher
+R15	isA Arg1:T37 Arg2:T26	
+R16	isA Arg1:T29 Arg2:T26	
+R17	isA Arg1:T12 Arg2:T26	
+R18	targets Arg1:T11 Arg2:T8	
+R19	targets Arg1:T22 Arg2:T8	
+T24	Application 147 154	Dardesh
+R20	uses Arg1:T29 Arg2:T24	
+R21	uses Arg1:T29 Arg2:T14	
+T25	AttackPattern 799 804	video
+T27	AttackPattern 810 827	surrounding audio
+R2	uses Arg1:T29 Arg2:T27	
+R22	uses Arg1:T29 Arg2:T25	
+T9	Application 71 87	surveillance app
+T38	Application 167 183	chat application
+T39	Application 199 209	downloader
+T40	Malware 1018 1033	Desert Scorpion
+T41	Application 1173 1189	chat application
+T42	Application 2416 2424	Facebook
+T43	Application 2793 2807	messaging apps
+T44	Application 2809 2826	social media apps
+T45	Application 2388 2400	social media
+T46	Application 431 439	chat app

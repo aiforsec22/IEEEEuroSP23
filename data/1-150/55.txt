@@ -1,0 +1,44 @@
+Security Alert: Mazar BOT – the Android Malware That Can Erase Your Phone
+Our team at Heimdal Security has recently analyzed a text message sent to random mobile numbers. The Geographical extent is so far unknown, so please exercise caution. The SMS / MMS in question arrives with the following contents (sanitized by Heimdal Security):
+
+If the APK (which is a program file for Android) is run on an Android-powered smartphone, then it will gain administrator rights on the victim’s device. This will allow the attackers to:
+
+SEND_SMS
+RECEIVE_BOOT_COMPLETED
+INTERNET
+SYSTEM_ALERT_WINDOW
+WRITE_SMS
+ACCESS_NETWORK_STATE
+WAKE_LOCK
+GET_TASKS
+CALL_PHONE
+RECEIVE_SMS
+READ_PHONE_STATE
+READ_SMS
+ERASE_PHONE
+Our team has identified the malicious APK to be the Mazar Android BOT, a threat also that Recorded Future spotted in November 2015. The malicious packet (APK) retrieves TOR and installs it on the victim’s phone via the following harmless URLs: https: //f-droid.org/repository/browse/?fdid=org.torproject.android https: //play.google.com/store/apps/details?id=org.torproject.android In the next phase of the attack, the infection will unpack and run the TOR application, which will then be used to connect to the following server: http: // pc35hiptpcwqezgs [.] Onion. After that, an automated SMS will be sent to the number 9876543210 (+98 is the country code for Iran) with the text message: “Thank you”. The catch is that this SMS also includes the device’s location data.
+Insidious mobile malware with crippling options
+This specific mobile malware opens the doors to all kinds of malicious consequences for the victim. Attackers can:
+
+Open a backdoor into Android smartphones, to monitor and control them as they please;
+Send SMS messages to premium channel numbers, seriously increasing the victim’s phone bill;
+Read SMS messages, which means they can also read authentication codes sent as part of two-factor authentication mechanisms, used also by online banking apps and ecommerce websites;
+Use their full access to Android phones to basically manipulate the device to do whatever they want.
+And it gets worse.
+
+ 
+
+Polipo proxy and Man-in-the-Middle Attack
+The attackers behind Mazar BOT also implemented the “Polipo proxy“, which gives them additional access to even more Android functionalities.
+
+An even higher degree of compromise: Chrome injects
+As if it weren’t enough that it can stop calls and launch other aggressive commands on the victim’s phone, Mazar BOT is also capable of injecting itself into Chrome.
+And there are several other settings and commands that Mazar BOT can trigger, as showcased below. These include:
+
+Controlling the phone’s keys
+Enabling the sleep mode
+Save actions in the phone’s settings, etc.
+Mazar BOT won’t run on Russian Android smartphones
+Our team was not surprised to observe that the malware cannot be installed on smartphones running Android with the Russian language option. Mazar BOT will check the phone to identify the victim’s country and this will stop the malicious APK if the targeted phone turns out to be owned by a Russian user: locale.getCountry () equalsIgnoreCase ( “RU”)) Process.killProcess (Process.myPid ());
+
+Until now, Mazar BOT has been advertised for sale on several websites on the Dark Web, but this is the first time we’ve seen this code be abused in active attacks. Attackers may be testing this new type of Android malware to see how they can improve their tactics and reach their final goals, which probably is making more money (as always). We can expect this malware to expand its reach, also because of its ability to remain covert by using TOR to hide its communication. As you may have anticipated, antivirus detection of the malicious APK is very low: 3/54 on VirusTotal.

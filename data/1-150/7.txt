@@ -1,0 +1,30 @@
+Cerberus Banking Trojan Unleashed on Google Play
+The Cerberus malware can steal banking credentials, bypass security measures and access text messages.
+
+A malicious Android app has been uncovered on the Google Play app marketplace that is distributing the banking trojan, Cerberus. The app has 10,000 downloads.
+
+Researchers said that the trojan was found within the last few days, as it was being spread via a Spanish currency converter app (called “Calculadora de Moneda”), which has been available to Android users in Spain since March. Once executed, the malware has the capabilities to steal victims’ bank-account credentials and bypass security measures, including two-factor authentication (2FA).
+
+“As is common with banking malware, Cerberus disguised itself as a genuine app in order to access the banking details of unsuspecting users,” Ondrej David, with Avast, said in a Tuesday analysis. “What’s not so common is that a banking trojan managed to sneak onto the Google Play Store.”
+To avoid initial detection, the app hid its malicious intentions for the first few weeks while being available on Google Play. During this time, the app acted normally as a legitimate converter, and it not steal any data or cause any harm, David said.
+
+“This was possibly to stealthily acquire users before starting any malicious activities, which could have grabbed the attention of malware researchers or Google’s Play Protect team,”  according to David.
+
+In mid-June, newer versions of the currency converter included what researchers called a “dropper code,” but it still wasn’t activated. Then, on July 1, the app deployed a second stage where it became a dropper, silently downloading the malware onto devices without the victims’ knowledge. The app was connected to a command-and-control server (C2), which issued a new command to download the additional malicious Android Application Package (APK), Cerberus.
+
+Cerberus has various spying and credential-theft functionalities. It can sit over an existing banking app and wait for the user to log into their bank account. Then, it creates a layover over the victims’ login screen, and steals their banking credentials. In addition, the trojan has the ability to access victims’ text messages, meaning that it can view two-factor authentication (2FA) codes sent via message.
+
+“It uses Android’s accessibility function, as well as the overlay attack mechanism, which is typical for banking trojans, so when a user opens their regular banking app, an overlay screen is created, and the user’s login details collected,” David told Threatpost.
+
+Researchers said that the C2 server and payload associated with the campaign were active up until Monday of this week. Then, on Monday evening, the C2 server disappeared and the currency converter on Google Play no longer contained the trojan malware.
+
+Avast has notified Google about the malicious app; Threatpost has reached out to Google for further comment on whether the app is still available on Google Play.
+
+“The version in Google Play currently does not contain the dropper code anymore – the app was updated with a new version, which is benign again,” David told Threatpost. “We can only speculate why the threat actors are doing this. It could be they are testing different options with this app, including whether and when Google or external cybersecurity researchers detect the malicious code. So far, we have not received a response from Google yet.”
+
+The Evolving Cerberus Threat
+Cerberus first emerged last August on underground forums, being offered in a malware-as-a-service (MaaS) model. Since then a newly discovered variant of the Cerberus Android trojan has been spotted, with vastly expanded and more sophisticated info-harvesting capabilities, and the ability to run TeamViewer.
+
+It’s only the latest malware family to be discovered on a legitimate app marketplace. In February, researchers identified eight malicious Android apps on Google Play distributing the “Haken” malware, which exfiltrates sensitive data from victims and covertly signs them up for expensive premium subscription services. And in April, a new spyware campaign dubbed PhantomLance was discovered being distributed via dozens of apps within Google Play.
+
+David said that Android users can protect themselves by paying attention to the permissions an app requests and checking an app’s user ratings. “If you feel that the app is requesting more than it promises to deliver, treat this as a red flag,” he said.

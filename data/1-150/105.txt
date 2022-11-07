@@ -1,0 +1,54 @@
+In-depth analysis of a Cerberus trojan variant
+Android banking trojans are nothing new, and Cerberus is just the latest in a long line of such malware to hit the headlines. Even the fact that Cerberus is being “rented out” on underground forums is not unique. Malware “for hire” has become a theme. This trojan uses peoples’ worry of COVID-19 to steal financial data such as credit card numbers. It also uses overlay attacks to trick victims into providing personal information and can capture two-factor authentication details.
+
+“Corona-Apps.apk” is a variant of the Cerberus banking trojan. They are usually spread via phishing campaigns. Corona-Apps.apk uses its connection with the actual virus name to trick users into installing it on their smartphones.
+
+Dynamic Analysis of Cerberus
+By Bogdan Anghelache, specialist threat researcher, Avira Protection Labs
+
+Behavior upon installation
+Corona-Apps.apk variant has a very aggressive behavior after installation. A high level overview can be read on Avira’s blog.
+
+Communication with the C&C server
+After installation, network traffic can be seen between the application and the C&C server ‘botduke1.ug’
+
+The application has a well defined set of commands such as: “info_device”, “new_device”, “saved_data_device” and “pause_attacker”. The “info_device” is requested every few seconds. This keeps the C&C server updated with the newest information about the device.
+
+Static Analysis of Cerberus
+A quick look at the original manifest
+This sophisticated trojan has a large AndroidManifest file: lots of receivers, activities, services, intent-filters etc.
+
+The code found in the distributed APK is the same in the majority of classes”. The code is heavily obfuscated and has no real purpose other than to waste the analyst’s time.
+
+Besides the heavily obfuscated package name, two activities that caught our attention were:
+
+Why would such an app want to send and receive text messages, record audio, and read the user’s contact list?
+And the fact that, the path to the class names is not found (the root element qugyujzldpxqazyrqtc is not present on the left side, under “Source code”).
+Analyzing the payload
+The payload of this variant is a dex file named RRoj.json. When the payload is decompiled, it shows the obfuscated code of the malware. This reveals the class names which have been referenced in the distributed APK manifest file (qugyujzldpxqazyrqtc.uindwdxr.smlelfodpiernkx ).
+
+String decryption
+To evade detection, this variant of Cerberus encrypts every constant string it uses: the strings used to log the activity and as function parameters (we’ll later see how this variant uses mechanism to dynamically request additional permissions).
+
+The decryption method is interesting, it consist of 2 stages. Here’s an overview:
+
+A base-64 encoded string is passed to the first stage of the decryption method, which outputs an array of bytes,
+The array of bytes is decrypted using the RC4 cipher with one of the two hardcoded encryption keys.
+Details of decryption stages:
+Stage one (base-64 decode):
+Decoded base-64 is a string where every 2 characters are processed as a single byte. It means that the length of the output string is always half of the original one.
+
+The function takes every 2 consecutive characters and converts them into digits in base 16. The first one is bitwise shifted to the left 4 times. The output byte will be the sum of the 2 characters, as seen below:
+
+Stage two (RC4 cipher):
+The output from the previous function is passed to the RC4 cipher. Further, it decrypts it using the hardcoded key.
+
+Dynamic permission request
+The payload requests some permissions that may be considered dangerous. Because it doesn’t have a manifest it does that by using the API call requestPermissions. As shown, the permission strings are encrypted to avoid detection.
+
+Conclusion
+Do not grant permissions to applications that do not state the reason for asking such permissions. Download and install applications only from reliable sources—be suspicious of gimmicks and untrusted sources.
+
+Knowledge of the threat landscape and implementation of the right malware detection tools remains crucial to be able to protect yourself from fraud.
+
+Mitigating the mobile malware threat starts with awareness. It requires detection and protection to prevent the malware from being successful.

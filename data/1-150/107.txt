@@ -1,0 +1,14 @@
+Droidjack - Android developers gone rogue
+Android hackers love RATs. But not the grey furry creatures. They prefer cyber-RATs, cyber-crime tools that provide backdoor functionality and access to people’s mobile devices. Looking at the past six months, Bitdefender identified AndroRAT.A as a prevalent Android threat of 2015.
+
+Like other RATs, this detection allows a remote attacker to control the infected device with a user-friendly control panel – monitor and make phone calls and send SMS messages, get the device’s GPS coordinates, activate and use the camera and microphone and access files on the device.
+
+But if you’re looking to buy such a tool to spy on your wife or neighbor, think twice. There is a police crackdown on people who bought DroidJack, a remote access Trojan available for sale on underground forums for around $200. Police have raided homes and made arrests across Europe and the US, apprehending people suspected of installing the mobile phone malware.
+
+Police are also looking for the authors of the tool. Investigations lead to the names and telephone numbers of several individuals initially involved in creating this tool, supposedly in Chennai, India. However, chances are the initial developers are no longer involved in this business.
+
+What’s more, when it comes to attacks in general, hackers can easily hide their tracks using compromised computers or spoofed IP addresses to conduct attacks. Even if their location is disclosed and the police are at their doorsteps, they have taken extra security measures to erase hard disks or use encryption tools to lock compromising data with multiple layers of encryption. They can even dodge responsibility and claim their computer was used as a zombie or their Wi-Fi was hacked.
+
+These tools, as well as other malware kits, are usually sold on highly-vetted marketplaces where the chances of code leaks are minimum. And sellers take extra precautionary measures by receiving money via untraceable virtual currencies, like Bitcoins.
+
+So the chances of arresting the people who developed the spying tool are very slim. But once users have installed it on their machines, they should take full responsibility. If they have used it for research purposes, on their own devices, they have to prove so.

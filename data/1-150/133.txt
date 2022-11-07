@@ -1,0 +1,41 @@
+Mandrake spyware hoovers up information raging from account credentials, screen records, GPS and more -- and has been for years. All while those behind it carefully cover their tracks.
+
+A carefully managed hacking and espionage campaign is infecting smartphones with a potent form of Android malware, providing those behind it with total control of the device, while also remaining completely hidden from the user.
+
+Mandrake spyware abuses legitimate Android functions to help gain access to everything on the compromised device in attacks that can gather almost any information about the user.
+
+The attacker can browse and collect all data on the device, steal account credentials for accounts including banking applications. secretly take recordings of activity on the screen, track the GPS location of the user and more, all while continuously covering their tracks.
+
+The full capabilities of Mandrake – which has been observed targeting users across Europe and the Americas – are detailed in a paper by cybersecurity researchers at Bitdefender. Mandrake has been active since 2016 and researchers previously detailed how the spyware operation was specifically targeting Australian users – but now it's targeting victims around the world.
+
+"The ultimate goal of Mandrake is complete control of the device, as well as account compromise. This is one of the most potent pieces of Android malware we have seen until now," Bogdan Botezatu, director of threat research and reporting at Bitdefender, told ZDNet.
+
+It isn't clear exactly how widespread the campaigns are, but the malware isn't spammed out like other campaigns – the attackers appear to carefully pick their victims and once they have a valued target compromised, they'll manually control the actions of Mandrake in order to manipulate the most information out of the user as possible.
+
+"We estimate the number of victims in the tens of thousands for the current wave, and probably hundreds of thousands throughout the full four-year period," the company said.
+
+And when the attackers have gained all the information they want from the victim, Mandrake has a kill-switch that wipes the malware from the device.
+
+Mandrake's operators have put serious effort into making sure it has stayed hidden over the years, even going so far as to develop, upload and maintain several applications on the Google Play Store – under the names of several different developers. Some of these were designed to target specific countries. The apps have now been removed.
+
+In order to keep users happy the apps were mostly ad free and fixes were regularly delivered. Some of the apps even had social media pages – all designed to convince users to download and trust them.
+
+The malware avoids detection by Google Play by using a multi-stage process to hide the payload. The app is installed on the phone and it then contacts the server to download a loader, which then provides the additional capabilities Mandrake needs to take control of the device.
+
+"The malware operates in stages, with the first stage being a benign app with no malicious behaviour, other than the ability to download and install a second-stage payload when expressly directed to do so. It is safe to say that its operator won't trigger this malicious behaviour while running in Google's analysis environment," Botezatu explained.
+
+The malware tricks the user into providing it with additional privileges on the device.
+
+"What seems to be a simple process such as going through an End-User License Agreement and accepting it is actually translated behind the scenes into requesting and granting extremely powerful permissions. With those permissions, the malware gets complete control of the device and data on it," said Botezatu.
+
+SEE: This new Android mobile malware targets banks, financial services across Europe
+
+While it's still uncertain who is exactly targeted by Mandrake and why, the attackers are aware that if they push the boat out too far, their campaign will be more likely to be discovered.
+
+We don't know who runs the cyber-criminal operation behind Mandrake, but the malware will specifically avoid running on devices in former Soviet Union countries, Africa and the Middle East. Researchers note that some of the first countries made exempt from Mandrake attacks were Ukraine, Belarus, Kyrgyzstan and Uzbekistan.
+
+ZDNet has contacted Google for comment but hasn't received a response at the time of writing.
+
+The Mandrake campaign is likely to still be operating and it's probably only a matter of time before those behind it attempt to distribute new applications to drop the malware.
+
+To help avoid falling victim to such a campaign, users should be sure they trust and know the company that has developed the application – sometimes it might be better to avoid downloading apps from new sources, even if they're in the official download store.

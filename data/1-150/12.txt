@@ -1,0 +1,21 @@
+Malicious Pokémon GO App Spreading DroidJack RAT
+An infected Android version of the Pokémon GO app is infecting unsuspecting users with the malicious remote access tool DroidJack.
+
+First released in the United States on July 6, Pokémon GO is a mobile game available for Android and iPhone. It leverages Niantic’s Real World Gaming Platform to help players find and catch Pokémon as they explore real world locations.
+In response to growing interest around the game, various online forums published tutorials demonstrating how Android users could download an APK for the game from a non-Google URL. Doing so involved modifying Android’s security settings so that users could install APKs from “untrusted sources.”
+
+Researchers at Proofpoint explain that’s a poor security decision for Android users to make:
+
+“Unfortunately, this is an extremely risky practice and can easily lead users to installing malicious apps on their own mobile devices.. Should an individual download an APK from a third party that has been infected with a backdoor,… their device would then be compromised.”
+
+Case in point, at least one of those unofficial APKs comes modified with DroidJack, a remote access tool which like other mobile trojans gives an attacker full control over an infected device.
+
+Proofpoint’s security team describes that the malicious app’s start screen appears identical to that of the legitimate application, which makes it difficult for users to discern whether they’ve been infected with malware.
+
+Fortunately, Android enthusiasts of Pokémon GO can check to see whether they have a copy of the legitimate app installed on their devices. They should first review the permissions requested, as only the malicious version containing DroidJack requests the ability to modify SMS messages and record audio.
+
+Players can also check the SHA256 hash of the downloaded APK to see if it matches that of the real Pokémon GO app.
+
+Going forward, mobile users should be careful about from where they decide to install applications onto their applications. Proofpoint elaborates:
+
+“Even though this APK has not been observed in the wild, it represents an important proof of concept: namely, that cybercriminals can take advantage of the popularity of applications like Pokemon GO to trick users into installing malware on their devices. Bottom line, just because you can get the latest software on your device does not mean that you should. Instead, downloading available applications from legitimate app stores is the best way to avoid compromising your device and the networks it accesses.”

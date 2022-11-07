@@ -1,0 +1,81 @@
+T1	OS 25 32	Android
+T3	OS 996 1003	Android
+T4	OS 2108 2115	Android
+T5	OS 2012 2019	Windows
+T6	Malware 1530 1537	Twitoor
+T7	Malware 2282 2289	Twitoor
+T8	Malware 2537 2544	Twitoor
+T9	Malware 2739 2746	Twitoor
+T10	Indicator 3003 3043	E5212D4416486AF42E7ED1F58A526AEF77BE89BE
+T11	Indicator 3045 3085	A9891222232145581FE8D0D483EDB4B18836BCFC
+T12	Indicator 3087 3127	AFF9F39A6CA5D68C599B30012D79DA29E2672C6E
+T15	Application 915 922	Twitter
+T16	Organization 64 68	ESET
+T17	Organization 425 429	ESET
+T18	Organization 1038 1042	ESET
+T19	Application 2428 2436	Facebook
+T20	Application 2456 2464	LinkedIn
+T21	Person 2831 2839	Stefanko
+T22	Indicator 2981 2990	devices.”
+T23	Malware 446 464	Android/Twitoor.A,
+T24	Application 6 13	Twitter
+T25	MalwareType 33 39	botnet
+T26	Malware 72 87	Android/Twitoor
+R1	isA Arg1:T26 Arg2:T25	
+R2	targets Arg1:T26 Arg2:T1	
+R3	targets Arg1:T26 Arg2:T24	
+T27	AttackPattern 149 257	Instead of being controlled by a traditional command-and-control server, it receives instructions via tweets
+R4	uses Arg1:T26 Arg2:T27	
+T28	Malware 260 275	Android/Twitoor
+T29	AttackPattern 301 350	downloading other malware onto an infected device
+R5	uses Arg1:T28 Arg2:T29	
+R6	variantOf Arg1:T28 Arg2:T23	
+T2	Application 496 513	Android app store
+T31	AttackPattern 569 618	impersonates a porn player app or MMS application
+R8	uses Arg1:T28 Arg2:T31	
+T13	AttackPattern 682 714	hides its presence on the system
+T32	AttackPattern 719 787	checks the defined Twitter account at regular intervals for commands
+T33	AttackPattern 789 903	Based on received commands, it can either download malicious apps or switch the C&C Twitter account to another one
+R9	uses Arg1:T28 Arg2:T13	
+R10	uses Arg1:T28 Arg2:T32	
+R11	uses Arg1:T28 Arg2:T33	
+T14	MalwareType 1004 1010	botnet
+T34	Person 1018 1032	Lukáš Štefanko
+T35	MalwareType 1507 1513	botnet
+T36	MalwareType 1538 1544	botnet
+T37	Person 1992 2000	Štefanko
+T38	Organization 2027 2034	Twitter
+T39	Time 2047 2051	2006
+T40	Time 2102 2106	2009
+T41	MalwareType 2079 2086	botnets
+T42	Organization 2256 2262	Google
+T43	Organization 2268 2273	Baidu
+T44	Person 2343 2351	Štefanko
+T45	MalwareType 2303 2320	Twitter-based bot
+R12	isA Arg1:T7 Arg2:T45	
+T46	Organization 2500 2504	ESET
+T48	Person 2725 2733	Štefanko
+R14	indicates Arg1:T10 Arg2:T9	
+R15	indicates Arg1:T11 Arg2:T9	
+R16	indicates Arg1:T12 Arg2:T9	
+R17	isA Arg1:T6 Arg2:T36	
+*	hasAlias T28 T7 T6 T8 T9
+T49	Application 584 599	porn player app
+T50	Application 603 618	MMS application
+R18	uses Arg1:T23 Arg2:T49	
+R19	uses Arg1:T23 Arg2:T50	
+T30	AttackPattern 528 564	spreads by SMS or via malicious URLs
+R7	uses Arg1:T23 Arg2:T30	
+T47	Application 738 745	Twitter
+R13	uses Arg1:T23 Arg2:T47	
+T51	Application 873 880	Twitter
+R20	uses Arg1:T23 Arg2:T51	
+T52	AttackPattern 1618 1643	encrypting their messages
+R21	uses Arg1:T6 Arg2:T52	
+T53	MalwareType 2593 2615	mobile banking malware
+T54	MalwareType 1137 1144	botnets
+T55	MalwareType 2545 2551	trojan
+T56	MalwareType 1242 1248	botnet
+T57	MalwareType 1577 1583	botnet
+T58	MalwareType 2630 2636	botnet
+T59	Application 1758 1773	social networks

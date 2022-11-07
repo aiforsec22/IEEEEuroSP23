@@ -1,0 +1,80 @@
+T1	OS 4 11	Android
+T2	OS 118 125	Android
+T3	OS 3398 3405	Android
+T4	Malware 20 25	RuMMS
+T5	Malware 418 423	RuMMS
+T6	Malware 667 672	RuMMS
+T7	Malware 3454 3459	RuMMS
+T8	Malware 4041 4046	RuMMS
+T9	Organization 60 67	FireEye
+T10	Organization 577 584	FireEye
+T11	Organization 1629 1636	FireEye
+T12	Organization 1717 1724	FireEye
+T13	Organization 4147 4154	FireEye
+T14	Malware 1543 1548	RuMMs
+T15	Malware 2707 2712	RuMMs
+T16	Location 820 826	Russia
+T17	Location 4778 4784	Russia
+T18	Indicator 539 545	XXX.ru
+T19	Indicator 754 764	“XXXX.ru”,
+T21	Indicator 500 530	hxxp://yyyyyyyyXXXX.ru/mms.apk
+R1	targets Arg1:T4 Arg2:T1	
+T22	AttackPattern 26 58	Targeting Users through Smishing
+R2	uses Arg1:T4 Arg2:T22	
+T23	Location 169 176	Russian
+R3	targets Arg1:T4 Arg2:T23	
+T24	AttackPattern 199 305	distributed via a series of infected subdomains that are actually registered with an authentic domain name
+R4	uses Arg1:T4 Arg2:T24	
+R5	indicates Arg1:T21 Arg2:T5	
+R6	indicates Arg1:T18 Arg2:T5	
+T25	Indicator 722 729	mms.apk
+R7	indicates Arg1:T25 Arg2:T6	
+R8	indicates Arg1:T19 Arg2:T6	
+R9	targets Arg1:T6 Arg2:T16	
+T20	Indicator 1036 1044	asdfgjcr
+T26	Indicator 1046 1054	cacama18
+T27	Indicator 1056 1064	cacamadf
+T28	Indicator 1066 1074	konkonq2
+T29	Indicator 1076 1084	mmsmtsh5
+T30	Indicator 1086 1094	riveroer
+T31	Indicator 1100 1108	sdfkjhl2
+R10	indicates Arg1:T20 Arg2:T6	
+R11	indicates Arg1:T26 Arg2:T6	
+R12	indicates Arg1:T27 Arg2:T6	
+R13	indicates Arg1:T28 Arg2:T6	
+R14	indicates Arg1:T29 Arg2:T6	
+R15	indicates Arg1:T30 Arg2:T6	
+R16	indicates Arg1:T31 Arg2:T6	
+T32	AttackPattern 1366 1406	short SMS message is sent to the victims
+R17	uses Arg1:T6 Arg2:T32	
+T33	AttackPattern 1805 1838	asks for administrator privileges
+T34	AttackPattern 1848 1928	delete all the icons that belong to the app so that the victim doesn’t detect it
+R18	uses Arg1:T14 Arg2:T33	
+R19	uses Arg1:T14 Arg2:T34	
+T35	AttackPattern 2050 2125	Sending out information about the device to a remotely controlled C2 server
+T36	AttackPattern 2131 2184	Communicating with the C2 server for new instructions
+T37	AttackPattern 2190 2286	Sending SMS messages to financial institutions for inquiring about the victim’s account balances
+T38	AttackPattern 2292 2369	Transferring the acquired information about account balances to the C2 server
+T39	AttackPattern 2375 2510	Spreading the infection to other numbers present in the contacts folder of the victim’s phone through sending C2-specified SMS messages
+R20	uses Arg1:T14 Arg2:T35	
+R21	uses Arg1:T14 Arg2:T36	
+R22	uses Arg1:T14 Arg2:T37	
+R23	uses Arg1:T14 Arg2:T38	
+R24	uses Arg1:T14 Arg2:T39	
+T40	Time 2716 2730	3rd April 2016
+T41	Time 2787 2804	18th January 2016
+R25	discoveredIn Arg1:T15 Arg2:T41	
+R26	targets Arg1:T7 Arg2:T3	
+T42	AttackPattern 3497 3593	C2 server instructed their device to send out four different SMS messages to four unique numbers
+R27	uses Arg1:T7 Arg2:T42	
+T43	Location 3621 3627	Russia
+R28	targets Arg1:T7 Arg2:T43	
+T44	AttackPattern 3703 3778	checking out the account balance of the user at that particular institution
+R29	uses Arg1:T7 Arg2:T44	
+T45	Time 4227 4239	January 2016
+T46	Time 4250 4260	April 2016
+T47	Time 4277 4282	March
+T48	Location 4599 4605	Russia
+T49	Location 376 382	Russia
+T50	Application 2214 2236	financial institutions
+T51	Application 3634 3656	financial institutions

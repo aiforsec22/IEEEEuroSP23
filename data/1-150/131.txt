@@ -1,0 +1,32 @@
+Skygofree: Powerful Android spyware with advanced surveillance tools
+Android spyware has advanced surveillance capabilities, including turning on the mic when the victim enters specific geolocations.
+Researchers at Kaspersky uncovered “one of the most powerful” Android spyware tools that it has ever seen; the tool is considered powerful due, in part, to advanced surveillance capabilities that have previously never been seen in the wild.
+
+Dubbed Skygofree, due to the word being used in one of its domains, Kaseprsky said the malware has “multiple, exceptional capabilities: usage of multiple exploits for gaining root privileges, a complex payload structure, never-before-seen surveillance features such as recording surrounding audio in specified locations.”
+
+Surveillance capabilities
+
+Although the Android malware has numerous creepy spying capabilities, 48 different commands in the latest implant, Kaspersky described the “geofence” command as one of the most notable features. A location can be specified so that when the victim’s device matches that location, “the malware triggers and begins to record surrounding audio.”
+
+
+The “social” command allows files from any other installed app to be captured. Kaspersky gives examples of how it steals Facebook data, Facebook messenger, WhatsApp, Viber and LINE for free calls and messages. The payload targeting WhatsApp messenger uses the Android Accessibility Service to grab WhatsApp text messages.
+
+The Android implant has a camera command that is triggered to record video or capture a photo when the device is unlocked. It includes other spyware capabilities such as grabbing call records, text messages, tracking location, snatching calendar events, recording surrounding audio and snagging other information stored on the device; there’s also a command to create a new Wi-Fi connection to connect to the attackers’ network.
+
+There were even components “that form an entire spyware system for the Windows platform.” The malware modifies a registry key to enable “autostart.” The main module is for reverse shell. One module is used to exfiltrate Skype call recordings, but other capabilities include keylogging, turning on the mic to record audio, capturing screenshots and exfiltrating data.
+
+Skygofree wasn’t created from scratch as Kaspersky noted “it looks like the attackers created this exploit payload based on android-rooting-tools project source code.” In another instance, the researchers “found some code similarities between the implant for Windows and other public accessible projects. It appears the developers have copied the functional part of the keylogger module from this project.”
+
+How victims are infected
+
+This spyware is being used for targeted surveillance; all known targets have been located in Italy. Victims are infected after being lured to visit specific malicious sites meant to look like those of mobile operators. Once there, the target is infected with “sophisticated multi-stage spyware that gives attackers full remote control of the infected device.”
+
+Just because surveillance features haven’t been seen before doesn’t mean the Android spyware is new. In fact, Kaspersky believes the malware was created at least by the end of 2014. Kaspersky discovered it in October 2017 and noted that one of the domains used to spread the spyware was registered by the attackers that same month. However, the domains hosting fake mobile operator sites were registered in 2015; that is the year Kaspersky said the distribution campaign was “most active” – it is also the year the Hacking Team was hacked.
+
+Italian company behind Skygofree
+
+Kaspersky didn’t go so far as to say which company is behind Skygofree, it is “pretty confident that the developer of the Skygofree implants is an Italian IT company that works on surveillance solutions, just like HackingTeam.”
+
+Various artifacts in the code referenced “negg;” Forbes’ sources claimed the Rome-based Negg is “working with the police now” to fill “the gap left behind by Hacking Team.”
+
+Kaspersky also released IoC (indicators of compromise) [pdf].

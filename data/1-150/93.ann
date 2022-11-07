@@ -1,0 +1,73 @@
+T1	OS 38 45	Android
+T2	OS 175 182	Android
+T3	OS 245 252	Android
+T4	OS 480 487	Android
+T5	OS 788 795	Android
+T6	OS 1158 1165	Android
+T8	Malware 14 21	RedDrop
+T9	Malware 737 744	RedDrop
+T10	Malware 1877 1884	RedDrop
+T11	Malware 2744 2751	RedDrop
+T12	Malware 3154 3161	RedDrop
+T13	Malware 3982 3989	RedDrop
+T14	Malware 4150 4157	RedDrop
+T15	Malware 4460 4467	RedDrop
+T16	Organization 412 419	Wandera
+T17	Organization 851 858	Wandera
+T18	Organization 1113 1120	Wandera
+T19	Organization 1305 1312	Wandera
+T20	Organization 3244 3251	Wandera
+T21	Organization 3355 3362	Wandera
+T22	Organization 1126 1136	Threatpost
+T24	Malware 4295 4302	SLocker
+T31	Indicator 1689 1704	huxiawang[.]cn,
+R1	targets Arg1:T8 Arg2:T1	
+T33	AttackPattern 111 167	can pull out sensitive data – including audio recordings
+R2	uses Arg1:T8 Arg2:T33	
+R3	targets Arg1:T8 Arg2:T2	
+R4	targets Arg1:T8 Arg2:T3	
+T34	AttackPattern 265 308	extract sensitive data and audio recordings
+T35	AttackPattern 310 336	run up premium SMS charges
+T36	AttackPattern 346 380	tries to extort money from victims
+R5	uses Arg1:T8 Arg2:T34	
+R6	uses Arg1:T8 Arg2:T35	
+R7	uses Arg1:T8 Arg2:T36	
+T37	Malware 440 447	RedDrop
+R8	targets Arg1:T37 Arg2:T4	
+T38	Organization 641 648	Wandera
+R9	targets Arg1:T9 Arg2:T5	
+T39	Time 900 909	Wednesday
+R10	targets Arg1:T9 Arg2:T6	
+T28	Location 1602 1609	Chinese
+T40	Application 1624 1629	Baidu
+R11	indicates Arg1:T31 Arg2:T9	
+T29	Malware 1924 1931	RedDrop
+T25	AttackPattern 2408 2433	harvesting sensitive data
+R13	uses Arg1:T29 Arg2:T25	
+T41	AttackPattern 2759 2876	request invasive permissions enabling the attack to be conducted without requesting further interaction from the user
+R14	uses Arg1:T11 Arg2:T41	
+T42	AttackPattern 2967 2993	persistent between reboots
+R15	uses Arg1:T11 Arg2:T42	
+T43	AttackPattern 3022 3082	constantly communicate with command and control (C2) servers
+R16	uses Arg1:T11 Arg2:T43	
+T30	Organization 3917 3924	Wandera
+T44	Organization 4120 4127	Wandera
+T7	AttackPattern 1972 2098	silently downloads an additional seven Android application packages (APK) that add additional spyware and malicious components
+R12	uses Arg1:T29 Arg2:T7	
+T32	AttackPattern 2179 2353	When the user interacts with the app, each interaction secretly triggers the sending of an SMS to a premium service, which is then instantly deleted before it can be detected
+R17	uses Arg1:T29 Arg2:T32	
+T23	AttackPattern 2568 2722	Data siphoned off phones are uploaded to the attacker’s Dropbox account to be used in conjunction with further attacks and for possible extortion purposes
+R18	uses Arg1:T29 Arg2:T23	
+T26	AttackPattern 2445 2499	passively recording audio of the device’s surroundings
+T27	AttackPattern 2501 2517	accessing photos
+T45	AttackPattern 2519 2527	contacts
+T46	AttackPattern 2533 2563	extracting locally saved files
+R19	uses Arg1:T29 Arg2:T26	
+R20	uses Arg1:T29 Arg2:T27	
+R21	uses Arg1:T29 Arg2:T45	
+R22	uses Arg1:T29 Arg2:T46	
+T47	Application 513 535	third-party app stores
+T48	MalwareType 2066 2073	spyware
+T49	OS 2011 2018	Android
+T50	Organization 2624 2631	Dropbox
+T51	Organization 2892 2899	Wandera

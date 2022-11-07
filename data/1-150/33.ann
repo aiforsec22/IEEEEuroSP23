@@ -1,0 +1,97 @@
+T1	OS 52 59	Android
+T2	OS 208 215	Android
+T3	OS 439 446	Android
+T5	OS 1580 1587	Android
+T6	OS 2150 2157	Android
+T9	OS 30 33	iOS
+T10	OS 76 79	iOS
+T11	OS 177 180	iOS
+T12	OS 396 399	iOS
+T13	OS 1465 1468	iOS
+T14	OS 1672 1675	iOS
+T15	Organization 1946 1951	Apple
+T16	OS 1920 1923	iOS
+T17	OS 2229 2232	iOS
+T21	Malware 45 51	Exodus
+T22	Malware 69 75	Exodus
+T23	Malware 592 598	Exodus
+T24	Malware 714 720	Exodus
+T25	Malware 1518 1524	Exodus
+T26	Organization 1435 1442	Lookout
+T27	Organization 1683 1690	Lookout
+T28	Malware 525 531	EXODUS
+T29	Malware 1288 1294	EXODUS
+T30	Organization 777 801	Security Without Borders
+T31	Organization 1117 1141	Security Without Borders
+T32	Application 1230 1240	Play Store
+T33	OS 1295 1298	IOS
+T34	Organization 1377 1403	Kaspersky Security Analyst
+T36	Organization 2070 2075	Apple
+T37	Location 113 125	Turkmenistan
+T39	Person 1711 1721	Adam Bauer
+T41	Person 1759 1764	Bauer
+T42	Person 2118 2123	Bauer
+T40	MalwareType 60 67	spyware
+R1	targets Arg1:T21 Arg2:T1	
+R2	targets Arg1:T21 Arg2:T9	
+R3	isA Arg1:T21 Arg2:T40	
+T43	MalwareType 80 87	spyware
+R4	targets Arg1:T22 Arg2:T10	
+R5	isA Arg1:T22 Arg2:T43	
+T44	Location 101 108	Italian
+R6	targets Arg1:T22 Arg2:T44	
+R7	targets Arg1:T22 Arg2:T37	
+T45	MalwareType 216 223	spyware
+T46	Application 279 296	Google Play Store
+R8	targets Arg1:T22 Arg2:T11	
+R9	targets Arg1:T22 Arg2:T2	
+R10	isA Arg1:T22 Arg2:T45	
+R11	targets Arg1:T22 Arg2:T46	
+T20	Organization 375 382	Lookout
+T35	Application 505 520	Apple App Store
+T47	ThreatActor 620 646	Italian app maker Connexxa
+R12	hasAuthor Arg1:T23 Arg2:T47	
+T48	Location 690 697	Italian
+R13	targets Arg1:T23 Arg2:T48	
+T49	MalwareType 812 819	spyware
+T50	Application 857 867	Play Store
+R14	isA Arg1:T24 Arg2:T49	
+R15	targets Arg1:T24 Arg2:T50	
+T51	MalwareType 964 971	spyware
+T4	AttackPattern 976 1010	capable of rooting Android devices
+T52	AttackPattern 1044 1112	spying features that gave attackers full control of infected devices
+T53	Malware 1179 1185	Exodus
+R20	targets Arg1:T53 Arg2:T32	
+T55	MalwareType 1485 1492	spyware
+R23	isA Arg1:T25 Arg2:T55	
+R24	targets Arg1:T25 Arg2:T13	
+T56	Location 1854 1861	Italian
+T57	Location 1866 1879	Turkmenistani
+T58	Malware 1904 1910	Exodus
+R26	targets Arg1:T58 Arg2:T16	
+T60	AttackPattern 2321 2419	collect and steal contacts, photos, videos, audio recordings, GPS information, and device location
+T61	AttackPattern 2435 2479	perform on-demand audio recording operations
+R25	uses Arg1:T58 Arg2:T60	
+R28	uses Arg1:T58 Arg2:T61	
+T19	Time 559 569	LAST MONTH
+R17	uses Arg1:T24 Arg2:T4	
+R18	uses Arg1:T24 Arg2:T52	
+T62	AttackPattern 820 867	hidden inside an app uploaded on the Play Store
+T65	Organization 906 945	Italian internet service provider (ISP)
+R16	uses Arg1:T24 Arg2:T62	
+R32	targets Arg1:T24 Arg2:T65	
+T38	Time 1547 1556	last year
+T66	Application 2059 2068	App Store
+R21	targets Arg1:T29 Arg2:T33	
+T7	OS 2588 2595	Android
+T8	OS 2688 2691	iOS
+T18	OS 2758 2765	Android
+T54	OS 2779 2782	iOS
+R22	targets Arg1:T58 Arg2:T7	
+R27	targets Arg1:T58 Arg2:T8	
+R29	targets Arg1:T58 Arg2:T18	
+R30	targets Arg1:T58 Arg2:T54	
+T59	OS 995 1002	Android
+T67	MalwareType 575 582	spyware
+T68	OS 532 539	ANDROID
+T69	OS 1774 1777	iOS

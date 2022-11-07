@@ -1,0 +1,66 @@
+T3	OS 417 424	Android
+T5	OS 1856 1863	Android
+T6	OS 1940 1947	Android
+T9	OS 838 841	iOS
+T11	Application 1622 1639	Google Play store
+T15	Malware 1231 1238	XLoader
+T16	Malware 1289 1296	XLoader
+T17	Malware 1961 1968	XLoader
+T18	Organization 211 222	Trend Micro
+T19	Organization 1240 1251	Trend Micro
+T20	Organization 1193 1198	Apple
+T23	Organization 1558 1562	ESET
+T24	Organization 1713 1726	Kaspersky Lab
+T27	Location 1497 1508	South Korea
+T28	AttackPattern 20 83	Masquerades as Android Security Apps, iOS Configuration Profile
+T1	Malware 102 109	XLoader
+T7	AttackPattern 113 183	masquerading as Android security apps and an iOS configuration profile
+R2	uses Arg1:T1 Arg2:T7	
+T2	AttackPattern 285 403	tricked mobile users into visiting one of several fake websites, including a clone of a Japanese mobile phone operator
+R5	uses Arg1:T1 Arg2:T2	
+T4	MalwareType 789 796	spyware
+T8	MalwareType 803 817	banking Trojan
+T14	Malware 729 736	XLoader
+R7	isA Arg1:T14 Arg2:T4	
+R8	isA Arg1:T14 Arg2:T8	
+R9	targets Arg1:T14 Arg2:T3	
+R10	targets Arg1:T14 Arg2:T9	
+T25	Time 1349 1359	April 2018
+T26	AttackPattern 1297 1345	disguised as legitimate Facebook and Chrome apps
+R11	uses Arg1:T16 Arg2:T26	
+R12	discoveredIn Arg1:T16 Arg2:T25	
+T21	Location 1513 1518	Japan
+R13	targets Arg1:T16 Arg2:T27	
+R14	targets Arg1:T16 Arg2:T21	
+T22	Time 1531 1541	April 2018
+T12	Time 1707 1711	2012
+R15	targets Arg1:T17 Arg2:T6	
+R16	targets Arg1:T16 Arg2:T11	
+T29	Application 373 403	Japanese mobile phone operator
+R17	uses Arg1:T1 Arg2:T29	
+T30	Application 35 56	Android Security Apps
+T31	Application 58 83	iOS Configuration Profile
+T32	Application 129 150	Android security apps
+T33	Application 158 183	iOS configuration profile
+R20	uses Arg1:T1 Arg2:T32	
+R21	uses Arg1:T1 Arg2:T33	
+T34	AttackPattern 513 590	triggered the download of an Android Package (APK) for fake security software
+R22	uses Arg1:T1 Arg2:T34	
+T35	AttackPattern 823 997	n the event an iOS user visited one of the malicious websites, the campaign redirected to another website that prompted them to download a malicious iOS configuration profile
+R23	uses Arg1:T1 Arg2:T35	
+T10	Application 972 997	iOS configuration profile
+R24	uses Arg1:T14 Arg2:T10	
+T36	Application 1321 1329	Facebook
+T37	Application 1334 1340	Chrome
+R25	targets Arg1:T16 Arg2:T36	
+R26	targets Arg1:T16 Arg2:T37	
+T38	Malware 4 11	XLoader
+T13	OS 58 61	iOS
+T39	OS 35 42	Android
+T40	OS 129 136	Android
+T41	OS 158 161	iOS
+T42	Application 642 658	third-party apps
+T43	MalwareType 1738 1744	Trojan
+T44	Application 1755 1767	security app
+T45	Application 568 590	fake security software
+T46	OS 542 549	Android

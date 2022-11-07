@@ -1,0 +1,76 @@
+T8	Organization 679 685	Google
+T14	Malware 1839 1851	HummingWhale
+T15	Malware 2843 2855	HummingWhale
+T16	Malware 2976 2988	HummingWhale
+T17	Malware 0 8	Virulent
+T19	Malware 510 520	HummingBad
+T21	Organization 2958 2969	Check Point
+T22	Organization 3469 3480	Check Point
+T23	Organization 3511 3522	Check Point
+T24	Organization 3534 3541	Lookout
+T25	Malware 3586 3592	Shedun
+T26	Application 3911 3923	Whale Camera
+T27	Application 3952 3966	Rainbow Camera
+T28	Application 4004 4017	Orange Camera
+T29	Indicator 3926 3950	com.color.rainbow.camera
+T30	Indicator 3726 3749	app.blinkingcamera.com.
+T31	Indicator 3874 3899	com.bird.sky.whale.camera
+T32	Indicator 3973 4002	com.fishing.when.orangecamera
+T34	Indicator 3840 3861	com.XXXXXXXXX.camera,
+T6	Application 63 74	Google Play
+R2	targets Arg1:T17 Arg2:T6	
+T7	Application 211 222	Google Play
+T35	Malware 302 315	HummingWhale,
+T36	Malware 389 399	HummingBad
+R5	variantOf Arg1:T35 Arg2:T36	
+T37	Organization 490 496	Google
+T38	OS 663 670	Android
+R7	targets Arg1:T19 Arg2:T38	
+T39	Application 730 745	fraudulent apps
+T41	Malware 898 908	HummingBad
+T42	Location 977 979	US
+T43	Malware 982 994	HummingWhale
+T9	Application 1048 1064	Google Play apps
+R8	targets Arg1:T41 Arg2:T42	
+R9	targets Arg1:T43 Arg2:T9	
+T44	Organization 1152 1163	Check Point
+T45	Application 1577 1587	app stores
+T33	Malware 1812 1822	HummingBad
+T46	AttackPattern 1858 1903	generate revenue by displaying fraudulent ads
+R10	uses Arg1:T14 Arg2:T46	
+T47	AttackPattern 1939 2052	When users try to close the ads, the new functionality causes already downloaded apps to run in a virtual machine
+R11	uses Arg1:T14 Arg2:T47	
+T10	Application 2427 2438	Google Play
+R13	targets Arg1:T14 Arg2:T10	
+T53	Indicator 2861 2872	DroidPlugin
+T54	ThreatActor 2947 2956	Qihoo 360
+R19	indicates Arg1:T53 Arg2:T15	
+T55	AttackPattern 3012 3065	hiding the original malicious app once it's installed
+R20	uses Arg1:T16 Arg2:T55	
+T11	Malware 3198 3206	Gooligan
+T56	Time 3258 3266	November
+T12	Application 3308 3323	Google accounts
+R22	targets Arg1:T11 Arg2:T12	
+T13	Application 3368 3379	Google Play
+R23	targets Arg1:T11 Arg2:T13	
+R25	variantOf Arg1:T25 Arg2:T11	
+R26	indicates Arg1:T30 Arg2:T11	
+R27	indicates Arg1:T34 Arg2:T11	
+R28	indicates Arg1:T31 Arg2:T11	
+R29	indicates Arg1:T29 Arg2:T11	
+R30	indicates Arg1:T32 Arg2:T11	
+R31	targets Arg1:T11 Arg2:T26	
+R32	targets Arg1:T11 Arg2:T27	
+R33	targets Arg1:T11 Arg2:T28	
+R34	targets Arg1:T43 Arg2:T45	
+T1	OS 9 16	Android
+R1	targets Arg1:T17 Arg2:T1	
+T2	AttackPattern 1908 1937	automatically installing apps
+R3	uses Arg1:T14 Arg2:T2	
+T3	OS 2576 2583	Android
+T4	OS 3423 3430	Android
+R4	targets Arg1:T25 Arg2:T4	
+T57	Application 2508 2523	fraudulent apps
+T58	Application 3092 3103	Google Play
+T59	OS 140 147	Android
+T60	OS 3220 3227	Android

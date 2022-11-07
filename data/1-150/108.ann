@@ -1,0 +1,75 @@
+T2	Organization 908 914	Google
+T6	Organization 340 353	Kaspersky Lab
+T8	Organization 1317 1326	Kaspersky
+T9	Malware 0 6	Rotexy
+T10	Malware 242 248	Rotexy
+T11	Malware 952 958	Rotexy
+T12	Malware 1260 1266	Rotexy
+T13	Malware 1604 1610	Rotexy
+T14	Malware 2634 2640	Rotexy
+T15	Malware 4064 4070	Rotexy
+T16	Location 2605 2611	Russia
+T17	Person 1538 1555	Tatyana Shishkova
+T18	Person 1560 1571	Lev Pinkman
+T7	MalwareType 69 76	spyware
+R1	isA Arg1:T9 Arg2:T7	
+T21	MalwareType 96 110	banking trojan
+R2	isA Arg1:T9 Arg2:T21	
+T22	Time 434 438	2014
+R3	discoveredIn Arg1:T10 Arg2:T22	
+T23	AttackPattern 598 682	use at the same time of three separate communication channels for receiving commands
+R4	uses Arg1:T10 Arg2:T23	
+T1	Application 746 768	Google Cloud Messaging
+T19	Time 884 898	April 11, 2019
+T24	AttackPattern 1148 1233	control the actions of malware by sending a text message to the infected mobile phone
+R5	uses Arg1:T11 Arg2:T24	
+T3	Location 1300 1306	Russia
+T25	Location 1346 1353	Ukraine
+T26	Location 1355 1362	Germany
+T27	Location 1364 1370	Turkey
+R6	targets Arg1:T12 Arg2:T25	
+R7	targets Arg1:T12 Arg2:T3	
+R8	targets Arg1:T12 Arg2:T26	
+R9	targets Arg1:T12 Arg2:T27	
+T28	AttackPattern 1686 1757	applying AES encryption to data exchanged between the target and the C2
+R10	uses Arg1:T13 Arg2:T28	
+T4	AttackPattern 1654 1682	processing SMS communication
+R11	uses Arg1:T13 Arg2:T4	
+T29	Time 1771 1780	late 2016
+T30	AttackPattern 1828 1877	stealing users' bank card data via phishing pages
+R12	uses Arg1:T13 Arg2:T30	
+T31	AttackPattern 1979 2055	locked the device screen until the victim provided the necessary information
+R13	uses Arg1:T13 Arg2:T31	
+T32	AttackPattern 1931 1974	mimicked a login form for a legitimate bank
+R14	uses Arg1:T13 Arg2:T32	
+T33	AttackPattern 2106 2199	included a virtual keyboard that allegedly offered protection against keylogging applications
+R15	uses Arg1:T13 Arg2:T33	
+T34	AttackPattern 2207 2256	lure the victim into giving up the sensitive data
+R16	uses Arg1:T13 Arg2:T34	
+T36	AttackPattern 2477 2589	a protection mechanism that checks for the country it was launched in and if it runs in an emulated environment.
+R18	uses Arg1:T13 Arg2:T36	
+T20	AttackPattern 2641 2705	registers with GCM and checks if it has administrator privileges
+R19	uses Arg1:T14 Arg2:T20	
+R21	targets Arg1:T14 Arg2:T16	
+T38	AttackPattern 2875 2919	performs a privilege check once every second
+T39	AttackPattern 3054 3147	attempt to revoke its admin privileges ends with periodically turning off the phone's display
+R23	uses Arg1:T14 Arg2:T39	
+T40	Malware 3228 3234	Rotexy
+T41	MalwareType 3313 3323	ransomware
+R24	isA Arg1:T40 Arg2:T41	
+T5	AttackPattern 3384 3424	hiding SMS communication from the victim
+R25	uses Arg1:T40 Arg2:T5	
+T44	AttackPattern 3985 4029	start reiterating its request for privileges
+R28	uses Arg1:T15 Arg2:T44	
+R17	uses Arg1:T14 Arg2:T38	
+T35	MalwareType 14 20	Trojan
+T37	MalwareType 116 126	ransomware
+R20	isA Arg1:T9 Arg2:T37	
+T42	Time 1498 1516	August and October
+T43	MalwareType 2941 2947	Trojan
+T45	MalwareType 3521 3531	ransomware
+R22	isA Arg1:T40 Arg2:T45	
+T46	AttackPattern 3549 3635	showing an extortionist HTML page with sexually explicit images and freezing the phone
+R26	uses Arg1:T40 Arg2:T46	
+T47	MalwareType 1786 1792	trojan
+T48	Application 2656 2659	GCM

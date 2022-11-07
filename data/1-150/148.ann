@@ -1,0 +1,98 @@
+T4	Malware 35 41	Anubis
+T5	Malware 158 164	Anubis
+T6	Malware 553 559	Anubis
+T7	Malware 1730 1736	Anubis
+T8	Malware 2515 2521	Anubis
+T9	Malware 2599 2605	Anubis
+T10	Malware 2786 2792	Anubis
+T12	Organization 432 443	Orange S.A.
+T17	Organization 198 203	Chase
+T18	Organization 3327 3332	Chase
+T19	Organization 218 233	Bank of America
+T20	Organization 626 633	Lookout
+T21	Organization 974 981	Lookout
+T22	Organization 2491 2498	Lookout
+T23	Organization 2867 2874	Lookout
+T24	Organization 2992 2999	Lookout
+T25	Organization 804 811	Infosec
+T26	Application 85 99	Orange Telecom
+T27	Application 1184 1198	Orange Telecom
+T29	Application 2939 2952	Microsoft 365
+T30	Organization 3334 3342	SunTrust
+T31	Person 3361 3367	Balaam
+T33	Location 3265 3269	U.S.
+T35	Indicator 2394 2415	fr.orange.serviceapp,
+T36	Indicator 2125 2133	‘FR.apk’
+R1	targets Arg1:T4 Arg2:T26	
+R2	targets Arg1:T5 Arg2:T26	
+T11	Organization 205 216	Wells Fargo
+T13	Organization 238 249	Capital One
+R3	targets Arg1:T5 Arg2:T17	
+R4	targets Arg1:T5 Arg2:T11	
+R5	targets Arg1:T5 Arg2:T19	
+R6	targets Arg1:T5 Arg2:T13	
+T15	AttackPattern 562 609	steals the user’s personal data to rip them off
+R7	uses Arg1:T6 Arg2:T15	
+T16	MalwareType 839 861	banking trojan malware
+T37	Malware 863 869	Anubis
+R8	isA Arg1:T37 Arg2:T16	
+T39	AttackPattern 882 967	collect significant data about the victim from their mobile device for financial gain
+R9	uses Arg1:T37 Arg2:T39	
+T40	AttackPattern 1012 1029	intercepting SMSs
+T41	AttackPattern 1031 1041	keylogging
+T42	AttackPattern 1043 1060	file exfiltration
+T43	AttackPattern 1062 1079	screen monitoring
+T44	AttackPattern 1081 1100	GPS data collection
+T45	AttackPattern 1105 1149	abuse of the device’s accessibility services
+T1	Application 1243 1260	Google Play store
+T2	Time 1264 1273	July 2021
+T46	Organization 1371 1377	Google
+T47	AttackPattern 1795 1854	makes a connection with the command-and-control (C2) server
+T28	AttackPattern 1859 1917	downloads another application to initiate the SOCKS5 proxy
+R16	uses Arg1:T7 Arg2:T47	
+R17	uses Arg1:T7 Arg2:T28	
+T48	AttackPattern 1957 2023	enforce authentication for clients communicating with their server
+T49	AttackPattern 2028 2073	mask communications between the client and C2
+R18	uses Arg1:T7 Arg2:T48	
+R19	uses Arg1:T7 Arg2:T49	
+R20	indicates Arg1:T36 Arg2:T7	
+T32	Indicator 2138 2177	/data/data/fr.orange.serviceapp/app_apk
+R21	indicates Arg1:T32 Arg2:T7	
+T3	AttackPattern 2209 2315	scam message then pops up asking the user to disable Google Play Protect, giving the attacker full control
+R22	uses Arg1:T7 Arg2:T3	
+R23	indicates Arg1:T35 Arg2:T7	
+T50	Time 2593 2597	2016
+R24	discoveredIn Arg1:T9 Arg2:T50	
+R25	targets Arg1:T10 Arg2:T29	
+T14	Organization 3061 3072	Orange S.A.
+T38	Person 3083 3098	Kristina Balaam
+T51	Organization 3125 3132	Lookout
+T52	Organization 3139 3149	Threatpost
+T53	Organization 3286 3301	Bank of America
+R27	targets Arg1:T10 Arg2:T33	
+R28	targets Arg1:T10 Arg2:T53	
+T34	Organization 3303 3312	U.S. Bank
+T54	Organization 3314 3325	Capital One
+T55	Organization 3347 3358	Wells Fargo
+R26	targets Arg1:T10 Arg2:T34	
+R29	targets Arg1:T10 Arg2:T54	
+R30	targets Arg1:T10 Arg2:T18	
+R31	targets Arg1:T10 Arg2:T30	
+R32	targets Arg1:T10 Arg2:T55	
+R10	uses Arg1:T37 Arg2:T40	
+R11	uses Arg1:T37 Arg2:T41	
+R12	uses Arg1:T37 Arg2:T42	
+R13	uses Arg1:T37 Arg2:T43	
+R14	uses Arg1:T37 Arg2:T44	
+R15	uses Arg1:T37 Arg2:T45	
+T56	MalwareType 165 180	banking malware
+T57	MalwareType 538 552	banking trojan
+T58	MalwareType 1780 1794	banking trojan
+T59	MalwareType 2705 2719	banking trojan
+T60	MalwareType 2809 2823	banking trojan
+T61	Application 2463 2485	cryptocurrency wallets
+T62	Application 1127 1149	accessibility services
+T63	Application 2262 2273	Google Play
+T64	Application 1380 1389	antivirus
+T65	Organization 693 698	banks
+T66	Organization 3270 3275	banks

@@ -1,0 +1,66 @@
+T2	OS 101 108	Android
+T3	OS 600 607	Android
+T4	OS 1374 1381	Android
+T5	OS 356 363	Windows
+T6	OS 2854 2861	Windows
+T7	Malware 824 831	TrickMo
+T8	Malware 1473 1480	TrickMo
+T9	Malware 1922 1929	TrickMo
+T10	Malware 2216 2223	TrickMo
+T11	Malware 0 8	TrickBot
+T12	Malware 386 394	TrickBot
+T13	Malware 802 810	TrickBot
+T14	Organization 633 644	IBM X-Force
+T15	Application 2840 2849	Spyhunter
+T19	AttackPattern 41 68	bypass 2FA by various banks
+R1	uses Arg1:T11 Arg2:T19	
+T1	AttackPattern 131 238	ntercept one-time authorization codes sent to various online banking customers via SMS or push notification
+R2	uses Arg1:T11 Arg2:T1	
+T20	AttackPattern 275 347	intercept one-time password, mobile TAN and pushTAN authentication codes
+R3	uses Arg1:T11 Arg2:T20	
+T21	AttackPattern 441 570	ask victims for their online banking mobile phone numbers and device types in order to prompt them to install a fake security app
+R4	uses Arg1:T12 Arg2:T21	
+T22	Malware 584 591	TrickMo
+*	hasAlias T12 T22
+T23	Malware 621 628	TrickMo
+T24	Time 726 740	September 2019
+T17	AttackPattern 1209 1259	preventing users from uninstalling the application
+R6	uses Arg1:T7 Arg2:T17	
+T26	AttackPattern 1485 1529	access the service and control these screens
+R7	uses Arg1:T8 Arg2:T26	
+T27	AttackPattern 1556 1607	delete SMS messages and forward them to its masters
+R8	uses Arg1:T8 Arg2:T27	
+T18	AttackPattern 1808 1917	When the SMS is received, the screen turns on, or the phone is rebooted malicious app can also restart itself
+R9	uses Arg1:T8 Arg2:T18	
+T28	AttackPattern 1984 2036	Steal pictures and device information from the phone
+T29	AttackPattern 2039 2061	Intercept SMS messages
+T30	AttackPattern 2099 2149	Record applications for OTP, mTAN and pushTAN thef
+T31	AttackPattern 2153 2188	Self-destruct and remove all traces
+R10	uses Arg1:T9 Arg2:T28	
+R11	uses Arg1:T9 Arg2:T29	
+R12	uses Arg1:T9 Arg2:T30	
+R13	uses Arg1:T9 Arg2:T31	
+T32	Malware 2797 2805	TrickBot
+T16	AttackPattern 1301 1330	monitors running applications
+T25	AttackPattern 1336 1371	scrap text from the screen directly
+R5	uses Arg1:T7 Arg2:T16	
+R14	uses Arg1:T7 Arg2:T25	
+T33	AttackPattern 2071 2096	lock the phone completely
+R15	uses Arg1:T9 Arg2:T33	
+T34	OS 26 33	Android
+R16	targets Arg1:T11 Arg2:T34	
+R17	targets Arg1:T11 Arg2:T2	
+R18	targets Arg1:T12 Arg2:T5	
+T35	Location 715 721	German
+R19	targets Arg1:T23 Arg2:T35	
+R20	discoveredIn Arg1:T23 Arg2:T24	
+T36	AttackPattern 1266 1296	sets itself as a go-to SMS app
+R21	uses Arg1:T7 Arg2:T36	
+T37	Application 553 570	fake security app
+T38	Application 1058 1074	third-party apps
+T39	Application 185 199	online banking
+T40	Application 463 477	online banking
+T41	Application 922 936	online banking
+T42	Application 1289 1296	SMS app
+T43	Application 319 326	pushTAN
+T44	Application 2137 2144	pushTAN

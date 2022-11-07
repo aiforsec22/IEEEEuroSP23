@@ -1,0 +1,73 @@
+RuMMS malware is back…with enhancements
+Recently, the Zscaler ThreatLabZ team came across a nasty piece of malware hosted on a fake MMS website called mmsprivate[.]site. The site lures victims with what seem to be private photos, inviting them to take a closer look. Upon accepting the offer, victims fall prey to a malicious Android Package (APK) that downloads onto their phones. The malware disguises itself as Сooбщениe, which translated to english means Messages, and performs its malicious functionality by exploiting Android AccessibilityService, which assists those with disabilities in using Android devices and apps. It then hides itself in order to spy on its victims.
+
+The variant we are analyzing shows some similar traits, with a few modifications, to malware named RuMMS, which was initially reported by FireEye researchers back in 2016. This new version includes various enhancements, so we have dubbed it RuMMS v2.0.  
+
+App Details 
+App name:  Сooбщениe
+Hash: c1f80e88a0470711cac720a66747665e
+Package Name: ru.row.glass
+
+ 
+
+Detailed Description 
+Download and installation 
+
+The malware is spreading through the site url:mmsprivate[.]site/feel/, and was most likely shared via SMS or email. As soon as the link is clicked, the spyware lures the victim to click a button that leads to the dropping of the malicious APK. The content hosted on the URL is in Russian. You can view the translation in the screenshot below: 
+
+The APK is from an unknown source and, since Android systems do not allow direct-install, leads the victim via simple clicks to enabling the "Unknown Sources" option to install the malicious app. Each step is shown below starting from left to right. 
+
+Enabling AccessibilityService
+Once installation is complete, the app masks itself as a messaging app (see the icon below). Upon first use, the app redirects the victim to enable Android AccessibilityService. Once enabled, the app disappears from the home screen. 
+
+If the victim does not enable AccessibilityService, the spyware will continuously appear on the screen (see the second screen in the above snapshot) to encourage the victim to enable the service.
+
+Once AccessibilityService is enabled, the spyware goes into action to make the SMS app the default messaging app. It does this by using the functionality of AccessibilityService to automatically choose “Yes” when asked to confirm the app as the default messaging choice, as shown in the below screenshot.  Users will not be able to see this message box because the choice is made for them. 
+
+Communication
+
+Our investigation showed that once the initial setup is done, the malware starts sending details to a command-and-control (C&C) server. The C&C details were hardcoded. Requests and responses from the C&C were encoded using Base64. The screenshot below shows the decode values being sent and received:
+
+The above screenshot shows details of a victim's device being sent to a C&C. The C&C replied with command "40" and the names of apps. We noticed that command "40" was used for disabling the apps. 
+
+In this instance, the list of apps to be disabled contained well-known antivirus (AV) apps, including: 
+
+Trend Micro 
+Dr. Web
+AhnLab
+Avira
+Sophos
+McAfee
+F-Secure
+The malware makes sure that all of these AVs, if present, remain inoperable. As soon as a victim tries to open one of these apps, the malware abruptly closes it. It behaved similarly with an app from a well-known Russian bank, Sber Bank. The malware did not allow any Sber Bank apps to open. 
+SMS: Sending and stealing
+The spyware waits for commands from the C&C server and accordingly exhibits its functionality. As in the case below, we found that command number "11" was used for sending SMS messages to any desired number with the body of the SMS instructed by C&C
+
+Upon further analysis, we also found the spyware to be stealing SMS messages from the victim's device. This functionality could also be used to steal bank-related one-time-password codes and other relevant information. The screenshot below shows this functionality in action:
+
+Stealing Contacts
+The malware is also able to steal contacts from the victim's device. We believe this functionality is used to further spread the malware with a well-known technique called SMS-Phishing (or SMiShing).  
+
+Calling 
+The malware also has calling functionality. In the example below, the number to be called was sent from the C&C server in the encoded manner seen here. 
+
+One of the more interesting things we noticed was the way the malware was being distributed. Every time we visited the link, we were presented with a new malicious app exhibiting the same behavior explained above but with different app name, different package name, and even signed with a different Android certificate. We also found that apps had different C&C servers with the pattern http://<domain-name>.com/<random-chars>/index.php. We noticed the below mentioned domain names in association with the C&C servers: 
+
+ 
+
+Sr #    Domain Name # of apps contacted
+1   sisirplus[.]com 172
+2   vietusprotus[.]com  50
+3   glowbobget[.]com    45
+4   hellowopung[.]com   102
+5   quostpeopls[.]com   24
+6   bannerincbest[.]com 102
+7   campuphome[.]com    9
+8   wewelowertick[.]com 3
+9   bigslogous[.]com    25
+10  zavannerweb[.]com   55
+ 
+
+Conclusion
+
+A new and improved RuMMS is back in full force as RuMMS v2.0 with enhancements and updated features. In the last 10 days of May 2018, the Zscaler ThreatlabZ team uncovered 580+ similar apps making the rounds in the wild. It is always advisable to stay clear of unknown links. Do not trust any suspicious-looking URLs received either in SMS messages or emails, and only download apps from official app stores. 

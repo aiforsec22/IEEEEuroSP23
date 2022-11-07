@@ -1,0 +1,39 @@
+TangleBot: New text message-based malware capable of defrauding Android users
+The Nigerian Communications Commission (NCC) recently announced the existence of a new high-risk, a critical and short messaging service-based malware named TangleBot. In a press statement released by the commission, Dr. Ikechukwu Adinde, Director of Public Affairs, explained that TangleBot only infects Android mobile devices. He added that:
+
+“The disclosure on TangleBot was made in a recent security advisory made available to the Commission’s New Media and Information Security Department by the Nigerian Computer Emergency Response Team (ngCERT). TangleBot Android malware is installed when an unsuspecting user clicks on a malicious link disguised as COVID-19 vaccination appointment-related information in an SMS message or information about fake local power outages that are due to occur.”
+
+Over the years, fraudsters have used different types of malware such as Pegasus, Medusa, etc. to infiltrate the devices of unsuspecting users to steal their personal information, undermine enterprises, and retrieve financial details. However, TangleBot is said to possess a more evasive and elusive nature. 
+
+How TangleBot operates
+The TangleBot malware is distributed via a text message to mainly Android users. In order to gain access to the user’s device, the fraudsters send messages that are familiar to the user and implore them to read more or find more detailed information by clicking a provided link. 
+
+When users click the provided link, the TangleBot malware takes over the device, providing the fraudsters access to financial information, personal information, etc. Worthy of note is the malware’s ability to use advanced behaviors and transmission capabilities. This means that it tries to send messages that will interest the targeted user. For example, coronavirus related information or bonanza or gifts.  
+
+In addition, other things the malware can do in an infected device include 
+
+Recording the audio, screen, or both, then streaming them to another device.
+Placing overlay screens on the device, to obscure apps and screens.
+Silently, calling contacts and blocking calls.
+Sending and receiving text messages.
+Deploying further device observation or espionage capabilities
+The Nature of TangleBot
+While other types of Malware are internet based, capitalizing on social media apps to lure users, TangleBot only operates as text messages. Since most users know that only enterprises they are affiliated with can send them a text message, TangleBot can remain undetected on a user’s device for long periods of time. As a result, users who have been compromised may have trouble pinpointing the origin of the attack.
+
+According to NCC, “TangleBot employs more or less similar tactics as the recently announced notorious FlutBot SMS Android malware that targets mobile devices. TangleBot equally gains control of the device but in a far more invasive manner than the FlutBot malware.”
+
+Cybersecurity experts, Cybertalk.org, also explained that:
+
+ “In the event that a single employee’s device is infected, the attacker can potentially launch a more widespread attack, harming multiple employees and business operations. Ensure that your organization provides employees with adequate mobile device security.”
+
+Precaution against TangleBot
+NCC says that the one important precaution against any malware (not just TangleBot) is for users to remain skeptical of text messages, especially unsolicited ones that require further clicks. Android users, who are the prime targets, should also be on the lookout for suspicious messages and be wary of clicking links that require personal information or some sort of end user input. 
+
+“NCC hereby reiterates that mobile users are under obligation to practice safe messaging practices and avoid clicking on any links in texts, even if they appear to come from a legitimate contact. Indeed, it is important to be judicious when downloading apps by reading install prompts closely, looking out for information regarding rights and privileges that the app may request.”-NCC
+
+Although TangleBot protects itself deletion, experts say,  users can manually remove it from their device by using Android’s safe boot. Users, who have clicked a suspicious link, can restart their phone and then reboot the device in safe mode. In the system settings, users can also restore the factory setting of their device. 
+
+Users can also report SMS phishing and spam. Use the spam reporting feature in the messaging client if it has one, or forward spam text messages to 7726, which spells “SPAM” on the phone keypad. Users should not install any software on their mobile device outside a certified app store from the vendor or Mobile Network Operator.
+
+Conclusion
+The ability to detect installed apps, app interactions, and inject overlay screens can be extremely problematic. As outlined earlier,  malware such as FluBot and TangleBot can overlay banking or financial apps and directly steal the victim’s account credentials. As such, it is important for users to be on guard. 

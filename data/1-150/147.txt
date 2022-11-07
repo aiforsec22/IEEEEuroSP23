@@ -1,0 +1,39 @@
+What is Pegasus? A cybersecurity expert explains how the spyware invades phones and what it does when it gets in
+End-to-end encryption is technology that scrambles messages on your phone and unscrambles them only on the recipients’ phones, which means anyone who intercepts the messages in between can’t read them. Dropbox, Facebook, Google, Microsoft, Twitter and Yahoo are among the companies whose apps and services use end-to-end encryption.
+
+This kind of encryption is good for protecting your privacy, but governments don’t like it because it makes it difficult for them to spy on people, whether tracking criminals and terrorists or, as some governments have been known to do, snooping on dissidents, protesters and journalists. Enter an Israeli technology firm, NSO Group.
+
+The company’s flagship product is Pegasus, spyware that can stealthily enter a smartphone and gain access to everything on it, including its camera and microphone. Pegasus is designed to infiltrate devices running Android, Blackberry, iOS and Symbian operating systems and turn them into surveillance devices. The company says it sells Pegasus only to governments and only for the purposes of tracking criminals and terrorists.
+
+How it works
+Earlier version of Pegasus were installed on smartphones through vulnerabilities in commonly used apps or by spear-phishing, which involves tricking a targeted user into clicking a link or opening a document that secretly installs the software. It can also be installed over a wireless transceiver located near a target, or manually if an agent can steal the target’s phone.
+
+Close-up of an icon on a smartphone screen
+Pegasus can infiltrate a smartphone via the widely used messaging app WhatsApp without the phone’s user noticing. Christoph Scholz/Flickr, CC BY-SA
+Since 2019, Pegasus users have been able to install the software on smartphones with a missed call on WhatsApp, and can even delete the record of the missed call, making it impossible for the the phone’s owner to know anything is amiss. Another way is by simply sending a message to a user’s phone that produces no notification.
+
+This means the latest version of this spyware does not require the smartphone user to do anything. All that is required for a successful spyware attack and installation is having a particular vulnerable app or operating system installed on the device. This is known as a zero-click exploit.
+
+Once installed, Pegasus can theoretically harvest any data from the device and transmit it back to the attacker. It can steal photos and videos, recordings, location records, communications, web searches, passwords, call logs and social media posts. It also has the capability to activate cameras and microphones for real-time surveillance without the permission or knowledge of the user.
+
+Who has been using Pegasus and why
+NSO Group says it builds Pegasus solely for governments to use in counterterrorism and law enforcement work. The company markets it as a targeted spying tool to track criminals and terrorists and not for mass surveillance. The company does not disclose its clients.
+
+The earliest reported use of Pegasus was by the Mexican government in 2011 to track notorious drug baron Joaquín “El Chapo” Guzmán. The tool was also reportedly used to track people close to murdered Saudi journalist Jamal Khashoggi.
+
+It is unclear who or what types of people are being targeted and why. However, much of the recent reporting about Pegasus centers around a list of 50,000 phone numbers. The list has been attributed to NSO Group, but the list’s origins are unclear. A statement from Amnesty International in Israel stated that the list contains phone numbers that were marked as “of interest” to NSO’s various clients, though it’s not known if any of the phones associated with numbers have actually been tracked.
+
+A media consortium, the Pegasus Project, analyzed the phone numbers on the list and identified over 1,000 people in over 50 countries. The findings included people who appear to fall outside of the NSO Group’s restriction to investigations of criminal and terrorist activity. These include politicians, government workers, journalists, human rights activists, business executives and Arab royal family members.
+
+Other ways your phone can be tracked
+Pegasus is breathtaking in its stealth and its seeming ability to take complete control of someone’s phone, but it’s not the only way people can be spied on through their phones. Some of the ways phones can aid surveillance and undermine privacy include location tracking, eavesdropping, malware and collecting data from sensors.
+
+An electronic device with handles on either side of a front panel containing buttons and lights and a graphic representation of a stingray
+Law enforcement agencies use cell site simulators like this StingRay to intercept calls from phones in the vicinity of the device. U.S. Patent and Trademark Office via AP
+Governments and phone companies can track a phone’s location by tracking cell signals from cell tower transceivers and cell transceiver simulators like the StingRay device. Wi-Fi and Bluetooth signals can also be used to track phones. In some cases, apps and web browsers can determine a phone’s location.
+
+Eavesdropping on communications is harder to accomplish than tracking, but it is possible in situations in which encryption is weak or lacking. Some types of malware can compromise privacy by accessing data.
+
+The National Security Agency has sought agreements with technology companies under which the companies would give the agency special access into their products via backdoors, and has reportedly built backdoors on its own. The companies say that bakdoors defeat the purpose of end-to-end encryption.
+
+The good news is, depending on who you are, you’re unlikely to be targeted by a government wielding Pegasus. The bad news is, that fact alone does not guarantee your privacy.

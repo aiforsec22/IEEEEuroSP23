@@ -1,0 +1,234 @@
+T1	OS 155 162	Android
+T3	OS 532 539	Android
+T6	OS 3649 3656	Android
+T9	OS 5865 5872	Android
+T10	OS 6310 6317	Android
+T12	OS 7231 7238	Android
+T13	OS 7360 7367	Android
+T14	OS 7808 7815	Windows
+T16	OS 63 66	iOS
+T19	ThreatActor 0 12	Hacking Team
+T20	ThreatActor 3666 3678	Hacking Team
+T21	ThreatActor 6529 6541	Hacking Team
+T22	ThreatActor 7585 7597	Hacking Team
+T24	ThreatActor 8930 8942	Hacking Team
+T25	ThreatActor 9095 9107	Hacking Team
+T29	Vulnerability 3026 3063	arbitrary memory read (CVE-2012-2825)
+T30	Vulnerability 3068 3104	heap buffer overflow (CVE-2012-2871)
+T34	Indicator 3516 3536	ANDROIDOS_HTBENEWS.A
+T35	Vulnerability 3605 3645	local privilege escalation vulnerability
+T36	Vulnerability 3706 3719	CVE-2014-3153
+T37	Vulnerability 3724 3737	CVE-2013-6282
+T38	Organization 7199 7210	Trend Micro
+T39	Application 7779 7791	Flash Player
+T40	Vulnerability 8125 8138	CVE-2015-5119
+T42	Application 7904 7909	Flash
+T43	Application 8101 8106	Flash
+T44	Application 8279 8284	Flash
+T45	Application 9069 9074	Flash
+T46	Malware 8159 8177	Angler Exploit Kit
+T47	Vulnerability 8311 8324	CVE-2015-5122
+T48	OS 8463 8480	UEFI BIOS rootkit
+T49	Malware 8495 8522	Remote Control System (RCS)
+T52	Vulnerability 8605 8618	CVE-2015-2425
+T53	Vulnerability 8784 8797	CVE-2015-2426
+T54	Organization 8827 8836	Microsoft
+T57	Location 8243 8248	Korea
+T58	Location 9031 9037	Taiwan
+T59	Location 9042 9051	Hong Kong
+T66	Indicator 1528 1552	(AndroidOS_RCSAgent.HRX)
+T69	Time 428 432	2014
+T41	MalwareType 90 97	spyware
+T70	ThreatActor 113 125	Hacking Team
+R12	targets Arg1:T70 Arg2:T16	
+R13	targets Arg1:T70 Arg2:T1	
+T71	ThreatActor 224 236	Hacking Team
+T72	Malware 265 275	RCSAndroid
+T2	Malware 277 306	Remote Control System Android
+*	hasAlias T72 T2
+R14	hasAuthor Arg1:T72 Arg2:T71	
+R11	discoveredIn Arg1:T72 Arg2:T69	
+T73	Malware 439 449	RCSAndroid
+R15	isA Arg1:T72 Arg2:T41	
+R16	targets Arg1:T73 Arg2:T3	
+T74	Malware 713 723	RCSAndroid
+T75	AttackPattern 788 807	Capture screenshots
+T77	AttackPattern 870 895	Monitor clipboard content
+T27	AttackPattern 897 955	Collect passwords for Wi-Fi networks and online acco;.unts
+R2	uses Arg1:T74 Arg2:T75	
+R18	uses Arg1:T74 Arg2:T77	
+R19	uses Arg1:T74 Arg2:T27	
+T60	Application 967 972	Skype
+T78	Application 974 982	Facebook
+T79	Application 993 999	Google
+T80	Application 984 991	Twitter
+T81	Application 1001 1009	WhatsApp
+T82	Application 1011 1015	Mail
+T83	Application 1021 1029	LinkedIn
+R20	targets Arg1:T74 Arg2:T60	
+R21	targets Arg1:T74 Arg2:T78	
+R22	targets Arg1:T74 Arg2:T80	
+R23	targets Arg1:T74 Arg2:T79	
+R24	targets Arg1:T74 Arg2:T81	
+R25	targets Arg1:T74 Arg2:T82	
+R26	targets Arg1:T74 Arg2:T83	
+T28	AttackPattern 1031 1058	Record using the microphone
+T84	AttackPattern 1060 1096	Collect SMS, MMS, and Gmail messages
+T85	AttackPattern 1098 1113	Record location
+T86	AttackPattern 1115 1140	Gather device information
+T87	AttackPattern 1142 1189	Capture photos using the front and back cameras
+T26	AttackPattern 1191 1358	Collect contacts and decode messages from IM accounts, including Facebook Messenger, WhatsApp, Skype, Viber, Line, WeChat, Hangouts, Telegram, and BlackBerry Messenger
+T55	AttackPattern 1361 1461	Capture real-time voice calls in any network or app by hooking into the “mediaserver” system service
+R27	uses Arg1:T74 Arg2:T28	
+R28	uses Arg1:T74 Arg2:T84	
+R29	uses Arg1:T74 Arg2:T85	
+R30	uses Arg1:T74 Arg2:T86	
+R31	uses Arg1:T74 Arg2:T87	
+R32	uses Arg1:T74 Arg2:T26	
+R33	uses Arg1:T74 Arg2:T55	
+T88	Malware 1463 1473	RCSAndroid
+T89	Malware 1517 1527	RCSAndroid
+R8	indicates Arg1:T66 Arg2:T89	
+T90	Time 1580 1584	2012
+T92	ThreatActor 2115 2126	Czech firms
+T93	ThreatActor 2161 2173	Hacking team
+R36	communicatesWith Arg1:T93 Arg2:T92	
+R37	hasAuthor Arg1:T88 Arg2:T93	
+T94	Malware 2250 2260	RCSAndroid
+T95	OS 2396 2403	Android
+R39	targets Arg1:T94 Arg2:T95	
+T98	AttackPattern 2801 2841	remotely send/receive malicious commands
+T99	AttackPattern 2931 2990	send a specially crafted URL to the target via SMS or email
+T100	Malware 2896 2906	RCSAndroid
+R43	uses Arg1:T100 Arg2:T99	
+R44	exploits Arg1:T100 Arg2:T29	
+R45	exploits Arg1:T100 Arg2:T30	
+T5	Application 3128 3144	default browsers
+R46	has Arg1:T5 Arg2:T30	
+R47	has Arg1:T5 Arg2:T29	
+T61	OS 3148 3187	Android versions 4.0 Ice Cream Sandwich
+T63	OS 3191 3205	4.3 Jelly Bean
+T101	Malware 3333 3343	RCSAndroid
+T64	AttackPattern 3403 3430	use a stealthy backdoor app
+T17	Application 3490 3501	Google Play
+R6	uses Arg1:T101 Arg2:T64	
+R48	targets Arg1:T101 Arg2:T17	
+R1	indicates Arg1:T34 Arg2:T101	
+R49	exploits Arg1:T101 Arg2:T35	
+R50	targets Arg1:T101 Arg2:T6	
+R51	targets Arg1:T20 Arg2:T36	
+R52	targets Arg1:T20 Arg2:T37	
+T102	AttackPattern 3779 3794	root the device
+R53	uses Arg1:T20 Arg2:T102	
+T103	Malware 3863 3879	RCSAndroid agent
+R54	uses Arg1:T101 Arg2:T103	
+T108	AttackPattern 4089 4123	capturing voice calls in real time
+T7	Application 4537 4583	Android Dynamic Binary Instrumentation Toolkit
+T68	AttackPattern 5088 5200	uses transport protocol ZProtocol encrypted by AES/CBC/PKCS5Padding algorithm to communicate with the C&C server
+T114	AttackPattern 5204 5239	Upload and purge collected evidence
+T115	AttackPattern 5241 5285	Destroy device by resetting locking password
+T117	AttackPattern 5311 5352	Send SMS with defined content or location
+T118	AttackPattern 5354 5369	Disable network
+T119	AttackPattern 5371 5383	Disable root
+T121	AttackPattern 5496 5526	detects emulators or sandboxes
+T122	AttackPattern 5528 5586	obfuscates code using DexGuard, uses ELF string obfuscator
+T124	AttackPattern 5592 5629	adjusts the OOM (out-of-memory) value
+T8	Malware 5474 5484	RCSAndroid
+T125	AttackPattern 5694 5785	manipulate data in the Android package manager to add and remove permissions and components
+R73	uses Arg1:T8 Arg2:T121	
+R74	uses Arg1:T8 Arg2:T122	
+R76	uses Arg1:T8 Arg2:T124	
+R77	uses Arg1:T8 Arg2:T125	
+R78	targets Arg1:T8 Arg2:T9	
+T126	Malware 6400 6410	RCSAndroid
+T65	OS 6439 6459	version 4.4.4 KitKat
+R7	targets Arg1:T126 Arg2:T65	
+T11	OS 6588 6608	Android 5.0 Lollipop
+R9	targets Arg1:T21 Arg2:T11	
+T67	Malware 6694 6704	RCSAndroid
+T130	Application 7262 7290	Mobile Security for Android™
+R82	targets Arg1:T67 Arg2:T13	
+R83	targets Arg1:T67 Arg2:T12	
+T131	Time 7452 7465	July 23, 2015
+T23	ThreatActor 7623 7651	Italian company Hacking Team
+*	hasAlias T22 T23
+T132	Time 7612 7618	July 5
+T133	Time 7745 7751	July 7
+R84	targets Arg1:T22 Arg2:T39	
+R85	targets Arg1:T22 Arg2:T14	
+T134	Vulnerability 7883 7896	CVE-2015-5119
+R86	targets Arg1:T22 Arg2:T134	
+R87	has Arg1:T42 Arg2:T134	
+T15	Vulnerability 7935 7971	kernel vulnerability (CVE-2015-2387)
+R88	targets Arg1:T23 Arg2:T15	
+R89	has Arg1:T43 Arg2:T40	
+T135	Malware 8182 8202	Nuclear Exploit Pack
+R90	exploits Arg1:T46 Arg2:T40	
+R91	exploits Arg1:T135 Arg2:T40	
+T136	Location 8253 8258	Japan
+R92	targets Arg1:T46 Arg2:T57	
+R93	targets Arg1:T135 Arg2:T136	
+T137	Time 8263 8270	July 11
+T138	Time 8382 8389	July 13
+T139	Time 8568 8574	uly 14
+T31	Time 8653 8660	July 16
+T140	Time 8746 8753	July 20
+T141	Time 8869 8876	July 21
+T142	Time 8993 9000	July 28
+T32	Vulnerability 8329 8342	CVE-2015-5123
+T33	ThreatActor 8362 8374	hacking team
+R94	targets Arg1:T33 Arg2:T32	
+R95	targets Arg1:T33 Arg2:T47	
+R96	has Arg1:T44 Arg2:T47	
+R97	has Arg1:T44 Arg2:T32	
+R98	targets Arg1:T49 Arg2:T48	
+T143	Application 8633 8650	Internet Explorer
+R99	has Arg1:T143 Arg2:T52	
+T18	Application 8717 8728	Google Play
+T50	OS 8812 8819	Windows
+R100	has Arg1:T50 Arg2:T53	
+T51	Malware 8893 8903	RCSAndroid
+R101	hasAuthor Arg1:T51 Arg2:T24	
+R102	targets Arg1:T51 Arg2:T58	
+R103	targets Arg1:T51 Arg2:T59	
+R104	targets Arg1:T51 Arg2:T45	
+R105	hasAuthor Arg1:T51 Arg2:T25	
+R106	discoveredIn Arg1:T73 Arg2:T69	
+T144	Application 1256 1275	Facebook Messenger,
+T145	Application 1276 1284	WhatsApp
+T146	Application 1286 1291	Skype
+T147	Application 1293 1298	Viber
+T148	Application 1300 1304	Line
+T149	Application 1306 1312	WeChat
+T150	Application 1314 1322	Hangouts
+T151	Application 1324 1332	Telegram
+T152	Application 1338 1358	BlackBerry Messenger
+R107	targets Arg1:T74 Arg2:T144	
+R108	targets Arg1:T74 Arg2:T145	
+R109	targets Arg1:T74 Arg2:T146	
+R110	targets Arg1:T74 Arg2:T147	
+R111	targets Arg1:T74 Arg2:T148	
+R112	targets Arg1:T74 Arg2:T149	
+R113	targets Arg1:T74 Arg2:T150	
+R114	targets Arg1:T74 Arg2:T151	
+R115	targets Arg1:T74 Arg2:T152	
+R34	uses Arg1:T94 Arg2:T98	
+T104	AttackPattern 5797 5814	hide the app icon
+R55	uses Arg1:T8 Arg2:T104	
+R40	uses Arg1:T103 Arg2:T108	
+R10	uses Arg1:T103 Arg2:T68	
+R41	uses Arg1:T103 Arg2:T114	
+R42	uses Arg1:T103 Arg2:T115	
+R56	uses Arg1:T103 Arg2:T117	
+R57	uses Arg1:T103 Arg2:T118	
+R58	uses Arg1:T103 Arg2:T119	
+T4	OS 2679 2686	Android
+T56	Indicator 3439 3459	ANDROIDOS_HTBENEWS.A
+R17	indicates Arg1:T56 Arg2:T101	
+T76	AttackPattern 3799 3823	install a shell backdoor
+R35	uses Arg1:T101 Arg2:T76	
+T91	OS 5717 5724	Android
+T153	Application 6978 6992	messaging apps
+T154	Application 1082 1087	Gmail
+T62	OS 7927 7934	Windows
+R4	has Arg1:T62 Arg2:T15	

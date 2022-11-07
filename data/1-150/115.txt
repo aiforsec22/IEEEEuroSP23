@@ -1,0 +1,18 @@
+SpyNote Trojan (RAT); Yet Another Bad News for Android Users
+SpyNote RAT was found leaked on a dark net forum — The researchers have warned about downloading Android apps from a third-party site to avoid this RAT infecting your device.
+
+Hackers love targeting Android devices due to its open source model and Google’s weak bouncer system that lets malicious apps pass by on the official Play Store. Recently, security researchers at Palo Alto’s Unit 42 discovered a Remote Access Trojan (RAT) that allow attackers to gain remote administrative control of an infected device.
+
+Dubbed Spynote by the researcher, the trojan targets those users who install apps in APK format, the process of downloading apps in APK format on Android devices is known as “sideloading” which is only possible if the user has allowed “Unknown Sources” in their security settings.
+
+The SpyNote RAT was found being discussed on several underground hacking forums by the researchers which, after analyzing turned out to be a bigger threat than expected. Upon scanning, it was discovered that SpyNote doesn’t require root access in order to take full control of an infected device.
+
+Once a device is infected, it can start stealing personal and financial data, however, that’s just a start; SpyNote has much more to do that includes installing new APKs and updating itself, copying files from device to computer, view all messages on the device, access the contact list, make and listen to your calls, record or listen to audio from the microphone of the device, collect Mac address from WI-FI, IMEI number and details about carrier, and track GPS location of the infected device. Simply put: the SpyNote RAT will control your device and users won’t even know about it.
+
+The SpyNote APK requires victims to accept and give SpyNote many permissions, including the ability to edit text messages, read call logs and contacts, or modify or delete the contents of the SD card. The researchers also found SpyNote’s sample scanned on VirusTotal.
+
+The Unit 42 also noted that SpyNot OmniRat and DroidJack. OmniRat was detected in 2015 targeting MAC, Windows or Andriod operating system while DroidJack RAT was found also found in fake Pokémon Go apps on Android store.
+
+Here is a video presentation demonstrating how SpyNote RAT works:
+
+Currently, SpyNote is not present in Google Play Store but it’s only a matter of time before it will begin bypassing the Google’s Bouncer system. However, if you are into downloading apps from a third party website just stop, download apps from Google Play Store and keep your Android devices updated to the latest OS version.

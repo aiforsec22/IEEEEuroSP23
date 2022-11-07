@@ -1,0 +1,46 @@
+Android Spyware Monokle, developed by Russian defense contractor, used in targeted attacks
+Researchers at Lookout discovered a new mobile spyware dubbed Monokle that was developed by a Russian defense contractor.
+“Lookout has discovered a highly targeted mobile malware threat that uses a new and sophisticated set of custom Android surveillanceware tools called Monokle that has possible connections to Russian threat actors.” reads the report published by Lookout. “Lookout research indicates these tools are part of a targeted set of campaigns and are developed by the St. Petersburg, Russia-based company, Special Technology Centre, Ltd. (STC, Ltd. or STC).”
+
+Special Technology Centre Ltd. (STC) has been sanctioned for interfering with the 2016 U.S. Presidential election.
+
+Monokle has been used in highly targeted attacks at least since March 2016, it supports a wide range of spying functionalities and implements advanced data exfiltration techniques.
+
+Monokle supports 78 different predefined commands, of which 61 are implemented in recent samples, that allow attackers to exfiltrate requested data.
+
+The list of functionalities implemented by the spyware includes:
+
+Track device location
+Get nearby cell tower info
+Retrieve accounts and associated passwords.
+Record audio and calls
+Suicide functionality and cleanup of staging files.
+Make screen recordings
+Keylogger and device-fingerprinting
+Retrieve browsing and call histories
+Take photos, videos, and screenshots
+Retrieve emails, SMSes, and Messages
+Steal contacts and calendar information
+Make calls and send text messages
+Execute arbitrary shell commands, as root, if root access is available
+The surveillance software abuses Android accessibility services to capture data from third party apps, including Google Docs, Facebook messenger, VK, Whatsapp, WeChat, Viber, Skype, and Snapchat. The malicious code, in fact, is able to read text notifications displayed on a device’s screen.
+
+The surveillance surveillance also uses user-defined predictive-text dictionaries to “get a sense of the topics of interest to a target,” it also attempts to record the phone screen during a screen unlock event in order to obtain the phone’s PIN, pattern or password.
+
+If root access is available on the target device, the spyware installs attacker-specified root CA certificates to the trusted certificates on an infected device that would attackers to carry out man-in-the-middle (MITM) attacks.
+According to Lookout, the spyware is distributed through fake apps, some of which are related to specific interests or regions, this suggests that the malware was currently used in limited areas around the world. Most of the titles are in English with a handful in Arabic and Russian.
+
+Monokle has likely been used to spy on individuals in the Caucasus regions and individuals interested in the Ahrar al-Sham militant group in Syria.
+
+Recent samples of Monokle include the Xposed framework that allows Android users to apply modules to an Android device’s ROM(Read Only Memory). Some Monokle fake apps include Xposed modules that implement functionality for hooking and hiding presence in the process list
+
+Much of the core malicious functionality implemented in the later samples of Monokle use an XOR obfuscated DEX file in the assets folder.
+
+“The functionality hidden in this DEX file includes all cryptographic functions implemented in the open source library spongycastle11, various e-mail protocols, extraction and exfiltration of all data, serialisation and deserialisation of data using the Thrift protocol, and rooting and hooking functionality, among others ” continues the report.
+
+As anticipated, Monokle was developed by STC, the experts noticed that Monokle and the STC’s Android security suite called Defender are digitally signed with the same digital certificates and have the same C&C infrastructure.
+
+“Command and control infrastructure that communicates with the Defender application also communicates with Monokle samples. The signing certificates used for signing Android application packages overlap between Defender and Monokle as well.” continues the report. “Additional overlap was observed by Lookout researchers between Monokle and the defensive security software produced by STC in the authors’ development and implementation choices.”
+
+Researchers revealed that there is evidence that an iOS version of Monokle is in development, even if they have no evidence of active iOS infections
+

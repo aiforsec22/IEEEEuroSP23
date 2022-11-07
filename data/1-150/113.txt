@@ -1,0 +1,32 @@
+Android 'Gooligan' Hackers Just Scored The Biggest Ever Theft Of Google Accounts
+A new variant of Android malware is responsible for what's believed to be the biggest single theft of Google accounts on record. The so-called Gooligan strain has infected as many as 1.3 million Android phones since August, completely prising the devices open and stealing the tokens users are given to verify they are authorized to access accounts. Its main aim, though, is not to pilfer all that juicy data in Gmail or Docs, but to force users into downloading apps as part of a huge advertising fraud scheme, making as much as $320,000 a month.
+
+And Gooligan is spreading at an alarming rate: since the start of this month, it's been racking up an average of 13,000 new infections every day, according to researchers from Check Point. The malicious software first gains a foothold on devices when users visit a website and download a third-party app. Michael Shaulov, head of mobile and cloud Security Check Point, said that might be a porn site, or a third-party app store, where visitors are encouraged to download software to get access to content.
+
+But once downloaded, Gooligan determines which Android phone it's infected and launches the appropriate exploits to "root" the device -- i.e. take complete control over it. To do that, the attackers have used long-known vulnerabilities, such as VROOT and Towelroot, on devices running Android 4 through 5, including Jelly Bean, KitKat and Lollipop. Together, those operating systems account for 74 per cent of Android devices in use today, totalling around 1.03 billion. Most infections (40 per cent) are in Asia, though 19 per cent are in the Americas, most of which are in North America, Shaulov said. Another 12 per cent are based in Europe.
+
+Once Gooligan has control of the phone, the victim's Google account token is siphoned off to a remote server and could be used to gain access to their Gmail, Docs, Drive, Photos and other data, even where two-factor authentication is turned on. Check Point's researchers were able to trace that server, uncovering a stash of 1.3 million real Google accounts. Looking at server logs, they were also able to determine as many as 30,000 apps were being downloaded every day by infected phones, reaching a total of 2 million so far. Hundreds of businesses' Google accounts have been hit too, Check Point warned.
+
+Previous multi-million leaks of Google accounts have proven false, most notably in 2014 when just two per cent of 5 million allegedly real logins leaked on the dark web turned out to work on active accounts, and in 2016 when only 460,000 of 23 million published online were deemed legitimate.
+
+Whoever is behind the attack is rapidly expanding an advertising fraud campaign, said Shaulov. The attackers have forced victims to download and give positive reviews to apps on Google Play, which provides an illicit revenue stream as the hackers also run advertisements within the applications. Every download and every click on the ad adds a small amount to the attackers' coffers.
+
+Shaulov said the business model was similar to another group dubbed HummingBad, discovered in February this year. The Chinese cybercriminals behind HummingBad made $320,000 a month with that one initiative, according to Shaulov. He believes the Gooligan crooks are earning much the same.
+
+Ghost Push
+
+Gooligan is a variant of an old piece of malware known as Ghost Push that Google has been fighting in earnest for the last year. The initial warnings about Ghost Push landed in September last year, and Google said in April it was the most successful Android malware of 2015, infecting around 4 million phones in its various forms. It also rooted devices and displayed malicious ads. In October, security firm Cheetah Mobile Security said thredifferent versions of Ghost Push were propagating at a rate of 10,000 installs a day.
+
+The Gooligan hackers' escapades date back to at least June 2015, however, when the first evidence of the malware code was found. Check Point saw Android phones infected with malicious software containing early Gooligan code when physically connected to PCs running a Windows back-up tool, SnapPea. Whilst the attackers used multiple exploits and forced downloads on users' devices in last year's attacks, they hadn't pilfered Google account logins.
+
+After finding Gooligan in August, and noting its alarming success rate, Check Point and Google formed a task force to deal with the threat. Check Point today released a free tool to check for infection. In a blog post, it also provided a list of apps containing the malicious Gooligan code.
+
+Shaulov believes there's a good chance the community effort will lead to Gooligan's demise, though he wouldn't reveal the names of those he believed to be involved. "Hopefully we’ll be able to bring this operation to its end," he told me. "I’m not sure I can say exactly who it is but I can probably say who is involved."
+
+No user data theft, says Google
+
+It does not appear the hackers are actually using the account credentials to pilfer user data. Google's Android security chief, Adrian Ludwig, posted a blog about Gooligan today, saying the company had not seen any evidence of other fraudulent activity on the stolen accounts, outside of the promotion of apps. "The motivation behind Ghost Push is to promote apps, not steal information, and that held true for this variant," said Ludwig. All affected users have been notified and had their account login tokens reset. They've also been provided with clear guidelines on how to login securely, Ludwig added. Apps associated with Ghost Push activity have been removed from Google Play too.
+
+As Shaulov indicated, it appears a coordinated effort to take down the Ghost Push operation is well under way. "We are working with the Shadowserver Foundation and multiple major ISPs that provided infrastructure used to host and control the malware. Taking down this infrastructure has disrupted the existing malware, and will slow the future efforts," Ludwig wrote.
+
+He noted that Android versions from 6.0 onwards are unaffected by Ghost Push and Gooligan exploits. The hundreds of millions who continue to run older editions still have cause for concern, however. "The main problem is that the propagation of those patches is slow to non-existent," Shaulov added. "It's a difficult problem to solve."

@@ -1,0 +1,24 @@
+New targeted surveillance spyware found on Google Play
+A new targeted surveillance app has been found and booted from Google Play. The app, named Dardesh, posed as a chat application and acted as a downloader for a second app that could spy on users.
+
+The Dardesh app was spotted and analyzed by Lookout researchers, who dubbed the malware family Desert Scorpion.
+
+How was the app delivered to targets?
+The malicious Dardesh chat app was apparently downloaded and installed by over a hundred users, after having been promoted via a long-running Facebook profile that posted the link to the app located on Google Play.
+
+Once installed, the app would download a second app that masqueraded as a generic “settings” application, which is capable of tracking the device’s location, record calls, video, and surrounding audio, retrieve files found on external storage and them to a C&C server, retrieve text messages, contacts and account information, uninstall apps, and more.
+
+“The surveillance functionality of Desert Scorpion resides in a second stage payload that can only be downloaded if the victim has downloaded, installed, and interacted with the first-stage chat application,” the researchers pointed out.
+
+Google removed the app from Google Play earlier this month and took action on it via the Play Protect security suite, which can warn users about malicious apps or even remove them from devices.
+
+Who’s behind the attack?
+Lookout researchers believe a threat group dubbed APT-C-23 to be behind this scheme.
+
+“Our current analysis strongly suggests Desert Scorpion is being deployed in targeted attacks against Middle Eastern individuals of interest specifically those in Palestine and has also been highlighted by other researchers,” they noted.
+
+The Facebook profile that posted a link to it is the same one that previously posted Google Drive links to Android malware belonging to the FrozenCell family attributed to APT-C-23. Also, the C&C infrastructure used by Frozen Cell and Desert Scorpion resides in similar IP blocks, which supports the theory that the same actor is responsible for operating both families.
+
+“The approach of separating malicious functionality out into separate stages that are later downloaded during execution and not present in the initial app published to the Google Play Store, combined with social engineering delivered via social media platforms like Facebook, requires minimal investment in comparison to premium tooling like Pegasus or FinFisher,” the researchers pointed out.
+
+“Even sophisticated actors are using lower cost, less technologically impressive means like phishing to spread their malware because it’s cheap and very effective, especially on mobile devices where there are more ways to interact with a victim (messaging apps, social media apps, etc.), and less screen real estate for victims to identify potential indicators of a threat.”

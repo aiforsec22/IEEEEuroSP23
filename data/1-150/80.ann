@@ -1,0 +1,118 @@
+T1	OS 327 334	Android
+T2	OS 525 532	Android
+T3	OS 602 609	Android
+T4	OS 1498 1505	Android
+T5	OS 1886 1893	Android
+T6	OS 4802 4809	Android
+T7	Malware 0 5	RuMMS
+T8	Malware 925 935	RuMMS v2.0
+T9	Malware 5387 5392	RuMMS
+T10	Malware 5418 5428	RuMMS v2.0
+T11	Organization 822 829	FireEye
+T12	Application 3528 3537	Sber Bank
+T15	Application 5514 5524	ThreatlabZ
+T27	Indicator 5186 5203	quostpeopls[.]com
+T28	Indicator 5157 5174	hellowopung[.]com
+T29	Indicator 1032 1044	ru.row.glass
+T30	Indicator 5270 5289	wewelowertick[.]com
+T31	Indicator 5325 5342	zavannerweb[.]com
+T33	Indicator 5214 5233	bannerincbest[.]com
+T34	Indicator 5076 5091	sisirplus[.]com
+T36	Indicator 5129 5145	glowbobget[.]com
+T37	Indicator 5297 5313	bigslogous[.]com
+T38	Indicator 5101 5119	vietusprotus[.]com
+T39	Indicator 152 170	mmsprivate[.]site.
+T40	Indicator 4890 4940	http://<domain-name>.com/<random-chars>/index.php.
+T41	Indicator 1148 1176	url:mmsprivate[.]site/feel/,
+T42	Indicator 5243 5259	campuphome[.]com
+R3	indicates Arg1:T27 Arg2:T8
+R4	indicates Arg1:T28 Arg2:T8
+R5	indicates Arg1:T29 Arg2:T8
+R6	indicates Arg1:T30 Arg2:T8
+R7	indicates Arg1:T31 Arg2:T8
+R9	indicates Arg1:T33 Arg2:T8
+R10	indicates Arg1:T34 Arg2:T8
+R12	indicates Arg1:T36 Arg2:T8
+R13	indicates Arg1:T37 Arg2:T8
+R14	indicates Arg1:T38 Arg2:T8
+R15	indicates Arg1:T39 Arg2:T7
+R16	indicates Arg1:T40 Arg2:T8
+R17	indicates Arg1:T41 Arg2:T8
+R18	indicates Arg1:T42 Arg2:T8
+T43	Organization 55 62	Zscaler
+T44	Organization 63 73	ThreatLabZ
+R19	has Arg1:T43 Arg2:T44	
+R20	targets Arg1:T7 Arg2:T1	
+T16	Malware 783 788	RuMMS
+T45	Time 850 854	2016
+R21	discoveredIn Arg1:T16 Arg2:T45	
+R8	variantOf Arg1:T8 Arg2:T16	
+T32	Indicator 984 1016	c1f80e88a0470711cac720a66747665e
+R22	indicates Arg1:T32 Arg2:T8	
+T17	AttackPattern 1707 1736	Enabling AccessibilityService
+T46	AttackPattern 1777 1808	masks itself as a messaging app
+R23	uses Arg1:T8 Arg2:T17	
+R24	uses Arg1:T8 Arg2:T46	
+T47	AttackPattern 1855 1914	redirects the victim to enable Android AccessibilityService
+R25	uses Arg1:T8 Arg2:T47	
+T48	AttackPattern 1938 1969	disappears from the home screen
+R26	uses Arg1:T8 Arg2:T48	
+T49	AttackPattern 2244 2286	make the SMS app the default messaging app
+R27	uses Arg1:T8 Arg2:T49	
+T50	AttackPattern 2659 2719	starts sending details to a command-and-control (C&C) server
+R28	uses Arg1:T8 Arg2:T50	
+T18	AttackPattern 3111 3179	list of apps to be disabled contained well-known antivirus (AV) apps
+R29	uses Arg1:T8 Arg2:T18	
+T19	Application 3196 3207	Trend Micro
+T20	Application 3210 3217	Dr. Web
+T21	Application 3219 3225	AhnLab
+T51	Application 3227 3232	Avira
+T52	Application 3234 3240	Sophos
+T53	Application 3242 3248	McAfee
+T54	Application 3250 3258	F-Secure
+T55	Application 3487 3496	Sber Bank
+R30	targets Arg1:T8 Arg2:T19	
+R31	targets Arg1:T8 Arg2:T20	
+R32	targets Arg1:T8 Arg2:T21	
+R33	targets Arg1:T8 Arg2:T51	
+R34	targets Arg1:T8 Arg2:T52	
+R35	targets Arg1:T8 Arg2:T53	
+R36	targets Arg1:T8 Arg2:T54	
+R37	targets Arg1:T8 Arg2:T55	
+R1	variantOf Arg1:T10 Arg2:T9	
+T13	AttackPattern 395 424	disguises itself as Сooбщениe
+R2	uses Arg1:T7 Arg2:T13	
+T14	AttackPattern 474 553	performs its malicious functionality by exploiting Android AccessibilityService
+R11	uses Arg1:T7 Arg2:T14	
+T22	AttackPattern 636 679	hides itself in order to spy on its victims
+R38	uses Arg1:T7 Arg2:T22	
+T23	AttackPattern 2044 2169	continuously appear on the screen (see the second screen in the above snapshot) to encourage the victim to enable the service
+R39	uses Arg1:T8 Arg2:T23	
+T24	AttackPattern 3039 3083	command "40" was used for disabling the apps
+R40	uses Arg1:T8 Arg2:T24	
+T25	AttackPattern 3337 3420	As soon as a victim tries to open one of these apps, the malware abruptly closes it
+R41	uses Arg1:T8 Arg2:T25	
+T26	AttackPattern 3554 3579	SMS: Sending and stealing
+T35	AttackPattern 3745 3830	sending SMS messages to any desired number with the body of the SMS instructed by C&C
+T56	AttackPattern 3889 3935	stealing SMS messages from the victim's device
+T57	AttackPattern 3978 4051	steal bank-related one-time-password codes and other relevant information
+R42	uses Arg1:T8 Arg2:T35	
+R43	uses Arg1:T8 Arg2:T56	
+R44	uses Arg1:T8 Arg2:T26	
+R45	uses Arg1:T8 Arg2:T57	
+T58	AttackPattern 4113 4130	Stealing Contacts
+T59	AttackPattern 4160 4199	steal contacts from the victim's device
+T60	AttackPattern 4250 4330	spread the malware with a well-known technique called SMS-Phishing (or SMiShing)
+T61	AttackPattern 4364 4389	has calling functionality
+R46	uses Arg1:T8 Arg2:T58	
+R47	uses Arg1:T8 Arg2:T59	
+R48	uses Arg1:T8 Arg2:T61	
+T62	MalwareType 1258 1265	spyware
+T63	MalwareType 2031 2038	spyware
+T64	MalwareType 2216 2223	spyware
+T65	MalwareType 3585 3592	spyware
+T66	MalwareType 3875 3882	spyware
+T67	Application 5765 5775	app stores
+T68	Application 3160 3169	antivirus
+T69	Application 2253 2260	SMS app
+T70	Organization 5506 5513	Zscaler

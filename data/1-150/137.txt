@@ -1,0 +1,32 @@
+This Android malware can take photos and videos and spy on your app history
+Described as "full featured mobile surveillance software", Monokle comes equipped with unique capabilities that help it conduct espionage, according to researchers.
+
+A highly-targeted, custom-built form of powerful Android malware is being deployed to conduct surveillance on selected individuals, according to security researchers.
+
+Uncovered by mobile security company Lookout, the Monokle remote-access trojan is equipped with a range of intrusive capabilities which enable it to conduct espionage on targets.
+
+These include keylogging, taking photos and videos, retrieving history of apps including web browsers, social media services, and messengers, tracking the location of the user, and much more.
+
+In addition, Monokle has the ability to install trusted certificates which allow it to gain root access to the device. This allows the attackers to deploy unique capabilities in their quest to steal data.
+
+Much of this is achieved by exploiting accessibility services and tailoring them to steal data from third-party applications, as well as using the predictive-text dictionaries of the user to gain insight into the kinds of topic that interest them. The malware can also record the screen when it is being unlocked in order to reveal the victim's passcode.
+
+"Monokle is advanced and full featured mobile surveillance software," Adam Bauer, senior staff security intelligence engineer and one of the investigators behind the research, told ZDNet. "It could be used for any objective which would require surveillance through a mobile device."
+
+While Monokle currently only targets Android devices, researchers say several samples of the malware contain unused commands and data transfer objects which point to the existence of an iOS version, suggesting the group would like to target iPhones in future.
+
+The malware is thought to have been active in the wild since 2016, with small bursts of activity against targets in the Caucasus region -- which encompasses Armenia, Azerbaijan, and Georgia -- as well as targets in Syria. The total number of compromised users currently isn't known.
+
+It's still uncertain how Monokle is distributed, but researchers note that some samples of the malware are built around trojanized versions of real applications, complete with the same appearance and functionality -- and that phishing could play a part in delivery.
+
+"In similar attacks, such as Dark Caracal, we've observed the use of phishing attacks through messaging applications, SMS, or emails used to distribute this type of malware," said Bauer.
+
+Lookout has linked the infrastructure behind Monokle to Special Technology Centre (STC), a Russian company working out of St Petersburg.
+
+STC was one of a number of Russian companies subject to sanctions by the Obama administration in December 2016 for being "complicit in malicious cyber-enabled activities" against the US. The defense contractor is one of three companies sanctioned for providing material support to the Main Intelligence Directorate (GRU) in election interference campaigns.
+
+Researchers say STC has been developing a set of Android security applications that share infrastructure and links with Monokle, including sharing the same command and control servers. 
+
+While Monokle isn't a widespread campaign, researchers say the surveillance malware is still actively being deployed.
+
+Lookout has published more than 80 Indicators of Compromise for Monokle in its full analysis of the malware.

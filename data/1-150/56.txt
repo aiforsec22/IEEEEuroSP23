@@ -1,0 +1,32 @@
+MazarBOT Android Malware Distributed via SMS Spoofing Campaign
+In the fall of 2015, Heimdal Security detected a post-office email scam targeting unsuspecting Danish users. The campaign sent out fake emails purporting to originate from PostNord and Post Denmark. When clicked on, the infected emails downloaded Cryptolocker2 ransomware onto users’ machines.
+
+Several months later, Heimdal has now spotted another scam campaign spoofing legitimate organizations in Italy and Denmark, including Post Denmark. This campaign uses spam SMS messages to distribute a form of Android malware known as MazarBOT.
+
+Heimdal explains in a blog post that the campaign begins with the following SMS message:
+
+In English, the text message reads:
+
+“Your package is available for pick up. Follow link to see all the information on your package.”
+
+Clicking on the shortened link leads to www[.]fhsinsaat.com/apk/post.apk, a URL which downloads the infected Android installation application file for MazarBOT.
+
+Security researchers at real-time threat intelligence firm Recorded Future first detected the Android malware back in November of 2015. They found MazarBOT for sale on an underground web market.
+
+At the time, there was no indication any real-life malware campaigns were actively distributing MazarBOT.
+
+That has since changed.
+
+In February, news broke of a malware campaign infecting users with MazarBOT. The malware spread via SMS texts that asked users to click on a link in order to view a multimedia message. That link, in turn, loaded the malware’s APK file.
+
+Once it has been fully downloaded onto a computer, MazarBOT has the ability to open, monitor and control backdoors on the victim’s Android device; send SMS messages to premium channel numbers, which will increase the victim’s mobile phone bill; read SMS messages, including two-step verification codes; use the “Polipo proxy” to launch man-in-the-middle (MitM) attacks; and inject itself in the mobile Google Chrome browser.
+
+Currently, this particular MazarBOT campaign is believed to have affected 400 Android devices in Denmark and 1,500 in Italy.
+
+Android malware, especially those capable of leveraging SMS texts as a distribution vector, are a persistent threat to mobile users’ security. With that in mind, Heimdal recommends that users adhere to the following security guidelines:
+
+Avoid clicking on suspicious links sent via SMS, MMS, or email.
+Install applications only from trusted sources found on the Google Play Store.
+Maintain an up-to-date mobile antivirus solutions app.
+Use a mobile VPN.
+Avoid the use of public or open Wi-Fi hotspots.

@@ -1,0 +1,297 @@
+T1	OS 100 107	Android
+T2	OS 405 412	Android
+T3	OS 2793 2800	Android
+T4	OS 5590 5597	Android
+T5	OS 6675 6682	Android
+T6	OS 7135 7142	Android
+T7	OS 7705 7712	Android
+T9	Organization 6845 6851	Google
+T10	Malware 632 639	TrickMo
+T11	Malware 2924 2931	TrickMo
+T12	Malware 3418 3425	TrickMo
+T13	Malware 3462 3469	TrickMo
+T14	Malware 6186 6193	TrickMo
+T15	Malware 6702 6709	TrickMo
+T16	Malware 7278 7285	TrickMo
+T17	Malware 7904 7911	TrickMo
+T18	Malware 8753 8760	TrickMo
+T19	Malware 9246 9253	TrickMo
+T20	Malware 9908 9915	TrickMo
+T21	Malware 10000 10007	TrickMo
+T22	Malware 11687 11694	TrickMo
+T23	Malware 12254 12261	TrickMo
+T24	Malware 12642 12649	TrickMo
+T25	Malware 12934 12941	TrickMo
+T26	Malware 14232 14239	TrickMo
+T27	Malware 14392 14399	TrickMo
+T28	Malware 15085 15092	TrickMo
+T29	Malware 15331 15338	TrickMo
+T30	Malware 15505 15512	TrickMo
+T31	Malware 16383 16390	TrickMo
+T32	Malware 16448 16455	TrickMo
+T33	Malware 18691 18698	TrickMo
+T34	Malware 18850 18857	TrickMo
+T35	Malware 18983 18990	TrickMo
+T36	Malware 19226 19233	TrickMo
+T37	Indicator 18508 18572	284bd2d16092b4d13b6bc85d87950eb4c5e8cbba9af2a04d76d88da2f26c485c
+T38	Indicator 18621 18685	8ab1712ce9ca2d7952ab763d8a4872aa6a278c3f60dc13e0aebe59f50e6e30f6
+T39	Malware 0 8	TrickBot
+T40	Malware 172 180	TrickBot
+T41	Malware 894 902	TrickBot
+T42	Malware 1573 1581	TrickBot
+T43	Malware 2321 2329	TrickBot
+T44	Malware 2849 2857	TrickBot
+T45	Malware 18711 18719	TrickBot
+T47	Malware 19051 19059	TrickBot
+T49	Organization 64 75	IBM X-Force
+T50	Organization 1133 1142	CERT-Bund
+T51	Organization 1171 1213	IBM Trusteer Mobile Security Research team
+T52	Malware 1531 1537	Emotet
+T54	Malware 5242 5246	Zeus
+T55	Malware 5351 5355	Zeus
+T57	Application 5672 5679	pushTAN
+T58	Application 5814 5821	pushTAN
+T59	Application 6059 6066	pushTAN
+T60	Application 6200 6207	pushTAN
+T61	Application 6213 6220	pushTAN
+T64	Location 55 62	Germany
+T65	Location 853 860	Germany
+T66	Location 2902 2909	Germany
+T85	Indicator 18399 18421	hxxp://mcsoft365.com/c
+T87	Indicator 18425 18449	hxxp://pingconnect.net/c
+R1	indicates Arg1:T37 Arg2:T32
+R2	indicates Arg1:T38 Arg2:T32
+R8	indicates Arg1:T85 Arg2:T32
+R10	indicates Arg1:T87 Arg2:T32
+R12	targets Arg1:T39 Arg2:T64	
+T88	MalwareType 181 187	Trojan
+R13	isA Arg1:T40 Arg2:T88	
+T89	Malware 207 214	TrickMo
+*	hasAlias T40 T89
+T90	AttackPattern 244 357	bypass second factor and strong authentication pushed to bank customers when they need to authorize a transaction
+R14	uses Arg1:T89 Arg2:T90	
+T91	AttackPattern 529 600	steal transaction authorization codes from victims who download the app
+R15	uses Arg1:T89 Arg2:T91	
+T92	Location 841 848	Germany
+R16	targets Arg1:T10 Arg2:T92	
+R17	targets Arg1:T41 Arg2:T65	
+T93	Time 938 942	2016
+R18	discoveredIn Arg1:T41 Arg2:T93	
+T94	Time 947 951	2020
+T95	Malware 969 977	TrickBot
+T96	Time 1087 1101	September 2019
+T97	Time 1106 1120	September 2019
+T98	Malware 1237 1245	TrickBot
+T99	AttackPattern 1314 1451	uses man-in-the-browser (MITB) web injects in online banking sessions to ask infected users for their mobile phone number and device type
+R19	uses Arg1:T98 Arg2:T99	
+T100	Malware 1546 1554	TrickBot
+R20	uses Arg1:T52 Arg2:T100	
+T86	AttackPattern 1582 1721	displays a query for the mobile phone number and the device type used for banking and then prompts users to install an alleged security app
+R9	uses Arg1:T42 Arg2:T86	
+T102	AttackPattern 2528 2626	impersonating their bank with web injections, fools the victim into installing a fake security app
+R22	uses Arg1:T43 Arg2:T102	
+T80	Malware 2873 2880	TrickMo
+*	hasAlias T44 T80
+R3	targets Arg1:T44 Arg2:T66	
+T69	MalwareType 2963 3019	transaction authentication number (TAN)-stealing malware
+R23	isA Arg1:T11 Arg2:T69	
+T103	AttackPattern 3064 3100	Stealing personal device information
+T104	AttackPattern 3102 3127	Intercepting SMS messages
+R24	uses Arg1:T11 Arg2:T103	
+R25	uses Arg1:T11 Arg2:T104	
+T70	AttackPattern 3129 3182	Recording targeted applications for one-time password
+T105	AttackPattern 3190 3211	Lockdown of the phone
+T106	AttackPattern 3213 3246	Stealing pictures from the device
+T107	AttackPattern 3248 3276	Self-destruction and removal
+R26	uses Arg1:T11 Arg2:T70	
+R27	uses Arg1:T11 Arg2:T105	
+R28	uses Arg1:T11 Arg2:T106	
+R29	uses Arg1:T11 Arg2:T107	
+T67	AttackPattern 3485 3516	break the newest methods of OTP
+R30	uses Arg1:T13 Arg2:T67	
+T71	Malware 3640 3647	TrickMo
+T56	AttackPattern 3681 3702	app recording feature
+R31	uses Arg1:T71 Arg2:T56	
+T108	MalwareType 4063 4077	banking Trojan
+T110	Location 4328 4335	Germany
+T68	MalwareType 4737 4751	banking Trojan
+T111	Time 5223 5227	2011
+T112	AttackPattern 5262 5349	using web injects that tricked users into downloading a mobile component called “ZitMo”
+R35	uses Arg1:T54 Arg2:T112	
+T113	AttackPattern 5389 5407	bypass 2FA methods
+R36	uses Arg1:T54 Arg2:T113	
+T114	Location 5718 5724	Europe
+T115	Location 5740 5747	Germany
+T53	Malware 6541 6548	TrickMo
+T74	AttackPattern 6589 6653	steal TANs using screen video recording and screen data scraping
+R37	uses Arg1:T53 Arg2:T74	
+T63	AttackPattern 6749 6778	abuses accessibility services
+R38	uses Arg1:T15 Arg2:T63	
+T116	AttackPattern 7325 7428	start the accessibility settings activity, coercing the user to grant it with accessibility permissions
+R39	uses Arg1:T16 Arg2:T116	
+T117	AttackPattern 7526 7571	Preventing the user from uninstalling the app
+T118	AttackPattern 7573 7629	Becoming the default SMS app by changing device settings
+T119	AttackPattern 7631 7677	Monitoring the currently running application(s
+T120	AttackPattern 7680 7703	Scraping on-screen text
+R40	uses Arg1:T16 Arg2:T117	
+R41	uses Arg1:T16 Arg2:T118	
+R42	uses Arg1:T16 Arg2:T119	
+R43	uses Arg1:T16 Arg2:T120	
+T121	AttackPattern 7912 8051	uses accessibility services to identify and control some of these screens and make its own choices before giving the user a chance to react
+R44	uses Arg1:T17 Arg2:T121	
+T122	Malware 8230 8237	TrickMo
+T82	AttackPattern 8680 8744	avoid user interaction by running in the background as a service
+R5	uses Arg1:T122 Arg2:T82	
+T83	AttackPattern 8986 9089	uses the AlarmManager to set a pending intent that will run its own service after a predefined interval
+R6	uses Arg1:T18 Arg2:T83	
+T123	Malware 9107 9114	TrickMo
+T124	AttackPattern 9117 9218	service will start either after the device becomes interactive or after a new SMS message is received
+R45	uses Arg1:T123 Arg2:T124	
+T125	AttackPattern 9254 9351	uses the shared preferences mechanism to store settings and data that the malware uses at runtime
+R46	uses Arg1:T19 Arg2:T125	
+T126	AttackPattern 9916 9996	uses an obfuscator to scramble the names of its functions, classes and variables
+R47	uses Arg1:T20 Arg2:T126	
+T127	Time 10021 10033	January 2020
+T128	AttackPattern 10054 10136	checks if the app is running on a rooted device or an emulator to prevent analysis
+R48	uses Arg1:T21 Arg2:T128	
+T129	Malware 10390 10397	TrickMo
+T76	AttackPattern 10479 10544	connects to its designated server via an unencrypted HTTP request
+R49	uses Arg1:T129 Arg2:T76	
+T130	AttackPattern 11726 11778	steal all SMS messages that are stored on the device
+R50	uses Arg1:T22 Arg2:T130	
+T131	AttackPattern 11803 11910	sends a packet to its C&C server containing the collected device data along with all the saved SMS messages
+R51	uses Arg1:T22 Arg2:T131	
+T132	AttackPattern 11998 12056	delete the SMS messages so only the attackers can see them
+R52	uses Arg1:T22 Arg2:T132	
+T133	AttackPattern 12269 12327	automatic mechanism to send SMS messages to its C&C server
+R53	uses Arg1:T23 Arg2:T133	
+T134	AttackPattern 12373 12407	send log data of important actions
+R54	uses Arg1:T23 Arg2:T134	
+T135	AttackPattern 12416 12500	save an SMS message on the device, marking with “internal” in the phone number field
+R55	uses Arg1:T23 Arg2:T135	
+T136	AttackPattern 12506 12604	SMS message will be instantly sent to the server, informing the malware operator of executed tasks
+R56	uses Arg1:T23 Arg2:T136	
+T138	Malware 12943 12950	TrickMo
+T139	MalwareType 14054 14069	banking malware
+T140	AttackPattern 14076 14230	blocks the user’s access to their banking website after a successful transaction by using web injects that show a variety of “service unavailable” screens
+T141	AttackPattern 14369 14390	stealing the OTP/mTAN
+R59	uses Arg1:T27 Arg2:T141	
+T142	AttackPattern 14418 14496	activating the lock screen and preventing the user from accessing their device
+R60	uses Arg1:T27 Arg2:T142	
+T144	Malware 14902 14909	TrickMo
+T145	AttackPattern 14963 15065	lockdown screen persists after a restart and is re-initiated every time the device becomes interactive
+R62	uses Arg1:T144 Arg2:T145	
+T146	AttackPattern 15117 15139	intercept SMS messages
+R63	uses Arg1:T28 Arg2:T146	
+T75	AttackPattern 15401 15449	record the screen when targeted apps are running
+R64	uses Arg1:T29 Arg2:T75	
+T147	Organization 15549 15561	German banks
+R65	targets Arg1:T30 Arg2:T147	
+T8	AttackPattern 15729 15801	capture a video of the screen when the targeted application is presented
+R66	uses Arg1:T30 Arg2:T8	
+T148	AttackPattern 15815 15919	Using the accessibility service to save a text file containing the data of all the objects on the screen
+R67	uses Arg1:T30 Arg2:T148	
+T150	Malware 16612 16619	TrickMo
+T151	AttackPattern 16855 16907	turn on the kill switch and initiate its own removal
+R69	uses Arg1:T150 Arg2:T151	
+T152	Time 18805 18809	2019
+T153	MalwareType 18754 18769	banking malware
+R70	isA Arg1:T45 Arg2:T153	
+T154	AttackPattern 19008 19029	app recording feature
+R72	uses Arg1:T35 Arg2:T154	
+T62	AttackPattern 19075 19135	overcome the newer pushTAN app validations deployed by banks
+R73	uses Arg1:T47 Arg2:T62	
+T155	Malware 19494 19501	TrickMo
+R7	uses Arg1:T26 Arg2:T140	
+T72	Indicator 18466 18498	5c749c9fce8c41bf6bcc9bd8a691621b
+R21	indicates Arg1:T72 Arg2:T150	
+T46	MalwareType 1732 1746	banking Trojan
+T48	MalwareType 1260 1274	banking Trojan
+R11	isA Arg1:T98 Arg2:T48	
+T73	AttackPattern 2048 2101	“kill switch” that can eliminate the malware remotely
+R32	uses Arg1:T42 Arg2:T73	
+T84	MalwareType 2138 2144	Trojan
+T101	MalwareType 2195 2201	Trojan
+T109	OS 2494 2501	Android
+T137	MalwareType 2520 2526	Trojan
+T143	AttackPattern 2358 2453	see a web injection asking for their mobile device operating system (OS) type and phone number.
+R33	uses Arg1:T43 Arg2:T143	
+T149	Location 3560 3567	Germany
+R34	targets Arg1:T13 Arg2:T149	
+T156	Organization 3785 3797	German banks
+R57	targets Arg1:T71 Arg2:T156	
+T157	Application 3753 3764	pushTAN app
+T158	AttackPattern 3897 3950	“kill switch” that can remotely eliminate the malware
+R58	uses Arg1:T71 Arg2:T158	
+T159	MalwareType 3991 3997	Trojan
+T160	AttackPattern 5411 5461	intercepting the SMS messages coming from the bank
+T161	AttackPattern 5466 5515	stealing the mTANs without the victim’s knowledge
+R61	uses Arg1:T54 Arg2:T160	
+R68	uses Arg1:T54 Arg2:T161	
+R71	isA Arg1:T54 Arg2:T68	
+T81	AttackPattern 10549 10624	sends over a JSON object that contains data gleaned from the victim’s phone
+R4	uses Arg1:T129 Arg2:T81	
+T162	AttackPattern 12676 12704	becoming the default SMS app
+R74	uses Arg1:T24 Arg2:T162	
+T77	AttackPattern 13259 13269	SMS Contro
+T163	AttackPattern 13340 13385	Send AES-encrypted SMS message back to sender
+T164	AttackPattern 13416 13447	Update service wake-up interval
+T165	AttackPattern 13455 13466	Kill switch
+T166	AttackPattern 13487 13523	Update the address of the C&C server
+T167	AttackPattern 13570 13585	Lock the screen
+T168	AttackPattern 13593 13645	Display a picture in a WebView from an arbitrary URL
+T169	AttackPattern 13654 13683	Send an arbitrary SMS message
+T170	AttackPattern 13691 13723	Steal images saved on the device
+T171	AttackPattern 13741 13800	Use the accessibility service to become the default SMS app
+T172	AttackPattern 13808 13838	Enable recording of other apps
+T173	AttackPattern 13847 13858	Kill switch
+R75	uses Arg1:T138 Arg2:T77	
+R76	uses Arg1:T138 Arg2:T163	
+T174	AttackPattern 13272 13308	Update the address of the C&C server
+R77	uses Arg1:T138 Arg2:T174	
+R78	uses Arg1:T138 Arg2:T164	
+R79	uses Arg1:T138 Arg2:T165	
+R80	uses Arg1:T138 Arg2:T166	
+R81	uses Arg1:T138 Arg2:T167	
+R82	uses Arg1:T138 Arg2:T168	
+R83	uses Arg1:T138 Arg2:T171	
+R84	uses Arg1:T138 Arg2:T169	
+R85	uses Arg1:T138 Arg2:T170	
+R86	uses Arg1:T138 Arg2:T172	
+R87	uses Arg1:T138 Arg2:T173	
+T175	MalwareType 18720 18726	Trojan
+R88	isA Arg1:T45 Arg2:T175	
+R89	discoveredIn Arg1:T45 Arg2:T152	
+T176	MalwareType 3328 3343	banking malware
+T177	MalwareType 5528 5543	banking malware
+T178	MalwareType 11097 11112	banking malware
+T179	MalwareType 14026 14041	banking malware
+T180	MalwareType 5247 5253	Trojan
+T181	Application 6756 6778	accessibility services
+T182	Application 6793 6815	accessibility services
+T183	Application 7169 7191	accessibility services
+T184	Application 7917 7939	accessibility services
+T185	Application 4209 4231	financial institutions
+T186	Application 2609 2626	fake security app
+T187	Application 1360 1374	online banking
+T188	Application 2728 2742	online banking
+T189	Application 4136 4150	online banking
+T190	Application 4563 4577	online banking
+T191	Application 9709 9722	Accessibility
+T192	Application 1709 1721	security app
+T193	Application 19094 19105	pushTAN app
+T194	Application 7594 7601	SMS app
+T195	Application 9785 9792	SMS app
+T196	Application 12697 12704	SMS app
+T197	Application 12837 12844	SMS app
+T198	Application 13793 13800	SMS app
+T199	Application 13616 13623	WebView
+T200	Application 14544 14551	WebView
+T201	Application 10881 10887	Signal
+T202	Malware 18878 18886	TrickBot
+T203	OS 15698 15705	Android
+T204	Organization 3281 3286	banks
+T205	Organization 5709 5714	banks
+T206	Organization 11386 11391	banks
+T207	Organization 11634 11639	banks
+T208	Organization 19130 19135	banks

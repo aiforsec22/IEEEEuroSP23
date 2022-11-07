@@ -1,0 +1,148 @@
+T1	OS 2017 2027	iOS 13.5.1
+T3	OS 3443 3449	iOS 14
+T4	Malware 39 46	Pegasus
+T5	Malware 709 716	Pegasus
+T6	Malware 752 759	Pegasus
+T7	Malware 1270 1277	Pegasus
+T8	Malware 1703 1710	Pegasus
+T9	Malware 4076 4083	Pegasus
+T10	Malware 4670 4677	Pegasus
+T11	Malware 5294 5301	Pegasus
+T12	Malware 5384 5391	Pegasus
+T13	Malware 6466 6473	Pegasus
+T14	Organization 11 16	Apple
+T15	Organization 346 351	Apple
+T16	Organization 2686 2691	Apple
+T17	Organization 3522 3527	Apple
+T18	Organization 230 240	Al Jazeera
+T20	Hardware 3215 3221	iPhone
+T21	Hardware 5335 5341	iPhone
+T22	Organization 2565 2576	Citizen Lab
+T23	Organization 3756 3767	Citizen Lab
+T24	Organization 5483 5494	Citizen Lab
+T25	Organization 6160 6171	Citizen Lab
+T26	Organization 7276 7287	Citizen Lab
+T27	Organization 864 873	NSO Group
+T28	Organization 1217 1226	NSO Group
+T29	Organization 2156 2165	NSO Group
+T30	Organization 2511 2520	NSO Group
+T31	Organization 4945 4954	NSO Group
+T32	ThreatActor 5932 5941	NSO Group
+T33	Organization 6963 6972	NSO Group
+T34	Application 1747 1755	iMessage
+T35	Application 2705 2713	iMessage
+T36	Application 2846 2854	iMessage
+T37	Application 5115 5123	iMessage
+T38	Application 7489 7497	iMessage
+T40	Vulnerability 1978 1984	KISMET
+T41	Vulnerability 2953 2959	KISMET
+T42	Vulnerability 3408 3414	KISMET
+T43	Organization 2078 2088	Ctizen Lab
+T44	Application 2403 2411	WhatsApp
+T45	Organization 3502 3514	Citizen Labs
+T46	Application 4530 4540	CloudSigma
+T47	Application 4610 4616	iCloud
+T48	ThreatActor 6067 6081	Sneaky Kestral
+T50	ThreatActor 6140 6148	Monarchy
+T51	ThreatActor 6645 6653	Monarchy
+T52	ThreatActor 6201 6209	Center-1
+T53	ThreatActor 6845 6853	Center-1
+T54	ThreatActor 6321 6335	Sneaky Kestrel
+T55	Location 135 147	Saudi Arabia
+T56	Location 615 627	Saudi Arabia
+T57	Location 6547 6550	UAE
+T60	Location 4487 4492	Italy
+R11	targets Arg1:T4 Arg2:T14	
+T73	Location 155 158	UAE
+T74	Time 408 412	July
+T75	Time 417 423	August
+T76	Organization 495 506	Citizen Lab
+T77	Location 636 656	United Arab Emirates
+T78	ThreatActor 688 697	NSO Group
+R12	hasAuthor Arg1:T5 Arg2:T78	
+T79	Organization 1329 1340	Citizen Lab
+T80	AttackPattern 1353 1466	Recording audio from the microphone including both ambient “hot mic” recording and audio of encrypted phone calls
+T81	AttackPattern 1468 1483	taking pictures
+T82	AttackPattern 1485 1509	tracking device location
+T83	AttackPattern 1515 1557	accessing passwords and stored credentials
+R13	uses Arg1:T7 Arg2:T80	
+R14	uses Arg1:T7 Arg2:T82	
+R15	uses Arg1:T7 Arg2:T81	
+R16	uses Arg1:T7 Arg2:T83	
+T39	Organization 1570 1581	Citizen Lab
+T84	Time 1618 1624	Sunday
+T85	Organization 1739 1744	Apple
+T86	Hardware 1768 1774	iPhone
+R17	has Arg1:T85 Arg2:T34	
+R18	has Arg1:T86 Arg2:T34	
+T87	Vulnerability 1844 1850	KISMET
+T88	Application 1912 1920	iMessage
+R19	has Arg1:T88 Arg2:T87	
+T89	Vulnerability 1562 1568	KISMET
+R20	exploits Arg1:T8 Arg2:T87	
+T71	Organization 2043 2048	Apple
+T70	Hardware 2063 2072	iPhone 11
+R8	has Arg1:T71 Arg2:T70	
+R9	has Arg1:T1 Arg2:T40	
+R21	has Arg1:T70 Arg2:T40	
+T19	ThreatActor 2141 2150	NSO Group
+T90	Time 2398 2402	2019
+R22	has Arg1:T16 Arg2:T35	
+T91	Application 2718 2726	FaceTime
+R23	has Arg1:T16 Arg2:T91	
+T92	Malware 2777 2784	Pegasus
+T93	Application 2858 2866	FaceTime
+R24	targets Arg1:T92 Arg2:T36	
+R25	targets Arg1:T92 Arg2:T93	
+T94	Time 2982 3007	October and December 2019
+T95	Location 3088 3094	London
+T96	Organization 3101 3112	Al Araby TV
+R26	has Arg1:T96 Arg2:T95	
+T97	ThreatActor 3144 3153	NSO Group
+T2	OS 3243 3249	iOS 14
+T98	Organization 3392 3403	Citizen Lab
+T99	Person 3596 3611	Tamer Almisshal
+T100	Organization 3655 3665	Al Jazeera
+T101	Time 3696 3703	January
+T58	Time 3946 3958	19 July 2020
+T59	ThreatActor 4064 4073	NSO Group
+R27	hasAuthor Arg1:T9 Arg2:T59	
+T102	Malware 4149 4156	Pegasus
+T103	Organization 4172 4183	Citizen Lab
+T64	Location 4460 4467	Germany
+T66	Location 4469 4475	France
+T69	Location 4477 4481	U.K.
+T104	Organization 4515 4520	Aruba
+T105	Organization 4522 4528	Choopa
+T106	Organization 4545 4557	DigitalOcean
+T107	Person 4745 4760	Tamer Almisshal
+R2	targets Arg1:T10 Arg2:T107	
+T108	Vulnerability 4826 4832	KISMET
+T61	Organization 5183 5194	Citizen Lab
+T109	Person 5323 5332	Almisshal
+T65	Person 5568 5577	Almisshal
+T72	Time 5646 5653	January
+T110	Time 5658 5662	July
+T111	Organization 5966 5978	Citizen Labs
+T49	ThreatActor 6009 6017	Monarchy
+T112	ThreatActor 6214 6222	Center-2
+T68	Location 6358 6361	UAE
+R3	has Arg1:T54 Arg2:T68	
+T113	Organization 6406 6409	UAE
+T62	Person 6560 6573	Ahmed Mansoor
+T63	Organization 6676 6692	Saudi government
+R1	has Arg1:T63 Arg2:T51	
+T114	Location 6734 6746	Saudi Arabia
+R4	targets Arg1:T51 Arg2:T114	
+T115	Person 6771 6793	Saudi Arabian activist
+R6	targets Arg1:T51 Arg2:T115	
+T116	ThreatActor 6858 6866	Center-2
+T117	Location 6911 6922	Middle East
+R7	targets Arg1:T53 Arg2:T117	
+R10	targets Arg1:T116 Arg2:T117	
+T67	ThreatActor 7466 7475	NSO Group
+R5	targets Arg1:T67 Arg2:T38	
+R28	communicatesWith Arg1:T48 Arg2:T50	
+T118	MalwareType 717 724	spyware
+T119	MalwareType 910 917	spyware
+T120	MalwareType 7330 7337	spyware

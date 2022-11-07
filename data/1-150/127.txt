@@ -1,0 +1,28 @@
+TangleBot Malware Reaches Deep into Android Device Functions
+The mobile baddie grants itself access to almost everything, enabling spying, data-harvesting, stalking and fraud attacks, among others.
+
+An Android malware called TangleBot has weaved its way onto the cyber-scene: One that researchers said can perform a bouquet of malicious actions, including stealing personal info and controlling apps and device functions.
+
+According to Cloudmark researchers, the newly discovered mobile malware is spreading via SMS messaging in the U.S. and Canada, using lures about COVID-19 boosters and regulations. The goal is to social-engineer targets into clicking on an embedded link, which takes them to a website. The site tells users they need an “Adobe Flash update.” If they click on the subsequent dialog boxes, TangleBot malware installs.
+
+In propagation and theme, TangleBot resembles other mobile malware, such as the FluBot SMS malware that targets the U.K. and Europe or the CovidLock Android ransomware, which is an Android app that pretends to give users a way to find nearby COVID-19 patients. But its wide-ranging access to mobile device functions is what sets it apart, Cloudmark researchers said.
+
+“The malware has been given the moniker TangleBot because of its many levels of obfuscation and control over a myriad of entangled device functions, including contacts, SMS and phone capabilities, call logs, internet access, [GPS], and camera and microphone,” they noted in a Thursday writeup.
+
+To reach such a long arm into Android’s internal business, TangleBot grants itself privileges to access and control all of the above, researchers said, meaning that the cyberattackers would now have carte blanche to mount attacks with a staggering array of goals.
+
+For instance, attackers can manipulate the incoming voice call function to block calls and can also silently make calls in the background, with users none the wiser. That’s a perfect setup for premium number fraud, where the user is charged a high rate for making a call to an attacker-controlled toll number.
+
+TangleBot can also send, obtain and process text messages for SMS fraud, two-factor authentication interception, self-propagation to contacts and more.
+
+It also has deep spyware capabilities, with the ability to record or directly stream camera, screen or microphone audio directly to the attacker, along with “other device observation capabilities,” according to Cloudmark. Gaining access to the GPS functionality, for example, creates the potential for stalkery location-tracking.
+
+And last but not least, the firm noted that the malware can take stock of installed applications and interact with them, as well as place overlay screens on top of these to, say, harvest credentials in the style of a banking trojan.
+
+“The ability to detect installed apps, app interactions and inject overlay screens is extremely problematic,” researchers noted. “As we have seen with FluBot, TangleBot can overlay banking or financial apps and directly steal the victim’s account credentials….The capabilities also enable the theft of considerable personal information directly from the device.”
+
+That can be problematic for businesses, too, given that employees increasingly use personal devices for work.
+
+To avoid threats like TangleBot, mobile users should practice safe messaging practices and avoid clicking on any links in texts, even if they appear to come from a legitimate contact, researchers noted. They should also be judicious when downloading apps and should read install prompts closely, looking out for information regarding rights and privileges that the app may request. And finally, they should be wary of procuring any software from outside a certified app store.
+
+“Harvesting of personal information and credentials in this manner is extremely troublesome for mobile users because there is a growing market on the Dark Web for detailed personal and account data,” according to Cloudmark. “Even if the user discovers the TangleBot malware installed on their device and is able to remove it, the attacker may not use the stolen information for some period of time, rendering the victim oblivious of the theft.”

@@ -1,0 +1,67 @@
+Evil Alien RAT Out There! Alien Android Banking Trojan Sidesteps 2FA!
+
+A new variant of Cerberus banking trojan, called Alien, targets victims’ credentials from more than 200 mobile apps, including Bank of America & Microsoft Outlook.
+
+The newly uncovered banking Alien trojan is ‘invading’ Android devices worldwide, using an advanced ability to bypass 2-factor authentication (2FA) security measures to steal victim credentials!
+
+When it has infected a device, the RAT tries to take passwords from at least 226 mobile applications; including banking apps like Bank of America Mobile Banking & Capital One Mobile, as well as many collaboration & social apps e.g. Snapchat, Telegram & Microsoft Outlook.
+
+Underground Forums
+
+The malware, which was 1st advertised for rent on underground forums in Jan., has actively targeted institutions globally, including Australia, France, Germany, Italy, Poland, Spain, Turkey, the UK & the US.
+
+Researchers think Alien is a “fork” of the infamous Cerberus banking malware, which has had a steady reduction in use over the last year.
+
+Variant
+
+“Based on our in-depth knowledge of the trojan, we can prove that the Alien malware is a fork of the initial variant of Cerberus (v1), active since early Jan. 2020 & rented out at the same time as Cerberus,” observed researchers with Threat Fabric, in a Thursday analysis.
+
+“Cerberus being discontinued, its customers seem to be switching to Alien, which has become the prominent new MaaS [malware as a service] for fraudsters.”
+
+Alien Malware
+
+The Alien RAT has various commonly used Android malware capabilities, including the ability to launch overlay attacks, control and steal SMS messages & harvest contact lists – as well as keylogging, location-collecting & other capabilities.
+
+However, it also deploys several more advanced techniques, including a notification sniffer that allows it to access all new updates on infected devices. This includes 2FA codes, which allow the malware to bypass 2FA security measures.
+
+Android.Permission
+
+Alien uses this tactic by abusing the:- “android.permission.BIND_NOTIFICATION_LISTENER_SERVICE” to get the content of status bar notifications on the infected device. While the user would need to grant this permission manually in the settings, the malware overcomes this block by using the Accessibility privileges on Android devices, performing all necessary user interactions all by itself.
+
+It does this using an advanced remote access feature that compromises the TeamViewer application, giving the bad player behind the malware remote control over the victim’s devices. TeamViewer is a proprietary software application used for remote control, desktop & online meetings.
+
+Remote Control
+
+“When TeamViewer is successfully activated, it provides the actors with full remote control of the device’s user interface, enabling them to access & change device settings, install & remove apps, but also to use any app installed on the device (bank applications, messengers & social networks),” outlined researchers.
+
+“By monitoring the device in real-time, actors can also gain valuable insight into the user’s behaviour.”
+
+It is not clear how Alien is first spread, but because the malware is being rented out, many different initial attack tactics can be used, including spear-phishing, & distribution through 3rd-party applications tec.
+
+The Link to Cerberus
+
+Cerberus first appeared last Aug. on underground forums, offered in a MaaS rental from. Then it was shown as a standard banking trojan. In July, the malware was uncovered in a malicious Android app on the Google Play app market, which had 10,000 downloads.
+
+Over the past 12 months many technical issues occurred that led to ‘unhappy customers’. The Cerberus makers thus decided to end the rental service, & refund active license holders. On Aug. 10, the malware author shared the source code of the trojan to the general public.
+
+Simultaneous Campaigns
+
+Meanwhile, researchers said that in Feb. they started seeing simultaneous campaigns using both trojans, however, it seems that the new Alien malware was operated separately & was slightly different from Cerberus.
+
+The big difference between the 2 types is Alien’s 2FA-stealing technique, a feature that Cerberus lacked, they commented. A further feature of Alien is its RAT capability, which has been implemented separately from the main command handler, using different command-&-control (C2) endpoints.
+
+“Looking at what we know now about what happened with Cerberus & Alien, we could speculate that Cerberus was on the decline as the developers behind the trojan shifted away from the project with the original source in order to start their own,” researchers suggested.
+
+Next Steps
+
+Researchers concluded that this link between Cerberus & Alien is a trend in the threat landscape to continue to be aware of. They predicted that more new malware families, based on Cerberus, will emerge in the final quarter of 2020.
+
+Regarding Alien specifically, & looking ahead, researchers explained that they expect the malware’s authors to continually improve its remote-access function.
+
+“They could also build an ATS [automatic transfer system] feature to automate the fraud process,” commented researchers. “What can be considered for granted is that the number of new banking trojans will only continue growing, many embedding new & improved features to increase the success rate of fraud.”
+
+Financial Institutions
+
+Researchers, therefore, urge all financial institutions to understand their current & future threat exposure, & consequently implement the relevant detection & control techniques.
+
+“The most important aspect to take care of is securing the online banking channels, making fraud hard to perform, discouraging criminals to attempt the attacks & making it less useful for them to build more malware,” they concluded.

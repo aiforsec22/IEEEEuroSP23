@@ -1,0 +1,437 @@
+T4	OS 8394 8401	Android
+T12	Malware 0 4	Ginp
+T13	Malware 436 440	Ginp
+T14	Malware 1222 1226	Ginp
+T16	Malware 3707 3711	Ginp
+T17	Malware 5490 5494	Ginp
+T18	Malware 5737 5741	Ginp
+T19	Malware 5969 5973	Ginp
+T20	Malware 6531 6535	Ginp
+T21	Malware 6851 6855	Ginp
+T22	Malware 7179 7183	Ginp
+T23	Malware 7469 7473	Ginp
+T24	Malware 8235 8239	Ginp
+T25	Malware 8828 8832	Ginp
+T26	Malware 9969 9973	Ginp
+T27	Malware 10747 10751	Ginp
+T28	Malware 42 48	Anubis
+T29	Malware 583 589	Anubis
+T30	Malware 2395 2401	Anubis
+T31	Malware 5778 5784	Anubis
+T32	Malware 5852 5858	Anubis
+T33	Malware 6661 6667	Anubis
+T34	Malware 7949 7955	Anubis
+T35	Malware 7966 7972	Anubis
+T36	Malware 8059 8065	Anubis
+T37	Malware 8501 8507	Anubis
+T38	Indicator 10081 10145	0ee075219a2dfde018f17561467272633821d19420c08cba14322cc3b93bb5d5
+T39	Indicator 10189 10253	087a3beea46f3d45649b7506073ef51c784036629ca78601a4593759b253d1b7
+T40	Indicator 10296 10360	5ac6901b232c629bc246227b783867a0122f62f9e087ceb86d83d991e92dba2f
+T41	Indicator 10403 10467	7eb239cc86e80e6e1866e2b3a132b5af94a13d0d24f92068a6d2e66cfe5c2cea
+T42	Indicator 10509 10573	14a1b1dce69b742f7e258805594f07e0c5148b6963c12a8429d6e15ace3a503c
+T43	Indicator 10616 10680	78557094dbabecdc17fb0edb4e3a94bae184e97b1b92801e4f8eb0f0626d6212
+T44	Application 57 69	ThreatFabric
+T45	Application 8123 8135	ThreatFabric
+T46	Organization 208 217	Kaspersky
+T47	Application 10255 10273	Adobe Flash Player
+T48	Application 10362 10380	Adobe Flash Player
+T49	Application 10469 10487	Adobe Flash Player
+T50	Application 10575 10593	Adobe Flash Player
+T51	Application 7793 7801	Facebook
+T52	Application 7803 7811	WhatsApp
+T53	Application 7829 7835	Chrome
+T54	Application 7813 7818	Skype
+T55	Application 1815 1824	Instagram
+T56	Application 7837 7846	Instagram
+T57	Application 7820 7827	Twitter
+T59	Application 7848 7856	Snapchat
+T60	Application 7858 7863	Viber
+T61	Application 11253 11268	Bankinter Móvil
+T62	Application 11293 11309	Bankinter Wallet
+T63	Application 11408 11414	Bankia
+T64	Application 11434 11447	Bankia Wallet
+T65	Application 11470 11483	Bankia Tablet
+T67	Application 11535 11558	BBVA Net Cash | ES & PT
+T68	Application 11583 11598	EVO Banco móvil
+T69	Application 2823 2832	Kutxabank
+T70	Application 11650 11659	Kutxabank
+T71	Application 11731 11740	Santander
+T72	Application 11772 11788	Santander Tablet
+T73	Application 11838 11847	Santander
+T74	Application 11863 11883	Santander Cash Nexus
+T76	Application 10909 10919	Play Store
+T77	Application 10941 10954	CaixaBank Pay
+T78	Application 11010 11019	CaixaBank
+T79	Application 11048 11088	CaixaBank Sign - Digital Coordinate Card
+T81	Application 11125 11141	CaixaBank Tablet
+T82	Application 11162 11172	imaginBank
+T83	Person 185 202	Tatyana Shishkova
+T84	Application 11506 11516	BBVA Spain
+T85	Indicator 11394 11407	es.cm.android
+T86	Indicator 11230 11252	com.bankinter.launcher
+T87	Indicator 11143 11161	com.imaginbank.app
+T88	Indicator 11351 11378	com.bankinter.bankintercard
+T89	Indicator 10973 11009	es.lacaixa.mobile.android.newwapicon
+T90	Indicator 11416 11433	com.bankia.wallet
+T91	Indicator 10171 10188	park.rather.dance
+T92	Indicator 11021 11047	es.caixabank.caixabanksign
+T93	Indicator 10594 10615	sentence.fancy.humble
+T94	Indicator 11270 11292	com.bankinter.bkwallet
+T95	Indicator 10064 10080	sing.guide.false
+T96	Indicator 11790 11826	es.bancosantander.android.confirming
+T97	Indicator 11449 11469	es.cm.android.tablet
+T98	Indicator 11311 11336	com.bankinter.coincwallet
+T99	Indicator 11628 11649	com.kutxabank.android
+T100	Indicator 11742 11771	es.banconsantander.app.tablet
+T101	Indicator 10921 10940	es.lacaixa.hceicon2
+T102	Indicator 11849 11862	com.tm.sanstp
+T103	Indicator 10381 10402	solution.rail.forward
+T104	Indicator 11193 11221	es.lacaixa.app.multiestrella
+T105	Indicator 11560 11582	es.evobanco.bancamovil
+T106	Indicator 11485 11505	com.bbva.bbvacontigo
+T107	Indicator 11600 11616	com.redsys.bizum
+T108	Indicator 10488 10508	com.pubhny.hekzhgjty
+T109	Indicator 11708 11730	es.bancosantander.apps
+T110	Indicator 10274 10295	ethics.unknown.during
+T111	Indicator 11090 11124	es.caixabank.mobile.android.tablet
+T112	Indicator 11661 11693	es.redsys.walletmb.app.kutxa.pro
+T113	Indicator 11518 11534	com.bbva.netcash
+T114	Indicator 10889 10908	com.android.vending
+R1	indicates Arg1:T38 Arg2:T26
+R2	indicates Arg1:T39 Arg2:T26
+R3	indicates Arg1:T40 Arg2:T26
+R4	indicates Arg1:T41 Arg2:T26
+R5	indicates Arg1:T42 Arg2:T26
+R6	indicates Arg1:T43 Arg2:T26
+R7	indicates Arg1:T85 Arg2:T27
+R8	indicates Arg1:T86 Arg2:T27
+R9	indicates Arg1:T87 Arg2:T27
+R10	indicates Arg1:T88 Arg2:T27
+R11	indicates Arg1:T89 Arg2:T27
+R12	indicates Arg1:T90 Arg2:T27
+R13	indicates Arg1:T91 Arg2:T26
+R14	indicates Arg1:T92 Arg2:T27
+R15	indicates Arg1:T93 Arg2:T26
+R16	indicates Arg1:T94 Arg2:T27
+R17	indicates Arg1:T95 Arg2:T26
+R18	indicates Arg1:T96 Arg2:T27
+R19	indicates Arg1:T97 Arg2:T27
+R20	indicates Arg1:T98 Arg2:T27
+R21	indicates Arg1:T99 Arg2:T27
+R22	indicates Arg1:T100 Arg2:T27
+R23	indicates Arg1:T101 Arg2:T27
+R24	indicates Arg1:T102 Arg2:T27
+R25	indicates Arg1:T103 Arg2:T26
+R26	indicates Arg1:T104 Arg2:T27
+R27	indicates Arg1:T105 Arg2:T27
+R28	indicates Arg1:T106 Arg2:T27
+R29	indicates Arg1:T107 Arg2:T27
+R30	indicates Arg1:T108 Arg2:T26
+R31	indicates Arg1:T109 Arg2:T27
+R32	indicates Arg1:T110 Arg2:T26
+R33	indicates Arg1:T111 Arg2:T27
+R34	indicates Arg1:T112 Arg2:T27
+R35	indicates Arg1:T113 Arg2:T27
+R36	indicates Arg1:T114 Arg2:T27
+T66	MalwareType 135 150	banking malware
+R37	isA Arg1:T12 Arg2:T66	
+R38	isA Arg1:T28 Arg2:T66	
+T80	Time 225 237	October 2019
+T115	Time 266 275	June 2019
+T116	Time 399 419	June - November 2019
+T117	MalwareType 590 604	banking Trojan
+R39	isA Arg1:T29 Arg2:T117	
+T120	AttackPattern 828 853	overlay screens (injects)
+R42	uses Arg1:T13 Arg2:T120	
+T121	Time 1148 1157	June 2019
+R40	discoveredIn Arg1:T12 Arg2:T115	
+T5	Application 1178 1201	Google Play Verificator
+T122	AttackPattern 1278 1344	send a copy of incoming and outgoing SMS messages to the C2 server
+T123	AttackPattern 1240 1251	SMS stealer
+T124	Time 1378 1389	August 2019
+T125	Application 1516 1534	Adobe Flash Player
+T126	AttackPattern 1566 1589	perform overlay attacks
+T6	Application 1767 1779	Google Play,
+T128	Application 1780 1788	Facebook
+T129	Application 1790 1798	WhatsApp
+T130	Application 1800 1806	Chrome
+T131	Application 1808 1813	Skype
+T132	Application 1829 1836	Twitter
+R50	targets Arg1:T14 Arg2:T6	
+R51	targets Arg1:T14 Arg2:T128	
+R52	targets Arg1:T14 Arg2:T129	
+R53	targets Arg1:T14 Arg2:T130	
+R54	targets Arg1:T14 Arg2:T131	
+R55	targets Arg1:T14 Arg2:T55	
+R56	targets Arg1:T14 Arg2:T132	
+T133	AttackPattern 1874 1907	basic code and string obfuscation
+T134	AttackPattern 1978 2004	use of payload obfuscation
+T136	AttackPattern 2047 2198	a new endpoint was added to the Trojan C2 allowing it to handle the generic card grabber overlay and specific target overlays (banking apps) separately
+T137	Application 2174 2186	banking apps
+R57	uses Arg1:T14 Arg2:T133	
+T58	Time 2438 2442	2019
+R61	discoveredIn Arg1:T30 Arg2:T58	
+T138	Application 2527 2538	social apps
+T139	Application 2631 2644	Spanish banks
+T1	MalwareType 2703 2717	banking Trojan
+T140	Application 2775 2785	Caixa bank
+T141	Application 2787 2796	Bankinter
+T142	Application 2798 2804	Bankia
+T143	Application 2806 2810	BBVA
+T144	Application 2812 2821	EVO Banco
+T145	Application 2837 2846	Santander
+T146	Application 2760 2773	Spanish banks
+T147	Time 3002 3015	November 2019
+T148	AttackPattern 3191 3232	grant the app the device admin permission
+T15	Malware 2945 2949	Ginp
+T150	AttackPattern 3448 3520	begin by removing its icon from the app drawer, hiding from the end user
+T151	AttackPattern 3544 3634	asks the victim for the Accessibility Service privilege as visible in following screenshot
+T152	AttackPattern 3722 3791	granting itself additional permissions, such as (dynamic) permissions
+T153	AttackPattern 3816 3837	able to send messages
+T154	AttackPattern 3842 3852	make calls
+R75	uses Arg1:T16 Arg2:T152	
+R76	uses Arg1:T16 Arg2:T153	
+R77	uses Arg1:T16 Arg2:T154	
+T155	AttackPattern 3975 3998	perform overlay attacks
+R78	uses Arg1:T16 Arg2:T155	
+T156	AttackPattern 4191 4236	Send an SMS from the bot to a specific number
+T157	AttackPattern 4246 4263	Update the C2 URL
+T158	AttackPattern 4270 4285	Disable the bot
+T160	AttackPattern 4298 4339	Update interval between each ping request
+T161	AttackPattern 4358 4386	Empty list of overlayed apps
+T162	AttackPattern 4402 4420	Update target list
+T165	AttackPattern 4435 4458	Get current target list
+T167	AttackPattern 4472 4503	Request Device Admin privileges
+T168	AttackPattern 4513 4533	Get all SMS messages
+T170	AttackPattern 4557 4618	Stop preventing user from disabling the accessibility service
+T172	AttackPattern 4641 4694	Prevent user from disabling the accessibility service
+T174	AttackPattern 4714 4744	Set malware as default SMS app
+T176	AttackPattern 4765 4798	Remove malware as default SMS app
+T178	AttackPattern 4823 4845	Enable overlay attacks
+T179	AttackPattern 4871 4894	Disable overlay attacks
+T7	AttackPattern 4914 4944	Enable the Google Play overlay
+T182	AttackPattern 4965 4996	Disable the Google Play overlay
+T184	AttackPattern 5010 5026	Enable debugging
+T183	AttackPattern 5039 5063	Get logs from the device
+T185	AttackPattern 5076 5093	Disable debugging
+T186	AttackPattern 5104 5130	Get installed applications
+T188	AttackPattern 5145 5157	Get contacts
+T190	AttackPattern 5173 5201	Send SMS to multiple numbers
+T193	AttackPattern 5246 5268	Add new overlay target
+T195	AttackPattern 5283 5313	Enable/disable call forwarding
+T197	AttackPattern 5333 5451	Starts request for additional permissions(Accessibility privileges, battery optimizations bypass, dynamic permissions)
+T2	MalwareType 5543 5557	banking Trojan
+R79	isA Arg1:T17 Arg2:T2	
+T198	AttackPattern 5572 5594	use of overlay attacks
+T199	AttackPattern 5596 5635	SMS control and contact list harvesting
+R80	uses Arg1:T17 Arg2:T198	
+R81	uses Arg1:T17 Arg2:T199	
+T200	AttackPattern 5887 5905	back-connect proxy
+T201	AttackPattern 5907 5923	screen-streaming
+T202	MalwareType 5928 5931	RAT
+T203	AttackPattern 6087 6097	Overlaying
+T204	AttackPattern 6146 6160	SMS harvesting
+T205	AttackPattern 6162 6173	SMS listing
+T206	AttackPattern 6191 6205	SMS forwarding
+T207	AttackPattern 6265 6284	Targets list update
+T208	AttackPattern 6307 6322	Call forwarding
+T209	AttackPattern 6375 6394	Hiding the App icon
+T210	AttackPattern 6450 6469	Emulation-detection
+T211	AttackPattern 6536 6569	added screen capture capabilities
+R99	uses Arg1:T20 Arg2:T211	
+T212	AttackPattern 6710 6752	stream screenshots and send them to the C2
+R100	uses Arg1:T20 Arg2:T212	
+T214	AttackPattern 7281 7320	stealing the victim’s login credentials
+T215	AttackPattern 7327 7393	stealing the credit card details (to “validate” the user identity)
+R102	uses Arg1:T22 Arg2:T214	
+R103	uses Arg1:T22 Arg2:T215	
+R106	targets Arg1:T23 Arg2:T51	
+R107	targets Arg1:T23 Arg2:T52	
+R108	targets Arg1:T23 Arg2:T54	
+R109	targets Arg1:T23 Arg2:T57	
+R110	targets Arg1:T23 Arg2:T53	
+R111	targets Arg1:T23 Arg2:T56	
+R112	targets Arg1:T23 Arg2:T59	
+R113	targets Arg1:T23 Arg2:T60	
+T3	MalwareType 8193 8207	banking Trojan
+T75	MalwareType 8034 8049	banking Trojans
+R114	isA Arg1:T35 Arg2:T75	
+T217	Malware 8100 8104	Ginp
+R115	isA Arg1:T217 Arg2:T3	
+T218	Malware 8275 8281	Anubis
+R116	targets Arg1:T24 Arg2:T4	
+T220	AttackPattern 9120 9130	keylogging
+T221	AttackPattern 9132 9150	back-connect proxy
+T222	AttackPattern 9154 9170	RAT capabilities
+R117	uses Arg1:T25 Arg2:T220	
+R118	uses Arg1:T25 Arg2:T221	
+R119	uses Arg1:T25 Arg2:T222	
+T223	Malware 9175 9179	Ginp
+T224	Organization 9238 9251	Spanish banks
+R120	targets Arg1:T223 Arg2:T224	
+T225	Application 9380 9392	banking apps
+R121	targets Arg1:T223 Arg2:T225	
+T226	Application 9458 9478	banking applications
+T227	Location 9450 9457	Spanish
+R122	targets Arg1:T223 Arg2:T227	
+R123	targets Arg1:T223 Arg2:T226	
+T228	Application 9575 9588	Spanish apps,
+R124	targets Arg1:T223 Arg2:T228	
+T230	Indicator 10026 10033	SHA-256
+T10	Application 10040 10063	Google Play Verificator
+R126	targets Arg1:T26 Arg2:T10	
+R127	indicates Arg1:T230 Arg2:T26	
+R128	targets Arg1:T26 Arg2:T47	
+T11	Application 10147 10170	Google Play Verificator
+R129	targets Arg1:T26 Arg2:T11	
+R130	targets Arg1:T26 Arg2:T48	
+R131	targets Arg1:T26 Arg2:T49	
+R132	targets Arg1:T26 Arg2:T50	
+R133	targets Arg1:T27 Arg2:T76	
+R134	targets Arg1:T27 Arg2:T77	
+R135	targets Arg1:T27 Arg2:T78	
+R136	targets Arg1:T27 Arg2:T82	
+R137	targets Arg1:T27 Arg2:T81	
+R138	targets Arg1:T27 Arg2:T79	
+T231	Application 11222 11228	Family
+T232	Application 11337 11349	COINC Wallet
+T233	Application 11694 11706	KutxabankPay
+T234	Application 11617 11626	EVO Bizum
+R139	targets Arg1:T27 Arg2:T231	
+R140	targets Arg1:T27 Arg2:T61	
+R141	targets Arg1:T27 Arg2:T84	
+R142	targets Arg1:T27 Arg2:T62	
+R143	targets Arg1:T27 Arg2:T232	
+T235	Application 11379 11392	bankintercard
+R144	targets Arg1:T27 Arg2:T235	
+R145	targets Arg1:T27 Arg2:T63	
+R146	targets Arg1:T27 Arg2:T64	
+R147	targets Arg1:T27 Arg2:T65	
+R148	targets Arg1:T27 Arg2:T67	
+R149	targets Arg1:T27 Arg2:T234	
+R150	targets Arg1:T27 Arg2:T70	
+R151	targets Arg1:T27 Arg2:T68	
+R152	targets Arg1:T27 Arg2:T233	
+R153	targets Arg1:T27 Arg2:T71	
+R154	targets Arg1:T27 Arg2:T72	
+R155	targets Arg1:T27 Arg2:T73	
+R156	targets Arg1:T27 Arg2:T74	
+T219	Application 785 798	Spanish banks
+R157	targets Arg1:T13 Arg2:T219	
+T236	Application 2267 2275	Snapchat
+T237	Application 2280 2285	Viber
+T149	Version 1927 1940	third version
+R41	discoveredIn Arg1:T13 Arg2:T121	
+R72	targets Arg1:T13 Arg2:T5	
+T118	Version 1393 1404	new version
+R160	discoveredIn Arg1:T118 Arg2:T124	
+R58	uses Arg1:T149 Arg2:T134	
+R59	uses Arg1:T149 Arg2:T136	
+R60	targets Arg1:T149 Arg2:T137	
+R158	targets Arg1:T149 Arg2:T236	
+R159	targets Arg1:T149 Arg2:T237	
+T135	Version 2297 2310	third version
+R164	targets Arg1:T135 Arg2:T138	
+T191	Application 2556 2563	banking
+R165	targets Arg1:T135 Arg2:T191	
+R62	targets Arg1:T135 Arg2:T139	
+R63	isA Arg1:T135 Arg2:T1	
+R64	targets Arg1:T135 Arg2:T146	
+R65	targets Arg1:T135 Arg2:T140	
+R66	targets Arg1:T135 Arg2:T141	
+R67	targets Arg1:T135 Arg2:T142	
+R68	targets Arg1:T135 Arg2:T143	
+R69	targets Arg1:T135 Arg2:T144	
+R70	targets Arg1:T135 Arg2:T69	
+R161	targets Arg1:T135 Arg2:T145	
+T238	Version 2922 2941	most recent version
+R167	discoveredIn Arg1:T238 Arg2:T147	
+R71	uses Arg1:T238 Arg2:T148	
+R73	uses Arg1:T238 Arg2:T150	
+R74	uses Arg1:T238 Arg2:T151	
+T239	Version 4033 4052	most recent version
+R82	uses Arg1:T239 Arg2:T156	
+R83	uses Arg1:T239 Arg2:T160	
+R84	uses Arg1:T239 Arg2:T161	
+R86	uses Arg1:T239 Arg2:T174	
+R87	uses Arg1:T239 Arg2:T157	
+R85	uses Arg1:T239 Arg2:T158	
+R89	uses Arg1:T239 Arg2:T162	
+R90	uses Arg1:T239 Arg2:T165	
+R88	uses Arg1:T239 Arg2:T167	
+R91	uses Arg1:T239 Arg2:T168	
+R92	uses Arg1:T239 Arg2:T170	
+R93	uses Arg1:T239 Arg2:T172	
+R94	uses Arg1:T239 Arg2:T176	
+R95	uses Arg1:T239 Arg2:T178	
+R96	uses Arg1:T239 Arg2:T179	
+R47	targets Arg1:T118 Arg2:T125	
+R97	uses Arg1:T239 Arg2:T7	
+R98	uses Arg1:T239 Arg2:T182	
+R169	uses Arg1:T239 Arg2:T184	
+R170	uses Arg1:T239 Arg2:T183	
+R171	uses Arg1:T239 Arg2:T185	
+R172	uses Arg1:T239 Arg2:T186	
+R173	uses Arg1:T239 Arg2:T188	
+R174	uses Arg1:T239 Arg2:T190	
+R175	uses Arg1:T239 Arg2:T193	
+R176	uses Arg1:T239 Arg2:T195	
+R177	uses Arg1:T239 Arg2:T197	
+R178	uses Arg1:T32 Arg2:T200	
+R179	uses Arg1:T32 Arg2:T201	
+R181	uses Arg1:T19 Arg2:T203	
+R182	uses Arg1:T19 Arg2:T204	
+R183	uses Arg1:T19 Arg2:T205	
+R184	uses Arg1:T19 Arg2:T206	
+R185	uses Arg1:T19 Arg2:T207	
+R186	uses Arg1:T19 Arg2:T208	
+R187	uses Arg1:T19 Arg2:T209	
+R188	uses Arg1:T19 Arg2:T210	
+T8	AttackPattern 6413 6431	Preventing removal
+R189	uses Arg1:T19 Arg2:T8	
+T159	AttackPattern 6856 6936	uses the Accessibility Service to check which application runs is the foreground
+R190	uses Arg1:T21 Arg2:T159	
+R191	variantOf Arg1:T135 Arg2:T30	
+T163	AttackPattern 6232 6251	Application listing
+R192	uses Arg1:T19 Arg2:T163	
+R193	variantOf Arg1:T12 Arg2:T28	
+R194	variantOf Arg1:T13 Arg2:T29	
+R43	uses Arg1:T14 Arg2:T123	
+R45	uses Arg1:T14 Arg2:T122	
+R46	has Arg1:T14 Arg2:T118	
+T119	AttackPattern 1594 1667	become the default SMS app through the abuse of the Accessibility Service
+R44	uses Arg1:T118 Arg2:T126	
+R48	uses Arg1:T118 Arg2:T119	
+R49	has Arg1:T14 Arg2:T149	
+R162	has Arg1:T14 Arg2:T135	
+R163	has Arg1:T15 Arg2:T238	
+R166	has Arg1:T16 Arg2:T239	
+R168	variantOf Arg1:T18 Arg2:T31	
+R180	isA Arg1:T32 Arg2:T202	
+T127	AttackPattern 6207 6230	Contact list collection
+R195	uses Arg1:T19 Arg2:T127	
+T164	AttackPattern 6286 6298	SMS: Sending
+R196	uses Arg1:T19 Arg2:T164	
+T9	MalwareType 8866 8880	banking Trojan
+R101	isA Arg1:T25 Arg2:T9	
+T240	MalwareType 357 363	Trojan
+T241	MalwareType 2402 2408	Trojan
+T242	MalwareType 6579 6585	Trojan
+T243	MalwareType 6668 6674	Trojan
+T244	MalwareType 8508 8514	Trojan
+T245	MalwareType 9030 9036	Trojan
+T246	Application 1646 1667	Accessibility Service
+T247	Application 3568 3589	Accessibility Service
+T248	Application 3674 3695	Accessibility Service
+T249	Application 6865 6886	Accessibility Service
+T250	Application 7645 7662	Google Play Store
+T251	Application 7231 7243	banking apps
+T252	Application 4925 4936	Google Play
+T253	Application 4977 4988	Google Play
+T254	Application 1613 1620	SMS app
+T255	MalwareType 2079 2085	Trojan
+T256	MalwareType 9154 9157	RAT
+T257	OS 2695 2702	Android
+T258	OS 5535 5542	Android
+T259	OS 8185 8192	Android
+T260	Organization 862 867	banks

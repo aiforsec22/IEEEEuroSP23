@@ -1,0 +1,133 @@
+T3	OS 1038 1045	Android
+T4	OS 1381 1388	Android
+T5	Application 755 772	Google Play store
+T9	Organization 1861 1867	Google
+T13	Malware 706 717	DEFENSOR ID
+T14	Malware 1558 1569	DEFENSOR ID
+T15	Malware 2394 2405	DEFENSOR ID
+T16	Malware 2833 2844	DEFENSOR ID
+T17	Malware 3792 3803	DEFENSOR ID
+T18	Malware 4413 4424	DEFENSOR ID
+T19	Malware 5498 5509	DEFENSOR ID
+T20	Malware 5948 5959	DEFENSOR ID
+T21	Indicator 6262 6302	F17AEBC741957AA21CFE7C7D7BAEC0900E863F61
+T22	Indicator 6349 6389	EA069A5C96DC1DB0715923EB68192FD325F3D3CE
+T23	Organization 83 87	ESET
+T26	Application 1522 1532	VirusTotal
+T27	ThreatActor 1988 1998	GAS Brazil
+T28	Application 2199 2213	GAS Tecnologia
+T30	Application 2555 2569	GAS Tecnologia
+T33	Location 2276 2282	Brazil
+T34	Indicator 6325 6348	com.brazil.android.free
+T37	Indicator 6237 6261	com.secure.protect.world
+T38	Indicator 6303 6323	Android/Spy.BanBra.A
+T39	Indicator 6390 6410	Android/Spy.BanBra.A
+T40	Malware 327 338	DEFENSOR ID
+T41	MalwareType 345 359	banking trojan
+T6	Application 377 388	Google Play
+R2	isA Arg1:T40 Arg2:T41	
+R3	targets Arg1:T40 Arg2:T6	
+T42	AttackPattern 203 264	wiping out the victim’s bank account or cryptocurrency wallet
+R4	uses Arg1:T40 Arg2:T42	
+R5	targets Arg1:T13 Arg2:T5	
+T43	Malware 1302 1313	DEFENSOR ID
+T25	Application 1454 1474	App Defense Alliance
+T44	Time 1586 1597	Feb 3, 2020
+R6	discoveredIn Arg1:T14 Arg2:T44	
+T12	Application 6143 6154	Google Play
+T45	Time 1626 1637	May 6, 2020
+T46	OS 613 620	Android
+R7	targets Arg1:T40 Arg2:T46	
+T8	Application 1778 1789	Google Play
+R8	targets Arg1:T14 Arg2:T8	
+T47	Time 1871 1883	May 16, 2020
+T48	Time 1894 1906	May 19, 2020
+T10	Application 1947 1958	Google Play
+T49	Location 2047 2056	Brazilian
+R9	targets Arg1:T14 Arg2:T49	
+R10	targets Arg1:T14 Arg2:T33	
+T50	Location 2437 2447	Portuguese
+R11	targets Arg1:T15 Arg2:T50	
+T51	Location 2643 2653	Portuguese
+R12	targets Arg1:T15 Arg2:T51	
+T52	AttackPattern 2884 2912	allow modify system settings
+T53	AttackPattern 2914 2944	permit drawing over other apps
+T54	AttackPattern 2951 2982	activate accessibility services
+R13	uses Arg1:T16 Arg2:T52	
+R14	uses Arg1:T16 Arg2:T53	
+R15	uses Arg1:T16 Arg2:T54	
+T56	AttackPattern 3061 3150	can read any text displayed in any app the user may launch – and send it to the attackers
+T57	AttackPattern 3181 3335	steal the victim’s credentials for logging into apps, SMS and email messages, displayed cryptocurrency private keys, and even software-generated 2FA codes
+R17	uses Arg1:T16 Arg2:T57	
+T61	Malware 3470 3481	DEFENSOR ID
+T62	AttackPattern 3494 3530	can bypass two-factor authentication
+R20	uses Arg1:T61 Arg2:T62	
+R21	uses Arg1:T16 Arg2:T56	
+T64	AttackPattern 3888 3907	uninstalling an app
+T65	AttackPattern 3909 3925	launching an app
+T66	AttackPattern 3935 4002	performing any click/tap action controlled remotely by the attacker
+R16	uses Arg1:T17 Arg2:T64	
+R22	uses Arg1:T17 Arg2:T65	
+R23	uses Arg1:T17 Arg2:T66	
+T67	Time 4025 4029	2018
+T68	AttackPattern 4182 4216	get the list of all installed apps
+T35	AttackPattern 4460 4482	Modify system settings
+R24	uses Arg1:T18 Arg2:T35	
+T69	AttackPattern 4516 4560	change the screen off time-out to 10 minutes
+R25	uses Arg1:T18 Arg2:T69	
+R26	uses Arg1:T17 Arg2:T68	
+R38	targets Arg1:T40 Arg2:T3	
+T7	AttackPattern 269 317	taking over their email or social media accounts
+R40	uses Arg1:T40 Arg2:T7	
+R41	targets Arg1:T13 Arg2:T4	
+R42	targets Arg1:T14 Arg2:T10	
+T31	Malware 5993 6009	Defensor Digital
+R44	targets Arg1:T31 Arg2:T12	
+R32	targets Arg1:T31 Arg2:T12	
+R46	targets Arg1:T15 Arg2:T30	
+T32	AttackPattern 3364 3399	steal both the victim’s credentials
+R47	uses Arg1:T61 Arg2:T32	
+T36	Organization 6216 6220	ESET
+R30	indicates Arg1:T37 Arg2:T20	
+R33	indicates Arg1:T21 Arg2:T20	
+R34	indicates Arg1:T38 Arg2:T20	
+R35	indicates Arg1:T34 Arg2:T20	
+R36	indicates Arg1:T22 Arg2:T20	
+R37	indicates Arg1:T39 Arg2:T20	
+T1	OS 10 17	Android
+T2	OS 137 144	Android
+R1	targets Arg1:T40 Arg2:T2	
+T55	Version 1618 1622	v1.4
+R39	has Arg1:T14 Arg2:T55	
+R48	discoveredIn Arg1:T55 Arg2:T45	
+T60	AttackPattern 4226 4274	remotely launch the victim’s app of their choice
+T63	AttackPattern 4285 4302	steal credentials
+R49	uses Arg1:T17 Arg2:T60	
+R50	uses Arg1:T17 Arg2:T63	
+T11	AttackPattern 606 644	enable Android’s Accessibility Service
+R27	uses Arg1:T40 Arg2:T11	
+T29	AttackPattern 936 965	abusing Accessibility Service
+R28	uses Arg1:T13 Arg2:T29	
+R29	hasAuthor Arg1:T14 Arg2:T27	
+T24	AttackPattern 3413 3463	control their SMS messages and generated 2FA codes
+R31	uses Arg1:T61 Arg2:T24	
+T70	MalwareType 3054 3060	trojan
+T71	MalwareType 3353 3359	trojan
+T72	MalwareType 3634 3640	trojan
+T73	MalwareType 3740 3746	trojan
+T74	MalwareType 3804 3810	trojan
+T75	MalwareType 4425 4431	trojan
+T76	MalwareType 5867 5873	trojan
+T77	MalwareType 499 505	banker
+T78	Application 2960 2982	accessibility services
+T79	Application 3696 3718	accessibility services
+T80	Application 623 644	Accessibility Service
+T81	Application 944 965	Accessibility Service
+T82	Application 970 991	Accessibility Service
+T83	Application 5889 5909	Google Authenticator
+T84	Application 2220 2237	security software
+T85	Application 2329 2343	online banking
+T86	Application 296 308	social media
+T87	Application 5571 5582	banking app
+T88	Application 1389 1398	app store
+T89	Organization 2294 2299	banks

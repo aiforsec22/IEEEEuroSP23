@@ -1,0 +1,187 @@
+T1	OS 209 216	Android
+T2	Malware 10 17	Pegasus
+T3	Malware 166 173	Pegasus
+T4	Malware 585 592	Pegasus
+T5	Malware 728 735	Pegasus
+T6	Malware 1329 1336	Pegasus
+T7	Malware 1569 1576	Pegasus
+T8	Malware 1717 1724	Pegasus
+T9	Malware 2145 2152	Pegasus
+T10	Malware 2515 2522	Pegasus
+T11	Malware 3104 3111	Pegasus
+T12	Malware 3264 3271	Pegasus
+T13	Malware 3778 3785	Pegasus
+T14	Malware 3851 3858	Pegasus
+T15	Malware 4523 4530	Pegasus
+T16	Organization 451 462	Citizen Lab
+T17	Organization 3142 3153	Citizen Lab
+T18	Organization 4627 4638	Citizen Lab
+T19	Organization 5110 5121	Citizen Lab
+T20	ThreatActor 644 653	NSO Group
+T21	ThreatActor 857 866	NSO Group
+T22	ThreatActor 1095 1104	NSO Group
+T23	Organization 940 956	The Citizens Lab
+T24	Organization 1734 1758	Gulf Cooperation Council
+T25	Organization 1908 1929	Amnesty International
+T30	ThreatActor 4829 4832	NSO
+T31	ThreatActor 4877 4880	NSO
+T32	Location 1776 1787	Middle East
+T33	Location 1832 1835	UAE
+T34	Location 2291 2303	Saudi Arabia
+T36	Location 4489 4502	United States
+T37	Location 4408 4413	Yemen
+T26	Hardware 197 204	iPhones
+R1	targets Arg1:T3 Arg2:T26	
+R2	targets Arg1:T3 Arg2:T1	
+T27	Time 418 425	Tuesday
+T28	Time 529 533	2016
+T42	Time 538 542	2018
+T43	Location 623 629	Israel
+R3	hasAuthor Arg1:T4 Arg2:T20	
+T44	Time 797 801	2016
+T45	Time 819 823	2018
+T46	Person 900 912	Bill Marczak
+R4	hasAuthor Arg1:T5 Arg2:T21	
+T47	Organization 1002 1012	Threatpost
+T48	Time 1051 1062	August 2016
+R5	discoveredIn Arg1:T5 Arg2:T48	
+R6	hasAuthor Arg1:T5 Arg2:T22	
+T49	AttackPattern 1350 1423	spread through a specially crafted exploit link (via phishing techniques)
+R7	uses Arg1:T6 Arg2:T49	
+T50	AttackPattern 1484 1524	penetrate security features on the phone
+R8	uses Arg1:T6 Arg2:T50	
+T51	Organization 1530 1541	Citizen Lab
+R9	targets Arg1:T8 Arg2:T24	
+R10	targets Arg1:T8 Arg2:T32	
+R11	has Arg1:T24 Arg2:T32	
+R12	targets Arg1:T8 Arg2:T33	
+T52	Person 1845 1858	Ahmed Mansoor
+R13	targets Arg1:T8 Arg2:T52	
+T53	Time 1895 1899	2016
+R14	targets Arg1:T8 Arg2:T25	
+T54	Person 1942 1956	Saudi activist
+R15	targets Arg1:T8 Arg2:T54	
+T55	Time 1960 1969	June 2018
+T56	ThreatActor 2039 2042	NSO
+T57	Time 2090 2097	Tuesday
+T58	Location 2253 2260	Bahrain
+T59	Location 2262 2272	Kazakhstan
+T60	Location 2274 2280	Mexico
+T61	Location 2282 2289	Morocco
+T38	Location 2312 2332	United Arab Emirates
+R16	targets Arg1:T9 Arg2:T58	
+R17	targets Arg1:T9 Arg2:T59	
+R18	targets Arg1:T9 Arg2:T60	
+R19	targets Arg1:T9 Arg2:T34	
+R20	targets Arg1:T9 Arg2:T61	
+R21	targets Arg1:T9 Arg2:T38	
+T62	Time 2395 2399	2017
+T63	Location 2434 2441	Mexican
+R22	targets Arg1:T10 Arg2:T63	
+T64	Person 2595 2602	Marczak
+T65	Time 2875 2910	between August 2016 and August 2018
+T66	Malware 3075 3082	Pegasus
+T35	Location 3759 3771	45 countries
+R23	targets Arg1:T13 Arg2:T35	
+T39	Location 3983 3990	Algeria
+T67	Location 3992 3999	Bahrain
+T68	Location 4001 4011	Bangladesh
+T69	Location 4013 4019	Brazil
+T70	Location 4021 4027	Canada
+T71	Location 4029 4042	Cote d’Ivoire
+T72	Location 4044 4049	Egypt
+T73	Location 4051 4057	France
+T74	Location 4059 4065	Greece
+T75	Location 4074 4078	Iraq
+T76	Location 4067 4072	India
+T77	Location 4080 4086	Israel
+T78	Location 4088 4094	Jordan
+T79	Location 4096 4106	Kazakhstan
+T80	Location 4108 4113	Kenya
+T81	Location 4115 4121	Kuwait
+T82	Location 4123 4133	Kyrgyzstan
+T83	Location 4135 4141	Latvia
+T84	Location 4143 4150	Lebanon
+T85	Location 4152 4157	Libya
+T86	Location 4159 4165	Mexico
+T87	Location 4167 4174	Morocco
+T88	Location 4180 4191	Netherlands
+T89	Location 4193 4197	Oman
+T90	Location 4199 4207	Pakistan
+T91	Location 4209 4218	Palestine
+T92	Location 4220 4226	Poland
+T93	Location 4228 4233	Qatar
+T94	Location 4235 4241	Rwanda
+T95	Location 4243 4255	Saudi Arabia
+T96	Location 4257 4266	Singapore
+T97	Location 4268 4280	South Africa
+T98	Location 4282 4293	Switzerland
+T99	Location 4295 4305	Tajikistan
+T100	Location 4307 4315	Thailand
+T101	Location 4317 4321	Togo
+T102	Location 4323 4330	Tunisia
+T103	Location 4332 4338	Turkey
+T104	Location 4344 4347	UAE
+T105	Location 4349 4355	Uganda
+T106	Location 4361 4375	United Kingdom
+T107	Location 4381 4394	United States
+T108	Location 4396 4406	Uzbekistan
+T109	Location 4418 4424	Zambia
+T110	Location 4564 4577	United States
+T29	ThreatActor 4667 4676	NSO Group
+R24	targets Arg1:T14 Arg2:T39	
+R25	targets Arg1:T14 Arg2:T67	
+R26	targets Arg1:T14 Arg2:T68	
+R27	targets Arg1:T14 Arg2:T69	
+R28	targets Arg1:T14 Arg2:T70	
+R29	targets Arg1:T14 Arg2:T71	
+R30	targets Arg1:T14 Arg2:T72	
+R31	targets Arg1:T14 Arg2:T73	
+R32	targets Arg1:T14 Arg2:T74	
+R33	targets Arg1:T14 Arg2:T76	
+R34	targets Arg1:T14 Arg2:T75	
+R35	targets Arg1:T14 Arg2:T77	
+R36	targets Arg1:T14 Arg2:T78	
+R37	targets Arg1:T14 Arg2:T79	
+R38	targets Arg1:T14 Arg2:T80	
+R39	targets Arg1:T14 Arg2:T81	
+R40	targets Arg1:T14 Arg2:T82	
+R41	targets Arg1:T14 Arg2:T83	
+R42	targets Arg1:T14 Arg2:T84	
+R43	targets Arg1:T14 Arg2:T90	
+R44	targets Arg1:T14 Arg2:T85	
+R45	targets Arg1:T14 Arg2:T86	
+R46	targets Arg1:T14 Arg2:T87	
+R47	targets Arg1:T14 Arg2:T88	
+R48	targets Arg1:T14 Arg2:T89	
+R49	targets Arg1:T14 Arg2:T91	
+R50	targets Arg1:T14 Arg2:T92	
+R51	targets Arg1:T14 Arg2:T93	
+R52	targets Arg1:T14 Arg2:T94	
+R53	targets Arg1:T14 Arg2:T95	
+R54	targets Arg1:T14 Arg2:T96	
+R55	targets Arg1:T14 Arg2:T97	
+R56	targets Arg1:T14 Arg2:T98	
+R57	targets Arg1:T14 Arg2:T99	
+R58	targets Arg1:T14 Arg2:T100	
+R59	targets Arg1:T14 Arg2:T101	
+R60	targets Arg1:T14 Arg2:T102	
+R61	targets Arg1:T14 Arg2:T103	
+R62	targets Arg1:T14 Arg2:T104	
+R63	targets Arg1:T14 Arg2:T105	
+R64	targets Arg1:T14 Arg2:T106	
+R65	targets Arg1:T14 Arg2:T107	
+R66	targets Arg1:T14 Arg2:T108	
+R67	targets Arg1:T14 Arg2:T37	
+R68	targets Arg1:T14 Arg2:T109	
+R69	has Arg1:T20 Arg2:T43	
+T111	MalwareType 331 351	surveillance malware
+T112	MalwareType 18 25	Spyware
+T113	MalwareType 68 75	spyware
+T114	MalwareType 1128 1135	spyware
+T115	MalwareType 1884 1891	spyware
+T116	MalwareType 2210 2217	spyware
+T117	MalwareType 2342 2349	spyware
+T118	MalwareType 2835 2842	spyware
+T119	MalwareType 3970 3977	spyware
+T120	MalwareType 5296 5303	spyware

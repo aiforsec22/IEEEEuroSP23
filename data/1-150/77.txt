@@ -1,0 +1,36 @@
+FakeSpy Android Malware Spread Via ‘Postal-Service’ Apps
+New ‘smishing’ campaigns from the Roaming Mantis threat group infect Android users with the FakeSpy infostealer.
+
+Android mobile device users are being targeted in a new SMS phishing campaign that’s spreading the FakeSpy infostealer. The malware, which is disguised as legitimate global postal-service apps, steals SMS messages, financial data and more from the victims’ devices.
+
+The campaign was first discovered several weeks ago targeting South Korean and Japanese speakers, but it has now expanded that targeting to China, Taiwan, France, Switzerland, Germany, the United Kingdom and the United States. The attacker uses text messages as an initial infection vector, prompting the Android recipients to click on a malicious link, in a practice known as SMS phishing or “smishing.”
+
+One example of a message used in the latest FakeSpy campaign is an alert from the postal service local to the region of the victim, informing them that the service tried to send a package, but the receiver was not at home, for instance.
+
+Then, “the link directs them to a malicious web page, which prompts them to download an Android application package (APK),” according to a report on the campaign, by Ofir Almkias, mobile analyst with Cybereason.
+
+That APK downloads an app that appears to be from the local region’s legitimate postal service—such as the United States Postal Service (USPS)–but actually executes FakeSpy, an infostealer that requests permissions to take over SMS messages and steal sensitive data on devices. The malware, which has been a threat since 2017, also can access and use a target device’s contact list to infect other devices.
+
+Researchers believe that Chinese-speaking group known as “Roaming Mantis” is behind the campaign. Disguising malware as a legitimate mobile app is a hallmark of Roaming Mantis. The last major campaign from the threat group was seen two years ago with a banking trojan disguised as Google or Chrome that also targeted Android device users around the globe.
+
+Researchers analyzed code from a campaign in April 2020 that downloaded the Fakespy version impersonating Taiwan’s Chungwha Post app. Once the user clicked on the malicious link, the app asked them to approve installation. The app’s PackageInstaller showed its permission access and asks for the user’s approval, which then installed the application.
+
+During installation, researchers observed FakeSpy gaining access to numerous permissions, including the ability to: read, write, send and receive SMS messages; open network sockets and access the internet; write to external storage; read from internal storage; and access information about networks to which the device is connected, among others.
+
+After installation, the app begins its “real malicious activity” by downloading a set of dynamic libraries from the libmsy.so file, which executes the packed mycode.jar file to load various insidious information-stealing capabilities into FakeSpy’s process onto the device, Almkias said.
+
+Once FakeSpy is on the device, it steals all contacts in the device’s contact list and their information, as well as the infected device’s data. That includes the mobile number, the device model, the OS version, and banking and cryptocurrency app information. It also asks to be the device’s default SMS app so the malware can spread to other devices.
+
+Researchers found that the postal apps used to disguise FakeSpy are country-specific, including: USPS, Chungwha Post, the British Royal Mail, the German Deutsche Post, France’s La Poste, Japan Post and Swiss Post.
+
+Roaming Mantis used the Android developer tool WebView to build the fake applications, which is what gives them their authenticity, Almkias said. The app is a popular extension of Android’s View class that lets the developer show a webpage on a device.
+
+“FakeSpy uses this view to redirect users to the original post office carrier webpage on launch of the application, continuing the deception,” he wrote in his report. “This allows the application to appear legitimate, especially given these applications icons and user interface.”
+
+It’s actually the open nature of Android platform that invites threat actors to target them so persistently, since they have the ability to exploit its source code to create campaigns like this one, noted James McQuiggan, security awareness advocate at KnowBe4.
+
+“Android devices are a prime target due to the number of people who own them and the operating system is open-source code, which allows cyber criminals to discover exploits for their malware attacks,” he said in an email to Threatpost.
+
+To avoid being duped by the new FakeSpy campaign, McQuiggan recommended that users ignore text messages from unknown users and verify any messages about deliveries or other postal services through trusted links to local delivery carriers before clicking on a link sent via SMS.
+
+Researchers believe that the recent FakeSpy campaigns are just the beginning of a new wave of threats from Roaming Mantis, as its “authors seem to be putting a lot of effort into improving this malware, bundling it with numerous new upgrades that make it more sophisticated, evasive, and well-equipped,” according to Almkias.

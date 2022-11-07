@@ -1,0 +1,60 @@
+T1	OS 11 18	Android
+T2	OS 122 129	Android
+T3	OS 236 243	Android
+T4	OS 864 871	Android
+T5	OS 1048 1055	Android
+T6	OS 2260 2267	Android
+T7	Malware 0 10	ViceLeaker
+T8	Malware 159 169	ViceLeaker
+T9	Malware 456 466	ViceLeaker
+T11	Organization 539 548	Kaspersky
+T12	Organization 720 729	Kaspersky
+T13	Organization 940 949	Kaspersky
+T14	Organization 1571 1580	Kaspersky
+T15	Organization 196 209	Kaspersky Lab
+T16	Organization 629 640	Bitdefender
+T17	Application 2583 2593	Play Store
+T18	Location 75 82	Israeli
+R1	targets Arg1:T7 Arg2:T1	
+T10	AttackPattern 27 73	steals call recordings, photos, videos & texts
+R2	uses Arg1:T7 Arg2:T10	
+R3	targets Arg1:T7 Arg2:T18	
+R4	targets Arg1:T8 Arg2:T2	
+T20	Organization 184 193	Kaspersky
+T21	Time 274 278	2016
+T22	Malware 310 320	ViceLeaker
+T23	Location 416 430	Middle Eastern
+T24	Location 435 442	Israeli
+R5	targets Arg1:T22 Arg2:T23	
+R6	targets Arg1:T22 Arg2:T24	
+T25	Malware 527 533	Triout
+R7	variantOf Arg1:T9 Arg2:T25	
+T26	Time 595 603	May 2018
+R8	discoveredIn Arg1:T9 Arg2:T26	
+T27	Location 893 900	Israeli
+T19	AttackPattern 1227 1256	launching a malicious payload
+R9	uses Arg1:T9 Arg2:T19	
+R10	targets Arg1:T9 Arg2:T4	
+R11	targets Arg1:T9 Arg2:T27	
+R12	targets Arg1:T9 Arg2:T5	
+T28	AttackPattern 1501 1526	Smali injection technique
+R13	uses Arg1:T9 Arg2:T28	
+T29	AttackPattern 1711 1808	steal call recordings, photos, videos, text messages, and location data without alerting the user
+R14	uses Arg1:T9 Arg2:T29	
+T31	AttackPattern 1918 1946	upload/download/delete files
+T32	AttackPattern 1948 1966	control the camera
+T33	AttackPattern 1971 1989	record audio files
+T34	AttackPattern 1991 2005	initiate calls
+T35	AttackPattern 2010 2051	send out text messages to certain numbers
+R16	uses Arg1:T9 Arg2:T31	
+R17	uses Arg1:T9 Arg2:T32	
+R18	uses Arg1:T9 Arg2:T33	
+R19	uses Arg1:T9 Arg2:T34	
+R20	uses Arg1:T9 Arg2:T35	
+T36	Location 2187 2191	Iran
+T30	MalwareType 499 519	surveillance malware
+R15	isA Arg1:T25 Arg2:T30	
+R21	has Arg1:T9 Arg2:T36	
+T37	MalwareType 916 923	spyware
+T38	MalwareType 1350 1357	spyware
+T39	Application 2672 2691	anti-virus software

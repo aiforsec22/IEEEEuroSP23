@@ -1,0 +1,183 @@
+T2	OS 3839 3846	Android
+T3	OS 5455 5462	Android
+T4	Application 5255 5272	Google Play store
+T10	Malware 17 25	Cerberus
+T12	Malware 579 587	Cerberus
+T13	Malware 809 817	Cerberus
+T14	Malware 943 951	Cerberus
+T15	Malware 1217 1225	Cerberus
+T16	Malware 1766 1774	Cerberus
+T17	Malware 3880 3888	Cerberus
+T19	Malware 5158 5166	Cerberus
+T20	Malware 5178 5186	Cerberus
+T21	Malware 5620 5628	Cerberus
+T22	Malware 6045 6053	Cerberus
+T23	Malware 10526 10534	Cerberus
+T24	Malware 10879 10887	Cerberus
+T25	Malware 12728 12736	Cerberus
+T26	Indicator 12745 12809	40b8a8fd2f4743534ad184be95299a8e17d029a7ce5bc9eaeb28c5401152460d
+T27	Malware 0 6	Ursnif
+T28	Malware 237 243	Ursnif
+T29	Malware 380 386	Ursnif
+T30	Malware 1828 1834	Ursnif
+T31	Malware 1903 1909	Ursnif
+T32	Malware 2534 2540	Ursnif
+T33	Malware 4378 4384	Ursnif
+T34	Malware 7304 7310	Ursnif
+T35	Malware 7531 7537	Ursnif
+T36	Malware 7867 7873	Ursnif
+T37	Malware 9442 9448	Ursnif
+T38	Malware 10513 10519	Ursnif
+T39	Organization 91 103	IBM Trusteer
+T40	Malware 249 253	Gozi
+T42	Organization 3743 3753	VirusTotal
+T43	Application 4620 4626	jQuery
+T45	Application 6317 6326	Gozi SOCK
+T47	Organization 11026 11029	IBM
+T48	Application 11030 11047	Security Trusteer
+T51	Organization 11270 11278	Trusteer
+T52	Organization 11432 11440	Trusteer
+T53	Location 67 72	Italy
+T54	Location 338 343	Italy
+T60	Indicator 3586 3602	gooogle.services
+T61	Indicator 3623 3648	play.google.servlce.store
+T62	Indicator 13027 13111	hxxps://play.gooogle.services/store/apps/details.php?id=com.paypal.android.p2pmobile
+T63	Indicator 13262 13292	hxxps://play.goooogle.services
+T64	Indicator 13143 13167	hxxps://gooogle.services
+T66	Indicator 13327 13346	37.120.222.138:9955
+T67	Indicator 3604 3621	goooogle.services
+T68	Indicator 3564 3584	google.servlce.store
+T69	Indicator 3673 3696	play.goooogle.services.
+T70	Indicator 13113 13141	hxxps://google.servlce.store
+T71	Indicator 12945 13025	hxxps://play.google.servlce.store/store/apps/details.php?id=it.phoenixspa.inbank
+T72	Indicator 12894 12930	hxxp://sanpoloanalytics.org/lancher/
+T73	Indicator 12580 12616	hxxp://sanpoloanalytics[.]org/pp_am/
+T74	Indicator 6548 6563	Jambo.getScript
+T75	Indicator 3650 3671	play.gooogle.services
+T76	Indicator 13231 13260	hxxps://play.gooogle.services
+T77	Indicator 13169 13194	hxxps://goooogle.services
+T78	Indicator 12638 12676	hxxp://sanpoloanalytics[.]org/lancher/
+T79	Indicator 3348 3416	hxxps://play.google.servlce.store/store/apps/details.php?id=it.[BANK
+T80	Indicator 13356 13369	194.76.225.91
+T81	Indicator 13196 13229	hxxps://play.google.servlce.store
+T82	Indicator 12856 12892	hxxps://ecertificateboly.us/lancher/
+R1	indicates Arg1:T26 Arg2:T25
+R2	indicates Arg1:T60 Arg2:T16
+R3	indicates Arg1:T61 Arg2:T16
+R4	indicates Arg1:T62 Arg2:T25
+R5	indicates Arg1:T63 Arg2:T25
+R6	indicates Arg1:T64 Arg2:T25
+R8	indicates Arg1:T66 Arg2:T25
+R9	indicates Arg1:T67 Arg2:T16
+R10	indicates Arg1:T68 Arg2:T16
+R11	indicates Arg1:T69 Arg2:T16
+R12	indicates Arg1:T70 Arg2:T25
+R13	indicates Arg1:T71 Arg2:T25
+R14	indicates Arg1:T72 Arg2:T25
+R15	indicates Arg1:T73 Arg2:T24
+R16	indicates Arg1:T74 Arg2:T22
+R17	indicates Arg1:T75 Arg2:T16
+R18	indicates Arg1:T76 Arg2:T25
+R19	indicates Arg1:T77 Arg2:T25
+R20	indicates Arg1:T78 Arg2:T24
+R21	indicates Arg1:T79 Arg2:T16
+R22	indicates Arg1:T80 Arg2:T25
+R23	indicates Arg1:T81 Arg2:T25
+R24	indicates Arg1:T82 Arg2:T25
+R25	uses Arg1:T27 Arg2:T10	
+T41	AttackPattern 29 63	Automate Fraudulent Bank Transfers
+R26	uses Arg1:T27 Arg2:T41	
+R27	targets Arg1:T27 Arg2:T53	
+T46	Time 74 87	June 23, 2021
+T49	MalwareType 255 269	banking Trojan
+R28	isA Arg1:T28 Arg2:T49	
+*	hasAlias T28 T40
+R29	targets Arg1:T28 Arg2:T54	
+T50	AttackPattern 434 504	tricks victims into fetching a mobile app from a fake Google Play page
+R30	uses Arg1:T29 Arg2:T50	
+T1	Malware 631 637	Ursnif
+R31	uses Arg1:T1 Arg2:T12	
+T5	AttackPattern 653 706	receive two-factor authentication codes sent by banks
+R32	uses Arg1:T1 Arg2:T5	
+T11	AttackPattern 879 906	obtain the lock-screen code
+R33	uses Arg1:T13 Arg2:T11	
+T83	MalwareType 958 985	overlay-type mobile malware
+R34	isA Arg1:T14 Arg2:T83	
+T84	AttackPattern 1117 1135	hijack SMS content
+R35	uses Arg1:T14 Arg2:T84	
+T85	Time 1288 1302	summer of 2020
+T86	Malware 1336 1342	Anubis
+T87	Time 1382 1396	September 2020
+T88	Malware 1398 1406	Cerberus
+T89	MalwareType 1835 1849	banking Trojan
+R36	isA Arg1:T30 Arg2:T89	
+T90	MalwareType 1986 2000	banking Trojan
+R37	isA Arg1:T31 Arg2:T90	
+T6	AttackPattern 3040 3177	sent to a fake Google Play page featuring a corresponding banking app logo of the banking brand the victim originally attempted to access
+R40	uses Arg1:T32 Arg2:T6	
+T7	Application 3465 3476	Google Play
+T93	Time 3958 3967	late-2020
+T96	Malware 4593 4599	Ursnif
+T18	AttackPattern 4883 5047	If the victims submit their phone number on the web injection, the remote server will send back a download URL for them to unknowingly download the Cerberus malware
+R43	uses Arg1:T96 Arg2:T18	
+T98	AttackPattern 6100 6173	allows the attackers to bypass the bank’s SMS-code verification challenge
+R45	uses Arg1:T22 Arg2:T98	
+T99	Malware 6409 6415	Ursnif
+T100	Malware 6451 6457	Ursnif
+T101	AttackPattern 6849 6920	Send data to C2: token, SMS content, telephone, download an application
+T102	AttackPattern 6927 6955	Send communication to the C2
+T103	AttackPattern 6967 7017	Check account balance on the victim’s bank account
+T104	AttackPattern 7029 7077	Attempt to initiate a money transfer transaction
+T105	AttackPattern 7086 7141	Send victim’s login information to attacker’s C2 server
+T106	AttackPattern 7149 7198	Check if the infected machine is currently online
+R46	uses Arg1:T100 Arg2:T101	
+R47	uses Arg1:T100 Arg2:T102	
+R48	uses Arg1:T34 Arg2:T103	
+R49	uses Arg1:T34 Arg2:T104	
+R50	uses Arg1:T34 Arg2:T105	
+R51	uses Arg1:T34 Arg2:T106	
+T107	AttackPattern 7384 7460	manipulate what victims see on their screens and have them click on elements
+R52	uses Arg1:T34 Arg2:T107	
+T57	AttackPattern 7973 8080	replace a login button from the original bank’s webpage and plant its own button that the victim will click
+R54	uses Arg1:T36 Arg2:T57	
+T59	Location 8460 8465	Italy
+R56	targets Arg1:T36 Arg2:T59	
+T109	AttackPattern 9002 9121	sends data to the C2 server, including authorization token, SMS content, telephone number and account login information
+R58	uses Arg1:T37 Arg2:T109	
+T112	AttackPattern 9449 9493	presents a maintenance notice on the account
+R61	uses Arg1:T37 Arg2:T112	
+T114	MalwareType 9656 9670	Banking Trojan
+T115	MalwareType 10031 10045	banking Trojan
+R63	uses Arg1:T38 Arg2:T23	
+T116	MalwareType 10607 10621	banking Trojan
+R64	isA Arg1:T38 Arg2:T116	
+T117	MalwareType 10629 10643	Banking Trojan
+T9	Application 11732 11743	Google Play
+T118	Malware 546 554	Cerberus
+T119	AttackPattern 1140 1165	control devices remotely,
+T120	AttackPattern 1196 1215	data theft features
+R65	uses Arg1:T14 Arg2:T119	
+R66	uses Arg1:T14 Arg2:T120	
+T121	Location 2094 2099	Italy
+R67	targets Arg1:T31 Arg2:T121	
+R38	discoveredIn Arg1:T17 Arg2:T93	
+T56	AttackPattern 911 938	remotely control the device
+R7	uses Arg1:T13 Arg2:T56	
+T58	Time 1002 1010	mid-2019
+R39	discoveredIn Arg1:T14 Arg2:T58	
+R41	targets Arg1:T20 Arg2:T4	
+T122	MalwareType 7311 7317	Trojan
+T123	Application 314 328	online banking
+T124	Application 2585 2599	online banking
+T125	Application 9820 9834	online banking
+T126	Application 2736 2748	security app
+T127	Application 3098 3109	banking app
+T128	Application 488 499	Google Play
+T129	Application 3055 3066	Google Play
+T130	Application 8561 8571	e-commerce
+T131	Application 10266 10276	app stores
+T132	Application 5972 5978	jQuery
+T133	Malware 5031 5039	Cerberus
+T134	Malware 4502 4508	Ursnif
+T135	OS 555 562	Android
+T136	Organization 701 706	banks

@@ -1,0 +1,57 @@
+Well-funded surveillance operation infected both iOS and Android devices
+Malware that stole contacts, audio, location and more was under development for years.
+Researchers recently discovered a well-funded mobile phone surveillance operation that was capable of surreptitiously stealing a variety of data from phones running both the iOS and Android operating systems. Researchers believe the malware is so-called "lawful intercept" software sold to law-enforcement and governments.
+
+Exodus, as the malware for Android phones has been dubbed, was under development for at least five years. It was spread in apps disguised as service applications from Italian mobile operators. Exodus was hidden inside apps available on phishing websites and nearly 25 apps available in Google Play. In a report published two weeks ago, researchers at Security without Borders said Exodus infected phones estimated to be in the "several hundreds if not a thousand or more."
+
+Exodus consisted of three distinct stages. The first was a small dropper that collected basic identifying information about the device, such as the IMEI and phone number, and sent it to a command-and-control server. A second stage was installed almost immediately after the researchers’ test phone was infected with the first stage and also reported to a control server. That led researchers to believe all phones infected with stage one are indiscriminately infected with later stages.
+
+Stage two consisted of multiple binary packages that implemented the bulk of the advanced surveillance capabilities. Some of the variants encrypted communications with self-signed certificates that were pinned to the apps. The binaries could also take advantage of capabilities available on specific devices. For instance, one binary made use of “protectedapps,” a feature in Huawei phones, to keep Exodus running even when the screen went dark, rather than be suspended to reduce battery consumption.
+
+A third stage would attempt to let Exodus gain root control over an infected phone, typically though the use of an exploit dubbed DirtyCOW. Once fully installed, Exodus was able to carry out an extensive amount of surveillance, including:
+
+Retrieve a list of installed applications
+Record surroundings using the built-in microphone in 3gp format
+Retrieve the browsing history and bookmarks from Chrome and SBrowser (the browser shipped with Samsung phones)
+Extract events from the Calendar app
+Extract the calls log
+Record phone calls audio in 3gp format
+Take pictures with the embedded camera
+Collect information on surrounding cellular towers (BTS)
+Extract the address book
+Extract the contacts list from the Facebook app
+Extract logs from Facebook Messenger conversations
+Take a screenshot of any app in foreground
+Extract information on pictures from the Gallery
+Extract information from the Gmail app
+Dump data from the IMO messenger app
+Extract call logs, contacts and messages from the Skype app
+Retrieve all SMS messages
+Extract messages and the encryption key from the Telegram app
+Dump data from the Viber messenger app
+Extract logs from WhatsApp
+Retrieve media exchanged through WhatsApp
+Extract the Wi-Fi network's password
+Extract data from WeChat app
+Extract current GPS coordinates of the phone
+The missing iOS link discovered
+In a blog post expected to be published Monday, researchers from mobile security provider said their analysis of Exodus led to the discovery of servers that, in addition to Exodux, hosted an iOS version of the malware. The iPhone surveillance malware was distributed on phishing sites that masqueraded as Italian and Turkmenistani mobile carriers. Screenshots of the two sites are below:
+
+The iOS version was installed using the Apple Developer Enterprise program, which allows organizations to distribute in-house apps to employees or members without using the iOS App Store. The apps masqueraded as mobile carrier assistance apps that instructed users to “keep the app installed on your device and stay under Wi-Fi coverage to be contacted by one of our operators.”
+
+The Apple-issued digital certificate used to distribute the malicious iOS apps was associated with an Italy-based company called Connexxa S.R.L. Infected iPhones also connected to domains and IP addresses belonging to Connexxa. Connexxa is the same Italian company whose domains and IP addresses were used by Exodus. A Connexxa engineer who appears to own equity in the company also digitally signed some versions of Exodus.
+
+Connexxa’s appearance in the Apple-issued digital certificate, its role in the server infrastructure used by both Exodus and the iOS apps, and servers that hosted both Exodus and the iOS apps give researchers a high degree of confidence that both malware packages are the work of the same developers. Researchers said that a company called eSurv S.R.L. was also involved. eSurv was once a business unit of Connexxa and was leased to eSurv S.R.L. in 2014. In 2016, the eSurv software and brand was sold from Connexxa to eSurv S.R.L.
+
+It’s not clear how many iPhones were infected by the iOS apps. The iOS variant isn’t as sophisticated as Exodus was. Unlike Exodus, the iOS version wasn’t observed to use exploits. Instead, it relied on documented programming interfaces. It was nonetheless able to exfiltrate a variety of sensitive data including:
+
+Contacts
+Audio recordings
+Photos
+Videos
+GPS location
+Device information
+Tell-tale signs
+Because the iOS variant relied on Apple-provided APIs, the malware provided alert users with some tell-tale signs that would have alerted vigilant users that their sensitive data was being tracked. For instance, the first time the malware attempted to access location data, an infected phone would have displayed the following dialogue, asking for permission:
+
+Lookout researchers reported their findings to Apple, and the company revoked the enterprise certificate. The revocation has the effect of preventing the apps from being installed on new iPhones and stopping them from running on infected devices. Researchers who discovered Exodus reported their findings to Google, and the company removed the nearly 25 apps from Google Play.

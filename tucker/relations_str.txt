@@ -1,0 +1,10 @@
+discoveredIn
+exploits
+has
+hasAlias
+hasAuthor
+indicates
+isA
+targets
+uses
+variantOf

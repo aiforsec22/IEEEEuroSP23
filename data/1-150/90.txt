@@ -1,0 +1,49 @@
+This malware sold to governments could help them spy on iPhones, researchers say
+Many people assume their iPhones are secure, but new research sent Apple scrambling to fix vulnerabilities that left users at risk.
+
+Spyware relying on three previously unknown, or “zero-day,” flaws in Apple’s iOS mobile operating system for years made it possible for governments to take over victims' phones by tricking them into clicking on a link in a text message, according to new reports from Lookout, a cybersecurity firm that looks for security holes in mobile products, and Citizen Lab at the University of Toronto’s Munk School of Global Affairs.
+
+"This is the most sophisticated bad actor we have ever seen targeting mobile phones out in the wild," said Mike Murray, vice president of security research at Lookout.
+
+The malware, which the researchers said came from an Israeli company called NSO Group that was bought by the U.S. private equity firm Francisco Partners in 2014, was used to target journalists and activists in some cases, according to Citizen Lab, a group focused on the intersection of technology and information security.
+
+Apple released a fix for the problems on Thursday. "We advise all of our customers to always download the latest version of iOS to protect themselves against potential security exploits," the company said in a statement.
+
+But the spyware highlights how even companies with strong security reputations struggle to compete with a robust market for hacking tools that give almost any government access to powerful digital surveillance measures.  A spokesman for NSO Group,
+Zamir Dahbash,  said the mobile hacking software is only sold to governments. "The agreements signed with the company's customers require that the company's products only be used in a lawful manner. Specifically, the products may only be used for the prevention and investigation of crimes," the spokesman said in a statement.
+
+The spyware came to light after pro-democracy activist Ahmed Mansoor received two text messages promising "secrets" about prisoners tortured in United Arab Emirates jails. Mansoor was almost immediately suspicious, he said. He has been jailed for his activism and targeted with commercial malware in past incidents that researchers have linked to the UAE government.
+
+“I’m a regular target for the authorities here,” he told The Post. “Every time they get new spyware, they seem to try it out on me.”
+
+So instead of clicking the links in the text messages, he sent them to researchers at Citizen Lab. Working with Lookout, they confirmed his fears: Mansoor’s attackers would have been able to essentially take over his phone if he'd clicked.
+
+The UAE did not immediately respond to a Post request for comment.
+
+One brochure for the NSO Group advertises the malware used to target Mansoor, dubbed Pegasus, as a tool that allows “remote and stealth monitoring and full data extraction from remote targets [sic] devices via untraceable commands.”
+
+But Citizen Lab’s research suggests that NSO Group’s spying tools aren’t “untraceable.” The researchers were able to track a network of sites hosting the malware, some that used web addresses designed to trick users into thinking they are legitimate sites.
+
+In another case cited in the Citizen Lab report, a journalist in Mexico who had covered a corruption scandal involving the country’s president appears to have been targeted with text messages that included links designed to look as if they came from a prominent Mexican news outlet.
+
+Apple rushed to fix the problem after Citizen Lab and Lookout alerted the company. Mansoor was targeted Aug. 10 and 11, and the company was able to figure out a solution within 10 days of being notified, according to the researchers.
+
+But details from the malware suggest that it has been in use for years, according to the researchers. The risk to everyday users may have been limited because the NSO Group says it sells its spyware only to governments.
+
+The NSO Group spokesman told The Post that it has no knowledge of the incidents involving Mansoor or the Mexican journalist and does not operate any of the malware systems itself.
+
+However, past research has shown that repressive regimes sometimes use this type of spyware against dissidents and journalists. And as the recent leak of National Security Agency hacking tools shows, malware that relies on unpatched bugs can leave the public at risk if exposed.
+
+Governments and companies such as the NSO Group that develop hacking tools instead of disclosing the flaws to developers can also threaten the security of all users because there’s no guarantee others won’t discover the same problems, some say.
+
+“Government use of malware and the stockpiling of vulnerabilities imposes a cost on the rest of society,” said Chris Soghoian, a technologist with the American Civil Liberties Union. “It's not like terrorists are using different phones from the rest of us.”
+
+Apple devices have long had a reputation for security, according to Forrester Research principal analyst Jeff Pollard — one highlighted earlier this year when the company faced down the FBI in a legal battle over an encrypted iPhone used by one of the San Bernardino, Calif., shooters. The FBI was eventually able to break into the phone without Apple’s assistance after paying still-unknown professional hackers more than a million dollars for help.
+
+Still, Apple remains a leader when it comes to delivering secure consumer products — in part because the company keeps tight control over the iPhone platform, according to Citizen Lab researchers Bill Marczak and John Scott-Railton.
+
+But that’s also made new vulnerabilities valuable to people who want to break into Apple products. Last year, a firm that deals in zero-day vulnerabilities said it paid a million dollars for such an attack.
+
+Apple, too, has recently started paying for unknown bugs. The company recently announced a bug bounty program that will reward researchers with up to $200,000 for telling it about serious security flaws.
+
+It’s not a silver bullet, Citizen Lab’s Marczak said, but it shows that Apple is embracing a truism about our new digital world. “There are potential ways to get into everything,” he said.

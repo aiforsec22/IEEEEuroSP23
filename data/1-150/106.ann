@@ -1,0 +1,112 @@
+T1	OS 39 46	Android
+T2	OS 170 177	Android
+T3	OS 984 991	Android
+T4	OS 1016 1023	Android
+T5	OS 1298 1305	Android
+T6	OS 5775 5782	Android
+T7	OS 1149 1152	iOS
+T11	Malware 410 419	DroidJack
+T12	Malware 897 906	DroidJack
+T13	Malware 1388 1397	DroidJack
+T14	Malware 1694 1703	DroidJack
+T15	Malware 1967 1976	DroidJack
+T16	Malware 2547 2556	DroidJack
+T17	Malware 2865 2874	DroidJack
+T18	Malware 3391 3400	DroidJack
+T19	Malware 4151 4160	DroidJack
+T20	Malware 4731 4740	DroidJack
+T21	Malware 5139 5148	DroidJack
+T22	Malware 5633 5642	DroidJack
+T23	Organization 208 215	Europol
+T24	Organization 5015 5022	Europol
+T25	Organization 666 687	National Crime Agency
+T26	Organization 701 709	Newsweek
+T27	Organization 1171 1179	Newsweek
+T28	Organization 1833 1841	Newsweek
+T29	Application 5887 5897	Play Store
+T30	Application 6254 6271	Google Play Store
+T31	Location 5045 5049	U.K.
+T32	Location 289 296	Belgium
+T33	Location 324 328	U.S.
+T34	Organization 456 459	BBC
+T35	ThreatActor 1899 1907	Sanjeevi
+T36	ThreatActor 2074 2082	Sanjeevi
+T37	ThreatActor 3238 3246	Sanjeevi
+T38	Person 3501 3509	Sanjeevi
+T39	Person 5058 5066	Sanjeevi
+T40	Person 6197 6205	Sanjeevi
+T41	Person 2102 2110	Sullivan
+T42	Person 4833 4841	Sullivan
+T43	Person 5789 5797	Sullivan
+T46	Location 283 287	U.K.
+T47	Indicator 1762 1776	droidjack.net,
+T48	Location 659 663	U.K.
+T50	Malware 0 9	DroidJack
+R1	targets Arg1:T50 Arg2:T1	
+T51	Malware 194 203	DroidJack
+T52	MalwareType 147 159	spy software
+R3	targets Arg1:T50 Arg2:T2	
+T53	Location 271 277	France
+T54	Location 262 269	Germany
+T55	Location 301 312	Switzerland
+R4	targets Arg1:T51 Arg2:T54	
+R5	targets Arg1:T51 Arg2:T53	
+R6	targets Arg1:T51 Arg2:T46	
+R7	targets Arg1:T51 Arg2:T32	
+R8	targets Arg1:T51 Arg2:T55	
+R9	targets Arg1:T51 Arg2:T33	
+R10	targets Arg1:T12 Arg2:T3	
+T45	Organization 1141 1146	Apple
+T56	Person 1189 1202	Sean Sullivan
+T57	Organization 1262 1270	F-Secure
+T58	Malware 1347 1356	DroidJack
+T59	MalwareType 1412 1430	remote access tool
+R11	isA Arg1:T13 Arg2:T59	
+T60	AttackPattern 1451 1564	allow the administrators of large computer networks to obtain access to individual devices from a remote location
+R13	indicates Arg1:T47 Arg2:T14	
+T61	Location 1924 1929	India
+R14	hasAuthor Arg1:T14 Arg2:T35	
+T62	Person 2353 2361	Sullivan
+T63	Malware 2529 2538	DroidJack
+T64	Person 2676 2684	Sullivan
+T44	AttackPattern 2894 2998	provides the hacker with an almost universal overview of the device user's data and personal information
+R15	uses Arg1:T17 Arg2:T44	
+T65	AttackPattern 3013 3044	rack the user's GPS coordinates
+T66	AttackPattern 3046 3063	read SMS messages
+T67	AttackPattern 3065 3086	listen to phone calls
+T68	AttackPattern 3088 3103	delete contacts
+T69	AttackPattern 3114 3155	activate and record from the device's mic
+R16	uses Arg1:T17 Arg2:T65	
+R17	uses Arg1:T17 Arg2:T66	
+R18	uses Arg1:T17 Arg2:T67	
+R19	uses Arg1:T17 Arg2:T68	
+R20	uses Arg1:T17 Arg2:T69	
+T70	AttackPattern 3265 3317	asks for the user's permission before gaining access
+R21	uses Arg1:T17 Arg2:T70	
+R22	hasAuthor Arg1:T17 Arg2:T37	
+T71	Person 3666 3674	Sanjeevi
+T72	Malware 3947 3956	DroidJack
+T73	Person 3964 3972	Sanjeevi
+T74	Malware 4104 4113	DroidJack
+T75	Person 4252 4260	Sullivan
+T49	Person 4613 4621	Sullivan
+T76	MalwareType 4718 4721	RAT
+R23	isA Arg1:T20 Arg2:T76	
+T77	Malware 4766 4774	AndroRAT
+R24	isA Arg1:T77 Arg2:T76	
+T78	Person 5269 5277	Sanjeevi
+T79	Person 5566 5574	Sanjeevi
+T80	Malware 5608 5617	DroidJack
+T8	Application 5708 5725	Google Play Store
+T9	Application 6154 6165	Google Play
+T10	Time 429 436	Tuesday
+R25	has Arg1:T25 Arg2:T48	
+T81	MalwareType 1435 1438	RAT
+R26	isA Arg1:T13 Arg2:T81	
+R12	uses Arg1:T13 Arg2:T60	
+R2	isA Arg1:T50 Arg2:T52	
+T82	Location 525 551	Carlisle, northern England
+T83	Time 1089 1093	2015
+T84	MalwareType 2157 2160	RAT
+T85	Person 4667 4682	Iranian hackers
+T86	MalwareType 1682 1689	trojans

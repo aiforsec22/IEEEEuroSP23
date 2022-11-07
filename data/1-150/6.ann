@@ -1,0 +1,124 @@
+T1	OS 16 23	Android
+T3	OS 300 307	Android
+T6	OS 2898 2905	Android
+T8	OS 3712 3719	Android
+T9	Malware 736 744	Cerberus
+T10	Malware 1086 1094	Cerberus
+T11	Malware 1196 1204	Cerberus
+T12	Malware 1666 1674	Cerberus
+T13	Malware 2084 2092	Cerberus
+T14	Malware 2417 2425	Cerberus
+T15	Malware 2605 2613	Cerberus
+T16	Malware 2648 2656	Cerberus
+T17	Malware 3770 3778	Cerberus
+T18	Application 666 673	Twitter
+T24	Malware 0 8	Cerberus
+T25	MalwareType 25 40	Banking Malware
+R1	isA Arg1:T24 Arg2:T25	
+T26	Time 60 75	August 13, 2019
+T2	MalwareType 107 113	Trojan
+T27	Malware 120 126	Anubis
+T22	Malware 128 137	Red Alert
+T28	Malware 143 149	GM bot
+T29	Malware 155 161	Exobot
+R2	isA Arg1:T27 Arg2:T2	
+R3	isA Arg1:T22 Arg2:T2	
+R4	isA Arg1:T28 Arg2:T2	
+R5	isA Arg1:T29 Arg2:T2	
+T30	Malware 351 359	Cerberus
+T31	MalwareType 370 390	remote access Trojan
+R6	isA Arg1:T30 Arg2:T31	
+T32	AttackPattern 391 470	allows remote attackers to take total control over the infected Android devices
+R7	uses Arg1:T30 Arg2:T32	
+T4	AttackPattern 528 550	use of overlay attacks
+T33	AttackPattern 552 563	SMS control
+T34	AttackPattern 569 592	contact list harvesting
+R8	uses Arg1:T30 Arg2:T4	
+R9	uses Arg1:T30 Arg2:T33	
+R10	uses Arg1:T30 Arg2:T34	
+T35	Organization 1158 1170	ThreatFabric
+T36	AttackPattern 1270 1288	taking screenshots
+T37	AttackPattern 1290 1305	recording audio
+T38	AttackPattern 1307 1324	recording keylogs
+T39	AttackPattern 1326 1365	sending, receiving, and deleting SMSes,
+T40	AttackPattern 1367 1389	stealing contact lists
+T41	AttackPattern 1391 1407	forwarding calls
+T42	AttackPattern 1409 1438	collecting device information
+T43	AttackPattern 1440 1464	Tracking device location
+T44	AttackPattern 1466 1494	stealing account credentials
+T45	AttackPattern 1497 1518	disabling Play Protec
+T19	AttackPattern 1521 1561	downloading additional apps and payloads
+T46	AttackPattern 1563 1601	removing apps from the infected device
+T47	AttackPattern 1603 1624	pushing notifications
+T48	AttackPattern 1626 1649	locking device's screen
+R11	uses Arg1:T11 Arg2:T36	
+R12	uses Arg1:T11 Arg2:T37	
+R13	uses Arg1:T11 Arg2:T38	
+R14	uses Arg1:T11 Arg2:T39	
+R15	uses Arg1:T11 Arg2:T40	
+R16	uses Arg1:T11 Arg2:T41	
+R17	uses Arg1:T11 Arg2:T42	
+R18	uses Arg1:T12 Arg2:T43	
+R19	uses Arg1:T12 Arg2:T44	
+R20	uses Arg1:T12 Arg2:T45	
+R21	uses Arg1:T12 Arg2:T19	
+R22	uses Arg1:T12 Arg2:T46	
+R23	uses Arg1:T12 Arg2:T47	
+R24	uses Arg1:T12 Arg2:T48	
+T49	AttackPattern 1681 1723	hides its icon from the application drawer
+T50	AttackPattern 1733 1817	asks for the accessibility permission by masquerading itself as Flash Player Service
+R25	uses Arg1:T12 Arg2:T49	
+R26	uses Arg1:T12 Arg2:T50	
+T51	AttackPattern 1857 1983	registers the compromised device to its command-and-control server, allowing the buyer/attacker to control the device remotely
+R27	uses Arg1:T12 Arg2:T51	
+T53	AttackPattern 2108 2137	launch screen overlay attacks
+R29	uses Arg1:T13 Arg2:T53	
+T54	AttackPattern 2205 2265	displays an overlay on top of legitimate mobile banking apps
+R30	uses Arg1:T13 Arg2:T54	
+T21	Application 2516 2530	French banking
+T55	Application 2539 2551	U.S. banking
+T56	Application 2560 2576	Japanese banking
+R32	targets Arg1:T14 Arg2:T21	
+R33	targets Arg1:T14 Arg2:T55	
+R34	targets Arg1:T14 Arg2:T56	
+T57	AttackPattern 2619 2646	Motion-based Evasion Tactic
+R35	uses Arg1:T15 Arg2:T57	
+T58	AttackPattern 2770 2842	using the device accelerometer sensor to measure movements of the victim
+R36	uses Arg1:T16 Arg2:T58	
+T59	AttackPattern 2978 3087	monitors the user's steps through the device motion sensor to check if it is running on a real Android device
+R37	uses Arg1:T16 Arg2:T59	
+T7	Malware 3736 3742	Anubis
+R38	targets Arg1:T24 Arg2:T1	
+T5	Version 138 141	2.0
+R28	has Arg1:T22 Arg2:T5	
+T20	OS 455 462	Android
+T23	MalwareType 491 505	banking Trojan
+R31	isA Arg1:T30 Arg2:T23	
+T52	OS 99 106	Android
+R39	targets Arg1:T27 Arg2:T52	
+R40	targets Arg1:T22 Arg2:T52	
+R41	targets Arg1:T28 Arg2:T52	
+R42	targets Arg1:T29 Arg2:T52	
+T60	MalwareType 821 835	banking Trojan
+T61	MalwareType 881 887	Trojan
+T62	MalwareType 1095 1109	Banking Trojan
+R43	isA Arg1:T10 Arg2:T62	
+T63	MalwareType 1205 1211	Trojan
+R44	isA Arg1:T11 Arg2:T63	
+T64	Application 1797 1817	Flash Player Service
+R45	targets Arg1:T12 Arg2:T64	
+T65	Application 2246 2265	mobile banking apps
+R46	targets Arg1:T13 Arg2:T65	
+T66	OS 2277 2284	Android
+T67	Application 2585 2601	non-banking apps
+R47	targets Arg1:T14 Arg2:T67	
+T68	OS 3073 3080	Android
+T69	MalwareType 3313 3319	Trojan
+T70	MalwareType 3720 3734	banking Trojan
+R48	isA Arg1:T7 Arg2:T70	
+R49	uses Arg1:T7 Arg2:T59	
+T71	MalwareType 2198 2204	Trojan
+T72	MalwareType 3095 3101	Trojan
+T73	Application 709 718	antivirus
+T74	Application 2719 2728	antivirus
+T75	Application 1507 1511	Play

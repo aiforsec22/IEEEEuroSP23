@@ -1,0 +1,108 @@
+T1	OS 18 25	Android
+T2	OS 1124 1131	Android
+T3	OS 1955 1962	Android
+T4	OS 2468 2475	Android
+T5	OS 2689 2696	Android
+T6	OS 3053 3060	Android
+T7	OS 3914 3925	Android 8.0
+T8	OS 4015 4022	Android
+T9	OS 4598 4605	Android
+T10	OS 4679 4686	Android
+T11	OS 4908 4915	Android
+T12	OS 5015 5022	Android
+T13	OS 5935 5942	Android
+T15	OS 10070 10077	Android
+T16	OS 10376 10383	Android
+T18	OS 12408 12415	Android
+T19	OS 9622 9629	Windows
+T20	Organization 3389 3395	Google
+T21	Organization 186 195	Microsoft
+T28	Organization 9507 9516	Microsoft
+T33	Application 366 397	Microsoft Defender for Endpoint
+T34	Application 1312 1343	Microsoft Defender for Endpoint
+T35	Application 8794 8825	Microsoft Defender for Endpoint
+T36	Application 9359 9390	Microsoft Defender for Endpoint
+T37	Application 9455 9486	Microsoft Defender for Endpoint
+T38	Application 10035 10066	Microsoft Defender for Endpoint
+T39	Application 410 455	Microsoft Defender Advanced Threat Protection
+T40	Application 7321 7327	TinyML
+T41	Application 7695 7701	tinyML
+T42	Application 9853 9875	Microsoft 365 Defender
+T43	Application 9888 9915	Microsoft Threat Protection
+T44	Organization 9552 9558	SecOps
+T46	Indicator 10603 10614	classes.dex
+T47	Malware 1347 1368	AndroidOS/MalLocker.B
+T49	Malware 8960 8981	AndroidOS/MalLocker.B
+T22	OS 284 291	Windows
+T23	Organization 508 517	Microsoft
+T24	Organization 751 760	Microsoft
+R1	targets Arg1:T47 Arg2:T2	
+T25	AttackPattern 1525 1624	hosted on arbitrary websites and circulated on online forums using various social engineering lures
+T26	AttackPattern 1636 1697	masquerading as popular apps, cracked games, or video players
+R2	uses Arg1:T47 Arg2:T25	
+R3	uses Arg1:T47 Arg2:T26	
+T27	AttackPattern 2062 2189	blocks access to devices by displaying a screen that appears over every other window, such that the user can’t do anything else
+R4	uses Arg1:T47 Arg2:T27	
+T31	AttackPattern 5315 5401	create a special type of notification that triggers the ransom screen via the callback
+R6	uses Arg1:T47 Arg2:T31	
+T32	AttackPattern 5550 5633	notification is built as a very important notification that needs special privilege
+T45	AttackPattern 5669 5744	wires the notification to a GUI so that it pops up when the user taps on it
+R7	uses Arg1:T47 Arg2:T32	
+R8	uses Arg1:T47 Arg2:T45	
+T48	AttackPattern 5993 6060	overrides the onUserLeaveHint() callback function of Activity class
+T50	AttackPattern 6364 6506	creates a chain of events that triggers the automatic pop-up of the ransomware screen without doing infinite redraw or posing as system window
+R9	uses Arg1:T47 Arg2:T48	
+R11	uses Arg1:T47 Arg2:T50	
+T52	AttackPattern 6796 6827	abusing the system alert window
+T53	AttackPattern 6829 6859	abusing accessibility features
+T54	AttackPattern 6881 6910	abusing notification services
+T14	AttackPattern 7190 7305	automatically resize and crop images based on screen size, a valuable function given the variety of Android devices
+R12	uses Arg1:T47 Arg2:T52	
+R13	uses Arg1:T47 Arg2:T53	
+R14	uses Arg1:T47 Arg2:T54	
+R15	uses Arg1:T47 Arg2:T14	
+T55	OS 8829 8836	Android
+T56	Organization 8871 8880	Microsoft
+T57	OS 8923 8930	Android
+T58	OS 9394 9401	Android
+T29	Application 9656 9687	Microsoft Defender for Endpoint
+T59	AttackPattern 10400 10463	uses a new obfuscation technique unique to the Android platform
+R16	uses Arg1:T49 Arg2:T59	
+T17	AttackPattern 11087 11140	has encrypted binary code stored in the Assets folder
+R17	uses Arg1:T49 Arg2:T17	
+T60	OS 11578 11585	Android
+R18	has Arg1:T56 Arg2:T35	
+R19	has Arg1:T28 Arg2:T29	
+R20	has Arg1:T28 Arg2:T37	
+T51	MalwareType 1397 1407	ransomware
+R10	isA Arg1:T47 Arg2:T51	
+T61	MalwareType 1132 1142	ransomware
+R21	isA Arg1:T47 Arg2:T61	
+T62	MalwareType 71 81	ransomware
+T63	MalwareType 2318 2328	ransomware
+T64	MalwareType 4404 4414	ransomware
+T30	AttackPattern 4840 4965	“call” notification, among several categories of notifications that Android supports, which requires immediate user attention
+R5	uses Arg1:T47 Arg2:T30	
+T65	AttackPattern 6103 6230	whenever the malware screen is pushed to background, causing the in-call Activity to be automatically brought to the foreground
+R22	uses Arg1:T47 Arg2:T65	
+T66	MalwareType 6920 6930	ransomware
+T67	MalwareType 7422 7432	ransomware
+T68	MalwareType 1488 1498	ransomware
+T69	MalwareType 2426 2436	ransomware
+T70	MalwareType 2697 2707	ransomware
+T71	MalwareType 4127 4137	ransomware
+T72	MalwareType 4606 4616	ransomware
+T73	MalwareType 5879 5889	ransomware
+T74	MalwareType 6586 6596	ransomware
+T75	MalwareType 6747 6757	ransomware
+T76	MalwareType 7876 7886	ransomware
+T77	MalwareType 8382 8392	ransomware
+T78	MalwareType 8948 8958	ransomware
+T79	MalwareType 10320 10330	ransomware
+T80	MalwareType 12848 12858	ransomware
+T81	Application 4374 4396	accessibility services
+T82	Application 9517 9525	Defender
+T83	Application 13860 13867	WebView
+T84	MalwareType 6432 6442	ransomware
+T85	OS 7290 7297	Android
+T86	OS 10447 10454	Android

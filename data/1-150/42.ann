@@ -1,0 +1,28 @@
+T1	OS 577 584	Android
+T2	Malware 814 823	TangleBot
+T3	Malware 868 877	TangleBot
+T4	Malware 1044 1053	TangleBot
+T5	Malware 1077 1086	TangleBot
+T6	Malware 1582 1591	TangleBot
+T7	Malware 2224 2233	TangleBot
+T8	Malware 2333 2342	TangleBot
+T9	Malware 2639 2648	TangleBot
+T11	Malware 828 834	Medusa
+T12	Malware 919 925	Medusa
+T15	Malware 0 9	TangleBot
+T14	Malware 405 414	TangleBot
+T16	Location 595 608	North America
+R1	targets Arg1:T14 Arg2:T16	
+R3	targets Arg1:T14 Arg2:T1	
+T18	AttackPattern 1155 1217	string decryption routine that helps to obfuscate its presence
+R5	uses Arg1:T5 Arg2:T18	
+T19	AttackPattern 1303 1341	Silently call contacts and block calls
+T20	AttackPattern 1343 1373	Send and receive text messages
+T21	AttackPattern 1375 1443	Record the audio, screen or both, then stream them to another device
+T22	AttackPattern 1445 1508	Place overlay screens on the device, obscuring apps and screens
+T23	AttackPattern 1510 1569	Deploy further device observation or espionage capabilities
+R6	uses Arg1:T5 Arg2:T19	
+R7	uses Arg1:T5 Arg2:T20	
+R8	uses Arg1:T5 Arg2:T21	
+R9	uses Arg1:T5 Arg2:T22	
+R10	uses Arg1:T5 Arg2:T23	

@@ -1,0 +1,21 @@
+Using DroidJack to spy on an Android? Expect a visit from the police
+Law enforcement agencies across Europe have searched homes this week, as part of an international crackdown against users of a notorious piece of Android malware known as DroidJack.
+Droidjack is a remote access trojan (RAT). If you’re a jealous partner, or thinking of stalking someone’s activity and movements, then DroidJack could be just the ticket – as it allows you to take remote control of someone else’s Android device without them noticing, recording private conversations, reading emails, browser history and text messages, as well as tracking their physical location.
+
+Maybe the news that police have raided and searched at least thirteen homes in a pan-European investigation will make some potential DroidJack purchasers think twice.
+
+According to reports, action was taken in the United Kingdom, France, Germany, Belgium and Switzerland, targeting people who had bought DroidJack and used it since 2014. According to a BBC News report, searches were also conducted in the United States.
+
+Just to be clear, the action does not appear to have seen computer crime investigators hunting and apprehending the authors of DroidJack, but instead taking a long hard look at the people who had purchased the software and used it to spy upon others.
+
+Although most of us would probably like to see the authors of such malware punished in some way, it’s also clear that it’s important that those who are on the other side of the supply-and-demand chain are also discouraged.
+
+It’s easy to imagine how such a piece of software could be used by an abusive party to monitor their oppressed partner’s online activity, and prevent them from seeking help.
+
+DroidJack priceYou might expect software with such despicable functionality like DroidJack to only be traded in the darkest corners of the computer underground. But, sadly, it is openly sold online for $210 on a website which even offers product demos and testimonials from happy customers.
+
+Of course, just because it is technically possible to do something doesn’t mean that you should do it, and you shouldn’t be swayed by an online store trying to lure you into snooping on other people’s phones and private communications. Furthermore, installing malware like this onto someone else’s smartphone without their permission breaches computer misuse laws in many countries around the world.
+
+Not that that’s likely to deter someone driven by a twisted passion such as jealousy, of course…
+
+If you ever find yourself moving in the direction of doing something illegal and exploitative to snoop on someone else’s behaviour and breach their privacy, please think twice. You are in danger of entering a downward spiral, which could end with it being your house that’s raided by the police and you potentially being on the receiving end of legal action.

@@ -1,0 +1,29 @@
+ViceLeaker Android spyware targets users in the Middle East
+Experts at Kaspersky have uncovered a spyware campaign dubbed ViceLeaker that spreads in the Middle East to spy on Android users. 
+Kaspersky spotted a spyware campaign, tracked as ViceLeaker, that spreads in the Middle East to steal device and communications data from Android users. 
+
+The ViceLeaker campaign has been active at least since May 2018 when it targeted dozens of mobile Android devices belonging to Israeli citizens.
+
+The same campaign was also monitored by researchers at Bitdefender that dubbed the malware Triout.
+
+The attack chain starts with malicious Telegram and WhatsApp messages containing links to Trojanized apps, one of which was a fake application named “Sex Game For Adults.”
+
+Attackers aim to backdoor legitimate applications with an unusual injection technique dubbed Smali.
+
+The mobile malware also aims to inject legitimate mobile applications with a backdoor for persistent access once it has compromised an Android device. 
+“To backdoor legitimate applications, attackers used a Smali injection technique – a type of injection that allows attackers to disassemble the code of original app with the Baksmali tool, add their malicious code, and assemble it with Smali.” reads the analysis published by Kaspersky. “As a result, due to such an unusual compilation process, there were signs in the dex file that point to dexlib, a library used by the Smali tool to assemble dex files.”
+The ViceLeaker APK implements very common spyware features (exfiltration of SMS messages, call logs, and device information) along with backdoor capabilities (upload, download, delete files, camera takeover, and record surrounding audio).
+
+ViceLeaker leverages HTTP for C&C communications and to transfer exfiltrated data.
+
+During the investigation, Kaspersky also spotted a sample of a modified version of the open-source Jabber/XMPP called “Conversations.” The tainted version used by the ViceLeaker group sends the C2 geographical coordinates every time a message was sent via the app. 
+
+The modified Conversations app mimics Telegram messenger, but experts did not find any malicious activity implemented by this specific app.
+
+“Even when we originally thought this was a backdoored version of the Conversations app, used to infect victims, we didn’t discover anything malicious in it,” continues Kaspersky. “This brought to us the hypothesis that this might be a version used by the group behind ViceLeaker for internal communication or for other, unclear purposes.” 
+Experts were aware of the possibility that threat actors might be using a compromised email account, investigating it they found a personal page and a GitHub account that contains a forked Conversation repository.
+
+According to Kaspersky, the ViceLeaker campaign is still ongoing, but currently, attackers have taken down their communication channels.
+
+“The operation of ViceLeaker is still ongoing, as is our research,” Kaspersky concludes. “The attackers have taken down their communication channels and are probably looking for ways to assemble their tools in a different manner.”
+

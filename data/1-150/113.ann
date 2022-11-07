@@ -1,0 +1,134 @@
+T1	OS 0 7	Android
+T2	OS 99 106	Android
+T6	OS 1552 1559	Android
+T7	OS 3639 3646	Android
+T8	OS 4065 4072	Android
+T9	OS 5130 5137	Android
+T11	OS 4187 4194	Windows
+T12	Application 65 71	Google
+T13	Application 184 190	Google
+T15	Application 2132 2138	Google
+T16	Application 2343 2349	Google
+T17	Application 2433 2439	Google
+T19	Organization 3463 3469	Google
+T20	Organization 3591 3597	Google
+T21	Application 4346 4352	Google
+T22	Organization 4460 4466	Google
+T23	Organization 5016 5022	Google
+T25	Malware 225 233	Gooligan
+T26	Malware 637 645	Gooligan
+T27	Malware 1163 1171	Gooligan
+T28	Malware 1795 1803	Gooligan
+T29	Malware 3329 3337	Gooligan
+T30	Malware 3389 3397	Gooligan
+T31	Malware 3924 3932	Gooligan
+T32	Malware 4130 4138	Gooligan
+T33	Malware 4386 4394	Gooligan
+T34	Malware 4648 4656	Gooligan
+T35	Malware 5189 5197	Gooligan
+T36	Malware 6170 6178	Gooligan
+T37	Application 494 499	Gmail
+T38	Organization 2378 2389	Check Point
+T39	Organization 4049 4060	Check Point
+T40	Organization 4444 4455	Check Point
+T41	Organization 4512 4523	Check Point
+T42	Vulnerability 1387 1392	VROOT
+T49	Malware 3232 3242	HummingBad
+T50	Person 1732 1739	Shaulov
+T51	Person 3084 3091	Shaulov
+T52	Person 4666 4673	Shaulov
+T53	Person 5721 5728	Shaulov
+T54	Person 6373 6380	Shaulov
+T55	Malware 3375 3385	Ghost Push
+T56	Malware 3447 3457	Ghost Push
+T57	Malware 3545 3555	Ghost Push
+T58	Malware 3853 3863	Ghost Push
+T59	Malware 5360 5370	Ghost Push
+T60	Malware 5655 5665	Ghost Push
+T61	Malware 5789 5799	Ghost Push
+T62	Malware 6155 6165	Ghost Push
+T63	Organization 3798 3821	Cheetah Mobile Security
+T64	Organization 5854 5877	Shadowserver Foundation
+T66	Person 5620 5626	Ludwig
+T67	Person 6072 6078	Ludwig
+T72	Malware 9 17	Gooligan
+R1	targets Arg1:T72 Arg2:T12	
+R2	targets Arg1:T72 Arg2:T1	
+T73	AttackPattern 346 430	stealing the tokens users are given to verify they are authorized to access accounts
+R5	uses Arg1:T25 Arg2:T73	
+T75	Organization 809 820	Check Point
+T76	Person 938 953	Michael Shaulov
+T77	Organization 989 1000	Check Point
+T4	Vulnerability 1397 1406	Towelroot
+T5	OS 1427 1446	Android 4 through 5
+T68	OS 1458 1468	Jelly Bean
+T81	OS 1470 1476	KitKat
+T82	OS 1481 1489	Lollipop
+R10	targets Arg1:T27 Arg2:T5	
+R11	targets Arg1:T27 Arg2:T68	
+R12	targets Arg1:T27 Arg2:T81	
+R13	targets Arg1:T27 Arg2:T82	
+R14	has Arg1:T5 Arg2:T4	
+R15	has Arg1:T5 Arg2:T42	
+T44	Location 1650 1654	Asia
+T69	Location 1686 1694	Americas
+T83	Location 1717 1730	North America
+R16	targets Arg1:T27 Arg2:T44	
+R17	targets Arg1:T27 Arg2:T69	
+R18	targets Arg1:T27 Arg2:T83	
+T84	Location 1779 1785	Europe
+R19	targets Arg1:T27 Arg2:T84	
+T45	AttackPattern 1834 1898	victim's Google account token is siphoned off to a remote server
+T85	AttackPattern 1920 1983	gain access to their Gmail, Docs, Drive, Photos and other data,
+T14	Organization 2035 2046	Check Point
+R20	targets Arg1:T28 Arg2:T15	
+R21	uses Arg1:T28 Arg2:T45	
+R22	uses Arg1:T28 Arg2:T85	
+T43	Time 2484 2488	2014
+T71	Time 2616 2620	2016
+T86	Person 2783 2790	Shaulov
+T87	AttackPattern 2811 2886	forced victims to download and give positive reviews to apps on Google Play
+R23	uses Arg1:T28 Arg2:T87	
+T18	Malware 3152 3162	HummingBad
+T88	Time 3178 3186	February
+T89	Person 3304 3311	Shaulov
+R24	uses Arg1:T49 Arg2:T87	
+T90	ThreatActor 3202 3224	Chinese cybercriminals
+R25	hasAuthor Arg1:T49 Arg2:T90	
+R26	variantOf Arg1:T30 Arg2:T56	
+T91	Time 3566 3575	September
+T92	Time 3606 3611	April
+T93	Time 3658 3662	2015
+R27	targets Arg1:T56 Arg2:T19	
+R28	targets Arg1:T56 Arg2:T7	
+T94	Time 3775 3782	October
+T95	Time 3974 3983	June 2015
+R29	discoveredIn Arg1:T31 Arg2:T95	
+T96	Application 4209 4216	SnapPea
+T46	Time 4398 4404	August
+R30	targets Arg1:T32 Arg2:T96	
+T97	Malware 4739 4747	Gooligan
+T47	Organization 5121 5127	Google
+T98	Person 5154 5167	Adrian Ludwig
+T100	Person 5457 5463	Ludwig
+T24	Application 5698 5709	Google Play
+T10	OS 6103 6128	Android versions from 6.0
+T48	Application 1843 1849	Google
+R32	targets Arg1:T28 Arg2:T48	
+T65	Application 1941 1946	Gmail
+T101	Application 1948 1952	Docs
+T102	Application 1954 1959	Drive
+T103	Application 1961 1967	Photos
+R33	targets Arg1:T28 Arg2:T65	
+R34	targets Arg1:T28 Arg2:T101	
+R35	targets Arg1:T28 Arg2:T102	
+R36	targets Arg1:T28 Arg2:T103	
+T3	OS 277 284	Android
+T70	Time 298 304	August
+T74	Application 503 507	Docs
+T79	OS 1189 1196	Android
+T80	Application 1954 1959	Drive
+T99	Application 2875 2886	Google Play
+T104	Application 1039 1060	third-party app store
+R3	targets Arg1:T26 Arg2:T104	
+T105	Application 921 936	third-party app

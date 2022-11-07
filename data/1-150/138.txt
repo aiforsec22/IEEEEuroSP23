@@ -1,0 +1,27 @@
+Meet Monokle, an Android Malware Family Capable of Stealing and Changing Passwords
+Special Technology Center (STC) is a software development company based in Saint Petersburg, Russia, and the American Government hasn't been particularly happy with it. In 2016, Barack Obama imposed sanctions on STC because his administration believed that it was one of the three companies that helped the Russian government interfere with the USA's 2016 presidential elections. It is believed that quite a few talented, sophisticated experts work for STC, and researchers from security company Lookout seem convinced that the same experts are responsible for the creation of a previously undocumented strain of Android malware called Monokle.
+
+Monokle and the STC connection
+As we'll find out in a minute, Monokle is an extremely sophisticated and versatile piece of mobile surveillanceware, and because such malicious apps are usually developed by people who know what they're doing, often, attributing them to a specific group of hackers is next to impossible. Lookout's experts think, however, that there is plenty of evidence linking Monokle to STC.
+
+According to Lookout's technical report, STC is in the business of developing, among other things, a suite of defensive products for Android devices which is allegedly sold exclusively to Russian government agencies. The company also has a control panel application called App Control through which the rest of STC's services are managed. When Lookout's experts poked through it, they saw that App Control is trying to figure out if Monokle is installed on the device.
+
+In addition to this, one of STC's better-known products is an Android antivirus app called Defender. After closely examining Monokle's Command and Control (C&C) infrastructure, Lookout's team realized that some of it overlaps with the backend servers Defender uses. To top it all off, there were certificates that were also shared between STC's security products and Monokle.
+
+If Lookout's researchers are right, and Monokle was indeed created by STC, the developers didn't put too much effort into concealing their traces, which is odd considering the level of sophistication the malware demonstrates.
+
+Monokle's versatility is its defining characteristic
+Monokle can, among other things, log keystrokes, delete and download files, send messages, exfiltrate contacts, device information, emails, login data, lists of installed apps, and call and browsing histories. It can also take photos, videos, and screenshots, and if it has root access, it can execute commands.
+
+All this is pretty standard for this type of malware. Monokle does have a few other tricks up its sleeve that make it stand out from the crowd, though. It uses Android's accessibility services to capture and exfiltrate information from Microsoft Office and Google Docs files as well as instant messaging applications like Whatsapp, Viber, Snapchat, etc. It can make screen recordings even when the device is still locked, which means that it can capture the password, PIN code, or pattern used to unlock the device. Once it has captured the secret, it can change it and lock people out of their phones or tablets.
+
+Perhaps the most advanced feature, however, is the ability to install trusted certificates on compromised devices. Thanks to it, a Man-in-The-Middle attack against TLS traffic is possible.
+
+All in all, Monokle isn't something you want to have on your Android device. The good news is, most of you are unlikely to encounter it.
+
+Monokle is aimed at specific targets
+The earliest sample Lookout examined dates back to 2015, but Monokle is still being used in attacks to this day. As with most Android malware families, the primary infection vector comes in the form of trojanized apps distributed on third-party app stores. Most of them impersonate real applications, and some even come with legitimate functionality, which can make detection more difficult.
+
+Based on the titles and the icons of the malicious apps, the experts concluded that Monokle is used in highly targeted attacks against specific sets of users. Some of the applications were clearly designed to catch the attention of people associated with the Ahrar al-Sham militant group in Syria. Others were aimed at users situated in the former Soviet republic of Uzbekistan, and a third group targeted people situated in the Caucasus region of Eastern Europe.
+
+If what Lookout's experts say is true, Monokle is most likely used by Russian government agencies which are trying to spy on particular individuals. If your name is not present on some very specific lists, you probably won't be affected by Monokle. Obviously, this doesn't mean that the malware should be underestimated.

@@ -1,0 +1,24 @@
+'Lawful intercept' Pegasus spyware found deployed in 45 countries
+Security researchers have found evidence that a piece of malware peddled as "lawful intercept" software to government agencies has been deployed against victims located in 45 countries, a number that far outweights the number of known operators, meaning that some of them are conducting illegal cross-border surveillance.
+
+The malware, known as Pegasus (or Trident), was created by Israeli cyber-security firm NSO Group and has been around for at least three years --when it was first detailed in a report over the summer of 2016.
+
+The malware can operate on both Android and iOS devices, albeit it's been mostly spotted in campaigns targeting iPhone users primarily. On infected devices, Pegasus is a powerful spyware that can do many things, such as record conversations, steal private messages, exfiltrate photos, and much much more.
+
+During the past three years, security researchers from Citizen Lab, a laboratory at the Munk School of Global Affairs at the University of Toronto, Canada, have been tracking cases where Pegasus has been deployed in the wild.
+
+In many instances, the spyware was used by oppressive government regimes to spy on journalists, human rights defenders, opposition politicians, lawyers, and anti-corruption advocates.
+
+But new data published today by Citizen Lab researchers reveals the existence of 36 different groups who deployed the Pegasus spyware against targets located in 45 countries, including the US, France, Canada, Switzerland, and the UK, countries known to have solid and democratic regimes in place.
+
+Citizen Lab says ten of these 36 groups appear to be conducting surveillance in multiple countries and have not limited their spying inside their own country's borders, an act that may violate surveillance laws active in the states where Pegasus victims may be located.
+
+Citizen Lab researchers admitted that some of their findings may be inaccurate, as some targets may using VPN and satellite connections that may place their location in another country. But they also say this doesn't rule out that some Pegasus operators may be spying on dissidents living abroad, even in Western and well-developed countries where cross-border surveillance against their own citizens is strictly forbidden.
+
+In a statement provided to Citizen Lab researchers before the publication of today's report, an NSO Group spokesperson denied that the company was breaking any software export laws, adhering to the previously stated dogma that they're only selling Pegasus for crime-fighting purposes.
+
+"Contrary to statements made by [Citizen Lab], our product is licensed to government and law enforcement agencies for the sole purpose of investigating and preventing crime and terror. Our business is conducted in strict compliance with applicable export control laws."
+
+To this statement, Citizen Lab responded with their own, pointing out that NSO Group, even after three years, continues to fail to see the reason the company is being heavily criticized online, and that's for selling Pegasus to oppressive regimes in the first place.
+
+"Citizen Lab research does not speak to what statements NSO may make during marketing, sales, or export compliance. However, our research continues to demonstrate some highly concerning real-world examples of the abuse of NSO Group technology in practice. These uses have included apparent government customers of NSO Group abusing Pegasus spyware to target civil society groups, human rights defenders, lawyers, politicians, and journalists."

@@ -1,0 +1,45 @@
+T1	OS 11 18	Android
+T2	OS 114 121	Android
+T4	OS 1773 1780	Android
+T6	Organization 2047 2053	Google
+T7	Malware 246 253	RedDrop
+T8	Malware 429 436	RedDrop
+T9	Malware 630 637	RedDrop
+T10	Malware 1216 1223	RedDrop
+T11	Malware 1722 1729	RedDrop
+T12	Malware 1914 1921	RedDrop
+T13	Organization 613 620	Wandera
+T14	Organization 1526 1533	Wandera
+T15	Organization 1703 1710	Wandera
+T19	AttackPattern 27 65	Can Secretly Record Your Conversations
+T20	Malware 178 185	RedDrop
+R1	targets Arg1:T20 Arg2:T2	
+R2	uses Arg1:T20 Arg2:T19	
+R3	targets Arg1:T20 Arg2:T1	
+T17	AttackPattern 446 494	steal all the information it can from your phone
+R4	uses Arg1:T8 Arg2:T17	
+T16	Location 602 606	U.K.
+R5	has Arg1:T13 Arg2:T16	
+T21	AttackPattern 638 690	targets sensitive data like your contacts and photos
+R6	uses Arg1:T9 Arg2:T21	
+T22	AttackPattern 700 803	gathers information about your phone, from the apps you have installed to the WiFi networks you're near
+R7	uses Arg1:T9 Arg2:T22	
+T23	Malware 838 845	RedDrop
+T24	AttackPattern 867 901	can hijack your phone's microphone
+R8	uses Arg1:T23 Arg2:T24	
+T25	AttackPattern 924 1016	eavesdrop on conversations you -- or anyone else -- might be having near the infected device
+R9	uses Arg1:T23 Arg2:T25	
+T26	AttackPattern 1279 1354	racks up charges by stealthily communicating with a premium-rate SMS system
+R10	uses Arg1:T10 Arg2:T26	
+T27	Malware 1485 1492	RedDrop
+T3	Application 1567 1582	50 Android apps
+R11	targets Arg1:T27 Arg2:T3	
+T28	Location 1684 1689	China
+T29	Application 1652 1674	third-party app stores
+R12	targets Arg1:T27 Arg2:T29	
+T5	Application 1871 1882	Google Play
+R13	targets Arg1:T11 Arg2:T4	
+R14	targets Arg1:T27 Arg2:T28	
+T18	MalwareType 231 241	ransomware
+R15	isA Arg1:T20 Arg2:T18	
+T30	MalwareType 1601 1607	Trojan

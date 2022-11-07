@@ -1,0 +1,42 @@
+New Android Malware RuMMS Targeting Users through Smishing
+FireEye security firms’ researchers have identified a new Android family malware that is currently targeting Russian users. The malware is distributed via a series of infected subdomains that are actually registered with an authentic domain name, which is owned by a popular shared hosting service provider based in Russia.
+
+The malware has been dubbed as RuMMS because the URLs used in this particular scheme are all in the same format: hxxp://yyyyyyyyXXXX.ru/mms.apk
+
+Here XXX.ru represents the domain name.
+
+FireEye experts noted:
+
+“So far we identified seven different URLs being used to spread RuMMS in the wild. All of the URLs reference the file “mms.apk” and all use the domain “XXXX.ru”, which belongs to a top five shared hosting platform in Russia (the domain itself has been obfuscated to anonymize the provider).”
+
+“The threat actors registered at least seven subdomains through the hosting provider, each consisting of eight random-looking characters (asdfgjcr, cacama18, cacamadf, konkonq2, mmsmtsh5, riveroer, and sdfkjhl2.) The threat actors seem to have abandoned these URLs and might be looking into other ways to reach more victims.”
+
+How the attack occurs?
+
+The victims are attracted to download the malicious code of the malware through SMS phishing campaign in which a short SMS message is sent to the victims. This message contains the infected URL link. Unsuspecting users immediately click on the harmless looking link. As soon as they do so, RuMMs infects their devices immediately. This infection process has been described by FireEye in this diagram:
+
+new-android-malware-rumms-attacking-users-smishing
+Source: FireEye
+When the malware is able to infect the device of the victim, the malware’s app asks for administrator privileges and will delete all the icons that belong to the app so that the victim doesn’t detect it. However, it will keep on running in the background for performing numerous malicious acts including the following:
+
+* Sending out information about the device to a remotely controlled C2 server
+
+* Communicating with the C2 server for new instructions
+
+* Sending SMS messages to financial institutions for inquiring about the victim’s account balances
+
+* Transferring the acquired information about account balances to the C2 server
+
+* Spreading the infection to other numbers present in the contacts folder of the victim’s phone through sending C2-specified SMS messages
+
+Note: C2 server refers to the Command & Control Servers from where the malware was distributed and receives instructions.
+
+How was it identified?
+
+FireEye’s experts observed new samples of RuMMs on 3rd April 2016 but the earliest such sample was identified way back on 18th January 2016. Between this period the company has observed around 300 different samples of the same family. It has been observed by security experts that the malware’s operational capabilities are controlled from the remote C2 server. We can, therefore, assume that the C2 server can customize the contents of the SMS messages that are to be distributed to expand the scope of this malicious Smishing campaign. The servers also determine the recipients of these outgoing messages and also the timespan during which the voice calls will be forwarded.
+
+FireEye’s investigators emulated an already infected Android device to communicate with the C2 server of the RuMMS malware and they identified that the C2 server instructed their device to send out four different SMS messages to four unique numbers. The phone numbers were of Russia-based financial institutions. Three out of the four messages were aimed at checking out the account balance of the user at that particular institution. The fourth message’s destination still remains unconfirmed. When the team probed further, they detected a number of forum posts in which various victims complained about transferring of up to 600 rubles from their accounts after their phones were infected with RuMMS malware.
+
+It cannot be confirmed as of now how many people have been affected by this malware but FireEye experts believe that “there have been at least 2,729 infections between January 2016 and early April 2016, with a peak in March of more than 1,100 infections.”
+
+Using a shared hosting service for spreading malicious malware campaigns is an extremely common, flexible and cost-effective option for threat actors and it is also quite difficult for network researchers to identify such a campaign where a moving target is the infrastructure. In Russia, various top service providers offer shared hosting services for very cheap rates and some even offer free 30-day trial period. So, it is quite easy for cyber criminals in Russia to register subdomains and use the service provider’s offer for a brief period and later cancel the trial after fulfilling their malicious goals without even paying a penny.

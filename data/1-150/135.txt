@@ -1,0 +1,20 @@
+Android Accessibility Services Vulnerable to Android Malware Defensor ID
+Android Accessibility Services has been caught with unexpected consequences as hackers are creating sneaky malware to use this service for malicious intents and to interact with the system’s interface and applications. A new malware called Defensor ID was recently found targeting this service in Android devices.
+
+DEFENSOR ID - A new threat
+ESET researchers have detected a new Android malware strain called “DEFENSOR ID” that abuses the Android’s Accessibility Service to perform a host of nefarious actions and give hackers the privilege of notably wiping out the victim’s cryptocurrency wallet or bank account and taking over their email or social media accounts.
+In May 2020, DEFENSOR ID malware was observed pretending as a security application and claiming to increase user security by using end-to-end encryption.
+The malware operator dropped all other potentially suspicious features, except one, they asked for the permissions to access the Accessibility Service. Due to its exceptional stealth, the app got into the official Google Play store.
+The malware developers named themselves as GAS Brazil. They were probably trying to fake themselves as the well-known Brazilian anti-fraud solution provider GAS Tecnologia, as they targeted Brazilian users.
+
+How wide the impact is
+According to the Sciendo report, turning on the Accessibility Services leaves 72 % of the top finance and 80 % of the top social media apps vulnerable to eavesdropping attacks, leaking sensitive information such as logins and passwords. This indicate that most of the commonly used finance and social media apps are impacted due to this malware.
+
+Not the first time
+This isn’t the first time when Android malware has abused Accessibility Services. There have been several incidents within, 2020 when security researchers have witnessed Android malware abusing Accessibility Service.
+In April 2020, Check Point Research found a Malware-as-a-Service (MaaS) botnet and a dropper for Android devices, dubbed Black Rose Lucy, that primarily leveraged Android’s Accessibility Service using a fake Streaming Video Optimization (SVO) prompt to install their payload without any user interaction.
+In the same month, Cybereason analyzed a new type of Android mobile banking Trojan named Eventbot, that abused Android’s Accessibility features to steal user data from financial apps, read and steal user SMS messages to allow the malware to bypass two-factor authentication.
+In March 2020, McAfee Mobile Research team observed an Android malware dubbed Android/LeifAccess.A that abused OAuth leveraging accessibility services to infect Android devices and post fake reviews on Google Play.
+
+Defend against mobile malware
+Organizations must create security policies that can limit their corporate users to download apps only from legitimate marketplaces and trusted developers. They should consider using tools powered by artificial intelligence (AI) to detect the latest threat behaviors circulating in the wild.

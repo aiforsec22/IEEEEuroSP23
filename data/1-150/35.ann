@@ -1,0 +1,141 @@
+T1	OS 0 7	Android
+T2	OS 67 74	Android
+T3	OS 217 224	Android
+T4	OS 691 698	Android
+T5	OS 799 806	Android
+T9	OS 4316 4323	Android
+T10	OS 4508 4515	Android
+T11	OS 4637 4644	Android
+T12	OS 679 686	Windows
+T15	ThreatActor 627 642	Desert Scorpion
+T16	Application 372 380	WhatsApp
+T18	Application 44 52	Telegram
+T19	ThreatActor 579 587	APT-C-23
+T20	ThreatActor 645 653	APT-C-23
+T21	ThreatActor 852 860	APT-C-23
+T22	ThreatActor 4065 4073	APT-C-23
+T23	ThreatActor 4116 4124	APT-C-23
+T24	ThreatActor 4237 4245	APT-C-23
+T25	ThreatActor 4429 4437	APT-C-23
+T26	Malware 131 150	Two-Tailed Scorpion
+T27	ThreatActor 603 622	Two-Tailed Scorpion
+T28	Organization 972 976	ESET
+T29	Application 1850 1859	WeMessage
+T30	Application 2161 2170	WeMessage
+T31	Application 2099 2106	Threema
+T33	Organization 3510 3517	Samsung
+T35	Application 3533 3549	SecurityLogAgent
+T36	Application 3584 3597	MIUI Security
+T38	Application 3634 3647	Phone Manager
+T40	Organization 4162 4173	Check Point
+T41	Organization 4279 4295	@malwrhunterteam
+T42	Organization 4381 4397	@malwrhunterteam
+T43	Organization 4469 4485	@malwrhunterteam
+T44	Location 754 765	Middle East
+T47	Malware 1289 1305	Android/SpyC23.A
+T48	Malware 411 427	Android/SpyC32.A
+T49	Malware 1010 1026	Android/SpyC32.A
+T50	MalwareType 8 15	Spyware
+T51	Application 34 42	WhatsApp
+T52	ThreatActor 107 115	APT-C-23
+T53	Malware 155 170	Desert Scorpion
+R1	targets Arg1:T52 Arg2:T2	
+R2	targets Arg1:T52 Arg2:T51	
+R3	targets Arg1:T52 Arg2:T18	
+T54	MalwareType 225 232	spyware
+T55	Application 385 393	Telegram
+T56	Location 498 509	Middle East
+R4	targets Arg1:T48 Arg2:T56	
+R5	isA Arg1:T48 Arg2:T54	
+R6	targets Arg1:T48 Arg2:T3	
+R7	hasAuthor Arg1:T48 Arg2:T19	
+*	hasAlias T19 T27 T15
+R8	targets Arg1:T20 Arg2:T12	
+R9	targets Arg1:T20 Arg2:T4	
+R10	targets Arg1:T20 Arg2:T44	
+R11	targets Arg1:T20 Arg2:T5	
+T57	MalwareType 1048 1055	spyware
+T46	ThreatActor 1137 1145	APT-C-23
+T58	Time 1216 1220	2017
+T59	Time 1334 1342	May 2019
+T60	Time 1384 1393	June 2020
+R12	discoveredIn Arg1:T47 Arg2:T60	
+R14	isA Arg1:T49 Arg2:T57	
+T13	Application 1488 1499	Google Play
+T61	MalwareType 1786 1793	spyware
+T62	Application 1517 1526	WeMessage
+R15	uses Arg1:T47 Arg2:T62	
+T64	Application 2111 2119	Telegram
+T65	Application 2084 2097	AndroidUpdate
+T66	Application 2191 2202	DigitalApps
+R17	uses Arg1:T47 Arg2:T29	
+T67	AttackPattern 2315 2339	ability to take pictures
+T68	AttackPattern 2341 2353	record audio
+T69	AttackPattern 2355 2411	exfiltrate call logs, SMS messages and contacts and more
+R18	uses Arg1:T47 Arg2:T67	
+R19	uses Arg1:T47 Arg2:T68	
+R20	uses Arg1:T47 Arg2:T69	
+T70	AttackPattern 2433 2476	requesting a number of invasive permissions
+T72	AttackPattern 2587 2704	extended surveillance capabilities, specifically targeting information collected from social media and messaging apps
+T73	AttackPattern 2726 2770	record victims’ screens and take screenshots
+T17	AttackPattern 2772 2818	record incoming and outgoing calls in WhatsApp
+T74	AttackPattern 2823 2923	read text of notifications from social media apps, including WhatsApp, Facebook, Skype and Messenger
+T7	AttackPattern 2973 3053	creates a blank screen overlay to put on the Android screen while it makes calls
+T32	AttackPattern 3118 3181	hide its activity the malware can dismiss its own notifications
+R21	targets Arg1:T47 Arg2:T65	
+R22	targets Arg1:T47 Arg2:T31	
+R23	targets Arg1:T47 Arg2:T64	
+R25	uses Arg1:T47 Arg2:T70	
+R26	uses Arg1:T47 Arg2:T72	
+R27	uses Arg1:T47 Arg2:T7	
+R28	uses Arg1:T47 Arg2:T17	
+R29	uses Arg1:T47 Arg2:T73	
+R30	uses Arg1:T47 Arg2:T74	
+R31	uses Arg1:T47 Arg2:T32	
+T8	AttackPattern 3344 3419	dismiss notifications from built-security security apps for Android devices
+T34	Hardware 3567 3582	Samsung devices
+T37	Hardware 3615 3629	Xiaomi devices
+T39	Hardware 3651 3665	Huawei devices
+R38	uses Arg1:T47 Arg2:T8	
+T75	Time 4143 4160	beginning of 2020
+T76	Time 4256 4266	April 2020
+R40	discoveredIn Arg1:T25 Arg2:T76	
+T77	Time 4458 4467	June 2020
+T78	MalwareType 4608 4615	spyware
+T14	Application 4690 4705	Google Play app
+R41	hasAuthor Arg1:T26 Arg2:T52	
+R42	hasAuthor Arg1:T53 Arg2:T52	
+*	hasAlias T53 T26 T48
+R43	isA Arg1:T53 Arg2:T54	
+R44	isA Arg1:T26 Arg2:T54	
+R45	targets Arg1:T53 Arg2:T16	
+R46	targets Arg1:T53 Arg2:T55	
+T45	Time 998 1007	Wednesday
+T79	AttackPattern 1432 1499	disguised as a legitimate messaging app offered through Google Play
+R13	uses Arg1:T47 Arg2:T79	
+T6	Application 2810 2818	WhatsApp
+T80	Application 2884 2892	WhatsApp
+T81	Application 2894 2902	Facebook
+T82	Application 2904 2909	Skype
+T83	Application 2914 2923	Messenger
+R47	targets Arg1:T47 Arg2:T6	
+R48	uses Arg1:T47 Arg2:T80	
+R49	targets Arg1:T47 Arg2:T13	
+R50	uses Arg1:T47 Arg2:T81	
+R51	uses Arg1:T47 Arg2:T82	
+R52	uses Arg1:T47 Arg2:T83	
+T84	Time 4571 4576	April
+T85	AttackPattern 344 371	snoops on social media apps
+R39	uses Arg1:T48 Arg2:T85	
+T71	OS 1950 1957	Android
+T86	Application 1981 1992	DigitalApps
+T87	Application 2673 2685	social media
+T88	Application 2690 2704	messaging apps
+T89	OS 3018 3025	Android
+T90	OS 3404 3411	Android
+T91	MalwareType 2266 2273	spyware
+T92	MalwareType 2710 2717	spyware
+R16	uses Arg1:T47 Arg2:T86	
+T93	Application 354 371	social media apps
+T94	Application 2855 2867	social media
+T95	Application 2010 2019	app store

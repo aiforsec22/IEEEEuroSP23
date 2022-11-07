@@ -1,0 +1,156 @@
+T1	OS 45 52	Android
+T2	OS 87 94	Android
+T3	OS 988 995	Android
+T6	OS 7849 7856	Android
+T7	OS 8011 8018	Android
+T11	Malware 0 8	Cerberus
+T12	Malware 1464 1472	Cerberus
+T13	Malware 1821 1829	Cerberus
+T14	Malware 2156 2164	Cerberus
+T15	Malware 2319 2327	Cerberus
+T16	Malware 2652 2660	Cerberus
+T17	Malware 2843 2851	Cerberus
+T18	Malware 2898 2906	Cerberus
+T19	Malware 3014 3022	Cerberus
+T20	Malware 3284 3292	Cerberus
+T21	Malware 3570 3578	Cerberus
+T22	Malware 4000 4008	Cerberus
+T23	Malware 4474 4482	Cerberus
+T24	Malware 4501 4509	Cerberus
+T25	Malware 4766 4774	Cerberus
+T26	Version 5110 5112	v2
+T27	Malware 5412 5420	Cerberus
+T28	Malware 5783 5791	Cerberus
+T29	Malware 6127 6135	Cerberus
+T30	Malware 6416 6424	Cerberus
+T31	Malware 6543 6551	Cerberus
+T32	Malware 7343 7351	Cerberus
+T33	Malware 7496 7504	Cerberus
+T34	Malware 8482 8490	Cerberus
+T35	Malware 6846 6851	Alien
+T36	Malware 6876 6881	Alien
+T37	Malware 7303 7308	Alien
+T38	Malware 1244 1251	Gustuff
+T40	Application 635 645	TeamViewer
+T42	Application 3980 3990	TeamViewer
+T44	Organization 5023 5035	ThreatFabric
+T45	Application 6823 6835	ThreatFabric
+T46	Organization 5251 5256	Avast
+T49	Vulnerability 7679 7710	user-authorized vulnerabilities
+T51	Person 6357 6369	Dmitry Galov
+R1	targets Arg1:T11 Arg2:T1	
+T54	Time 232 236	2020
+T47	Time 272 276	2020
+T55	Time 409 413	2020
+T56	MalwareType 448 468	Remote access Trojan
+T58	Application 649 652	VNC
+T60	Time 1148 1152	2019
+T61	Time 1157 1161	2020
+T62	Malware 1220 1226	Anubis
+T63	Malware 1228 1233	Hydra
+T64	Malware 1235 1239	Ginp
+T66	Malware 1390 1398	Cerberus
+T67	Malware 1432 1440	Cerberus
+T4	OS 1499 1506	Android
+R9	targets Arg1:T12 Arg2:T4	
+T68	Time 1537 1541	2019
+R10	discoveredIn Arg1:T12 Arg2:T68	
+T52	Malware 1906 1912	Anubis
+T69	MalwareType 1865 1893	banking and phishing malware
+R11	isA Arg1:T13 Arg2:T69	
+T70	Application 2029 2041	banking apps
+R12	targets Arg1:T13 Arg2:T70	
+T71	MalwareType 2119 2139	Remote Access Trojan
+R13	isA Arg1:T14 Arg2:T71	
+T72	AttackPattern 2179 2215	deep surveillance within your device
+T73	AttackPattern 2217 2303	interfering with the encrypted communications the phone has with its apps, and outside
+R14	uses Arg1:T14 Arg2:T72	
+R15	uses Arg1:T14 Arg2:T73	
+T74	AttackPattern 2332 2387	intercept and steal your phone’s unlock pattern or PIN,
+R16	uses Arg1:T15 Arg2:T74	
+T8	AttackPattern 2510 2581	can interpose itself between you and your bank’s app through an overlay
+R17	uses Arg1:T15 Arg2:T8	
+T75	AttackPattern 2686 2740	extract all the necessary data to perform a bank fraud
+R18	uses Arg1:T16 Arg2:T75	
+T76	MalwareType 3028 3031	RAT
+R19	isA Arg1:T19 Arg2:T76	
+T5	Application 3151 3180	Android Accessibility Service
+R20	targets Arg1:T19 Arg2:T5	
+T77	AttackPattern 3296 3349	give itself more permissions without user interaction
+R21	uses Arg1:T20 Arg2:T77	
+T78	AttackPattern 3473 3495	disabling Play Protect
+R22	uses Arg1:T20 Arg2:T78	
+T39	AttackPattern 3582 3639	capable of generating an instance of TeamViewer on mobile
+R23	uses Arg1:T21 Arg2:T39	
+T41	AttackPattern 4062 4071	keylogger
+T79	AttackPattern 4073 4122	Listing, retrieval, sending and forwarding of SMS
+T80	AttackPattern 4124 4156	Forwarding or transferring calls
+T81	AttackPattern 4158 4191	Installation and deletion of apps
+T82	AttackPattern 4193 4252	Locking and unlocking the screen (without user interaction)
+T83	AttackPattern 4254 4279	Collection of device data
+T84	AttackPattern 4281 4308	List of device applications
+T85	AttackPattern 4311 4348	Device file collection and extraction
+T86	AttackPattern 4350 4389	Phishing attacks via preloaded overlays
+T87	AttackPattern 4399 4451	protection capabilities, such as emulation detection
+R24	uses Arg1:T22 Arg2:T41	
+R25	uses Arg1:T22 Arg2:T79	
+R26	uses Arg1:T22 Arg2:T80	
+R27	uses Arg1:T22 Arg2:T81	
+R28	uses Arg1:T22 Arg2:T82	
+R29	uses Arg1:T22 Arg2:T83	
+R30	uses Arg1:T22 Arg2:T84	
+T88	Time 4787 4791	2019
+T9	Application 4990 5010	Google Authenticator
+T90	Time 5089 5099	early 2020
+T91	Application 5328 5349	Calculadora de Moneda
+T10	Application 5459 5476	Google Play Store
+T92	Malware 6597 6602	Alien
+T93	Malware 13 18	Alien
+R37	targets Arg1:T93 Arg2:T1	
+T53	Malware 6684 6689	Alien
+T94	Malware 6739 6747	Cerberus
+R38	variantOf Arg1:T53 Arg2:T94	
+T43	AttackPattern 7098 7133	running its own TeamViewer instance
+T95	AttackPattern 7142 7195	displaying fake logins for more than 226 applications
+R39	uses Arg1:T36 Arg2:T43	
+R40	uses Arg1:T36 Arg2:T95	
+T96	Application 7220 7232	banking apps
+T97	Application 7238 7250	social media
+T99	Application 7276 7298	cryptocurrency wallets
+R41	targets Arg1:T36 Arg2:T96	
+R42	targets Arg1:T36 Arg2:T97	
+R44	targets Arg1:T36 Arg2:T99	
+T100	Application 8233 8255	Accessibility Services
+T50	MalwareType 475 478	RAT
+T57	MalwareType 1458 1461	RAT
+R2	isA Arg1:T67 Arg2:T57	
+T59	AttackPattern 2399 2427	Google Authenticator numbers
+T101	AttackPattern 2433 2485	any SMS necessary to perform a two-step verification
+R3	uses Arg1:T15 Arg2:T59	
+R45	uses Arg1:T15 Arg2:T101	
+T102	AttackPattern 3502 3546	removing itself from the applications in use
+R46	uses Arg1:T20 Arg2:T102	
+R31	uses Arg1:T22 Arg2:T85	
+R32	uses Arg1:T22 Arg2:T86	
+R33	uses Arg1:T22 Arg2:T87	
+T65	MalwareType 1974 1977	RAT
+R4	isA Arg1:T13 Arg2:T65	
+R5	uses Arg1:T22 Arg2:T42	
+T89	Application 3619 3629	TeamViewer
+R6	uses Arg1:T21 Arg2:T89	
+R7	discoveredIn Arg1:T25 Arg2:T88	
+T103	Malware 5101 5109	Cerberus
+R8	has Arg1:T103 Arg2:T26	
+T104	Application 7114 7124	TeamViewer
+R34	uses Arg1:T36 Arg2:T104	
+T98	MalwareType 514 517	RAT
+T105	MalwareType 696 699	RAT
+T106	MalwareType 7049 7052	RAT
+T107	Organization 8224 8230	Google
+R35	has Arg1:T107 Arg2:T100	
+T108	Application 3950 3971	Accessibility Service
+T109	Application 2399 2419	Google Authenticator
+T110	Application 3373 3386	Accessibility
+T111	Application 3672 3685	Accessibility
+T112	Application 3483 3495	Play Protect
+T113	Organization 4580 4585	banks

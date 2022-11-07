@@ -1,0 +1,108 @@
+RuMMS: The Latest Family of Android Malware Attacking Users in Russia Via SMS Phishing
+Introduction
+Recently we observed an Android malware family being used to attack users in Russia. The malware samples were mainly distributed through a series of malicious subdomains registered under a legitimate domain belonging to a well-known shared hosting service provider in Russia. Because all the URLs used in this campaign have the form of hxxp://yyyyyyyy[.]XXXX.ru/mms.apk (where XXXX.ru represents the hosting provider’s domain), we named this malware family RuMMS.
+
+To lure the victims to download the malware, threat actors use SMS phishing – sending a short SMS message containing a malicious URL to the potential victims. Unwary users who click the seemingly innocuous link will have their device infected with RuMMS malware. Figure 1 describes this infection process and the main behaviors of RuMMS.
+
+On April 3, 2016, we still observed new RuMMS samples emerging in the wild. The earliest identified sample, however, can be traced back to Jan. 18, 2016. Within this time period, we identified close to 300 samples belonging to this family (all sample hashes are listed in the Appendix).
+
+After landing on the victim’s phone, the RuMMS apps will request device administrator privileges, remove their icons to hide themselves from users, and remain running in the background to perform a series of malicious behaviors. So far we have identified the following behaviors:
+
+●      Sending device information to a remote command and control (C2) server.
+
+●      Contacting the C2 server for instructions.
+
+Sending SMS messages to financial institutions to query account balances.
+Uploading any incoming SMS messages (including the balance inquiry results) to the remote C2 server.
+Sending C2-specified SMS messages to phone numbers in the victim’s contacts.
+Forward incoming phone calls to intercept voice-based two-factor authentication.
+Each of these behaviors is under the control of the remote C2 server. In other words, the C2 server can specify the message contents to be sent, the time period in which to forward the voice call, and the recipients of outgoing messages. As part of our investigation into this malware, we emulated an infected Android device in order to communicate with the RuMMS C2 server. During one session, the C2 server commanded our emulated device to send four different SMS messages to four different phone numbers, all of which were associated with Russian financial institutions. At least three of the messages were intended to check a user’s account balance at the institution (we could not confirm the purpose of the fourth).Through additional research, we identified several forum posts where victims complained of funds (up to 600 rubles) were transferred out of their accounts after RuMMS infected their phones.
+
+We do not know exactly how many people have been infected with RuMMS malware. However, our data suggests that there have been at least 2,729 infections between January 2016 and early April 2016, with a peak in March of more than 1,100 infections.
+
+Smishing: The Major Way To Distribute RuMMS
+We have not observed any instances of RuMMS on Google Play or other online app stores. Smishing (SMS phishing) is currently the primary way threat actors are distributing the malware. The process starts when an SMS phishing message arrives at a user’s phone. An example SMS message is shown in Figure 1. The message translates roughly to“ You got a photo in MMS format: hxxp://yyyyyyyy.XXXX.ru/mms.apk.”
+
+So far we identified seven different URLs being used to spread RuMMS in the wild. All of the URLs reference the file “mms.apk” and all use the domain “XXXX.ru”, which belongs to a top five shared hosting platform in Russia (the domain itself has been obfuscated to anonymize the provider).
+
+The threat actors registered at least seven subdomains through the hosting provider, each consisting of eight random-looking characters (asdfgjcr, cacama18, cacamadf, konkonq2, mmsmtsh5, riveroer, and sdfkjhl2.) As of this writing, no files were hosted at any of the links. The threat actors seem to have abandoned these URLs and might be looking into other ways to reach more victims.
+
+Use of a shared hosting service to distribute malware is highly flexible and low cost for the threat actors. It is also much harder for network defenders or researchers to track a campaign where the infrastructure is a moving target. Many top providers in Russia offer cheap prices for their shared hosting services, and some even provide free 30-day trial periods. Threat actors can register subdomains through the hosting provider and use the provider’s services for a short-period campaign. A few days later they can cancel the trial and do not need to pay a penny. In addition, these out-of-the-box hosting services usually provide better infrastructure than the attackers could manage to construct (or compromise) themselves.
+
+RuMMS Code Analysis
+All RuMMS samples share the same behaviors, major parts of which are shown in Figure 1. However, the underlying code can be quite different in that various obfuscation mechanisms were adopted to evade detection by anti-virus tools. We used a sample app named “org.starsizew” with an MD5 of d8caad151e07025fdbf5f3c26e3ceaff to analyze RuMMS’s code.
+
+Several of the main components of RuMMS are shown in Figure 2. The activity class “org.starsizew.MainActivity” executes when the app is started. It first starts another activity defined in “org.starsizew.Aa” to request device administrator privileges, and then calls the following API of “android.content.pm.PackageManager” (the Android package manager to remove its own icon on the home screen in order to conceal the existence of RuMMS from the user:
+
+            setComponentEnabledSetting(MainActivity.class, 2, 1)
+
+At the same time, ”org.starsizew.MainActivity” will start the main service as defined in “org.starsizew.Tb”, and use a few mechanisms to keep the main service running continuously in the background. The class “org.starsizew.Ac” is designed for this purpose; its only task is to check if the main service is running, and restart the main service if the answer is no. The class “org.starsizew.Tb” also has a self-monitoring mechanism to restart itself when its own onDestroy API is triggered. Other than that, its major functionality is to collect private device information, upload it to a remote C2 server, and handle any commands as requested by the C2 server. All those functions are implemented in asynchronous tasks by “org.starsizew.i”.
+
+The class “org.starsizew.Ma” is registered to intercept incoming SMS messages, the arrival of which will trigger the Android system to call its “onReceive” API. Its major functionality is also implemented through the call of the asynchronous task (“org.starsizew.i”), including uploading the incoming SMS messages to the remote C2 server and executing any commands as instructed by the remote attacker.
+
+C2 Communication
+The C2 communication includes two parts: sending information to the remote HTTP server and parsing the server’s response to execute any commands as instructed by the remote attackers. The functionality for these two parts is implemented by doInBackground and onPostExecute respectively, two API methods of “android.os.AsyncTask” as extended by class “org.starsizew.i”.
+
+As seen from the major code body of method doInBackground shown in Figure 3 (some of the original classes and methods are renamed for easier understanding), there are three calls to HttpPost with different contents as parameters. At line 5, local variable v4 specifies the first parameter url, which can be changed by the remote C2 server later. These URLs are all in the form of “http://$C2.$SERVER.$IP/api/?id=$NUM”. The second parameter is a constant string “POST”, and the third parameter is a series of key-value pairs to be sent, assembled at runtime. The value of the first item, whose key is “method” (line 7), indicates the type of the contents: install, info and sms.
+
+The first type of content, starting with “method=install”, will be sent when the app is started for the first time, including the following device private information:
+
+Victim identifier
+Network operator
+Device model
+Device OS version
+Phone number
+Device identifier
+App version
+Country
+Figure 4 is an example of this string as seen by the FireEye Mobile Threat Prevention platform.
+
+The second type of information will be sent periodically to indicate that the device is alive. It only has two parts, the method indicated by word “info” and the victim identifier. The third type of information will be sent when RuMMS intercepts any SMS messages, including the balance inquiry results when it contacts the SMS code of a particular financial service.
+
+Method onPostExecute parses the response from the above HTTP session and executes the commands provided by the remote attacker. As seen from the code in Figure 5, the commands RuMMS supports right now include:
+
+install_true: to modify app preference to indicate that the C2 server received the victim device’s status.
+sms_send: to send C2-specified SMS messages to C2-specified recipients.
+sms_grab: to upload periodically the SMS messages in the inbox to C2 server.
+delivery: to deliver specified text to all victim’s contacts (SMS worming).
+call_number: to forward phone calls to intercept voice based two-factor authentication.
+new_url: to change the URL of the C2 server in the app preference.
+ussd: to call a C2-specified phone number.
+Figure 6 shows an example response sent back from one C2 server. Note that inside this single response, there is one “install_true” command, one “sms_grab” command and four “sms_send” commands. With the four “sms_send” commands, the messages as specified in the key “text” will be sent immediately to the specified short numbers. Our analysis suggests that the four short numbers are associated with Russian financial institutions, presumably where a victim would be likely to have accounts.
+
+In particular, short number “+7494” is associated with a payment service provider in Russia. The provider’s website described how the code 7494 can be used to provide a series of payment-related capabilities. For example, sending text “Balance” will trigger a response with the victim’s wallet balance. Sending text “confirm 1” will include proof of payment. Sending text “call on” will activate the USSD payment confirmation service.
+
+During our investigation, we observed the C2 server sending multiple “balance” commands to different institutions, presumably to query the victim’s financial account balances. RuMMS can upload responses to the balance inquiries (received via SMS message) to the remote C2 server, which can send back additional commands to be sent from the victim to the provider’s payment service. These could include resetting the user’s PIN, enabling or disabling various alerts and confirmations, and confirming the user’s identity.
+
+RuMMS Samples, C2, Hosting Sites, Infections and Timeline
+In total we captured 297 RuMMS samples, all of which attempt to contact an initial C2 server that we extracted from the app package. Figure 7 lists the IP addresses of these C2 servers, the number of RuMMS apps that connect to each of them, and the example URL used as the first parameter of the HttpPost operation (used in the code of Figure 3). This indicates that multiple C2 servers were used in this campaign, but one (37.1.207.31) was the most heavily used.
+
+Figure 8 shows how these samples, C2 servers and hosting websites are related to each other, including when they were compiled or observed. In the quadrant, the smaller boxes in blue-gray represent particular apps in the RuMMS family, while the bigger boxes in deep-blue represent C2 servers used by some RuMMS apps. The dotted arrows represent the use of a particular C2 server by a specific app to send information and fetch instructions. In this figure we have 11 RuMMS samples, all of which were hosted on the website as shown in the “y” axis. The dates on the “x” axis show the dates when we first saw these apps in the wild. This figure demonstrates the following interesting information:
+
+The time range when threat actors distributed RuMMS on those shared-hosting websites is from January 2016 to March 2016.
+
+Threat actors used different websites to host different payloads at different times. This kind of “moving target” behavior made it harder to track their actions.
+The same websites have hosted different RuMMS samples at different dates.
+C2 servers are shared by multiple samples. This matches our observations of C2 servers as shown in Figure 7.
+
+
+Figure 8. RuMMS samples, hosting sites, C2 servers from Jan. 2016 to Mar. 2016
+
+We do not know exactly how many people have been infected with RuMMS malware; however, our data suggests that there are at least 2,729 infections with RuMMS samples from January 2016 to early April 2016.
+
+Figure 9 shows the number of RuMMS infections recorded in the last four months. When we first observed the malware in January, we recorded 380 infections. In February, we recorded 767 infections. In March, it peaked at 1,169 infections. In April, at the time of writing this post, we recorded 413 RuMMS infections. Although the propagation trend seems to be slowing down a bit, the figure tells us that RuMMS malware is still alive in the wild. We continue to monitor its progress.
+
+
+
+ 
+
+Figure 9. RuMMS infections from Jan. 2016 to Apr. 15, 2016
+
+Conclusion
+Smishing (SMS phishing) offers a unique vector to infect mobile users. The recent RuMMS campaign shows that Smishing is still a popular means for threat actors to distribute their malware. In addition, the use of shared-hosting providers adds flexibility to the threat actor’s campaign and makes it harder for defending parties to track these moving targets.
+
+Fortunately, FireEye Mobile Threat Prevention platform can recognize the malicious SMS and networking behaviors used by these RuMMS samples, and help us quickly identify the threat. To protect yourself from these threats, FireEye suggests that users:
+
+Take caution before clicking any links where you are not sure about the origin.
+Don’t install apps outside the official app store.
+To detect and defend against such attacks, we advise our customers to deploy our mobile security solution, FireEye MTP/MSM. This helps our clients gain visibility into threats in their user base, and also enables them to proactively hunt down devices that have been compromised. In addition, we advise our customers with NX appliances to ensure that Wi-Fi traffic is scanned by NX appliances to extend coverage to mobile devices.

@@ -1,0 +1,14 @@
+New Malware campaign ViceLeaker targeting Android Devices: Researchers
+Security researchers revealed an ongoing Android malware campaign dubbed ViceLeaker that has been active since 2016. According to the researchers from Kaspersky, a hacker group has been found targeting Israel citizens and other Middle East countries with surveillance malware named Triout.
+
+The malware is designed to steal sensitive information, including call recordings, text messages, photos, videos, and location data without users’ knowledge. Apart from spying features, the malware also has backdoor capabilities, including upload, download, delete files, record surrounding audio, takeover camera, and make calls or send messages to specific numbers, according to the researchers.
+
+The researchers said that attackers used Smali injection technique, that allows hackers to disassemble the code of an original application and add malicious code.
+
+“In May 2018, we discovered a campaign targeting dozens of mobile Android devices belonging to Israeli citizens. Kaspersky spyware sensors caught the signal of an attack from the device of one of the victims; and a hash of the APK involved (Android application) was tagged in our sample feed for inspection. Once we investigated the file, we quickly found out that the inner workings of the APK included a malicious payload, embedded in the original code of the application. This was an original spyware program, designed to exfiltrate almost all accessible information,” Kaspersky said in a statement.
+
+A similar research from Kaspersky revealed that the number of Distributed Denial of Service (DDoS) attacks increased by 84 percent in the first quarter of 2019 compared to Q4 of 2018. In its research report dubbed DDoS Attacks in Q1 2019, Kaspersky stated that cybercriminals are once again turning to DDoS attacks after a sustained time period.
+
+The Moscow-based cybersecurity firm also revealed that it discovered a considerable growth in the number of attacks that lasted more than an hour. According to the research findings, China reported the highest number of DDoS attacks (67%) while the U.S. reported the second largest attacks (17.17%) and Hong Kong stood third (4.81%).
+
+Earlier, Kaspersky uncovered AppleJeus, a malicious operation by North Korea’s cyber-hacking outfit ‘Lazarus Group’ to intrude on cryptocurrency exchanges and applications. According to an official report, Kaspersky Lab’s Global Research and Analysis Team (GReAT) discovered the unusual activity of attackers who penetrated the network of an Asia-based cryptocurrency exchange using Trojanized trading software to steal cryptocurrencies. Vitaly Kamlut, the head of GReAT, stated that the cryptocurrency exchange did not encounter any financial losses during the incident.

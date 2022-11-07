@@ -1,0 +1,68 @@
+T1	OS 635 642	Android
+T2	OS 647 650	iOS
+T3	Malware 19 26	Pegasus
+T4	Malware 414 421	Pegasus
+T5	Malware 760 767	Pegasus
+T6	Malware 1098 1105	Pegasus
+T7	Malware 1445 1452	Pegasus
+T8	Malware 1865 1872	Pegasus
+T9	Malware 2136 2143	Pegasus
+T10	Malware 2575 2582	Pegasus
+T11	Malware 3105 3112	Pegasus
+T12	Malware 3490 3497	Pegasus
+T15	Malware 426 433	Trident
+T16	ThreatActor 479 488	NSO Group
+T17	ThreatActor 2423 2432	NSO Group
+T18	ThreatActor 3380 3389	NSO Group
+T19	ThreatActor 3472 3481	NSO Group
+T21	Hardware 715 721	iPhone
+T22	Organization 1359 1370	Citizen Lab
+T23	Organization 1627 1638	Citizen Lab
+T24	Organization 1900 1911	Citizen Lab
+T25	Organization 2354 2365	Citizen Lab
+T26	Organization 2907 2918	Citizen Lab
+T27	Organization 3159 3170	Citizen Lab
+T32	ThreatActor 3214 3217	NSO
+*	hasAlias T4 T15
+T29	Location 451 458	Israeli
+R1	has Arg1:T16 Arg2:T29	
+R2	hasAuthor Arg1:T4 Arg2:T16	
+T33	Time 584 598	summer of 2016
+R3	discoveredIn Arg1:T4 Arg2:T33	
+R4	targets Arg1:T4 Arg2:T1	
+R5	targets Arg1:T4 Arg2:T2	
+R6	targets Arg1:T4 Arg2:T21	
+T30	AttackPattern 823 843	record conversations
+T34	AttackPattern 845 867	steal private messages
+T35	AttackPattern 869 886	exfiltrate photos
+R7	uses Arg1:T5 Arg2:T30	
+R8	uses Arg1:T5 Arg2:T34	
+R9	uses Arg1:T5 Arg2:T35	
+T39	Organization 966 977	Citizen Lab
+T28	Organization 999 1028	Munk School of Global Affairs
+T40	Organization 1036 1057	University of Toronto
+T41	Location 1059 1065	Canada
+R10	has Arg1:T40 Arg2:T28	
+R11	has Arg1:T40 Arg2:T41	
+R12	has Arg1:T28 Arg2:T39	
+T42	Location 1516 1518	US
+T43	Location 1520 1526	France
+T44	Location 1528 1534	Canada
+T45	Location 1536 1547	Switzerland
+T46	Location 1557 1559	UK
+R13	targets Arg1:T7 Arg2:T42	
+R14	targets Arg1:T7 Arg2:T46	
+R15	targets Arg1:T7 Arg2:T45	
+R16	targets Arg1:T7 Arg2:T44	
+R17	targets Arg1:T7 Arg2:T43	
+R18	hasAuthor Arg1:T10 Arg2:T17	
+T31	ThreatActor 2963 2972	NSO Group
+R19	hasAuthor Arg1:T12 Arg2:T19	
+R20	hasAuthor Arg1:T12 Arg2:T18	
+T13	Organization 2648 2659	Citizen Lab
+R21	hasAuthor Arg1:T11 Arg2:T31	
+T47	MalwareType 27 34	spyware
+T48	MalwareType 782 789	spyware
+T49	MalwareType 1163 1170	spyware
+T50	MalwareType 1453 1460	spyware
+T51	MalwareType 3498 3505	spyware

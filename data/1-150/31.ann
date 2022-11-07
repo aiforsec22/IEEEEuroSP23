@@ -1,0 +1,313 @@
+T1	Application 21 33	Android Apps
+T4	OS 1444 1451	Android
+T5	OS 2621 2628	Android
+T7	OS 5254 5261	Android
+T10	OS 2119 2122	iOS
+T11	OS 3517 3520	iOS
+T12	OS 3587 3590	iOS
+T14	OS 4224 4234	iOS 12.1.1
+T15	OS 4239 4247	iOS 12.2
+T17	OS 4493 4501	iOS 12.2
+T18	OS 4514 4524	iOS 12.1.1
+T19	OS 5308 5311	iOS
+T20	OS 6899 6902	iOS
+T21	OS 7929 7932	iOS
+T22	OS 8015 8018	iOS
+T23	Malware 39 46	FakeSpy
+T24	Malware 5768 5775	FakeSpy
+T25	Malware 6417 6424	FakeSpy
+T26	Malware 6690 6697	FakeSpy
+T27	Malware 6835 6842	FakeSpy
+T29	Malware 7573 7580	FakeSpy
+T30	Malware 7639 7646	FakeSpy
+T31	Malware 0 7	XLoader
+T32	Malware 75 82	XLoader
+T33	Malware 288 295	XLoader
+T35	Malware 1229 1236	XLoader
+T36	Malware 2425 2432	XLoader
+T37	Version 2704 2707	6.0
+T38	Malware 4965 4972	XLoader
+T39	Malware 5102 5109	XLoader
+T40	Version 5521 5532	version 7.0
+T41	Malware 5716 5723	XLoader
+T42	Malware 5811 5818	XLoader
+T43	Version 6061 6064	6.0
+T44	Version 6297 6300	6.0
+T45	Version 6665 6668	6.0
+T46	Malware 7110 7117	XLoader
+T47	Malware 7627 7634	XLoader
+T48	Malware 7762 7769	XLoader
+T49	Indicator 8319 8383	332e68d865009d627343b89a5744843e3fde4ae870193f36b82980363439a425
+T50	Indicator 8413 8477	403401aa71df1830d294b78de0e5e867ee3738568369c48ffafe1b15f3145588
+T51	Indicator 8500 8564	466dafa82a4460dcad722d2ad9b8ca332e9a896fc59f06e16ebe981ad3838a6b
+T52	Indicator 8588 8652	5022495104c280286e65184e3164f3f248356d065ad76acef48ee2ce244ffdc8
+T53	Indicator 8682 8746	a0f3df39d20c4eaa410a61a527507dbc6b17c7f974f76e13181e98225bda0511
+T54	Indicator 8767 8831	cb412b9a26c1e51ece7a0e6f98f085e1c27aa0251172bf0a361eb5d1165307f7
+T55	Application 8578 8586	Facebook
+T56	Application 102 108	Chrome
+T57	Organization 194 205	Trend Micro
+T60	Organization 1891 1896	Apple
+T61	Organization 2288 2293	Apple
+T62	Organization 2633 2638	Apple
+T63	Organization 3547 3552	Apple
+T65	Organization 7976 7981	Apple
+T66	Organization 8043 8048	Apple
+T68	Application 3081 3088	Twitter
+T69	Application 5452 5459	Twitter
+T70	Application 6807 6814	Twitter
+T71	Application 9665 9672	Twitter
+T72	Indicator 5043 5054	porn kr sex
+T73	Application 5164 5171	twitter
+T74	Application 5420 5429	Instagram
+T76	Application 10024 10033	Instagram
+T77	Application 5434 5440	Tumblr
+T79	Application 10105 10111	Tumblr
+T81	Indicator 9684 9714	https://twitter.com/lucky88755
+T82	Indicator 9123 9146	hxxp://mailsa-qau[.]com
+T83	Indicator 9716 9746	https://twitter.com/lucky98745
+T90	Indicator 10433 10459	61[.]230[.]205[.]132:28833
+T91	Indicator 9574 9599	hxxp://www[.]923525[.]com
+T92	Indicator 9781 9813	https://twitter.com/luckyone1232
+T93	Indicator 9148 9171	hxxp://mailsa-qaw[.]com
+T94	Indicator 9173 9196	hxxp://mailsa-wqe[.]com
+T95	Indicator 8920 8957	hxxp://apple-icloud[.]qwe-japan[.]com
+T96	Indicator 10192 10222	https://globalanab.tumblr.com/
+T97	Indicator 9248 9271	hxxp://mailsa-wqq[.]com
+T98	Indicator 9494 9518	hxxp://sagawa-reg[.]com/
+T99	Indicator 9628 9653	hxxp://www[.]975685[.]com
+T100	Indicator 1993 2031	(hxxp://apple-icloud[.]qwq-japan[.]com
+T101	Indicator 604 628	AndroidOS_XLoader.HRXD),
+T102	Indicator 10123 10156	https://mainsheetgyam.tumblr.com/
+T103	Indicator 9223 9246	hxxp://mailsa-wqp[.]com
+T104	Indicator 10322 10347	61[.]230[.]204[.]87:28855
+T108	Indicator 9884 9913	https://twitter.com/fdgoer343
+T109	Indicator 10489 10515	61[.]230[.]205[.]132:28855
+T110	Indicator 9198 9221	hxxp://mailsa-wqo[.]com
+T111	Indicator 9748 9779	https://twitter.com/lucky876543
+T112	Indicator 10240 10266	104[.]160[.]191[.]190:8822
+T113	Indicator 9848 9882	https://twitter.com/gyugyu87418490
+T114	Indicator 10158 10190	https://hormonaljgrj.tumblr.com/
+T115	Indicator 8999 9037	hxxp://apple-icloud[.]zqo-japan[.]com/
+T116	Indicator 9520 9545	hxxp://www[.]711231[.]com
+T117	Indicator 9298 9321	hxxp://mailsa-wqw[.]com
+T118	Indicator 9410 9436	hxxp://nttdocomo-qar[.]com
+T121	Indicator 9601 9626	hxxp://www[.]923915[.]com
+T122	Indicator 10461 10487	61[.]230[.]205[.]132:28844
+T123	Indicator 9039 9071	hxxp://files.spamo[.]jp/佐川急便.apk
+T124	Indicator 9438 9464	hxxp://nttdocomo-qat[.]com
+T125	Indicator 9323 9349	hxxp://nttdocomo-qae[.]com
+T126	Indicator 8565 8577	com.dhp.ozqh
+T128	Indicator 8478 8493	ufD.wyjyx.vahvh
+T129	Indicator 8653 8668	ufD.wyjyx.vahvh
+T130	Indicator 10295 10320	61[.]230[.]204[.]87:28844
+T132	Indicator 8832 8862	jp.co.sagawa.SagawaOfficialApp
+T133	Indicator 9273 9296	hxxp://mailsa-wqu[.]com
+T135	Indicator 9915 9946	https://twitter.com/sdfghuio342
+T136	Indicator 10377 10403	61[.]230[.]205[.]122:28844
+T137	Indicator 10044 10093	https://www.instagram.com/freedomguidepeople1830/
+T138	Indicator 9379 9408	hxxp://nttdocomo-qaq[.]com/aa
+T139	Indicator 8959 8997	hxxp://apple-icloud[.]qwq-japan[.]com/
+T140	Indicator 9466 9492	hxxp://nttdocomo-qaw[.]com
+T141	Indicator 2035 2073	hxxp://apple-icloud[.]zqo-japan[.]com)
+T142	Indicator 9547 9572	hxxp://www[.]759383[.]com
+T143	Indicator 8747 8760	com.aqyh.xolo
+T144	Indicator 9098 9121	hxxp://mailsa-qaf[.]com
+T145	Indicator 8886 8918	hxxp://38[.]27[.]99[.]11/xvideo/
+T146	Indicator 10349 10375	61[.]230[.]205[.]122:28833
+T147	Indicator 9073 9096	hxxp://mailsa-qae[.]com
+T148	Indicator 8384 8399	ufD.wykyx.vlhvh
+T149	Indicator 9983 10012	https://twitter.com/ukenivor3
+T150	Indicator 10405 10431	61[.]230[.]205[.]122:28855
+T151	Indicator 9351 9377	hxxp://nttdocomo-qaq[.]com
+T152	Indicator 9815 9846	https://twitter.com/sadwqewqeqw
+T153	Indicator 10268 10293	61[.]230[.]204[.]87:28833
+T154	Indicator 9948 9981	https://twitter.com/asdqweqweqeqw
+T155	Indicator 5180 5212	(https://twitter.com/fdgoer343).
+R1	indicates Arg1:T49 Arg2:T48
+R2	indicates Arg1:T50 Arg2:T48
+R3	indicates Arg1:T51 Arg2:T48
+R4	indicates Arg1:T52 Arg2:T48
+R5	indicates Arg1:T53 Arg2:T48
+R6	indicates Arg1:T54 Arg2:T48
+R8	indicates Arg1:T81 Arg2:T48
+R9	indicates Arg1:T82 Arg2:T48
+R10	indicates Arg1:T83 Arg2:T48
+R17	indicates Arg1:T90 Arg2:T48
+R18	indicates Arg1:T91 Arg2:T48
+R19	indicates Arg1:T92 Arg2:T48
+R20	indicates Arg1:T93 Arg2:T48
+R21	indicates Arg1:T94 Arg2:T48
+R22	indicates Arg1:T95 Arg2:T48
+R23	indicates Arg1:T96 Arg2:T48
+R24	indicates Arg1:T97 Arg2:T48
+R25	indicates Arg1:T98 Arg2:T48
+R26	indicates Arg1:T99 Arg2:T48
+R27	indicates Arg1:T100 Arg2:T35
+R29	indicates Arg1:T102 Arg2:T48
+R30	indicates Arg1:T103 Arg2:T48
+R31	indicates Arg1:T104 Arg2:T48
+R33	indicates Arg1:T108 Arg2:T48
+R34	indicates Arg1:T109 Arg2:T48
+R35	indicates Arg1:T110 Arg2:T48
+R36	indicates Arg1:T111 Arg2:T48
+R37	indicates Arg1:T112 Arg2:T48
+R38	indicates Arg1:T113 Arg2:T48
+R39	indicates Arg1:T114 Arg2:T48
+R40	indicates Arg1:T115 Arg2:T48
+R41	indicates Arg1:T116 Arg2:T48
+R42	indicates Arg1:T117 Arg2:T48
+R43	indicates Arg1:T118 Arg2:T48
+R46	indicates Arg1:T121 Arg2:T48
+R47	indicates Arg1:T122 Arg2:T48
+R48	indicates Arg1:T123 Arg2:T48
+R49	indicates Arg1:T124 Arg2:T48
+R50	indicates Arg1:T125 Arg2:T48
+R51	indicates Arg1:T126 Arg2:T48
+R53	indicates Arg1:T128 Arg2:T48
+R54	indicates Arg1:T129 Arg2:T48
+R55	indicates Arg1:T130 Arg2:T48
+R57	indicates Arg1:T132 Arg2:T48
+R58	indicates Arg1:T133 Arg2:T48
+R60	indicates Arg1:T135 Arg2:T48
+R61	indicates Arg1:T136 Arg2:T48
+R62	indicates Arg1:T137 Arg2:T48
+R63	indicates Arg1:T138 Arg2:T48
+R64	indicates Arg1:T139 Arg2:T48
+R65	indicates Arg1:T140 Arg2:T48
+R66	indicates Arg1:T141 Arg2:T35
+R67	indicates Arg1:T142 Arg2:T48
+R68	indicates Arg1:T143 Arg2:T48
+R69	indicates Arg1:T144 Arg2:T48
+R70	indicates Arg1:T145 Arg2:T48
+R71	indicates Arg1:T146 Arg2:T48
+R72	indicates Arg1:T147 Arg2:T48
+R73	indicates Arg1:T148 Arg2:T48
+R74	indicates Arg1:T149 Arg2:T48
+R75	indicates Arg1:T150 Arg2:T48
+R76	indicates Arg1:T151 Arg2:T48
+R77	indicates Arg1:T152 Arg2:T48
+R78	indicates Arg1:T153 Arg2:T48
+R79	indicates Arg1:T154 Arg2:T48
+R80	indicates Arg1:T155 Arg2:T39
+R81	uses Arg1:T31 Arg2:T1	
+T106	Application 92 100	Facebook
+R83	targets Arg1:T32 Arg2:T106	
+R84	targets Arg1:T32 Arg2:T56	
+T2	AttackPattern 304 327	poses as a security app
+T8	AttackPattern 353 407	uses a malicious iOS profile to affect iPhone and iPad
+R85	uses Arg1:T33 Arg2:T2	
+R86	uses Arg1:T33 Arg2:T8	
+T34	Version 579 590	version 6.0
+T59	AttackPattern 891 965	trick users into downloading the fake security Android application package
+R87	uses Arg1:T34 Arg2:T59	
+T84	AttackPattern 1259 1285	mine cryptocurrency on PCs
+T107	AttackPattern 1290 1329	perform account phishing on iOS devices
+R90	uses Arg1:T35 Arg2:T107	
+T9	AttackPattern 2708 2772	abuses social media user profiles to hide its real C&C addresses
+R91	uses Arg1:T37 Arg2:T9	
+T85	Application 2838 2845	Twitter
+R92	uses Arg1:T37 Arg2:T85	
+T67	Version 3146 3157	Version 6.0
+T86	AttackPattern 3208 3311	collects unique identifiers of mobile devices such as IMSI, ICCID, Android ID, and device serial number
+R13	uses Arg1:T67 Arg2:T86	
+T6	Malware 3393 3400	XLoader
+R94	targets Arg1:T6 Arg2:T11	
+T131	Version 3869 3891	versions 11.0 and 11.4
+T64	AttackPattern 4981 5008	posing as a pornography app
+R96	uses Arg1:T38 Arg2:T64	
+T105	Location 5018 5030	South Korean
+R98	indicates Arg1:T72 Arg2:T38	
+R99	targets Arg1:T38 Arg2:T7	
+R100	indicates Arg1:T72 Arg2:T39	
+T75	AttackPattern 5611 5669	load the payload and hide in Instagram and Tumblr profiles
+R103	uses Arg1:T40 Arg2:T75	
+T78	Time 5825 5829	2018
+T119	Time 5962 5974	January 2015
+T120	Malware 6027 6034	FakeSpy
+T87	Malware 6186 6193	FakeSpy
+T127	Malware 6305 6312	FakeSpy
+T157	AttackPattern 6327 6399	cloned a different legitimate Japanese website to host its malicious app
+R105	uses Arg1:T44 Arg2:T157	
+R106	uses Arg1:T25 Arg2:T157	
+T89	AttackPattern 6698 6723	hides its real C&C server
+R16	uses Arg1:T26 Arg2:T89	
+R107	uses Arg1:T45 Arg2:T89	
+R108	uses Arg1:T27 Arg2:T70	
+R109	targets Arg1:T45 Arg2:T70	
+R112	targets Arg1:T45 Arg2:T20	
+T28	Application 8400 8411	SEX kr porn
+R82	targets Arg1:T48 Arg2:T28	
+R113	targets Arg1:T48 Arg2:T76	
+R114	targets Arg1:T48 Arg2:T55	
+R115	targets Arg1:T48 Arg2:T71	
+R116	targets Arg1:T48 Arg2:T79	
+R117	uses Arg1:T31 Arg2:T23	
+T159	OS 332 339	Android
+T160	Application 315 327	security app
+R118	uses Arg1:T33 Arg2:T160	
+R119	targets Arg1:T33 Arg2:T159	
+T161	OS 370 373	iOS
+T162	Hardware 392 398	iPhone
+T163	Hardware 403 407	iPad
+R120	targets Arg1:T33 Arg2:T161	
+R121	targets Arg1:T33 Arg2:T162	
+R122	targets Arg1:T33 Arg2:T163	
+T164	Application 831 871	Japanese mobile phone operator’s website
+R123	targets Arg1:T34 Arg2:T164	
+T165	Application 924 965	fake security Android application package
+R124	uses Arg1:T34 Arg2:T165	
+T166	Hardware 1318 1329	iOS devices
+R125	targets Arg1:T35 Arg2:T166	
+T167	Application 2928 2935	Twitter
+R126	uses Arg1:T37 Arg2:T167	
+T168	Application 4993 5008	pornography app
+R127	uses Arg1:T38 Arg2:T168	
+R128	variantOf Arg1:T38 Arg2:T6	
+T169	AttackPattern 5384 5483	exploits the social media platforms Instagram and Tumblr instead of Twitter to hide its C&C address
+R101	uses Arg1:T40 Arg2:T74	
+R102	uses Arg1:T40 Arg2:T77	
+R129	uses Arg1:T40 Arg2:T69	
+R130	uses Arg1:T40 Arg2:T169	
+T170	Application 5640 5649	Instagram
+T171	Application 5654 5660	Tumblr
+R131	uses Arg1:T40 Arg2:T170	
+R132	uses Arg1:T40 Arg2:T171	
+R133	discoveredIn Arg1:T42 Arg2:T78	
+T172	Application 6357 6373	Japanese website
+R134	uses Arg1:T25 Arg2:T172	
+R135	uses Arg1:T44 Arg2:T172	
+T173	AttackPattern 6798 6823	uses the Twitter platform
+R136	uses Arg1:T27 Arg2:T173	
+R137	uses Arg1:T45 Arg2:T173	
+R88	uses Arg1:T35 Arg2:T84	
+R11	targets Arg1:T38 Arg2:T105	
+R12	has Arg1:T39 Arg2:T40	
+T3	Malware 571 578	XLoader
+R7	has Arg1:T3 Arg2:T34	
+R44	indicates Arg1:T101 Arg2:T34	
+T13	Malware 2696 2703	XLoader
+R28	has Arg1:T13 Arg2:T37	
+R52	has Arg1:T13 Arg2:T67	
+R45	uses Arg1:T39 Arg2:T74	
+R56	uses Arg1:T39 Arg2:T77	
+T16	Malware 5513 5520	XLoader
+R59	has Arg1:T16 Arg2:T40	
+T58	Malware 6053 6060	XLoader
+R14	has Arg1:T58 Arg2:T43	
+T80	Malware 6289 6296	XLoader
+R15	has Arg1:T80 Arg2:T44	
+T88	Malware 6657 6664	XLoader
+R32	has Arg1:T88 Arg2:T45	
+T134	Application 8669 8680	Anshin Scan
+T156	Application 8761 8765	佐川急便
+T158	Application 8863 8867	佐川急便
+T174	Application 2715 2727	social media
+T175	Application 2816 2828	social media
+T176	Application 5397 5409	social media
+T177	Application 6767 6779	social media
+T178	Malware 7004 7011	FakeSpy
+T179	OS 3275 3282	Android
+T180	OS 4739 4744	Apple
+T181	OS 3860 3863	iOS
+T182	OS 4014 4017	iOS
+T183	OS 4312 4315	iOS

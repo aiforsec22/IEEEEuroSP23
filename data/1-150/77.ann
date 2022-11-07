@@ -1,0 +1,160 @@
+T1	OS 8 15	Android
+T2	OS 127 134	Android
+T3	OS 174 181	Android
+T6	OS 2033 2040	Android
+T7	OS 3666 3673	Android
+T8	OS 4215 4222	Android
+T9	OS 4448 4455	Android
+T10	Application 1997 2003	Google
+T11	Malware 0 7	FakeSpy
+T12	Malware 150 157	FakeSpy
+T13	Malware 273 280	FakeSpy
+T14	Malware 895 902	FakeSpy
+T15	Malware 2471 2478	FakeSpy
+T16	Malware 3075 3082	FakeSpy
+T17	Malware 3481 3488	FakeSpy
+T18	Malware 3899 3906	FakeSpy
+T19	Malware 4718 4725	FakeSpy
+T20	Malware 5003 5010	FakeSpy
+T21	ThreatActor 92 106	Roaming Mantis
+T22	ThreatActor 3642 3656	Roaming Mantis
+T25	Application 1413 1448	United States Postal Service (USPS)
+T26	Application 2007 2013	Chrome
+T27	Malware 2151 2158	Fakespy
+T28	Application 2190 2203	Chungwha Post
+T30	Application 3612 3622	Japan Post
+T31	Application 3689 3696	WebView
+T32	Person 3053 3060	Almkias
+T33	Person 3774 3781	Almkias
+T34	Location 632 646	United Kingdom
+T39	Indicator 2895 2904	libmsy.so
+T40	Indicator 2937 2947	mycode.jar
+T29	AttackPattern 24 56	Spread Via ‘Postal-Service’ Apps
+R1	uses Arg1:T11 Arg2:T29	
+R2	targets Arg1:T11 Arg2:T1	
+R3	hasAuthor Arg1:T12 Arg2:T21	
+R4	targets Arg1:T12 Arg2:T2	
+R5	targets Arg1:T13 Arg2:T3	
+T35	AttackPattern 368 412	steals SMS messages, financial data and more
+R6	uses Arg1:T13 Arg2:T35	
+T41	AttackPattern 316 366	disguised as legitimate global postal-service apps
+R7	uses Arg1:T13 Arg2:T41	
+T42	Location 505 517	South Korean
+T43	Location 522 530	Japanese
+R8	targets Arg1:T13 Arg2:T42	
+R9	targets Arg1:T13 Arg2:T43	
+T44	Location 583 588	China
+T45	Location 590 596	Taiwan
+T46	Location 598 604	France
+T47	Location 606 617	Switzerland
+T48	Location 619 626	Germany
+T49	Location 655 668	United States
+R10	targets Arg1:T13 Arg2:T44	
+R11	targets Arg1:T13 Arg2:T45	
+R12	targets Arg1:T13 Arg2:T46	
+R13	targets Arg1:T13 Arg2:T47	
+R14	targets Arg1:T13 Arg2:T48	
+R15	targets Arg1:T13 Arg2:T34	
+R16	targets Arg1:T13 Arg2:T49	
+T50	AttackPattern 683 732	uses text messages as an initial infection vector
+R17	uses Arg1:T13 Arg2:T50	
+T4	OS 748 755	Android
+R18	targets Arg1:T13 Arg2:T4	
+T37	AttackPattern 918 981	alert from the postal service local to the region of the victim
+R19	uses Arg1:T14 Arg2:T37	
+T5	Person 1257 1269	Ofir Almkias
+T23	Organization 1291 1301	Cybereason
+T51	AttackPattern 1151 1212	prompts them to download an Android application package (APK)
+R20	uses Arg1:T14 Arg2:T51	
+T24	AttackPattern 1315 1400	downloads an app that appears to be from the local region’s legitimate postal service
+R21	uses Arg1:T14 Arg2:T24	
+R22	targets Arg1:T14 Arg2:T25	
+T52	Malware 1471 1478	FakeSpy
+T53	MalwareType 1483 1494	infostealer
+R23	isA Arg1:T52 Arg2:T53	
+T54	AttackPattern 1500 1546	requests permissions to take over SMS messages
+T55	AttackPattern 1551 1582	steal sensitive data on devices
+R24	uses Arg1:T52 Arg2:T54	
+R25	uses Arg1:T52 Arg2:T55	
+T56	Time 1627 1631	2017
+R26	discoveredIn Arg1:T52 Arg2:T56	
+T57	AttackPattern 1642 1711	access and use a target device’s contact list to infect other devices
+R27	uses Arg1:T52 Arg2:T57	
+T58	Location 1741 1748	Chinese
+T59	ThreatActor 1774 1788	Roaming Mantis
+R29	hasAuthor Arg1:T52 Arg2:T59	
+T60	ThreatActor 1877 1891	Roaming Mantis
+T61	AttackPattern 1814 1859	Disguising malware as a legitimate mobile app
+R30	uses Arg1:T60 Arg2:T61	
+T62	Time 2120 2130	April 2020
+R31	targets Arg1:T27 Arg2:T28	
+T36	AttackPattern 2545 2587	read, write, send and receive SMS messages
+T63	AttackPattern 2589 2633	open network sockets and access the internet
+T64	AttackPattern 2635 2660	write to external storage
+T65	AttackPattern 2662 2688	read from internal storage
+T66	AttackPattern 2694 2760	access information about networks to which the device is connected
+R32	uses Arg1:T15 Arg2:T36	
+R33	uses Arg1:T15 Arg2:T63	
+R34	uses Arg1:T15 Arg2:T64	
+R35	uses Arg1:T15 Arg2:T65	
+R36	uses Arg1:T15 Arg2:T66	
+T67	AttackPattern 2847 2885	downloading a set of dynamic libraries
+T68	AttackPattern 2956 3012	load various insidious information-stealing capabilities
+T69	Malware 3018 3025	FakeSpy
+R39	uses Arg1:T69 Arg2:T68	
+R37	uses Arg1:T69 Arg2:T67	
+R38	indicates Arg1:T39 Arg2:T69	
+R40	indicates Arg1:T40 Arg2:T69	
+T70	AttackPattern 3104 3213	steals all contacts in the device’s contact list and their information, as well as the infected device’s data
+R41	uses Arg1:T16 Arg2:T70	
+T71	AttackPattern 3338 3420	asks to be the device’s default SMS app so the malware can spread to other devices
+R42	uses Arg1:T16 Arg2:T71	
+T72	Application 3522 3526	USPS
+T73	Application 3528 3541	Chungwha Post
+T74	Application 3547 3565	British Royal Mail
+T75	Application 3571 3591	German Deutsche Post
+T76	Application 3593 3610	France’s La Poste
+T77	Application 3627 3637	Swiss Post
+R43	targets Arg1:T17 Arg2:T72	
+R44	targets Arg1:T17 Arg2:T73	
+R45	targets Arg1:T17 Arg2:T74	
+R46	targets Arg1:T17 Arg2:T75	
+R47	targets Arg1:T17 Arg2:T76	
+R48	targets Arg1:T17 Arg2:T30	
+R49	targets Arg1:T17 Arg2:T77	
+R50	targets Arg1:T22 Arg2:T7	
+R51	uses Arg1:T22 Arg2:T31	
+T78	OS 3822 3829	Android
+R52	has Arg1:T31 Arg2:T78	
+R53	has Arg1:T31 Arg2:T7	
+T79	AttackPattern 3925 4012	redirect users to the original post office carrier webpage on launch of the application
+R54	uses Arg1:T18 Arg2:T79	
+T80	AttackPattern 4097 4114	appear legitimate
+R55	uses Arg1:T18 Arg2:T80	
+T38	Person 4387 4402	James McQuiggan
+T81	Organization 4435 4442	KnowBe4
+T82	Organization 4671 4681	Threatpost
+T83	Person 4736 4745	McQuiggan
+T84	ThreatActor 5074 5088	Roaming Mantis
+R56	hasAuthor Arg1:T20 Arg2:T84	
+T85	Person 5284 5291	Almkias
+T86	MalwareType 158 169	infostealer
+R57	isA Arg1:T12 Arg2:T86	
+T87	MalwareType 281 292	infostealer
+R58	isA Arg1:T13 Arg2:T87	
+T88	Time 477 494	several weeks ago
+R59	discoveredIn Arg1:T13 Arg2:T88	
+T89	AttackPattern 734 795	prompting the Android recipients to click on a malicious link
+R60	uses Arg1:T13 Arg2:T89	
+R61	targets Arg1:T60 Arg2:T10	
+R62	targets Arg1:T60 Arg2:T26	
+R63	targets Arg1:T60 Arg2:T6	
+T90	Location 2181 2187	Taiwan
+T91	AttackPattern 2479 2517	gaining access to numerous permissions
+R65	uses Arg1:T15 Arg2:T91	
+R28	has Arg1:T59 Arg2:T58	
+R64	has Arg1:T28 Arg2:T90	
+T92	MalwareType 1969 1983	banking trojan
+T93	Application 3370 3377	SMS app
+T94	OS 1179 1186	Android
+T95	Organization 4859 4874	postal services

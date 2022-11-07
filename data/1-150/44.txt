@@ -1,0 +1,44 @@
+Skygofree: Following in the footsteps of HackingTeam
+At the beginning of October 2017, we discovered new Android spyware with several features previously unseen in the wild. In the course of further research, we found a number of related samples that point to a long-term development process. We believe the initial versions of this malware were created at least three years ago – at the end of 2014. Since then, the implant’s functionality has been improving and remarkable new features implemented, such as the ability to record audio surroundings via the microphone when an infected device is in a specified location; the stealing of WhatsApp messages via Accessibility Services; and the ability to connect an infected device to Wi-Fi networks controlled by cybercriminals.
+
+We observed many web landing pages that mimic the sites of mobile operators and which are used to spread the Android implants. These domains have been registered by the attackers since 2015. According to our telemetry, that was the year the distribution campaign was at its most active. The activities continue: the most recently observed domain was registered on October 31, 2017. Based on our KSN statistics, there are several infected individuals, exclusively in Italy.
+
+Moreover, as we dived deeper into the investigation, we discovered several spyware tools for Windows that form an implant for exfiltrating sensitive data on a targeted machine. The version we found was built at the beginning of 2017, and at the moment we are not sure whether this implant has been used in the wild.
+
+We named the malware Skygofree, because we found the word in one of the domains*.
+
+Malware Features
+Android
+According to the observed samples and their signatures, early versions of this Android malware were developed by the end of 2014 and the campaign has remained active ever since.
+
+The code and functionality have changed numerous times; from simple unobfuscated malware at the beginning to sophisticated multi-stage spyware that gives attackers full remote control of the infected device. We have examined all the detected versions, including the latest one that is signed by a certificate valid from September 14, 2017.
+
+The implant provides the ability to grab a lot of exfiltrated data, like call records, text messages, geolocation, surrounding audio, calendar events, and other memory information stored on the device.
+
+After manual launch, it shows a fake welcome notification to the user:
+
+Dear Customer, we’re updating your configuration and it will be ready as soon as possible.
+
+At the same time, it hides an icon and starts background services to hide further actions from the user.
+Service Name Purpose
+AndroidAlarmManager Uploading last recorded .amr audio
+AndroidSystemService Audio recording
+AndroidSystemQueues Location tracking with movement detection
+ClearSystems GSM tracking (CID, LAC, PSC)
+ClipService Clipboard stealing
+AndroidFileManager Uploading all exfiltrated data
+AndroidPush XMPP С&C protocol (url.plus:5223)
+RegistrationService Registration on C&C via HTTP (url.plus/app/pro/)
+Interestingly, a self-protection feature was implemented in almost every service. Since in Android 8.0 (SDK API 26) the system is able to kill idle services, this code raises a fake update notification to prevent it:
+
+Cybercriminals have the ability to control the implant via HTTP, XMPP, binary SMS and FirebaseCloudMessaging (or GoogleCloudMessaging in older versions) protocols. Such a diversity of protocols gives the attackers more flexible control. In the latest implant versions there are 48 different commands. You can find a full list with short descriptions in the Appendix. Here are some of the most notable:
+
+‘geofence’ – this command adds a specified location to the implant’s internal database and when it matches a device’s current location the malware triggers and begins to record surrounding audio.
+”social” – this command that starts the ‘AndroidMDMSupport’ service – this allows the files of any other installed application to be grabbed. The service name makes it clear that by applications the attackers mean MDM solutions that are business-specific tools. The operator can specify a path with the database of any targeted application and server-side PHP script name for uploading.
+
+‘wifi’ – this command creates a new Wi-Fi connection with specified configurations from the command and enable Wi-Fi if it is disabled. So, when a device connects to the established network, this process will be in silent and automatic mode. This command is used to connect the victim to a Wi-Fi network controlled by the cybercriminals to perform traffic sniffing and man-in-the-middle (MitM) attacks.
+‘camera’ – this command records a video/capture a photo using the front-facing camera when someone next unlocks the device.
+Some versions of the Skygofree feature the self-protection ability exclusively for Huawei devices. There is a ‘protected apps’ list in this brand’s smartphones, related to a battery-saving concept. Apps not selected as protected apps stop working once the screen is off and await re-activation, so the implant is able to determine that it is running on a Huawei device and add itself to this list. Due to this feature, it is clear that the developers paid special attention to the work of the implant on Huawei devices.
+
+Also, we found a debug version of the implant (70a937b2504b3ad6c623581424c7e53d) that contains interesting constants, including the version of the spyware.
+

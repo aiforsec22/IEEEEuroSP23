@@ -1,0 +1,47 @@
+T1	OS 48 55	Android
+T2	Malware 23 31	Cerberus
+T3	Malware 93 101	Cerberus
+T4	Malware 193 201	Cerberus
+T5	Malware 571 579	Cerberus
+T6	Malware 786 794	Cerberus
+T7	Malware 1456 1464	Cerberus
+T8	Malware 2525 2533	Cerberus
+T17	Indicator 1156 1169	‘botduke1.ug’
+T18	Indicator 533 550	“Corona-Apps.apk”
+T19	Indicator 2418 2463	(qugyujzldpxqazyrqtc.uindwdxr.smlelfodpiernkx
+T20	Indicator 2237 2247	RRoj.json.
+T21	Indicator 644 659	Corona-Apps.apk
+T22	Indicator 901 916	Corona-Apps.apk
+T23	MalwareType 56 70	banking trojan
+R1	targets Arg1:T2 Arg2:T1	
+R2	isA Arg1:T2 Arg2:T23	
+T9	AttackPattern 347 395	steal financial data such as credit card numbers
+R4	uses Arg1:T4 Arg2:T9	
+T25	AttackPattern 405 425	uses overlay attacks
+R5	uses Arg1:T4 Arg2:T25	
+T27	MalwareType 580 594	banking trojan
+R7	indicates Arg1:T18 Arg2:T5	
+T29	Person 799 816	Bogdan Anghelache
+T13	Organization 848 869	Avira Protection Labs
+R11	indicates Arg1:T22 Arg2:T5	
+T10	Organization 1013 1018	Avira
+R12	indicates Arg1:T17 Arg2:T6	
+R14	indicates Arg1:T20 Arg2:T7	
+R15	indicates Arg1:T19 Arg2:T7	
+R3	isA Arg1:T5 Arg2:T27	
+R6	indicates Arg1:T21 Arg2:T5	
+T11	MalwareType 32 38	trojan
+T12	AttackPattern 487 528	capture two-factor authentication details
+R8	uses Arg1:T4 Arg2:T12	
+T14	AttackPattern 613 642	spread via phishing campaigns
+R9	uses Arg1:T5 Arg2:T14	
+T15	AttackPattern 710 761	trick users into installing it on their smartphones
+R10	uses Arg1:T5 Arg2:T15	
+T16	MalwareType 1524 1530	trojan
+T24	AttackPattern 1931 1961	send and receive text messages
+T26	AttackPattern 1963 1975	record audio
+T28	AttackPattern 1981 2009	read the user’s contact list
+R13	uses Arg1:T7 Arg2:T24	
+R16	uses Arg1:T7 Arg2:T26	
+R17	uses Arg1:T7 Arg2:T28	
+T30	MalwareType 305 311	trojan

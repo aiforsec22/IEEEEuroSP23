@@ -1,0 +1,82 @@
+T5	Organization 1465 1471	Google
+T6	Organization 2792 2798	Google
+T7	Malware 656 671	Desert Scorpion
+T8	Malware 1252 1267	Desert Scorpion
+T9	Malware 1356 1371	Desert Scorpion
+T10	ThreatActor 128 133	Hamas
+T11	Organization 2772 2777	Hamas
+T12	Organization 1448 1455	Lookout
+T13	ThreatActor 848 856	APT-C-23
+T14	Organization 923 941	Palo Alto Networks
+T15	Organization 946 959	ThreatConnect
+T17	Application 1389 1406	Google Play Store
+T18	Application 1615 1625	Play Store
+T19	Organization 2548 2553	Fatah
+T20	Location 2571 2580	Palestine
+T21	Location 898 902	U.S.
+T22	Location 1032 1055	Palestinian Territories
+T23	Location 2691 2700	West Bank
+T24	Location 2705 2715	Gaza Strip
+T26	MalwareType 13 20	spyware
+T27	Location 31 43	Palestinians
+T1	Application 57 74	Google Play store
+T2	Organization 0 5	Hamas
+T28	MalwareType 170 186	surveillanceware
+T3	Application 194 211	Google Play Store
+T16	Location 231 242	Palestinian
+T29	Organization 308 315	Lookout
+T30	Malware 359 374	Desert Scorpion
+T31	Location 433 442	Palestine
+R1	targets Arg1:T30 Arg2:T31	
+R2	isA Arg1:T30 Arg2:T28	
+R3	isA Arg1:T30 Arg2:T26	
+R5	targets Arg1:T30 Arg2:T16	
+R6	targets Arg1:T30 Arg2:T3	
+T32	Time 454 458	2017
+T33	ThreatActor 512 520	APT-C-23
+T34	Organization 552 557	Hamas
+T35	Time 691 695	2017
+T36	Malware 715 726	Frozen Cell
+T37	Location 1009 1022	United States
+T38	Location 1024 1030	Israel
+T39	Location 1060 1065	Egypt
+T40	Time 888 892	2015
+R7	targets Arg1:T13 Arg2:T37	
+R8	targets Arg1:T13 Arg2:T38	
+R9	targets Arg1:T13 Arg2:T22	
+R10	targets Arg1:T13 Arg2:T39	
+T41	AttackPattern 1102 1185	steal data from a target’s phone including text messages, device location, contacts
+T42	AttackPattern 1203 1221	record phone calls
+T43	AttackPattern 1277 1291	uninstall apps
+T4	Application 1418 1425	Dardesh
+T44	Application 1525 1533	Facebook
+T45	Time 1475 1482	April 3
+T46	Time 1578 1591	February 2018
+R13	uses Arg1:T8 Arg2:T43	
+R14	targets Arg1:T9 Arg2:T17	
+R15	uses Arg1:T9 Arg2:T4	
+R4	has Arg1:T30 Arg2:T10	
+T47	Malware 1641 1656	Desert Scorpion
+T48	Person 1893 1906	Andrew Blaich
+T49	Organization 1908 1915	Lookout
+T50	Application 1987 1997	Play Store
+T51	Application 2183 2193	Play Store
+T25	Organization 2482 2487	Fateh
+R16	targets Arg1:T47 Arg2:T19	
+T52	Organization 2782 2787	Fatah
+R17	targets Arg1:T30 Arg2:T27	
+R18	targets Arg1:T30 Arg2:T1	
+R19	discoveredIn Arg1:T13 Arg2:T40	
+R21	hasAuthor Arg1:T30 Arg2:T33	
+R11	uses Arg1:T30 Arg2:T41	
+R22	hasAuthor Arg1:T36 Arg2:T13	
+R20	hasAuthor Arg1:T7 Arg2:T13	
+R12	uses Arg1:T7 Arg2:T42	
+R23	has Arg1:T33 Arg2:T34	
+T56	Application 749 761	social media
+T53	Application 1732 1740	chat app
+T54	AttackPattern 1223 1228	video
+T55	AttackPattern 1233 1250	surrounding audio
+R24	uses Arg1:T7 Arg2:T54	
+R25	uses Arg1:T7 Arg2:T55	
+T57	Application 1495 1507	social media

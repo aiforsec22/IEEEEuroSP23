@@ -1,0 +1,117 @@
+T1	OS 392 399	Android
+T3	OS 1955 1962	Android
+T6	OS 3497 3504	Android
+T10	Malware 24 31	SpyNote
+T11	Malware 2106 2117	SpyNote RAT
+T12	Malware 2939 2946	SpyNote
+T13	Malware 3192 3199	SpyNote
+T14	Malware 3685 3692	SpyNote
+T15	Malware 4138 4145	SpyNote
+T16	Malware 5525 5532	SpyNote
+T17	Malware 5628 5635	SpyNote
+T18	Malware 6089 6096	SpyNote
+T19	Malware 6895 6902	SpyNote
+T20	Malware 7326 7333	SpyNote
+T21	Organization 149 156	Lookout
+T25	Indicator 6742 6772	java.util.zip.GZIPOutputStream
+T26	Indicator 3924 3946	com.android.tester.C11
+T29	Indicator 3833 3855	com.android.tester.C4:
+R2	indicates Arg1:T25 Arg2:T18
+R3	indicates Arg1:T26 Arg2:T14
+R6	indicates Arg1:T29 Arg2:T14
+T36	MalwareType 70 96	remote access trojan (RAT)
+R13	isA Arg1:T10 Arg2:T36	
+T37	Location 228 234	Syrian
+T38	Time 352 364	January 2018
+T39	MalwareType 420 448	remote access trojans (RATs)
+T8	Application 751 768	Google Play Store
+T42	Application 836 844	Telegram
+T43	Application 858 887	COVID-19 contact tracing apps
+T44	Application 911 935	fake digital thermometer
+T2	Application 961 983	Android built-in tools
+T45	AttackPattern 1057 1118	allowing the adversary to spy on the users who installed them
+T46	MalwareType 1301 1327	remote access trojan (RAT)
+R16	targets Arg1:T10 Arg2:T42	
+R17	uses Arg1:T10 Arg2:T43	
+R18	targets Arg1:T10 Arg2:T44	
+R19	targets Arg1:T10 Arg2:T2	
+R20	uses Arg1:T10 Arg2:T45	
+T47	MalwareType 1332 1358	Remote Access Trojan (RAT)
+T50	AttackPattern 1561 1622	hide its operation from the victim and from security software
+T51	Organization 2044 2051	Lookout
+R11	isA Arg1:T11 Arg2:T47	
+T52	AttackPattern 2164 2263	displayed as Android with the icon resembling the one of the built-in Android applications Settings
+R24	uses Arg1:T11 Arg2:T52	
+T4	AttackPattern 2424 2452	track location of the device
+T5	AttackPattern 2478 2502	make and intercept calls
+T30	AttackPattern 2504 2517	access camera
+T53	AttackPattern 2519 2542	access external storage
+T54	AttackPattern 2544 2563	access contact list
+T55	AttackPattern 2565 2573	read SMS
+T56	AttackPattern 2575 2592	access microphone
+T57	AttackPattern 2594 2636	displaying content over other applications
+T58	AttackPattern 2638 2677	clickjacking via Accessibility Services
+R25	uses Arg1:T11 Arg2:T4	
+R26	uses Arg1:T11 Arg2:T5	
+R27	uses Arg1:T11 Arg2:T30	
+R28	uses Arg1:T11 Arg2:T53	
+R29	uses Arg1:T11 Arg2:T54	
+R30	uses Arg1:T11 Arg2:T55	
+R31	uses Arg1:T11 Arg2:T57	
+R32	uses Arg1:T11 Arg2:T58	
+T9	Application 2820 2837	Google Play Store
+T59	AttackPattern 2868 2932	spread via other means like a spearphishing attachment or a link
+R33	uses Arg1:T11 Arg2:T59	
+T60	AttackPattern 2958 2994	masquerade as legitimate application
+R34	uses Arg1:T12 Arg2:T60	
+T31	AttackPattern 4157 4259	discover installed applications, so that the attackers can tell which security appliances are deployed
+R8	uses Arg1:T15 Arg2:T31	
+T7	Application 4963 4993	Android Virtual Devices (AVDs)
+T33	Malware 5229 5236	SpyNote
+T61	AttackPattern 5409 5429	enabling key logging
+T62	AttackPattern 5431 5452	device administration
+T63	AttackPattern 5454 5496	leveraging SuperSU if the device is rooted
+T64	AttackPattern 5502 5520	deactivating icons
+R10	uses Arg1:T33 Arg2:T61	
+R35	uses Arg1:T33 Arg2:T62	
+R36	uses Arg1:T33 Arg2:T63	
+R37	uses Arg1:T33 Arg2:T64	
+T23	AttackPattern 5547 5623	use Device Administrator access to wipe data, lock it, or reset the password
+R38	uses Arg1:T16 Arg2:T23	
+T65	AttackPattern 5642 5730	use of the accessibility API by overriding onAccessibilityEvent method to log keystrokes
+R39	uses Arg1:T17 Arg2:T65	
+T35	AttackPattern 6103 6158	location tracking feature based on GPS and network data
+R12	uses Arg1:T18 Arg2:T35	
+T66	AttackPattern 6333 6346	capture audio
+R40	uses Arg1:T18 Arg2:T66	
+T67	Indicator 6858 6865	tcp/215
+R41	indicates Arg1:T67 Arg2:T18	
+R43	isA Arg1:T10 Arg2:T39	
+R7	uses Arg1:T11 Arg2:T56	
+T22	MalwareType 32 52	remote access trojan
+R1	isA Arg1:T10 Arg2:T22	
+R4	targets Arg1:T10 Arg2:T37	
+T24	MalwareType 622 629	spyware
+T27	MalwareType 1442 1445	RAT
+T28	Application 1633 1652	anti-virus software
+T32	Application 1605 1622	security software
+T34	MalwareType 1659 1662	RAT
+T40	AttackPattern 1744 1769	control a device's camera
+T41	AttackPattern 1771 1789	access its storage
+T48	AttackPattern 1791 1824	intercept calls and text messages
+T49	OS 2177 2184	Android
+T68	OS 2234 2241	Android
+T69	Application 2655 2676	Accessibility Service
+R5	uses Arg1:T11 Arg2:T69	
+T70	AttackPattern 3262 3314	pick a name of the application, service, its version
+T71	Version 3207 3213	v6.4.4
+R9	has Arg1:T13 Arg2:T71	
+R14	uses Arg1:T71 Arg2:T70	
+T72	Application 4384 4402	messaging software
+T73	Application 4373 4380	banking
+T74	AttackPattern 6350 6361	camera feed
+R15	uses Arg1:T18 Arg2:T74	
+T75	AttackPattern 6518 6594	collected data exfiltration is achieved over the command and control channel
+R21	uses Arg1:T18 Arg2:T75	
+T76	MalwareType 5931 5938	spyware
+T77	MalwareType 1523 1529	trojan

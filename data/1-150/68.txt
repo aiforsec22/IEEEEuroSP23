@@ -1,0 +1,107 @@
+Red Alert 2.0: Android Trojan targets security-seekers
+A malicious, counterfeit version of a VPN client for mobile devices targets security-minded victims with a RAT.
+SophosLabs has uncovered a mobile malware distribution campaign that uses advertising placement to distribute the Red Alert Trojan, linking counterfeit branding of well-known apps to Web pages that deliver an updated, 2.0 version of this bank credential thief.
+
+The group distributing this family of malware decorates it in the branding and logos of well-known social media or media player apps, system update patches, or (in its most recent campaign) VPN client apps in an attempt to lure users into downloading, installing, and elevating the privileges of a Trojanized app hosted on a site not affiliated with any reputable app market or store.
+
+Aside from the inescapable irony of disguising a security-reducing Trojan as an ostensibly security-enhancing app, and the righteous affront to the whole concept of a VPN’s purpose a Trojan so disguised inspires, this represents an escalation in the variety of app types targeted by this campaign of bankbots in disguise.
+
+In the wild, we found Web pages designed to (vaguely) resemble legitimate app market pages, hosting files for download that have been disguised as a legitimate mobile application of moderately broad appeal, such as a media player or social media app.
+
+But the categories targeted by this group seem to be broadening with the inclusion of VPN software.
+
+The Web page shown here on the left is hosted on a domain that seems apt: free-vpn[.]download. Investigation of this domain led to additional domains that appear to have been registered for use with the campaign, but are not in use yet. (You can find additional IoCs at the end of this article)
+
+As you can see, the Web page uses a similar colour scheme as, and the icon design from, a legitimate VPN application (VPN Proxy Master) found on the Google Play store.
+
+The fake doesn’t quite nail the app name.
+
+In addition to “Free VPN Master Android,” we’ve observed Red Alert 2.0 Trojans in the wild disguising themselves using names like:
+
+Flash Player or Update Flash Player
+Android Update or Android Antivirus
+Chrome Update or Google Update
+Update Google Market
+WhatsApp
+Viber
+OneCoin Wallet
+Pornhub
+Tactic FlashLight or PROFlashLight
+Finanzonline
+The vast majority of in-the-wild Red Alert 2.0 samples falsely present themselves as Adobe Flash player for Android, a utility that Adobe stopped supporting years ago. Our logs show a number of simultaneous Red Alert 2.0 campaigns in operation, many (but not all) hosted on dynamic DNS domains.
+
+The Red Alert Payload
+Once installed, the malware requests Device Administrator privileges.
+
+If the malware obtains device administrator rights, it will be able to lock the screen by itself, expire the password, and resist being uninstalled through normal methods.
+
+The app then stays in the background listening to commands from the cybercrooks.
+
+Within some of the first of those commands, the bot typically receives a list of banks it will target. The Trojan works by creating an overlay whenever the user launches the banking application.
+
+Currently Running Applications
+Banking Trojans that rely on the overlay mechanism to steal information need to know what application is in the foreground. They do this not only to identify whether the use of a particular app may permit them to harvest another credential, but also because each targeted app needs to have an overlay mapped to its design, so the Trojan can intercept and steal user data. This quest to determine the currently running application is a hallmark of overlay malware, so we thought we’d take a closer look at how it’s done.
+
+To prevent this, Android’s engineers regularly release updates that contain bug fixes designed to prevent apps from getting the list of currently running apps without explicit permission. With every Android update, the malware authors are forced to come up with new tricks.
+
+This particular case is not an exception. The author(s) of this malware wrote separate subroutines that identify the operating system version and fire off methods to obtain a list of currently running applications known to work on that particular version of Android.
+
+First, they use the built-in toolbox commands to determine what apps are running. If that doesn’t work, they try to use queryUsageStats:
+
+String Resources Used to Store App Data
+Red Alert 2.0 stores its data in an atypical location (inside the Strings.xml file embedded in the app) to fetch its critical data, such as the C2 address.
+
+Backdoor Commands
+The Red Alert code also contains an embedded list of commands the botmaster can send to the bot.
+
+The malware can execute a variety of arbitrary commands, including (for example) intercepting or sending text messages without the user’s knowledge, obtaining a copy of the victim’s Address Book, or call or text message logs, or sending phone network feature codes (also known as USSD codes).
+C2 and Targeted Banks
+As described earlier, the C2 domain is kept in the app’s resources. During the app execution, the malware contacts C2 domain for further instructions.
+
+Most of the network traffic we’ve observed is HTTP. The C2 address, as stored in samples we’ve seen, comprise both an IP address and port number; So far, all the samples we’ve tested attempted to contact an IP address on port 7878/tcp.
+
+If the main C2 domain is not responsive, the bot fetches a backup C2 domain from a Twitter account. Static analysis of the code reveals that the malware downloads the overlay template to use against any of the bank(s) it is targeting.
+
+The malware also sends regular telemetry back to its C2 server about the infected device in the form of an HTTP POST to its C2 server. It uses the base Dalvik User-Agent string for the device it’s running on.
+
+The list of banks targeted by Red Alert 2.0 includes NatWest, Barclays, Westpac, and Citibank.
+
+Red Alert 2.0 is a banking bot that is currently very active online, and presents a risk to Android devices.
+
+We expect to see more diversification in the social engineering lures this threat group employs as time goes on. So far, legitimate app stores appear to be this malware’s Achilles heel; disabling the installation of third-party apps has been an effective prevention measure. Stick to Google Play and use VPN software from reputable vendors.
+
+Sophos detects all the samples of this Trojan family as Andr/Banker-GWC and Andr/Spybot-A.
+
+In the wild, these are only distributed as a direct download from unofficial Web pages (“third-party” app) and not through legitimate app stores.
+
+Red Alert 2.0 IoCs list
+C2 addresses
+103.239.30.126:7878
+146.185.241.29:7878
+146.185.241.42:7878
+185.126.200.3:7878
+185.126.200.12:7878
+185.126.200.15:7878
+185.126.200.18:7878
+185.165.28.15:7878
+185.243.243.241:7878
+185.243.243.244:7878
+185.243.243.245:7878
+ 
+
+Domains
+Malware source Web hosts on 167.99.176.61:
+
+free-androidvpn.date 
+free-androidvpn.download 
+free-androidvpn.online 
+free-vpn.date 
+free-vpn.download 
+free-vpn.online
+Hashes
+22fcfce096392f085218c3a78dd0fa4be9e67ed725bce42b965a27725f671cf
+55292a4dde8727faad1c40c914cf1be9dfdcf4e67b515aa593bcd8d86e824372
+be92a751e5abbcd24151b509dbb4feb98ea46f367a99d6f86ed4a7c162461e31
+5c4d666cef84abc2a1ffd3b1060ef28fa3c6c3bb4fad1fa26db99350b41bea4c
+06081ab7faa729e33b9397a0e47548e75cbec3d43c50e6368e81d737552150a5
+753999cb19a4346042f973e30cf1158c44f2335ab65859d3bfa16bca4098e2ef

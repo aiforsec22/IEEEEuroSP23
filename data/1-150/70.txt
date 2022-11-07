@@ -1,0 +1,18 @@
+Red Alert 2.0 Android Trojan spotted for rent at $500 per month
+Security researchers have discovered the Red Alert 2.0 Android Trojan that first came to light last year is being advertised on underground sites for anyone to rent. Red Alert is capable of stealing tons of sensitive information from infected mobile devices including SMS messages, contact details, information about WiFi networks, call logs, and data about current or recently running tasks.
+
+It can also initiate a phone call without going through the Dialer user interface to confirm, block calls from banks and connect with bots via Twitter in case its command and control server (C&C) happens to go offline. Researchers said the malware has a UI to enable the device admin access, and does not allow the user to disable it once enabled.
+
+“The malware sets itself up as a default telephony provider, mostly for intercepting SMS messages,” researchers said. “A list of phone numbers to be intercepted can be controlled by the C&C server. Messages from these numbers may be hidden from the user. Intercepted messages are also sent to the C&C server. This could be used for intercepting 2 factor authentication codes used by most services these days including online banking.”
+
+Once the malware has full access to the infected device, it can even wipe out all data from the device.
+
+The malware is shipped via spam emails delivering .APK (Android Package Kit) attachments and it targets Android devices running Android marshmallow and later. Security researchers from Trustwave who identified the malware said in a report, “Out of 59 anti-virus products, only 25 of them flagged the application.”
+
+Red Alerts 2.0 malware is currently targeting more than 120 banks from several countries including the U.S, U.K, Australia, Canada, Germany, France, India and Italy, according to researchers. It is also being advertised for rent on underground forums starting at $200 for a week, $500 for a month and $999 for two months.
+
+The developer behind Red Alert 2.0 also claims the Trojan can target multiple payment systems, retail applications and social media apps such as PayPal, Airbnb, Amazon, eBay, WhatsApp, Viber, Skype, Uber and more.
+
+The researchers also questioned how effective the strategy of shipping the APK malware was proving to be for its creators.
+
+“The malware required the user to OK to install, and Android pops up plenty of warnings about permissions,” researchers said. “Also, Google Play Protect was detecting this threat, so in order to get the malware installed on Android we also had to disable Play Protect. We haven't seen any more samples being spammed, so perhaps the email campaign was not so successful after all.”

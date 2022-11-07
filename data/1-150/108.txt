@@ -1,0 +1,51 @@
+Rotexy Mobile Trojan Launches 70k+ Attacks in Three Months
+A mobile spyware that turned into a banking trojan with ransomware capabilities managed to launch over 70,000 attacks in the course of just three months.
+
+The name of the beast is Rotexy now but it used to be detected as SMSThief back in its spying days.
+
+Malware analysts at Kaspersky Lab took a closer look at this mobile threat that was noticed for the first time in 2014 and proved to be highly versatile since its early releases.
+
+Multiple communication channels
+One of the features that make it stand out of the crowd is the use at the same time of three separate communication channels for receiving commands.
+
+The researchers found that it can get instructions via the Google Cloud Messaging (GCM) service that delivers messages in JSON format to mobile devices.
+
+This channel, however, won't work beyond April 11, 2019, because Google has deprecated it.
+
+Another method Rotexy uses to deliver commands to the compromised target is from a command and control (C2) server, as it is typical for most malware.
+
+The third method is SMS based and allows the operator to control the actions of malware by sending a text message to the infected mobile phone.
+
+The latest version of Rotexy targeted mostly users located in Russia, although Kaspersky noticed victims in Ukraine, Germany, Turkey, and several other countries as well.
+
+According to data from the security company, the recent attack spree occurred between August and October.
+
+Malware analysts Tatyana Shishkova and Lev Pinkman documented the evolution of the Rotexy malware, marking key developments, such as processing SMS communication or applying AES encryption to data exchanged between the target and the C2.
+
+Starting late 2016, the trojan showed signs that its focus was on stealing users' bank card data via phishing pages.
+
+Later on, the developers added an HTML page that mimicked a login form for a legitimate bank and locked the device screen until the victim provided the necessary information.
+
+To make the scam believable, the threat actor included a virtual keyboard that allegedly offered protection against keylogging applications.
+
+To lure the victim into giving up the sensitive data, the HTML page shown on the screen informs the victim that they received a money transfer. To accept the funds, they need to provide the card details.
+
+Aggressive requests for admin rights
+Its latest version includes a protection mechanism that checks for the country it was launched in and if it runs in an emulated environment.
+
+If it is in Russia and on a real system, Rotexy registers with GCM and checks if it has administrator privileges. The malware is quite aggressive if it does not run with elevated permissions and uses a very annoying tactic to determine the user to grant it the admin status.
+
+"It performs a privilege check once every second; if unavailable, the Trojan starts requesting them from the user in an infinite loop," inform the researchers.
+
+They added that any attempt to revoke its admin privileges ends with periodically turning off the phone's display, in an attempt to discourage the action. Should the user succeed in downgrading Rotexy's status, the malware relaunches and resumes its intimidation tactics.
+
+The ransomware game
+Among the capabilities observed by the researchers is hiding SMS communication from the victim bu putting the phone in silent mode and turning off the screen when the message arrives.
+
+Its ransomware features include showing an extortionist HTML page with sexually explicit images and freezing the phone. Obviously, unblocking the device is conditioned by paying a ransom.
+
+Unblocking the device is an easy task, though, as the researchers found the command that triggers this action. Since communication is also possible via SMS, sending "3458" in a text message revokes the admin privileges and the "stop_blocker" seals the deal.
+
+The malware may start reiterating its request for privileges, and this problem disappears once Rotexy is kicked out of the system: boot in safe mode and remove it.
+
+The researchers warn that these instructions work on the current version of the malware and may not be efficient with future releases.

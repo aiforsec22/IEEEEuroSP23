@@ -1,0 +1,30 @@
+Dvmap – The First Android-Rooting Malware With Code Injection Ability Found In Google Play Store
+Security Researchers at Kaspersky Lab observed a new rooting malware being distributed through the Google Play Store. Unlike other rooting malware, this Trojan not only installs its modules into the system, it also injects malicious code into the system runtime libraries. Kaspersky Lab products detect it as Trojan.AndroidOS.Dvmap.a.
+
+
+The distribution of rooting malware through Google Play is not a new thing. For example, the Ztorg Trojan has been uploaded to Google Play Store almost 100 times since September 2016. But Dvmap is a unique rooting malware because it uses a variety of new techniques. The most interesting thing, as stated above, is that it injects malicious code into the system libraries, such as libdmv.so or libandroid_runtime.so. The Dvmap malware is designed to specifically target Android Smart Phone users.
+
+The technique used to distribute the malware via Google Play Store were quite unique. The malware (Dvmap) was uploaded to Google Play Store masked as several simple apps such as Puzzle Games. Kaspersky lab claimed that the malicious apps have been downloaded around 50,000 times before being removed by Google.
+
+What’s So Interesting About The Dvmap Malware?
+To bypass Google Play Store security checks, the malware creators uploaded a clean app to the play store and then update it with a malicious version for a short period of time. Usually they upload a clean version back on Google Play the very same day. Malware Creators repeated the same technique at least 5 times between 18 April and 15 May.
+
+All the malicious Dvmap apps had the same functionality. They decrypt several archive files from the assets folder of the installation package, and launch an executable file from them with the name “start.”
+
+How Dvmap Malware Works?
+The researchers at Kaspersky explained:
+
+Dvmap Trojan works on both 32-bit and 64-bit versions of Android, which once installed, attempts to gain root access on the device and tries to install several modules on the system including a few written in Chinese, along with a malicious app called “com.qualcmm.timeservices.
+
+To make sure the malicious module gets executed with system rights, the malware overwrites system’s runtime libraries depending on which Android version the device is running. To complete the installation of the above-mentioned malicious app, the Trojan with system rights turns off “Verify Apps,” feature and modify system setting to allow app installation from 3rd party app stores. This malicious 3rd party app is responsible for connecting the infected device to the attacker’s command-and-control server, giving out full control of the device into the hands of attackers.
+
+The researchers also claimed:
+
+We haven’t noticed any commands received by the infected Android devices so far, so it’s unclear what kind of files will be executed, but they could be malicious or advertising files.
+
+How to Protect Yourself Against Dvmap Malware?
+The researchers at Kaspersky Lab are still testing the Dvmap malware. But they have suggested precautionary steps for Android users to protect themselves from Dvmap malware. The researchers suggested:
+
+To prevent yourself from being targeted by such apps, always beware of fishy apps, even when downloading from Google Play Store, and try to stick to the trusted brands only. Moreover, always look at the comments left by other users.
+Always verify app permissions before installing any app and grant only those permissions which have relevant context for the app’s purpose.
+Always keep a good antivirus app on your device that can detect and block such malware before it can infect your device and keep it up-to-date.

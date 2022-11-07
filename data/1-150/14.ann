@@ -1,0 +1,92 @@
+T1	OS 423 430	Android
+T2	OS 6019 6026	Android
+T3	OS 6897 6904	Android
+T6	Malware 4 10	Rotexy
+T7	Malware 61 67	Rotexy
+T8	Malware 659 665	Rotexy
+T9	Malware 688 694	Rotexy
+T10	Malware 1061 1067	Rotexy
+T11	Malware 1355 1361	Rotexy
+T12	Malware 1728 1734	Rotexy
+T13	Malware 1975 1981	Rotexy
+T14	Malware 2119 2125	Rotexy
+T15	Malware 2162 2168	Rotexy
+T16	Malware 2861 2867	Rotexy
+T17	Malware 3151 3157	Rotexy
+T18	Malware 3169 3175	Rotexy
+T19	Malware 3931 3937	Rotexy
+T20	Malware 4196 4202	Rotexy
+T21	Malware 4229 4235	Rotexy
+T22	Malware 4675 4681	Rotexy
+T23	Malware 4839 4845	Rotexy
+T24	Malware 5010 5016	Rotexy
+T25	Malware 5742 5748	Rotexy
+T26	Malware 6423 6429	Rotexy
+T28	Location 4781 4787	Russia
+T31	MalwareType 19 25	banker
+T32	MalwareType 30 37	blocker
+R1	isA Arg1:T6 Arg2:T31	
+R2	isA Arg1:T6 Arg2:T32	
+T34	Malware 207 213	Rotexy
+T35	MalwareType 233 247	banking Trojan
+T36	MalwareType 254 272	ransomware blocker
+R4	isA Arg1:T34 Arg2:T35	
+R5	isA Arg1:T34 Arg2:T36	
+T37	Time 319 325	August
+T38	Time 330 339	September
+T39	MalwareType 666 680	banking Trojan
+R6	isA Arg1:T8 Arg2:T39	
+T40	AttackPattern 695 747	spreads through SMS containing links to app download
+R7	uses Arg1:T9 Arg2:T40	
+T43	AttackPattern 1068 1110	checks to see what device it has landed on
+R10	uses Arg1:T10 Arg2:T43	
+T44	AttackPattern 1537 1568	requesting administrator rights
+R11	uses Arg1:T11 Arg2:T44	
+T45	AttackPattern 1775 1789	hides its icon
+R12	uses Arg1:T12 Arg2:T45	
+T46	AttackPattern 1849 1889	giving them information about the device
+R13	uses Arg1:T12 Arg2:T46	
+T47	AttackPattern 2252 2340	switches the gadget into silent mode so that the victim does not notice new incoming SMS
+R14	uses Arg1:T15 Arg2:T47	
+T48	AttackPattern 2358 2380	intercepts the message
+R15	uses Arg1:T15 Arg2:T48	
+T49	AttackPattern 2875 2963	saves all correspondence on the infected smartphone, and then forwards it to its masters
+R16	uses Arg1:T16 Arg2:T49	
+T50	AttackPattern 3032 3096	send a link to download itself to all contacts in the phone book
+R17	uses Arg1:T16 Arg2:T50	
+T51	MalwareType 3180 3194	banking Trojan
+R18	isA Arg1:T18 Arg2:T51	
+T52	AttackPattern 3388 3426	overlays a phishing page on the screen
+R19	uses Arg1:T18 Arg2:T52	
+T54	AttackPattern 3938 4082	extracts the last four digits of the card number from the intercepted banking SMS and matches them against the ones entered on the phishing page
+R21	uses Arg1:T19 Arg2:T54	
+T55	MalwareType 4207 4217	ransomware
+R22	isA Arg1:T20 Arg2:T55	
+T56	AttackPattern 4361 4483	blocks the smartphone screen with a menacing window demanding payment of a fine for “regular viewing of prohibited videos.
+R23	uses Arg1:T21 Arg2:T56	
+T27	Malware 6256 6262	Rotexy
+T4	AttackPattern 1982 2114	communicates directly with the C&C server, but its creators implemented other ways to send orders via Google Cloud Messaging and SMS
+R3	uses Arg1:T13 Arg2:T4	
+T29	MalwareType 75 81	Trojan
+R8	isA Arg1:T7 Arg2:T29	
+T30	Organization 523 533	Securelist
+T33	MalwareType 988 994	Trojan
+T41	Location 1416 1422	Russia
+T42	MalwareType 1507 1513	Trojan
+T53	Application 2084 2106	Google Cloud Messaging
+T57	AttackPattern 2382 2600	checks it against the templates received from the C&C server, and if it contains anything juicy (for example, the last digits of a card number in a mobile banking SMS notification), stores and forwards it to the server
+R9	uses Arg1:T15 Arg2:T57	
+T58	MalwareType 3158 3164	Trojan
+R20	isA Arg1:T17 Arg2:T58	
+T59	MalwareType 5819 5825	Trojan
+T60	Application 5942 5961	Application Manager
+T61	MalwareType 6341 6347	Trojan
+T62	Organization 6385 6395	Securelist
+T63	MalwareType 6447 6453	Trojan
+T64	MalwareType 2346 2352	Trojan
+T65	MalwareType 4846 4852	Trojan
+T66	Application 6920 6931	Google Play
+T67	MalwareType 5579 5585	Trojan
+T68	Application 2530 2544	mobile banking
+T69	Application 1147 1156	antivirus
+T70	Application 7060 7069	antivirus

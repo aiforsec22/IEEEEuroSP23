@@ -1,0 +1,31 @@
+RCSAndroid — Advanced Android Hacking Tool Leaked Online
+As digging deeper and deeper into the huge Hacking Team data dump, security researchers are finding more and more source code, including an advanced Android Hacking Tool.
+Yes, this time researchers have found a source code to a new piece of weaponized android malware that had the capability to infect millions of Android devices even when users are running latest versions of the android mobile operating system.
+Trend Micro researchers found that the Italian spyware company was selling RCSAndroid (Remote Control System Android), which they says, is one of the "most professionally developed and sophisticated" pieces of Android malware a.k.a Android hacking tool they have ever seen.
+RCSAndroid is a sophisticated, real-world surveillance and hacking tool that provides even unskilled hackers to deploy one of the world's more advanced surveillance suites for Google's mobile operating system Android.
+List of Creepy Features of Android Hacking Tool
+Once installed on targets' devices, RCSAndroid would have helped government and law enforcement agencies around the world to completely compromise and monitor Android devices remotely.
+Here are some of the features of RCSAndroid include the ability to:
+Capture screenshots using the 'screencap' command and framebuffer direct reading
+Collect passwords for Wi-Fi networks and online accounts, including WhatsApp, Facebook, Twitter, Google, Skype, and LinkedIn
+Collect SMS, MMS, and Gmail messages
+Capture real-time voice calls in any network or application by hooking into the 'mediaserver' system service
+Capture photos using the front and back cameras
+Monitor clipboard content
+Record using the microphone
+Record location
+Gather device information
+Collect contacts and decode messages from IM accounts, including WhatsApp, Telegram, Facebook Messenger, Skype, WeChat, Viber, Line, Hangouts, and BlackBerry Messenger.
+RCSAndroid Android hacking tool had been in the wild since 2012 and has been known to Citizen Lab researchers since last year when the security firm detailed a Hacking Team backdoor used against Android users in Saudi Arabia.
+How RCSAndroid hacking tool infects a Target?
+RCSAndroid uses two different methods to infect targeted Android devices.
+1. Hacking Team used text and email messages containing specially crafted URLs that triggered exploits for several vulnerabilities (CVE-2012-2825 and CVE-2012-2871) present in the default browsers of Android 4.0 Ice Cream to 4.3 Jelly Bean, allowing the attacker to gain root privileges, and install the RCSAndroid APK.
+2. The company used backdoor apps such as "BeNews" available on the official Google Play Store to take advantage of a local privilege escalation bug to root the device and install the RCSAndroid agent.
+RCSAndroid has 4 'critical components':
+Penetration solutions – Methods to get into the device, either via SMS or email or a legitimate app
+Low-level native code – Advanced exploits and spy tools beyond Android's security framework
+High-level Java agent – The application's malicious APK
+Command-and-control (C&C) servers – Servers used to remotely send or receive malicious commands
+Given that the source code of RCSAndroid is now available to everybody, it will likely put Android users in danger. So, if you own a smartphone running any Android version from 4.0 Ice Cream to 4.3 Jelly Bean, you need to 'Get Rid of it Today.'
+"The leaked RCSAndroid code is a commercial weapon now in the wild," security researchers wrote in a blog post. "Mobile users are called on to be on top of this news and be on guard for signs of monitoring. Some indicators may come in the form of peculiar behavior such as unexpected rebooting, finding unfamiliar apps installed, or instant messaging apps suddenly freezing."
+Users of Android 5.0 Lollipop may also be in danger of being targeted, as some emails sent among Hacking Team executives indicates that "Hacking Team was in the process of developing exploits for Android 5.0 Lollipop," but so far there is no such indication.

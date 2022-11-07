@@ -1,0 +1,47 @@
+T1	OS 5 12	Android
+T2	OS 444 451	Android
+T3	OS 702 709	Android
+T4	OS 1056 1063	Android
+T5	OS 1734 1741	Android
+T7	Malware 798 805	Twitoor
+T8	Malware 1798 1805	Twitoor
+T9	Application 48 55	Twitter
+T10	Application 65 72	Twitter
+T11	Application 422 429	Twitter
+T12	Application 756 763	Twitter
+T14	Application 981 988	Twitter
+T15	Application 1780 1787	Twitter
+T16	Organization 1098 1102	ESET
+T17	Application 1621 1629	Facebook
+T18	Application 1649 1657	LinkedIn
+T19	Person 1427 1435	Stefanko
+T20	Person 1890 1898	Stefanko
+T24	Organization 361 365	ESET
+T25	MalwareType 465 471	botnet
+T26	Malware 650 657	Twitoor
+R1	isA Arg1:T26 Arg2:T25	
+R2	uses Arg1:T26 Arg2:T11	
+R3	targets Arg1:T26 Arg2:T2	
+R4	targets Arg1:T26 Arg2:T3	
+R5	uses Arg1:T26 Arg2:T12	
+T13	AttackPattern 809 912	download and install other applications — generally of the data-stealing mobile banking malware variety
+T27	AttackPattern 918 971	switch to another command-and-control Twitter account
+R7	uses Arg1:T7 Arg2:T27	
+T28	MalwareType 1064 1070	botnet
+T29	Person 1078 1092	Lukas Stefanko
+T6	Application 1237 1254	Google Play store
+R9	isA Arg1:T7 Arg2:T28	
+R10	targets Arg1:T7 Arg2:T15	
+T21	AttackPattern 723 771	awaits commands from a malicious Twitter account
+R11	uses Arg1:T26 Arg2:T21	
+T23	Application 956 963	Twitter
+R13	uses Arg1:T7 Arg2:T23	
+R6	uses Arg1:T7 Arg2:T13	
+T22	AttackPattern 512 634	use this kind of social media account instead of a command-and-control server to exercise its power over infected devices.
+R8	uses Arg1:T26 Arg2:T22	
+T30	MalwareType 668 674	Trojan
+R12	isA Arg1:T26 Arg2:T30	
+T31	MalwareType 882 904	mobile banking malware
+T32	Application 1668 1683	social networks
+T33	Application 529 541	social media
+T34	Application 1355 1367	social media

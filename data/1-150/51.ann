@@ -1,0 +1,91 @@
+T1	OS 31 38	Android
+T2	OS 415 422	Android
+T5	Malware 0 8	Mandrake
+T6	Malware 742 750	Mandrake
+T7	Malware 1358 1366	Mandrake
+T8	Application 233 239	PayPal
+T9	Application 588 594	PayPal
+T10	Location 48 57	Australia
+T11	Location 343 352	Australia
+T12	Location 985 994	Australia
+T13	Location 1199 1208	Australia
+T14	Location 2731 2740	Australia
+R1	targets Arg1:T5 Arg2:T1	
+R2	targets Arg1:T5 Arg2:T10	
+T16	MalwareType 9 16	Spyware
+T3	Application 96 109	Google Chrome
+T17	Application 111 116	Gmail
+T18	MalwareType 63 70	spyware
+R3	isA Arg1:T5 Arg2:T16	
+T19	Application 118 131	ANZ Australia
+T20	Application 211 227	Australian Super
+T21	Application 167 197	Commonwealth Bank of Australia
+T22	Application 199 209	Bank of SA
+T23	Application 133 165	Bank of Melbourne Mobile Banking
+T4	Application 451 464	Google Chrome
+T24	Application 466 471	Gmail
+T25	Application 473 486	ANZ Australia
+T26	Application 488 520	Bank of Melbourne Mobile Banking
+T27	Application 522 552	Commonwealth Bank of Australia
+T28	Application 554 564	Bank of SA
+T29	Application 566 582	Australian Super
+T30	Malware 669 677	Mandrake
+T31	Application 717 731	mobile banking
+R22	targets Arg1:T30 Arg2:T31	
+R23	targets Arg1:T6 Arg2:T12	
+R24	targets Arg1:T6 Arg2:T13	
+T32	MalwareType 1367 1374	spyware
+R25	isA Arg1:T7 Arg2:T32	
+T33	MalwareType 1539 1546	spyware
+T34	MalwareType 1601 1608	spyware
+T35	AttackPattern 1663 1717	capture personal information about the targeted victim
+T36	AttackPattern 1746 1815	gain access to the users' preferences, device usage, inactivity times
+T37	MalwareType 1906 1913	spyware
+T38	AttackPattern 1952 1971	credential stealing
+T39	AttackPattern 2055 2112	used to surreptitiously turn the volume of the phone down
+T40	Time 2363 2372	2016-2017
+T41	Location 2410 2412	UK
+T42	Location 2414 2416	US
+T43	Location 2418 2425	Germany
+T44	Location 2435 2446	Netherlands
+T45	Time 2482 2491	2018-2020
+T46	Location 2511 2521	Australian
+T47	Location 2557 2559	US
+T48	Location 2561 2567	Canada
+T49	Location 2573 2579	Europe
+T50	MalwareType 2618 2625	spyware
+T15	Location 706 716	Australian
+R40	targets Arg1:T30 Arg2:T15	
+R41	isA Arg1:T7 Arg2:T33	
+T54	Application 325 339	mobile banking
+T55	Time 834 844	four years
+T56	Application 967 981	mobile banking
+R45	targets Arg1:T6 Arg2:T56	
+T57	Time 1483 1493	four years
+T58	AttackPattern 1976 2000	information exfiltration
+T59	AttackPattern 2117 2140	block calls or messages
+R4	targets Arg1:T5 Arg2:T3	
+R5	targets Arg1:T5 Arg2:T17	
+R6	targets Arg1:T5 Arg2:T19	
+R7	targets Arg1:T5 Arg2:T23	
+R8	targets Arg1:T5 Arg2:T21	
+R9	targets Arg1:T5 Arg2:T22	
+R10	targets Arg1:T5 Arg2:T20	
+R11	targets Arg1:T5 Arg2:T8	
+R12	targets Arg1:T5 Arg2:T54	
+R13	targets Arg1:T5 Arg2:T11	
+R14	uses Arg1:T7 Arg2:T35	
+T61	AttackPattern 1841 1861	record their screens
+R15	uses Arg1:T7 Arg2:T36	
+R16	uses Arg1:T7 Arg2:T61	
+R17	isA Arg1:T7 Arg2:T37	
+R18	uses Arg1:T7 Arg2:T38	
+R19	uses Arg1:T7 Arg2:T58	
+R20	uses Arg1:T7 Arg2:T39	
+R21	uses Arg1:T7 Arg2:T59	
+R26	isA Arg1:T5 Arg2:T18	
+R27	targets Arg1:T7 Arg2:T41	
+R28	targets Arg1:T7 Arg2:T42	
+R29	targets Arg1:T7 Arg2:T43	
+R30	targets Arg1:T7 Arg2:T44	
+T51	Application 2814 2828	mobile banking

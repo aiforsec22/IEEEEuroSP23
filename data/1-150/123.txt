@@ -1,0 +1,20 @@
+Hamas-linked spyware targeting Palestinians removed from Google Play store
+A hacking group which analysts believe is linked to Hamas successfully placed highly targeted surveillanceware in the Google Play Store in order to spy on Palestinian targets, according to new research from the mobile security firm Lookout.
+
+The newly identified malware, known as Desert Scorpion, was deployed against over 100 individuals of interest in Palestine. A similar 2017 campaign from the same “highly active” group, dubbed APT-C-23.  The group has been linked to Hamas’s political rivals as well as government employees, security services and university students.
+
+Desert Scorpion has been tied to a 2017 campaign, known as Frozen Cell, by reuse of the same social media profiles to promote the malware as well as infrastructure using similar IP blocks.
+
+APT-C-23 has been active since at least 2015 when U.S. cybersecurity firms Palo Alto Networks and ThreatConnect identified a campaign by the group targeting the United States, Israel, Palestinian Territories and Egypt.
+
+The malware allows its users to steal data from a target’s phone including text messages, device location, contacts and more. It can record phone calls, video and surrounding audio. Desert Scorpion can also uninstall apps. In short, it makes a target’s phone completely transparent.
+
+Desert Scorpion was spotted in a Google Play Store app called Dardesh. It was removed after Lookout notified Google on April 3. Judging by social media promotion across Facebook, it looks like the app was first spun up in February 2018. You can see the app’s Play Store page below:
+
+Desert Scorpion’s spying functionality turns on after a target has downloaded and used the chat app, which is really just a “dropper” for malware pretending to be a settings application.
+
+“We’re starting to see more multi-stage attacks happen,” said Andrew Blaich, Lookout’s head of device intelligence. “Especially those that make it into the Play Store. Using a multi-stage process allows the attackers to hide the malicious functionality and the [command and control] infrastructure, while also increasing the odds of making it into the Play Store. When an app is in the main app store, it decreases the typical level of vetting a user may have on an app, since it has a higher level of trust and because the user doesn’t need to allow unknown sources for app installations.”
+
+Several of the malware’s package names include the word “Fateh” which is likely a signal toward continuously targeting the Fatah political party. Palestine is a lightning rod of political controversy both around the world and domestically, as the territories of the West Bank and Gaza Strip have played host to an ongoing and deadly clash between Hamas and Fatah.
+
+Google did not respond to a request for comment.

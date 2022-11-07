@@ -1,0 +1,51 @@
+T1	OS 44 51	Android
+T6	Application 12 18	Google
+T7	Application 128 134	Google
+T8	Organization 171 177	Google
+T12	Organization 1169 1175	Google
+T13	Organization 1219 1225	Google
+T14	Organization 1531 1537	Google
+T17	Malware 61 69	Gooligan
+T18	Malware 308 316	Gooligan
+T19	Malware 737 745	Gooligan
+T20	Malware 1816 1824	Gooligan
+T21	Organization 407 418	Check Point
+T22	Organization 1062 1073	Check Point
+T23	Organization 1131 1142	Check Point
+T24	Organization 1644 1655	Check Point
+T25	Application 1358 1367	SafetyNet
+T26	Malware 1588 1598	Ghost Push
+T2	OS 87 102	Android 4 and 5
+R1	targets Arg1:T17 Arg2:T2	
+R2	targets Arg1:T17 Arg2:T7	
+T28	AttackPattern 239 299	uses Android credentials to access data from Google services
+R3	uses Arg1:T17 Arg2:T28	
+T30	AttackPattern 655 723	downloads a malicious module from a command and control (C&C) server
+R7	uses Arg1:T18 Arg2:T30	
+T31	AttackPattern 749 795	steal credentials for email and other services
+R8	uses Arg1:T19 Arg2:T31	
+T33	AttackPattern 840 915	install apps from Google Play and rate them using the user’s Google account
+R10	uses Arg1:T19 Arg2:T33	
+T4	OS 1031 1040	Android 4
+T5	OS 1045 1054	Android 5
+R11	targets Arg1:T19 Arg2:T4	
+R12	targets Arg1:T19 Arg2:T5	
+T10	Malware 1385 1393	Gooligan
+T11	OS 525 532	Android
+T34	Organization 1406 1412	Google
+T15	Application 1864 1875	Google Play
+R15	targets Arg1:T20 Arg2:T15	
+T36	AttackPattern 1963 2066	leaves a positive review and a high rating on Google Play using content it receives from the C&C server
+R16	uses Arg1:T20 Arg2:T36	
+T16	Application 2009 2020	Google Play
+R17	targets Arg1:T20 Arg2:T16	
+R4	uses Arg1:T26 Arg2:T33	
+T3	OS 244 251	Android
+T9	Organization 284 290	Google
+T27	Application 369 391	third-party app stores
+R5	uses Arg1:T18 Arg2:T27	
+T29	Application 858 869	Google Play
+T32	Application 901 907	Google
+T35	AttackPattern 919 974	install adware on the user’s device to generate revenue
+T37	MalwareType 927 933	adware
+R6	uses Arg1:T19 Arg2:T35	

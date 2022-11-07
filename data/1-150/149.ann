@@ -1,0 +1,71 @@
+T1	OS 163 170	Android
+T2	OS 2153 2160	Android
+T3	OS 2363 2370	Android
+T4	OS 3100 3107	Android
+T5	Organization 156 162	Google
+T6	Organization 2300 2306	Google
+T9	Malware 0 6	Anubis
+T10	Malware 196 202	Anubis
+T12	Malware 1548 1554	Anubis
+T13	Malware 1877 1883	Anubis
+T14	Malware 2081 2087	Anubis
+T15	Malware 2414 2420	Anubis
+T16	Malware 2696 2702	Anubis
+T17	Malware 2949 2955	Anubis
+T18	Organization 646 659	Hold Security
+T19	Malware 2622 2640	Currency Converter
+T20	Organization 2928 2935	X-Force
+T21	Person 1846 1852	Holden
+T22	AttackPattern 23 62	Logs When Victims Look at Their Screens
+R1	uses Arg1:T9 Arg2:T22	
+R2	targets Arg1:T9 Arg2:T1	
+T23	Organization 259 265	Google
+R3	has Arg1:T5 Arg2:T1	
+T24	OS 268 275	Android
+R4	targets Arg1:T10 Arg2:T24	
+T25	AttackPattern 378 430	identify if a victim is looking at his or her screen
+R5	uses Arg1:T10 Arg2:T25	
+R6	has Arg1:T23 Arg2:T24	
+T26	Malware 807 813	Anubis
+T27	Person 1092 1103	Alex Holden
+T28	Organization 1155 1168	Hold Security
+T29	Organization 1175 1193	Bank Info Security
+T30	AttackPattern 1235 1394	small eyeball icon included in the control panel that can be used to recognize whether a user of a device with Anubis installed is looking at the device or not
+R7	uses Arg1:T26 Arg2:T30	
+T11	AttackPattern 1416 1509	attacker won’t perform any nefarious activity on the device while the person is looking at it
+R8	uses Arg1:T26 Arg2:T11	
+T31	Application 1594 1605	Yandex maps
+T32	AttackPattern 1626 1663	show the location of infected devices
+R9	uses Arg1:T12 Arg2:T32	
+R10	uses Arg1:T12 Arg2:T31	
+T33	Time 1919 1923	2017
+T34	MalwareType 2017 2031	banking trojan
+R11	isA Arg1:T13 Arg2:T34	
+T35	Time 2095 2103	February
+T36	AttackPattern 2199 2221	steal user credentials
+T37	AttackPattern 2223 2242	install a keylogger
+T38	AttackPattern 2253 2284	hold a device’s data for ransom
+R12	uses Arg1:T14 Arg2:T36	
+R13	targets Arg1:T14 Arg2:T2	
+R14	uses Arg1:T14 Arg2:T37	
+R15	uses Arg1:T14 Arg2:T38	
+T7	Application 2395 2411	Google Play Stor
+T39	Application 2510 2536	financial and banking apps
+R16	targets Arg1:T15 Arg2:T39	
+T40	Malware 2645 2661	BatterySaverMobo
+T41	Application 2861 2875	financial apps
+R17	targets Arg1:T16 Arg2:T41	
+T42	Organization 2922 2925	IBM
+R18	has Arg1:T42 Arg2:T20	
+T8	Application 3026 3037	Google Play
+T43	MalwareType 3064 3085	mobile banking trojan
+R19	isA Arg1:T17 Arg2:T43	
+R20	targets Arg1:T17 Arg2:T4	
+R21	uses Arg1:T40 Arg2:T16	
+R22	uses Arg1:T19 Arg2:T16	
+R23	has Arg1:T6 Arg2:T3	
+R24	has Arg1:T7 Arg2:T3	
+T44	MalwareType 128 142	banking trojan
+T45	MalwareType 2189 2195	trojan
+T46	MalwareType 2765 2771	trojan
+T47	Malware 1346 1352	Anubis

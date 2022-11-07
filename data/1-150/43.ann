@@ -1,0 +1,52 @@
+T1	OS 241 248	Android
+T2	OS 363 370	Android
+T3	OS 733 740	Android
+T4	OS 1940 1947	Android
+T5	Malware 268 277	TangleBot
+T6	Malware 408 417	TangleBot
+T7	Malware 533 542	TangleBot
+T8	Malware 723 732	TangleBot
+T9	Malware 1478 1487	TangleBot
+T10	OS 14 21	android
+T11	Organization 81 121	Nigerian Communications Commission (NCC)
+T12	Malware 351 358	FlutBot
+T13	Malware 495 502	FlutBot
+T17	Application 1219 1237	Adobe Flash Player
+T19	Organization 2239 2245	ngCERT
+T20	Organization 3345 3351	ngCERT
+T21	Organization 3706 3712	ngCERT
+T22	Organization 72 75	NCC
+T24	Organization 2921 2924	NCC
+T27	Organization 617 662	New Media and Information Security Department
+T28	Location 2050 2057	Nigeria
+T23	Malware 31 40	tangleBot
+R1	targets Arg1:T23 Arg2:T10	
+T25	Malware 220 229	TangleBot
+R2	targets Arg1:T25 Arg2:T1	
+R3	targets Arg1:T12 Arg2:T2	
+R4	targets Arg1:T5 Arg2:T2	
+T31	AttackPattern 426 453	gains control of the device
+R5	uses Arg1:T6 Arg2:T31	
+T14	Organization 670 720	Nigerian Computer Emergency Response Team (ngCERT)
+R6	targets Arg1:T8 Arg2:T3	
+T15	AttackPattern 815 898	disguised as COVID-19 vaccination appointment-related information in an SMS message
+T18	AttackPattern 902 966	information about fake local power outages that are due to occur
+R7	uses Arg1:T8 Arg2:T15	
+R8	uses Arg1:T8 Arg2:T18	
+R9	targets Arg1:T8 Arg2:T17	
+T32	AttackPattern 1577 1609	eavesdrop on user communications
+R10	uses Arg1:T9 Arg2:T32	
+T33	AttackPattern 1628 1670	steals sensitive data stored on the device
+T34	AttackPattern 1675 1767	monitors almost every user activity, including camera use, audio conversations, and location
+R11	uses Arg1:T9 Arg2:T33	
+T35	AttackPattern 1817 1896	takes complete control of the targeted device, including access to banking data
+R13	uses Arg1:T9 Arg2:T35	
+R14	targets Arg1:T9 Arg2:T4	
+T36	Organization 1973 1976	NCC
+R15	targets Arg1:T9 Arg2:T28	
+T26	AttackPattern 1064 1152	encourage potential victims to follow a link that supposedly offers detailed information
+T29	AttackPattern 1154 1264	Once at the page, users are asked to update applications such as Adobe Flash Player to view the page’s content
+R16	uses Arg1:T8 Arg2:T26	
+R17	uses Arg1:T8 Arg2:T29	
+R12	uses Arg1:T9 Arg2:T34	
+T37	Application 3431 3440	app store

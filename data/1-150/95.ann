@@ -1,0 +1,115 @@
+T2	OS 199 206	Android
+T3	OS 259 266	Android
+T5	OS 1082 1089	Android
+T6	OS 1144 1151	Android
+T7	OS 1282 1289	Android
+T9	OS 3710 3717	Android
+T10	OS 3797 3804	Android
+T11	OS 3924 3931	Android
+T12	OS 4124 4131	Android
+T13	OS 4167 4174	Android
+T17	Malware 47 53	Anubis
+T18	Malware 467 473	Anubis
+T19	Malware 2050 2056	Anubis
+T20	Malware 3494 3500	Anubis
+T21	Malware 3658 3664	Anubis
+T22	Organization 102 133	Cofense Phishing Defense Center
+T23	Application 1900 1904	eBay
+T25	Application 3527 3534	Twitter
+T27	Application 3538 3546	Telegram
+T32	Version 3759 3765	4.0.3,
+T33	Indicator 1310 1330	(Fattura002873.apk),
+T34	MalwareType 0 11	Infostealer
+T35	MalwareType 13 22	Keylogger
+T36	MalwareType 28 38	Ransomware
+R1	isA Arg1:T17 Arg2:T36	
+R2	isA Arg1:T17 Arg2:T35	
+R3	isA Arg1:T17 Arg2:T34	
+T1	Application 72 96	250 Android Applications
+R4	targets Arg1:T17 Arg2:T1	
+T37	Malware 342 348	Anubis
+T38	MalwareType 451 465	banking trojan
+R5	isA Arg1:T37 Arg2:T38	
+T4	AttackPattern 478 520	completely hijack an Android mobile device
+T39	AttackPattern 522 532	steal data
+T40	AttackPattern 534 552	record phone calls
+T41	AttackPattern 563 630	hold the device to ransom by encrypting the victim’s personal files
+R6	uses Arg1:T18 Arg2:T4	
+R7	uses Arg1:T18 Arg2:T39	
+R8	uses Arg1:T18 Arg2:T40	
+R9	uses Arg1:T18 Arg2:T41	
+T42	AttackPattern 980 1036	phishing email that asks the user to download an invoice
+R10	uses Arg1:T18 Arg2:T42	
+R11	indicates Arg1:T33 Arg2:T18	
+T14	Application 1398 1417	Google Play Protect
+T15	Application 1473 1492	Google Play Protect
+T16	AttackPattern 1513 1555	gives the app all the permissions it needs
+R12	uses Arg1:T18 Arg2:T16	
+T29	AttackPattern 1672 1775	gathers a list of installed applications to compare the results against a list of targeted applications
+R13	uses Arg1:T18 Arg2:T29	
+T43	Application 1815 1849	banking and financial applications
+R14	targets Arg1:T18 Arg2:T43	
+T44	Application 1878 1891	shopping apps
+T45	Application 1908 1914	Amazon
+R15	targets Arg1:T18 Arg2:T44	
+R16	targets Arg1:T18 Arg2:T23	
+R17	targets Arg1:T18 Arg2:T45	
+T28	AttackPattern 2057 2147	overlays the original application with a fake login page to capture the user’s credentials
+R18	uses Arg1:T19 Arg2:T28	
+T46	AttackPattern 2250 2271	Capturing screenshots
+T47	AttackPattern 2273 2317	Enabling or changing administration settings
+T48	AttackPattern 2319 2347	Opening and visiting any URL
+T49	AttackPattern 2349 2371	Disabling Play Protect
+T50	AttackPattern 2373 2388	Recording audio
+T51	AttackPattern 2390 2408	Making phone calls
+T52	AttackPattern 2410 2435	Stealing the contact list
+T53	AttackPattern 2437 2467	Controlling the device via VNC
+T54	AttackPattern 2469 2504	Sending, receiving and deleting SMS
+T55	AttackPattern 2506 2524	Locking the device
+T56	AttackPattern 2526 2576	Encrypting files on the device and external drives
+T57	AttackPattern 2599 2626	Retrieving the GPS location
+T58	AttackPattern 2578 2597	Searching for files
+R19	uses Arg1:T19 Arg2:T46	
+R20	uses Arg1:T19 Arg2:T47	
+R21	uses Arg1:T19 Arg2:T48	
+R22	uses Arg1:T19 Arg2:T49	
+R23	uses Arg1:T19 Arg2:T50	
+R24	uses Arg1:T19 Arg2:T51	
+R25	uses Arg1:T19 Arg2:T52	
+R26	uses Arg1:T19 Arg2:T53	
+R27	uses Arg1:T19 Arg2:T54	
+R28	uses Arg1:T19 Arg2:T56	
+R29	uses Arg1:T19 Arg2:T58	
+R30	uses Arg1:T19 Arg2:T57	
+T24	AttackPattern 2628 2687	Capturing remote control commands from Twitter and Telegram
+T26	AttackPattern 2689 2705	Pushing overlays
+T59	AttackPattern 2707 2728	Reading the device ID
+R31	uses Arg1:T19 Arg2:T24	
+R32	uses Arg1:T19 Arg2:T26	
+R33	uses Arg1:T19 Arg2:T59	
+T60	AttackPattern 2742 2818	includes a keylogger that works in every app installed on the Android device
+R34	uses Arg1:T19 Arg2:T60	
+T8	AttackPattern 2833 2912	keylogger needs to be specifically enabled by a command sent from the C2 server
+R35	uses Arg1:T19 Arg2:T8	
+T61	Malware 3288 3294	Anubis
+T62	AttackPattern 3331 3402	searches both internal and external storage and encrypts them using RC4
+R36	uses Arg1:T61 Arg2:T62	
+T63	AttackPattern 3407 3489	adds the file extension .AnubisCrypt to each encrypted file and sends it to the C2
+R37	uses Arg1:T61 Arg2:T63	
+R38	uses Arg1:T20 Arg2:T25	
+R39	uses Arg1:T20 Arg2:T27	
+R40	targets Arg1:T21 Arg2:T9	
+T64	Time 3788 3792	2012
+R41	targets Arg1:T21 Arg2:T32	
+T30	AttackPattern 1577 1617	disabling the actual Google Play Protect
+R42	uses Arg1:T18 Arg2:T30	
+R43	has Arg1:T9 Arg2:T32	
+T65	MalwareType 3300 3310	ransomware
+T66	MalwareType 2918 2927	keylogger
+T67	Application 1598 1617	Google Play Protect
+T68	Application 2667 2674	Twitter
+T69	Application 2359 2363	Play
+T70	MalwareType 2753 2762	keylogger
+T71	MalwareType 2833 2842	keylogger
+T72	OS 499 506	Android
+T73	OS 2804 2811	Android

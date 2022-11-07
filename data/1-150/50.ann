@@ -1,0 +1,162 @@
+T7	OS 3203 3210	Android
+T11	OS 1082 1089	Windows
+T12	OS 2016 2023	Windows
+T13	OS 2763 2770	Windows
+T14	OS 2926 2933	Windows
+T15	OS 3179 3186	Windows
+T16	OS 40 43	iOS
+T20	OS 885 888	iOS
+T22	OS 1756 1759	iOS
+T23	OS 1894 1897	iOS
+T24	OS 2034 2037	iOS
+T26	OS 2588 2591	iOS
+T27	OS 3354 3357	iOS
+T29	OS 3504 3507	iOS
+T30	OS 3569 3572	iOS
+T31	Malware 0 7	DualToy
+T32	Malware 100 107	DualToy
+T33	Malware 222 229	DualToy
+T34	Malware 405 412	DualToy
+T35	Malware 733 740	DualToy
+T36	Malware 856 863	DualToy
+T37	Malware 1064 1071	DualToy
+T38	Malware 1420 1427	DualToy
+T39	Malware 1634 1641	DualToy
+T40	Malware 1883 1890	DualToy
+T41	Malware 2385 2392	DualToy
+T42	Malware 2740 2747	DualToy
+T43	Malware 2790 2797	DualToy
+T44	Malware 2971 2978	DualToy
+T45	Malware 3220 3227	DualToy
+T46	Malware 3367 3374	DualToy
+T49	Organization 381 399	Palo Alto Networks
+T51	Application 1860 1869	App Store
+T53	Application 3508 3517	App Store
+T54	Application 3573 3582	App Store
+T56	Application 3168 3174	iTunes
+T60	Application 2993 2996	ADB
+T61	Application 1811 1820	Apple App
+T63	Organization 1940 1949	Palo Alto
+T64	Malware 2179 2189	WireLurker
+T65	Malware 2260 2263	RCS
+T69	Organization 2028 2033	Apple
+T72	Person 986 996	Claud Xiao
+T74	Person 1556 1560	Xiao
+T75	Person 2363 2367	Xiao
+T76	Person 2540 2544	Xiao
+T77	Person 3763 3767	Xiao
+T78	Location 2518 2523	Spain
+T79	Indicator 2871 2879	adb.exe,
+T80	Indicator 3077 3107	AppleMobileDeviceSupport64.msi
+T81	Indicator 3112 3142	AppleApplicationSupport64.msi,
+T83	Indicator 3005 3014	tadb.exe,
+T62	OS 31 38	Android
+R2	targets Arg1:T31 Arg2:T62	
+R3	targets Arg1:T31 Arg2:T16	
+T8	MalwareType 8 22	Windows Trojan
+R1	isA Arg1:T31 Arg2:T8	
+T9	Hardware 121 132	Windows PCs
+R4	targets Arg1:T32 Arg2:T9	
+T68	AttackPattern 137 193	sideloads malware onto connected Android and iOS devices
+R5	uses Arg1:T32 Arg2:T68	
+T1	MalwareType 200 214	Windows Trojan
+R6	isA Arg1:T33 Arg2:T1	
+T10	AttackPattern 259 359	side load malicious apps onto Android and iOS devices via a USB connection from an infected computer
+R7	uses Arg1:T33 Arg2:T10	
+T2	Time 441 453	January 2015
+T18	AttackPattern 684 722	nabbing iTunes usernames and passwords
+R10	uses Arg1:T34 Arg2:T18	
+T19	Time 760 772	January 2015
+T4	Time 900 912	June 7, 2015
+R11	targets Arg1:T36 Arg2:T20	
+T47	OS 807 814	Android
+R12	targets Arg1:T35 Arg2:T47	
+T50	Time 923 927	2016
+T55	AttackPattern 1102 1253	looks for the Android Debug Bridge (ADB) and iTunes, and downloads drivers for both if they’re missing in order to infect mobile devices once connected
+R13	targets Arg1:T37 Arg2:T11	
+R15	uses Arg1:T37 Arg2:T55	
+T21	AttackPattern 1463 1505	use USB sideloading against mobile devices
+R16	uses Arg1:T38 Arg2:T21	
+R17	targets Arg1:T40 Arg2:T51	
+R18	targets Arg1:T40 Arg2:T23	
+T58	ThreatActor 2246 2257	HackingTeam
+R20	hasAuthor Arg1:T65 Arg2:T58	
+T25	AttackPattern 2264 2360	delivered its spyware from infected PCs and Macs to jailbroken iOS devices and BlackBerry phones
+R21	uses Arg1:T65 Arg2:T25	
+T59	Location 2408 2415	Chinese
+R22	targets Arg1:T41 Arg2:T59	
+T66	Location 2477 2490	United States
+T73	Location 2492 2506	United Kingdom
+T82	Location 2508 2516	Thailand
+T84	Location 2528 2535	Ireland
+R23	targets Arg1:T41 Arg2:T66	
+R24	targets Arg1:T41 Arg2:T73	
+R25	targets Arg1:T41 Arg2:T82	
+R26	targets Arg1:T41 Arg2:T78	
+R27	targets Arg1:T41 Arg2:T84	
+R29	targets Arg1:T41 Arg2:T26	
+R31	indicates Arg1:T79 Arg2:T43	
+R33	targets Arg1:T43 Arg2:T14	
+R34	indicates Arg1:T83 Arg2:T44	
+T6	Application 2902 2922	Android Debug Bridge
+R32	targets Arg1:T43 Arg2:T6	
+R35	targets Arg1:T44 Arg2:T60	
+R36	indicates Arg1:T80 Arg2:T44	
+R37	indicates Arg1:T81 Arg2:T44	
+R38	targets Arg1:T44 Arg2:T56	
+R39	targets Arg1:T44 Arg2:T15	
+R40	targets Arg1:T45 Arg2:T7	
+T71	AttackPattern 3375 3481	installs a fake iOS App Store used to try to trick users into divulging their iTunes username and password
+R42	uses Arg1:T46 Arg2:T71	
+T28	Malware 3593 3603	ZergHelper
+R43	targets Arg1:T28 Arg2:T54	
+R44	targets Arg1:T28 Arg2:T30	
+T52	Malware 3646 3657	AceDeceiver
+T70	OS 170 177	Android
+T87	OS 182 185	iOS
+R47	targets Arg1:T32 Arg2:T70	
+R48	targets Arg1:T32 Arg2:T87	
+T88	OS 289 296	Android
+T89	OS 301 304	iOS
+R49	targets Arg1:T33 Arg2:T88	
+R50	targets Arg1:T33 Arg2:T89	
+T90	Application 692 698	iTunes
+R51	targets Arg1:T34 Arg2:T90	
+T91	Hardware 2233 2240	iPhones
+R52	targets Arg1:T64 Arg2:T91	
+T92	Hardware 2327 2338	iOS devices
+T93	Hardware 2343 2360	BlackBerry phones
+R53	targets Arg1:T65 Arg2:T92	
+R54	targets Arg1:T65 Arg2:T93	
+T94	Application 3453 3459	iTunes
+R55	targets Arg1:T46 Arg2:T94	
+T3	AttackPattern 517 557	displaying mobile ads on Android devices
+R8	uses Arg1:T34 Arg2:T3	
+T95	AttackPattern 488 512	installing unwanted apps
+R56	uses Arg1:T34 Arg2:T95	
+T5	Application 3499 3517	fake iOS App Store
+R9	uses Arg1:T28 Arg2:T5	
+R14	uses Arg1:T52 Arg2:T5	
+R19	uses Arg1:T46 Arg2:T5	
+R28	discoveredIn Arg1:T36 Arg2:T4	
+T17	OS 542 549	Android
+T48	MalwareType 587 593	Trojan
+T57	OS 622 625	iOS
+T67	Application 662 671	App Store
+T85	MalwareType 1031 1037	Trojan
+T86	Application 1116 1136	Android Debug Bridge
+T96	MalwareType 2568 2574	Trojan
+T97	Organization 3739 3744	Apple
+T98	Application 3391 3404	iOS App Store
+R30	uses Arg1:T46 Arg2:T98	
+T99	Application 3245 3266	Chinese language apps
+R41	uses Arg1:T45 Arg2:T99	
+T100	Hardware 2689 2695	iPhone
+T101	Hardware 2699 2703	iPad
+T102	Hardware 2678 2680	PC
+T103	Application 1355 1358	ADB
+T104	OS 1369 1372	iOS
+T105	Application 1147 1153	iTunes
+T106	MalwareType 2748 2754	Trojan
+R45	isA Arg1:T42 Arg2:T106	
+T107	MalwareType 2278 2285	spyware

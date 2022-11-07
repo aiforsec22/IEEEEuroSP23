@@ -1,0 +1,94 @@
+T3	OS 391 398	Android
+T5	Malware 0 4	Ginp
+T6	Malware 185 189	Ginp
+T7	Malware 330 334	Ginp
+T8	Malware 573 577	Ginp
+T9	Malware 794 798	Ginp
+T10	Malware 1226 1230	Ginp
+T11	Malware 1459 1463	Ginp
+T12	Malware 1794 1798	Ginp
+T13	Malware 2283 2287	Ginp
+T14	Malware 2428 2432	Ginp
+T15	Malware 1829 1835	Anubis
+T16	Malware 2071 2077	Anubis
+T17	Malware 2170 2176	Anubis
+T18	Organization 203 214	Trend Micro
+T19	Organization 2004 2015	Trend Micro
+T20	Organization 2091 2102	Trend Micro
+T24	Person 2038 2046	Tony Bao
+T25	Malware 218 237	AndroidOS_Ginp.HRXB
+T1	Application 20 39	Android Banking App
+R1	targets Arg1:T5 Arg2:T1	
+T23	AttackPattern 47 95	Steals Login Credentials and Credit Card Details
+R2	uses Arg1:T5 Arg2:T23	
+T2	MalwareType 155 177	Android banking trojan
+R3	isA Arg1:T6 Arg2:T2	
+*	hasAlias T6 T25
+T26	Organization 296 308	ThreatFabric
+T27	Malware 380 386	Anubis
+R4	variantOf Arg1:T7 Arg2:T27	
+T28	MalwareType 492 506	banking trojan
+R5	isA Arg1:T27 Arg2:T28	
+R6	targets Arg1:T27 Arg2:T3	
+T29	Malware 511 515	Ginp
+T30	AttackPattern 578 673	removes its icon from the app drawer before asking the user for Accessibility Service privilege
+R7	uses Arg1:T8 Arg2:T30	
+T31	AttackPattern 715 789	grants itself additional permissions for sending messages and making calls
+R8	uses Arg1:T8 Arg2:T31	
+T32	AttackPattern 802 874	capable of sending or harvesting SMS messages based on received commands
+R9	uses Arg1:T9 Arg2:T32	
+T33	AttackPattern 888 912	request admin privileges
+T34	AttackPattern 914 936	enable overlay attacks
+T35	AttackPattern 938 978	update the command-and-control (C&C) URL
+T36	AttackPattern 980 1002	update the target list
+T37	AttackPattern 1004 1037	set itself as the default SMS app
+T38	AttackPattern 1039 1093	prevent the user from disabling Accessibility Services
+T39	AttackPattern 1095 1125	get installed apps or contacts
+T40	AttackPattern 1127 1149	enable call forwarding
+T41	AttackPattern 1155 1186	hide itself and prevent removal
+R10	uses Arg1:T9 Arg2:T33	
+R11	uses Arg1:T9 Arg2:T34	
+R12	uses Arg1:T9 Arg2:T35	
+R13	uses Arg1:T9 Arg2:T36	
+R14	uses Arg1:T9 Arg2:T37	
+R15	uses Arg1:T9 Arg2:T38	
+R16	uses Arg1:T9 Arg2:T39	
+R17	uses Arg1:T9 Arg2:T40	
+R18	uses Arg1:T9 Arg2:T41	
+T42	AttackPattern 1235 1399	trick the victim into giving out login credentials and credit card details by claiming that these pieces of information are a prerequisite to validate user identity
+R19	uses Arg1:T10 Arg2:T42	
+T43	Malware 1404 1408	Ginp
+T4	Application 1487 1510	Google Play Verificator
+R20	targets Arg1:T11 Arg2:T4	
+T44	AttackPattern 1527 1548	stealing SMS messages
+R21	uses Arg1:T11 Arg2:T44	
+T45	AttackPattern 1564 1637	posed as fake “Adobe Flash Player” apps targeting credit card information
+R22	uses Arg1:T11 Arg2:T45	
+T46	AttackPattern 1674 1693	payload obfuscation
+R23	uses Arg1:T11 Arg2:T46	
+T21	AttackPattern 1706 1773	targeting Snapchat and Viber users as well as specific banking apps
+R24	uses Arg1:T11 Arg2:T21	
+R25	variantOf Arg1:T12 Arg2:T15	
+T22	AttackPattern 1918 1955	switched to a new overlay target list
+T47	AttackPattern 1960 2002	predominantly went after banking app users
+R26	uses Arg1:T12 Arg2:T22	
+R27	uses Arg1:T12 Arg2:T47	
+T48	Malware 2106 2129	AndroidOS_AnubisDropper
+R28	variantOf Arg1:T48 Arg2:T16	
+T49	Malware 2197 2200	Bao
+T50	Malware 2415 2421	Anubis
+T51	Application 2483 2496	Spanish banks
+R29	targets Arg1:T14 Arg2:T51	
+T52	Malware 2529 2533	Ginp
+T53	AttackPattern 2553 2619	overlay screens to steal login credentials and credit card details
+R30	uses Arg1:T52 Arg2:T53	
+R31	variantOf Arg1:T13 Arg2:T50	
+T54	MalwareType 5 11	Trojan
+T55	MalwareType 518 524	trojan
+T56	Application 642 663	Accessibility Service
+T57	Application 1071 1084	Accessibility
+T58	Application 1761 1773	banking apps
+T59	Application 1985 1996	banking app
+T60	Application 1716 1724	Snapchat
+T61	Application 1585 1590	Flash
+T62	Application 1729 1734	Viber

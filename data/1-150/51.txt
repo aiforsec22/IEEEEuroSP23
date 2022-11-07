@@ -1,0 +1,31 @@
+Mandrake Spyware Now Targeting Android Users in Australia
+The spyware is capable of exploiting Google Chrome, Gmail, ANZ Australia, Bank of Melbourne Mobile Banking, Commonwealth Bank of Australia, Bank of SA, Australian Super, and PayPal apps.
+The threat actors behind the campaign have leveraged the rise in the usage of mobile banking in Australia to target individuals.
+
+Security researchers reported a new Android spying operation subverting Google Chrome, Gmail, ANZ Australia, Bank of Melbourne Mobile Banking, Commonwealth Bank of Australia, Bank of SA, Australian Super, and PayPal apps.
+
+What happened?
+A cybersecurity research team has uncovered the “Mandrake” spying operation targeting Australian mobile banking users.
+
+Mandrake was first discovered earlier this year but is believed to be active since at least four years as a highly sophisticated spying platform.
+The threat actors behind the campaign have leveraged the rise in the usage of mobile banking in Australia to target individuals.
+One unusual factor observed by the researchers was that the attacks are manually orchestrated.
+By analyzing their captured data, the research team could identify 500 victims from Australia so far. However, some experts have said that the number of targeted victims could be much higher.
+
+How does the campaign work?
+The well-developed Mandrake spyware has been continuously updated with new features, bug patches, and improved functionalities over a period of four years.
+
+The threat actors involved are using the spyware to take on individual targets.
+In this campaign, the spyware is used to first do a complete scan of the device and capture personal information about the targeted victim.
+After this, the attackers gain access to the users' preferences, device usage, inactivity times, and have the ability to record their screens.
+
+What are its capabilities?
+
+Using the spyware, the attackers could do anything from credential stealing and information exfiltration, to money transfers and blackmailing.
+It can also be used to surreptitiously turn the volume of the phone down and block calls or messages.
+The researchers noted that the attackers might also be running an affiliate program to sell the victims' information or access to others.
+
+Who is targeted?
+The first attack wave from the threat actors was observed in 2016-2017 which was directed at targets in the UK, US, Germany, and the Netherlands.  The current wave of attacks from 2018-2020 is more focused on Australian users, with little presence in the US, Canada, and Europe.
+
+According to the researchers, the spyware authors looked to be selectively targeting a "special kind of consumers." The researchers indicated that Australia may be a lucrative target for the attackers because of its high usage of mobile banking penetration and a high GDP per capita.

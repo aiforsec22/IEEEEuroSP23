@@ -1,0 +1,160 @@
+Anubis II - malware and afterlife
+Introduction
+Besides being the Egyptian God associated with mummification and afterlife, Anubis is also an Android banking malware that has caused quite some trouble for over 300 financial institutions worldwide since 2017.
+
+Anubis II is the Android banking Trojan created and advertised by an actor with the nickname “maza-in”. This malware family goes beyond the well-known overlay attacks by combining advanced features such as screen streaming, remote file browsing, sound recording, keylogging and even a network proxy, making it an efficient banking malware but also a potential spying tool. Effectively, Anubis can be considered one of the most used Android banking Trojans since late 2017.
+
+As banking malware, Anubis operates by tricking its victims into providing personal and sensitive information such as online banking credentials, banking security codes and even credit card details. Many victims do not realise that the malware application does not pretend to be the bank, it mostly hides as a third-party app and therefore remains under the radar of the average user. Disguises used by Anubis where for example: fake mobile games, fake software updates, fake post/mail apps, fake flash-player apps, fake utility apps, fake browsers and even fake social-network and communication apps.
+
+The malware was rented privately to a limited number of “customers”; criminals willing to use such malware to perform fraud. At the moment of writing, the renting service is supposedly disrupted due to the author being under arrest or having simply vanished with customers’ money, but the malware itself is alive and kicking.
+
+Through this blog post ThreatFabric experts revisit major stages of Anubis’ evolution and explain what changes can be expected on the threat landscape.
+
+Origins: It all started with BankBot
+In December 2016 the actor “maza-in” wrote an article named “Android BOT from scratch” in which he shared source code of a new Android banking Trojan capable of sending and intercepting text messages as well as performing overlay attacks to steal credentials.
+
+The article received a lot of attention as it contained sources of both the C2 panel and the Android client (bot), giving actors the tools to create a working banking Trojan with minimum effort. The first malware based on the code from this article was spotted by Dr. Web in Jan 2017 and was dubbed “Android.BankBot.149.origin”. Although being a generic name for banking malware, “BankBot” became the name attributed to all Trojans derived from the shared source code.
+
+Throughout 2017, many actors used Bankbot for their fraudulent operations, but without proper support and updates most abandoned the malware months later. Some however used the source code to build their own malware. Some examples are:
+
+LokiBot (2017) - the actor behind this malware adapted the original code and introduced the ransomware and proxy capabilities
+Razdel (2017) - a banking malware that primarily target Central European banks, introduced a novel trick to implement overlay attacks
+MysteryBot (2018) - another malware from the same actor that was behind “LokiBot”, introduced a novel keylogging approach and on-device fraud technique
+CometBot (2019) - a copy of the original code with minor modifications, primarily targeting German banks at the moment
+Although most actors reusing the original code changed the Trojan into something that suited their respective needs, all of them also kept the original features from the original shared code. The list of these original features is very limited compared to recent banking Trojans but enough to steal personal information from the victims:
+
+Overlaying: Dynamic - C2 based (possibility to remotely modify the list of targeted application)
+SMS blocking (hiding messages from the victim)
+SMS sending (capability to send messages from the infected device)
+SMS harvesting (possibility to send a copy of all message to the C2 server)
+About Anubis
+Rise of maza-in
+By publishing the aforementioned article, maza-in earned himself a reputation of Android expert on underground forums. He started to share tips and tricks to help other threat actors deal with technical issues and enhance their own malware. Shortly after the initial article, the actor even conducted an interview with Forbes magazine named “I Want To Expose Google’s Mistakes”, stating that he published the malicious code to improve the state of Android security, by showing design flaws in the system that can be easily abused.
+
+He also frequently reviewed each new Android banking Trojan available for renting. In his reviews, he evaluated the technical capabilities and provided his opinion about the actor. Later, a review by maza-in almost became a de facto step to start rental of Android banking malware, as users of forums were asking for the review before they would buy/rent a new Trojan.
+
+Although claiming to have the most noble intentions, maza-in also pursued more nefarious goals. Information from forums shows that at the same time he shared the code of the Trojan in the tutorial article, he was developing a “full” version of the Trojan privately. After some time he started to privately rent it.
+
+The malware was heavily enhanced compared to its original version, adding modern overlaying techniques, device screen recording and streaming, a network proxy feature, keylogging and the ability to steal files from the infected device. maza-in names the malware Anubis and used the following logo in his advertisement of the malware:
+
+The list of bot features below shows how much maza-in improved upon the original shared BankBot code to create (the latest version of) Anubis:
+
+Overlaying: Static (hardcoded in bot)
+Overlaying: Dynamic (C2 based)
+Keylogging
+Contact list collection
+Screen streaming
+Sound recording
+SMS harvesting: SMS forwarding
+SMS blocking
+SMS sending
+Files/pictures collection
+Calls: USSD request making
+Ransomware: Cryptolocker
+Remote actions: Data-wiping
+Remote actions: Back-connect proxy
+Notifications: Push notifications
+C2 Resilience: Twitter/Telegram/Pastebin C2 update channels
+In addition to the new features and improvements made, Anubis also has a larger (default) target list. In the Appendix you can find a full list of apps targeted by Anubis (437 applications in total).
+
+Distribution
+As a rented Trojan, Anubis was distributed using a wide range of delivery techniques:
+
+Google Play campaigns: using self-made or rented droppers actors were able to bypass Google Play security mechanisms and spread the Trojan using the official app store, potentially infecting thousands of victims at a time.
+Spam campaigns: using SMS or email, actors sent messages to social engineer the victims with a request to install or update some legitimate application, instead linking to the malware.
+Web-redirection of the victim to a fake landing page containing a request to install or update some legitimate application, instead linking to the malware; using advertisement on websites, hacked sites, traffic exchanges and other black hat SEO methods
+It is in the interest of the actors to infect as many devices as possible as it increases the chances to commit fraud successfully. The problem for Play Store users is that even without being social-engineered, due to the increasing number of Google Play malware campaigns, the risk of downloading a dropper mimicking a benign application has increased significantly. Therefore the statement “only download apps from the official app store” is not enough to remain safe from malware.
+
+Recent updates
+The rental of Anubis 2 was open from Q4 2017 until February 2019. During Q1 2019, actor maza-in vanished from the threat landscape, leaving existing customers without support and updates. Although exact details about the vanishing of the actor remain unclear at the time of writing, a chain of events confirms that some abnormal activity took place around Anubis and its author.
+
+On December 13 2018 maza-in announces the release of Anubis 2.5; seemingly only redesigning the backend web interface, while actually stating that he rewrote the whole bot code.
+On January 16 2019 Anubis code is leaked in an underground forum (both backend code and unobfuscated APK).
+On February 14 2019 for the first time an Anubis sample seen targeting Russian banks only is spotted (indicating a new campaign / new operator).
+On February 25 2019 some complaints from Anubis customers appear in underground forums stating that maza-in and Anubis support no longer reply to messages.
+On March 04 2019, the admin of one underground forum states maza-in got arrested. Shortly after this, accounts of maza-in are banned on multiple forums.
+During March 2019, actor Aldesa (who shares a connection with maza-in) creates a post to sell the so-called “Anubis 3” malware on an underground forum. His post gets removed by the admin quite quickly.
+We can conclude that the Anubis Trojan is no longer officially rented. However, ThreatFabric experts have observed certain Anubis customers having access to the builder and admin panel, which explains why the operations have not been totally disrupted.
+
+Although it is hard to say why maza-in really vanished, the fact that some code has been leaked combined with recent observations of unobfuscated Anubis samples in the wild, may suggest that the malware will be used by other actors and thus remain active.
+
+Marcher
+In 2016, the operations of another popular Android banking malware named Marcher were disrupted in a similar way to what happened to Anubis. The actor behind the Marcher Trojan got banned and the renting service was discontinued. The renting model of that Trojan allowed purchase of the APK (bot) builder, therefore a number of Marcher actors obtained the source code of the admin panel and the bot itself.
+
+Some of them resold the sources and some of them used them as a base for their own banking malware; therefore, although operations were disrupted the Trojan remained active for a while and new malware families emerged. Examples of modern families based on Marcher are:
+
+ExoBot
+Gustuff
+DiseaseBot
+Bubabot
+Neobot
+Even now it sometimes happens that some new Marcher-based Trojans appear on the threat-landscape.
+
+The story repeats itself
+Looking at actual situation for Anubis, several scenarios are possible:
+
+Actors having access to relevant resources continue using Anubis in it’s actual state
+Some actor or actor group will step in and will become the new maintainer of Anubis, business starts over
+Actors stop using Anubis and wait for some new banking malware to become available
+Actors having access to relevant resources will start to modify and improve the existing code base to create their own malware
+As mentioned before, Anubis itself is based on the Bankbot Trojan, which was made public on purpose. This resulted in the appearance of at least 4 distinctive malware families/variants as shown in the picture hereunder:
+
+We can say that Anubis itself also sprung into existence from the publicly available BankBot code. Considering the increasing demand for Android banking malware and the fact that unobfuscated versions of the bot and the code of the admin panel of Anubis are publicly available we can definitely expect similar events.
+
+Anubis statistics
+As Anubis is a rented banking Trojan, each buyer/operator can decide the effective list of applications the Trojan should target. This results in many different campaigns with different objectives.
+
+Although there have been several different campaigns targeting different sets of applications, when considering the average Anubis sample, the number of targets is approximately 370 unique applications.
+
+Target locations
+Based on the countries for which the targeted applications are made, it is possible to make statistics of the number of targets per region.
+
+As can be seen in following chart, it is clear that there is a strong interest in institutions providing services in Europe, Asia and the Americas:
+
+When we narrow this down to subregions we can see that the targets are in fact institutions active in Europe, West-Asia, North-America and Australia.
+
+Interestingly, those locations match banking malware’s “usual suspects”; many of the previously observed banking malware families have been seen primarily targeting financial institutions in those subregions.
+
+Target types
+Based on the application types provided by Google, we can see based on the targeted applications that although the Anubis Trojan is a banker and therefore mainly targets “Finance” apps, it also has interest in other types of apps.
+
+As visible in following chart, the application types in second and third position of interest are “Shopping” and “Business” apps, which can be explained by the fact that is shouldn’t look suspicious to the victim when such applications are requesting update of payment details or other sensitive information.
+
+After “Finance” apps, the app types of second choice are “Shopping” and “Business” followed by “Tools”, “Communication” and “Social” apps. Therefore, understand that although such malware is called banking malware its aim is to perform fraud and therefore targets more than only financial apps to achieve its goal.
+
+In conclusion, what’s next
+Considering the growing demand for Android banking malware, we can definitely expect actors to continue using Anubis. Although the creator has vanished the threat is still real; the malware will continue to operate and provide its advanced features to ill-intentioned actors.
+
+We can expect the following events to take place:
+
+Anubis customers having sufficient resources will continue to use the Trojan.
+As some actors have access to both the Anubis admin panel and builder it’s likely they will try to sell it by themselves.
+Some disgruntled customers having access to the sources might leak additional code and resources as retaliation.
+As it’s known that some actors have access to the right resources we can expect some enhancement and maybe even new features.
+If those events indeed take place, it will result in new actors using Anubis, new campaigns and maybe even new malware variants or malware families based on the Anubis code.
+
+Knowledge of the threat landscape and implementation of the right detection tools remains crucial to be able to protect yourself from fraud; Anubis is only one of the many Trojans active in the wild!
+
+Anubis samples
+Some of the latest Anubis samples found in the wild:
+
+Build date: Mar 19 2019 App name: FlashPlayer Package name: com.qfoqzju.yrcapztuywyu
+
+Hash: 84bb0570a862f4a74054629ae6338a4938ffc0fdad100b66fae3a279ab25df6b
+
+Build date: Mar 18 2019 App name: Flash_Player_2019 Package name: com.ewsazh.txmypalqtgn
+
+Hash: fdfba566e0ac5d7b0f5479068487bb4bfa2eb85d5f4eff7a8d1851b83401d850
+
+Build date: Mar 18 2019 App name: YouTube Package name: com.dtimrfrfmlek.umvkez
+
+Hash: b8a843bc06ee935059edf3637c717e2f2ef2f42698498df0dfe475bf944f1b08
+
+Build date: Mar 18 2019 App name: FlashPlayer Package name: com.smijezbmbslg.dsznlnztlydj
+
+Hash: db766146be531b813aecac731387dd38d710327b60a653a40b9fb28f22bf69eb
+
+Build date: Mar 17 2019 App name: Sistemi Güncelle Package name: com.jqxltum.dmfkol
+
+Hash: 2e843554c98ecfad4edef52e332a9e7e4a3d0ba40fa76c5ac9b783aca7219868
+

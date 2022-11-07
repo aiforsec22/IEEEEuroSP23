@@ -1,0 +1,236 @@
+T1	OS 297 304	Android
+T2	OS 704 711	Android
+T3	Organization 993 999	Google
+T4	Organization 74 83	Kaspersky
+T5	Organization 481 490	Kaspersky
+T6	Organization 1174 1183	Kaspersky
+T7	Organization 8205 8214	Kaspersky
+T8	Organization 8349 8358	Kaspersky
+T9	Malware 23 29	Rotexy
+T10	Malware 195 201	Rotexy
+T11	Malware 223 229	Rotexy
+T12	Malware 306 312	Rotexy
+T13	Malware 602 608	Rotexy
+T14	Malware 630 636	Rotexy
+T15	Malware 713 719	Rotexy
+T16	Malware 852 858	Rotexy
+T17	Malware 923 929	Rotexy
+T18	Malware 1190 1196	Rotexy
+T19	Malware 1359 1365	Rotexy
+T20	Malware 1747 1753	Rotexy
+T21	Malware 2007 2013	Rotexy
+T22	Malware 2124 2130	Rotexy
+T23	Malware 2596 2602	Rotexy
+T24	Malware 3015 3021	Rotexy
+T25	Malware 3500 3506	Rotexy
+T26	Malware 3661 3667	Rotexy
+T27	Malware 3760 3766	Rotexy
+T29	Malware 3944 3950	Rotexy
+T30	Malware 4071 4077	Rotexy
+T31	Malware 4129 4135	Rotexy
+T32	Malware 4231 4237	Rotexy
+T33	Malware 4418 4424	Rotexy
+T34	Malware 4543 4549	Rotexy
+T35	Malware 4762 4768	Rotexy
+T36	Malware 4894 4900	Rotexy
+T37	Malware 5194 5200	Rotexy
+T38	Malware 5357 5363	Rotexy
+T39	Malware 5732 5745	Rotexy Trojan
+T40	Malware 6196 6202	Rotexy
+T41	Malware 6318 6324	Rotexy
+T42	Malware 6450 6456	Rotexy
+T43	Malware 6476 6482	Rotexy
+T44	Malware 6647 6653	Rotexy
+T45	Malware 6835 6841	Rotexy
+T46	Malware 7103 7116	Rotexy Trojan
+T47	Malware 7789 7795	Rotexy
+T48	Malware 8241 8247	Rotexy
+T49	Malware 8321 8327	Rotexy
+T52	Location 0 6	Russia
+T53	Location 416 422	Russia
+T54	Location 823 829	Russia
+T55	Location 2858 2864	Russia
+T56	Location 8385 8391	Russia
+T57	Application 3785 3797	Superservice
+T75	Indicator 1531 1544	youla9d6h.tk,
+T76	Indicator 1573 1585	avitoe0ys.tk
+T77	Indicator 1473 1486	Avito.pay.apk
+T78	Indicator 2290 2300	bank.html,
+T79	Indicator 2316 2333	extortionist.html
+T80	Indicator 1545 1558	prodam8n9.tk,
+T81	Indicator 1559 1572	prodamfkz.ml,
+T82	Indicator 4197 4216	81[.]177[.]135[.]30
+T83	Indicator 2301 2312	update.html
+T84	Indicator 1302 1332	Trojan-spy.Androidos.Smsthief.
+R1	indicates Arg1:T75 Arg2:T19
+R2	indicates Arg1:T76 Arg2:T19
+R3	indicates Arg1:T77 Arg2:T19
+R4	indicates Arg1:T78 Arg2:T22
+R5	indicates Arg1:T79 Arg2:T22
+R6	indicates Arg1:T80 Arg2:T19
+R7	indicates Arg1:T81 Arg2:T19
+R8	indicates Arg1:T82 Arg2:T31
+R9	indicates Arg1:T83 Arg2:T22
+R10	indicates Arg1:T84 Arg2:T18
+R11	targets Arg1:T9 Arg2:T52	
+R12	targets Arg1:T12 Arg2:T53	
+R13	targets Arg1:T15 Arg2:T54	
+T50	AttackPattern 1029 1086	send a small message in JSON format to the android device
+R14	uses Arg1:T17 Arg2:T50	
+T58	AttackPattern 1108 1134	SMS monitoring or tracking
+R15	uses Arg1:T17 Arg2:T58	
+T85	MalwareType 1413 1427	Banking Trojan
+T86	MalwareType 1432 1442	Ransomware
+R16	isA Arg1:T19 Arg2:T85	
+R17	isA Arg1:T19 Arg2:T86	
+T87	AttackPattern 1775 1861	spreads via a link sent in Phishing SMS that prompt the user to install an application
+R18	uses Arg1:T20 Arg2:T87	
+T59	AttackPattern 1898 1939	asked for the device administrator rights
+R19	uses Arg1:T20 Arg2:T59	
+T60	Time 2149 2158	2015-2016
+T61	Time 2260 2269	2017-2018
+T51	AttackPattern 3037 3168	registers with google cloud messaging service and launches super service which checks if the device has the administrator privilege
+R20	uses Arg1:T24 Arg2:T51	
+T88	AttackPattern 3179 3256	checks its own status and relaunches the app if the app gets close or stopped
+R21	uses Arg1:T24 Arg2:T88	
+T89	AttackPattern 3261 3368	checks privilege in every second and if not available, it starts requesting to the user in an infinite loop
+R22	uses Arg1:T24 Arg2:T89	
+T90	AttackPattern 3447 3489	hides the application icon from the device
+R23	uses Arg1:T24 Arg2:T90	
+T91	AttackPattern 3514 3615	detects an attempts to revoke the admin privilege then it starts switching off the user device screen
+R24	uses Arg1:T25 Arg2:T91	
+T92	AttackPattern 3675 3739	start requesting for admin privilege again to the user in a loop
+R25	uses Arg1:T26 Arg2:T92	
+R26	uses Arg1:T27 Arg2:T57	
+T63	AttackPattern 4786 4816	intercept all the incoming SMS
+R29	uses Arg1:T35 Arg2:T63	
+T64	AttackPattern 4913 5027	puts user’s phone in silent mode and switch of the screen when it received an SMS so the user doesn’t get notified
+R30	uses Arg1:T36 Arg2:T64	
+T65	AttackPattern 5068 5162	send a message to the specific phone number with the information that has been received in SMS
+R31	uses Arg1:T36 Arg2:T65	
+T66	AttackPattern 5771 5825	Send text received from the C&C server to all contacts
+R32	uses Arg1:T39 Arg2:T66	
+T67	AttackPattern 5872 5914	send all contact details to the C&C server
+R33	uses Arg1:T39 Arg2:T67	
+T68	AttackPattern 5939 6016	Block the display to show bank’s Phishing HTML page to enter the bank details
+T69	AttackPattern 6046 6084	Block the display to show Ransome page
+T70	AttackPattern 6108 6147	Block the Display to show device update
+T71	AttackPattern 6163 6194	Block display of all HTML pages
+R34	uses Arg1:T39 Arg2:T68	
+R35	uses Arg1:T39 Arg2:T69	
+R36	uses Arg1:T39 Arg2:T70	
+R37	uses Arg1:T39 Arg2:T71	
+T95	AttackPattern 6498 6588	blocks the user’s phone display and shows a Ransome page with some sexually explicit image
+R39	uses Arg1:T43 Arg2:T95	
+T96	AttackPattern 6669 6749	blocks the user phone screens and display banking page to enter the bank details
+R40	uses Arg1:T44 Arg2:T96	
+T72	AttackPattern 6904 7000	received bank details then the attacker can perform any transaction or even can change password,
+R41	uses Arg1:T45 Arg2:T72	
+T73	Location 8425 8432	Ukraine
+T74	Location 8434 8440	Turkey
+T97	Location 8442 8449	Germany
+R42	targets Arg1:T49 Arg2:T56	
+R43	targets Arg1:T49 Arg2:T73	
+R44	targets Arg1:T49 Arg2:T74	
+R45	targets Arg1:T49 Arg2:T97	
+T98	AttackPattern 2033 2094	starts using plain text JSON format to communicate C&C server
+R46	uses Arg1:T21 Arg2:T98	
+T99	AttackPattern 2163 2254	starts using the AES algorithm to encrypt the data between the user’s device and C&C server
+R47	uses Arg1:T21 Arg2:T99	
+T100	AttackPattern 2393 2432	using the various method of obfuscation
+R48	uses Arg1:T22 Arg2:T100	
+T101	AttackPattern 2699 2771	it checks if it is being launched in an emulation or sandbox environment
+R49	uses Arg1:T23 Arg2:T101	
+T28	AttackPattern 5530 5585	unblock the user device and revoke the admin privileges
+T93	AttackPattern 5631 5694	Send an SMS with a specified context to a specific phone number
+R50	uses Arg1:T38 Arg2:T28	
+R51	uses Arg1:T38 Arg2:T93	
+T103	MalwareType 30 36	Trojan
+R52	isA Arg1:T9 Arg2:T103	
+R53	targets Arg1:T12 Arg2:T1	
+R54	targets Arg1:T15 Arg2:T2	
+T104	Time 1284 1288	2014
+T62	MalwareType 314 320	Trojan
+R28	isA Arg1:T12 Arg2:T62	
+T94	Location 349 357	Russians
+R38	targets Arg1:T12 Arg2:T94	
+T105	MalwareType 610 616	trojan
+T106	MalwareType 721 727	Trojan
+T107	Location 756 764	Russians
+T108	MalwareType 859 865	Trojan
+T109	MalwareType 930 936	trojan
+T110	Application 1000 1023	Cloud Messaging Service
+T111	MalwareType 1197 1203	trojan
+T112	MalwareType 1238 1245	spyware
+R55	isA Arg1:T18 Arg2:T112	
+R56	isA Arg1:T18 Arg2:T111	
+T113	MalwareType 1246 1252	trojan
+T114	AttackPattern 1949 1982	start communicating to C&C server
+R57	uses Arg1:T20 Arg2:T114	
+T115	MalwareType 1754 1760	Trojan
+T116	MalwareType 2014 2020	Trojan
+T117	MalwareType 2131 2137	trojan
+T118	MalwareType 2603 2609	Trojan
+T119	Location 2959 2966	Russian
+T120	MalwareType 3022 3028	Trojan
+T121	MalwareType 2924 2930	trojan
+T122	Application 3052 3082	google cloud messaging service
+T102	MalwareType 3767 3773	Trojan
+T123	Malware 3893 3899	Rotexy
+T124	MalwareType 3900 3906	Trojan
+R27	isA Arg1:T123 Arg2:T124	
+T125	MalwareType 3951 3957	Trojan
+T126	AttackPattern 4017 4054	Rebooting and switching off the phone
+R58	uses Arg1:T29 Arg2:T126	
+T127	AttackPattern 4056 4092	Termination of Rotexy Malware Trojan
+R59	uses Arg1:T29 Arg2:T127	
+T128	MalwareType 4086 4092	Trojan
+T129	AttackPattern 4094 4127	Sending of an SMS using the phone
+R60	uses Arg1:T29 Arg2:T129	
+T130	MalwareType 4136 4142	Trojan
+T131	MalwareType 4246 4252	Trojan
+T132	Malware 4290 4296	Rotecy
+*	hasAlias T31 T132
+T133	MalwareType 4297 4303	Trojan
+T134	MalwareType 4425 4431	Trojan
+T135	AttackPattern 4440 4535	stores the information about the C&C server and infected device data in a local SQLite database
+R61	uses Arg1:T33 Arg2:T135	
+T136	MalwareType 4550 4556	Trojan
+T137	MalwareType 4769 4775	Trojan
+T138	MalwareType 4901 4907	Trojan
+T139	MalwareType 5201 5207	trojan
+T140	MalwareType 5364 5370	Trojan
+T141	AttackPattern 4557 4581	gets the admin privilege
+R62	uses Arg1:T34 Arg2:T141	
+T142	AttackPattern 4821 4892	process them according to the templates it received from the C&C server
+R63	uses Arg1:T35 Arg2:T142	
+T143	AttackPattern 5213 5291	sends other information to the C&C server like running process and application
+R64	uses Arg1:T37 Arg2:T143	
+T144	AttackPattern 5592 5620	update the C&C address or IP
+R65	uses Arg1:T38 Arg2:T144	
+*	hasAlias T39 T38
+T145	MalwareType 6203 6209	Trojan
+T146	MalwareType 6325 6331	Trojan
+T147	MalwareType 6483 6489	Trojan
+T148	MalwareType 6654 6660	Trojan
+T149	MalwareType 6842 6848	Trojan
+T150	AttackPattern 6332 6352	Blocking the Display
+R66	uses Arg1:T41 Arg2:T150	
+T151	MalwareType 6457 6463	Trojan
+R67	isA Arg1:T42 Arg2:T151	
+R68	isA Arg1:T43 Arg2:T147	
+T152	MalwareType 7338 7344	Trojan
+T153	MalwareType 7546 7552	Trojan
+T154	MalwareType 7796 7802	Trojan
+T155	MalwareType 8248 8254	Trojan
+T156	MalwareType 8328 8334	Trojan
+T157	MalwareType 203 209	trojan
+T158	MalwareType 7443 7450	blocker
+T159	MalwareType 57 63	trojan
+T160	MalwareType 464 470	trojan
+T161	MalwareType 1366 1372	Trojan
+T162	MalwareType 3507 3513	Trojan
+T163	MalwareType 3668 3674	Trojan
+T164	MalwareType 8061 8067	trojan
+T165	Application 5332 5352	banking applications
+T166	OS 1072 1079	android

@@ -1,0 +1,83 @@
+T2	OS 190 197	Android
+T3	OS 955 962	Android
+T5	OS 2870 2877	Android
+T6	Malware 11 18	SpyNote
+T7	Malware 63 70	SpyNote
+T8	Malware 212 219	SpyNote
+T9	Malware 710 717	SpyNote
+T10	Malware 729 736	SpyNote
+T11	Malware 1096 1103	SpyNote
+T12	Malware 1543 1550	SpyNote
+T14	Malware 1691 1698	SpyNote
+T15	Malware 1739 1746	SpyNote
+T16	Malware 1984 1991	SpyNote
+T17	Malware 2133 2140	SpyNote
+T18	Malware 2453 2460	SpyNote
+T19	Malware 2774 2781	SpyNote
+T20	Organization 338 345	Unit 42
+T21	Organization 509 516	Unit 42
+T22	Malware 1183 1192	Droidjack
+T23	Organization 1242 1252	Proofpoint
+T24	Application 1306 1316	Pokémon Go
+T25	Malware 1160 1167	OmniRat
+T26	Malware 1334 1341	OmniRat
+T27	Malware 2716 2723	OmniRat
+T28	Organization 318 336	Palo Alto Networks
+T29	Organization 1941 1950	Palo Alto
+T30	Application 2273 2280	YouTube
+T31	Location 1390 1397	Germany
+T36	MalwareType 4 10	Trojan
+R1	isA Arg1:T6 Arg2:T36	
+T1	AttackPattern 19 55	Installs Backdoor on Android Devices
+R2	uses Arg1:T6 Arg2:T1	
+R4	targets Arg1:T8 Arg2:T2	
+T38	AttackPattern 792 832	ability to view all messages on a device
+T39	AttackPattern 834 858	eavesdrop on phone calls
+T40	AttackPattern 860 887	activate the phone’s camera
+T41	AttackPattern 914 944	track the phone’s GPS location
+R5	uses Arg1:T10 Arg2:T38	
+R6	uses Arg1:T10 Arg2:T39	
+R7	uses Arg1:T10 Arg2:T40	
+R8	uses Arg1:T10 Arg2:T41	
+T32	MalwareType 1004 1022	remote access tool
+T42	Malware 1029 1036	SpyNote
+R9	isA Arg1:T42 Arg2:T32	
+T44	Malware 1172 1181	DroidJack
+R11	targets Arg1:T22 Arg2:T24	
+T45	Time 1401 1409	November
+R12	targets Arg1:T26 Arg2:T31	
+R13	discoveredIn Arg1:T26 Arg2:T45	
+T46	AttackPattern 1451 1522	received a text message asking them to download an app to view an image
+R14	uses Arg1:T26 Arg2:T46	
+T13	AttackPattern 1577 1637	removes the SpyNote application icon from the victim’s phone
+R15	uses Arg1:T12 Arg2:T13	
+T33	AttackPattern 1779 1808	ability to edit text messages
+T47	AttackPattern 1810 1837	read call logs and contacts
+T48	AttackPattern 1842 1886	modify or delete the contents of the SD card
+R16	uses Arg1:T15 Arg2:T33	
+R17	uses Arg1:T15 Arg2:T47	
+R18	uses Arg1:T15 Arg2:T48	
+T49	Malware 2297 2304	SpyNote
+T34	Person 2439 2448	Jacob Soo
+T50	MalwareType 2711 2714	RAT
+T51	Malware 2728 2737	DroidJack
+R20	isA Arg1:T27 Arg2:T50	
+R21	isA Arg1:T51 Arg2:T50	
+T35	MalwareType 198 204	Trojan
+R3	isA Arg1:T8 Arg2:T35	
+T37	MalwareType 532 538	Trojan
+R10	isA Arg1:T25 Arg2:T32	
+R22	isA Arg1:T44 Arg2:T32	
+T4	MalwareType 71 77	Trojan
+R19	isA Arg1:T7 Arg2:T4	
+T43	MalwareType 718 724	Trojan
+R23	isA Arg1:T9 Arg2:T43	
+T52	AttackPattern 891 901	microphone
+R24	uses Arg1:T10 Arg2:T52	
+T53	MalwareType 1024 1027	RAT
+R25	isA Arg1:T42 Arg2:T53	
+T54	OS 2191 2198	Android
+T55	MalwareType 1326 1332	Trojan
+T56	Application 436 444	Dark Web
+T57	Malware 1589 1596	SpyNote
+T58	OS 40 47	Android

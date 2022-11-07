@@ -1,0 +1,109 @@
+T1	OS 7 14	Android
+T3	OS 406 413	Android
+T4	OS 605 612	Android
+T7	Malware 0 6	Anubis
+T8	Malware 171 177	Anubis
+T9	Malware 549 555	Anubis
+T10	Malware 565 571	Anubis
+T11	Malware 1045 1051	Anubis
+T12	Malware 1165 1171	Anubis
+T13	Malware 1237 1243	Anubis
+T14	Malware 1583 1589	Anubis
+T15	Malware 2416 2422	Anubis
+T16	Malware 3503 3509	Anubis
+T17	Organization 394 405	Orange S.A.
+T18	Organization 3060 3071	Orange S.A.
+T22	Application 3522 3532	Cloudflare
+T23	Location 3217 3219	US
+R1	targets Arg1:T7 Arg2:T1	
+T19	Organization 53 75	Financial Institutions
+R2	targets Arg1:T7 Arg2:T19	
+T2	MalwareType 178 201	Android banking malware
+R3	isA Arg1:T8 Arg2:T2	
+T21	Application 302 324	financial institutions
+T25	Application 326 348	cryptocurrency wallets
+T26	Application 354 377	digital payment systems
+R4	targets Arg1:T8 Arg2:T21	
+R5	targets Arg1:T8 Arg2:T25	
+R6	targets Arg1:T8 Arg2:T26	
+R7	targets Arg1:T10 Arg2:T4	
+T5	AttackPattern 632 702	spread using malicious apps listed on the legitimate Google Play store
+R8	uses Arg1:T10 Arg2:T5	
+T28	Time 775 779	2016
+T29	Time 903 907	2019
+T30	AttackPattern 992 1043	spread using fraudulent apps on Google’s Play Store
+R9	uses Arg1:T10 Arg2:T30	
+T31	Application 1125 1160	shopping and financial applications
+R10	targets Arg1:T11 Arg2:T31	
+T27	AttackPattern 1257 1324	show bogus phishing login forms in order to steal their credentials
+R11	uses Arg1:T13 Arg2:T27	
+T32	AttackPattern 1333 1466	overlay screen shown below will be displayed over the genuine app’s login screen to trick users into assuming it’s a valid login form
+R12	uses Arg1:T13 Arg2:T32	
+T33	Organization 1543 1559	BleepingComputer
+T34	AttackPattern 1650 1710	Records screen activity as well as audio from the microphone
+T35	AttackPattern 1713 1784	Implements a SOCKS5 proxy for covert communication and package delivery
+T36	AttackPattern 1787 1807	Captures screenshots
+T37	AttackPattern 1810 1874	Sends mass text messages from the device to predefined receivers
+T38	AttackPattern 1877 1914	Recovers contacts saved on the device
+T39	AttackPattern 1917 2003	Sends, reads, deletes, and block notifications for SMS messages received by the device
+T40	AttackPattern 2006 2058	Scans the device for files of interest to exfiltrate
+T41	AttackPattern 2061 2122	Locks the device screen and shows a persistent ransom message
+T42	AttackPattern 2125 2174	Submits USSD code requests to query bank balances
+T43	AttackPattern 2177 2219	Captures GPS data and pedometer statistics
+T44	AttackPattern 2222 2268	Implements a keylogger login information theft
+T45	AttackPattern 2271 2330	Surveils active apps to imitate and execute overlay attacks
+T46	AttackPattern 2333 2400	Stops malicious functionality and removes the virus from the device
+R13	uses Arg1:T14 Arg2:T34	
+R14	uses Arg1:T14 Arg2:T35	
+R15	uses Arg1:T14 Arg2:T36	
+R16	uses Arg1:T14 Arg2:T37	
+R17	uses Arg1:T14 Arg2:T38	
+R18	uses Arg1:T14 Arg2:T39	
+R19	uses Arg1:T14 Arg2:T40	
+R20	uses Arg1:T14 Arg2:T41	
+R21	uses Arg1:T14 Arg2:T42	
+R22	uses Arg1:T14 Arg2:T43	
+R23	uses Arg1:T14 Arg2:T44	
+R24	uses Arg1:T14 Arg2:T45	
+R25	uses Arg1:T14 Arg2:T46	
+T6	AttackPattern 2484 2615	if the impacted device has Google Play Protected active and sends a bogus system warning to deceive the target into deactivating it
+R26	uses Arg1:T15 Arg2:T6	
+T47	AttackPattern 2656 2692	gains complete control of the device
+T48	AttackPattern 2712 2770	send and receive data from the C2 without any interference
+R27	uses Arg1:T15 Arg2:T47	
+R28	uses Arg1:T15 Arg2:T48	
+T49	Organization 2788 2804	BleepingComputer
+T50	AttackPattern 2845 2943	distributed through malicious websites, direct messages on social media, smishing, and forum posts
+T20	Malware 2810 2825	fake Orange app
+*	hasAlias T15 T20
+R29	uses Arg1:T20 Arg2:T50	
+T51	Organization 2961 2968	Lookout
+T52	Person 2989 3004	Kristina Balaam
+T53	Location 3044 3050	French
+T54	Location 3088 3096	American
+R30	targets Arg1:T20 Arg2:T53	
+R31	targets Arg1:T20 Arg2:T54	
+T55	Organization 3236 3251	Bank of America
+T24	Organization 3253 3262	U.S. Bank
+T56	Organization 3264 3275	Capital One
+T57	Organization 3277 3282	Chase
+T58	Organization 3284 3292	SunTrust
+T59	Organization 3298 3309	Wells Fargo
+T60	Indicator 3682 3707	hhtps:/quickbitrade[.]com
+R32	indicates Arg1:T60 Arg2:T16	
+R33	targets Arg1:T20 Arg2:T23	
+R34	targets Arg1:T20 Arg2:T55	
+R35	targets Arg1:T20 Arg2:T24	
+R36	targets Arg1:T20 Arg2:T56	
+R37	targets Arg1:T20 Arg2:T57	
+R38	targets Arg1:T20 Arg2:T58	
+R39	targets Arg1:T20 Arg2:T59	
+T61	MalwareType 711 726	banking malware
+T62	MalwareType 824 838	banking trojan
+T63	MalwareType 967 977	ransomware
+T64	Application 685 702	Google Play store
+T65	Application 1005 1020	fraudulent apps
+T66	Application 2511 2522	Google Play
+T67	Application 1033 1043	Play Store
+T68	MalwareType 2235 2244	keylogger
+T69	Organization 3220 3225	banks

@@ -1,0 +1,29 @@
+Hacking Team’s RCS Android: The most sophisticated Android malware ever exposed
+“As each day passes and researchers find more and more source code in the huge Hacking Team data dump, it becomes more clear what the company’s customers could do with the spyware, and what capabilities other organized and commercial malware authors will soon be equipping their malicious wares with.
+
+After having revealed one of the ways that the company used to deliver its spyware on Android devices (fake app hosted on Google Play), Trend Micro researchers have analyzed the code of the actual spyware: RCS Android (Remote Control System Android).
+
+Unsurprisingly, it can do so many things and spy on so many levels that they consider it the most sophisticated Android malware ever exposed.
+
+The spyware is delivered either via the aforementioned app, or via an SMS or email that contain a specially crafted URL that will trigger exploits for several vulnerabilities in the default browsers of Android versions 4.0 Ice Cream Sandwich to 4.3 Jelly Bean.
+
+This will allow the attacker to gain root privilege, and allow the installation of a shell backdoor and RCS Android.
+
+The RCS Android has two core modules: the Evidence Collector and the Event Action Trigger.
+
+The former is responsible for the spying routines: gathering device information, capturing screenshots and photos, recording speech by using the devices’ microphone, capturing voice calls, recording location, capturing Wi-Fi and online account passwords, collecting contacts and decoding messages from IM accounts, as well as collecting SMS, MMS, and Gmail messages.
+
+The latter is in charge of triggering malicious actions based on certain events (e.g. screen turning on, or SMS received with keywords). It can sync configuration data, upgrade modules, and download new payloads; upload the above mentioned collected data to the C&C server, and purge it from the device; execute shell commands; disable the network, root access; reset the device’s locking password; uninstall the bot.
+
+“To avoid detection and removal of the agent app in the device memory, the RCSAndroid suite also detects emulators or sandboxes, obfuscates code using DexGuard, uses ELF string obfuscator, and adjusts the OOM (out-of-memory) value,” the researchers shared.
+
+“Interestingly, one unused feature of the app is its ability to manipulate data in the Android package manager to add and remove permissions and components as well as hide the app icon.”
+
+Given that the RCS Android source code is now available to everybody, it will likely not take long for Android malware with some, most, or all of these capabilities to pop up and be sold on underground forums, and for all Android users to be in danger.
+
+So what can they do? Disabling app installations from unknown, third-party sources is one way to minimize the risk. Updating their Android device as soon as a new version comes out is also a good way to prevent existing exploits from working and saddling them with malware.
+
+But even with all these precautions, there’s always a possibility you’ll get infected. If you notice that your device is behaving in an unusual way (e.g. reboots or freezes unexpectedly), you should check whether it has been compromised.
+
+If you’re not sure how, ask a more knowledgeable person for advice, or even your device manufacturer or seller. “
+

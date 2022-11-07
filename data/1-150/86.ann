@@ -1,0 +1,99 @@
+T1	OS 1164 1171	Android
+T3	Malware 20 27	Pegasus
+T4	Malware 142 149	Pegasus
+T5	Malware 551 558	Pegasus
+T6	Malware 964 971	Pegasus
+T7	Malware 1103 1110	Pegasus
+T8	Malware 1310 1317	Pegasus
+T9	Malware 1520 1527	Pegasus
+T10	Malware 3343 3350	Pegasus
+T11	ThreatActor 2135 2144	NSO Group
+T12	ThreatActor 2594 2603	NSO Group
+T13	Organization 2722 2731	NSO Group
+T14	ThreatActor 3412 3421	NSO Group
+T15	Application 201 209	WhatsApp
+T16	Application 2381 2389	WhatsApp
+T17	Organization 1968 1973	Apple
+T18	Organization 1750 1756	Amazon
+T20	Organization 1854 1862	Facebook
+T21	Organization 1903 1912	Microsoft
+T22	Organization 364 379	Financial Times
+T23	Organization 528 535	Q-Cyber
+T24	Application 672 678	iCloud
+T32	Organization 2928 2939	Citizen Lab
+T33	Organization 3258 3269	Citizen Lab
+T34	Organization 3679 3687	Next Web
+T35	Organization 4085 4093	Next Web
+T36	Organization 3857 3868	Check Point
+T38	Organization 1734 1739	Times
+T39	Organization 2167 2172	Times
+T40	Organization 3810 3815	Times
+T41	Location 1468 1474	Uganda
+T42	Organization 2655 2676	Department of Justice
+T43	Location 3061 3067	Canada
+T44	Person 3098 3107	Abdulaziz
+T45	Person 3143 3158	Jamal Khashoggi
+T46	Location 3614 3620	Israel
+T47	Location 3625 3631	Cyprus
+T25	ThreatActor 8 17	NSO Group
+R1	hasAuthor Arg1:T3 Arg2:T25	
+T28	AttackPattern 40 65	Break Into Cloud Services
+R2	uses Arg1:T3 Arg2:T28	
+T29	AttackPattern 67 95	Transmit User Data to Server
+R3	uses Arg1:T3 Arg2:T29	
+T30	Location 97 104	Israeli
+T26	ThreatActor 121 130	NSO Group
+R4	has Arg1:T26 Arg2:T30	
+R5	hasAuthor Arg1:T4 Arg2:T26	
+R6	targets Arg1:T4 Arg2:T15	
+T31	AttackPattern 242 333	scraping a target’s data from the servers of Apple, Google, Amazon, Facebook, and Microsoft
+T37	Organization 287 292	Apple
+T49	Organization 294 300	Google
+T50	Organization 302 308	Amazon
+T51	Organization 310 318	Facebook
+T52	Organization 324 333	Microsoft
+T27	ThreatActor 501 510	NSO Group
+R7	has Arg1:T23 Arg2:T27	
+T2	Application 634 646	Google Drive
+T19	Application 648 666	Facebook Messenger
+T53	Hardware 1152 1159	iPhones
+R8	targets Arg1:T7 Arg2:T53	
+R9	targets Arg1:T7 Arg2:T1	
+R10	targets Arg1:T5 Arg2:T2	
+R11	targets Arg1:T5 Arg2:T19	
+R12	targets Arg1:T5 Arg2:T24	
+T54	ThreatActor 1396 1399	NSO
+T55	Organization 1418 1425	Q-Cyber
+R13	has Arg1:T55 Arg2:T54	
+T56	Organization 1822 1828	Google
+T48	Organization 2712 2717	Times
+T57	Location 2914 2921	Toronto
+R14	has Arg1:T32 Arg2:T57	
+T58	Person 3017 3031	Omar Abdulaziz
+T59	Location 3035 3040	Saudi
+T60	Organization 3194 3209	Saudi consulate
+T61	Location 3213 3219	Turkey
+T62	Organization 3274 3286	Mexican NGOs
+T63	ThreatActor 3315 3333	Mexican government
+R15	uses Arg1:T63 Arg2:T10	
+T64	Person 3508 3520	Shalev Hulio
+T65	Person 3371 3382	journalists
+T66	Person 3384 3391	lawyers
+T67	Person 3397 3406	activists
+R16	targets Arg1:T63 Arg2:T65	
+R17	targets Arg1:T63 Arg2:T66	
+R18	targets Arg1:T63 Arg2:T67	
+T68	MalwareType 28 35	Spyware
+R19	isA Arg1:T3 Arg2:T68	
+T69	AttackPattern 587 623	copy authentication keys to services
+R20	uses Arg1:T5 Arg2:T69	
+T70	AttackPattern 731 802	capable of independently downloading the target’s entire online history
+R21	uses Arg1:T5 Arg2:T70	
+T71	AttackPattern 1217 1301	allows ongoing access to data uploaded to the cloud from laptops, tablets and phones
+R22	uses Arg1:T7 Arg2:T71	
+T72	AttackPattern 1532 1572	retrieve the keys that open cloud vaults
+T73	AttackPattern 1579 1614	independently sync-and-extract data
+R23	uses Arg1:T9 Arg2:T72	
+R24	uses Arg1:T9 Arg2:T73	
+T74	MalwareType 105 112	spyware
+T75	MalwareType 167 174	spyware

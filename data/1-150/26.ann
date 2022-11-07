@@ -1,0 +1,220 @@
+T2	OS 38 41	iOS
+T6	OS 1444 1447	iOS
+T7	OS 1895 1898	iOS
+T8	OS 3190 3193	iOS
+T9	OS 5059 5062	iOS
+T10	OS 5175 5178	iOS
+T11	OS 5625 5635	iOS 12.3.1
+T12	OS 12813 12829	iOS version 12.4
+T13	OS 13012 13018	iOS 12
+T14	OS 13077 13083	iOS 12
+T15	OS 13797 13800	iOS
+T16	OS 13880 13883	iOS
+T17	Organization 676 682	Google
+T18	Organization 1489 1495	Google
+T19	Organization 1709 1715	Google
+T21	Malware 5127 5135	INSOMNIA
+T22	Malware 5207 5215	INSOMNIA
+T23	Malware 5703 5711	INSOMNIA
+T24	Malware 9671 9679	INSOMNIA
+T25	Malware 14610 14618	INSOMNIA
+T26	Indicator 14737 14754	/tmp/updateserver
+T27	Indicator 14863 14880	/tmp/updateserver
+T28	Indicator 14986 15003	/tmp/updateserver
+T29	Indicator 15110 15127	/tmp/updateserver
+T30	Indicator 15233 15250	/tmp/updateserver
+T31	Indicator 14660 14724	c9320a9dc97adbe96c088d3f5ddf3f9275124137f0bf200fdd7160f47c5dcf1a
+T32	Indicator 14786 14850	a8dd8caaeb43d693ececf096bc6fe6c7cbf1ce513cfe33de4224c5c30661a4e3
+T33	Indicator 14909 14973	20827a607bacca9119b6fa471b37d6c751664900e68e50e28b734353c36f0d0c
+T34	Indicator 15033 15097	c8961483c7197aa0f352b2fd007412e88723fd5af4f64788aa1ce48a0999bd38
+T35	Indicator 15156 15220	9518c66b9b568c0f00f9540b961a40529e38c0d723bd800a9c33a043e6b746f6
+T36	ThreatActor 0 8	Evil Eye
+T37	ThreatActor 356 364	Evil Eye
+T38	ThreatActor 701 709	Evil Eye
+T39	ThreatActor 1109 1117	Evil Eye
+T40	ThreatActor 2201 2209	Evil Eye
+T41	ThreatActor 2997 3005	Evil Eye
+T42	ThreatActor 5420 5428	Evil Eye
+T43	ThreatActor 12857 12865	Evil Eye
+T44	ThreatActor 13236 13244	Evil Eye
+T45	Organization 90 98	Volexity
+T46	Organization 327 335	Volexity
+T47	Organization 469 477	Volexity
+T48	Organization 956 964	Volexity
+T49	Organization 1751 1759	Volexity
+T50	Organization 1808 1816	Volexity
+T51	Organization 2352 2360	Volexity
+T52	Organization 4372 4380	Volexity
+T53	Organization 5457 5465	Volexity
+T54	Organization 6823 6831	Volexity
+T55	Organization 9891 9899	Volexity
+T56	Organization 10441 10449	Volexity
+T57	Organization 11136 11144	Volexity
+T58	Organization 12308 12316	Volexity
+T59	Organization 13208 13216	Volexity
+T64	Organization 10720 10732	Project Zero
+T74	Application 1297 1303	WebKit
+T75	Hardware 5610 5616	iPhone
+T76	Hardware 13038 13044	iPhone
+T77	Hardware 12975 12979	iPad
+T78	Organization 2602 2616	Uyghur Academy
+T79	Organization 2819 2833	Uyghur Academy
+T80	Organization 2892 2906	Uyghur Academy
+T81	Organization 3386 3398	Uighur Times
+T82	Application 4492 4506	Microsoft Edge
+T99	Organization 11496 11506	CitizenLab
+T101	Application 10811 10817	Signal
+T104	Application 11709 11715	Signal
+T105	Application 11924 11930	Signal
+T108	Organization 9288 9293	Apple
+T110	Application 11745 11755	ProtonMail
+T111	Application 11935 11945	ProtonMail
+T113	Application 12998 13007	App store
+T114	Application 13063 13072	App store
+T119	Indicator 13831 13846	43223 and 43773
+T120	Indicator 13908 13918	port 43111
+T124	Indicator 14183 14202	start.apiforssl.com
+T125	Indicator 15442 15458	OU=www.xzXW.com,
+T126	Indicator 15583 15599	OU=www.xzXW.com,
+T129	Indicator 13994 14013	cdn.doublesclick.me
+T130	Indicator 14889 14907	154.85.32.52:43773
+T131	Indicator 15136 15154	154.85.32.52:43773
+T132	Indicator 15259 15277	154.85.32.52:43773
+T133	Indicator 16041 16059	OU=www.bUjS0F.com,
+T134	Indicator 16182 16200	OU=www.bUjS0F.com,
+T137	Indicator 2939 2953	"JPlayer.html"
+T138	Indicator 13929 13953	static.doublesclick.info
+T139	Indicator 13777 13789	154.85.32.52
+T140	Indicator 14243 14267	status.verifyingbycf.com
+T142	Indicator 14310 14322	154.85.33.48
+T143	Indicator 15742 15757	OU=www.p83.com,
+T144	Indicator 15883 15898	OU=www.p83.com,
+T145	Indicator 14488 14500	154.85.34.19
+T146	Indicator 16343 16362	OU=www.w2j082Q.com,
+T147	Indicator 16488 16507	OU=www.w2j082Q.com,
+T148	Indicator 14766 14784	154.85.32.52:43223
+T149	Indicator 14369 14381	154.85.34.49
+T150	Indicator 11716 11743	(org.whispersystems.signal)
+T151	Indicator 12232 12249	"com.tencent.xin"
+T152	Indicator 13859 13872	154.85.37.250
+T155	Indicator 14428 14441	154.85.34.214
+T156	Indicator 14112 14142	status.search-sslkey-flush.com
+T157	Indicator 15012 15031	154.85.37.250:43111
+T158	Indicator 3835 3856	cdn.doublesclick[.]me
+T159	Indicator 14545 14556	154.85.35.1
+T161	Indicator 14054 14071	api.doubles.click
+T163	Indicator 11756 11782	(ch.protonmail.protonmail)
+T85	Time 74 88	September 2019
+T86	ThreatActor 248 267	Chinese APT actors.
+T88	ThreatActor 342 350	Evil Eye
+T87	Organization 613 619	Google
+T84	Organization 687 695	Volexity
+T89	Time 937 949	January 2020
+T66	Application 4459 4471	Apple Safari
+T90	Application 4473 4486	Google Chrome
+R12	targets Arg1:T36 Arg2:T2	
+T61	AttackPattern 128 152	Large-Scale Surveillance
+R19	uses Arg1:T86 Arg2:T61	
+R26	uses Arg1:T88 Arg2:T61	
+T20	AttackPattern 391 449	launching an exploit aimed at installing a malware implant
+R27	uses Arg1:T37 Arg2:T20	
+T1	Organization 1095 1103	Volexity
+T4	OS 1245 1248	iOS
+T62	Time 1345 1359	summer of 2019
+R41	targets Arg1:T39 Arg2:T4	
+R42	targets Arg1:T39 Arg2:T74	
+T5	OS 1387 1424	iOS versions 12.3, 12.3.1, and 12.3.2
+R18	targets Arg1:T39 Arg2:T5	
+T60	Hardware 1619 1626	iPhones
+T83	Hardware 1630 1635	iPads
+T91	Malware 1795 1803	INSOMNIA
+R44	hasAuthor Arg1:T91 Arg2:T39	
+T67	AttackPattern 2236 2350	code to be loaded in a variety of different ways through malicious iframes across the various compromised websites
+R45	uses Arg1:T40 Arg2:T67	
+T92	Time 2442 2449	January
+T93	Time 2454 2464	March 2020
+R49	targets Arg1:T40 Arg2:T78	
+R51	targets Arg1:T40 Arg2:T79	
+T94	Application 4364 4370	WebKit
+T95	Version 4444 4450	12.3.1
+T96	ThreatActor 4585 4593	Evil Eye
+R28	indicates Arg1:T137 Arg2:T91	
+R53	indicates Arg1:T158 Arg2:T91	
+R54	targets Arg1:T91 Arg2:T8	
+R55	targets Arg1:T21 Arg2:T95	
+R56	targets Arg1:T21 Arg2:T66	
+R57	targets Arg1:T21 Arg2:T90	
+R58	targets Arg1:T21 Arg2:T82	
+T97	Indicator 5255 5272	/tmp/updateserver
+R59	indicates Arg1:T97 Arg2:T22	
+R60	targets Arg1:T22 Arg2:T75	
+R61	targets Arg1:T22 Arg2:T11	
+T98	Organization 5845 5851	Google
+T100	Organization 5936 5946	CitizenLab
+T102	AttackPattern 6230 6302	conducts C2 server validation using a certificate embedded in the malwar
+T106	AttackPattern 6360 6436	employs basic obfuscation techniques to obscure some of its embedded strings
+T115	AttackPattern 6161 6185	encrypts all C2 activity
+T116	Application 6494 6500	Signal
+T117	Application 6505 6515	Protonmail
+T118	AttackPattern 6705 6780	sends information about each additional app that is installed on the device
+T121	Organization 6900 6910	CitizenLab
+R63	uses Arg1:T23 Arg2:T115	
+R64	uses Arg1:T23 Arg2:T102	
+R65	uses Arg1:T23 Arg2:T106	
+R66	targets Arg1:T23 Arg2:T116	
+R67	targets Arg1:T23 Arg2:T117	
+R68	uses Arg1:T23 Arg2:T118	
+T122	AttackPattern 7030 7101	use of obfuscated strings to hide file names, API names, URL parameters
+R69	uses Arg1:T23 Arg2:T122	
+T127	Application 7312 7318	Ghidra
+T135	Organization 9071 9076	Apple
+T136	Organization 9747 9755	Volexity
+T109	Application 10849 10855	Signal
+R73	targets Arg1:T24 Arg2:T101	
+R74	targets Arg1:T24 Arg2:T109	
+T65	Organization 11479 11491	Project Zero
+R75	indicates Arg1:T150 Arg2:T104	
+R76	indicates Arg1:T163 Arg2:T110	
+R77	targets Arg1:T24 Arg2:T104	
+R78	targets Arg1:T24 Arg2:T110	
+T103	Application 12198 12204	WeChat
+T141	Application 12297 12303	WeChat
+R80	targets Arg1:T24 Arg2:T103	
+R81	targets Arg1:T24 Arg2:T141	
+T153	Time 12798 12807	July 2019
+R11	targets Arg1:T43 Arg2:T13	
+R82	targets Arg1:T43 Arg2:T14	
+T112	Time 13192 13206	September 2019
+T154	Hardware 13273 13280	iPhones
+T160	Organization 13344 13356	Project Zero
+T68	Indicator 15334 15373	1111444412586956902 (0xf6ca4cdf7d69866)
+T69	Indicator 15633 15673	2330826125403043443 (0x2058c20305d93673)
+T70	Time 15797 15817	Jan 20 17:02:26 2020
+T71	Time 15835 15855	Jan 20 17:02:26 2040
+T72	Time 16402 16422	Mar 13 17:29:21 2020
+T73	Time 16440 16460	Mar 13 17:29:21 2040
+T162	Time 15497 15517	Dec 24 22:03:30 2019
+T164	Time 15535 15555	Dec 24 22:03:30 2039
+T165	Indicator 15933 15972	1152440617419100323 (0xffe4aa2b9ff50a3)
+T166	Time 16098 16117	Feb 2 19:44:45 2020
+T167	Time 16135 16154	Feb 2 19:44:45 2040
+T168	Indicator 16234 16274	2340440485700108803 (0x207aea38b8190203)
+T169	Organization 173 180	Uyghurs
+R1	targets Arg1:T86 Arg2:T169	
+T170	OS 453 460	Android
+R2	targets Arg1:T37 Arg2:T170	
+R3	targets Arg1:T91 Arg2:T60	
+R4	targets Arg1:T91 Arg2:T83	
+T3	AttackPattern 6198 6215	data exfiltration
+R5	uses Arg1:T23 Arg2:T3	
+T171	Application 10903 10909	Signal
+T63	Organization 1239 1244	Apple
+R6	has Arg1:T63 Arg2:T4	
+T172	OS 585 588	iOS
+T173	Organization 622 634	Project Zero
+T174	Organization 1496 1508	Project Zero
+T175	Organization 5854 5866	Project Zero
+T176	Organization 6884 6896	Project Zero
+T177	Organization 7987 7999	Project Zero
+T178	Organization 226 233	Uyghurs
+T179	Organization 11967 11974	Uyghurs

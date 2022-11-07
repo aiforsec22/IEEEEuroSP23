@@ -1,0 +1,131 @@
+T1	OS 17 24	Android
+T2	OS 795 802	Android
+T4	OS 2793 2806	Android 4.4.4
+T5	OS 2907 2916	Android 5
+T13	Malware 560 565	Dvmap
+T14	Malware 779 784	Dvmap
+T15	Malware 1449 1454	Dvmap
+T16	Indicator 3533 3547	/system/bin/ip
+T17	Organization 313 326	Kaspersky Lab
+T18	Organization 955 968	Kaspersky Lab
+T23	Indicator 2488 2515	“com.qualcmm.timeservices.”
+T25	Indicator 4333 4357	com.qualcmm.timeservices
+T26	Indicator 1823 1835	Game321.res,
+T27	Indicator 2685 2697	Game644.res.
+T29	Indicator 2977 2999	libandroid_runtime.so.
+T30	Indicator 3586 3598	(Game324.res
+T31	Indicator 3602 3615	Game644.res).
+T32	Indicator 1849 1860	Game323.res
+T33	Indicator 1836 1848	Game322.res,
+T35	Indicator 2551 2561	“.root.sh”
+T36	Indicator 4131 4157	“com.qualcmm.timeservices”
+T37	Indicator 4434 4460	“com.qualcmm.timeservices”
+T38	Indicator 1973 1985	Game644.res,
+T39	Indicator 349 374	Trojan.AndroidOS.Dvmap.a.
+T41	Indicator 1957 1968	Game324.res
+T42	Indicator 2670 2681	Game324.res
+T44	Indicator 1865 1876	Game642.res
+R1	indicates Arg1:T16 Arg2:T15
+R3	indicates Arg1:T23 Arg2:T15
+R5	indicates Arg1:T25 Arg2:T15
+R6	indicates Arg1:T26 Arg2:T15
+R7	indicates Arg1:T27 Arg2:T15
+R10	indicates Arg1:T30 Arg2:T15
+R11	indicates Arg1:T31 Arg2:T15
+R12	indicates Arg1:T32 Arg2:T15
+R13	indicates Arg1:T33 Arg2:T15
+R15	indicates Arg1:T35 Arg2:T15
+R16	indicates Arg1:T36 Arg2:T15
+R17	indicates Arg1:T37 Arg2:T15
+R18	indicates Arg1:T38 Arg2:T15
+R21	indicates Arg1:T41 Arg2:T15
+R22	indicates Arg1:T42 Arg2:T15
+R23	indicates Arg1:T44 Arg2:T15
+T43	Malware 0 5	Dvmap
+R24	targets Arg1:T43 Arg2:T1	
+T46	Time 57 67	April 2017
+T6	Application 139 156	Google Play Store
+T47	MalwareType 93 108	rooting malware
+R26	isA Arg1:T43 Arg2:T47	
+R27	targets Arg1:T43 Arg2:T6	
+T48	MalwareType 171 186	rooting malware
+R28	isA Arg1:T43 Arg2:T48	
+T49	AttackPattern 255 311	injects malicious code into the system runtime libraries
+T50	AttackPattern 209 245	installs its modules into the system
+R29	uses Arg1:T43 Arg2:T50	
+R30	uses Arg1:T43 Arg2:T49	
+R19	indicates Arg1:T39 Arg2:T43	
+T7	Application 422 433	Google Play
+T51	MalwareType 398 413	rooting malware
+T19	Malware 471 476	Ztorg
+T8	Application 505 516	Google Play
+T52	Time 540 554	September 2016
+R31	isA Arg1:T19 Arg2:T51	
+T53	MalwareType 582 597	rooting malware
+R32	isA Arg1:T13 Arg2:T53	
+T28	AttackPattern 678 726	injects malicious code into the system libraries
+R8	uses Arg1:T13 Arg2:T28	
+T34	AttackPattern 816 875	injects malicious code into the system libraries in runtime
+T9	Application 913 930	Google Play Store
+R14	targets Arg1:T14 Arg2:T2	
+R33	uses Arg1:T14 Arg2:T34	
+R34	targets Arg1:T14 Arg2:T9	
+T54	Organization 992 998	Google
+T10	Application 1057 1074	Google Play Store
+T55	Time 1198 1209	March, 2017
+T57	AttackPattern 1226 1285	update it with a malicious version for short period of time
+R36	uses Arg1:T14 Arg2:T57	
+T11	Application 1337 1348	Google Play
+T58	Time 1407 1415	18 April
+T59	Time 1420 1426	15 May
+T61	OS 1698 1723	64-bit version of Android
+R39	targets Arg1:T15 Arg2:T61	
+T62	AttackPattern 2070 2100	gain root rights on the device
+R40	uses Arg1:T15 Arg2:T62	
+T22	Indicator 2847 2882	_Z30dvmHeapSourceStartupBeforeForkv
+T40	Indicator 2888 2897	libdvm.so
+T64	Indicator 2948 2971	nativeForkAndSpecialize
+R9	indicates Arg1:T22 Arg2:T15	
+R43	indicates Arg1:T64 Arg2:T15	
+R44	targets Arg1:T15 Arg2:T4	
+R45	targets Arg1:T15 Arg2:T5	
+T3	AttackPattern 2706 2787	check the version of Android installed and decide which library should be patched
+R42	uses Arg1:T15 Arg2:T3	
+T12	Application 4840 4857	Google Play Store
+T20	AttackPattern 4946 5017	installs malicious modules with different functionality into the system
+T21	Indicator 5686 5718	43680D1914F28E14C90436E1D42984E2
+T65	Indicator 5720 5752	20D4B9EB9377C499917C4D69BF4CCEBE
+R46	indicates Arg1:T21 Arg2:T15	
+R47	indicates Arg1:T65 Arg2:T15	
+R48	uses Arg1:T15 Arg2:T20	
+R49	targets Arg1:T15 Arg2:T12	
+T24	AttackPattern 2108 2128	install some modules
+R4	uses Arg1:T15 Arg2:T24	
+R25	discoveredIn Arg1:T43 Arg2:T46	
+T45	MalwareType 477 483	Trojan
+R38	isA Arg1:T19 Arg2:T45	
+T60	Indicator 729 738	libdmv.so
+T63	Indicator 742 763	libandroid_runtime.so
+R41	indicates Arg1:T60 Arg2:T13	
+R50	indicates Arg1:T63 Arg2:T13	
+T56	MalwareType 1673 1679	Trojan
+T66	MalwareType 982 988	Trojan
+T67	MalwareType 193 199	Trojan
+T68	MalwareType 2054 2060	Trojan
+R35	isA Arg1:T15 Arg2:T56	
+T69	MalwareType 2257 2263	Trojan
+T70	MalwareType 2398 2404	Trojan
+T71	MalwareType 2632 2638	Trojan
+T72	MalwareType 3115 3121	Trojan
+T73	MalwareType 3212 3218	Trojan
+T74	MalwareType 3416 3422	Trojan
+T75	MalwareType 3500 3506	Trojan
+T76	MalwareType 3633 3639	Trojan
+T77	MalwareType 4410 4416	Trojan
+T78	MalwareType 4805 4811	Trojan
+R37	isA Arg1:T43 Arg2:T67	
+R51	isA Arg1:T14 Arg2:T66	
+R2	indicates Arg1:T40 Arg2:T4	
+R20	indicates Arg1:T29 Arg2:T5	
+T79	MalwareType 2822 2828	Trojan
+T80	OS 2727 2734	Android

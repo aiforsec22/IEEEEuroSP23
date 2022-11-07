@@ -1,0 +1,63 @@
+T1	OS 557 564	Android
+T2	OS 35 38	iOS
+T3	OS 549 552	iOS
+T4	OS 925 928	iOS
+T5	OS 1751 1764	iOS 10 and 11
+T6	OS 1777 1820	iOS 12.0, 12.1, 12.3, 12.3.1 and iOS 12.3.2
+T8	OS 1997 2005	iOS 12.4
+T9	Organization 0 8	Facebook
+T10	Organization 76 84	Facebook
+T11	Application 1070 1078	Facebook
+T12	Organization 1167 1175	Facebook
+T13	Organization 2175 2183	Facebook
+T14	Malware 207 215	Insomnia
+T15	Malware 1689 1697	Insomnia
+T16	ThreatActor 425 437	Earth Empusa
+T17	ThreatActor 854 862	Evil Eye
+T19	Organization 1954 1959	Apple
+T20	Organization 1669 1677	Volexity
+T21	Location 690 698	Xinjiang
+T22	Location 2098 2103	China
+T30	Location 298 313	Xinjiang, China
+T31	Organization 344 352	Facebook
+T32	Organization 2224 2235	ArsTechnica
+T23	Time 848 852	2019
+T25	ThreatActor 441 449	Evil Eye
+*	hasAlias T16 T25
+T26	Person 278 292	Uyghur Muslims
+R1	targets Arg1:T14 Arg2:T30	
+R3	targets Arg1:T14 Arg2:T31	
+R4	hasAuthor Arg1:T14 Arg2:T16	
+R5	targets Arg1:T16 Arg2:T3	
+R6	targets Arg1:T16 Arg2:T1	
+T27	Person 677 684	Uyghurs
+R7	targets Arg1:T16 Arg2:T21	
+T28	Organization 779 790	ArsTechnica
+T29	Hardware 792 799	iPhones
+R9	targets Arg1:T14 Arg2:T29	
+T33	Organization 917 922	Apple
+R11	targets Arg1:T17 Arg2:T33	
+R12	targets Arg1:T17 Arg2:T4	
+T34	Malware 999 1007	Insomnia
+R13	hasAuthor Arg1:T34 Arg2:T17	
+R14	targets Arg1:T17 Arg2:T11	
+T35	Person 1344 1360	Mike Dvilyanski,
+T36	Organization 1369 1377	Facebook
+T37	Person 1416 1435	Nathaniel Gleicher,
+R15	targets Arg1:T15 Arg2:T5	
+T42	AttackPattern 1850 1885	granted access to a user's Contacts
+R22	uses Arg1:T15 Arg2:T42	
+T43	Vulnerability 1982 1993	WebKit flaw
+R23	has Arg1:T8 Arg2:T43	
+R24	exploits Arg1:T15 Arg2:T43	
+R2	targets Arg1:T14 Arg2:T26	
+R8	targets Arg1:T25 Arg2:T27	
+T7	Organization 67 74	Uyghurs
+R16	targets Arg1:T14 Arg2:T7	
+T24	Organization 520 538	Chinese government
+T18	AttackPattern 1887 1895	location
+T38	AttackPattern 1897 1949	Messages data, and information from third-party apps
+R10	uses Arg1:T15 Arg2:T18	
+R17	uses Arg1:T15 Arg2:T38	
+T44	Application 1933 1949	third-party apps
+T45	Application 161 173	social media

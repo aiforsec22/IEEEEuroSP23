@@ -1,0 +1,26 @@
+New SMS-based android malware, tangleBot, unleashed by cybercriminals — NCC
+The Nigerian Communications Commission (NCC), again, has been informed of a new high-risk, critical and Short Messaging Service-based malware, TangleBot, infecting Android mobile devices.
+
+TangleBot employs more or less similar tactics as the recently-announced notorious FlutBot SMS Android malware that targets mobile devices. TangleBot equally gains control of the device but in far more invasive manner than the FlutBot malware.
+
+The disclosure on TangleBot was made in a recent security advisory made available to the Commission’s New Media and Information Security Department by the Nigerian Computer Emergency Response Team (ngCERT).
+TangleBot Android malware is installed when an unsuspecting user clicks on a malicious link disguised as COVID-19 vaccination appointment-related information in an SMS message or information about fake local power outages that are due to occur.
+
+The aim behind both or either of the messages (on COVID-19 or impending power outages) is to encourage potential victims to follow a link that supposedly offers detailed information. Once at the page, users are asked to update applications such as Adobe Flash Player to view the page’s content by going through nine (9) dialogue boxes to give acceptance to different permissions that will allow the malware operators initiate the malware configuration process.
+
+The immediate consequence to this, is that TangleBot gains access to several different permissions when installed on a device, allowing it to eavesdrop on user communications. The malware then steals sensitive data stored on the device and monitors almost every user activity, including camera use, audio conversations, and location, among other things.
+
+Furthermore, the malware takes complete control of the targeted device, including access to banking data, and can reach the deepest recesses of the Android operating system.
+
+The NCC, therefore, wishes to, once again, urge millions of telecom consumers in Nigeria to be wary of such wiles of cyber criminals, whose intent is to defraud unsuspecting Internet users.
+
+In order to ensure maximum protection for Internet users in the country, the ngCERT has offered a number of preventive measures to be taken by the consumers.
+These measures include an advisory to telecom consumers and other Internet users to refrain from opening Uniform Resource Locators (URLs) from unknown sources while using your mobile devices.
+
+Additionally, telecom consumers should never respond or send reply to messages or call back a phone number that is associated with the text that they are unaware of. Should any telecom consumer or Internet user become curious and wish to ascertain the authenticity of any call or messages and wish to probe the incident, such persons may do a web search of both the number and the message content.
+
+The NCC hereby reiterates that mobile users are under obligation to practice safe messaging practices and avoid clicking on any links in texts, even if they appear to come from a legitimate contact. Indeed, it is important to be judicious when downloading apps by reading install prompts closely, looking out for information regarding rights and privileges that the app may request.
+
+Other risk-mitigating measures advised by ngCERT is for users to be cautious of procuring any software from outside a certified app store. Advisedly, it is safer to call the company directly rather than using the phone number on the message received, especially if the message is spoofing a company. Finally, telecom consumers and other Internet users should report any incident of system compromise to ngCERT via incident@cert.gov.ng for necessary support and technical assistance.
+
+The Commission expresses its commitment to continuously inform and educate mobile telephony subscribers and Internet users in Nigeria, on cyber risks, however they may manifest. This is to insulate them from the dangers and losses arising from cybercrimes of any kind.

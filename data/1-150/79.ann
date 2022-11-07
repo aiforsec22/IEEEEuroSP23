@@ -1,0 +1,205 @@
+T1	OS 28 35	Android
+T2	OS 126 133	Android
+T3	OS 2265 2272	Android
+T4	OS 5688 5695	Android
+T5	OS 6745 6752	Android
+T6	Organization 3211 3217	Google
+T7	Malware 817 822	RuMMS
+T8	Malware 950 955	RuMMS
+T9	Malware 1241 1246	RuMMS
+T10	Malware 2313 2318	RuMMS
+T11	Malware 2837 2842	RuMMS
+T12	Malware 2932 2937	RuMMS
+T13	Malware 3157 3162	RuMMS
+T14	Malware 3202 3207	RuMMS
+T15	Malware 3634 3639	RuMMS
+T16	Malware 4987 4992	RuMMS
+T17	Malware 5012 5017	RuMMS
+T18	Malware 5393 5398	RuMMS
+T19	Malware 5791 5796	RuMMS
+T20	Malware 8729 8734	RuMMS
+T21	Malware 9046 9051	RuMMS
+T22	Malware 10729 10734	RuMMS
+T23	Malware 11076 11081	RuMMS
+T24	Malware 11160 11165	RuMMS
+T25	Malware 11335 11340	RuMMS
+T26	Malware 11823 11828	RuMMS
+T27	Malware 11907 11912	RuMMS
+T28	Malware 12069 12074	RuMMS
+T29	Malware 12346 12351	RuMMS
+T30	Malware 12627 12632	RuMMS
+T31	Malware 12786 12791	RuMMS
+T32	Malware 12921 12926	RuMMS
+T33	Malware 13009 13014	RuMMS
+T34	Malware 13094 13099	RuMMS
+T35	Malware 13362 13367	RuMMS
+T36	Malware 13468 13473	RuMMS
+T37	Malware 13569 13574	RuMMS
+T38	Malware 13715 13720	RuMMS
+T39	Malware 14121 14126	RuMMS
+T40	Indicator 5298 5330	d8caad151e07025fdbf5f3c26e3ceaff
+T43	Organization 14217 14224	FireEye
+T44	Application 14489 14496	FireEye
+T45	Application 8454 8486	FireEye Mobile Threat Prevention
+T46	Application 14008 14040	FireEye Mobile Threat Prevention
+T49	Location 63 69	Russia
+T50	Location 3787 3793	Russia
+T51	Location 4509 4515	Russia
+T52	Indicator 7804 7842	“http://$C2.$SERVER.$IP/api/?id=$NUM”.
+T53	Indicator 5901 5929	”org.starsizew.MainActivity”
+T54	Indicator 11558 11571	(37.1.207.31)
+T55	Indicator 6606 6624	“org.starsizew.i”.
+T56	Indicator 7402 7420	“org.starsizew.i”.
+T57	Indicator 6259 6277	“org.starsizew.Tb”
+T58	Indicator 6092 6110	“org.starsizew.Ac”
+T59	Indicator 4065 4075	sdfkjhl2.)
+T60	Indicator 5827 5873	setComponentEnabledSetting(MainActivity.class,
+T61	Indicator 5647 5682	“android.content.pm.PackageManager”
+T62	Indicator 6875 6895	(“org.starsizew.i”),
+T63	Indicator 7358 7380	“android.os.AsyncTask”
+T64	Indicator 5972 5991	“org.starsizew.Tb”,
+T65	Malware 5267 5282	“org.starsizew”
+T66	Indicator 5548 5566	“org.starsizew.Aa”
+T67	Indicator 5441 5469	“org.starsizew.MainActivity”
+T68	Indicator 6638 6656	“org.starsizew.Ma”
+T69	Indicator 438 471	hxxp://yyyyyyyy[.]XXXX.ru/mms.apk
+T70	Indicator 3534 3566	hxxp://yyyyyyyy.XXXX.ru/mms.apk.
+T71	Indicator 479 486	XXXX.ru
+T72	Indicator 3688 3697	“mms.apk”
+T74	Indicator 3721 3731	“XXXX.ru”,
+R2	indicates Arg1:T52 Arg2:T19
+R3	indicates Arg1:T53 Arg2:T19
+R4	indicates Arg1:T54 Arg2:T25
+R5	indicates Arg1:T55 Arg2:T19
+R6	indicates Arg1:T56 Arg2:T19
+R7	indicates Arg1:T57 Arg2:T19
+R8	indicates Arg1:T58 Arg2:T19
+R9	indicates Arg1:T59 Arg2:T15
+R10	indicates Arg1:T60 Arg2:T19
+R11	indicates Arg1:T61 Arg2:T18
+R12	indicates Arg1:T62 Arg2:T19
+R13	indicates Arg1:T63 Arg2:T19
+R14	indicates Arg1:T64 Arg2:T19
+R16	indicates Arg1:T66 Arg2:T18
+R17	indicates Arg1:T67 Arg2:T18
+R18	indicates Arg1:T68 Arg2:T19
+R20	indicates Arg1:T70 Arg2:T14
+R22	indicates Arg1:T72 Arg2:T15
+R24	indicates Arg1:T74 Arg2:T15
+T41	Malware 0 5	RuMMS
+R25	targets Arg1:T41 Arg2:T1	
+R26	targets Arg1:T41 Arg2:T49	
+T42	AttackPattern 74 86	SMS Phishing
+R27	uses Arg1:T41 Arg2:T42	
+T75	Location 179 185	Russia
+T76	Location 370 376	Russia
+T77	Malware 559 564	RuMMS
+R19	indicates Arg1:T69 Arg2:T77	
+R21	indicates Arg1:T71 Arg2:T77	
+T78	AttackPattern 632 726	SMS phishing – sending a short SMS message containing a malicious URL to the potential victims
+R28	uses Arg1:T77 Arg2:T78	
+T79	Malware 900 905	RuMMS
+T80	Time 913 926	April 3, 2016
+T81	Time 1049 1062	Jan. 18, 2016
+R29	discoveredIn Arg1:T8 Arg2:T81	
+T82	AttackPattern 1257 1296	request device administrator privileges
+T83	AttackPattern 1298 1346	remove their icons to hide themselves from users
+T84	AttackPattern 1352 1427	remain running in the background to perform a series of malicious behaviors
+R30	uses Arg1:T9 Arg2:T82	
+R31	uses Arg1:T9 Arg2:T83	
+R32	uses Arg1:T9 Arg2:T84	
+T85	AttackPattern 1490 1560	Sending device information to a remote command and control (C2) server
+T86	AttackPattern 1572 1613	Contacting the C2 server for instructions
+R33	uses Arg1:T9 Arg2:T85	
+R34	uses Arg1:T9 Arg2:T86	
+T87	AttackPattern 1618 1690	Sending SMS messages to financial institutions to query account balances
+T88	AttackPattern 1693 1792	Uploading any incoming SMS messages (including the balance inquiry results) to the remote C2 server
+T89	AttackPattern 1795 1870	Sending C2-specified SMS messages to phone numbers in the victim’s contacts
+T90	AttackPattern 1873 1952	Forward incoming phone calls to intercept voice-based two-factor authentication
+R35	uses Arg1:T9 Arg2:T87	
+R36	uses Arg1:T9 Arg2:T88	
+R37	uses Arg1:T9 Arg2:T89	
+R38	uses Arg1:T9 Arg2:T90	
+R39	targets Arg1:T10 Arg2:T3	
+T91	Location 2497 2504	Russian
+T73	Time 3021 3062	between January 2016 and early April 2016
+T92	Time 3079 3084	March
+T93	AttackPattern 3119 3127	Smishing
+R23	uses Arg1:T13 Arg2:T93	
+T94	AttackPattern 3251 3259	Smishing
+R40	uses Arg1:T14 Arg2:T94	
+T95	AttackPattern 3375 3421	SMS phishing message arrives at a user’s phone
+R41	uses Arg1:T14 Arg2:T95	
+T96	Indicator 4051 4059	riveroer
+T97	Indicator 4041 4049	mmsmtsh5
+T98	Indicator 4031 4039	konkonq2
+T99	Indicator 4021 4029	cacamadf
+T100	Indicator 4011 4019	cacama18
+T101	Indicator 4001 4009	asdfgjcr
+R42	indicates Arg1:T101 Arg2:T15	
+R43	indicates Arg1:T100 Arg2:T15	
+R44	indicates Arg1:T99 Arg2:T15	
+R45	indicates Arg1:T98 Arg2:T15	
+R46	indicates Arg1:T97 Arg2:T15	
+R47	indicates Arg1:T96 Arg2:T15	
+R1	indicates Arg1:T40 Arg2:T65	
+T102	Malware 5342 5347	RuMMS
+R15	targets Arg1:T41 Arg2:T2	
+R48	targets Arg1:T41 Arg2:T75	
+T103	AttackPattern 9100 9188	modify app preference to indicate that the C2 server received the victim device’s status
+T104	AttackPattern 9204 9261	send C2-specified SMS messages to C2-specified recipients
+T105	AttackPattern 9277 9339	upload periodically the SMS messages in the inbox to C2 server
+T106	AttackPattern 9355 9416	deliver specified text to all victim’s contacts (SMS worming)
+T107	AttackPattern 9435 9505	forward phone calls to intercept voice based two-factor authentication
+T108	AttackPattern 9520 9573	change the URL of the C2 server in the app preference
+R49	uses Arg1:T21 Arg2:T103	
+R50	uses Arg1:T21 Arg2:T104	
+R51	uses Arg1:T21 Arg2:T105	
+R52	uses Arg1:T21 Arg2:T106	
+R53	uses Arg1:T21 Arg2:T106	
+R54	uses Arg1:T21 Arg2:T107	
+R55	uses Arg1:T21 Arg2:T108	
+T109	Location 10200 10206	Russia
+T110	AttackPattern 10739 10831	upload responses to the balance inquiries (received via SMS message) to the remote C2 server
+R56	uses Arg1:T22 Arg2:T110	
+T111	AttackPattern 10955 10979	resetting the user’s PIN
+T112	AttackPattern 10981 11035	enabling or disabling various alerts and confirmations
+T113	AttackPattern 11041 11071	confirming the user’s identity
+R57	uses Arg1:T22 Arg2:T111	
+R58	uses Arg1:T22 Arg2:T112	
+R59	uses Arg1:T22 Arg2:T113	
+T114	AttackPattern 11199 11227	contact an initial C2 server
+R60	uses Arg1:T24 Arg2:T114	
+T115	Time 12393 12419	January 2016 to March 2016
+T116	Time 12832 12854	Jan. 2016 to Mar. 2016
+T117	Time 13028 13060	January 2016 to early April 2016
+T118	Time 13183 13190	January
+T119	Time 13223 13231	February
+T120	Time 13264 13269	March
+T121	Time 13305 13310	April
+T122	Time 13591 13617	Jan. 2016 to Apr. 15, 2016
+R61	targets Arg1:T10 Arg2:T91	
+T123	AttackPattern 8245 8271	device private information
+R62	uses Arg1:T19 Arg2:T123	
+T124	AttackPattern 8735 8762	intercepts any SMS messages
+R63	uses Arg1:T20 Arg2:T124	
+T125	AttackPattern 8870 8938	Method onPostExecute parses the response from the above HTTP session
+R64	uses Arg1:T20 Arg2:T125	
+T126	AttackPattern 9585 9617	call a C2-specified phone number
+R65	uses Arg1:T21 Arg2:T126	
+T127	AttackPattern 10682 10727	query the victim’s financial account balances
+R66	uses Arg1:T22 Arg2:T127	
+T128	AttackPattern 5570 5609	request device administrator privileges
+T129	AttackPattern 5715 5787	remove its own icon on the home screen in order to conceal the existence
+R68	uses Arg1:T19 Arg2:T129	
+R67	uses Arg1:T19 Arg2:T128	
+T130	AttackPattern 5996 6080	use a few mechanisms to keep the main service running continuously in the background
+R69	uses Arg1:T19 Arg2:T130	
+T131	AttackPattern 6421 6455	collect private device information
+T132	AttackPattern 6457 6487	upload it to a remote C2 serve
+T133	AttackPattern 6494 6543	handle any commands as requested by the C2 server
+T134	Application 1642 1664	financial institutions
+T135	Application 2505 2527	financial institutions
+T136	Application 3239 3249	app stores
+T137	Application 14370 14379	app store
+T138	Application 3218 3222	Play

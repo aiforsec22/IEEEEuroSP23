@@ -1,0 +1,352 @@
+T1	OS 12 19	Android
+T2	OS 72 79	Android
+T4	OS 5719 5726	Android
+T5	OS 9219 9226	Android
+T11	Organization 2110 2116	Google
+T14	Organization 2324 2330	Google
+T18	Malware 991 997	Exodus
+T19	Malware 2636 2642	Exodus
+T22	Malware 3785 3791	Exodus
+T23	Malware 4032 4038	Exodus
+T24	Malware 4806 4812	Exodus
+T25	Malware 4872 4878	Exodus
+T26	Malware 5181 5187	Exodus
+T27	Malware 5857 5863	Exodus
+T28	Malware 6039 6045	Exodus
+T29	Malware 8438 8444	Exodus
+T30	Malware 9173 9179	Exodus
+T31	Malware 10541 10547	Exodus
+T32	Malware 11479 11485	Exodus
+T33	Malware 11684 11690	Exodus
+T34	Malware 11830 11836	Exodus
+T35	Malware 5806 5815	Skygofree
+T36	ThreatActor 934 939	eSurv
+T38	Indicator 3813 3877	8453ce501fee1ca8a321f16b09969c517f92a24b058ac5b54549eabd58bf1884
+T39	Indicator 11213 11277	8453ce501fee1ca8a321f16b09969c517f92a24b058ac5b54549eabd58bf1884
+T40	Indicator 10553 10617	011b6bcebd543d4eb227e840f04e188fb01f2335b0b81684b60e6b45388d3820
+T41	Indicator 10619 10683	0f5f1409b1ebbee4aa837d20479732e11399d37f05b47b5359dc53a4001314e5
+T42	Indicator 10685 10749	2055584625d24687bd027a63bc0b8faa7d1a854a535de74afba24840a52b1d2f
+T43	Indicator 10751 10815	26fef238028ee4b5b8da631c77bfb44ada3d5db8129c45dea5df6a51c9ea5f55
+T44	Indicator 10817 10881	33a9da16d096426c82f150e39fc4f9172677885cfeaedcff10c86414e88be802
+T45	Indicator 10883 10947	34d000ee1e36efd10eb37e2b79d69249d5a85682a61390a89a1b9391c46bf2ba
+T46	Indicator 10949 11013	4f6146956b50ae3a6e80a1c1f771dba848ba677064eb0e166df5804ac2766898
+T47	Indicator 11015 11079	5db49122d866967295874ab2c1ce23a7cde50212ff044bbea1da9b49bb9bc149
+T48	Indicator 11081 11145	70e2eea5609c6954c61f2e5e0a3aea832d0643df93d18d7d78b6f9444dcceef0
+T49	Indicator 11147 11211	80810a8ec9624f317f832ac2e212dba033212258285344661e5da11b0d9f0b62
+T50	Indicator 11279 11343	a37f5d2418c5f2f64d06ba28fe62edee1293a56158ddfa9f04020e316054363f
+T51	Indicator 11345 11409	db59407f72666526fca23d31e3b4c5df86f25eff178e17221219216c6975c63f
+T52	Indicator 11411 11475	e0acbb0d7e55fb67e550a6bf5cf5c499a9960eaf5f037b785f9004585202593b
+T53	Indicator 11696 11760	64c11fdb317d6b7c9930e639f55863df592f23f3c7c861ddd97048891a90c64b
+T54	Indicator 11762 11826	a42a05bf9b412cd84ea92b166d790e8e72f1d01764f93b05ace62237fbabe40e
+T55	Indicator 11856 11920	00c787c0c0bc26caf623e66373a5aaa1b913b9caee1f34580bdfdd21954b7cc4
+T56	Indicator 11922 11986	11499ff2418f4523344de81a447f6786fdba4982057d4114f64db929990b4b59
+T57	Indicator 11988 12052	13ec6cec511297ac3137cf7d6e4a7c4f5dd2b24478a06262a44f13a3d61070b6
+T58	Indicator 12054 12118	3c9f08b3280851f54414dfa5a57f40d3b7be7b73736fa0ba21b078e75ce54d33
+T59	Indicator 12120 12184	3ee3a973c62ba5bd9eab595a7c94b7a26827c5fa5b21964d511ab58903929ec5
+T60	Indicator 12186 12250	47449a612697ad99a6fbd6e02a84e957557371151f2b034a411ebb10496648c8
+T61	Indicator 12252 12316	48a7dd672931e408662d2b5e1abcd6ef00097b8ffe3814f0d2799dd6fd74bd88
+T62	Indicator 12318 12382	824ad333320cbb7873dc49e61c14f749b0e0d88723635524463f2e6f56ea133a
+T63	Indicator 12384 12448	b46f282f9a1bce3798faee3212e28924730a657eb93cda3824c449868b6ee2e7
+T64	Indicator 12450 12514	c228a534535b22a316a97908595a2d793d0fecabadc32846c6d1bfb08ca9a658
+T65	Indicator 12516 12580	e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+T66	Indicator 12582 12646	e3f65f84dd6c2c3a5a653a3788d78920c0321526062a6b53daaf23fa57778a5f
+T67	Application 380 397	Google Play Store
+T68	Application 687 704	Google Play Store
+T69	Application 1235 1252	Google Play Store
+T70	Application 1331 1348	Google Play Store
+T71	Application 1440 1450	Play Store
+T72	Application 1749 1759	Play Store
+T73	Application 1851 1861	Play Store
+T74	Application 1879 1889	Play Store
+T77	Application 6479 6485	Chrome
+T78	Application 8255 8261	Chrome
+T79	Application 6490 6498	SBrowser
+T104	Indicator 10169 10178	port 6200
+T105	Indicator 10255 10264	port 6200
+T106	Location 36 41	Italy
+T107	Person 5775 5789	Lukas Stefanko
+T108	Indicator 4938 4946	mike.jar
+T110	Indicator 5304 5312	mike.jar
+T111	Indicator 6238 6246	mike.jar
+T112	Indicator 7740 7748	mike.jar
+T113	Indicator 12714 12729	54.71.249[.]137
+T114	Indicator 3934 3948	54.71.249.137.
+T115	Indicator 12670 12685	ad1.fbsba[.]com
+T116	Indicator 9132 9145	0.0.0.0:6842.
+T117	Indicator 11533 11538	rm.rf
+T118	Indicator 12731 12745	54.69.156[.]31
+T119	Indicator 7506 7515	mike.jar,
+T120	Indicator 11586 11603	it.servizipremium
+T121	Indicator 11666 11680	it.promofferte
+T122	Indicator 11648 11664	assistenza.linea
+T123	Indicator 11540 11556	operatore.italia
+T124	Indicator 11558 11584	it.offertetelefonicheperte
+T125	Indicator 12747 12764	162.243.172[.]208
+T126	Indicator 11605 11619	assistenza.sim
+T127	Indicator 4671 4729	https://54.71.249.137/56e087c9-fc56-49bb-bbd0-4fafc4acd6e1
+T128	Indicator 8840 8865	ws.my-local-weather[.]com
+T129	Indicator 12687 12712	ws.my-local-weather[.]com
+T130	Indicator 11621 11646	assistenza.linea.riattiva
+T131	Indicator 12766 12790	attiva.exodus.esurv[.]it
+T132	Indicator 11505 11531	com.phonecarrier.linecheck
+T133	Indicator 4467 4526	https://54.71.249.137/eddd0317-2bdc-4140-86cb-0e8d7047b874.
+R2	indicates Arg1:T38 Arg2:T22
+R3	indicates Arg1:T39 Arg2:T31
+R4	indicates Arg1:T40 Arg2:T31
+R5	indicates Arg1:T41 Arg2:T31
+R6	indicates Arg1:T42 Arg2:T31
+R7	indicates Arg1:T43 Arg2:T31
+R8	indicates Arg1:T44 Arg2:T31
+R9	indicates Arg1:T45 Arg2:T31
+R10	indicates Arg1:T46 Arg2:T31
+R11	indicates Arg1:T47 Arg2:T31
+R12	indicates Arg1:T48 Arg2:T31
+R13	indicates Arg1:T49 Arg2:T31
+R14	indicates Arg1:T50 Arg2:T31
+R15	indicates Arg1:T51 Arg2:T31
+R16	indicates Arg1:T52 Arg2:T31
+R17	indicates Arg1:T53 Arg2:T33
+R18	indicates Arg1:T54 Arg2:T33
+R19	indicates Arg1:T55 Arg2:T34
+R20	indicates Arg1:T56 Arg2:T34
+R21	indicates Arg1:T57 Arg2:T34
+R22	indicates Arg1:T58 Arg2:T34
+R23	indicates Arg1:T59 Arg2:T34
+R24	indicates Arg1:T60 Arg2:T34
+R25	indicates Arg1:T61 Arg2:T34
+R26	indicates Arg1:T62 Arg2:T34
+R27	indicates Arg1:T63 Arg2:T34
+R28	indicates Arg1:T64 Arg2:T34
+R29	indicates Arg1:T65 Arg2:T34
+R30	indicates Arg1:T66 Arg2:T34
+R32	indicates Arg1:T104 Arg2:T30
+R33	indicates Arg1:T105 Arg2:T30
+R34	indicates Arg1:T108 Arg2:T25
+R36	indicates Arg1:T110 Arg2:T26
+R37	indicates Arg1:T111 Arg2:T28
+R38	indicates Arg1:T112 Arg2:T28
+R39	indicates Arg1:T113 Arg2:T34
+R40	indicates Arg1:T114 Arg2:T22
+R41	indicates Arg1:T115 Arg2:T34
+R42	indicates Arg1:T116 Arg2:T29
+R43	indicates Arg1:T117 Arg2:T32
+R44	indicates Arg1:T118 Arg2:T34
+R45	indicates Arg1:T119 Arg2:T28
+R46	indicates Arg1:T120 Arg2:T32
+R47	indicates Arg1:T121 Arg2:T32
+R48	indicates Arg1:T122 Arg2:T32
+R49	indicates Arg1:T123 Arg2:T32
+R50	indicates Arg1:T124 Arg2:T32
+R51	indicates Arg1:T125 Arg2:T34
+R52	indicates Arg1:T126 Arg2:T32
+R53	indicates Arg1:T127 Arg2:T23
+R54	indicates Arg1:T128 Arg2:T29
+R55	indicates Arg1:T129 Arg2:T34
+R56	indicates Arg1:T130 Arg2:T32
+R57	indicates Arg1:T131 Arg2:T34
+R58	indicates Arg1:T132 Arg2:T32
+R59	indicates Arg1:T133 Arg2:T23
+T85	Malware 0 6	Exodus
+T94	MalwareType 20 27	Spyware
+R60	targets Arg1:T85 Arg2:T1	
+R61	isA Arg1:T85 Arg2:T94	
+T97	MalwareType 80 87	spyware
+R62	targets Arg1:T85 Arg2:T2	
+R63	isA Arg1:T85 Arg2:T97	
+T134	Malware 106 112	Exodus
+T135	Time 230 234	2016
+T136	Time 244 248	2019
+T137	MalwareType 269 276	spyware
+R66	isA Arg1:T134 Arg2:T137	
+T6	Application 295 312	Google Play Store
+R67	targets Arg1:T134 Arg2:T6	
+T7	Location 448 455	Italian
+R68	targets Arg1:T134 Arg2:T67	
+R69	has Arg1:T134 Arg2:T7	
+T138	Organization 530 536	Google
+T139	Location 667 672	Italy
+R70	targets Arg1:T134 Arg2:T139	
+T140	Organization 735 741	Google
+T8	ThreatActor 819 824	eSurv
+R71	hasAuthor Arg1:T134 Arg2:T8	
+T141	Time 984 988	2016
+T142	MalwareType 1121 1128	spyware
+R72	isA Arg1:T18 Arg2:T142	
+T143	MalwareType 1215 1222	Spyware
+R73	hasAuthor Arg1:T134 Arg2:T36	
+T9	Organization 796 811	Italian company
+R74	has Arg1:T8 Arg2:T9	
+T144	MalwareType 1287 1294	spyware
+R75	isA Arg1:T18 Arg2:T143	
+R76	targets Arg1:T18 Arg2:T69	
+R77	isA Arg1:T18 Arg2:T144	
+R78	targets Arg1:T18 Arg2:T70	
+T10	MalwareType 1565 1572	spyware
+R79	isA Arg1:T18 Arg2:T10	
+T145	AttackPattern 1639 1705	appear as applications distributed by unspecified mobile operators
+R80	uses Arg1:T18 Arg2:T145	
+T146	Organization 1995 2001	Google
+T147	MalwareType 2085 2092	spyware
+T12	Application 2129 2140	Google Play
+T13	Application 2221 2240	Google Play Protect
+T148	Application 2484 2494	Play Store
+T149	Location 2584 2589	Italy
+R81	targets Arg1:T18 Arg2:T149	
+R82	targets Arg1:T18 Arg2:T148	
+T20	Malware 2795 2801	Exodus
+T21	AttackPattern 3031 3090	collect some basic identifying information about the device
+T150	Time 3326 3330	2016
+T151	MalwareType 3406 3413	spyware
+R86	uses Arg1:T20 Arg2:T21	
+R88	isA Arg1:T20 Arg2:T151	
+T153	Indicator 4589 4599	Kjk1MmphFG
+R89	indicates Arg1:T153 Arg2:T23	
+T154	Time 5050 5062	January 2019
+T155	AttackPattern 5198 5263	dynamically load and execute the primary stage 2 payload mike.jar
+R91	uses Arg1:T26 Arg2:T155	
+T3	MalwareType 5390 5397	spyware
+R35	isA Arg1:T26 Arg2:T3	
+T109	Vulnerability 5677 5685	DirtyCow
+R92	exploits Arg1:T26 Arg2:T109	
+T157	MalwareType 5727 5734	spyware
+T158	Location 5743 5748	Italy
+T159	Organization 5841 5855	Kaspersky Labs
+R94	targets Arg1:T35 Arg2:T158	
+R95	isA Arg1:T35 Arg2:T157	
+R96	targets Arg1:T35 Arg2:T4	
+T76	Hardware 5918 5931	Huawei phones
+R97	targets Arg1:T27 Arg2:T76	
+T160	Application 5889 5902	protectedapps
+R98	targets Arg1:T27 Arg2:T160	
+R99	targets Arg1:T35 Arg2:T160	
+T161	AttackPattern 5947 6002	configure power-saving options for running applications
+R100	uses Arg1:T27 Arg2:T161	
+R101	uses Arg1:T35 Arg2:T161	
+T162	AttackPattern 6057 6106	keep itself running even when the screen goes off
+R102	uses Arg1:T28 Arg2:T162	
+T163	MalwareType 6258 6265	spyware
+R103	isA Arg1:T28 Arg2:T163	
+T164	AttackPattern 6320 6361	Retrieve a list of installed applications
+T165	AttackPattern 6364 6413	Record surroundings using the built-in microphone
+T166	AttackPattern 6430 6473	Retrieve the browsing history and bookmarks
+T81	Hardware 6525 6539	Samsung phones
+R104	uses Arg1:T28 Arg2:T164	
+R105	uses Arg1:T28 Arg2:T165	
+R106	uses Arg1:T28 Arg2:T166	
+R107	targets Arg1:T28 Arg2:T77	
+R108	targets Arg1:T28 Arg2:T79	
+R109	targets Arg1:T28 Arg2:T81	
+T101	AttackPattern 6543 6579	Extract events from the Calendar app
+T167	AttackPattern 6582 6603	Extract the calls log
+T168	AttackPattern 6606 6630	Record phone calls audio
+T169	AttackPattern 6647 6685	Take pictures with the embedded camera
+T170	AttackPattern 6688 6744	Collect information on surrounding cellular towers (BTS)
+T171	AttackPattern 6747 6771	Extract the address book
+T93	AttackPattern 6774 6821	Extract the contacts list from the Facebook app
+T82	AttackPattern 6824 6874	Extract logs from Facebook Messenger conversations
+T172	AttackPattern 6877 6919	Take a screenshot of any app in foreground
+T173	AttackPattern 6922 6970	Extract information on pictures from the Gallery
+T83	AttackPattern 6973 7010	Extract information from th GMail app
+T84	AttackPattern 7013 7049	Dump data from the IMO messenger app
+T86	AttackPattern 7052 7111	Extract call logs, contacts and messages from the Skype app
+T99	AttackPattern 7114 7139	Retrieve all SMS messages
+T88	AttackPattern 7142 7203	Extract messages and the encryption key from the Telegram app
+T90	AttackPattern 7206 7244	Dump data from the Viber messenger app
+T174	AttackPattern 7247 7273	Extract logs from WhatsApp
+T175	AttackPattern 7276 7317	Retrieve media exchanged through WhatsApp
+T176	AttackPattern 7320 7356	Extract the Wi-Fi network's password
+T92	AttackPattern 7359 7387	Extract data from WeChat app
+T177	AttackPattern 7390 7434	Extract current GPS coordinates of the phone
+R110	uses Arg1:T28 Arg2:T101	
+R111	uses Arg1:T28 Arg2:T167	
+R112	uses Arg1:T28 Arg2:T168	
+R113	uses Arg1:T28 Arg2:T169	
+R114	uses Arg1:T28 Arg2:T170	
+R115	uses Arg1:T28 Arg2:T171	
+R116	uses Arg1:T28 Arg2:T93	
+R117	uses Arg1:T28 Arg2:T172	
+R118	uses Arg1:T28 Arg2:T82	
+R119	uses Arg1:T28 Arg2:T173	
+R120	uses Arg1:T28 Arg2:T83	
+R121	uses Arg1:T28 Arg2:T84	
+R122	uses Arg1:T28 Arg2:T86	
+R123	uses Arg1:T28 Arg2:T99	
+R124	uses Arg1:T28 Arg2:T88	
+R125	uses Arg1:T28 Arg2:T90	
+R126	uses Arg1:T28 Arg2:T174	
+R127	uses Arg1:T28 Arg2:T175	
+R128	uses Arg1:T28 Arg2:T176	
+R129	uses Arg1:T28 Arg2:T92	
+R130	uses Arg1:T28 Arg2:T177	
+T178	Indicator 7879 7888	Port 6202
+T179	Indicator 7920 7939	Ports 6203 and 6204
+T180	Indicator 7971 7980	Port 6205
+T181	Indicator 8009 8018	Port 6206
+T182	Indicator 8047 8056	Port 6207
+T183	Indicator 8085 8094	Port 6208
+T184	Indicator 8121 8130	Port 6209
+T185	Indicator 8162 8171	Port 6210
+T186	Indicator 8203 8212	Port 6211
+T187	Indicator 8244 8253	Port 6212
+T91	Application 7890 7898	WhatsApp
+R133	indicates Arg1:T178 Arg2:T28	
+T95	Application 7941 7949	Facebook
+T96	Application 7982 7987	Gmail
+T87	Application 8020 8025	Skype
+T98	Application 8058 8063	Viber
+T100	Application 8096 8099	IMO
+T89	Application 8132 8140	Telegram
+T80	Application 8173 8181	SBrowser
+T102	Application 8214 8222	Calendar
+R142	indicates Arg1:T179 Arg2:T28	
+R143	indicates Arg1:T180 Arg2:T28	
+R144	indicates Arg1:T181 Arg2:T28	
+R145	indicates Arg1:T182 Arg2:T28	
+R146	indicates Arg1:T183 Arg2:T28	
+R147	indicates Arg1:T184 Arg2:T28	
+R148	indicates Arg1:T185 Arg2:T28	
+R149	indicates Arg1:T186 Arg2:T28	
+R150	indicates Arg1:T187 Arg2:T28	
+T103	Indicator 8869 8879	port 22011
+R153	indicates Arg1:T103 Arg2:T29	
+R154	targets Arg1:T30 Arg2:T5	
+R155	uses Arg1:T28 Arg2:T31	
+R156	uses Arg1:T28 Arg2:T32	
+T190	AttackPattern 314 369	disguised as service applications from mobile operators
+R157	uses Arg1:T134 Arg2:T190	
+T191	Application 327 347	service applications
+R158	uses Arg1:T134 Arg2:T191	
+T192	MalwareType 760 767	spyware
+T156	AttackPattern 1040 1065	interception capabilities
+R93	uses Arg1:T18 Arg2:T156	
+T193	AttackPattern 1188 1202	data tampering
+R159	uses Arg1:T18 Arg2:T193	
+T194	Location 1709 1714	Italy
+R160	targets Arg1:T18 Arg2:T194	
+T189	AttackPattern 9243 9281	enabling or disabling certain services
+T195	AttackPattern 9286 9307	parsing app databases
+R31	uses Arg1:T30 Arg2:T189	
+R161	uses Arg1:T30 Arg2:T195	
+T15	AttackPattern 3139 3178	send it to the Command & Control server
+R1	uses Arg1:T20 Arg2:T15	
+T16	Application 7309 7317	WhatsApp
+T17	Application 7265 7273	WhatsApp
+T37	Application 7225 7230	Viber
+T75	Application 7191 7199	Telegram
+T152	Application 7102 7107	Skype
+T188	Application 7032 7035	IMO
+T196	Application 7001 7006	GMail
+T197	Application 6963 6970	Gallery
+T199	Application 6842 6860	Facebook Messenger
+T200	Application 6809 6817	Facebook
+T198	Application 6567 6575	Calendar
+T201	Application 7377 7383	WeChat
+R64	has Arg1:T85 Arg2:T106	
+T202	Organization 5918 5924	Huawei
+T203	Organization 6525 6532	Samsung
+T204	Application 2879 2896	Google Play Store
+T205	Application 2117 2127	Play Store
+T206	Malware 154 160	Exodus
+T207	Malware 169 175	Exodus
+T208	Malware 3005 3011	Exodus
+T209	OS 5274 5281	Android

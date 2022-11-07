@@ -1,0 +1,40 @@
+TrickBot App Bypasses Non-SMS Banking 2FA
+TrickBot victims are being fooled into downloading an app that records their screens – stealing non-SMS 2FA passcodes for banking websites.
+
+The TrickBot trojan has a new trick up its sleeve for bypassing a new kind of two-factor authentication (2FA) security method used by banks – by fooling its victims into downloading a malicious Android app.
+
+The app, which researchers dubbed “TrickMo,” is still under active development. While TrickMo is being currently deployed against TrickBot victims in Germany, researchers say that it can be used to target any bank or region — and they expect to see frequent changes and updates in the future.
+
+“Though it’s not the first of its kind, this Android malware app is more sophisticated than similar apps, and possesses interesting features that enable its operators to steal transaction authorization codes from victims who download the app,” said Pavel Asinovsky, malware researcher with IBM X-Force, in a Tuesday analysis.
+
+Researchers first discovered the mobile app after a September 2019 tweet by CERT-Bund flagging TrickBot using man-in-the-browser techniques.
+
+Man-in-the-browser is a threat related to man-in-the-middle (MiTM), which occurs when an attacker compromises a web browser and then modifies the browser’s web pages. In this case, TrickBot was modifying the pages to ask the victims for their mobile phone numbers and device operating system types (Android or iOS).
+
+If victims indicated that they were using Android-based devices, the trojan would then use web injections and social engineering to fool the victim into installing a fake security app — this turned out to be the TrickMo app.
+
+Once downloaded, the app steals personal device information, intercepts SMS messages, locks the phone, steals pictures and records the device screen. The malware also has its own kill switch, a feature often used by malware authors to remove traces from a device after a successful operation.
+
+TrickBot already has various data-stealing capabilities, so why would it deploy an additional piece of malware with these features? Researchers believe that some of TrickMo’s functionalities, specifically the ability to record targeted applications, help the trojan obtain a one-time password (OTP) or transaction authentication number, with the goal of bypassing 2FA protections put in place by banks.
+
+“We believe that TrickMo’s most significant novelty is an app-recording feature, which gives it the ability to overcome the newer pushTAN app validations used by German banks,” they said.
+
+Bypassing Authentication
+
+In most places, 2FA is implemented by sending an SMS message containing a OTP to a user’s mobile device. However, SMS messages, as previous hacks have proved, can be intercepted. So, some banks in Europe (and especially in Germany) have taken these types of authentication measures a step further by using an app that sends push notifications to users (rather than texts). These notifications would contain the transaction details and the passcode. In Germany, the one-time security codes required to log in to mobile banking are known as a mobile TANs (mTANs), and the apps that do the push notifications are known as “pushTAN” apps.
+
+“The pushTAN method has a clear advantage: It improves security by mitigating the risk of SIM swapping attacks and SMS-stealers,” said researchers. “The pushTAN method is a hurdle for malware apps that may reside on the same device, and it’s particularly challenging for mobile malware due to Android’s application sandbox. This feature is designed to block one application from accessing the data of other applications without rooting the device.”
+
+TrickMo’s features are designed to bypass this extra type of authentication – specifically, via its ability to record mobile phone screens.
+
+This screen-recording feature abuses accessibility services in Android. Accessibility services were originally developed by Google to help users with disabilities. Once downloaded, TrickMo uses the accessibility settings to carry out various malicious operations, including preventing users from uninstalling the app, becoming the default SMS app (by changing device settings), monitoring any running apps and scraping on-screen text.
+
+“Android operating systems include many dialog screens that require the denial, or approval, of app permissions, and actions that have to receive input from the user by tapping a button on the screen,” researchers said. “TrickMo uses accessibility services to identify and control some of these screens and make its own choices before giving the user a chance to react.”
+
+TrickBot Evolves
+
+Researchers said that this most recent evolution points to malware operators looking to switch up their tactics in bypassing banking authentication protections.
+
+“As banks release more advanced security measures, banking malware evolves to keep up with the perpetual arms race,” said researchers. “From our analysis of the TrickMo mobile malware, it is apparent that TrickMo is designed to break the newest methods of OTP and, specifically, TAN codes often used in Germany.”
+
+It’s only the most recent tactic changeup for TrickBot. The operators of the infamous banking trojan have been busy over the past months. Earlier in March, the malware added a new feature, a module called rdpScanDLL, that brute forces remote desktop protocol (RDP) accounts. Also this past month, TrickBot added a Windows 10 ActiveX control to execute malicious macros.

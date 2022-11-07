@@ -1,0 +1,315 @@
+T4	OS 9530 9537	Android
+T7	Malware 0 7	FakeSpy
+T8	Malware 218 225	FakeSpy
+T9	Malware 408 415	FakeSpy
+T10	Malware 651 658	FakeSpy
+T11	Malware 1041 1048	FakeSpy
+T12	Malware 1152 1159	FakeSpy
+T13	Malware 1765 1772	FakeSpy
+T14	Malware 1972 1979	FakeSpy
+T15	Malware 2129 2136	FakeSpy
+T16	Malware 2655 2662	FakeSpy
+T17	Malware 2749 2756	FakeSpy
+T18	Malware 3072 3079	FakeSpy
+T21	Malware 3690 3697	FakeSpy
+T22	Malware 3819 3826	FakeSpy
+T23	Malware 3882 3889	FakeSpy
+T24	Malware 5087 5094	FakeSpy
+T25	Malware 8922 8929	FakeSpy
+T26	Malware 10246 10253	FakeSpy
+T28	Malware 11241 11248	FakeSpy
+T29	Malware 11627 11634	FakeSpy
+T30	Malware 12027 12034	FakeSpy
+T31	Malware 12173 12180	FakeSpy
+T32	Malware 12318 12325	FakeSpy
+T33	Malware 12744 12751	FakeSpy
+T34	Malware 12926 12933	FakeSpy
+T35	Malware 14232 14239	FakeSpy
+T36	Malware 14929 14936	FakeSpy
+T37	Malware 15174 15181	FakeSpy
+T38	Malware 16068 16075	FakeSpy
+T39	Malware 16509 16516	FakeSpy
+T40	Indicator 14328 14340	/servlet/[C2
+T42	Organization 1478 1488	Cybereason
+T47	ThreatActor 13563 13577	Roaming Mantis
+T50	ThreatActor 16121 16135	Roaming Mantis
+T51	Organization 3965 3993	United States Postal Service
+T52	Organization 4083 4087	USPS
+T53	Organization 4187 4197	Royal Mail
+T54	Organization 4331 4344	Deutsche Post
+T55	Organization 4347 4370	Deutsche Post DHL Group
+T56	Organization 4472 4480	La Poste
+T58	Organization 4632 4648	Yamato Transport
+T68	Organization 4731 4744	Chunghwa Post
+T70	Application 8031 8044	Chunghwa Post
+T72	Organization 81 101	Cybereason Nocturnus
+T73	Organization 13327 13347	Cybereason Nocturnus
+T74	Organization 14602 14622	Cybereason Nocturnus
+T82	ThreatActor 1094 1108	Roaming Mantis
+T83	ThreatActor 2042 2056	Roaming Mantis
+T84	ThreatActor 13584 13598	Roaming Mantis
+T85	ThreatActor 14962 14976	Roaming Mantis
+T87	Location 4049 4062	United States
+T88	Location 16269 16282	United States
+T89	Organization 4125 4138	US government
+T90	Organization 4547 4557	Japan Post
+T93	Organization 4780 4788	Chunghwa
+T97	Indicator 9912 9920	Sversion
+T99	Location 14194 14199	CHINA
+T103	Location 15384 15390	Europe
+T104	Indicator 8309 8320	mycode.jar,
+T105	Indicator 8171 8180	tong.luo,
+T106	Indicator 8439 8448	tong.luo,
+T107	Indicator 13164 13183	(jUtils.decrypt()).
+T109	Indicator 8104 8114	mycode.jar
+T110	Indicator 8458 8468	mycode.jar
+T111	Indicator 8837 8847	mycode.jar
+T112	Indicator 8015 8029	da.hao.pao.bin
+T113	Indicator 8067 8076	libmsy.so
+T114	Indicator 8405 8414	libmsy.so
+T115	Indicator 8274 8282	tong.luo
+R1	indicates Arg1:T40 Arg2:T35
+R5	indicates Arg1:T104 Arg2:T70
+R6	indicates Arg1:T105 Arg2:T70
+R7	indicates Arg1:T106 Arg2:T24
+R8	indicates Arg1:T107 Arg2:T34
+R10	indicates Arg1:T109 Arg2:T70
+R11	indicates Arg1:T110 Arg2:T24
+R12	indicates Arg1:T111 Arg2:T70
+R13	indicates Arg1:T112 Arg2:T24
+R14	indicates Arg1:T113 Arg2:T70
+R15	indicates Arg1:T114 Arg2:T70
+R16	indicates Arg1:T115 Arg2:T70
+T41	AttackPattern 9018 9046	contact information stealing
+T43	AttackPattern 9067 9128	steals all contacts in the contact list and their information
+T44	Indicator 9194 9216	/servlet/ContactUpload
+T45	Application 23 42	Postal Service Apps
+R17	targets Arg1:T7 Arg2:T45	
+T46	Malware 149 156	FakeSpy
+T48	Time 204 216	October 2017
+R19	discoveredIn Arg1:T46 Arg2:T48	
+T49	AttackPattern 260 278	steal SMS messages
+T59	AttackPattern 280 297	send SMS messages
+T60	AttackPattern 299 319	steal financial data
+T61	AttackPattern 321 363	read account information and contact lists
+T62	AttackPattern 365 387	steal application data
+R20	uses Arg1:T8 Arg2:T49	
+R21	uses Arg1:T8 Arg2:T59	
+R22	uses Arg1:T8 Arg2:T60	
+R23	uses Arg1:T8 Arg2:T61	
+R24	uses Arg1:T8 Arg2:T62	
+T64	Location 431 443	South Korean
+T65	Location 448 456	Japanese
+R25	targets Arg1:T9 Arg2:T64	
+R26	targets Arg1:T9 Arg2:T65	
+T75	Location 562 567	China
+T76	Location 569 575	Taiwan
+T77	Location 577 583	France
+T78	Location 585 596	Switzerland
+T80	Location 598 605	Germany
+T86	Location 607 621	United Kingdom
+T91	Location 623 636	United States
+R27	targets Arg1:T9 Arg2:T75	
+R28	targets Arg1:T9 Arg2:T76	
+R29	targets Arg1:T9 Arg2:T77	
+R30	targets Arg1:T9 Arg2:T78	
+R31	targets Arg1:T9 Arg2:T80	
+R32	targets Arg1:T9 Arg2:T86	
+R33	targets Arg1:T9 Arg2:T91	
+T92	AttackPattern 659 732	masquerades as legitimate postal service apps and transportation services
+R34	uses Arg1:T10 Arg2:T92	
+T94	AttackPattern 800 895	requests permissions so that it may control SMS messages and steal sensitive data on the device
+R35	uses Arg1:T10 Arg2:T94	
+T116	Organization 975 985	Cybereason
+T117	Time 1187 1191	2017
+T2	Malware 1552 1559	FakeSpy
+T119	Time 1591 1603	October 2017
+R37	discoveredIn Arg1:T2 Arg2:T119	
+T120	AttackPattern 2168 2202	exfiltrates and sends SMS messages
+T121	AttackPattern 2204 2241	steals financial and application data
+T122	AttackPattern 2243 2286	reads account information and contact lists
+R39	uses Arg1:T15 Arg2:T120	
+R40	uses Arg1:T15 Arg2:T121	
+R41	uses Arg1:T15 Arg2:T122	
+T123	AttackPattern 2313 2373	uses smishing, or SMS phishing, to infiltrate target devices
+R42	uses Arg1:T15 Arg2:T123	
+T125	AttackPattern 2445 2517	send fake text messages to lure the victims to click on a malicious link
+R44	uses Arg1:T15 Arg2:T125	
+T3	Location 2921 2931	East Asian
+T100	Application 2782 2798	post office apps
+T127	Application 2803 2831	transportation services apps
+R47	targets Arg1:T17 Arg2:T100	
+R48	targets Arg1:T17 Arg2:T127	
+T19	Organization 3282 3288	JPCERT
+T20	Location 3714 3720	Korean
+T132	Location 3725 3733	Japanese
+R53	targets Arg1:T21 Arg2:T20	
+R54	targets Arg1:T21 Arg2:T132	
+R55	targets Arg1:T23 Arg2:T87	
+R56	targets Arg1:T23 Arg2:T51	
+R57	targets Arg1:T23 Arg2:T52	
+R58	targets Arg1:T23 Arg2:T53	
+R59	targets Arg1:T23 Arg2:T54	
+R60	targets Arg1:T23 Arg2:T55	
+T133	Location 4465 4469	Bonn
+T134	Location 4538 4544	France
+T135	Location 4624 4629	Tokyo
+T136	Location 4723 4728	Tokyo
+R61	targets Arg1:T23 Arg2:T56	
+T57	Organization 4483 4491	La Poste
+R62	targets Arg1:T23 Arg2:T57	
+R63	targets Arg1:T23 Arg2:T134	
+R64	targets Arg1:T23 Arg2:T135	
+R65	targets Arg1:T23 Arg2:T136	
+T63	Organization 4832 4842	Swiss Post
+T66	Location 4876 4887	Switzerland
+R66	targets Arg1:T23 Arg2:T90	
+R67	targets Arg1:T23 Arg2:T58	
+R68	targets Arg1:T23 Arg2:T63	
+T67	OS 5026 5033	Android
+T96	AttackPattern 5440 5496	asks them to approve installation from unknown resources
+T137	Malware 5744 5751	FakeSpy
+T138	Time 5798 5808	April 2020
+T69	Application 5754 5771	Chunghwa Post app
+R69	discoveredIn Arg1:T69 Arg2:T138	
+T139	AttackPattern 5908 6093	Allows read-only access to the phone state, including the current cellular network information, the status of any ongoing calls, and a list of any PhoneAccounts registered on the device
+T140	AttackPattern 6107 6151	Allows the application to read text messages
+T141	AttackPattern 6168 6214	Allows the application to receive SMS messages
+T142	AttackPattern 6229 6340	Allows the application to write to SMS messages stored on the device or SIM card, including y deleting messages
+T143	AttackPattern 6354 6397	Allows the application to send SMS messages
+T144	AttackPattern 6411 6457	Allows the application to open network sockets
+T145	AttackPattern 6485 6536	Allows the application to write to external storage
+T146	AttackPattern 6563 6615	Allows the application to read from external storage
+T147	AttackPattern 6643 6723	Allows the application to receive a broadcast after the system finishes booting.
+T148	AttackPattern 6737 6814	Allows the application to get information about current or recently run tasks
+T149	AttackPattern 6868 6939	Allows the application to create windows shown on top of all other apps
+T150	AttackPattern 6954 7069	Allows the application to use PowerManager WakeLocks to keep the processor from sleeping or the screen from dimming
+T151	AttackPattern 7095 7154	Allows the application to access information about networks
+T152	AttackPattern 7196 7266	Whitelists the application to allow it to ignore battery optimizations
+T153	AttackPattern 7285 7340	Allows the application to read the user's contacts data
+T154	AttackPattern 7445 7538	intercept every SMS received on the device and send a copy of these messages to the C2 server
+T155	AttackPattern 7595 7691	continue to operate at full capacity while the phone's screen is turned off and the phone locked
+T156	Malware 8486 8493	FakeSpy
+R71	uses Arg1:T25 Arg2:T41	
+R72	uses Arg1:T25 Arg2:T43	
+R73	indicates Arg1:T44 Arg2:T25	
+R74	targets Arg1:T25 Arg2:T4	
+T158	AttackPattern 11737 11815	detect whether it’s running in an emulated environment or a real mobile device
+R75	uses Arg1:T29 Arg2:T158	
+T159	Malware 12399 12406	FakeSpy
+T160	Indicator 12454 12464	getMachine
+T161	Malware 12990 12997	FakeSpy
+T162	Malware 13266 13273	FakeSpy
+T163	Time 13666 13676	April 2018
+T164	Location 13760 13775	Asian countries
+R76	targets Arg1:T162 Arg2:T99	
+R77	targets Arg1:T162 Arg2:T164	
+R81	hasAuthor Arg1:T36 Arg2:T85	
+R83	hasAuthor Arg1:T34 Arg2:T84	
+R82	hasAuthor Arg1:T35 Arg2:T47	
+T101	Malware 15015 15022	FakeSpy
+T102	Time 15200 15212	October 2017
+R84	discoveredIn Arg1:T37 Arg2:T102	
+T166	Location 15248 15258	East Asian
+R85	targets Arg1:T37 Arg2:T166	
+R86	targets Arg1:T37 Arg2:T103	
+T167	Location 15395 15408	North America
+R87	targets Arg1:T37 Arg2:T167	
+T168	AttackPattern 15530 15631	Once it has been installed, it requests permissions from the user so that it can steal sensitive data
+T169	AttackPattern 15633 15701	manipulate SMS messages, and potentially infect contacts of the user
+T170	AttackPattern 15768 15837	masquerading as official post office and transportation services apps
+R88	hasAuthor Arg1:T38 Arg2:T50	
+T171	Location 16164 16168	Asia
+R89	targets Arg1:T38 Arg2:T171	
+R90	targets Arg1:T38 Arg2:T88	
+T172	Location 16287 16293	Europe
+R91	targets Arg1:T38 Arg2:T172	
+R93	uses Arg1:T37 Arg2:T168	
+R94	uses Arg1:T37 Arg2:T169	
+R95	uses Arg1:T37 Arg2:T170	
+R96	indicates Arg1:T160 Arg2:T159	
+T5	AttackPattern 12481 12568	uses the TelephonyManager class to check for the deviceID, phone number, IMEI, and IMSI
+R97	uses Arg1:T159 Arg2:T5	
+T79	Malware 10977 10984	FakeSpy
+T81	AttackPattern 10999 11148	collection of the device's IMEI (International Mobile Station Equipment Identity) number and all installed applications using the function upAppinfos
+R98	uses Arg1:T79 Arg2:T81	
+T165	Indicator 11219 11236	/servlet/AppInfos
+R99	indicates Arg1:T165 Arg2:T79	
+T177	Indicator 11434 11457	===状态=== (===Status===)
+T178	Indicator 11513 11534	===类型=== (===Type===)
+R100	indicates Arg1:T177 Arg2:T28	
+R101	indicates Arg1:T178 Arg2:T28	
+T179	AttackPattern 10804 10941	sends a smishing message to the entire contact list of the infected device along with the malicious link to the FakeSpy installation page
+R102	uses Arg1:T26 Arg2:T179	
+T27	Indicator 10486 10507	/servlet/SendMassage2
+R103	indicates Arg1:T27 Arg2:T26	
+T98	AttackPattern 9641 9695	steals infected device data and additional information
+T180	Indicator 9619 9633	onStartCommand
+T181	Indicator 9764 9775	/servlet/xx
+R104	indicates Arg1:T180 Arg2:T25	
+R105	uses Arg1:T25 Arg2:T98	
+R106	indicates Arg1:T181 Arg2:T25	
+T6	Hardware 9895 9909	Google Pixel 2
+R107	targets Arg1:T25 Arg2:T6	
+R108	indicates Arg1:T97 Arg2:T25	
+T71	AttackPattern 9946 10016	Checks if there are any banking-related or cryptocurrency trading apps
+T182	AttackPattern 10100 10244	Checks if the folder named NPKI (National Public Key Infrastructure) might contain authentication certificates related to financial transactions
+R109	uses Arg1:T25 Arg2:T71	
+R110	uses Arg1:T25 Arg2:T182	
+R129	hasAuthor Arg1:T14 Arg2:T83	
+T184	Organization 3592 3625	Transportation Services Companies
+T185	Organization 3571 3587	Targeting Postal
+R130	targets Arg1:T18 Arg2:T185	
+R131	targets Arg1:T18 Arg2:T184	
+R132	targets Arg1:T23 Arg2:T89	
+T186	Location 4823 4829	Taiwan
+R2	targets Arg1:T23 Arg2:T68	
+R133	targets Arg1:T23 Arg2:T186	
+R134	targets Arg1:T23 Arg2:T66	
+R135	targets Arg1:T23 Arg2:T93	
+R137	uses Arg1:T24 Arg2:T96	
+T188	Organization 2699 2714	postal services
+R138	targets Arg1:T16 Arg2:T188	
+R139	targets Arg1:T23 Arg2:T133	
+R140	targets Arg1:T23 Arg2:T67	
+R114	uses Arg1:T69 Arg2:T139	
+R116	uses Arg1:T69 Arg2:T141	
+R112	uses Arg1:T69 Arg2:T140	
+R113	uses Arg1:T69 Arg2:T142	
+R115	uses Arg1:T69 Arg2:T143	
+R117	uses Arg1:T69 Arg2:T144	
+R118	uses Arg1:T69 Arg2:T145	
+R119	uses Arg1:T69 Arg2:T146	
+R120	uses Arg1:T69 Arg2:T147	
+R121	uses Arg1:T69 Arg2:T148	
+R122	uses Arg1:T69 Arg2:T149	
+R124	uses Arg1:T69 Arg2:T151	
+R126	uses Arg1:T69 Arg2:T153	
+R127	uses Arg1:T69 Arg2:T154	
+R123	uses Arg1:T69 Arg2:T150	
+R125	uses Arg1:T69 Arg2:T152	
+R128	uses Arg1:T69 Arg2:T155	
+T1	OS 161 168	Android
+R18	targets Arg1:T46 Arg2:T1	
+R36	hasAuthor Arg1:T11 Arg2:T82	
+T95	OS 1529 1536	Android
+R38	targets Arg1:T2 Arg2:T95	
+T108	AttackPattern 3111 3123	SMS phishing
+R9	uses Arg1:T18 Arg2:T108	
+R3	targets Arg1:T137 Arg2:T69	
+R4	targets Arg1:T137 Arg2:T70	
+T118	AttackPattern 13017 13048	uses a DES encryption algorithm
+R43	uses Arg1:T34 Arg2:T118	
+T124	AttackPattern 15430 15492	masquerades as legitimate, trusted postal service applications
+R45	uses Arg1:T37 Arg2:T124	
+R46	targets Arg1:T17 Arg2:T3	
+T189	Application 15809 15837	transportation services apps
+T190	Application 15472 15492	service applications
+T191	Application 10277 10284	SMS app
+T192	Malware 3229 3236	FakeSpy
+T193	Malware 3501 3508	FakeSpy
+T194	Malware 10916 10923	FakeSpy
+T195	OS 2600 2607	Android
+T196	OS 14018 14025	Android
+T197	OS 14069 14074	Apple
+T198	OS 14102 14107	Apple

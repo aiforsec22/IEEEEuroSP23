@@ -1,0 +1,181 @@
+T2	OS 2188 2195	Android
+T3	Application 2206 2223	Android Antivirus
+T4	OS 3976 3983	Android
+T5	OS 6133 6140	Android
+T7	Application 2242 2248	Google
+T10	Malware 2074 2087	Red Alert 2.0
+T11	Malware 2404 2417	Red Alert 2.0
+T12	Malware 2578 2591	Red Alert 2.0
+T13	Malware 4505 4518	Red Alert 2.0
+T14	Malware 5973 5986	Red Alert 2.0
+T15	Malware 6041 6054	Red Alert 2.0
+T16	Malware 6740 6753	Red Alert 2.0
+T17	Indicator 7272 7336	55292a4dde8727faad1c40c914cf1be9dfdcf4e67b515aa593bcd8d86e824372
+T18	Indicator 7338 7402	be92a751e5abbcd24151b509dbb4feb98ea46f367a99d6f86ed4a7c162461e31
+T19	Indicator 7404 7468	5c4d666cef84abc2a1ffd3b1060ef28fa3c6c3bb4fad1fa26db99350b41bea4c
+T20	Indicator 7470 7534	06081ab7faa729e33b9397a0e47548e75cbec3d43c50e6368e81d737552150a5
+T21	Indicator 7536 7600	753999cb19a4346042f973e30cf1158c44f2335ab65859d3bfa16bca4098e2ef
+T22	Organization 169 179	SophosLabs
+T23	Application 1919 1935	VPN Proxy Master
+T24	Application 2151 2163	Flash Player
+T25	Application 2174 2186	Flash Player
+T26	Application 2456 2474	Adobe Flash player
+T29	Malware 0 13	Red Alert 2.0
+T30	Malware 283 292	Red Alert
+T34	Malware 2673 2682	Red Alert
+T36	Malware 4687 4696	Red Alert
+T40	Application 5576 5583	Twitter
+T41	Organization 6497 6503	Sophos
+T44	Indicator 7146 7159	free-vpn.date
+T45	Indicator 7182 7197	free-vpn.online
+T47	Indicator 6883 6902	185.126.200.15:7878
+T56	Indicator 1577 1597	free-vpn[.]download.
+T57	Indicator 6779 6798	103.239.30.126:7878
+T58	Indicator 7053 7067	167.99.176.61:
+T59	Indicator 6967 6987	185.243.243.244:7878
+T60	Indicator 7121 7143	free-androidvpn.online
+T61	Indicator 6821 6840	146.185.241.42:7878
+T62	Indicator 7071 7091	free-androidvpn.date
+T63	Indicator 7094 7118	free-androidvpn.download
+T64	Indicator 6989 7009	185.243.243.245:7878
+T65	Indicator 7162 7179	free-vpn.download
+T66	Indicator 6904 6923	185.126.200.18:7878
+T67	Indicator 6800 6819	146.185.241.29:7878
+T68	Indicator 6862 6881	185.126.200.12:7878
+T69	Indicator 6842 6860	185.126.200.3:7878
+T71	Indicator 6945 6965	185.243.243.241:7878
+T72	Indicator 6925 6943	185.165.28.15:7878
+R1	indicates Arg1:T17 Arg2:T16
+R2	indicates Arg1:T18 Arg2:T16
+R3	indicates Arg1:T19 Arg2:T16
+R4	indicates Arg1:T20 Arg2:T16
+R5	indicates Arg1:T21 Arg2:T16
+R6	indicates Arg1:T44 Arg2:T16
+R7	indicates Arg1:T45 Arg2:T16
+R9	indicates Arg1:T47 Arg2:T16
+R12	indicates Arg1:T57 Arg2:T16
+R13	indicates Arg1:T58 Arg2:T16
+R14	indicates Arg1:T59 Arg2:T16
+R15	indicates Arg1:T60 Arg2:T16
+R16	indicates Arg1:T61 Arg2:T16
+R17	indicates Arg1:T62 Arg2:T16
+R18	indicates Arg1:T63 Arg2:T16
+R19	indicates Arg1:T64 Arg2:T16
+R20	indicates Arg1:T65 Arg2:T16
+R21	indicates Arg1:T66 Arg2:T16
+R22	indicates Arg1:T67 Arg2:T16
+R23	indicates Arg1:T68 Arg2:T16
+R24	indicates Arg1:T69 Arg2:T16
+R26	indicates Arg1:T71 Arg2:T16
+R27	indicates Arg1:T72 Arg2:T16
+T1	MalwareType 23 29	Trojan
+R25	isA Arg1:T29 Arg2:T1	
+T37	Version 387 398	2.0 version
+T39	AttackPattern 1280 1351	disguised as a legitimate mobile application of moderately broad appeal
+T48	Application 1363 1375	media player
+T49	Application 1379 1395	social media app
+R32	uses Arg1:T29 Arg2:T39	
+R34	targets Arg1:T30 Arg2:T48	
+R35	targets Arg1:T30 Arg2:T49	
+T6	Application 1950 1967	Google Play store
+R36	targets Arg1:T30 Arg2:T6	
+R37	uses Arg1:T30 Arg2:T23	
+R38	targets Arg1:T10 Arg2:T24	
+R39	targets Arg1:T10 Arg2:T25	
+R40	targets Arg1:T10 Arg2:T3	
+R41	targets Arg1:T10 Arg2:T2	
+T50	Application 2225 2238	Chrome Update
+R42	targets Arg1:T10 Arg2:T50	
+R43	targets Arg1:T10 Arg2:T7	
+R44	targets Arg1:T11 Arg2:T26	
+T8	Application 2264 2277	Google Market
+T51	Application 2279 2287	WhatsApp
+T52	Application 2289 2293	Vibe
+T53	Application 2296 2310	OneCoin Wallet
+T54	Application 2312 2319	Pornhub
+T55	Application 2321 2337	Tactic FlashLigh
+T70	Application 2342 2355	PROFlashLight
+T73	Application 2357 2369	Finanzonline
+R46	targets Arg1:T10 Arg2:T8	
+R47	targets Arg1:T10 Arg2:T51	
+R48	targets Arg1:T10 Arg2:T52	
+R49	targets Arg1:T10 Arg2:T53	
+R50	targets Arg1:T10 Arg2:T54	
+R51	targets Arg1:T10 Arg2:T70	
+R52	targets Arg1:T10 Arg2:T73	
+T74	AttackPattern 2720 2760	requests Device Administrator privileges
+R53	uses Arg1:T34 Arg2:T74	
+T75	AttackPattern 2836 2861	lock the screen by itself
+T76	AttackPattern 2863 2882	expire the password
+T77	AttackPattern 2888 2935	resist being uninstalled through normal methods
+R54	uses Arg1:T34 Arg2:T75	
+R55	uses Arg1:T34 Arg2:T76	
+R56	uses Arg1:T34 Arg2:T77	
+T78	AttackPattern 4220 4320	obtain a list of currently running applications known to work on that particular version of Android.
+R57	targets Arg1:T34 Arg2:T4	
+R58	uses Arg1:T34 Arg2:T78	
+T80	AttackPattern 4864 4930	intercepting or sending text messages without the user’s knowledge
+T81	AttackPattern 4932 4977	obtaining a copy of the victim’s Address Book
+T82	AttackPattern 4982 5007	call or text message logs
+T83	AttackPattern 5012 5074	sending phone network feature codes (also known as USSD codes)
+T85	Indicator 5475 5488	port 7878/tcp
+T87	AttackPattern 5748 5865	sends regular telemetry back to its C2 server about the infected device in the form of an HTTP POST to its C2 server.
+R60	uses Arg1:T36 Arg2:T80	
+R61	uses Arg1:T36 Arg2:T81	
+R62	uses Arg1:T36 Arg2:T82	
+R63	uses Arg1:T36 Arg2:T83	
+R65	indicates Arg1:T85 Arg2:T36	
+R66	targets Arg1:T36 Arg2:T40	
+R68	uses Arg1:T36 Arg2:T87	
+T88	Organization 5955 5960	banks
+R69	targets Arg1:T14 Arg2:T88	
+T89	Organization 5996 6003	NatWest
+T90	Organization 6005 6013	Barclays
+T91	Organization 6015 6022	Westpac
+T92	Organization 6028 6036	Citibank
+R70	targets Arg1:T14 Arg2:T89	
+R71	targets Arg1:T14 Arg2:T90	
+R72	targets Arg1:T14 Arg2:T91	
+R73	targets Arg1:T14 Arg2:T92	
+R74	targets Arg1:T15 Arg2:T5	
+T9	Application 6437 6448	Google Play
+R75	targets Arg1:T15 Arg2:T9	
+T94	Indicator 6553 6568	Andr/Banker-GWC
+T95	Indicator 6573 6586	Andr/Spybot-A
+T96	MalwareType 6060 6071	banking bot
+R79	isA Arg1:T15 Arg2:T96	
+T97	AttackPattern 2944 3019	app then stays in the background listening to commands from the cybercrooks
+R80	uses Arg1:T34 Arg2:T97	
+T99	AttackPattern 3147 3166	creating an overlay
+R82	uses Arg1:T34 Arg2:T99	
+T100	MalwareType 3254 3269	Banking Trojans
+T101	AttackPattern 3275 3376	rely on the overlay mechanism to steal information need to know what application is in the foreground
+T102	OS 3794 3801	Android
+R83	isA Arg1:T34 Arg2:T100	
+R84	uses Arg1:T34 Arg2:T101	
+R86	targets Arg1:T34 Arg2:T102	
+T105	AttackPattern 4336 4404	use the built-in toolbox commands to determine what apps are running
+R87	uses Arg1:T34 Arg2:T105	
+T106	OS 15 22	Android
+R10	variantOf Arg1:T30 Arg2:T29	
+R28	has Arg1:T30 Arg2:T37	
+T27	AttackPattern 3640 3683	determine the currently running application
+R31	uses Arg1:T34 Arg2:T27	
+R59	indicates Arg1:T94 Arg2:T15	
+R64	indicates Arg1:T95 Arg2:T15	
+R8	variantOf Arg1:T10 Arg2:T30	
+T107	MalwareType 2088 2095	Trojans
+T108	MalwareType 888 894	Trojan
+T109	MalwareType 1004 1010	Trojan
+T110	MalwareType 3131 3137	Trojan
+T111	MalwareType 3584 3590	Trojan
+T112	MalwareType 6536 6542	Trojan
+T113	MalwareType 163 166	RAT
+T114	Application 3198 3217	banking application
+T115	Application 6369 6385	third-party apps
+T116	Application 532 544	social media
+T117	Application 548 560	media player
+T118	Application 6285 6295	app stores
+T119	Application 6725 6735	app stores
+T120	OS 4312 4319	Android
+T121	Organization 3105 3110	banks

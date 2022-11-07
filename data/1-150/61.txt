@@ -1,0 +1,22 @@
+Ginp Android trojan targets banking apps & threatens 2FA/SMS
+Dubbed Ginp; the trojan keeps coming back with new capabilities.
+Researchers at ThreatFabric, the cybersecurity firm based in Amsterdam, have been following an “interesting new strain of banking malware” dubbed Ginp distributed as Adobe Flash Player.
+
+Identified firstly by Kaspersky’s Android malware analyst Tatyana Shishkova in late October; Ginp is currently targeting users in the UK and Spain. Researchers opine that the Trojan was actually launched in June 2019 and is yet under the active development phase.
+
+According to researchers, cybercriminals have released at least five different versions of Ginp in the past five months, which reflects how eagerly cybercriminals are vying to improvise this Trojan.
+
+ThreatFabric analysts claim that Ginp is unique because its codebase was developed from scratch and is being expanded continuously through updates. Its target list is also considerably narrow as its main targets are the banks in Spain. The code of Gino has been copied from the code of another infamous Trojan called Anubis.
+
+Researchers further claim that there are striking similarities between the codes of both Trojans but it cannot be said that Ginp is the replica of Anubis rather it is inspired by Anubis. Such as, Ginp has traces of some of the codes of Anubis and the names of components of both the Trojans are also the same.
+
+The malware works by accessing the target device in the disguise of an authentic app. As soon as the malware gains access to the device, it hides the app icon and asks for Accessibility Service permissions. When the user grants permission, it automatically gets dynamic permissions. Using these permissions, the malware can send messages, make calls and perform overlay attacks easily without alerting the user. 
+
+In June 2019, the Ginp malware appeared first on the Play Store as the Google Play Verificator app; initially, its main function was to steal SMS messages. However, by August 2019, another version of the malware appeared posing as the Adobe Flash Player app.
+
+This time, according to ThreatFabric’s blog post, the malware could perform many other functions such as abusing Accessibility Service to become the default SMS app and performing overlay attacks. Later, two new versions of the malware surfaced that primarily targeted social media and banking apps.
+
+The current version is being distributed as legitimate banking apps mostly related to Spanish banks and some of the targets haven’t ever seen before in any malware campaign. A total of 24 apps are targeted and infected with Ginp, all of which belong to 7 Spanish banks including Bankinter, Bankia, BBVA, Caixa Bank, EVO Banco, Santander, and Kutxabank.
+
+According to researchers, Ginp may receive further modifications and exhibit many new malicious features along with expanding its targets. For Android users, HackRead’s advice is the same: Use reliable anti-virus on your phone, keep its operating system up to date and refrain from downloading apps from third-party app stores.
+

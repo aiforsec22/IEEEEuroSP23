@@ -1,0 +1,54 @@
+T1	OS 16 23	Android
+T2	OS 102 109	Android
+T3	OS 884 891	Android
+T4	OS 2468 2475	Android
+T5	Malware 125 132	FakeSpy
+T6	Malware 782 789	FakeSpy
+T7	Malware 989 996	FakeSpy
+T8	Malware 2211 2218	FakeSpy
+T9	Organization 1976 1986	Cybereason
+T12	Location 505 516	South Korea
+R1	targets Arg1:T5 Arg2:T2	
+R2	targets Arg1:T5 Arg2:T1	
+T13	Organization 193 203	Cybereason
+T14	Malware 205 212	FakeSpy
+T15	Time 272 287	three years ago
+R3	discoveredIn Arg1:T14 Arg2:T15	
+T16	AttackPattern 342 445	steal a user’s text messages, financial data, bank login information, app data, contact lists, and more
+R4	uses Arg1:T14 Arg2:T16	
+T17	Location 521 526	Japan
+R5	targets Arg1:T14 Arg2:T17	
+R6	targets Arg1:T14 Arg2:T12	
+T18	Location 702 707	China
+T19	Location 709 715	France
+T20	Location 717 724	Germany
+T21	Location 730 732	UK
+T22	Location 742 755	United States
+R7	targets Arg1:T14 Arg2:T18	
+R8	targets Arg1:T14 Arg2:T19	
+R9	targets Arg1:T14 Arg2:T20	
+R10	targets Arg1:T14 Arg2:T21	
+R11	targets Arg1:T14 Arg2:T22	
+R12	targets Arg1:T6 Arg2:T3	
+T10	AttackPattern 1025 1094	begins with an SMS message that claims to be from a local post office
+R13	uses Arg1:T7 Arg2:T10	
+T23	AttackPattern 1223 1337	provides a link users can click which directs them to download an app disguised as a legitimate postal service app
+T24	AttackPattern 1385 1467	send the fake text, along with the malicious link, to a user’s entire contact list
+R15	uses Arg1:T7 Arg2:T23	
+R16	uses Arg1:T7 Arg2:T24	
+T25	AttackPattern 1534 1580	essentially has full access to a user’s device
+R17	uses Arg1:T7 Arg2:T25	
+T26	AttackPattern 1609 1627	read text messages
+T27	AttackPattern 1629 1647	send text messages
+T28	AttackPattern 1649 1675	access contact information
+T29	AttackPattern 1681 1707	read from external storage
+R18	uses Arg1:T7 Arg2:T26	
+R19	uses Arg1:T7 Arg2:T27	
+R20	uses Arg1:T7 Arg2:T28	
+R21	uses Arg1:T7 Arg2:T29	
+T30	AttackPattern 1752 1842	look for any banking or cryptocurrency-related apps so that it can steal login information
+R22	uses Arg1:T7 Arg2:T30	
+T31	ThreatActor 1956 1970	Roaming Mantis
+T32	Location 1932 1939	Chinese
+R23	has Arg1:T31 Arg2:T32	
+R24	hasAuthor Arg1:T7 Arg2:T31	

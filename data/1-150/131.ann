@@ -1,0 +1,108 @@
+T1	OS 20 27	Android
+T2	OS 70 77	Android
+T3	OS 264 271	Android
+T4	OS 813 820	Android
+T6	OS 1476 1483	Android
+T7	OS 3152 3159	Android
+T8	OS 1975 1982	Windows
+T9	OS 2533 2540	Windows
+T10	Malware 2274 2283	Skygofree
+T11	Malware 3641 3650	Skygofree
+T12	Malware 3776 3785	Skygofree
+T13	Organization 217 226	Kaspersky
+T14	Organization 915 924	Kaspersky
+T15	Organization 1226 1235	Kaspersky
+T16	Organization 2315 2324	Kaspersky
+T17	Organization 3185 3194	Kaspersky
+T18	Organization 3257 3266	Kaspersky
+T19	Organization 3505 3514	Kaspersky
+T20	Organization 3654 3663	Kaspersky
+T21	Organization 4061 4070	Kaspersky
+T22	Application 1268 1276	Facebook
+T24	Application 1379 1387	WhatsApp
+T26	Application 1313 1318	Viber
+T27	Application 1323 1327	LINE
+T29	ThreatActor 3590 3602	Hacking Team
+T30	ThreatActor 3973 3977	Negg
+T32	Malware 0 9	Skygofree
+R1	targets Arg1:T32 Arg2:T1	
+T33	AttackPattern 136 199	turning on the mic when the victim enters specific geolocations
+R2	targets Arg1:T32 Arg2:T2	
+R3	uses Arg1:T32 Arg2:T33	
+T34	Malware 453 462	Skygofree
+T35	Organization 514 523	Kaseprsky
+T36	AttackPattern 582 636	usage of multiple exploits for gaining root privileges
+T37	AttackPattern 640 665	complex payload structure
+T38	AttackPattern 715 765	recording surrounding audio in specified locations
+R4	uses Arg1:T34 Arg2:T38	
+R5	uses Arg1:T34 Arg2:T36	
+R6	uses Arg1:T34 Arg2:T37	
+T39	AttackPattern 1168 1224	allows files from any other installed app to be captured
+R7	uses Arg1:T34 Arg2:T39	
+T23	Application 1283 1301	Facebook messenger
+T40	Application 1303 1311	WhatsApp
+T41	AttackPattern 1534 1593	record video or capture a photo when the device is unlocked
+T42	AttackPattern 1642 1679	grabbing call records, text messages,
+T43	AttackPattern 1680 1697	tracking location
+T44	AttackPattern 1699 1724	snatching calendar events
+T45	AttackPattern 1726 1753	recording surrounding audio
+T46	AttackPattern 1758 1805	snagging other information stored on the device
+T47	AttackPattern 1833 1899	create a new Wi-Fi connection to connect to the attackers’ network
+T48	AttackPattern 2006 2052	modifies a registry key to enable “autostart.”
+T28	AttackPattern 2113 2145	exfiltrate Skype call recordings
+T49	AttackPattern 2178 2188	keylogging
+T50	AttackPattern 2190 2224	turning on the mic to record audio
+T51	AttackPattern 2226 2247	capturing screenshots
+T52	Application 2398 2419	android-rooting-tools
+T53	Location 2805 2810	Italy
+R8	targets Arg1:T10 Arg2:T53	
+T54	AttackPattern 2812 2929	Victims are infected after being lured to visit specific malicious sites meant to look like those of mobile operators
+T55	AttackPattern 2943 3005	the target is infected with “sophisticated multi-stage spyware
+T56	AttackPattern 3011 3069	gives attackers full remote control of the infected device
+T57	Time 3284 3296	October 2017
+T58	Time 3251 3255	2014
+R9	discoveredIn Arg1:T10 Arg2:T57	
+T59	Time 3482 3486	2015
+T60	Malware 3715 3724	Skygofree
+T61	ThreatActor 3868 3879	HackingTeam
+T62	ThreatActor 4043 4055	Hacking Team
+R10	hasAuthor Arg1:T12 Arg2:T30	
+R11	targets Arg1:T34 Arg2:T22	
+R12	targets Arg1:T34 Arg2:T23	
+R13	targets Arg1:T34 Arg2:T40	
+R14	targets Arg1:T34 Arg2:T26	
+R15	targets Arg1:T34 Arg2:T27	
+T5	AttackPattern 1398 1467	uses the Android Accessibility Service to grab WhatsApp text messages
+R16	targets Arg1:T34 Arg2:T24	
+R17	uses Arg1:T34 Arg2:T5	
+R18	uses Arg1:T34 Arg2:T41	
+R19	uses Arg1:T34 Arg2:T42	
+R20	uses Arg1:T34 Arg2:T43	
+R21	uses Arg1:T34 Arg2:T44	
+R22	uses Arg1:T34 Arg2:T45	
+R23	uses Arg1:T34 Arg2:T46	
+R24	uses Arg1:T34 Arg2:T47	
+R26	uses Arg1:T34 Arg2:T48	
+R27	uses Arg1:T34 Arg2:T28	
+R28	uses Arg1:T34 Arg2:T49	
+R29	uses Arg1:T34 Arg2:T50	
+R30	uses Arg1:T34 Arg2:T51	
+R32	uses Arg1:T10 Arg2:T56	
+R31	uses Arg1:T10 Arg2:T55	
+R25	uses Arg1:T10 Arg2:T54	
+T25	AttackPattern 2252 2269	exfiltrating data
+R33	uses Arg1:T34 Arg2:T25	
+T63	MalwareType 2644 2653	keylogger
+T64	MalwareType 28 35	spyware
+T65	MalwareType 78 85	spyware
+T66	MalwareType 272 279	spyware
+T67	MalwareType 1613 1620	spyware
+T68	MalwareType 1952 1959	spyware
+T69	MalwareType 2717 2724	spyware
+T70	MalwareType 3160 3167	spyware
+T71	MalwareType 3350 3357	spyware
+T72	Application 1407 1436	Android Accessibility Service
+T73	Application 1445 1453	WhatsApp
+T74	Application 2124 2129	Skype
+T75	MalwareType 2998 3005	spyware
+T76	Organization 3618 3633	Italian company

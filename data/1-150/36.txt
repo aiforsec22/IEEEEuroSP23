@@ -1,0 +1,11 @@
+APT C-23 Hackers Using New Android Spyware Variant to Target Middle East Users
+A threat actor known for striking targets in the Middle East has evolved its Android spyware yet again with enhanced capabilities that allow it to be stealthier and more persistent while passing off as seemingly innocuous app updates to stay under the radar.
+
+The new variants have "incorporated new features into their malicious apps that make them more resilient to actions by users, who might try to remove them manually, and to security and web hosting companies that attempt to block access to, or shut down, their command-and-control server domains," Sophos threat researcher Pankaj Kohli said in a report published Tuesday.
+Also known by the monikers VAMP, FrozenCell, GnatSpy, and Desert Scorpion, the mobile spyware has been a preferred tool of choice for the APT-C-23 threat group since at least 2017, with successive iterations featuring extended surveillance functionality to vacuum files, images, contacts and call logs, read notifications from messaging apps, record calls (including WhatsApp), and dismiss notifications from built-in Android security apps.
+
+In the past, the malware has been distributed via fake Android app stores under the guise of AndroidUpdate, Threema, and Telegram. The latest campaign is no different in that they take the form of apps that purport to install updates on the target's phone with names such as App Updates, System Apps Updates, and Android Update Intelligence. It's believed that the attackers deliver the spyware app by sending a download link to the targets through smishing messages.
+
+Once installed, the app begins requesting for invasive permissions to perform a string of malicious activities that are designed to slip past any attempts to manually remove the malware. The app not only changes its icon to hide behind popular apps such as Chrome, Google, Google Play, and YouTube, in the event the user were to click the fraudulent icon, the legitimate version of the app is launched, while running surveillance tasks in the background.
+
+"Spyware is a growing threat in an increasingly connected world," Kohli said. "The Android spyware linked to APT-C-23 has been around for at least four years, and attackers continue to develop it with new techniques that evade detection and removal."

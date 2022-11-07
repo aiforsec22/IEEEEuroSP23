@@ -1,0 +1,22 @@
+Ginp Trojan Targets Android Banking App Users, Steals Login Credentials and Credit Card Details
+Counterfeit apps were found carrying a new version of the Android banking trojan called Ginp (detected by Trend Micro as AndroidOS_Ginp.HRXB) to steal user login credentials and credit card details. ThreatFabric’s analysis of recent Ginp samples showed that it reused some code from Anubis, an Android malware family notorious for its use in cyberespionage activities before being retooled as a banking trojan.
+
+Ginp’s trojan functions
+
+Upon execution in a victim device, Ginp removes its icon from the app drawer before asking the user for Accessibility Service privilege. Once it receives the said privilege, it grants itself additional permissions for sending messages and making calls.
+
+Ginp is capable of sending or harvesting SMS messages based on received commands. It can also request admin privileges, enable overlay attacks, update the command-and-control (C&C) URL, update the target list, set itself as the default SMS app, prevent the user from disabling Accessibility Services, get installed apps or contacts, enable call forwarding, and hide itself and prevent removal, among other capabilities.
+
+Notably, Ginp can trick the victim into giving out login credentials and credit card details by claiming that these pieces of information are a prerequisite to validate user identity.
+
+Ginp’s five-month evolution
+
+In its first iteration, Ginp disguised itself as a "Google Play Verificator" app, primarily stealing SMS messages. In August, it posed as fake “Adobe Flash Player” apps targeting credit card information. The next version was enhanced with payload obfuscation and started targeting Snapchat and Viber users as well as specific banking apps.
+
+After that, the Ginp author borrowed code from the Anubis malware, whose source code was leaked earlier this year. The said version notably switched to a new overlay target list and predominantly went after banking app users. Trend Micro mobile threat analyst Tony Bao discovered a variant of Anubis (detected by Trend Micro as AndroidOS_AnubisDropper) of the same type a few months ago. The Anubis variant analyzed in Bao’s research targeted 188 banking- and finance-related apps.
+
+In its latest form, Ginp was found with slight modifications, including a new endpoint related to downloading a module and pieces of code borrowed from Anubis. This Ginp iteration targets users of 24 apps from different Spanish banks.
+
+Security recommendations
+
+Ginp’s use of deceptive overlay screens to steal login credentials and credit card details should prompt users to be more vigilant when installing apps on their devices. They should only download apps from official sources to minimize the chances of downloading a malicious app.

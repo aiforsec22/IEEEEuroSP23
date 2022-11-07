@@ -1,0 +1,18 @@
+Facebook disrupts hackers who used iOS exploits, malware to spy on Uyghurs
+Facebook on Wednesday said it successfully cut off a hacking operation that used the social media platform to spread the so-called Insomnia malware, a malicious program leveraged in an effort to spy on Uyghur Muslims from Xinjiang, China.
+
+Announced in a blog post, Facebook's action targeted a group of hackers known in the security community as Earth Empusa or Evil Eye.
+
+The collective, which has been linked to entities working for the Chinese government, deployed iOS and Android malware on a variety of websites in attempts to surveil devices owned by activists, journalists and dissidents. Uyghurs from Xinjiang who moved abroad were the main target of the group's activities.
+
+As noted by ArsTechnica, iPhones have been impacted by the attack since at least 2019. Evil Eye leveraged multiple zero-day vulnerabilities to bypass Apple's iOS security layer and secretly infect user devices with a malware dubbed Insomnia.
+
+In addition to watering hole attacks, the group used fake Facebook accounts to build trust with targets before prompting them to click on malicious links, Facebook said.
+
+"On our platform, this cyber espionage campaign manifested primarily in sending links to malicious websites rather than direct sharing of the malware itself," Mike Dvilyanski, head of Facebook's cyber espionage investigations, and Nathaniel Gleicher, head of the company's security policy, said the post. "We saw this activity slow down at various times, likely in response to our and other companies' actions to disrupt their activity."
+
+As detailed in a report from security firm Volexity last year, Insomnia worked on any web browser running in all versions of iOS 10 and 11, as well as iOS 12.0, 12.1, 12.3, 12.3.1 and iOS 12.3.2. Once installed, the malware granted access to a user's Contacts, location, Messages data, and information from third-party apps.
+
+Apple patched the offending WebKit flaw in iOS 12.4, though devices running older versions of the operating system were left open to attack.
+
+China has consistently denied involvement in the types of hacks described by Facebook and other security researchers, reports ArsTechnica.

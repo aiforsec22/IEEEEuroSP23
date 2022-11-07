@@ -1,0 +1,100 @@
+T2	Indicator 3577 3641	0ca09d4fde9e00c0987de44ae2ad51a01b3c4c2c11606fe8308a083805760ee7
+T3	Indicator 3643 3707	4378f3680ff070a1316663880f47eba54510beaeb2d897e7bbb8d6b45de63f96
+T4	Indicator 3709 3773	76c9d8226ce558c87c81236a9b95112b83c7b546863e29b88fec4dba5c720c0b
+T5	Indicator 3775 3839	7cc2d8d43093c3767c7c73dc2b4daeb96f70a7c455299e0c7824b4210edd6386
+T6	Indicator 3841 3905	9b2fd7189395b2f34781b499f5cae10ec86aa7ab373fbdc2a14ec4597d4799ba
+T7	Indicator 3907 3971	ac216d502233ca0fe51ac2bb64cfaf553d906dc19b7da4c023fec39b000bc0d7
+T8	Indicator 3973 4037	b1ccb5618925c8f0dda8d13efe4a1e1a93d1ceed9e26ec4a388229a28d1f8d5b
+T9	Indicator 4039 4103	ba4beb97f5d4ba33162f769f43ec8e7d1ae501acdade792a4a577cd6449e1a84
+T10	Indicator 4105 4169	ba9f4d3f4eba3fa7dce726150fe402e37359a7f36c07f3932a92bd711436f88c
+T11	Indicator 4171 4235	e194268bf682d81fc7dc1e437c53c952ffae55a9d15a1fc020f0219527b7c2ec
+T12	Malware 24 30	Rotexy
+T13	Malware 304 310	Rotexy
+T14	Malware 872 878	Rotexy
+T15	Malware 1037 1043	Rotexy
+T16	Malware 1218 1224	Rotexy
+T17	Malware 1458 1464	Rotexy
+T18	Malware 2096 2102	Rotexy
+T19	Malware 2441 2447	Rotexy
+T20	Location 1107 1113	Russia
+T24	Indicator 720 733	AvitoPay.apk.
+T25	Indicator 809 822	youla9d6h.tk,
+T26	Indicator 837 850	prodamfkz.ml,
+T27	Indicator 851 864	avitoe0ys.tk,
+T29	Indicator 823 836	prodam8n9.tk,
+R1	indicates Arg1:T2 Arg2:T19
+R2	indicates Arg1:T3 Arg2:T19
+R3	indicates Arg1:T4 Arg2:T19
+R4	indicates Arg1:T5 Arg2:T19
+R5	indicates Arg1:T6 Arg2:T19
+R6	indicates Arg1:T7 Arg2:T19
+R7	indicates Arg1:T8 Arg2:T19
+R8	indicates Arg1:T9 Arg2:T19
+R9	indicates Arg1:T10 Arg2:T19
+R10	indicates Arg1:T11 Arg2:T19
+R12	indicates Arg1:T24 Arg2:T13
+R13	indicates Arg1:T25 Arg2:T13
+R14	indicates Arg1:T26 Arg2:T13
+R15	indicates Arg1:T27 Arg2:T13
+R17	indicates Arg1:T29 Arg2:T13
+T31	MalwareType 65 79	Banking Trojan
+T32	MalwareType 82 92	Ransomware
+R19	isA Arg1:T12 Arg2:T31	
+R20	isA Arg1:T12 Arg2:T32	
+T33	Malware 137 143	Rotexy
+T34	Time 215 237	August to October 2018
+T36	Time 347 351	2014
+T37	Time 354 358	2015
+T38	AttackPattern 373 472	using the phishing links in order to compromise the users that prompt to install the malicious apps
+R22	uses Arg1:T13 Arg2:T38	
+T21	MalwareType 658 672	banking Trojan
+R24	isA Arg1:T13 Arg2:T21	
+T39	MalwareType 677 687	ransomware
+R25	isA Arg1:T13 Arg2:T39	
+T40	AttackPattern 900 946	requesting the mobile administrative privilege
+R26	uses Arg1:T14 Arg2:T40	
+T41	Location 1061 1068	Russian
+R27	targets Arg1:T15 Arg2:T41	
+R28	targets Arg1:T15 Arg2:T20	
+T42	Location 1145 1152	Ukraine
+T43	Location 1154 1161	Germany
+T44	Location 1163 1169	Turkey
+R29	targets Arg1:T15 Arg2:T42	
+R30	targets Arg1:T15 Arg2:T43	
+R31	targets Arg1:T15 Arg2:T44	
+T45	AttackPattern 1293 1357	checks the device whether any sandbox environment being detected
+R32	uses Arg1:T16 Arg2:T45	
+T46	AttackPattern 1465 1557	registers with GCM and launches SuperService that help to check the devices admin privileges
+R33	uses Arg1:T17 Arg2:T46	
+T48	AttackPattern 1649 1701	requesting root  privileges through an infinite loop
+R36	uses Arg1:T17 Arg2:T48	
+T28	AttackPattern 2133 2180	able to switching on and rebooting of the phone
+T49	AttackPattern 2182 2210	termination of its operation
+T50	AttackPattern 2212 2240	sending of an SMS by the app
+R16	uses Arg1:T18 Arg2:T28	
+R37	uses Arg1:T18 Arg2:T49	
+R38	uses Arg1:T18 Arg2:T50	
+T51	AttackPattern 2448 2547	intercepts all incoming SMSs and processes them according to the templates it received from the C&C
+R39	uses Arg1:T19 Arg2:T51	
+T52	AttackPattern 2555 2646	when an SMS arrives, the Trojan puts the phone into silent mode and switches off the screen
+R40	uses Arg1:T19 Arg2:T52	
+T53	AttackPattern 2728 2836	sends an SMS to the specified phone number with the information it has received from the intercepted message
+R41	uses Arg1:T19 Arg2:T53	
+T23	AttackPattern 2938 3004	stores all the SMS  in local DB and uploads it into the C&C server
+R11	uses Arg1:T19 Arg2:T23	
+T30	AttackPattern 3026 3114	displays a phishing page (bank.html) prompting the user to enter their bank card details
+R18	uses Arg1:T19 Arg2:T30	
+T1	Application 489 517	Google Cloud Messaging (GCM)
+T22	MalwareType 1789 1795	Trojan
+T35	MalwareType 1991 1997	Trojan
+T47	AttackPattern 2022 2057	requesting administrator privileges
+R21	uses Arg1:T17 Arg2:T47	
+T54	AttackPattern 2316 2435	using local SQLite database, to store the data that harvested from infected mobile and an information about C&C servers
+R23	uses Arg1:T18 Arg2:T54	
+T55	MalwareType 2580 2586	Trojan
+T56	MalwareType 3019 3025	Trojan
+T57	MalwareType 268 275	spyware
+T58	MalwareType 2721 2727	Trojan
+T59	MalwareType 3326 3332	trojan
+T60	Application 1497 1509	SuperService
+T61	Application 1480 1483	GCM

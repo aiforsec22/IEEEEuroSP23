@@ -1,0 +1,54 @@
+T2	OS 138 145	Android
+T4	OS 624 631	Android
+T5	OS 721 728	Android
+T6	OS 1456 1463	Android
+T7	OS 1745 1778	Android version 6.0 (Marshmallow)
+T8	OS 1872 1879	Android
+T9	Malware 364 377	Red Alert 2.0
+T10	Malware 1224 1237	Red Alert 2.0
+T11	Malware 1487 1500	Red Alert 2.0
+T12	Malware 1697 1710	Red Alert 2.0
+T16	Organization 579 586	SfyLabs
+T17	Malware 595 607	RedAlert 2.0
+T18	Malware 0 13	Red Alert 2.0
+T1	MalwareType 27 41	banking trojan
+T19	AttackPattern 46 85	block and log incoming calls from banks
+R1	isA Arg1:T18 Arg2:T1	
+R2	uses Arg1:T18 Arg2:T19	
+R3	targets Arg1:T18 Arg2:T2	
+T20	MalwareType 342 356	banking trojan
+R6	isA Arg1:T9 Arg2:T20	
+T21	AttackPattern 398 554	infiltrate a number of third-party app stores using a variety of disguises including bogus WhatsApp and Viber apps as well as malicious Flash Player updates
+R5	uses Arg1:T9 Arg2:T21	
+T13	Application 632 655	banking and social apps
+R7	targets Arg1:T17 Arg2:T4	
+R8	targets Arg1:T17 Arg2:T13	
+R9	targets Arg1:T17 Arg2:T5	
+T14	AttackPattern 749 827	overlays an appropriate dialog, enticing users to re-enter their login details
+R10	uses Arg1:T17 Arg2:T14	
+T15	AttackPattern 842 933	login credentials are stolen and passed to a remote server under the control of the hackers
+T22	Malware 938 952	Red Alert 2.0,
+R11	uses Arg1:T17 Arg2:T15	
+T25	AttackPattern 1029 1087	capable of waltzing past two-factor authentication systems
+R13	uses Arg1:T22 Arg2:T25	
+T26	AttackPattern 1299 1331	block incoming calls from banks,
+R14	targets Arg1:T10 Arg2:T6	
+R15	uses Arg1:T10 Arg2:T26	
+R16	targets Arg1:T12 Arg2:T7	
+T23	Application 1990 2002	social media
+T27	Application 2036 2056	online bank accounts
+R17	targets Arg1:T12 Arg2:T23	
+R18	targets Arg1:T12 Arg2:T27	
+R19	targets Arg1:T12 Arg2:T8	
+T28	OS 19 26	Android
+R20	targets Arg1:T18 Arg2:T28	
+T3	OS 309 316	Android
+R4	targets Arg1:T9 Arg2:T3	
+T29	AttackPattern 1091 1180	intercepting SMS text messages that the smartphone receives and passing them onto hackers
+R21	uses Arg1:T22 Arg2:T29	
+T30	MalwareType 103 110	trojans
+T24	Organization 988 1019	Russian-speaking hacking forums
+T31	Application 421 443	third-party app stores
+T32	Application 534 546	Flash Player
+T33	Application 489 497	WhatsApp
+T34	Application 502 507	Viber

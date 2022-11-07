@@ -1,0 +1,154 @@
+T1	OS 933 940	Android
+T2	OS 1126 1133	Android
+T3	OS 1629 1636	Android
+T4	OS 4704 4711	Android
+T5	OS 5844 5851	Android
+T7	Organization 6057 6063	Google
+T9	Malware 712 718	Anubis
+T10	Malware 855 861	Anubis
+T11	Malware 879 885	Anubis
+T12	Malware 1030 1036	Anubis
+T13	Malware 2207 2213	Anubis
+T14	Malware 3617 3623	Anubis
+T15	Malware 3644 3650	Anubis
+T16	Malware 4509 4515	Anubis
+T17	Application 1380 1398	Currency Converter
+T20	Malware 5121 5129	EventBot
+T21	Malware 5232 5240	EventBot
+T22	Malware 5507 5515	EventBot
+T23	Application 4872 4879	Revolut
+T24	Application 4927 4939	TransferWise
+T25	Application 4944 4952	CoinBase
+T26	Application 1303 1320	Google Play Store
+T27	Location 5007 5020	United States
+T33	Malware 102 108	Anubis
+T34	Location 805 818	United States
+T35	Location 820 826	Europe
+T36	Location 832 837	India
+R1	targets Arg1:T9 Arg2:T34	
+R2	targets Arg1:T9 Arg2:T35	
+R3	targets Arg1:T9 Arg2:T36	
+T37	MalwareType 862 877	banking malware
+R4	isA Arg1:T10 Arg2:T37	
+T38	MalwareType 133 148	banking malware
+R5	isA Arg1:T33 Arg2:T38	
+T39	MalwareType 886 900	banking trojan
+R6	isA Arg1:T11 Arg2:T39	
+R7	targets Arg1:T11 Arg2:T1	
+T6	Application 1403 1419	BatterySaverMobo
+T40	Malware 1436 1442	Anubis
+R8	uses Arg1:T40 Arg2:T6	
+R9	uses Arg1:T40 Arg2:T17	
+T41	AttackPattern 1661 1731	monitors the device status to find the optimal time to execute attacks
+R10	uses Arg1:T40 Arg2:T41	
+T42	AttackPattern 1745 1834	hijack two-factor authentication codes and hide the OTP SMS messages from the device user
+R11	uses Arg1:T40 Arg2:T42	
+T43	AttackPattern 2473 2485	record audio
+T44	AttackPattern 2487 2531	gain access to the contact list for spamming
+T45	AttackPattern 2533 2550	send SMS messages
+T46	AttackPattern 2556 2572	make phone calls
+R12	uses Arg1:T40 Arg2:T43	
+R13	uses Arg1:T40 Arg2:T44	
+R14	uses Arg1:T40 Arg2:T45	
+R15	uses Arg1:T40 Arg2:T46	
+T47	AttackPattern 2664 2709	encrypt files on both internal and SD storage
+R16	uses Arg1:T40 Arg2:T47	
+T48	AttackPattern 2723 2762	receive commands from social media apps
+R17	uses Arg1:T40 Arg2:T48	
+T49	Application 2771 2778	Twitter
+R18	targets Arg1:T40 Arg2:T49	
+T8	Organization 3060 3077	Cerberus Sentinel
+T50	Person 3024 3032	TJ Short
+T29	AttackPattern 3817 3860	web-based control panel is the eyeball icon
+R19	uses Arg1:T15 Arg2:T29	
+T30	AttackPattern 3899 3949	know when the device user is looking at the screen
+R20	uses Arg1:T15 Arg2:T30	
+T18	Application 4155 4166	Yandex maps
+T31	AttackPattern 4195 4238	decipher the location of the infected phone
+R21	uses Arg1:T15 Arg2:T31	
+R22	uses Arg1:T15 Arg2:T18	
+T19	Organization 4577 4597	Cybereason Nocturnus
+T32	Time 4721 4731	March 2020
+T51	Malware 4758 4766	EventBot
+T52	Application 4798 4813	PayPal Business
+R23	targets Arg1:T51 Arg2:T52	
+T53	Application 4815 4827	banking apps
+R24	targets Arg1:T51 Arg2:T53	
+T54	Application 4884 4892	Barclays
+R25	targets Arg1:T51 Arg2:T54	
+R26	targets Arg1:T51 Arg2:T24	
+R27	targets Arg1:T51 Arg2:T25	
+T55	Location 5025 5033	European
+T56	Location 5056 5058	UK
+T57	Location 5060 5067	Germany
+T58	Location 5069 5075	France
+T59	Location 5077 5082	Spain
+T60	Location 5084 5095	Switzerland
+T61	Location 5101 5106	Italy
+R28	targets Arg1:T51 Arg2:T27	
+R29	targets Arg1:T51 Arg2:T55	
+R30	targets Arg1:T51 Arg2:T56	
+R31	targets Arg1:T51 Arg2:T57	
+R32	targets Arg1:T51 Arg2:T58	
+R33	targets Arg1:T51 Arg2:T59	
+R34	targets Arg1:T51 Arg2:T60	
+R35	targets Arg1:T51 Arg2:T61	
+T62	Malware 5113 5119	Anubis
+T63	AttackPattern 5143 5210	distributed through third-party rogue app stores and malicious URLs
+R36	uses Arg1:T62 Arg2:T63	
+R37	uses Arg1:T20 Arg2:T63	
+T64	AttackPattern 5241 5279	amasses a carte blanche of permissions
+T65	AttackPattern 5291 5309	starting at bootup
+T66	AttackPattern 5314 5357	maintaining a persistent background process
+T67	AttackPattern 5378 5413	monitor the smartphone continuously
+T68	AttackPattern 5431 5463	prevents the phone from sleeping
+T69	AttackPattern 5468 5505	ignores battery optimization settings
+R38	uses Arg1:T21 Arg2:T68	
+R39	uses Arg1:T21 Arg2:T64	
+R40	uses Arg1:T21 Arg2:T65	
+R41	uses Arg1:T21 Arg2:T69	
+R42	uses Arg1:T21 Arg2:T66	
+R43	uses Arg1:T21 Arg2:T67	
+T70	AttackPattern 5576 5591	run a keylogger
+T71	AttackPattern 5593 5614	receive notifications
+T72	AttackPattern 5626 5662	retrieve the content of open windows
+R44	uses Arg1:T22 Arg2:T70	
+R45	uses Arg1:T22 Arg2:T71	
+R46	uses Arg1:T22 Arg2:T72	
+T73	Malware 5776 5782	Anubis
+T74	Organization 5898 5904	Google
+T75	Application 5948 5958	Play Store
+T76	AttackPattern 543 587	detect when the user is looking at the phone
+R47	uses Arg1:T33 Arg2:T76	
+T77	Application 746 766	banking applications
+R48	targets Arg1:T9 Arg2:T77	
+R49	targets Arg1:T40 Arg2:T3	
+T28	AttackPattern 3995 4100	avoid performing malicious activity on the smartphone while under the prying eyes of the smartphone owner
+R50	uses Arg1:T15 Arg2:T28	
+R51	discoveredIn Arg1:T51 Arg2:T32	
+T78	AttackPattern 5521 5572	obtains control of Android’s accessibility services
+R52	uses Arg1:T22 Arg2:T78	
+T79	MalwareType 16 31	Banking Malware
+T80	MalwareType 1211 1226	banking malware
+T81	MalwareType 1863 1878	banking malware
+T82	MalwareType 2016 2031	banking malware
+T83	MalwareType 2243 2258	banking malware
+T84	MalwareType 2578 2593	banking malware
+T85	MalwareType 3651 3666	banking malware
+T86	MalwareType 3801 3816	banking malware
+T87	MalwareType 4176 4191	banking malware
+T88	MalwareType 4309 4324	banking malware
+T89	MalwareType 4545 4560	banking malware
+T90	MalwareType 4477 4491	banking trojan
+T91	MalwareType 4624 4638	banking trojan
+T92	MalwareType 4971 4985	banking trojan
+T93	MalwareType 2614 2624	ransomware
+T94	MalwareType 3088 3094	trojan
+T95	MalwareType 5419 5425	trojan
+T96	Application 5550 5572	accessibility services
+T97	Application 4841 4863	financial institutions
+T98	Application 2745 2762	social media apps
+T99	Application 4904 4918	financial apps
+T100	Application 5749 5763	mobile banking
+T101	Application 5852 5866	mobile banking
+T102	Application 5181 5191	app stores

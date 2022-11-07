@@ -1,0 +1,46 @@
+T1	OS 14 21	Android
+T2	OS 102 109	Android
+T3	OS 457 464	Android
+T5	OS 2051 2058	Android
+T6	Organization 1519 1525	Google
+T8	Malware 0 13	Red Alert 2.0
+T9	Malware 204 217	Red Alert 2.0
+T10	Malware 749 762	Red Alert 2.0
+T11	Malware 1106 1119	Red Alert 2.0
+T12	Malware 1251 1264	Red Alert 2.0
+T13	Organization 231 242	Trend Micro
+T14	Malware 246 262	ANDROIDOS_BANKER
+T15	Malware 1678 1683	Fobus
+T17	AttackPattern 29 63	Spreads Via Third Party App Stores
+R1	targets Arg1:T8 Arg2:T1	
+R2	uses Arg1:T8 Arg2:T17	
+R3	targets Arg1:T8 Arg2:T2	
+*	hasAlias T9 T14
+T18	AttackPattern 298 410	tricks users into downloading it by hiding in third-party app stores as fake versions of legitimate applications
+R4	uses Arg1:T9 Arg2:T18	
+T19	Application 469 481	Flash Player
+T20	Application 419 427	WhatsApp
+T21	Application 429 434	Viber
+R5	targets Arg1:T9 Arg2:T20	
+R6	targets Arg1:T9 Arg2:T21	
+R7	targets Arg1:T9 Arg2:T3	
+R8	targets Arg1:T9 Arg2:T19	
+T22	AttackPattern 571 648	popup overlay will appear prompting the user to enter their login credentials
+R9	uses Arg1:T9 Arg2:T22	
+T23	AttackPattern 654 744	credentials are then sent to a Command and Control (C&C server) that the attackers control
+R10	uses Arg1:T9 Arg2:T23	
+T24	AttackPattern 768 842	block incoming calls from banks, presumably to block verification attempts
+R11	uses Arg1:T10 Arg2:T24	
+T25	AttackPattern 861 939	intercepts SMS text messages, sending messages to the attackers for future use
+R12	uses Arg1:T10 Arg2:T25	
+T4	OS 1308 1337	Android versions of up to 6.0
+R13	targets Arg1:T12 Arg2:T4	
+T16	Application 1701 1716	Super Mario Run
+R14	targets Arg1:T15 Arg2:T16	
+T7	Application 2163 2180	Google Play Store
+T26	MalwareType 156 170	banking trojan
+T27	MalwareType 22 28	Trojan
+T28	Application 344 366	third-party app stores
+T29	Application 1526 1536	Play Store
+T30	Application 1417 1427	app stores
+T31	Application 2131 2141	app stores

@@ -1,0 +1,42 @@
+T1	OS 0 7	Android
+T2	OS 270 277	Android
+T4	Malware 8 17	DroidJack
+T5	Malware 278 287	DroidJack
+T6	Malware 481 490	DroidJack
+T7	Malware 1026 1035	DroidJack
+T8	Malware 1401 1410	DroidJack
+T9	Malware 2170 2179	DroidJack
+T10	Malware 2434 2443	DroidJack
+T11	Organization 1309 1323	AdaptiveMobile
+T12	Organization 1806 1820	AdaptiveMobile
+T13	Organization 2237 2251	AdaptiveMobile
+T14	Application 657 662	Skype
+T15	Application 677 685	WhatsApp
+T16	Organization 2479 2489	Proofpoint
+T18	Application 583 586	OTT
+T20	Application 1362 1365	OTT
+T21	Application 1528 1531	OTT
+T22	Application 1697 1700	OTT
+T23	Application 1885 1888	OTT
+T24	Application 2414 2417	OTT
+T27	MalwareType 65 68	RAT
+T28	MalwareType 288 306	remote access tool
+R1	isA Arg1:T5 Arg2:T28	
+T17	Organization 451 465	AdaptiveMobile
+T30	Application 597 600	OTT
+R3	targets Arg1:T6 Arg2:T18	
+T31	Organization 645 654	Microsoft
+T32	Organization 666 674	Facebook
+T33	AttackPattern 1040 1136	spread via SMS messages sent through the OTT carrier to unsuspecting subscribers of its services
+R4	uses Arg1:T7 Arg2:T33	
+T19	AttackPattern 1194 1289	users were tricked into clicking the link with the lure of a "new MMS" waiting for them to view
+R5	uses Arg1:T7 Arg2:T19	
+T3	AttackPattern 2526 2601	side load attack through a backdoored version of the Android Pokemon Go app
+R6	uses Arg1:T10 Arg2:T3	
+R7	isA Arg1:T4 Arg2:T27	
+T25	Application 2587 2597	Pokemon Go
+R2	targets Arg1:T10 Arg2:T25	
+T26	MalwareType 308 311	RAT
+T29	Location 1786 1799	North America
+T34	OS 2579 2586	Android
+T35	Application 1081 1084	OTT

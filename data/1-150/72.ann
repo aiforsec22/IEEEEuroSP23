@@ -1,0 +1,67 @@
+T1	OS 31 38	Android
+T2	OS 220 227	Android
+T4	Malware 0 6	Triout
+T5	Organization 461 472	Bitdefender
+T6	Indicator 1725 1738	(script3.php)
+T7	Indicator 1999 2009	(uppc.php,
+T8	Indicator 1628 1640	(incall3.php
+T9	Indicator 2022 2035	orreqpic.php)
+T10	Indicator 2069 2079	(gps3.php)
+T11	Indicator 1887 1900	(calllog.php)
+T12	Indicator 2010 2021	fi npic.php
+T13	Indicator 1645 1658	outcall3.php)
+R1	targets Arg1:T4 Arg2:T1	
+R2	targets Arg1:T4 Arg2:T2	
+T14	Malware 531 537	Triout
+T3	MalwareType 515 522	spyware
+R3	isA Arg1:T14 Arg2:T3	
+T15	AttackPattern 745 778	hiding its presence on the device
+T16	AttackPattern 780 801	recording phone calls
+T17	AttackPattern 803 833	logging incoming text messages
+T18	AttackPattern 835 850	recoding videos
+T19	AttackPattern 852 867	taking pictures
+T20	AttackPattern 872 898	collecting GPS coordinates
+T21	AttackPattern 905 988	broadcasting all of that to an attacker-controlled C&C (command and control) server
+R4	uses Arg1:T14 Arg2:T15	
+R5	uses Arg1:T14 Arg2:T16	
+R6	uses Arg1:T14 Arg2:T17	
+R7	uses Arg1:T14 Arg2:T18	
+R8	uses Arg1:T14 Arg2:T20	
+R9	uses Arg1:T14 Arg2:T19	
+R10	uses Arg1:T14 Arg2:T21	
+T22	Malware 1015 1021	Triout
+T23	Organization 1044 1055	Bitdefender
+T24	Location 1112 1118	Russia
+R11	targets Arg1:T22 Arg2:T24	
+T25	Location 1153 1159	Israel
+R12	targets Arg1:T22 Arg2:T25	
+T26	Time 1203 1215	May 15, 2018
+R13	discoveredIn Arg1:T22 Arg2:T26	
+T27	Organization 1241 1252	VirusTotal,
+T28	AttackPattern 1504 1528	Records every phone call
+T29	AttackPattern 1660 1691	Logs every incoming SMS message
+T30	AttackPattern 1769 1791	Can send all call logs
+T31	Indicator 1794 1818	content://call_log/calls
+T32	AttackPattern 1902 1998	Whenever the user snaps a picture, either with the front or rear camera, it gets sent to the C&C
+T33	AttackPattern 2037 2068	Can send GPS coordinates to C&C
+T34	Time 2221 2229	May 2018
+R14	uses Arg1:T22 Arg2:T28	
+R15	uses Arg1:T22 Arg2:T29	
+R16	uses Arg1:T22 Arg2:T30	
+R17	uses Arg1:T22 Arg2:T32	
+R18	uses Arg1:T22 Arg2:T33	
+R19	indicates Arg1:T8 Arg2:T22	
+R20	indicates Arg1:T13 Arg2:T22	
+R21	indicates Arg1:T6 Arg2:T22	
+R22	indicates Arg1:T31 Arg2:T22	
+R23	indicates Arg1:T11 Arg2:T22	
+R24	indicates Arg1:T10 Arg2:T22	
+R25	indicates Arg1:T7 Arg2:T22	
+R26	indicates Arg1:T12 Arg2:T22	
+R27	indicates Arg1:T9 Arg2:T22	
+R28	discoveredIn Arg1:T22 Arg2:T34	
+T35	MalwareType 9 16	Spyware
+R29	isA Arg1:T4 Arg2:T35	
+T36	OS 507 514	Android
+R30	targets Arg1:T14 Arg2:T36	
+T37	MalwareType 1461 1468	spyware

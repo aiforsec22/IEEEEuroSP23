@@ -1,0 +1,7 @@
+Mandrake - owning Android devices since 2016
+In early 2020 we identified a new, highly sophisticated Android espionage platform that had been active in the wild for at least 4 years. We named the threat Mandrake as the actor(s) behind it used names of toxic plants, or other botanical references, for major development branches: e.g. Briar, Ricinus or Nerium.
+
+An incredibly sophisticated piece of Android malware
+Unlike run of the mill malware, Mandrake puts in significant effort NOT to infect victims. It cherry-picks a handful of devices it gets installed on for further exploitation. This is likely because its operators know that they increase their chances of being called out with every device they infect, so they have instructed the malware to avoid countries where compromised devices won’t bring them any return of interest.
+
+The malware also uses advanced manipulation tactics to bait users. For instance, it re-draws what the user sees on the screen to hijack taps. What the users perceive as accepting an End-User License Agreement is actually a complex series of requesting and receiving extremely powerful permissions. With those permissions, the malware gets complete control of the device and data on it.

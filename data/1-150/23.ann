@@ -1,0 +1,117 @@
+T3	OS 1979 1999	Android 5.0 Lollipop
+T4	OS 3321 3328	Android
+T5	Malware 0 11	SpyNote RAT
+T7	Malware 63 70	SpyNote
+T8	Malware 190 197	SpyNote
+T9	Malware 539 546	SpyNote
+T10	Malware 672 679	SpyNote
+T11	Malware 1358 1365	SpyNote
+T12	Malware 2141 2148	SpyNote
+T13	Malware 2700 2707	SpyNote
+T14	Malware 2820 2827	SpyNote
+T15	Application 29 36	Netflix
+T19	Application 3089 3096	Netflix
+T20	Application 4167 4174	Netflix
+T21	Organization 872 882	Threatpost
+T22	Organization 3113 3123	Threatpost
+T23	Application 2920 2930	Pokemon Go
+T24	Application 3536 3546	Pokémon Go
+T25	Organization 3802 3812	Proofpoint
+T26	Person 2337 2342	Desai
+T27	Person 3102 3107	Desai
+R1	targets Arg1:T5 Arg2:T15	
+T6	MalwareType 71 77	Trojan
+R2	isA Arg1:T7 Arg2:T6	
+T1	AttackPattern 81 164	designed to trick Android users into thinking it’s a legitimate Netflix application
+R3	uses Arg1:T7 Arg2:T1	
+T2	AttackPattern 208 291	designed to trick Android users into thinking it’s a legitimate Netflix application
+R4	uses Arg1:T8 Arg2:T2	
+T16	MalwareType 316 336	remote access Trojan
+R5	isA Arg1:T8 Arg2:T16	
+T17	AttackPattern 355 401	hands control of the device over to the hacker
+T31	AttackPattern 403 430	enabling them to copy files
+T32	AttackPattern 432 445	view contacts
+T33	AttackPattern 451 474	eavesdrop on the victim
+R6	uses Arg1:T16 Arg2:T17	
+R7	uses Arg1:T16 Arg2:T31	
+R8	uses Arg1:T16 Arg2:T32	
+R9	uses Arg1:T16 Arg2:T33	
+T34	Organization 608 626	Palo Alto Networks
+T18	AttackPattern 696 716	mimics a Netflix app
+R10	uses Arg1:T10 Arg2:T18	
+T35	Organization 765 785	Zscaler’s ThreatLabZ
+T36	Person 790 802	Deepen Desai
+T37	Organization 804 811	Zscaler
+T38	Time 883 890	Tuesday
+T39	AttackPattern 1095 1131	icon disappears from the home screen
+R11	uses Arg1:T10 Arg2:T39	
+T40	AttackPattern 1200 1304	uninstalls any antivirus protections a user may have set up on the device, in hopes of evading detection
+R12	uses Arg1:T10 Arg2:T40	
+T43	Person 1660 1673	Shivang Desai
+T44	Time 1708 1715	Tuesday
+T45	AttackPattern 1763 1783	take screen captures
+T46	AttackPattern 1793 1868	taking advantage of the way the device handles audio – record conversations
+R15	uses Arg1:T11 Arg2:T45	
+R16	uses Arg1:T11 Arg2:T46	
+T29	AttackPattern 2004 2016	record audio
+R17	targets Arg1:T11 Arg2:T3	
+R18	uses Arg1:T11 Arg2:T29	
+T47	AttackPattern 2158 2211	steal SMS messages and contacts from infected devices
+R19	uses Arg1:T12 Arg2:T47	
+T48	AttackPattern 2256 2335	steals the contacts and writes them as a local array before they’re exfiltrated
+R20	uses Arg1:T12 Arg2:T48	
+T49	AttackPattern 2376 2406	collects the device’s location
+R21	uses Arg1:T12 Arg2:T49	
+T50	Time 2711 2715	2017
+T51	Application 2868 2877	Instagram
+T52	Application 2879 2887	WhatsApp
+T53	Application 2889 2897	Facebook
+T54	Application 2899 2914	Super Mario Run
+T55	Location 3691 3704	United States
+T56	Malware 3859 3868	DroidJack
+T57	Malware 3951 3960	DroidJack
+T58	Malware 3970 3977	SpyNote
+T59	AttackPattern 3984 4033	let attackers view their victims WiFi connections
+T60	AttackPattern 4036 4071	etrieve information on running apps
+T61	AttackPattern 4077 4110	change their network connectivity
+R22	uses Arg1:T58 Arg2:T59	
+R23	uses Arg1:T58 Arg2:T60	
+R24	uses Arg1:T58 Arg2:T61	
+R25	uses Arg1:T57 Arg2:T59	
+R26	uses Arg1:T57 Arg2:T60	
+R27	uses Arg1:T57 Arg2:T61	
+T28	AttackPattern 2021 2103	saves the recorded content in a file, “video.mp4,” that can be sent back to the C2
+R28	uses Arg1:T11 Arg2:T28	
+T62	AttackPattern 4249 4343	dupe users into giving up their login information, credit card data and social security number
+T30	MalwareType 3848 3851	RAT
+R13	isA Arg1:T56 Arg2:T30	
+R14	isA Arg1:T9 Arg2:T16	
+T41	MalwareType 198 204	Trojan
+R29	isA Arg1:T8 Arg2:T41	
+T42	MalwareType 547 550	RAT
+R30	isA Arg1:T9 Arg2:T42	
+*	hasAlias T9 T5
+T63	MalwareType 554 560	Trojan
+T64	MalwareType 680 686	Trojan
+R31	isA Arg1:T10 Arg2:T64	
+T65	MalwareType 943 946	RAT
+R32	isA Arg1:T10 Arg2:T65	
+T66	AttackPattern 1585 1633	root the device using a range of vulnerabilities
+R33	uses Arg1:T11 Arg2:T66	
+T67	MalwareType 1755 1758	RAT
+R34	isA Arg1:T11 Arg2:T67	
+T68	AttackPattern 2216 2242	funnel them back to the C2
+R35	uses Arg1:T12 Arg2:T68	
+T69	MalwareType 2455 2458	RAT
+T70	MalwareType 2530 2533	RAT
+T71	MalwareType 2119 2122	RAT
+R36	isA Arg1:T12 Arg2:T71	
+T72	MalwareType 338 341	RAT
+T73	Application 3469 3491	third-party app stores
+T74	Application 3400 3410	app stores
+T75	Application 1215 1224	antivirus
+T76	Application 145 152	Netflix
+T77	Application 272 279	Netflix
+T78	Application 705 712	Netflix
+T79	OS 99 106	Android
+T80	OS 226 233	Android

@@ -1,0 +1,70 @@
+T1	OS 121 128	Android
+T2	OS 609 616	Android
+T3	Organization 602 608	Google
+T4	Organization 1134 1140	Google
+T6	Organization 1366 1372	Google
+T7	Malware 0 8	Cerberus
+T8	Malware 180 188	Cerberus
+T10	Malware 549 557	Cerberus
+T11	Malware 1223 1231	Cerberus
+T12	Malware 1583 1591	Cerberus
+T13	Malware 1973 1981	Cerberus
+T14	Malware 2523 2531	Cerberus
+T15	Malware 2839 2847	Cerberus
+T17	Organization 346 355	Kaspersky
+T18	Organization 2270 2279	Kaspersky
+T20	Organization 1194 1199	Avast
+T21	Organization 1563 1574	Hudson Rock
+T22	Person 381 393	Dmitry Galov
+T23	Location 2626 2632	Europe
+T26	Person 2665 2670	Galov
+T27	Person 3368 3373	Galov
+T25	MalwareType 9 23	banking Trojan
+R1	isA Arg1:T7 Arg2:T25	
+R2	targets Arg1:T7 Arg2:T1	
+T28	MalwareType 189 203	banking Trojan
+R3	isA Arg1:T8 Arg2:T28	
+T16	Organization 312 331	Kaspersky NEXT 2020
+T9	Version 457 459	v2
+T19	MalwareType 570 584	banking Trojan
+R4	isA Arg1:T10 Arg2:T19	
+R5	targets Arg1:T10 Arg2:T2	
+T29	Time 665 674	July 2019
+T30	MalwareType 680 706	Remote Access Trojan (RAT)
+R6	isA Arg1:T10 Arg2:T30	
+T31	AttackPattern 718 745	conduct covert surveillance
+T32	AttackPattern 747 770	intercept communication
+T33	AttackPattern 772 804	tamper with device functionality
+T34	AttackPattern 810 850	steal data including banking credentials
+T35	AttackPattern 854 927	creating overlays on existing banking, retail, and social networking apps
+R7	uses Arg1:T10 Arg2:T31	
+R8	uses Arg1:T10 Arg2:T32	
+R9	uses Arg1:T10 Arg2:T33	
+R10	uses Arg1:T10 Arg2:T34	
+R11	uses Arg1:T10 Arg2:T35	
+T36	AttackPattern 956 1058	read text messages that may contain one-time passcodes (OTP) and two-factor authentication (2FA) codes
+R12	uses Arg1:T10 Arg2:T36	
+T37	Time 1182 1192	early July
+T5	Application 1235 1246	Google Play
+R13	targets Arg1:T11 Arg2:T5	
+T39	Malware 2079 2087	Cerberus
+T40	ThreatActor 2089 2116	Russian speaking developers
+R15	hasAuthor Arg1:T39 Arg2:T40	
+T41	Time 2160 2165	April
+T42	Time 2215 2224	late July
+T43	Location 2637 2643	Russia
+T44	Location 2732 2739	Russian
+T45	Malware 3172 3180	Cerberus
+R18	targets Arg1:T14 Arg2:T23	
+R19	targets Arg1:T14 Arg2:T43	
+R16	has Arg1:T3 Arg2:T2	
+T24	AttackPattern 1068 1109	bypassing typical 2FA account protections
+R17	uses Arg1:T10 Arg2:T24	
+T38	Malware 448 456	Cerberus
+R14	has Arg1:T38 Arg2:T9	
+T46	Application 884 927	banking, retail, and social networking apps
+R20	targets Arg1:T10 Arg2:T46	
+T47	Application 1134 1154	Google Authenticator
+T48	Application 1289 1307	currency converter
+R21	uses Arg1:T11 Arg2:T48	
+T49	MalwareType 1508 1514	Trojan

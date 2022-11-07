@@ -1,0 +1,22 @@
+ERMAC is a new Android banking Trojan that can steal financial data from 378 banking and wallet apps.
+Researchers from Threatfabric found in July a new Android banking trojan dubbed ERMAC that is almost fully based on the popular banking trojan Cerberus. The source code of Cerberus was released in September 2020 on underground hacking forums after its operators failed an auction.
+
+According to the experts, ERMAC is operated by threat actors behind the BlackRock mobile malware.
+
+On August 17, two forum members named “ermac” and “DukeEugene” started advertising the malware. “DukeEugene”, posted the following message in his account:
+
+“Android botnet ERMAC. I will rent a new android botnet with wide functionality to a narrow circle of people (10 people). 3k$ per month. Details in PM.”
+
+DukeEugene is threat actor known to be behind the BlackRock banking Trojan.
+ERMAC differs from Cerberus in the usage of different obfuscation techniques and Blowfish encryption algorithm.
+
+“Despite the usage of different obfuscation techniques and new method of string encryption – using Blowfish encryption algorithm, we can definitely state that ERMAC is another Cerberus-based trojan.” reads the analysis published by Threatfabric. “Compared to the original Cerberus, ERMAC uses different encryption scheme in communication with the C2: the data is encrypted with AES-128-CBC, and prepended with double word containing the length of the encoded data”
+The new banking Trojan supports the same latest Cerberus commands, except for a couple of commands that allow to clear the content of the cache of the specified application and steal device accounts.
+
+clearCash/clearCashe Triggers opening specified application details
+getAccounts/logAccounts Triggers stealing a list of the accounts on the device
+At the time of writing, ThreatFabric researchers with the help of support @malwrhunterteam experts determine that ERMAC is only targeting Poland, where is being distributed under the guise of delivery service and government applications.
+
+The new banking trojan can target over three hundred banking and mobile apps.
+
+“The story of ERMAC shows one more time how malware source code leaks can lead not only to slow evaporation of the malware family but also bring new threats/actors to the threat landscape. Being built on Cerberus basement, ERMAC introduces couple of new features. Although it lacks some powerful features like RAT, it remains a threat for mobile banking users and financial institutions all over the world.” concludes the report.

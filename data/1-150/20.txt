@@ -1,0 +1,48 @@
+SpyNote malware: One more reason to never sideload Android apps
+Jack Wallen explains why the recently discovered SpyNote malware threat should make you squeamish about sideloading Android apps.
+
+On a semi-regular basis, I receive emails from users who have Android devices that show all the signs of being infected by malware. Without fail and without question, I quickly discover the user installed an application from a third-party, untrusted source.
+
+The user wanted an app, so they googled the app, and clicked on the first search result. Under normal circumstances, that first result is the Google Play Store. But when the app is not free, some users will turn to sites that promise to hand out that same application, sans cost.
+
+Recently a new security threat emerged that should make everyone squeamish about sideloading Android applications.
+
+What is sideloading?
+With the Android platform, you can install applications in the normal fashion (i.e., by finding them on the Google Play Store and tapping Install), or you can download the APK file (a file ending with .apk) and install it by tapping that file from within a file manager on your Android device. When you install via the second approach–which is called sideloading–you bypass all of the security checks done via the Google Play Store’s vetting process. That is when trouble occurs.
+
+Many times those applications found on less-than-reputable sites can even seem like the same versions of legitimate apps. You might think you’re installing Pokemon Go, but what you’re really installing is a version of that particular app with baked-in malicious code.
+
+How does this happen? A recent discovery by Palo Alto One Networks’ Unit 42 team illustrates this perfectly.
+
+Ladies and gents, introducing SpyNote
+The researchers at Unit 42 found an Android Remote Access Tool (RAT) called SpyNote. This piece of malware has a number of vicious backdoor features, which include the ability to:
+
+View all messages
+Listen in on phone calls
+Activate a device’s camera or mic remotely
+Track the device via GPS
+Install APK files on its own and even update the malware
+Copy files from device to PC
+Gain access to the IMEI number, Wi-Fi MAC address, and cell phone carrier details
+In other words, SpyNote gives the attacker complete access to a user’s phone…without needing root access! Check out the video created by Unit 42 that illustrates the capabilities of SpyNote.
+
+It gets much worse
+The dastardliness doesn’t end with the SpyNote code. When Unit 42 came across this particularly malicious piece of software, they also found the tool that was used to build multiple versions of SpyNote.
+
+Although SpyNote has yet to be discovered on any active malware campaigns, this builder was found leaked on a Dark Web site, which means others will have access to its capabilities and will be able to create their own versions of SpyNote.
+
+You won’t find SpyNote-infected apps on the Google Play Store. However, step outside of the secure confines of that heavily-vetted location and there’s no guarantee that app you’re about to install wasn’t compiled by the SpyNote builder.
+
+SEE: Securing Your Mobile Enterprise (ZDNet/TechRepublic special feature)
+
+What you can do
+I’ve repeated this advice so many times over the last few years that I feel I’ll start waking myself up out of a fevered dream shouting, “Don’t install from third-party sources!”
+
+End of story.
+
+It really is that simple. Within the Google Play Store, there are over two million apps. If you can’t find the app you’re looking for on the Google Play Store, then you should consider that app doesn’t exist. If you don’t want to pay for an app on the Google Play Store, then find an alternative or forget you ever wanted the software in the first place.
+
+This is especially true when the device you use holds sensitive company information. Imagine sideloading a SpyNote-infected app on your BYOD device and giving some unknown entity the keys to your company’s kingdom. It could lead to the distribution of company secrets and, in the end, your dismissal. No app is worth that.
+
+Only choose apps on Google Play
+When you go out searching for an app, you should never assume anything. Just because a site says they are guaranteed virus-free, who’s doing the guaranteeing? The only way to be certain you are safe from malicious software is to always choose Google Play and never sideload an app. If you assume a third-party is safe, just remember what happens when you “assume.”

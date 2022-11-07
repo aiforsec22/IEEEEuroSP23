@@ -1,0 +1,73 @@
+T5	Malware 0 4	Ginp
+T6	Malware 585 589	Ginp
+T7	Malware 779 783	Ginp
+T8	Malware 824 828	Ginp
+T9	Malware 2282 2286	Ginp
+T10	Application 1916 1926	Play Store
+T12	Application 2090 2100	Play Store
+T14	AttackPattern 19 46	fakes incoming SMS messages
+R1	uses Arg1:T5 Arg2:T14	
+T16	AttackPattern 247 313	can make a payment or siphon off funds without the victim noticing
+R3	uses Arg1:T5 Arg2:T16	
+T17	AttackPattern 353 447	use text messages to infect more devices by sending the victim’s contacts a bad download link.
+R4	uses Arg1:T5 Arg2:T17	
+T18	AttackPattern 643 712	create incoming texts on the victim’s phone that no one actually sent
+R5	uses Arg1:T6 Arg2:T18	
+T19	MalwareType 867 881	banking Trojan
+R6	isA Arg1:T8 Arg2:T19	
+T20	AttackPattern 886 932	sent all the victim’s contacts to its creators
+T21	AttackPattern 934 959	intercepted text messages
+T22	AttackPattern 961 981	stole bank card data
+T23	AttackPattern 987 1030	overlaid banking apps with phishing windows
+R7	uses Arg1:T8 Arg2:T20	
+R8	uses Arg1:T8 Arg2:T21	
+R9	uses Arg1:T8 Arg2:T22	
+R10	uses Arg1:T8 Arg2:T23	
+T1	AttackPattern 1063 1147	exploited Accessibility, a set of Android features for users with visual impairments
+R11	uses Arg1:T8 Arg2:T1	
+T24	MalwareType 1171 1186	banking Trojans
+R12	isA Arg1:T8 Arg2:T24	
+T26	AttackPattern 1364 1404	can take charge of your phone completely
+R13	uses Arg1:T8 Arg2:T26	
+T27	Malware 1413 1417	Ginp
+T28	AttackPattern 1552 1635	using push notifications and pop-up messages to get the victim to open certain apps
+T29	AttackPattern 1656 1685	overlay with phishing windows
+T2	Application 1837 1847	Google Pay
+R15	uses Arg1:T27 Arg2:T28	
+R16	uses Arg1:T27 Arg2:T29	
+R17	targets Arg1:T27 Arg2:T2	
+R18	targets Arg1:T27 Arg2:T10	
+R19	targets Arg1:T27 Arg2:T12	
+T3	Application 1964 1974	Google Pay
+T30	Application 2303 2313	Play Store
+R20	targets Arg1:T27 Arg2:T3	
+T11	AttackPattern 2642 2716	overlays the banking app with a fake window and asks for your card details
+T13	Time 2765 2773	February
+T31	Malware 2841 2845	Ginp
+T32	AttackPattern 2851 2888	ability to create fake incoming texts
+T33	AttackPattern 2979 3048	can generate SMS messages with any text and seemingly from any sender
+R21	targets Arg1:T9 Arg2:T30	
+R22	uses Arg1:T9 Arg2:T11	
+R23	uses Arg1:T31 Arg2:T32	
+R24	uses Arg1:T31 Arg2:T33	
+T35	MalwareType 88 102	banking Trojan
+R26	isA Arg1:T5 Arg2:T35	
+T36	AttackPattern 111 138	gain access to SMS messages
+R27	uses Arg1:T5 Arg2:T36	
+T37	AttackPattern 155 202	ntercept one-time confirmation codes from banks
+R2	uses Arg1:T5 Arg2:T37	
+T38	MalwareType 345 352	Trojans
+T39	MalwareType 12 18	Trojan
+T40	MalwareType 791 797	Trojan
+T41	MalwareType 2177 2183	Trojan
+T42	MalwareType 2972 2978	Trojan
+T43	MalwareType 3397 3403	Trojan
+T44	MalwareType 2779 2785	Botnet
+T45	Application 996 1008	banking apps
+T46	Application 2655 2666	banking app
+T47	Application 2209 2220	Google Play
+T48	Application 2041 2051	Play Store
+T49	Application 3127 3133	Google
+T50	OS 1097 1104	Android
+T51	Organization 197 202	banks
+T52	Organization 3118 3123	banks

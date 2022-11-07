@@ -1,0 +1,48 @@
+T4	Malware 0 4	Ginp
+T5	Malware 44 48	Ginp
+T6	Malware 148 152	Ginp
+T7	Malware 960 966	Anubis
+T8	Application 679 697	Adobe Flash Player
+T9	Application 805 810	Viber
+T1	MalwareType 102 117	banking malware
+R1	isA Arg1:T5 Arg2:T1	
+T10	Time 185 189	2019
+R2	discoveredIn Arg1:T6 Arg2:T10	
+T11	AttackPattern 208 219	SMS stealer
+R3	uses Arg1:T6 Arg2:T11	
+T14	Location 470 476	Turkey
+R6	targets Arg1:T6 Arg2:T14	
+T2	Application 551 574	Google Play Verificator
+T15	Time 585 596	August 2019
+T16	AttackPattern 741 760	payload obfuscation
+T17	Application 815 823	Snapchat
+T18	AttackPattern 879 906	screen capture capabilities
+T19	Location 1062 1068	Turkey
+T20	AttackPattern 1119 1149	Notifications blockers service
+T21	AttackPattern 1169 1186	Injections locker
+T22	AttackPattern 1151 1167	RAT capabilities
+T3	Application 1235 1252	Google Play Store
+R7	targets Arg1:T6 Arg2:T2	
+R8	uses Arg1:T6 Arg2:T16	
+R9	targets Arg1:T6 Arg2:T8	
+R10	targets Arg1:T6 Arg2:T9	
+R11	targets Arg1:T6 Arg2:T17	
+R12	uses Arg1:T6 Arg2:T18	
+R13	targets Arg1:T6 Arg2:T19	
+R14	uses Arg1:T6 Arg2:T20	
+R15	uses Arg1:T6 Arg2:T22	
+R16	targets Arg1:T6 Arg2:T3	
+R17	uses Arg1:T6 Arg2:T21	
+R18	isA Arg1:T4 Arg2:T1	
+T23	Application 369 382	Spanish banks
+R19	targets Arg1:T6 Arg2:T23	
+T12	OS 94 101	Android
+R4	targets Arg1:T5 Arg2:T12	
+T13	Version 598 611	a new variant
+R5	has Arg1:T6 Arg2:T13	
+R20	variantOf Arg1:T13 Arg2:T7	
+T24	MalwareType 967 973	trojan
+T25	MalwareType 1052 1058	trojan
+T26	Application 1359 1373	antivirus apps
+T27	Application 1306 1319	Accessibility
+T28	MalwareType 1151 1154	RAT

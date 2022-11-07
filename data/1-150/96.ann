@@ -1,0 +1,112 @@
+T3	OS 2572 2579	Android
+T4	OS 2636 2643	Android
+T7	Organization 2027 2033	Google
+T8	Organization 2895 2901	Google
+T9	Malware 0 6	Anubis
+T10	Malware 189 195	Anubis
+T11	Malware 365 371	Anubis
+T12	Malware 545 551	Anubis
+T13	Malware 825 831	Anubis
+T14	Malware 1024 1030	Anubis
+T15	Malware 1161 1167	Anubis
+T16	Malware 1856 1862	Anubis
+T17	Malware 2252 2258	Anubis
+T18	Malware 2613 2619	Anubis
+T19	Malware 2809 2815	Anubis
+T20	Organization 497 508	Trend Micro
+T22	Organization 2015 2022	Twitter
+T23	Organization 2737 2745	Fortinet
+T24	Malware 2763 2771	BianLian
+T25	Malware 2978 2986	BianLian
+T1	MalwareType 15 30	banking malware
+R1	isA Arg1:T9 Arg2:T1	
+T26	Application 54 67	financial app
+R2	targets Arg1:T9 Arg2:T26	
+T27	Application 121 153	banking and finance-related apps
+R3	targets Arg1:T9 Arg2:T27	
+T2	MalwareType 204 219	banking malware
+R4	isA Arg1:T10 Arg2:T2	
+T28	Application 284 320	188 finance and banking applications
+R5	targets Arg1:T10 Arg2:T28	
+T29	Time 529 535	Monday
+T30	MalwareType 552 566	banking Trojan
+R6	isA Arg1:T12 Arg2:T30	
+T31	AttackPattern 585 626	social engineering and phishing campaigns
+R7	uses Arg1:T12 Arg2:T31	
+T32	AttackPattern 647 714	victims are lured to download malicious apps containing the malware
+R8	uses Arg1:T12 Arg2:T32	
+T33	Organization 806 817	Trend Micro
+T34	Application 859 900	banking and financial mobile applications
+R9	targets Arg1:T13 Arg2:T34	
+T35	Location 924 926	US
+T36	Location 928 933	India
+T37	Location 935 941	France
+T38	Location 943 948	Italy
+T39	Location 950 957	Germany
+T40	Location 959 968	Australia
+T41	Location 974 980	Poland
+R10	targets Arg1:T13 Arg2:T35	
+R11	targets Arg1:T13 Arg2:T36	
+R12	targets Arg1:T13 Arg2:T37	
+R13	targets Arg1:T13 Arg2:T38	
+R14	targets Arg1:T13 Arg2:T39	
+R15	targets Arg1:T13 Arg2:T40	
+R16	targets Arg1:T13 Arg2:T41	
+T42	AttackPattern 1035 1071	masquerading as a legitimate service
+R17	uses Arg1:T14 Arg2:T42	
+T43	AttackPattern 1179 1195	take screenshots
+T44	AttackPattern 1197 1209	record audio
+T45	AttackPattern 1211 1249	send, receive, and delete SMS messages
+T46	AttackPattern 1251 1294	steal contact lists and account credentials
+T47	AttackPattern 1296 1352	open URLs -- potentially to download additional payloads
+T6	AttackPattern 1376 1403	disable Google Play Protect
+R18	uses Arg1:T15 Arg2:T43	
+R19	uses Arg1:T15 Arg2:T44	
+R20	uses Arg1:T15 Arg2:T45	
+R21	uses Arg1:T15 Arg2:T46	
+R22	uses Arg1:T15 Arg2:T47	
+R23	uses Arg1:T15 Arg2:T6	
+T48	AttackPattern 1443 1555	plunder the deeper settings of a compromised device by enabling or tampering with device administration settings
+T49	AttackPattern 1560 1578	view running tasks
+T50	AttackPattern 1587 1663	create a backdoor for remote control through virtual network computing (VNC)
+R24	uses Arg1:T15 Arg2:T48	
+R25	uses Arg1:T15 Arg2:T49	
+R26	uses Arg1:T15 Arg2:T50	
+T51	AttackPattern 1762 1838	encrypt files stored on a mobile device and its SD card known as AnubisCrypt
+R27	uses Arg1:T15 Arg2:T51	
+T52	AttackPattern 1874 1972	receive commands from social media platforms including Twitter and messaging apps such as Telegram
+R28	uses Arg1:T16 Arg2:T52	
+T21	Location 2121 2128	Turkish
+T53	AttackPattern 2263 2277	hijack devices
+T54	AttackPattern 2279 2289	steal data
+T55	AttackPattern 2295 2347	send information to command-and-control (C2) servers
+R29	uses Arg1:T17 Arg2:T53	
+R30	uses Arg1:T17 Arg2:T54	
+R31	uses Arg1:T17 Arg2:T55	
+T56	AttackPattern 2415 2467	detect if they are running on virtual machines (VMs)
+R32	uses Arg1:T17 Arg2:T56	
+T57	Malware 2539 2545	Anubis
+T58	Application 2598 2608	Genymotion
+R33	targets Arg1:T18 Arg2:T4	
+T59	MalwareType 2842 2856	banking Trojan
+R34	isA Arg1:T24 Arg2:T59	
+T5	Application 2902 2921	Android protections
+R35	has Arg1:T8 Arg2:T5	
+T60	AttackPattern 3057 3099	monitor the screen of a compromised device
+R36	uses Arg1:T25 Arg2:T60	
+R37	targets Arg1:T57 Arg2:T3	
+R38	has Arg1:T58 Arg2:T3	
+R39	variantOf Arg1:T19 Arg2:T24	
+T61	OS 7 14	Android
+R40	targets Arg1:T9 Arg2:T61	
+T62	OS 196 203	Android
+R41	targets Arg1:T10 Arg2:T62	
+T63	AttackPattern 3104 3156	steal information, including usernames and passwords
+R42	uses Arg1:T25 Arg2:T63	
+T64	MalwareType 1425 1431	Trojan
+T65	Application 1384 1403	Google Play Protect
+T66	Application 1941 1955	messaging apps
+T67	Application 1896 1908	social media
+T68	Application 2173 2185	social media
+T69	Application 1964 1972	Telegram
+T70	Application 1929 1936	Twitter

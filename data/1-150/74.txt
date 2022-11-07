@@ -1,0 +1,142 @@
+FakeSpy Masquerades as Postal Service Apps Around the World
+
+KEY FINDINGS
+The Cybereason Nocturnus team is investigating a new campaign involving FakeSpy, an Android mobile malware that emerged around October 2017. FakeSpy is an information stealer used to steal SMS messages, send SMS messages, steal financial data, read account information and contact lists, steal application data, and do much more.
+FakeSpy first targeted South Korean and Japanese speakers. However, it has begun to target users all around the world, especially users in countries like China, Taiwan, France, Switzerland, Germany, United Kingdom, United States, and others.
+FakeSpy masquerades as legitimate postal service apps and transportation services in order to gain the users' trust. Once installed, the application requests permissions so that it may control SMS messages and steal sensitive data on the device, as well as proliferate to other devices in the target device’s contact list.
+Cybereason's investigation shows that the threat actor behind the FakeSpy campaign is a Chinese-speaking group dubbed "Roaming Mantis", a group that has led similar campaigns.
+FakeSpy has been in the wild since 2017; this latest campaign indicates that it has become more powerful. Code improvements, new capabilities, anti-emulation techniques, and new, global targets all suggest that this malware is well-maintained by its authors and continues to evolve.
+INTRODUCTION
+For the past several weeks, Cybereason has been investigating a new version of Android malware dubbed FakeSpy, which was first identified in October 2017 and reported again in October 2018. A new campaign is up and running using newly improved, significantly more powerful malware as compared to previous versions. FakeSpy is under active development and is evolving rapidly; new versions are released every week with additional evasion techniques and capabilities. 
+
+Our analysis shows that the threat actor behind the FakeSpy malware is a Chinese-speaking group, commonly referred to as "Roaming Mantis", a group that is known to have launched similar campaigns in the past. FakeSpy is an information stealer that exfiltrates and sends SMS messages, steals financial and application data, reads account information and contact lists, and more.
+
+The malware uses smishing, or SMS phishing, to infiltrate target devices, which is a technique that relies on social engineering. The attackers send fake text messages to lure the victims to click on a malicious link. The link directs them to a malicious web page, which prompts them to download an Android application package (APK).
+
+This most recent FakeSpy campaign appears to target users of postal services around the world. New versions of FakeSpy masquerade as government post office apps and transportation services apps. Our analysis indicates that the threat actors are no longer limiting their campaigns to East Asian countries, but are targeting additional countries around the world.
+
+THREAT ANALYSIS
+Infection Vector: Smishing Your Device
+
+Thus far, FakeSpy campaigns are characterized by SMS phishing (a.k.a. smishing). These SMS messages masquerade as a message from the local post office and link to the FakeSpy download. In a previous campaign reported by JPCERT, mobile users were alerted by phishy messages containing “delivery updates” purportedly from Sagawa Express.
+Clicking the SMS link brings the user to a fake website that prompts them to download and install the FakeSpy APK, which is masquerading as a local postal service app. 
+
+Targeting Postal and Transportation Services Companies
+
+One of the most significant findings is that new versions of FakeSpy target not only Korean and Japanese speakers, but also almost any postal service company around the world.
+
+All recent FakeSpy versions contain the same code with minor changes. The FakeSpy malware has been found to masquerade as any of the following companies:
+
+United States Postal Service - An independent agency of the executive branch of the United States federal government. USPS is the most well-known branch of the US government and provides a publicly funded postal service.
+Royal Mail - British postal service and courier company. For most of its history it operated as a government department or public corporation.
+Deutsche Post - Deutsche Post DHL Group, a German multinational package delivery and supply chain management company headquartered in Bonn.
+La Poste - La Poste is a public limited postal service company in France.
+Japan Post - A private Japanese post, logistics and courier headquartered in Tokyo.
+Yamato Transport - One of Japan's largest door-to-door delivery service companies, also in Tokyo.
+Chunghwa Post - The government-owned corporation Chunghwa is the official postal service of Taiwan.
+Swiss Post - The national postal service of Switzerland, a fully state-owned limited company (AG) regulated by public law.
+The fake applications are built using WebView, a popular extension of Android’s View class that lets the developer show a webpage. FakeSpy uses this view to redirect users to the original post office carrier webpage on launch of the application, continuing the deception.  This allows the application to appear legitimate, especially given these applications icons and user interface.
+
+FAKESPY CODE ANALYSIS
+Once the user clicks on the malicious link from the SMS message, the app asks them to approve installation from unknown resources. This configuration can be toggled on by going to ‘Settings’ -> ‘Security’ -> ‘Unknown Resources’. PackageInstaller shows the app’s permission access and asks for the user's approval, which then installs the application.
+
+This analysis dissects FakeSpy’s Chunghwa Post app version, which emerged in April 2020.
+
+During the installation, the malware asks for the following permissions:
+
+READ_PHONE_STATE - Allows read-only access to the phone state, including the current cellular network information, the status of any ongoing calls, and a list of any PhoneAccounts registered on the device.
+READ_SMS - Allows the application to read text messages.
+RECEIVE_SMS - Allows the application to receive SMS messages.
+WRITE_SMS - Allows the application to write to SMS messages stored on the device or SIM card, including y deleting messages.
+SEND_SMS - Allows the application to send SMS messages.
+INTERNET - Allows the application to open network sockets.
+WRITE_EXTERNAL_STORAGE - Allows the application to write to external storage.
+READ_EXTERNAL_STORAGE - Allows the application to read from external storage.
+RECEIVE_BOOT_COMPLETED - Allows the application to receive a broadcast after the system finishes booting.
+GET_TASKS - Allows the application to get information about current or recently run tasks. (deprecated in API level 21)
+SYSTEM_ALERT_WINDOW - Allows the application to create windows shown on top of all other apps.
+WAKE_LOCK - Allows the application to use PowerManager WakeLocks to keep the processor from sleeping or the screen from dimming.
+ACCESS_NETWORK_STATE - Allows the application to access information about networks.
+REQUEST_IGNORE_BATTERY_OPTIMIZATIONS - Whitelists the application to allow it to ignore battery optimizations.
+READ_CONTACTS - Allows the application to read the user's contacts data.
+On opening the app, two pop-up messages appear on screen:
+
+Change SMS App: This sets permissions to intercept every SMS received on the device and send a copy of these messages to the C2 server.
+Ignore Battery Optimization: This sets permissions to continue to operate at full capacity while the phone's screen is turned off and the phone locked.
+These requests rely on the end user accepting the permission changes and points to the importance of healthy skepticism when giving applications permissions. 
+
+DYNAMIC LIBRARY LOADING
+Once the application has finished the installation process, the malware starts its real malicious activity. The malicious application da.hao.pao.bin (Chunghwa Post) loads a library file libmsy.so used to execute the packed mycode.jar file. The JAR file is the decrypted version of the file tong.luo, which is located in the assets folder.
+
+By comparing the sizes of the encrypted asset file tong.luo vs the decrypted JAR file mycode.jar, it is interesting to note that it is the same file (almost the same size).
+
+After libmsy.so decrypts the asset file tong.luo, it loads mycode.jar dynamically into FakeSpy’s process, as is shown from the output of the “adb logcat” command.
+
+By analyzing running processes on the infected device, it shows that the malware creates a child process of itself to perform the multi-process ptrace anti-debugging technique.
+
+By performing a deep analysis of the malware, we were able to extract the unpacked JAR file mycode.jar and reveal some very interesting code.
+
+STEALING SENSITIVE INFORMATION
+FakeSpy has multiple built in information stealing capabilities. The first function is used for contact information stealing: the function upCon steals all contacts in the contact list and their information. Then, it sends it to the C2 server using the URL that ends with /servlet/ContactUpload. The stolen data fields are:
+
+Mobile - The infected device phone number and contact’s phone number
+Contacts - A headline used for the attacker to distinguish between the type of stolen information he gets
+Name - Contact’s full name (Display name)
+For testing purposes we inserted a fake contacts list to our Android Emulator and observed resultant behavior.
+
+The second stealing function is the onStartCommand, which steals infected device data and additional information. The stolen data is sent to the C2 server using the URL ending with /servlet/xx. The stolen data fields are:
+
+Mobile - The infected device phone number
+Machine - The device model (in our example: Google Pixel 2)
+Sversion - The OS version
+Bank - Checks if there are any banking-related or cryptocurrency trading apps
+Provider - The telecommunication provider (IMSI value in device settings)
+npki - Checks if the folder named NPKI (National Public Key Infrastructure) might contain authentication certificates related to financial transactions
+FakeSpy asks to be the default SMS app because it uses the function onReceive to intercept incoming SMS messages. It saves the messages’ metadata and content, filters the information by fields, and sends them to the C2 server using the URL /servlet/SendMassage2. The fields it collects are:
+
+Mobile - The phone number which sent the SMS
+Content - The message body
+Sender - The contact name who sent the message
+Time - The time the message was received
+The malware uses the function sendAll to send messages that spread the malware to other devices. It sends a smishing message to the entire contact list of the infected device along with the malicious link to the FakeSpy installation page.
+
+Another interesting feature in FakeSpy’s code is the collection of the device's IMEI (International Mobile Station Equipment Identity) number and all installed applications using the function upAppinfos. It sends all of this data to the C2 server using the URL ending with /servlet/AppInfos.
+
+FakeSpy is able to check the network connectivity status by using the function isNetworkAvailable. What makes this function more suspicious is the two strings written in Chinese characters:
+
+===状态=== (===Status===) - Checks whether the device is connected to a network
+===类型=== (===Type===) - Checks whether the device sees available nearby Wifi networks 
+ANTI-EMULATOR TECHNIQUES
+FakeSpy appears to use multiple techniques to evade detection via the emulator. It shows that the malware can detect whether it’s running in an emulated environment or a real mobile device, and can change its code pattern accordingly. 
+
+The first example of this is in the onStart function, where the malware looks for the string “Emulator” and a x86 processor model.
+
+This simulation shows that FakeSpy behaves differently on a physical device versus an emulator. When executed the second time by clicking on the app on the physical device, FakeSpy redirects to the app settings. In contrast, on the emulator, a toast message is displayed that shows “Install completed”, at which point FakeSpy removes its shortcut from the device's homescreen.
+
+Another example of FakeSpy’s anti-emulation techniques is how it uses the getMachine function, which uses the TelephonyManager class to check for the deviceID, phone number, IMEI, and IMSI. Some emulators build their phone number out of the default number created in the emulator software and the port number: 5554.
+
+UNDER ACTIVE DEVELOPMENT
+An analysis of new FakeSpy samples to old ones showed code discrepancies and new features. These artifacts indicate that FakeSpy's campaign is still live and under development.
+
+The newer version of FakeSpy uses new URL addresses for malicious communication with FakeSpy. The function main uses a DES encryption algorithm to encode these addresses. The examples below show the plaintext key “TEST” to decrypt encoded hexadecimal strings (jUtils.decrypt()). These encoded strings contain the new URL addresses not seen in older versions of FakeSpy.
+
+WHO IS BEHIND FAKESPY’S SMISHING CAMPAIGNS?
+The Cybereason Nocturnus team suspects that the malware operators and authors are Chinese speakers. Our findings, along with previous research, indicates that the threat actor behind these recent campaigns is likely a Chinese group dubbed “Roaming Mantis”. 
+
+Roaming Mantis is believed to be a Chinese threat actor group first discovered in April 2018 that has continuously evolved. In the beginning, this threat group mainly targeted Asian countries. Now, they are expanding their activity to audiences all around the world. As part of their activities, they are known for hijacking DNS settings on Japanese routers that redirect users to malicious IP addresses, creating disguised malicious Android apps that appear as popular apps, stealing Apple ID credentials by creating Apple phishing pages, as well as performing web crypto mining on browsers.
+
+CONNECTION TO CHINA
+Chinese server infrastructure: FakeSpy applications send stolen information to C2 domains with .club TLDs and URLs ending with /servlet/[C2 Command] (mentioned above in the “Stealing Sensitive Information” section). All of these domains are registered to ‘Li Jun Biao’ on Bizcn, Inc, a Chinese Internet application service provider.
+Chinese language traces in the code: During the investigation, the Cybereason Nocturnus team discovered code artifacts that may indicate Chinese threat actors. For example, we found several suspicious strings written in the Chinese language in a function called isNetworkAvailable, previously discussed in this blog:
+An almost identical function is mentioned in an earlier research, that ties FakeSpy and other malware to the Roaming Mantis group. 
+
+Chinese APK names: Some of FakeSpy’s APK package names contain anglicized Chinese (Mandarin) words that might be related to Chinese songs and lyrics, food, provinces, etc.
+CONCLUSIONS
+FakeSpy was first seen in October 2017 and until recently mainly targeted East Asian countries. Our research shows fresh developments in the malware’s code and sophistication, as well as an expansion to target Europe and North America. This mobile malware masquerades as legitimate, trusted postal service applications so that it can gain the users trust. Once it has been installed, it requests permissions from the user so that it can steal sensitive data, manipulate SMS messages, and potentially infect contacts of the user. 
+
+The malware now targets more countries all over the world by masquerading as official post office and transportation services apps. These apps appear legitimate due to their app logo, UI appearance, and redirects to the carrier webpage -- all luring end users to believe it’s the original one.
+
+In this blog, we showed that the threat actor behind the recent FakeSpy campaign is a Chinese-speaking group called “Roaming Mantis” known to operate mainly in Asia. It is interesting to see that the group has expanded their operation to other regions, such as the United States and Europe. 
+
+The malware authors seem to be putting a lot of effort into improving this malware, bundling it with numerous new upgrades that make it more sophisticated, evasive, and well-equipped. These improvements render FakeSpy one of the most powerful information stealers on the market. We anticipate this malware to continue to evolve with additional new features; the only question now is when we will see the next wave.
+

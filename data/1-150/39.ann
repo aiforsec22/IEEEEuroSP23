@@ -1,0 +1,42 @@
+T1	OS 467 474	Android
+T2	OS 587 594	Android
+T6	OS 30 37	ANDROID
+T7	ThreatActor 363 375	Hacking Team
+T8	ThreatActor 1206 1218	Hacking Team
+T9	Malware 634 644	RCSANDROID
+T10	Vulnerability 1064 1077	CVE-2012-2825
+T13	ThreatActor 0 12	HACKING TEAM
+T14	MalwareType 38 45	SPYWARE
+T15	MalwareType 480 487	spyware
+T16	Malware 497 507	RCSAndroid
+T17	Organization 620 631	Trend Micro
+R1	hasAuthor Arg1:T16 Arg2:T7	
+R2	targets Arg1:T16 Arg2:T2	
+R3	isA Arg1:T16 Arg2:T15	
+R4	targets Arg1:T16 Arg2:T1	
+R5	targets Arg1:T13 Arg2:T6	
+R6	isA Arg1:T16 Arg2:T14	
+R7	hasAuthor Arg1:T16 Arg2:T13	
+T18	AttackPattern 668 740	Collect Passwords for both networks (your WiFi) and accounts (your bank)
+T19	AttackPattern 742 763	Collect your location
+T20	AttackPattern 765 822	Record you calls or what is being said around your device
+T21	AttackPattern 824 855	Collect you contact information
+T22	AttackPattern 857 884	Collect you email and texts
+T23	Malware 903 913	RCSAndroid
+T24	Time 945 949	2012
+R8	discoveredIn Arg1:T23 Arg2:T24	
+R9	uses Arg1:T9 Arg2:T18	
+R10	uses Arg1:T9 Arg2:T19	
+R11	uses Arg1:T9 Arg2:T20	
+R12	uses Arg1:T9 Arg2:T21	
+R13	uses Arg1:T9 Arg2:T22	
+T3	Application 993 1017	default Android Internet
+T4	OS 1035 1062	Android versions 4.0 to 4.3
+T11	Vulnerability 1082 1095	CVE-2012-2871
+R14	exploits Arg1:T23 Arg2:T10	
+R15	exploits Arg1:T23 Arg2:T11	
+R16	has Arg1:T3 Arg2:T10	
+R17	has Arg1:T3 Arg2:T11	
+T5	Application 1126 1137	Google Play
+R19	targets Arg1:T23 Arg2:T5	
+R20	hasAuthor Arg1:T23 Arg2:T8	

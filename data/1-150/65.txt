@@ -1,0 +1,57 @@
+Google Play Boots Italian Spyware Apps That Infected Hundreds
+Google has removed more than a dozen malicious apps harboring Android spyware from its Google Play marketplace. The spyware appears to have been developed by an Italian firm, which is now under investigation for its development.
+
+Researchers allege that the apps have infected several hundred – up to even as many as a thousand – Italian victims with the malware, dubbed Exodus.
+
+Researchers with nonprofit security firm Security Without Borders said that they uncovered the spyware, dubbed Exodus, being passed through at least 25 malicious apps on Google Play. The apps have since been removed.
+
+“Instances of this spyware were found on the Google Play Store, disguised as service applications from mobile operators,” said researchers in a Friday analysis. “Both the Google Play Store pages and the decoys of the malicious apps are in Italian. According to publicly available statistics, as well as confirmation from Google, most of these apps collected a few dozens installations each, with one case reaching over 350.”
+
+Researchers said they collected samples of Exodus from 2016 to early 2019.
+
+They found that it has a variety of nefarious capabilities, including scooping up call logs and SMS messages, Facebook, Gmail and WhatsApp data and conversations, audio-recording the victim and extracting GPS coordinates of the phone. It can also retrieve a list of installed apps, retrieve the device’s browsing history, extract events from the Calendar app and access the owner’s address book.
+
+“All of the victims are located in Italy,” according to Security Without Borders. “All of these Google Play Store pages have been taken down by Google.”
+
+Exodus
+The malware was spread via mobile applications on Google Play purporting to be service apps distributed by unspecified mobile operators in Italy.
+
+“Often the app description on the Play Store would reference some SMS messages the targets would supposedly receive leading them to the Play Store page,” researchers said. “All of the Play Store pages we identified and all of the decoys of the apps themselves are written in Italian.”
+
+Security Without Borders told Threatpost that around 25 variants of the spyware was uploaded to Google Play – and while Google did not share the total number infected, researchers said that based on the installs they have observed they can estimate the number of infections to reach into the several hundreds of victims or even a thousand.
+
+Once downloaded, the malicious apps then infect the user with the Exodus malware.
+
+“Exodus is equipped with extensive collection and interception capabilities,” said researchers. “Worryingly, some of the modifications enforced by the spyware might expose the infected devices to further compromise or data tampering.”
+
+Installation
+Once the malicious apps are installed, a dropper is first deployed to collect some basic identifying information about the device, including itsmalicious app google play International Mobile Equipment Identity (IMEI) code and phone number, and send it to the command-and-control (C2) server (the dropper in some cases purports to be a device check for the fake app).
+
+Interestingly, almost immediately thereafter, the spyware quickly upgrades to the second stage – suggesting that the C2 operators are not enforcing a validation of the targets, researchers said.
+
+“During our tests the spyware was upgraded to the second stage on our test device immediately after the first check-ins,” researchers said. “Additionally, during a period of several days, our infected test device was never remotely disinfected by the operators.”
+
+The C2 then sends a ZIP archive, with a collection of files and the primary payload, which includes the bulk of the spyware capabilities.
+
+eSurv
+Researchers pinned the malware developer back to an Italian company called eSurv. eSurv, based in Catanzaro, in Calabria, Italy, publicly advertises products like CCTV management systems, surveillance drones, face and license-plate recognition systems.
+
+google play malicious apps eSurv 
+
+Several clues led researchers to pin the spyware on eSurv. First of all, samples of the malware used Italian words  (such as Mundizza, a dialectal word typical of the Calabria region in Italy, which translates to “garbage” in English). Secondly, the C2 configured in several of the malicious apps has an IP address that serves a self-signed TLS certificate linked to servers developed by eSurv.
+
+“Many of these servers are control panels for video surveillance systems developed by the Italian company eSurv… eSurv’s logo is identical to the command and control server icon,” researchers said.
+
+eSurv’s webpage, LinkedIn page and Twitter page all appear to have been taken down.
+
+According to Italian media reports, meanwhile, Giuseppe Fasano, owner of eSurv, and Salvatore Ansani, manager of eSurv, are currently under investigation by Italian authorities regarding the spyware.
+
+Google Play
+Despite several publicized efforts to prevent malicious apps, the Google Play consumer store has continued to see bad apps cropping up on its platform over the past year.
+
+Just in this past January, Google Play removed two malicious apps that were infecting devices with a notorious banking malware bent on harvesting victims’ credentials. Also, last month an Android spyware dubbed MobSTSPY emerged to ride trojanized apps into victims’ phones, mainly via Google Play.
+
+Also, early last year, Google removed 22 malicious adware apps ranging from flashlights and call recorders to WiFi signal boosters, which together were downloaded at least 7.5 million times from the Google Play marketplace.
+
+Researchers said that Google Play told them that: “thanks to enhanced detection models, Google Play Protect will now be able to better detect future variants of these applications.”
+

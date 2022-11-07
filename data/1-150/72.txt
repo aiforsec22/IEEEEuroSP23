@@ -1,0 +1,17 @@
+Triout - Spyware Framework for Android with Extensive Surveillance Capabilities
+No operating system is safe from malware, as cyber criminals will always want to steal, spy or tamper with your data. The proliferation of Android devices – from smartphones to tablets and smart TVs – has opened up new possibilities for malware developers, as all these devices pack microphones, cameras and location-tracking hardware they can turn into the perfect spy tools.
+
+Bitdefender researchers have identified a new Android spyware, dubbed Triout, which appears to act as a framework for building extensive surveillance capabilities into seemingly benign applications. Found bundled with a repackaged app, the spyware’s surveillance capabilities involve hiding its presence on the device, recording phone calls, logging incoming text messages, recoding videos, taking pictures and collecting GPS coordinates, then broadcasting all of that to an attacker-controlled C&C (command and control) server.
+
+It’s interesting that Triout, which is detected by Bitdefender’s machine learning algorithms, was first submitted from Russia, and most scans/reports came from Israel. The sample’s first appearance seems to be May 15, 2018, when it was uploaded to VirusTotal, but it’s unclear how the tainted sample is disseminated. Third-party marketplaces or some other attacker-controlled domains are likely used to host the sample.
+
+A subsequent investigation revealed that the spyware has the following capabilities:
+
+Records every phone call (literally the conversation as a media file), then sends it together with the caller id to the C&C (incall3.php and outcall3.php)
+Logs every incoming SMS message (SMS body and SMS sender) to C&C (script3.php)
+Has capability to hide self
+Can send all call logs (“content://call_log/calls”, info: callname, callnum, calldate, calltype, callduration) to C&C (calllog.php)
+Whenever the user snaps a picture, either with the front or rear camera, it gets sent to the C&C (uppc.php, fi npic.php orreqpic.php)
+Can send GPS coordinates to C&C (gps3.php)
+The C&C server to which the application seems to be sending collected data appears to be operational, as of this writing, and running since May 2018.
+

@@ -1,0 +1,23 @@
+Report: NSO Group's Pegasus Spyware Can Break Into Cloud Services, Transmit User Data to Server
+Israeli spyware company NSO Group’s powerful Pegasus malware—the same spyware implicated in a breach of WhatsApp earlier this year—is capable of scraping a target’s data from the servers of Apple, Google, Amazon, Facebook, and Microsoft, according to a report in the Financial Times on Friday.
+
+According to the Times, “people familiar with its sales pitch” as well as leaked sales documents show that NSO Group’s parent company Q-Cyber is advertising Pegasus as having the capability to copy authentication keys to services including Google Drive, Facebook Messenger, and iCloud from an infected phone to a web server that is then capable of independently downloading the target’s entire online history. The paper wrote that the documents advertise the functionality as allowing ongoing access to data stored on the servers of tech giants that persists beyond the Pegasus infection on the phone itself (presumably until the authentication key in question is invalidated):
+
+It works on any device that Pegasus can infect, including many of the latest iPhones and Android smartphones, according to the documents, and allows ongoing access to data uploaded to the cloud from laptops, tablets and phones—even if Pegasus is removed from the initially targeted smartphone.
+
+One pitch document from NSO’s parent company, Q-Cyber, which was prepared for the government of Uganda earlier this year, advertised the ability of Pegasus to “retrieve the keys that open cloud vaults” and “independently sync-and-extract data”.
+
+The documents brag that having access to a “cloud endpoint” allows access “far and above smartphone content,” the Times wrote.
+
+Amazon said there was no evidence its servers had been breached, as did Google, according to the paper. Facebook said it was reviewing the claims, while Microsoft said its security tools are “continually evolving” and Apple noted that while “expensive tools may exist to perform targeted attacks,” it does “not believe these are useful for widespread attacks against consumers.”
+
+An NSO Group spokesperson told the Times that “We do not provide or market any type of hacking or mass-collection capabilities to any cloud applications, services or infrastructure,” though it did not deny having developed the functionality.
+
+The WhatsApp breach was a notable example of a “zero click zero day,” in that it was able to infect a targeted device simply by sending a link to it that didn’t even need to be clicked to deliver its malware payload. NSO Group did not deny that it was behind the attack and the Department of Justice is investigating, according to the Times.
+
+NSO Group has consistently denied that it sells its products to governments for the purpose of anything but legitimate law enforcement and intelligence operations. However, researchers at the Toronto-based Citizen Lab have identified its tools in use in dozens of countries, including to target Omar Abdulaziz, a Saudi dissident living in Canada as part of an asylum program. Abdulaziz was in contact with fellow dissent Jamal Khashoggi before the latter was lured to the Saudi consulate in Turkey, tortured, and murdered last year.
+
+Citizen Lab and Mexican NGOs have also reported that the Mexican government has used Pegasus to illegally spy on journalists, lawyers, and activists, and NSO Group has reportedly sold its tools to a number of autocratic regimes. Its founder and CEO, Shalev Hulio, has justified targeting lawyers and journalists. The company is facing multiple lawsuits in Israel and Cyprus over alleged abuse of its spy tools.
+
+As the Next Web noted, cloud adoption worldwide is accelerating at a rapid pace, making vulnerabilities such as the one identified in the Times report critical ones. Cybersecurity firm Check Point recently identified unauthorized cloud and account access as among the biggest exploits for cloud services, while password-free two-step authentication could be one way of protecting customers from such attacks, the Next Web noted.
+

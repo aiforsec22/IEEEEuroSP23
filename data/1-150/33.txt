@@ -1,0 +1,30 @@
+Security researchers discover iOS version of Exodus Android spyware
+Exodus iOS spyware used against Italian and Turkmenistan users.
+
+Security researchers have discovered the iOS counterpart of a dangerous Android spyware strain that was seen earlier this year on the official Google Play Store.
+
+The good news, according to security researchers from cyber-security firm Lookout, is that the iOS version is less sophisticated than the Android variant and has not yet been distributed via the official Apple App Store.
+
+EXODUS ANDROID VARIANT DISCOVERED LAST MONTH
+The spyware is named Exodus and was developed by Italian app maker Connexxa, a known provider of surveillance tools to Italian authorities.
+
+Exodus came to light when last month security researchers from Security Without Borders found the spyware hidden inside an app uploaded on the Play Store, targeted at the customers of a local Italian internet service provider (ISP).
+
+They said the spyware was capable of rooting Android devices and possessed an advanced set of spying features that gave attackers full control of infected devices.
+
+Security Without Borders said it detected nearly 25 different Exodus-infected apps that had been uploaded on the Play Store over the last two years.
+
+LESS-SOPHISTICATED EXODUS IOS VERSION ALSO DISCOVERED
+But in research published today and presented at the Kaspersky Security Analyst Summit conference, the team at Lookout said it discovered an iOS variant of this spyware during their analysis of Exodus samples they've found last year.
+
+"Analysis of these Android samples led to the discovery of infrastructure that contained several samples of an iOS port," Lookout security researcher Adam Bauer said in a report published today.
+
+Bauer said the iOS version was being offered for download through phishing sites that imitated Italian and Turkmenistani mobile carriers.
+
+The Exodus-infected iOS apps were signed with Apple-issued enterprise certificates, which allowed victims to install the malicious apps, even from outside the App Store. Apple eventually revoked these certificates.
+
+Bauer said that compared to the Android version, which had been under development for at least five years, the iOS variant was far less sophisticated, suggesting it was a newer project.
+
+It could only collect and steal contacts, photos, videos, audio recordings, GPS information, and device location. It could also perform on-demand audio recording operations, however, it was nowhere near as intrusive and did not the same level of control of infected devices as the Android variant.
+
+The links between the two versions were also undeniable, as besides finding the iOS variant on the same server infrastructure as payloads used by the Android version, the iOS variant also uploaded stolen data to the same exiltration server, and used a similar protocol.

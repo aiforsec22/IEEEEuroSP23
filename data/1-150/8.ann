@@ -1,0 +1,161 @@
+T2	OS 295 302	Android
+T3	OS 1589 1596	Android
+T5	OS 3613 3620	Android
+T7	Malware 90 98	Cerberus
+T8	Malware 998 1006	Cerberus
+T9	Malware 1218 1226	Cerberus
+T10	Malware 1375 1383	Cerberus
+T11	Malware 3415 3423	Cerberus
+T12	Malware 3427 3435	Cerberus
+T13	Malware 3779 3787	Cerberus
+T14	Malware 4293 4301	Cerberus
+T15	Malware 4552 4560	Cerberus
+T16	Malware 4594 4602	Cerberus
+T17	Malware 4828 4836	Cerberus
+T18	Malware 5 10	Alien
+T19	Malware 26 31	Alien
+T20	Malware 268 273	Alien
+T21	Malware 964 969	Alien
+T22	Malware 1168 1173	Alien
+T23	Malware 1532 1537	Alien
+T24	Malware 1553 1558	Alien
+T25	Malware 2054 2059	Alien
+T26	Malware 3204 3209	Alien
+T27	Malware 4123 4128	Alien
+T28	Malware 4347 4352	Alien
+T29	Malware 4839 4844	Alien
+T30	Malware 5029 5034	Alien
+T31	Application 200 215	Bank of America
+T33	Application 568 598	Bank of America Mobile Banking
+T34	Application 680 688	Telegram
+T35	Application 2524 2534	TeamViewer
+T36	Application 2631 2641	TeamViewer
+T37	Application 2759 2769	TeamViewer
+T39	Time 1252 1261	Jan. 2020
+T40	Location 930 932	UK
+T42	Vulnerability 2094 2149	“android.permission.BIND_NOTIFICATION_LISTENER_SERVICE”
+T45	Time 807 812	Jan.,
+T1	MalwareType 40 54	Banking Trojan
+R1	isA Arg1:T19 Arg2:T1	
+R3	variantOf Arg1:T19 Arg2:T7	
+T48	MalwareType 99 113	banking trojan
+R4	isA Arg1:T7 Arg2:T48	
+T49	Malware 122 127	Alien
+T50	Application 218 235	Microsoft Outlook
+R5	targets Arg1:T49 Arg2:T31	
+R6	targets Arg1:T49 Arg2:T50	
+R7	targets Arg1:T20 Arg2:T2	
+T51	AttackPattern 351 433	bypass 2-factor authentication (2FA) security measures to steal victim credentials
+R8	uses Arg1:T20 Arg2:T51	
+T52	AttackPattern 486 539	take passwords from at least 226 mobile applications;
+R9	uses Arg1:T20 Arg2:T52	
+T53	Application 601 619	Capital One Mobile
+R10	targets Arg1:T20 Arg2:T33	
+R11	targets Arg1:T20 Arg2:T53	
+T41	Application 670 678	Snapchat
+T54	Application 691 708	Microsoft Outlook
+R12	targets Arg1:T20 Arg2:T41	
+R13	targets Arg1:T20 Arg2:T34	
+R14	targets Arg1:T20 Arg2:T54	
+T55	Location 868 877	Australia
+T56	Location 879 886	France,
+T57	Location 887 894	Germany
+T58	Location 896 901	Italy
+T59	Location 903 909	Poland
+T60	Location 911 917	Spain,
+T61	Location 918 924	Turkey
+T62	Location 939 941	US
+R15	targets Arg1:T20 Arg2:T55	
+R16	targets Arg1:T21 Arg2:T56	
+R17	targets Arg1:T21 Arg2:T57	
+R18	targets Arg1:T21 Arg2:T58	
+R19	targets Arg1:T21 Arg2:T59	
+R20	targets Arg1:T21 Arg2:T60	
+R21	targets Arg1:T21 Arg2:T61	
+R22	targets Arg1:T21 Arg2:T40	
+R23	targets Arg1:T21 Arg2:T62	
+R24	variantOf Arg1:T21 Arg2:T8	
+R25	variantOf Arg1:T22 Arg2:T9	
+R26	discoveredIn Arg1:T22 Arg2:T39	
+T63	Malware 1295 1303	Cerberus
+T64	Organization 1332 1345	Threat Fabric
+T65	Time 1352 1360	Thursday
+T66	Malware 1442 1447	Alien
+R27	targets Arg1:T24 Arg2:T3	
+T43	AttackPattern 1633 1666	ability to launch overlay attacks
+T67	AttackPattern 1668 1698	control and steal SMS messages
+T68	AttackPattern 1701 1722	harvest contact lists
+T69	AttackPattern 1736 1746	keylogging
+T70	AttackPattern 1749 1767	ocation-collecting
+R28	uses Arg1:T24 Arg2:T43	
+R29	uses Arg1:T24 Arg2:T67	
+R30	uses Arg1:T24 Arg2:T68	
+R31	uses Arg1:T24 Arg2:T69	
+R32	uses Arg1:T24 Arg2:T70	
+T71	AttackPattern 1864 1945	notification sniffer that allows it to access all new updates on infected devices
+R33	uses Arg1:T24 Arg2:T71	
+T72	AttackPattern 1999 2027	bypass 2FA security measures
+R34	uses Arg1:T24 Arg2:T72	
+R35	exploits Arg1:T25 Arg2:T42	
+T46	AttackPattern 2153 2219	get the content of status bar notifications on the infected device
+R36	uses Arg1:T25 Arg2:T46	
+T73	AttackPattern 2334 2445	using the Accessibility privileges on Android devices, performing all necessary user interactions all by itself
+R37	uses Arg1:T25 Arg2:T73	
+T4	AttackPattern 2589 2629	remote control over the victim’s devices
+R38	targets Arg1:T25 Arg2:T35	
+R39	uses Arg1:T25 Arg2:T4	
+T38	Time 3451 3459	last Aug
+R40	discoveredIn Arg1:T12 Arg2:T38	
+T47	Time 3566 3570	July
+T6	Application 3632 3643	Google Play
+T74	Time 3871 3878	Aug. 10
+T75	Time 4024 4027	Feb
+T76	Malware 4191 4199	Cerberus
+T77	Malware 4246 4251	Alien
+T78	AttackPattern 4254 4276	2FA-stealing technique
+R41	uses Arg1:T77 Arg2:T78	
+T79	Malware 4563 4568	Alien
+T80	Malware 4964 4972	Cerberus
+T81	Time 5010 5014	2020
+T44	OS 32 39	Android
+R42	targets Arg1:T19 Arg2:T44	
+R2	isA Arg1:T49 Arg2:T48	
+T32	MalwareType 11 14	RAT
+R43	isA Arg1:T18 Arg2:T32	
+T82	MalwareType 473 476	RAT
+R44	isA Arg1:T20 Arg2:T82	
+T83	MalwareType 274 280	trojan
+R45	isA Arg1:T20 Arg2:T83	
+T84	Application 550 562	banking apps
+R46	targets Arg1:T20 Arg2:T84	
+T85	MalwareType 1559 1562	RAT
+R47	isA Arg1:T24 Arg2:T85	
+T86	Application 2344 2368	Accessibility privileges
+T87	OS 2372 2379	Android
+R48	uses Arg1:T25 Arg2:T86	
+R49	targets Arg1:T25 Arg2:T87	
+T88	AttackPattern 2825 2875	full remote control of the device’s user interface
+T89	AttackPattern 2894 2926	access & change device settings,
+T90	AttackPattern 2927 2948	install & remove apps
+T91	AttackPattern 2962 2997	use any app installed on the device
+T92	Application 2999 3016	bank applications
+T93	Application 3018 3028	messengers
+T94	Application 3031 3046	social networks
+R50	uses Arg1:T25 Arg2:T88	
+R51	uses Arg1:T25 Arg2:T89	
+R52	uses Arg1:T25 Arg2:T90	
+R53	uses Arg1:T25 Arg2:T91	
+R54	targets Arg1:T25 Arg2:T92	
+R55	targets Arg1:T25 Arg2:T93	
+R56	targets Arg1:T25 Arg2:T94	
+T95	MalwareType 4083 4089	trojan
+T96	MalwareType 4360 4363	RAT
+R57	isA Arg1:T28 Arg2:T96	
+T97	MalwareType 4651 4657	trojan
+T98	MalwareType 5364 5379	banking trojans
+T99	MalwareType 3547 3561	banking trojan
+T100	MalwareType 3929 3935	trojan
+T101	Application 5549 5571	financial institutions
+T102	Application 5758 5772	online banking
+T103	Application 653 664	social apps
+T104	OS 2032 2039	Android

@@ -1,0 +1,14 @@
+Pegasus spyware has been here for years. We must stop ignoring it
+On July 18, a group of 17 newspaper and media organizations—aided by Amnesty International’s Security Lab and the research group Citizen Lab—revealed that one of the world’s most advanced and viciously invasive spyware tools had been used to hack, or attempt to hack, into 37 mobile phones owned by human rights activists, journalists, political dissidents, and business executives.
+
+The spyware, called Pegasus and developed by the Israeli company NSO Group, is reportedly instrumental to several governments’ oppressive surveillance campaigns against their own citizens and residents, and, while NSO Group has repeatedly denied allegations that it complicitly sells Pegasus to human right abusers, it is difficult to reconcile exactly how the zero-click spyware program—which non-consensually and invisibly steals emails, text messages, photos, videos, locations, passwords, and social media activity—is at the same time a tool that can, in its very use, respect the rights of those around the world to speak freely, associate safely, and live privately.
+
+Pegasus is spyware, and spyware is not made to respect privacy. It erodes it.
+
+What may be most upsetting about Sunday’s bombshell reporting is that the cybersecurity community has known about Pegasus for years. Antivirus vendors detect it. Digital forensics labs know how to catch it. And between 2016 and 2018, more than 1,000 IP addresses were found to be associated with it.
+
+With tools like Pegasus that can be abused on a global scale, we take on too big a risk. When weaponized by authoritarian governments, surveillance chills free speech, scares away dissent, and robs an innocent public of a life lived unwatched, for no crime committed other than speaking truth to power, conducting public health research, or simply loving another person.
+
+It enables abuses like the mobile phone hack of Hatice Cengiz, former fiancée of murdered Washington Post columnist Jamal Khoshoggi. After the world learned that her phone was hacked, she wrote:
+
+“I am deeply shocked that I have been targeted while I was in such pain waiting to find out what had happened to Jamal. This was the worst time of my life and yet the killers were spying on me. They have no shame. They must be brought to justice.”

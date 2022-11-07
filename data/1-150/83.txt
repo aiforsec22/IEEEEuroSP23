@@ -1,0 +1,22 @@
+Google Just Found (Probably) The Most Dangerous Android Malware Ever Seen
+Google has uncovered the Android version of Pegasus, a mobile spyware created by NSO Group, an Israeli surveillance company considered the most advanced producer of mobile spyware on the planet.
+
+Pegasus for iPhone was uncovered in August last year, unprecedented in its use of three previously-undisclosed, then-unpatched iOS vulnerabilities (known as zero-days). It targeted a Mexican journalist and UAE activist Ahmed Mansoor, who's currently incarcerated in Abu Dhabi. NSO Group is a portfolio company of American private equity firm Francisco Partners, which Forbes discovered had its fingers in multiple surveillance firms, and in one case was accused of helping Turkey spy on its citizens' via internet service providers.
+
+The versions aimed at Google's mobile operating system were first discovered in late 2016. Though just a few dozen of 1.4 billion Android devices were infected by Pegasus, and the two samples uncovered dated back to 2014, they still represented a significant find in the "surveillance-ware" world, according to researchers at Lookout. The firm's vice president of security intelligence Mike Murray wrote the Pegasus campaign against Android was "one of the most sophisticated and targeted mobile attacks we've seen in the wild." Lookout investigated the malware, also known as Chrysaor, with Google, just as it collaborated with the University of Toronto's Citizen Lab in uncovering Pegasus for iPhone.
+
+Like the iPhone version, the Android Pegasus had some advanced features: it could be controlled via SMS and self-destruct if required. The "highly advanced" tool was also able to grab large amounts of comms data, pilfering messages and call records from WhatsApp, Facebook, Twitter, Skype and Gmail, amongst others, Lookout noted in its report released Monday. It could also control the camera and microphone, as well as carry out keylogging and take screenshots.
+
+The "suicide" self-destruct feature was particularly devilish, helping NSO Group's malware avoid detection for almost three years. "If it feels like it's going to be found, it removes itself," said Lookout mobile security researcher Michael Flossman. "That's why it took so long to find these samples." Lookout and Google said that though the samples date from 2014, there was evidence the spyware was working on some victim Android phones when discovered in the last few months. All known targets have been alerted.
+
+While the iOS version removed itself if it detected a jailbreak, the Android tool would delete if it couldn't contact command and control servers for a set period of time. Or if certain tools, revealed by "antidote files," that could detect the malware were spied by Pegasus, it would disappear. One of the samples, aimed at Samsung phones, removed the manufacturer's system update app to prevent security fixes from disrupting its snooping.
+
+Flossman believes that Pegasus for Android was delivered in a similar fashion to its iPhone equivalent, via an SMS message. "The various exploits contained in this surveillance-ware would attempt to be run once the app was installed," Flossman said. "If these exploits were patched on the target device, Pegasus would still be able to function but with a reduced set of capabilities." Google said Pegasus never found its way onto the official Play store.
+
+But it wasn't clear, in the case of the Android attacks, if any zero-days were used to exploit devices and then install the malware. Instead, a known technique called Framaroot, which uses exploits named after Lord of the Rings characters, was used to "root" the device, where the attacker gains almost full control over the operating system. Other Android samples may use zero-days, Lookout warned.
+
+Google found most targets were located in Israel, though individuals in numerous countries were targeted, including Georgia, Mexico, Turkey and the UAE.
+
+NSO Group hadn't responded to a request for comment at the time of publication. The company hasn't been in touch with Lookout's researchers about either their Android or iOS findings, said Flossman.
+
+Lookout continues to chase NSO Group's surveillance operations across the world, and Flossman hinted more is coming. "This is definitely not the final chapter, we believe this report shows several of their components in Android... it doesn't cover their entire toolset."

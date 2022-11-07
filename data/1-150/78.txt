@@ -1,0 +1,125 @@
+SpyDealer: Android Trojan Spying on More Than 40 Apps
+With the prevalence of Google Android smartphones and the popularity of feature-rich apps, more and more people rely on smartphones to store and handle kinds of personal and business information which attracts adversaries who want to steal that information. Recently, Palo Alto Networks researchers discovered an advanced Android malware we’ve named “SpyDealer” which exfiltrates private data from more than 40 apps and steals sensitive messages from communication apps by abusing the Android accessibility service feature. SpyDealer uses exploits from a commercial rooting app to gain root privilege, which enables the subsequent data theft.
+
+SpyDealer has many capabilities, including:
+
+Exfiltrate private data from more than 40 popular apps including: WeChat, Facebook, WhatsApp, Skype, Line, Viber, QQ, Tango, Telegram, Sina Weibo, Tencent Weibo, Android Native Browser, Firefox Browser, Oupeng Brower, QQ Mail, NetEase Mail, Taobao, and Baidu Net Disk
+Abuses the Android Accessibility Service feature to steal sensitive messages from popular communication and social apps such as WeChat, Skype, Viber, QQ
+Takes advantage of the commercial rooting app “Baidu Easy Root” to gain root privilege and maintain persistence on the compromised device
+Harvests an exhaustive list of personal information including phone number, IMEI, IMSI, SMS, MMS, contacts, accounts, phone call history, location, and connected Wi-Fi information
+Automatically answer incoming phone calls from a specific number
+Remote control of the device via UDP, TCP and SMS channels
+Spy on the compromised user by:
+Recording the phone call and the surrounding audio & video.
+Taking photos via both the front and rear camera
+Monitoring the compromised device’s location
+Taking screenshots
+There are multiple factors that mitigate the risk of this threat to most users.
+
+As far as we know, SpyDealer has not been distributed through the Google Play store
+We do not know exactly how devices are initially infected with SpyDealer, but have seen evidence to suggest Chinese users becoming infected through compromised wireless networks.
+We have reported information on this threat to Google, and they have created protections through Google Play Protect.
+SpyDealer is only completely effective against Android devices running versions between 2.2 and 4.4, as the rooting tool it uses only supports those versions. This represents approximately 25% of active Android devices worldwide. On devices running later versions of Android, it can still steal significant amounts of information, but it cannot take actions that require higher privileges.
+As of June 2017, we have captured 1046 samples of SpyDealer. Our analysis shows that SpyDealer is currently under active development. There are three versions of this malware currently in the wild, 1.9.1, 1.9.2 and 1.9.3. Starting from 1.9.3, content of configuration files and almost all constant strings in the code are encrypted or encoded. An accessibility service was also introduced in 1.9.3 to steal targeted apps’ messages. According to our dataset, most of these samples use the app name “GoogleService” or “GoogleUpdate”. The most recent sample we have observed was created in May, 2017 while the oldest sample dates back to October, 2015, indicating this malware family has been active for over a year and a half. We also observed evidence of infected users discussing the malware in October 2015 and February 2016 as shown in Figure 1.
+
+Detailed Technical Analysis
+Service Launching and Configuration
+
+After installed on an Android device, SpyDealer shows no application icon. However, it registers two broadcast receivers to listen for events related to the device booting up and network connection status. Whenever any of these events are broadcasted, the key service component AaTService starts. At the first launch, it retrieves configuration information from the local asset file named readme.txt. The first line of this file indicates the IP address of a remote C2 server, the second line configures what actions the malware can take on mobile networks, and the third line specifies what actions are allowed under a Wi-Fi network. The configuration settings can also be remotely updated by various C2 channels. One example of the readme.txt is given in Figure 2. The full list of the IP addresses for the remote C2 servers is available in Appendix B. A partial listing of the configurable actions is depicted in Table 1.
+
+Number Action Number Action
+1 Get call history 9 Send recorded audio files
+2 Get SMS messages 10 Capture screenshot
+3 Record audio 11 List files under a given directory
+4 Get GSM location 12 Get GPS location
+5 Get contacts 20 Intercept incoming SMS messages
+7 Get information and network traffic of installed apps 21 Do not intercept incoming SMS messages
+8 Get device specific information 82 Get current running apps
+ 
+
+Rooting and Persistence
+
+SpyDealer uses two different rooting procedures to gain root (superuser) privilege. Samples of version 1.9.1 and 1.9.2 reuse the root exploits used by commercial rooting app “Baidu Easy Root”. Rooting applications like this one are created for users who want to gain low-level access to their phone which wouldn’t be possible without removing some security protections. This is not the first time that Android malware has stolen root exploits from existing commercial rooting tools. Previously in 2015, we saw the Rootnik Android Trojan abuse the “Root Assistant” tool to gain root access.
+
+SpyDealer 1.9.1 and 1.9.2 gain root privilege by abusing “Baidu Easy Root” as detailed below:
+
+Drops a customized su file named sux from assets to the app’s own data directory.
+Checks if the infected device is already rooted or not. If the root privilege is available, there is no need to escalate to root privilege.
+Checks the existence of the file /data/data/<package_name>/broot/raw.zip which contains all the rooting exploits. If there is no such file, the malware will download it from http[:]//yangxiu2014.0323.utnvg[.]com/apk/raw.zip. The file integrity is then inspected by comparing the MD5 value of the downloaded file and the pre-calculated one from http[:]//yangxiu2014.0323.utnvg[.]com/apk/md5.txt.
+Unzips the downloaded file to the app’s data directory and attempt to gain root privilege by systematically executing the exploits one by one.
+Installs busybox and remounts system partition as read-write by running a sequence of shell commands with superuser permission.
+The downloaded file “raw.zip” contains the exploits from “Baidu Easy Root” version 2.8.3, which is depicted in Figure 4.
+
+Table 2 gives a full list of the exploits stolen by SpyDealer. For example, 022d251cf509c2f0 is an executable binary file observed in the “raw.zip”, and the original file in “Baidu Easy Root” is actually in gzip format. It’s interesting that we can recover its original file name which is fb_mem_root.
+
+SpyDealer 1.9.1, 1.9.2, and 1.9.3 also gain root privilege thought another method that doesn’t use “Baidu Easy Root” as detailed below:
+
+Drop files including sux, getroot, logo.png and busybox_g1 from assets to the app’s own data directory.
+Copy files sux, logo.png and busybox_g1 that are dropped in the above step to /data/data/ <package_name>/app_bin
+Generate shell script /data/data/<package_name>/app_bin/toor.sh with the content depicted in Figure 5.
+Execute png and toor.sh to gain root privilege, and these two files are deleted at the end.
+
+Readers should note that this second rooting method only targets Android versions from 4.0 to 4.3 (included). However, the exploits used in this attack remains unknown to us as none of logo.png, getroot or busybox_g1 exists in the app’s assets.
+
+After gaining root privilege, SpyDealer takes steps to maintain persistence on the compromised device. It first drops a native executable file powermanager to its own data directory (Figure 6.) Once executed, powermanager creates a backup the app’s APK file to /system/bin/update_1.apk. Whenever the app is uninstalled (Figure 7,) the running powermanager will copy the APK file from /system/bin/update_1.apk to /system/app/Update.apk, resulting in the Trojan running as a system app (Figure 8.) After reinstallation, the core SpyDealer service (AaTService) is launched to perform malicious behaviors.
+
+Command & Control
+
+SpyDealer is capable of receiving commands from remote servers via a number of different channels by either actively initiating connections to C2 servers or passively receiving instructions from C2 servers. These channels include via SMS, UDP and TCP connections. This section details how the malware utilizes each of these channels to communicate with the remote C2 servers.
+
+SMS
+
+SpyDealer registers a broadcast receiver with a higher priority than the default messaging app to listen for the commands via incoming SMS messages. The commands received through SMS are first decoded for further parsing and processing. Each SMS command contains a command index and arguments split by a newline. The command index ranges from 1 to 5 and each command is detailed in Table 3.
+
+Table 3 SMS command list
+
+Command Index Description
+1 Get geographical location via GSM cell information.
+2 Collect the contacts on the device and send back via SMS.
+3 Gather SMS messages which are created later than a given date in the inbox, outbox and draft box, and then send back via SMS.
+4 Exfiltrate call histories that are later than a given date through SMS. The collected information contains call duration, phone number and date time.
+5 Set the auto reply phone number. The malware will automatically answer the incoming phone call when the number is the same as the set one.
+To get the geographical location based on the GSM cell information, SpyDealer takes advantage of the interface of Baidu map service (Figure 9.) It first collects the GSM cell identity, area code and network operator and then posts the encoded data to the Baidu map service to retrieve the geographical location. With this tactic, a compromised device’s location is exposed to the attacker even there is no GPS available.
+
+Besides the commands listed above, SpyDealer can also set the remote server’s IP address under the following two conditions:
+
+The length of the command index received in the SMS (Table 3) is larger than 4, then the command index is actually the remote server’s IP address
+The incoming SMS message body starts with the string “L112 ” which is followed by the remote server’s IP address
+If SpyDealer receives a command index of 1 or 2, it will not reply when it received an SMS command. However, if it receives a command index of 3, 4, or 5, SpyDealer will acknowledge that a command was received by sending back a specially formatted SMS response. For example, when received the command 5, it will automatically reply a message in the format “msg:repcall|<phone number>”.
+
+All incoming SMS messages that contain commands will be aborted, which means the user will not be aware of these messages. However, other types of SMS messages will also be blocked if the malware is set to do so or the incoming number is in the blocking list.
+
+TCP Server
+
+SpyDealer creates a TCP server on the compromised device listening at port 39568 and waits for incoming commands. The command format and description are listed below in Table 4.
+
+Table 4 Commands via TCP channel
+
+Command Format Description
+imei Send back the device IMEI
+mobileinfor Send back device information including IMEI, IMSI and phone number
+gettype\t1 Send back contacts information including contact name and phone number
+gettype\t\t1 Send back SMS messages in inbox, outbox and draft box
+gettype\t\t\t1 Send back call histories including phone call duration, type and date
+listdir\t<directory> Send back the information of files under a given directory. The information contains file path, file size and last modified time.
+Over Close the socket connection
+
+However, there is no authentication mechanism implemented before accepting the incoming commands, which means anyone can connect to a compromised device and control it as long as one knows the target device’s IP address.
+
+UDP/TCP Client
+
+Aside from the TCP server that passively waits for the commands, SpyDealer can also actively connect to the remote server with the configured IP address to ask for commands through UDP or TCP. At first launch, the remote server’s IP address is retrieved from the local asset readme.txt, and the use of UDP or TCP protocols is determined based on another local asset named socket. The list contains around 90 different IP/domains that SpyDealer may use as remote servers. The full list of IP/domains can be found in Appendix B.
+
+The command data received by the client is encrypted by the server using Tiny Encryption Algorithm (TEA) Once the client receives a command, the malware decrypts the data (Figure 10).  and then parses and processes the command. Through the UDP/TCP client channel, the attacker can fully control the compromised device with more than 45 different commands varying from private data collection, surveillance, and remote code execution.
+
+Each command starts with the command followed by a newline character and the base64 encoded arguments. Table 5 details a full list of commands available through this channel. One interesting command is named SendMsg. Previously, Android malware could fake an incoming SMS message by exploit the Smishing vulnerability, which was patched in Android 4.2. To achieve this effect in newer Android versions, SpyDealer first inserts an SMS message into the inbox and then posts a notification indicating an SMS message has arrived. To our knowledge, this is the first malware family that fakes an incoming SMS message in this way.
+
+The data sent back to the remote server is encrypted using TEA algorithm. Because UDP is a sessionless protocol by design, there is no guarantee that all transmitted packets will be received by the destination without any loss. To mitigate this risk, SpyDealer creates an effective session layer on top of UDP. SpyDealer divides the original data into multiple groups and each group has no more than 1000 bytes data. These groups are sent one by one and every transition is repeated three times. In order to restore the data at the server side, an additional identification code is added at the beginning of each grouped data. Hence, the format of the final group data is shown below:
+
+Private Data Collection
+
+As discussed in section Command & Control, we have seen this malware employ many mechanisms to collect private data. Additionally, with root privilege, SpyDealer also tries to gather data from more than 40 common apps falling in different categories including social, communication, browser, mobile mail client, etc. The targeted apps are listed in Table 7.
+
+Accessibility Service Abuse
+
+An increasing number of apps encrypt data before storing it into databases, especially for some popular communication and social apps. App developers do this to protect user data from malicious attacks like this one. To avoid this obstacle, starting in version 1.9.3, SpyDealer implemented an extra accessibility service to steal plain messages by directly extracting texts from the screen. Figure 12 depicts the accessibility service configuration in which the package names of targeted apps are declared.

@@ -1,0 +1,41 @@
+Gooligan Android malware grabs a million Google accounts in huge Google Play fraud
+Dysfunctional Android patching comes back to bite Google via two million fraudulent installs from Google Play in three months.
+
+A million Google accounts have been compromised in a massive fraud campaign exploiting Android devices and Google Play.
+
+At the heart of the campaign is a new variant of Android malware dubbed Gooligan, concealed in dozens of Android apps that exploit two unpatched flaws in Android to root infected devices.
+
+The malware nabs email account information and authentication tokens for accessing Google accounts. The attackers use the tokens to install select apps from Google Play on an infected device to boost in-app advertising revenue.
+
+Your Android smartphone might still be vulnerable to ancient Ghost Push Trojan
+Your Android smartphone might still be vulnerable to ancient Ghost Push Trojan
+
+Researchers have warned that over half of Android devices are still susceptible to Ghost Push malware.
+
+Read More
+
+According to Check Point, which reported the issue to Google, these tokens can be used to access data from Google Play, Gmail, Google Photos, Google Docs, G Suite, and Google Drive. The security company says one million Google accounts have been compromised this way since August, in what it believes is the largest Google account breach to date. Google users can use Check Point's Gooligan-checker to see if their account has been compromised.
+
+Rather than use those tokens to steal information, Gooligan-infected devices are designed to go about fraudulently earning their operators ad revenue. Check Point estimates that two million apps have been installed this way over the past three months.
+
+These apps earn attackers money in two ways: each app install results in a payment to the attacker, while apps also earn revenue from ad services that pay to distribute ads through installed apps. To feed the scheme, the malware also forces infected devices to leave positive reviews and a high rating on Google Play.
+
+Android security lead Adrian Ludwig said in a blog that Google had found no evidence that the user data has been accessed, adding that the main objective of the malware, which is a variant of the already known Ghost Push, is to promote apps rather than steal information.
+
+Google noted in its 2015 annual Android security report that a third of Android apps downloaded outside Google Play were infected with Ghost Push. The malware infected up to 600,000 Android devices per day during its peak.
+
+While details of the attack were released on Thursday, a major clean-up effort involving several Google teams, handset makers, hosting companies, ISPs, and research firms is already under way.
+
+Google has also revoked affected tokens and is using the Verify Apps on Android devices to block a list of Gooligan-infected apps, Ludwig said.
+
+While Gooligan doesn't directly harm end users, it comes at a price for legitimate Android developers who have a hard enough time being found among the two million apps now on Google Play.
+
+Google in October rolled out new detection and filtering in Google Play to combat fraudulently-installed apps and fake app reviews, which attempt to game Google's app-discovery algorithms.
+
+"These attempts not only violate the Google Play Developer Policy, but also harm our community of developers by hindering their chances of being discovered or recommended through our systems. Ultimately, they put the end users at risk of making wrong decisions based on inaccurate, unauthentic information," Google said at the time.
+
+Like Ghost Push, the Gooligan malware affects pre-Android 6.0 Marshmallow devices. However, the new variant also lays bare the security risks foisted on end users by Android's dysfunctional patching system, which leaves large swathes of over one billion handsets exposed to old bugs.
+
+According to Check Point, Gooligan gains root on infected devices by exploiting Vroot and Towelroot, which have been known of since 2013 and 2014, respectively.
+
+"Gooligan potentially affects devices on Android 4 Jelly Bean and KitKat, and 5 Lollipop, which is over 74 percent of in-market devices today. About 57 percent of these devices are located in Asia and about nine percent are in Europe," Check Point said.

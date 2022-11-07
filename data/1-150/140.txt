@@ -1,0 +1,22 @@
+Red Alert Android Trojan for Rent at $500 Per Month
+It is also capable of stealing information from the infected devices, including SMS messages and contact details, can block calls from banks, and can also keep in touch with bots via Twitter in the event its command and control (C&C) server is taken online.
+
+When they detailed the threat in September last year, SfyLabs’ researchers said the malware included around 60 60 HTML overlays used to steal login credentials, but also revealed that the Trojan’s actor was constantly releasing updates for their malicious program.
+
+A Trustwave report published this week reveals that the malware author is currently advertising the Trojan as targeting nearly 120 banks in Australia, Austria, Canada, Czech Republic, Poland, Denmark, Germany, France, Lithuania, India, Italy, Ireland, Japan, New Zeeland, Romania, Spain, Sweden, Turkey, United Kingdom, and the United States.
+
+Additionally, the malware developer claims the Trojan is targeting payment systems (PayPal, Airbnb, Coinbase, Poker Stars, Neteller, Skrill, and Unocoin Bitcoin Wallet India) and CC+VBV Grabbers (Amazon, eBay, LINE, GetTaxi, Snapchat, Viber, Instagram, Facebook, Skype, UBER, WeChat, and WhatsApp) too.
+
+Red Alert 2.0 is also advertised as able to intercept and send SMS messages and launch APKs. The author also claims new functionality is being developed, that injects can be built per customer request, and that updates are being released every two weeks. Miscreants can rent the Trojan starting at $200 for 7 days, $500 for a month, or $999 for 2 months.
+
+As part of the analyzed Red Alert 2.0 attack, the malware was being distributed attached to spam messages. Although the threat is currently detected by nearly half of the VirusTotal anti-virus companies, the distribution method is still interesting for an Android malware family.
+
+While analyzing the threat, the researchers discovered that it requests permissions to write, read, and receive SMS messages, make calls, and change network state, consistent with the advertised functionality.
+
+The Trojan also includes services such as a watchdog that ensures it is running, services that register the device bot and wait for commands from the command and control (C&C) server, one that ensures the device is connected to the C&C, one that ensures the malware runs at reboot, and a SMS interceptor.
+
+Another component is in charge of requesting permissions from the user and overlaying templates received from the C&C on top of legitimate apps. The malware also sets itself as the default telephony provider and requests device admin access (which allows it to completely wipe all data from the device).
+
+C&C communication is performed using HTTP POST requests to a specific URL. If the website is not available, the malware attempts to connect with the operator through a Twitter message.
+
+“At the time of our analysis, there were no longer any live C&C servers running and so we were unable to observe any traffic between the malware and the C&C server. We couldn't complete the reverse-engineering of some of the commands due to some issues, including no traffic observed, heavily obfuscated code, but also extremely buggy malware that crashed several times when we sent it a command,” the researchers note.

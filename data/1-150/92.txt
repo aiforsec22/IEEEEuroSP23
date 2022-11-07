@@ -1,0 +1,40 @@
+There’s a new troublemaker in town. Its name is AndroidOS/MalLocker.B.
+
+MalLocker.B is the youngest but shrewdest member of a ransomware family that has a long history of holding Android devices for ransom. Like most other mobile ransomware programs, it does not encrypt victims’ files. Instead, it uses several new tricks to render the phone unusable, making it one of the most advanced mobile malware programs around.
+
+Here’s what you need to know to keep your phone safe from the malevolent MalLocker.B.
+
+ 
+
+A Family History Only Hackers Would Be Proud Of
+
+MalLocker.B is the latest variant in a family of Android ransomware that is continually evolving. Like its predecessors, MalLocker.B displays a ransom note that covers the entire screen of infected devices. Everything underneath it cannot be seen or accessed, preventing victims from using their phones.
+
+Typically, the hackers design the ransom note so that it looks like a notice from a local police department. It informs the victims that they committed a crime and must pay a fine, after which it provides instruction on how to do so.
+
+In the past, cybercriminals created the ransom note by hacking the functionality behind the system alert window. The system alert window was always displayed in the foreground because it was designed to notify users about system alerts and errors. This made it ideal for the hackers’ purpose.
+
+Eventually, Google developers made several changes to the Android operating system that eliminated the threat from this attack vector. This prompted the hackers to start using other techniques to create the ransom note (e.g., abusing Android’s accessibility services), but they weren’t as effective.
+
+In October 2020, a new MalLocker.B variant appeared. It is the most evolved Android malware to date, according to the Microsoft researchers who found it. The ransomware:
+
+Uses new techniques to display the ransom note. Specifically, MalLocker.B misuses Android’s notification services to create a call notification that displays the ransom note full screen. It then overrides an Android function that moves activities to the background. This is done to keep the ransom note in the foreground.
+Uses a new obfuscation technique. To help the ransomware avoid detection by security solutions, part of the ransomware’s code is encrypted and stored in a folder. Once the ransomware is on the victim’s phone, the code is decrypted and executed.
+Includes code from an open-source machine-learning module. Although the code is not being used yet, the researchers believe it will be in the future. The machine learning module automatically resizes and crops images based on screen size.
+“This new mobile ransomware variant is an important discovery because the malware exhibits behaviors that have not been seen before and could open doors for other malware to follow,” according to the researchers.
+
+ 
+
+What You Can Do to Protect Your Mobile Device from MalLocker.B
+
+Although the way in which MalLocker.B displays its ransom note is unique, its distribution method is not. Cybercriminals typically hide it in video players, pirated versions of popular commercial apps, and cracked games, which they hawk in online forums and host on third-party websites.
+
+Therefore, if you want to protect your device from MalLocker.B, you should install apps only from official app stores like Google Play. Although malicious programs sometimes find their way into these stores, the risk is much greater if you download apps from other sites.
+
+Before you install a program from an official app store, though, you should:
+
+Ask yourself “Do I really need it?” Every program you install presents a security risk, so the number of apps should be kept to a minimum.
+Research the app. Besides looking at the program’s reviews and user ratings in the app store, perform Internet searches on the app and its developer. This research might reveal security issues.
+Make sure your security solution is updated. That way, it can detect and block known malware.
+Make sure your mobile device’s operating system software is updated. Updates patch known vulnerabilities, which helps reduce the number of exploitable entry points.
+Finally, when you are installing a program, pay attention to the permissions. Be wary of any app that asks for permissions that seem excessive for what the program does. For example, one of MalLocker.B’s predecessors needs a special permission. To give it, you have to go through several screens and accept a warning that the app will be able to monitor your activity through Android’s accessibility services. Warnings like this should raise a red flag.

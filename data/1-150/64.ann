@@ -1,0 +1,92 @@
+T4	OS 1170 1177	Android
+T5	OS 2182 2189	Android
+T6	OS 2322 2329	Android
+T7	OS 3657 3664	Android
+T8	OS 3722 3729	Android
+T9	OS 4575 4582	Android
+T10	OS 4993 5000	Android
+T11	OS 2147 2150	iOS
+T12	OS 2274 2277	iOS
+T13	OS 2728 2731	iOS
+T14	OS 3614 3617	iOS
+T15	OS 3902 3905	iOS
+T16	OS 4523 4526	iOS
+T17	OS 4870 4873	iOS
+T18	Application 2092 2102	Play store
+T19	Organization 1948 1954	Google
+T21	ThreatActor 1736 1741	eSurv
+T25	Organization 0 7	Lookout
+T26	Organization 139 146	Lookout
+T27	Organization 1931 1938	Lookout
+T28	Organization 4698 4705	Lookout
+T29	Organization 4931 4938	Lookout
+T30	OS 50 53	IOS
+T31	Organization 637 661	Security Without Borders
+T32	ThreatActor 1244 1259	Connexxa S.R.L.
+T33	ThreatActor 1765 1773	Connexxa
+T34	ThreatActor 1879 1894	Connexxa S.R.L.
+T35	ThreatActor 3388 3403	Connexxa S.R.L.
+T37	Application 2571 2597	Apple Developer Enterprise
+T2	MalwareType 104 120	surveillanceware
+T36	Vulnerability 588 596	DirtyCOW
+T44	Vulnerability 606 619	CVE-2016-5195
+T45	AttackPattern 925 999	use of certificate pinning and public key encryption for C2 communications
+T46	ThreatActor 1336 1344	Connexxa
+T20	ThreatActor 1411 1422	eSurv S.R.L
+T38	ThreatActor 1424 1430	eSurv’
+T22	ThreatActor 1792 1803	eSurv S.R.L
+T39	Time 1807 1811	2014
+T24	ThreatActor 1898 1910	eSurv S.R.L.
+T40	Time 1914 1926	Feb 28, 2016
+T23	Malware 1840 1854	eSurv software
+T41	Time 2048 2052	2018
+T43	Location 2400 2407	Italian
+T47	Location 2412 2425	Turkmenistani
+T48	Application 2474 2491	Apple’s app store
+T49	Organization 2527 2532	Apple
+T50	Organization 2836 2841	Apple
+T42	Organization 4752 4757	Apple
+T51	OS 5005 5008	iOS
+T52	OS 96 103	Android
+T3	OS 174 181	Android
+T53	MalwareType 182 198	surveillanceware
+T1	OS 58 65	Android
+T54	MalwareType 66 82	Surveillanceware
+R17	targets Arg1:T23 Arg2:T18	
+R18	targets Arg1:T23 Arg2:T43	
+R19	targets Arg1:T23 Arg2:T47	
+R21	targets Arg1:T23 Arg2:T48	
+R22	targets Arg1:T23 Arg2:T37	
+T58	AttackPattern 4181 4211	perform remote audio recording
+R23	uses Arg1:T23 Arg2:T58	
+R24	targets Arg1:T23 Arg2:T16	
+R25	targets Arg1:T23 Arg2:T9	
+R26	targets Arg1:T23 Arg2:T14	
+R27	targets Arg1:T23 Arg2:T7	
+R28	targets Arg1:T23 Arg2:T8	
+R29	hasAuthor Arg1:T23 Arg2:T35	
+R30	targets Arg1:T23 Arg2:T11	
+R31	targets Arg1:T23 Arg2:T5	
+R32	targets Arg1:T23 Arg2:T12	
+R33	targets Arg1:T23 Arg2:T6	
+R34	targets Arg1:T23 Arg2:T13	
+R35	targets Arg1:T23 Arg2:T49	
+R36	targets Arg1:T23 Arg2:T42	
+R37	targets Arg1:T23 Arg2:T17	
+R38	targets Arg1:T23 Arg2:T10	
+R39	targets Arg1:T23 Arg2:T51	
+R1	hasAuthor Arg1:T23 Arg2:T34	
+R2	hasAuthor Arg1:T23 Arg2:T24	
+T55	AttackPattern 4084 4090	Photos
+T56	AttackPattern 4092 4098	Videos
+T57	AttackPattern 4100 4112	GPS location
+T59	AttackPattern 4114 4132	Device information
+T60	AttackPattern 4066 4082	Audio recordings
+T61	AttackPattern 4056 4064	Contacts
+R3	uses Arg1:T23 Arg2:T61	
+R4	uses Arg1:T23 Arg2:T56	
+R5	uses Arg1:T23 Arg2:T60	
+R6	uses Arg1:T23 Arg2:T59	
+R7	uses Arg1:T23 Arg2:T57	
+R8	uses Arg1:T23 Arg2:T55	
+T62	Application 2732 2741	App Store

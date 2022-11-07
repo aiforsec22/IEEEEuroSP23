@@ -1,0 +1,107 @@
+T2	OS 381 388	Android
+T4	OS 1680 1687	Android
+T5	OS 2047 2054	Android
+T6	OS 2310 2317	Android
+T7	OS 2804 2811	Android
+T8	OS 2923 2930	Android
+T10	Indicator 1247 1282	http: // pc35hiptpcwqezgs [.] Onion
+T11	Malware 16 25	Mazar BOT
+T12	Malware 2215 2224	Mazar BOT
+T13	Malware 2498 2507	Mazar BOT
+T14	Malware 2613 2622	Mazar BOT
+T15	Malware 2773 2782	Mazar BOT
+T16	Malware 2965 2974	Mazar BOT
+T17	Malware 3230 3239	Mazar BOT
+T18	Organization 87 103	Heimdal Security
+T19	Organization 319 335	Heimdal Security
+T28	Organization 807 822	Recorded Future
+T29	Application 2151 2157	Polipo
+T30	Application 2247 2253	Polipo
+T31	Application 2375 2381	Chrome
+T34	Application 3663 3666	TOR
+T39	Indicator 1029 1098	https: //play.google.com/store/apps/details?id=org.torproject.android
+T40	Indicator 961 1028	https: //f-droid.org/repository/browse/?fdid=org.torproject.android
+T23	Time 834 847	November 2015	
+T24	AttackPattern 1299 1420	automated SMS will be sent to the number 9876543210 (+98 is the country code for Iran) with the text message: “Thank you”
+T25	AttackPattern 853 927	malicious packet (APK) retrieves TOR and installs it on the victim’s phone
+T27	Vulnerability 1666 1674	backdoor
+T32	AttackPattern 1746 1836	Send SMS messages to premium channel numbers, seriously increasing the victim’s phone bill
+T33	AttackPattern 1839 1856	Read SMS messages
+T35	AttackPattern 1884 1962	read authentication codes sent as part of two-factor authentication mechanisms	
+T37	AttackPattern 2168 2192	Man-in-the-Middle Attack	
+R15	targets Arg1:T12 Arg2:T30	
+R16	targets Arg1:T12 Arg2:T6	
+T43	AttackPattern 2427 2437	stop calls
+R17	uses Arg1:T12 Arg2:T43	
+R18	targets Arg1:T12 Arg2:T31	
+T44	Application 2549 2555	Chrome
+R19	targets Arg1:T13 Arg2:T44	
+T45	AttackPattern 2674 2702	Controlling the phone’s keys
+T46	AttackPattern 2704 2727	Enabling the sleep mode
+T47	AttackPattern 2729 2766	Save actions in the phone’s settings,
+R20	uses Arg1:T14 Arg2:T45	
+R21	uses Arg1:T14 Arg2:T46	
+R22	uses Arg1:T14 Arg2:T47	
+R23	targets Arg1:T15 Arg2:T7	
+T36	Application 3296 3304	Dark Web
+R24	targets Arg1:T17 Arg2:T36	
+T9	OS 3425 3432	Android
+R26	targets Arg1:T17 Arg2:T34	
+T48	Application 3785 3795	VirusTotal
+R25	targets Arg1:T11 Arg2:T2	
+T3	Malware 769 786	Mazar Android BOT
+T22	AttackPattern 444 492	gain administrator rights on the victim’s device
+R29	uses Arg1:T11 Arg2:T22	
+T21	AttackPattern 531 539	SEND_SMS
+T41	AttackPattern 575 594	SYSTEM_ALERT_WINDOW
+T42	AttackPattern 596 605	WRITE_SMS
+T49	AttackPattern 607 627	ACCESS_NETWORK_STATE
+T50	AttackPattern 629 638	WAKE_LOCK
+T51	AttackPattern 640 649	GET_TASKS
+T52	AttackPattern 651 661	CALL_PHONE
+T53	AttackPattern 663 674	RECEIVE_SMS
+T54	AttackPattern 676 692	READ_PHONE_STATE
+T55	AttackPattern 694 702	READ_SMS
+T56	AttackPattern 704 715	ERASE_PHONE
+R2	uses Arg1:T11 Arg2:T21	
+R4	uses Arg1:T11 Arg2:T41	
+R5	uses Arg1:T11 Arg2:T42	
+R6	uses Arg1:T11 Arg2:T50	
+R7	uses Arg1:T11 Arg2:T51	
+R8	uses Arg1:T11 Arg2:T52	
+R9	uses Arg1:T11 Arg2:T53	
+R10	uses Arg1:T11 Arg2:T54	
+R11	uses Arg1:T11 Arg2:T55	
+R12	uses Arg1:T11 Arg2:T49	
+R13	uses Arg1:T11 Arg2:T56	
+R14	indicates Arg1:T40 Arg2:T3	
+R28	indicates Arg1:T39 Arg2:T3	
+R30	discoveredIn Arg1:T3 Arg2:T23	
+R31	uses Arg1:T3 Arg2:T25	
+R33	uses Arg1:T3 Arg2:T24	
+R34	indicates Arg1:T10 Arg2:T3	
+R35	exploits Arg1:T3 Arg2:T27	
+R36	targets Arg1:T3 Arg2:T4	
+R37	uses Arg1:T3 Arg2:T32	
+R38	uses Arg1:T3 Arg2:T33	
+R39	uses Arg1:T3 Arg2:T35	
+R40	targets Arg1:T3 Arg2:T5	
+R41	targets Arg1:T3 Arg2:T29	
+R42	uses Arg1:T3 Arg2:T37	
+T57	AttackPattern 2980 3028	check the phone to identify the victim’s country
+T58	Indicator 3129 3175	locale.getCountry () equalsIgnoreCase ( “RU”))
+T59	Indicator 3176 3215	Process.killProcess (Process.myPid ());
+R43	uses Arg1:T16 Arg2:T57	
+T61	AttackPattern 1445 1490	SMS also includes the device’s location data.
+R47	uses Arg1:T3 Arg2:T61	
+T60	OS 32 39	Android
+R1	targets Arg1:T11 Arg2:T60	
+*	hasAlias T3 T11
+T1	AttackPattern 2527 2555	injecting itself into Chrome
+R3	uses Arg1:T13 Arg2:T1	
+R27	indicates Arg1:T59 Arg2:T16	
+R32	indicates Arg1:T58 Arg2:T16	
+T62	Application 1977 1996	online banking apps
+T63	Application 3723 3732	antivirus
+T64	Application 886 889	TOR
+T65	Application 1170 1173	TOR

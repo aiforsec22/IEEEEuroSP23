@@ -1,0 +1,52 @@
+Anubis Android Malware Is Back and It Is Focusing on Financial Institutions
+The Most Recent Operations Affects Roughly 400 Targets.
+
+In a recent malware operation, the Anubis Android banking malware is targeting clients of approximately 400 banking institutions.
+
+The cybercriminals are attacking financial institutions, cryptocurrency wallets, and digital payment systems by posing as an Orange S.A. Android application intended to collect information such as:
+
+browsing cookies,
+passwords saved on browsers,
+credit card details.
+More on Anubis Malware
+Anubis is a mobile malware that affects Android smartphones and is spread using malicious apps listed on the legitimate Google Play store.
+
+The banking malware initially surfaced on Russian hacking forums in 2016, where it was distributed as an open-source banking trojan with guidance on how to set up the client and components.
+
+In 2019, the malware introduced what seemed to be a nearly working ransomware component and spread using fraudulent apps on Google’s Play Store. Anubis reappeared last year with large-scale phishing attacks that targeted 250 shopping and financial applications.
+
+Anubis M.O.
+When potential victims access apps for targeted platforms, Anubis malware will show bogus phishing login forms in order to steal their credentials.
+
+The overlay screen shown below will be displayed over the genuine app’s login screen to trick users into assuming it’s a valid login form when, in fact, the hackers are receiving their credentials.
+
+According to BleepingComputer, the latest version of Anubis targets nearly 400 apps and has the following functions:
+
+Records screen activity as well as audio from the microphone;
+Implements a SOCKS5 proxy for covert communication and package delivery;
+Captures screenshots;
+Sends mass text messages from the device to predefined receivers;
+Recovers contacts saved on the device;
+Sends, reads, deletes, and block notifications for SMS messages received by the device;
+Scans the device for files of interest to exfiltrate;
+Locks the device screen and shows a persistent ransom message;
+Submits USSD code requests to query bank balances;
+Captures GPS data and pedometer statistics;
+Implements a keylogger login information theft;
+Surveils active apps to imitate and execute overlay attacks;
+Stops malicious functionality and removes the virus from the device.
+
+The newest Anubis acts just like its previous variants meaning that it detects if the impacted device has Google Play Protected active and sends a bogus system warning to deceive the target into deactivating it.
+
+Following deactivation, the malware gains complete control of the device and is now able to send and receive data from the C2 without any interference.
+
+According to BleepingComputer, the fake Orange app is currently being distributed through malicious websites, direct messages on social media, smishing, and forum posts.
+
+According to Lookout’s threat researcher Kristina Balaam, this operation isn’t focusing only on French users of Orange S.A. but also on the American ones.
+
+ While we can’t be certain whether the app has been used in a successful attack, we do know they are targeting US banks including Bank of America, U.S. Bank, Capital One, Chase, SunTrust, and Wells Fargo.
+
+Who Is Responsible?
+Because they were cautious enough to conceal their C2 infrastructure registration trace, there is no clear information on the cybercriminals who are now delivering the Anubis malware.
+
+Cloudflare is used by the hackers to redirect all network traffic via the SSL protocol, while the C2 poses as a cryptocurrency trading website with the domain “hhtps:/quickbitrade[.]com.”

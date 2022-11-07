@@ -1,0 +1,78 @@
+T1	OS 138 145	Android
+T2	OS 289 296	Android
+T3	OS 661 668	Android
+T5	Malware 29 38	DroidJack
+T6	Malware 341 350	DroidJack
+T7	Malware 406 415	DroidJack
+T8	Malware 968 977	DroidJack
+T9	Malware 1034 1043	DroidJack
+T10	Malware 1804 1813	DroidJack
+T19	Malware 146 153	Marcher
+T20	Application 0 15	Super Mario Run
+T21	Application 183 198	Super Mario Run
+T22	Application 273 288	Super Mario Run
+T23	Application 614 629	Super Mario Run
+T24	Application 698 713	Super Mario Run
+T26	Organization 379 389	Proofpoint
+T27	Application 441 451	Pokemon GO
+T28	Indicator 758 790	69b4b32e4636f1981841cbbe3b927560
+T29	Malware 993 1002	SandroRAT
+T30	Application 1519 1527	WhatsApp
+T31	MalwareType 39 42	RAT
+T32	MalwareType 351 354	RAT
+T43	Malware 730 750	net.droidjack.server
+R1	isA Arg1:T6 Arg2:T32	
+R2	uses Arg1:T6 Arg2:T22	
+T11	Time 464 473	July 2016
+*	hasAlias T8 T29
+T13	AttackPattern 1055 1128	capturing sensitive information like call data, SMS data, videos, photos,
+R6	uses Arg1:T9 Arg2:T13	
+T14	AttackPattern 1198 1219	records all the calls
+R7	uses Arg1:T9 Arg2:T14	
+T15	AttackPattern 1337 1389	stores all the captured videos in a “video.3gp” file
+T16	AttackPattern 1402 1436	harvests call details and SMS logs
+R8	uses Arg1:T9 Arg2:T16	
+R9	targets Arg1:T9 Arg2:T30	
+T4	Application 2185 2196	Google Play
+R11	uses Arg1:T9 Arg2:T15	
+T18	Application 56 61	Mario
+T25	Application 66 73	Pokemon
+R12	targets Arg1:T6 Arg2:T2	
+R13	targets Arg1:T7 Arg2:T27	
+R14	discoveredIn Arg1:T7 Arg2:T11	
+R15	targets Arg1:T7 Arg2:T3	
+R16	targets Arg1:T7 Arg2:T23	
+T33	AttackPattern 1169 1183	call recording
+R17	uses Arg1:T9 Arg2:T33	
+T34	AttackPattern 1305 1320	video capturing
+R18	uses Arg1:T9 Arg2:T34	
+R19	isA Arg1:T5 Arg2:T31	
+R20	targets Arg1:T19 Arg2:T21	
+T12	MalwareType 957 960	RAT
+R5	isA Arg1:T8 Arg2:T12	
+T38	AttackPattern 1510 1532	extracts WhatsApp data
+R24	uses Arg1:T9 Arg2:T38	
+R10	targets Arg1:T5 Arg2:T20	
+T17	MalwareType 154 160	trojan
+R25	isA Arg1:T19 Arg2:T17	
+T39	OS 208 215	Android
+R26	targets Arg1:T19 Arg2:T39	
+T40	MalwareType 416 419	RAT
+R27	isA Arg1:T7 Arg2:T40	
+T41	Application 854 869	Super Mario Run
+T35	MalwareType 1194 1197	RAT
+R21	isA Arg1:T9 Arg2:T35	
+T36	MalwareType 1044 1047	RAT
+R22	isA Arg1:T9 Arg2:T36	
+T37	MalwareType 1333 1336	RAT
+T42	MalwareType 1545 1548	RAT
+T44	AttackPattern 1549 1645	stores all the data in a database (DB) in order to send it to the Command & Control (C&C) server
+R23	uses Arg1:T9 Arg2:T44	
+T45	MalwareType 1769 1772	RAT
+T46	MalwareType 1703 1706	RAT
+T47	MalwareType 1814 1817	RAT
+R28	isA Arg1:T10 Arg2:T47	
+T48	MalwareType 2082 2085	RAT
+R4	indicates Arg1:T28 Arg2:T43	
+T49	MalwareType 1506 1509	RAT
+T50	Application 2166 2176	app stores

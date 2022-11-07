@@ -1,0 +1,78 @@
+T1	OS 10 13	iOS
+T2	OS 184 187	iOS
+T3	OS 1242 1251	iOS 9.3.5
+T4	OS 1356 1359	iOS
+T5	Malware 157 164	Pegasus
+T6	Malware 931 938	Pegasus
+T7	Malware 1322 1329	Pegasus
+T8	Malware 1603 1610	Pegasus
+T9	Malware 1927 1934	Pegasus
+T10	Application 243 247	OS X
+T11	OS 323 342	OS X 10.10 Yosemite
+T14	Application 1561 1565	OS X
+T15	Organization 57 62	Apple
+T16	Organization 77 82	Apple
+T17	Organization 277 282	Apple
+T18	Organization 1183 1188	Apple
+T19	Organization 1418 1423	Apple
+T20	OS 344 365	OS X 10.11 El Capitan
+T21	Application 370 376	Safari
+T22	Application 768 781	Safari WebKit
+T23	Application 1528 1534	Safari
+T24	Application 1586 1592	Safari
+T25	Vulnerability 546 576	three zero-day vulnerabilities
+T26	Application 1163 1169	WeChat
+T27	OS 1462 1475	OS X Yosemite
+T29	Organization 1629 1640	Citizen Lab
+T30	Organization 1645 1652	Lookout
+T31	Hardware 1983 1986	Mac
+T12	Malware 1 8	Pegasus
+R1	targets Arg1:T12 Arg2:T1	
+T13	OS 51 55	OS X
+R2	targets Arg1:T12 Arg2:T13	
+R3	targets Arg1:T5 Arg2:T2	
+T28	Malware 506 513	Pegasus
+T35	AttackPattern 580 664	remotely jailbreak and install a suite of monitoring software onto a victim's device
+R4	uses Arg1:T28 Arg2:T35	
+R5	exploits Arg1:T28 Arg2:T25	
+T36	Vulnerability 742 764	memory corruption flaw
+R6	exploits Arg1:T28 Arg2:T36	
+R7	has Arg1:T22 Arg2:T36	
+T37	Vulnerability 948 960	kernel flaws
+R8	exploits Arg1:T6 Arg2:T37	
+T38	AttackPattern 1006 1029	intercept text messages
+T39	AttackPattern 1031 1044	pilfer emails
+T40	AttackPattern 1046 1061	access contacts
+T41	AttackPattern 1066 1118	steal information from a variety of third-party apps
+T42	Application 1129 1134	Gmail
+T43	Application 1136 1144	Facebook
+T44	Application 1146 1151	Skype
+T45	Application 1153 1161	WhatsApp
+R9	uses Arg1:T6 Arg2:T38	
+R10	uses Arg1:T6 Arg2:T39	
+R11	uses Arg1:T6 Arg2:T40	
+R12	uses Arg1:T6 Arg2:T41	
+R13	targets Arg1:T6 Arg2:T42	
+R14	targets Arg1:T6 Arg2:T43	
+R15	targets Arg1:T6 Arg2:T45	
+R16	targets Arg1:T6 Arg2:T26	
+R17	targets Arg1:T6 Arg2:T44	
+T34	OS 1382 1386	OS X
+T46	Vulnerability 1276 1309	WebKit and kernel vulnerabilities
+R18	exploits Arg1:T7 Arg2:T46	
+R19	has Arg1:T4 Arg2:T46	
+R20	has Arg1:T34 Arg2:T46	
+T47	OS 1480 1490	El Capitan
+T48	ThreatActor 1824 1827	NSO
+T49	Location 1832 1839	Israeli
+T50	Organization 1881 1910	Francisco Partners Management
+R21	hasAuthor Arg1:T9 Arg2:T48	
+R22	has Arg1:T48 Arg2:T50	
+R24	has Arg1:T48 Arg2:T49	
+T51	Application 2044 2057	Mac App Store
+R25	has Arg1:T31 Arg2:T51	
+T32	Location 1868 1872	U.S.
+R23	has Arg1:T50 Arg2:T32	
+R26	has Arg1:T16 Arg2:T10	
+R27	has Arg1:T16 Arg2:T2	
+T52	Application 1102 1118	third-party apps

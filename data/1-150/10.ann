@@ -1,0 +1,42 @@
+T1	OS 216 223	Android
+T3	Malware 6 15	DroidJack
+T4	Malware 388 397	DroidJack
+T5	Malware 786 795	DroidJack
+T6	Malware 959 968	DroidJack
+T7	Malware 1736 1745	DroidJack
+T8	Malware 1817 1826	DroidJack
+T9	Malware 253 262	Droidjack
+T10	Organization 1008 1016	BBC News
+T11	Location 102 108	Europe
+T12	Location 902 909	Belgium
+T13	OS 29 36	Android
+R1	targets Arg1:T3 Arg2:T13	
+T14	Malware 241 250	DroidJack
+T15	MalwareType 268 288	remote access trojan
+R2	isA Arg1:T9 Arg2:T15	
+T17	AttackPattern 445 497	take remote control of someone else’s Android device
+R4	uses Arg1:T4 Arg2:T17	
+T2	AttackPattern 521 552	recording private conversations
+T18	AttackPattern 554 604	reading emails, browser history and text messages,
+T19	AttackPattern 616 648	tracking their physical location
+R5	uses Arg1:T4 Arg2:T2	
+R6	uses Arg1:T4 Arg2:T18	
+R7	uses Arg1:T4 Arg2:T19	
+T20	Location 869 883	United Kingdom
+T21	Location 885 891	France
+T22	Location 893 900	Germany
+T23	Location 914 925	Switzerland
+T24	Time 987 992	2014.
+T25	Location 1061 1074	United States
+T26	Malware 1206 1215	DroidJack
+T27	AttackPattern 2204 2264	snooping on other people’s phones and private communications
+R8	uses Arg1:T8 Arg2:T27	
+T28	MalwareType 290 293	RAT
+R9	isA Arg1:T9 Arg2:T28	
+T29	OS 483 490	Android
+T16	Location 738 746	European
+R3	targets Arg1:T5 Arg2:T20	
+R10	targets Arg1:T5 Arg2:T21	
+R11	targets Arg1:T5 Arg2:T22	
+R12	targets Arg1:T5 Arg2:T12	
+R13	targets Arg1:T5 Arg2:T23	

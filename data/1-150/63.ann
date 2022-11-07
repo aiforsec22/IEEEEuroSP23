@@ -1,0 +1,47 @@
+T1	OS 111 118	Android
+T3	OS 612 619	Android
+T4	OS 934 941	Android
+T7	Malware 0 12	HummingWhale
+T8	Malware 1255 1267	HummingWhale
+T9	Malware 1898 1910	HummingWhale
+T10	Malware 1937 1949	HummingWhale
+T11	Malware 2236 2248	HummingWhale
+T12	Malware 68 78	HummingBad
+T13	Malware 235 245	HummingBad
+T14	Malware 651 661	HummingBad
+T15	Malware 953 963	HummingBad
+T16	Organization 487 498	Check Point
+T17	Organization 681 692	Check Point
+T18	Organization 911 922	Check Point
+T19	Organization 1298 1309	Check Point
+T20	Organization 2211 2222	Check Point
+T21	Organization 2663 2674	Check Point
+T23	Indicator 1772 1791	‘assets/group.png’,
+T5	Application 45 62	Google Play Store
+T24	Malware 214 226	HummingWhale
+T25	Time 264 268	July
+R1	discoveredIn Arg1:T13 Arg2:T25	
+R2	targets Arg1:T7 Arg2:T5	
+R3	targets Arg1:T12 Arg2:T1	
+T6	Application 1689 1706	Google Play Store
+T22	Malware 1858 1868	HummingBad
+T26	AttackPattern 1959 1987	provide a user with fake ads
+T27	AttackPattern 2291 2405	malware installed through apps without being noticeably suspicious by asking for a number of different permissions
+T28	AttackPattern 1193 1235	perform ad fraud at an unprecedented scale
+T29	Malware 1021 1033	HummingWhale
+T30	Time 725 729	2016
+T31	MalwareType 565 571	adware
+R4	isA Arg1:T13 Arg2:T31	
+R6	targets Arg1:T13 Arg2:T3	
+R7	targets Arg1:T15 Arg2:T4	
+R8	uses Arg1:T29 Arg2:T28	
+R9	targets Arg1:T8 Arg2:T6	
+R10	indicates Arg1:T23 Arg2:T8	
+R11	uses Arg1:T10 Arg2:T26	
+T32	AttackPattern 2049 2209	Once the user tries to close the ad, the app, which was already downloaded by the malware, is uploaded to the virtual machine and run as if it is a real device,
+R12	uses Arg1:T10 Arg2:T32	
+R13	uses Arg1:T11 Arg2:T27	
+T2	Time 905 909	2017
+R5	variantOf Arg1:T9 Arg2:T22	
+T33	Application 2460 2475	fraudulent apps
+T34	OS 358 365	Android

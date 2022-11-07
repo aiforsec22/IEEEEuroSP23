@@ -1,0 +1,86 @@
+T1	OS 5 12	Android
+T2	OS 294 301	Android
+T3	OS 1681 1688	Android
+T4	OS 3201 3208	Android
+T5	OS 1830 1833	iOS
+T6	Malware 136 143	Monokle
+T7	Malware 465 472	Monokle
+T8	Malware 805 812	Monokle
+T9	Malware 1359 1366	Monokle
+T10	Malware 1650 1657	Monokle
+T11	Malware 2218 2225	Monokle
+T12	Malware 2697 2704	Monokle
+T13	Malware 3347 3354	Monokle
+T14	Malware 3526 3533	Monokle
+T15	Organization 2652 2659	Lookout
+T16	Organization 3462 3469	Lookout
+T17	ThreatActor 2708 2733	Special Technology Centre
+T18	ThreatActor 2735 2738	STC
+T19	ThreatActor 2792 2795	STC
+T20	ThreatActor 3168 3171	STC
+T21	Organization 3077 3112	Main Intelligence Directorate (GRU)
+T22	Location 2027 2035	Caucasus
+T23	Location 2089 2096	Georgia
+T24	Person 2865 2870	Obama
+T25	AttackPattern 331 375	conduct surveillance on selected individuals
+R1	uses Arg1:T6 Arg2:T25	
+T26	Organization 452 459	Lookout
+T27	MalwareType 473 493	remote-access trojan
+R2	isA Arg1:T7 Arg2:T27	
+T28	AttackPattern 611 621	keylogging
+T29	AttackPattern 623 647	taking photos and videos
+T30	AttackPattern 649 737	retrieving history of apps including web browsers, social media services, and messengers
+T31	AttackPattern 739 772	tracking the location of the user
+R3	uses Arg1:T7 Arg2:T28	
+R4	uses Arg1:T7 Arg2:T29	
+R5	uses Arg1:T7 Arg2:T30	
+R6	uses Arg1:T7 Arg2:T31	
+T32	AttackPattern 832 909	install trusted certificates which allow it to gain root access to the device
+R7	uses Arg1:T8 Arg2:T32	
+T33	AttackPattern 1028 1124	exploiting accessibility services and tailoring them to steal data from third-party applications
+R8	uses Arg1:T8 Arg2:T33	
+T34	AttackPattern 1137 1246	using the predictive-text dictionaries of the user to gain insight into the kinds of topic that interest them
+R9	uses Arg1:T8 Arg2:T34	
+T35	AttackPattern 1269 1353	record the screen when it is being unlocked in order to reveal the victim's passcode
+R10	uses Arg1:T8 Arg2:T35	
+T36	Person 1428 1438	Adam Bauer
+T37	Organization 1539 1544	ZDNet
+R11	targets Arg1:T10 Arg2:T3	
+T38	Time 1968 1972	2016
+R12	targets Arg1:T10 Arg2:T22	
+T39	Location 2064 2071	Armenia
+T40	Location 2073 2083	Azerbaijan
+T41	Location 2122 2127	Syria
+R13	targets Arg1:T10 Arg2:T39	
+R14	targets Arg1:T10 Arg2:T40	
+R15	targets Arg1:T10 Arg2:T23	
+R16	targets Arg1:T10 Arg2:T41	
+T42	Malware 2491 2503	Dark Caracal
+T43	Person 2642 2647	Bauer
+T44	Location 2774 2787	St Petersburg
+T45	Time 2898 2902	2016
+T46	Location 2975 2977	US
+R17	hasAuthor Arg1:T12 Arg2:T17	
+R18	hasAuthor Arg1:T12 Arg2:T18	
+T47	Location 2819 2826	Russian
+T48	Malware 3272 3279	Monokle
+T49	AttackPattern 2300 2353	built around trojanized versions of real applications
+R19	uses Arg1:T11 Arg2:T49	
+R20	has Arg1:T18 Arg2:T44	
+R21	has Arg1:T17 Arg2:T44	
+T50	Location 2743 2750	Russian
+R22	has Arg1:T50 Arg2:T44	
+R23	has Arg1:T19 Arg2:T47	
+R24	targets Arg1:T19 Arg2:T46	
+R25	targets Arg1:T20 Arg2:T4	
+R26	hasAuthor Arg1:T48 Arg2:T20	
+T51	AttackPattern 2531 2594	phishing attacks through messaging applications, SMS, or emails
+R27	uses Arg1:T42 Arg2:T51	
+T52	MalwareType 3404 3424	surveillance malware
+R28	isA Arg1:T13 Arg2:T52	
+T53	AttackPattern 25 47	take photos and videos
+T54	AttackPattern 52 75	spy on your app history
+R29	uses Arg1:T6 Arg2:T53	
+R30	uses Arg1:T6 Arg2:T54	
+T55	Application 1039 1061	accessibility services
+T56	Application 700 712	social media

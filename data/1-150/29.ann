@@ -1,0 +1,169 @@
+T1	OS 2409 2416	Android
+T2	OS 6269 6289	Android 4.3 or lower
+T3	OS 6307 6318	Android 4.4
+T4	OS 6641 6648	Android
+T5	OS 6836 6843	Android
+T6	OS 6897 6904	Android
+T7	OS 6949 6956	Android
+T9	OS 7328 7335	Android
+T11	OS 10133 10144	Android 7.0
+T12	OS 12514 12521	Android
+T27	Malware 23 26	Zen
+T28	Malware 705 708	Zen
+T29	Malware 874 877	Zen
+T30	Malware 5903 5906	Zen
+T31	Malware 7040 7043	Zen
+T32	Malware 7160 7163	Zen
+T33	Malware 7234 7237	Zen
+T34	Malware 7467 7470	Zen
+T35	Malware 7571 7574	Zen
+T36	Malware 8648 8651	Zen
+T37	Malware 9811 9814	Zen
+T38	Malware 11637 11640	Zen
+T39	Malware 13056 13059	Zen
+T40	Indicator 10076 10095	/proc/[pid]/cmdline
+T44	Indicator 12758 12822	5d98d8a7a012a858f0fa4cf8d2ed3d5a82937b1a98ea2703d440307c63c6c928
+T45	Indicator 12886 12950	84672fb2f228ec749d3c3c1cb168a1c31f544970fd29136bea2a5b2cefac6d04
+T46	Indicator 12990 13054	bd233c1f5c477b0cc15d7f84392dab3a7a598243efa3154304327ff4580ae213
+T47	Indicator 13084 13148	eb12cd65589cbc6f9d3563576c304273cb6a78072b0c20a155a0951370476d8d
+T48	MalwareType 0 3	PHA
+T49	MalwareType 688 691	PHA
+T50	MalwareType 1456 1459	PHA
+T51	MalwareType 1902 1905	PHA
+T52	MalwareType 2261 2264	PHA
+T53	MalwareType 2454 2457	PHA
+T54	MalwareType 2730 2733	PHA
+T56	MalwareType 4555 4558	PHA
+T58	MalwareType 6001 6004	PHA
+T59	MalwareType 11539 11542	PHA
+T60	MalwareType 11648 11651	PHA
+T69	Indicator 12967 12989	com.android.world.news
+T72	Indicator 12836 12885	com.counterterrorist.cs.elite.combat.shootinggame
+T73	Indicator 12699 12757	com.targetshoot.zombieapocalypse.sniper.zombieshootinggame
+T75	Indicator 13067 13083	com.lmt.register
+R1	indicates Arg1:T40 Arg2:T37
+R8	indicates Arg1:T47 Arg2:T39
+R19	indicates Arg1:T75 Arg2:T39
+T76	Time 44 60	January 11, 2019
+T13	Application 64 83	Google Play Protect
+T77	MalwareType 92 131	Potentially Harmful Applications (PHAs)
+T14	Application 138 157	Google Play Protect
+R18	isA Arg1:T27 Arg2:T48	
+R20	isA Arg1:T27 Arg2:T77	
+R21	targets Arg1:T77 Arg2:T13	
+T74	Malware 700 703	Zen
+R22	isA Arg1:T74 Arg2:T49	
+T15	AttackPattern 709 742	uses root permissions on a device
+R23	uses Arg1:T28 Arg2:T15	
+T79	AttackPattern 883 914	gain access to root permissions
+R24	uses Arg1:T29 Arg2:T79	
+T80	Malware 1106 1109	Zen
+T81	MalwareType 1213 1216	PHA
+T16	Application 1284 1303	Google Play Protect
+T82	MalwareType 1329 1332	PHA
+R25	isA Arg1:T80 Arg2:T81	
+T83	Time 2027 2037	April 2013
+T71	AttackPattern 2081 2108	use of dynamic code loading
+T84	AttackPattern 2116 2195	fetching executable code from remote sources after the initial app is installed
+T85	AttackPattern 2285 2319	displayed ads from various sources
+T86	AttackPattern 2348 2368	rooting capabilities
+T87	Malware 2604 2607	Zen
+R15	discoveredIn Arg1:T87 Arg2:T83	
+R27	uses Arg1:T80 Arg2:T71	
+R28	uses Arg1:T80 Arg2:T84	
+R29	uses Arg1:T80 Arg2:T85	
+R30	uses Arg1:T80 Arg2:T86	
+T61	AttackPattern 2808 2858	create a proxy for all ads-related network traffic
+T62	AttackPattern 3049 3098	combine ads from third-party advertising networks
+R31	uses Arg1:T87 Arg2:T61	
+R32	uses Arg1:T87 Arg2:T62	
+T55	MalwareType 4424 4439	Click fraud PHA
+T88	AttackPattern 4441 4537	simulate user clicks on ads instead of simply displaying ads and waiting for users to click them
+T57	MalwareType 4858 4873	click fraud PHA
+T89	AttackPattern 4874 4973	requests a URL to the advertising network directly instead of proxying it through an additional SDK
+T90	AttackPattern 4979 5102	command & control server (C&C server) returns the URL to click along with a very long list of additional parameters in JSON
+T91	AttackPattern 5111 5221	After rendering the ad on the screen, the app tries to identify the part of the advertisement website to click
+T92	AttackPattern 5247 5344	he app loads Javascript snippets from the JSON parameters to click a button or other HTML element
+R39	isA Arg1:T30 Arg2:T58	
+T93	AttackPattern 6005 6122	attempts to root devices and gain persistence on them by reinstalling itself on the system partition of rooted device
+R40	uses Arg1:T30 Arg2:T93	
+R9	targets Arg1:T30 Arg2:T2	
+T65	Malware 6363 6366	Zen
+T67	AttackPattern 7092 7121	downloads additional payloads
+R11	uses Arg1:T31 Arg2:T67	
+T8	AttackPattern 7164 7210	requires root to work correctly on the Android
+R12	uses Arg1:T32 Arg2:T8	
+T68	AttackPattern 7245 7302	uses its root privileges to turn on accessibility service
+R14	uses Arg1:T33 Arg2:T68	
+T10	AttackPattern 7628 7746	implements three accessibility services directed at different Android API levels and uses these accessibility services
+R41	uses Arg1:T35 Arg2:T10	
+T94	AttackPattern 7931 8052	clicks the appropriate buttons, scrollbars, and other UI elements to go through account sign-up without user intervention
+T95	AttackPattern 8222 8309	uses its root privilege to inject code into the Setup Wizard, extract the CAPTCHA image
+T97	AttackPattern 8315 8370	sends it to a remote server to try to solve the CAPTCHA
+R45	uses Arg1:T35 Arg2:T94	
+R47	uses Arg1:T35 Arg2:T95	
+R49	uses Arg1:T35 Arg2:T97	
+T98	AttackPattern 8995 9046	injects its own code into the system_server process
+R50	uses Arg1:T36 Arg2:T98	
+T99	AttackPattern 9117 9196	hide itself from any anti-PHA systems that look for a specific app process name
+R51	uses Arg1:T36 Arg2:T99	
+T100	AttackPattern 9289 9406	creates hooks to prevent the phone from rebooting, going to sleep or allowing the user from pressing hardware buttons
+R52	uses Arg1:T36 Arg2:T100	
+T101	AttackPattern 9604 9631	turn off SELinux protection
+T102	AttackPattern 9646 9715	finds a process id value for the process it wants to inject with code
+R53	uses Arg1:T36 Arg2:T101	
+R54	uses Arg1:T36 Arg2:T102	
+T41	Time 11909 11922	February 2018
+T43	Location 11957 11962	India
+T64	Location 11964 11970	Brazil
+T66	Location 11976 11985	Indonesia
+R2	targets Arg1:T38 Arg2:T43	
+R3	targets Arg1:T38 Arg2:T64	
+R4	targets Arg1:T38 Arg2:T66	
+T20	Application 12105 12124	Google Play Protect
+T21	Application 12152 12171	Google Play Protect
+T22	Application 12308 12319	Google Play
+T23	Application 12329 12348	Google Play Protect
+T24	Application 12365 12376	Google Play
+T25	Application 12467 12486	Google Play Protect
+T26	Application 12531 12548	Google Play Store
+T103	MalwareType 12952 12966	Rooting trojan
+T104	MalwareType 12824 12835	Click fraud
+T105	MalwareType 12688 12698	Custom ads
+T106	Application 790 810	fake Google accounts
+R17	targets Arg1:T28 Arg2:T106	
+T42	AttackPattern 760 810	enable a service that creates fake Google accounts
+R55	uses Arg1:T28 Arg2:T42	
+T78	AttackPattern 2373 2384	click fraud
+R26	uses Arg1:T80 Arg2:T78	
+T18	AttackPattern 11708 11736	inserting an advertising SDK
+R33	uses Arg1:T38 Arg2:T18	
+T19	MalwareType 930 936	trojan
+T63	MalwareType 5935 5949	rooting trojan
+R5	isA Arg1:T30 Arg2:T63	
+T70	OS 7203 7210	Android
+R6	targets Arg1:T32 Arg2:T70	
+R7	isA Arg1:T38 Arg2:T60	
+T17	MalwareType 11756 11762	trojan
+R10	isA Arg1:T38 Arg2:T17	
+T107	MalwareType 6369 6383	rooting trojan
+T108	MalwareType 2534 2545	click fraud
+T109	MalwareType 4326 4337	Click fraud
+T110	MalwareType 11834 11845	click fraud
+T111	MalwareType 12008 12019	click fraud
+T112	MalwareType 7085 7091	trojan
+T113	MalwareType 7141 7147	trojan
+T114	MalwareType 7238 7244	trojan
+T115	MalwareType 7621 7627	trojan
+T116	MalwareType 8652 8658	trojan
+T117	MalwareType 9815 9821	trojan
+T118	MalwareType 13060 13066	trojan
+T119	MalwareType 4405 4408	PHA
+T120	Application 850 872	accessibility services
+T121	Application 7645 7667	accessibility services
+T122	Application 7811 7826	Google accounts
+T123	Application 7856 7862	Google
+T124	Application 8091 8097	Google
+T125	MalwareType 2373 2384	click fraud
+T126	Malware 7155 7158	Zen
+T127	OS 7690 7697	Android

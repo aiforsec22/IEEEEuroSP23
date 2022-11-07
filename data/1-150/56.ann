@@ -1,0 +1,66 @@
+T3	OS 948 955	Android
+T6	OS 2082 2089	Android
+T10	Malware 0 8	MazarBOT
+T11	Malware 1150 1158	MazarBOT
+T12	Malware 1627 1635	MazarBOT
+T13	Malware 2031 2039	MazarBOT
+T14	Organization 85 101	Heimdal Security
+T20	Organization 383 390	Heimdal
+T21	Organization 608 615	Heimdal
+T22	Organization 2294 2301	Heimdal
+T23	Organization 1062 1077	Recorded Future
+T24	Location 466 471	Italy
+T25	Location 2101 2108	Denmark
+T26	Indicator 879 912	www[.]fhsinsaat.com/apk/post.apk,
+T19	Time 79 83	2015
+T29	AttackPattern 173 261	The campaign sent out fake emails purporting to originate from PostNord and Post Denmark
+R3	uses Arg1:T10 Arg2:T29	
+T15	AttackPattern 263 356	When clicked on, the infected emails downloaded Cryptolocker2 ransomware onto users’ machines
+R4	uses Arg1:T10 Arg2:T15	
+R6	targets Arg1:T10 Arg2:T24	
+T2	Location 476 483	Denmark
+R7	targets Arg1:T10 Arg2:T2	
+T17	Organization 495 507	Post Denmark
+R9	targets Arg1:T10 Arg2:T17	
+T31	Organization 236 244	PostNord
+T32	Organization 249 261	Post Denmark
+T16	Malware 595 603	MazarBOT
+R11	indicates Arg1:T26 Arg2:T16	
+T34	Malware 990 998	MazarBOT
+R12	targets Arg1:T34 Arg2:T3	
+T35	Time 1121 1137	November of 2015
+R14	discoveredIn Arg1:T34 Arg2:T35	
+T36	Malware 1297 1305	MazarBOT
+T37	Time 1340 1348	February
+T38	Malware 1404 1412	MazarBOT
+T39	AttackPattern 1426 1520	spread via SMS texts that asked users to click on a link in order to view a multimedia message
+R15	uses Arg1:T38 Arg2:T39	
+T40	AttackPattern 1723 1767	send SMS messages to premium channel numbers
+T42	AttackPattern 1644 1721	ability to open, monitor and control backdoors on the victim’s Android device
+R16	uses Arg1:T12 Arg2:T42	
+R17	uses Arg1:T12 Arg2:T40	
+T5	AttackPattern 1821 1877	read SMS messages, including two-step verification codes
+R18	uses Arg1:T12 Arg2:T5	
+T41	Application 1888 1900	Polipo proxy
+T43	AttackPattern 1905 1944	launch man-in-the-middle (MitM) attacks
+R19	targets Arg1:T12 Arg2:T41	
+R20	uses Arg1:T12 Arg2:T43	
+T44	AttackPattern 1950 1999	inject itself in the mobile Google Chrome browser
+R21	uses Arg1:T12 Arg2:T44	
+R22	targets Arg1:T13 Arg2:T6	
+T8	Location 2122 2127	Italy
+R23	targets Arg1:T13 Arg2:T25	
+R24	targets Arg1:T13 Arg2:T8	
+T9	Application 2497 2514	Google Play Store
+R27	targets Arg1:T10 Arg2:T31	
+R28	targets Arg1:T10 Arg2:T32	
+T1	OS 9 16	Android
+R1	targets Arg1:T10 Arg2:T1	
+T18	OS 570 577	Android
+R2	targets Arg1:T16 Arg2:T18	
+T4	OS 1097 1104	Android
+T7	OS 2132 2139	Android
+T45	Application 1978 1991	Google Chrome
+T46	Application 2547 2556	antivirus
+T47	MalwareType 325 335	ransomware
+T48	OS 1707 1714	Android

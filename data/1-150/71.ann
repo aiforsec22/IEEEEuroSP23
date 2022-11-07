@@ -1,0 +1,166 @@
+T3	OS 5289 5296	Android
+T4	Application 5310 5324	Android Studio
+T5	OS 7416 7423	Android
+T7	Malware 0 10	ViceLeaker
+T8	Malware 1250 1260	ViceLeaker
+T9	Malware 5822 5832	ViceLeaker
+T10	Malware 6853 6863	ViceLeaker
+T11	Malware 7086 7096	ViceLeaker
+T12	Organization 174 183	Kaspersky
+T13	Organization 7042 7051	Kaspersky
+T15	Application 4715 4719	XMPP
+T17	Location 49 60	Middle East
+T24	Application 4091 4099	Telegram
+T25	Application 4206 4214	Telegram
+T26	Application 4225 4233	Telegram
+T27	Application 4104 4123	WhatsApp messengers
+T28	Indicator 6338 6353	iliageram[.]ir.
+T29	Indicator 1422 1448	com.xapps.SexGameForAdults
+T30	Indicator 6226 6244	“185.51.201[.]133”
+T31	Indicator 1687 1703	185.141.60[.]213
+T32	Indicator 1535 1551	188.165.49[.]205
+T33	Indicator 1610 1626	188.165.49[.]205
+T34	Indicator 1511 1523	com.psiphon3
+T35	Indicator 1586 1598	com.psiphon3
+T36	Indicator 2728 2741	reqsmscal.php
+T37	Indicator 2772 2785	reqsmscal.php
+T38	Indicator 2811 2824	reqsmscal.php
+T39	Indicator 2887 2900	reqsmscal.php
+T40	Indicator 2952 2965	reqsmscal.php
+T41	Indicator 3030 3043	reqsmscal.php
+T42	Indicator 3107 3120	reqsmscal.php
+T43	Indicator 3162 3175	reqsmscal.php
+T44	Indicator 3219 3233	reqcalllog.php
+T45	Indicator 3262 3276	reqcalllog.php
+T46	Indicator 3308 3322	reqcalllog.php
+T47	Indicator 3374 3388	reqcalllog.php
+T48	Indicator 3444 3458	reqcalllog.php
+T49	Indicator 3488 3502	reqcalllog.php
+T50	Indicator 3535 3549	reqcalllog.php
+T51	Indicator 3608 3622	reqcalllog.php
+T52	Indicator 7136 7169	Trojan-Spy.AndroidOS.ViceLeaker.*
+T53	Indicator 1449 1459	dexlib 2.x
+T54	Indicator 1524 1534	dexlib 2.x
+T55	Indicator 1599 1609	dexlib 2.x
+T56	Indicator 1676 1686	dexlib 2.x
+T57	Indicator 1460 1476	188.165.28[.]251
+T58	Indicator 1661 1675	ir.abed.dastan
+R1	indicates Arg1:T28 Arg2:T9
+R2	indicates Arg1:T29 Arg2:T8
+R3	indicates Arg1:T30 Arg2:T9
+R4	indicates Arg1:T31 Arg2:T8
+R5	indicates Arg1:T32 Arg2:T8
+R6	indicates Arg1:T33 Arg2:T8
+R7	indicates Arg1:T34 Arg2:T8
+R8	indicates Arg1:T35 Arg2:T8
+R9	indicates Arg1:T36 Arg2:T8
+R10	indicates Arg1:T37 Arg2:T8
+R11	indicates Arg1:T38 Arg2:T8
+R12	indicates Arg1:T39 Arg2:T8
+R13	indicates Arg1:T40 Arg2:T8
+R14	indicates Arg1:T41 Arg2:T8
+R15	indicates Arg1:T42 Arg2:T8
+R16	indicates Arg1:T43 Arg2:T8
+R17	indicates Arg1:T44 Arg2:T8
+R18	indicates Arg1:T45 Arg2:T8
+R19	indicates Arg1:T46 Arg2:T8
+R20	indicates Arg1:T47 Arg2:T8
+R21	indicates Arg1:T48 Arg2:T8
+R22	indicates Arg1:T49 Arg2:T8
+R23	indicates Arg1:T50 Arg2:T8
+R24	indicates Arg1:T51 Arg2:T8
+R25	indicates Arg1:T52 Arg2:T11
+R26	indicates Arg1:T53 Arg2:T8
+R27	indicates Arg1:T54 Arg2:T8
+R28	indicates Arg1:T55 Arg2:T8
+R29	indicates Arg1:T56 Arg2:T8
+R30	indicates Arg1:T57 Arg2:T8
+R31	indicates Arg1:T58 Arg2:T8
+R32	targets Arg1:T7 Arg2:T17	
+T59	Time 65 73	May 2018
+T60	Location 156 163	Israeli
+R34	targets Arg1:T7 Arg2:T60	
+R35	discoveredIn Arg1:T7 Arg2:T59	
+T62	Organization 757 768	Bitdefender
+T22	Malware 1181 1191	ViceLeaker
+T63	Indicator 1389 1421	51df2597faa3fce38a4c5ae024f97b1c
+T64	Indicator 1478 1510	2d108ff3a735dea1d1fdfa430f37fab2
+T65	Indicator 1553 1585	7ed754a802f0b6a1740a99683173db73
+T66	Indicator 1628 1660	3b89e5cd49c05ce6dc681589e6c368d9
+R40	indicates Arg1:T63 Arg2:T8	
+R42	indicates Arg1:T64 Arg2:T8	
+T20	AttackPattern 2241 2295	exfiltration of SMS messages, call logs and other data
+R47	uses Arg1:T8 Arg2:T20	
+T71	AttackPattern 2491 2580	uses HTTP for communication with the C2 server for command handling and data exfiltration
+T21	AttackPattern 2742 2768	Send specified SMS message
+T72	AttackPattern 2786 2807	Call specified number
+T73	AttackPattern 2825 2883	Exfiltrate device info, such as phone model and OS version
+T74	AttackPattern 2901 2948	Exfiltrate a list of all installed applications
+T75	AttackPattern 2966 3000	Exfiltrate default browser history
+T14	AttackPattern 3044 3077	Exfiltrate Chrome browser history
+T76	AttackPattern 3121 3158	Exfiltrate memory card file structure
+T77	AttackPattern 3176 3215	Record surrounding sound for 80 seconds
+T78	AttackPattern 3234 3258	Exfiltrate all call logs
+T79	AttackPattern 3277 3304	Exfiltrate all SMS messages
+T80	AttackPattern 3323 3370	Upload specified file from the device to the C2
+T81	AttackPattern 3389 3440	Download file from specified URL and save on device
+T82	AttackPattern 3459 3480	Delete specified file
+T83	AttackPattern 3550 3603	Take photo (muted audio) with rear camera, send to C2
+T84	AttackPattern 3623 3677	Take photo (muted audio) with front camera, send to C2
+R49	uses Arg1:T8 Arg2:T71	
+R50	uses Arg1:T8 Arg2:T21	
+R51	uses Arg1:T8 Arg2:T72	
+R52	uses Arg1:T8 Arg2:T73	
+R53	uses Arg1:T8 Arg2:T74
+R54	uses Arg1:T8 Arg2:T75
+R55	uses Arg1:T8 Arg2:T14
+R56	uses Arg1:T8 Arg2:T76
+R57	uses Arg1:T8 Arg2:T77
+R58	uses Arg1:T8 Arg2:T78
+R59	uses Arg1:T8 Arg2:T79
+R60	uses Arg1:T8 Arg2:T80
+R61	uses Arg1:T8 Arg2:T81
+R62	uses Arg1:T8 Arg2:T82
+R63	uses Arg1:T8 Arg2:T83
+R64	uses Arg1:T8 Arg2:T84
+R41	indicates Arg1:T65 Arg2:T8	
+R65	indicates Arg1:T66 Arg2:T8	
+T85	Indicator 3765 3783	0x936eacbe07f201df
+T86	Time 3892 3896	2016
+T87	Time 3942 3946	2018
+T88	Time 3955 3959	2017
+T6	Application 4569 4580	Google Play
+T89	AttackPattern 4948 5001	sends device location coordinates with every message.
+T90	Indicator 5176 5197	dx/dexmerge compilers
+R66	targets Arg1:T10 Arg2:T5	
+T91	Location 5953 5957	Iran
+R68	targets Arg1:T9 Arg2:T91	
+T92	Application 6193 6217	Conversations messenger.
+R69	targets Arg1:T9 Arg2:T92	
+R71	targets Arg1:T8 Arg2:T24	
+R72	indicates Arg1:T90 Arg2:T9	
+R73	uses Arg1:T9 Arg2:T89	
+R74	targets Arg1:T9 Arg2:T15	
+R75	targets Arg1:T9 Arg2:T25	
+R76	targets Arg1:T9 Arg2:T26	
+R77	targets Arg1:T9 Arg2:T6	
+R78	indicates Arg1:T85 Arg2:T8	
+R79	targets Arg1:T8 Arg2:T27	
+T2	OS 302 309	Android
+T1	OS 127 134	Android
+R33	targets Arg1:T7 Arg2:T1	
+R36	targets Arg1:T7 Arg2:T2	
+T18	AttackPattern 2398 2428	upload, download, delete files
+T19	AttackPattern 2430 2445	camera takeover
+T23	AttackPattern 2450 2474	record surrounding audio
+R37	uses Arg1:T8 Arg2:T18	
+R38	uses Arg1:T8 Arg2:T19	
+R39	uses Arg1:T8 Arg2:T23	
+T93	MalwareType 184 191	spyware
+T94	MalwareType 556 563	spyware
+T95	MalwareType 2211 2218	spyware
+T97	Application 3055 3061	Chrome
+T98	Malware 4589 4602	Conversations
+T99	Malware 5644 5657	Conversations
+T101	Malware 4445 4456	Jabber/XMPP
+T102	Organization 6758 6764	GitHub

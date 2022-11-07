@@ -1,0 +1,46 @@
+The Rotexy Trojan: banker and blocker
+We take a look at the Rotexy mobile Trojan: where it comes from, how it behaves, and how to get rid of it using a couple of regular SMS.
+
+Recently the mobile malware Rotexy, a cross between a banking Trojan and a ransomware blocker, has been spreading its tentacles. Throughout August and September, our experts registered more than 40,000 attempts to implant this malicious app on Android smartphones. Having already published some technical details and biography of this beast on Securelist, here we will explore the sources of infection and how to remove it for free — using just a couple of simple SMS.
+
+How the Rotexy banking Trojan works
+Rotexy spreads through SMS containing links to app download and some catchy texts that prompt people to click those links and download the app. In some cases these messages are sent from a friend’s phone number. This is what makes people to actually click the links.
+
+After infecting a device, the Trojan gets very busy preparing the workplace for further action. First, Rotexy checks to see what device it has landed on. It does this to hamper the work of antivirus researchers: if the malware detects that it is running in an emulator, and not on a real smartphone, all it does is cycle endlessly through the app initialization process. In the current version of Rotexy the same happens if the device seems to be outside of Russia.
+
+Only after making sure that the device meets these basic requirements, will the Trojan begin to act. First by requesting administrator rights. Theoretically, the user can refuse to grant them, but the request will keep popping up, making it difficult to use the smartphone. Having got its wicked way, Rotexy reports that the app failed to load and hides its icon.
+
+After this, the malware makes contact with its owners, giving them information about the device. In response, it receives instructions and a set of templates and texts. By default, Rotexy communicates directly with the C&C server, but its creators implemented other ways to send orders via Google Cloud Messaging and SMS.
+
+Rotexy the SMS thief
+On the topic of SMS, Rotexy can’t get enough of them. When a message arrives on an infected phone, the malware switches the gadget into silent mode so that the victim does not notice new incoming SMS. The Trojan then intercepts the message, checks it against the templates received from the C&C server, and if it contains anything juicy (for example, the last digits of a card number in a mobile banking SMS notification), stores and forwards it to the server. Moreover, the malware can respond to such messages on behalf of the smartphone owner: response texts are also contained in the templates for when they are required.
+
+If for some reason no templates or special instructions were received from the C&C server, Rotexy simply saves all correspondence on the infected smartphone, and then forwards it to its masters.
+
+On top of that, on the cybercriminals’ command, the malware can send a link to download itself to all contacts in the phone book — which is one of the main vectors of propagation for Rotexy Trojan.
+
+Rotexy the banking Trojan
+SMS manipulation is not the only trick up the malware’s sleeve, and not even its main one. That would be making money for its creators, primarily through stealing bank card data. To do so, it overlays a phishing page on the screen with text received along with the SMS interception instructions. The look of the page can vary, but the general purpose is to tell the smartphone owner that a money transfer is waiting for him and they should enter card details to receive it.
+
+To make it doubly sure, the malware creators built in a check to validate the card number. First, it verifies that the card number is correct (in case you didn’t know, the digits in card numbers are not random, but created according to certain rules). Next, Rotexy extracts the last four digits of the card number from the intercepted banking SMS and matches them against the ones entered on the phishing page. If something doesn’t add up, the malware returns an error and prompts user to enter the correct card number.
+
+Rotexy the ransomware
+Sometimes Rotexy receives other instructions from the C&C server and acts out a different scenario. Instead of displaying a phishing page, it blocks the smartphone screen with a menacing window demanding payment of a fine for “regular viewing of prohibited videos.”
+
+Photographic “evidence” is attached in the form of an image of a pornographic clip. As is often the case with mobile ransomware, the cybercriminals pretend to be from some official body. Rotexy in particular mentions “FSB Internet Control” (incidentally, there is no such unit by that name in Russia).
+
+How to unblock a smartphone infected with the Rotexy Trojan
+The good news is that it is possible to unblock an infected smartphone and get rid of the “virus” without the need for specialist help. As mentioned above, Rotexy can receive commands via SMS. The beauty lies in the fact that they do not need to be sent from a specific number, any will do. That means that if your smartphone is blocked and you cannot close the malicious window, all you need is another phone (a friend’s or relative’s, for example) and our small instruction:
+
+Send an SMS to your number with the text “393838.” The malware will interpret this as an order to change the address of the C&C server to empty, and will cease to obey the cybercriminals.
+Then text “3458” to your number — this will deprive the Trojan of administrator rights and break its stranglehold on your device.
+Lastly, send an SMS to your phone with the text “stop_blocker”: This command will force Rotexy to remove the site or banner blocking the screen.
+If after that, the Trojan again starts pestering you for administrator rights, restart the device in safe mode (see here how to do it), go to Application Manager or Applications and Notifications (different versions of Android arrange the settings in their own way), and delete the malware from the device — this time without resistance. That’s it!
+Note that the instructions for unblocking a smartphone are based on an analysis of the current version of Rotexy; things may be different in future versions. More technical details about the Trojan are available in report published on Securelist.
+
+How to protect against Rotexy and other mobile Trojans
+Before signing off, we should mention that you will waste less time and fray fewer nerves by simply stopping the malware from getting onto your smartphone in the first place. Avoiding infection is not difficult, the main thing being to follow a few simple rules:
+
+Don’t click on suspicious links in messages. Even if you’re curious, and the SMS seems to be from a friend, check first whether he or she really did send something.
+Download Android apps only from Google Play. It’s a good idea to block the installation of programs from unknown sources in the smartphone settings.
+Use a reliable mobile antivirus that will protect you against malware even if you accidentally click or tap something you shouldn’t.

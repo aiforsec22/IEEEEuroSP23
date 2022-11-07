@@ -1,0 +1,63 @@
+T1	OS 9 16	Android
+T2	OS 98 105	Android
+T3	OS 1966 1973	Android
+T4	OS 2059 2066	Android
+T6	Malware 0 8	Cerberus
+T7	Malware 89 97	Cerberus
+T8	Malware 281 289	Cerberus
+T9	Malware 432 440	Cerberus
+T10	Malware 905 913	Cerberus
+T11	Malware 1317 1325	Cerberus
+T12	Malware 1358 1366	Cerberus
+T13	Malware 1443 1451	Cerberus
+T15	Malware 1957 1965	Cerberus
+T16	Malware 2050 2058	Cerberus
+T17	Malware 2354 2362	Cerberus
+T19	Application 1644 1651	Twitter
+T20	Organization 1825 1832	Buguroo
+T21	AttackPattern 42 58	Steal 2FA Tokens
+T22	AttackPattern 60 83	Screen Lock Credentials
+R1	targets Arg1:T6 Arg2:T1	
+R2	uses Arg1:T6 Arg2:T21	
+R3	uses Arg1:T6 Arg2:T22	
+T23	AttackPattern 147 204	steal its victims’ two-factor authentication (2FA) tokens
+T24	AttackPattern 209 232	screen lock credentials
+R4	targets Arg1:T7 Arg2:T2	
+R5	uses Arg1:T7 Arg2:T23	
+R6	uses Arg1:T7 Arg2:T24	
+T25	Organization 250 262	ThreatFabric
+T26	Time 334 350	mid-January 2020
+T27	Version 301 312	new variant
+R8	discoveredIn Arg1:T27 Arg2:T26	
+T29	AttackPattern 444 495	traverse the file system and download its contents.
+R10	uses Arg1:T27 Arg2:T29	
+T18	AttackPattern 527 577	launch TeamViewer and establish connections to it.
+R12	uses Arg1:T27 Arg2:T18	
+T30	Malware 647 655	Cerberus
+T31	AttackPattern 718 746	change the device’s settings
+T32	AttackPattern 748 773	install or remove any app
+T34	AttackPattern 791 833	conduct espionage on the device’s activity
+R13	uses Arg1:T27 Arg2:T32	
+R14	uses Arg1:T27 Arg2:T31	
+R16	uses Arg1:T27 Arg2:T34	
+T35	AttackPattern 1158 1244	abuse the Accessibility features to steal 2FA codes from the Google Authentication app
+T5	Time 1370 1379	June 2019
+R18	discoveredIn Arg1:T12 Arg2:T5	
+T36	Time 1795 1809	September 2019
+T14	Malware 1880 1888	Cerberus
+T37	Location 1899 1906	Spanish
+T38	Location 1911 1925	Latin American
+R20	targets Arg1:T14 Arg2:T37	
+R21	targets Arg1:T14 Arg2:T38	
+R22	targets Arg1:T15 Arg2:T3	
+R23	targets Arg1:T16 Arg2:T4	
+T39	Application 534 544	TeamViewer
+T40	Application 1219 1244	Google Authentication app
+R17	uses Arg1:T30 Arg2:T35	
+R25	targets Arg1:T30 Arg2:T40	
+R7	has Arg1:T8 Arg2:T27	
+T28	Application 1168 1190	Accessibility features
+R11	uses Arg1:T10 Arg2:T28	
+T41	MalwareType 381 401	remote-access Trojan
+T42	Application 1327 1339	ThreatFabric
+T43	Application 1749 1758	antivirus

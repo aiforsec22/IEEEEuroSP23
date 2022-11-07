@@ -1,0 +1,22 @@
+Red Alert 2.0: New Android banking trojan can block and log incoming calls from banks
+New families of trojans continue to prosper on the Android platform as malicious hackers increasingly target mobile users in their attempt to steal login credentials and personal information.
+
+The most recent warning of Android malware relates to a new banking trojan called Red Alert 2.0 that has managed to infiltrate a number of third-party app stores using a variety of disguises including bogus WhatsApp and Viber apps as well as malicious Flash Player updates.
+
+As researchers from SfyLabs detail, RedAlert 2.0 targets over 60 Android banking and social apps.
+
+When a potential victim opens one the targeted apps on their Android device, the malware overlays an appropriate dialog, enticing users to re-enter their login details. In this way, login credentials are stolen and passed to a remote server under the control of the hackers.
+
+Red Alert 2.0, which has been offered for sale on Russian-speaking hacking forums, is also capable of waltzing past two-factor authentication systems by intercepting SMS text messages that the smartphone receives and passing them onto hackers.
+
+Furthermore, according to researchers, Red Alert 2.0 continues to be updated with functionality recently added to block incoming calls from banks, including those which may be from financial fraud departments investigating potential malicious activity.
+
+In short, your Android phone gets infected by Red Alert 2.0 banking malware, hackers start to plunder your account to make unauthorised purchases or money transfers, and your bank can’t get hold of you if they suspect something suspicious is occurring.
+
+Red Alert 2.0 is said to work on phones running Android version 6.0 (Marshmallow) and earlier.
+
+As always, you would be wise to be cautious of what apps you install on your Android device – particularly if they are sourced from unofficial app marketplaces.
+
+Whether they are breaking into social media profiles to post spam or raiding online bank accounts to steal money, criminals are dead-set on exploiting innocent people’s mobile devices to make money.
+
+Do everything you can to reduce the chances of putting your own smartphone at risk by taking care over what apps you install and where you source them from.

@@ -1,0 +1,26 @@
+T1	OS 18 25	Android
+T2	OS 102 109	Android
+T3	OS 401 408	Android
+T4	Malware 0 8	Mandrake
+T5	Malware 204 212	Mandrake
+T6	Malware 450 458	Mandrake
+T8	Time 40 44	2016
+R1	targets Arg1:T4 Arg2:T1	
+T9	Time 49 59	early 2020
+R2	discoveredIn Arg1:T4 Arg2:T9	
+T7	AttackPattern 459 507	puts in significant effort NOT to infect victims
+R3	uses Arg1:T6 Arg2:T7	
+T10	AttackPattern 512 591	cherry-picks a handful of devices it gets installed on for further exploitation
+R4	uses Arg1:T6 Arg2:T10	
+T11	AttackPattern 861 909	uses advanced manipulation tactics to bait users
+T12	AttackPattern 758 839	avoid countries where compromised devices won’t bring them any return of interest
+R5	uses Arg1:T6 Arg2:T12	
+R6	uses Arg1:T6 Arg2:T11	
+T13	AttackPattern 928 984	re-draws what the user sees on the screen to hijack taps
+R7	uses Arg1:T6 Arg2:T13	
+T14	AttackPattern 1178 1228	gets complete control of the device and data on it
+R8	uses Arg1:T6 Arg2:T14	
+T15	AttackPattern 986 1140	What the users perceive as accepting an End-User License Agreement is actually a complex series of requesting and receiving extremely powerful permissions
+R9	uses Arg1:T6 Arg2:T15	
+R10	targets Arg1:T4 Arg2:T2	
+R11	targets Arg1:T5 Arg2:T3	

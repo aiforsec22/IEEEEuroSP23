@@ -1,0 +1,86 @@
+T1	OS 0 7	Android
+T2	OS 101 108	Android
+T5	OS 1010 1017	Android
+T7	OS 1774 1781	Android
+T8	OS 2133 2140	Android
+T9	OS 2733 2740	Android
+T10	Malware 261 269	MazarBOT
+T11	Malware 1229 1237	MazarBOT
+T12	Malware 1974 1982	MazarBOT
+T13	Organization 228 232	CSIS
+T14	Organization 634 638	CSIS
+T15	Organization 1958 1962	CSIS
+T17	Organization 1999 2014	Recorded Future
+T21	Location 302 309	Denmark
+T22	Indicator 823 857	http://www.mmsforyou[.]net/mms.apk
+T18	AttackPattern 149 180	spreading via SMS text messages
+T19	Location 200 212	Scandinavian
+R1	targets Arg1:T10 Arg2:T21	
+T20	AttackPattern 517 629	uses social engineering to dupe unsuspecting users into clicking on a link to a downloadable Android application
+R3	uses Arg1:T10 Arg2:T20	
+R4	indicates Arg1:T22 Arg2:T10	
+T3	AttackPattern 423 460	comes via an unsolicited text message
+R5	uses Arg1:T10 Arg2:T3	
+T6	AttackPattern 1238 1293	downloads a copy of Tor onto users’ Android smartphones
+T16	Application 1699 1711	banking apps
+T24	AttackPattern 1520 1598	allowing attackers to secretly monitor and control smartphones via a backdoor,
+T25	AttackPattern 1599 1636	send messages to premium-rate numbers
+R6	uses Arg1:T11 Arg2:T6	
+R7	uses Arg1:T11 Arg2:T24	
+R8	uses Arg1:T11 Arg2:T25	
+R9	targets Arg1:T11 Arg2:T16	
+T26	AttackPattern 1867 1890	erasing infected phones
+R10	uses Arg1:T11 Arg2:T26	
+T27	Location 2055 2062	Russian
+T28	Location 2165 2172	Russian
+R11	targets Arg1:T12 Arg2:T27	
+R12	targets Arg1:T12 Arg2:T28	
+T29	Location 2286 2292	Russia
+R13	targets Arg1:T12 Arg2:T29	
+T30	Organization 2590 2594	CSIS
+R14	targets Arg1:T12 Arg2:T8	
+R15	targets Arg1:T12 Arg2:T9	
+R16	targets Arg1:T11 Arg2:T7	
+R17	targets Arg1:T10 Arg2:T5	
+T23	AttackPattern 1642 1683	intercept two-factor authentication codes
+R19	uses Arg1:T11 Arg2:T23	
+R20	targets Arg1:T10 Arg2:T2	
+R21	targets Arg1:T10 Arg2:T1	
+R22	uses Arg1:T10 Arg2:T18	
+T31	AttackPattern 1027 1035	SEND_SMS
+T32	AttackPattern 1092 1101	WRITE_SMS
+T33	AttackPattern 1136 1145	GET_TASKS
+T34	AttackPattern 1147 1157	CALL_PHONE
+T35	AttackPattern 1159 1170	RECEIVE_SMS
+T36	AttackPattern 1172 1188	READ_PHONE_STATE
+T37	AttackPattern 1190 1198	READ_SMS
+T38	AttackPattern 1200 1211	ERASE_PHONE
+R23	uses Arg1:T10 Arg2:T31	
+R24	uses Arg1:T10 Arg2:T32	
+R25	uses Arg1:T10 Arg2:T33	
+R26	uses Arg1:T10 Arg2:T35	
+R27	uses Arg1:T10 Arg2:T36	
+R28	uses Arg1:T10 Arg2:T37	
+R29	uses Arg1:T10 Arg2:T38	
+T40	AttackPattern 279 309	distributed via SMS in Denmark
+R2	uses Arg1:T10 Arg2:T40	
+T41	OS 472 479	Android
+R31	targets Arg1:T10 Arg2:T41	
+R33	uses Arg1:T10 Arg2:T34	
+T43	OS 1274 1281	Android
+R34	targets Arg1:T11 Arg2:T43	
+T44	Time 2020 2028	November
+R35	discoveredIn Arg1:T12 Arg2:T44	
+T4	AttackPattern 928 1000	victims are urged to grant the malicious app a wide range of permissions
+R18	uses Arg1:T10 Arg2:T4	
+T39	AttackPattern 1309 1339	connect anonymously to the net
+T42	AttackPattern 1347 1369	sending a text message
+T45	AttackPattern 1370 1402	containing the victim’s location
+R30	uses Arg1:T11 Arg2:T42	
+R32	uses Arg1:T11 Arg2:T39	
+T46	Location 1409 1416	Iranian
+R36	has Arg1:T11 Arg2:T46	
+R37	uses Arg1:T11 Arg2:T45	
+T47	AttackPattern 1894 1936	launching man-in-the-middle (MITM) attacks
+R38	uses Arg1:T11 Arg2:T47	
+T48	OS 610 617	Android

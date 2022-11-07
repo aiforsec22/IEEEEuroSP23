@@ -1,0 +1,31 @@
+HummingWhale virus is the new scourge of the Google Play Store
+The HummingBad virus that affected millions of Android users last year has not gone away; in fact, it has returned with a vengeance under a new name: HummingWhale.
+
+The HummingBad virus revealed in July of last year was one of the worst pieces of malware catalogued, infecting as many as 85m Android phones around the globe.
+
+Originating from a Chinese cyber-criminal gang called Yingmob, the security research company Check Point believed it was earning as much as $300,000 a month in fraudulent adware by establishing a persistent rootkit on Android devices.
+
+From bad to whale
+HummingBad was so widespread, Check Point said, that in the first half of 2016, it reached fourth place in ‘the most prevalent malware globally’ list, and dominated the mobile threat landscape with more than 72pc of attacks.
+
+Now in the first month of 2017, Check Point has warned Android users that HummingBad is back in a big way, this time under the new moniker of HummingWhale.
+
+To make matters worse for anyone who may have unknowingly downloaded an affected app, it has much more advanced tools than its predecessor, allowing it to perform ad fraud at an unprecedented scale.
+
+One of the new HummingWhale apps came to the attention of Check Point after it noticed a familiar piece of code that appeared in not one, but a dozen different apps, which indicated that malware was installed within them.
+
+Can install infinite number of malware apps
+All of the apps found were uploaded using the names of fake Chinese developers. In addition to these apps, 16 distinct package names related to the same malware were found on the Google Play Store.
+
+The most alarming element of the app was a 1.3MB file called ‘assets/group.png’, a suspiciously large file that matched many of the traits seen in HummingBad, indicating the link between HummingWhale and its predecessor.
+
+A HummingWhale app will provide a user with fake ads that will become particularly harmful to them if opened.
+
+“Once the user tries to close the ad, the app, which was already downloaded by the malware, is uploaded to the virtual machine and run as if it is a real device,” Check Point said.
+
+The HummingWhale method allows cyber-criminals to have the malware installed through apps without being noticeably suspicious by asking for a number of different permissions.
+
+It can also be installed on an infinite number of fraudulent apps without overloading the device.
+
+“This is a prime example of malware developers learning from each other, as tactics that were introduced by one of them are quickly adopted by others,” Check Point said.
+

@@ -1,0 +1,135 @@
+T3	OS 373 380	Android
+T5	OS 684 691	Android
+T10	OS 2142 2149	Android
+T11	OS 2278 2285	Android
+T13	OS 3300 3307	Android
+T14	OS 3365 3372	Android
+T15	OS 3841 3861	Android 5.0 Lollipop
+T18	ThreatActor 101 113	Hacking Team
+T19	ThreatActor 2107 2119	Hacking Team
+T20	ThreatActor 2299 2311	Hacking Team
+T21	ThreatActor 3929 3941	Hacking Team
+T22	ThreatActor 3969 3981	Hacking Team
+T25	OS 311 318	android
+T26	OS 440 447	android
+T27	Organization 474 485	Trend Micro
+T29	Application 1470 1478	LinkedIn
+T31	Organization 2033 2044	Citizen Lab
+T38	Malware 0 10	RCSAndroid
+T1	MalwareType 22 42	Android Hacking Tool
+R1	isA Arg1:T38 Arg2:T1	
+T2	MalwareType 207 227	Android Hacking Tool
+T23	Malware 549 559	RCSAndroid
+T4	Malware 561 590	Remote Control System Android
+*	hasAlias T23 T4
+R2	targets Arg1:T23 Arg2:T5	
+R3	targets Arg1:T4 Arg2:T5	
+T6	MalwareType 706 726	Android hacking tool
+R4	isA Arg1:T23 Arg2:T6	
+R5	isA Arg1:T4 Arg2:T6	
+T39	Malware 749 759	RCSAndroid
+T40	Organization 925 931	Google
+T43	OS 958 965	Android
+R6	targets Arg1:T39 Arg2:T43	
+T7	MalwareType 995 1015	Android Hacking Tool
+T24	Malware 1053 1063	RCSAndroid
+T8	AttackPattern 1142 1200	completely compromise and monitor Android devices remotely
+R7	uses Arg1:T24 Arg2:T8	
+T44	Malware 1236 1246	RCSAndroid
+T45	AttackPattern 1272 1321	Capture screenshots using the 'screencap' command
+T46	AttackPattern 1326 1352	framebuffer direct reading
+R8	uses Arg1:T44 Arg2:T45	
+R9	uses Arg1:T44 Arg2:T46	
+T47	AttackPattern 1354 1410	Collect passwords for Wi-Fi networks and online accounts
+R10	uses Arg1:T44 Arg2:T47	
+T48	Application 1422 1430	WhatsApp
+T49	Application 1432 1440	Facebook
+T50	Application 1442 1449	Twitter
+T52	Application 1459 1464	Skype
+R11	targets Arg1:T44 Arg2:T48	
+R12	targets Arg1:T44 Arg2:T49	
+R13	targets Arg1:T44 Arg2:T50	
+R15	targets Arg1:T44 Arg2:T52	
+R16	targets Arg1:T44 Arg2:T29	
+T30	AttackPattern 1480 1516	Collect SMS, MMS, and Gmail messages
+T53	AttackPattern 1518 1626	Capture real-time voice calls in any network or application by hooking into the 'mediaserver' system service
+T54	AttackPattern 1628 1675	Capture photos using the front and back cameras
+T55	AttackPattern 1677 1702	Monitor clipboard content
+T56	AttackPattern 1704 1731	Record using the microphone
+T57	AttackPattern 1733 1748	Record location
+T58	AttackPattern 1750 1775	Gather device information
+R17	uses Arg1:T44 Arg2:T30	
+R18	uses Arg1:T44 Arg2:T53	
+R19	uses Arg1:T44 Arg2:T54	
+R20	uses Arg1:T44 Arg2:T55	
+R21	uses Arg1:T44 Arg2:T56	
+R22	uses Arg1:T44 Arg2:T57	
+R23	uses Arg1:T44 Arg2:T58	
+T35	AttackPattern 1777 1831	Collect contacts and decode messages from IM accounts,
+T28	Application 1842 1850	WhatsApp
+T59	Application 1852 1860	Telegram
+T60	Application 1862 1880	Facebook Messenger
+T61	Application 1882 1887	Skype
+T62	Application 1889 1895	WeChat
+T63	Application 1897 1902	Viber
+T64	Application 1904 1908	Line
+T65	Application 1910 1918	Hangouts
+T66	Application 1924 1944	BlackBerry Messenger
+R24	uses Arg1:T44 Arg2:T35	
+R25	targets Arg1:T44 Arg2:T28	
+R26	targets Arg1:T44 Arg2:T59	
+R27	targets Arg1:T44 Arg2:T60	
+R28	targets Arg1:T44 Arg2:T61	
+R29	targets Arg1:T44 Arg2:T62	
+R30	targets Arg1:T44 Arg2:T63	
+R31	targets Arg1:T44 Arg2:T64	
+R32	targets Arg1:T44 Arg2:T65	
+R33	targets Arg1:T44 Arg2:T66	
+T9	Malware 1947 1957	RCSAndroid
+T67	MalwareType 1958 1978	Android hacking tool
+R34	isA Arg1:T9 Arg2:T67	
+T68	Location 2159 2171	Saudi Arabia
+R35	targets Arg1:T9 Arg2:T10	
+R36	targets Arg1:T9 Arg2:T68	
+T69	Malware 2221 2231	RCSAndroid
+R37	targets Arg1:T69 Arg2:T11	
+T32	Vulnerability 2428 2441	CVE-2012-2825
+T70	Vulnerability 2446 2459	CVE-2012-2871
+T12	OS 2496 2535	Android 4.0 Ice Cream to 4.3 Jelly Bean
+T33	Malware 2600 2610	RCSAndroid
+T36	Application 2660 2666	BeNews
+T17	Application 2694 2711	Google Play Store
+T71	Malware 2801 2811	RCSAndroid
+T72	Malware 2820 2830	RCSAndroid
+T73	Malware 3239 3249	RCSAndroid
+R38	targets Arg1:T73 Arg2:T13	
+T34	OS 3386 3399	4.0 Ice Cream
+T37	OS 3403 3417	4.3 Jelly Bean
+R39	targets Arg1:T73 Arg2:T34	
+R40	targets Arg1:T73 Arg2:T37	
+R41	targets Arg1:T73 Arg2:T14	
+T74	Malware 3467 3477	RCSAndroid
+T75	AttackPattern 3728 3748	unexpected rebooting
+T76	AttackPattern 3758 3783	unfamiliar apps installed
+T77	AttackPattern 3788 3828	instant messaging apps suddenly freezing
+R42	uses Arg1:T74 Arg2:T75	
+R43	uses Arg1:T74 Arg2:T76	
+R44	uses Arg1:T74 Arg2:T77	
+T16	OS 4028 4048	Android 5.0 Lollipop
+R45	hasAuthor Arg1:T38 Arg2:T18	
+R46	hasAuthor Arg1:T9 Arg2:T19	
+R47	exploits Arg1:T69 Arg2:T32	
+R48	exploits Arg1:T69 Arg2:T70	
+R49	targets Arg1:T33 Arg2:T12	
+R50	targets Arg1:T21 Arg2:T15	
+R51	targets Arg1:T22 Arg2:T15	
+R52	targets Arg1:T21 Arg2:T16	
+R53	targets Arg1:T22 Arg2:T16	
+T41	Application 1502 1507	Gmail
+R54	targets Arg1:T44 Arg2:T41	
+R14	isA Arg1:T38 Arg2:T2	
+T78	MalwareType 521 528	spyware
+T79	Application 2476 2492	default browsers
+T80	Application 3796 3810	messaging apps
+T81	Malware 2178 2188	RCSAndroid
+T82	OS 1176 1183	Android

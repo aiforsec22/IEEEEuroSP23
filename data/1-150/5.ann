@@ -1,0 +1,75 @@
+T2	OS 153 160	Android
+T3	OS 647 654	Android
+T4	Malware 275 283	Cerberus
+T5	Malware 898 906	Cerberus
+T6	Malware 1508 1516	Cerberus
+T7	Malware 2338 2346	Cerberus
+T8	Organization 120 132	Threatfabric
+T9	Malware 459 468	BlackRock
+T10	Malware 852 861	BlackRock
+T11	ThreatActor 802 812	DukeEugene
+T16	Malware 0 5	ERMAC
+T1	MalwareType 23 37	banking Trojan
+R1	isA Arg1:T16 Arg2:T1	
+T18	Time 142 146	July
+T19	MalwareType 161 175	banking trojan
+T20	Malware 183 188	ERMAC
+T21	Malware 246 254	Cerberus
+T22	MalwareType 231 245	banking trojan
+R3	isA Arg1:T21 Arg2:T22	
+R4	variantOf Arg1:T20 Arg2:T21	
+T23	Time 300 314	September 2020
+T24	Malware 413 418	ERMAC
+T25	Time 491 500	August 17
+T26	ThreatActor 527 532	ermac
+T27	ThreatActor 539 549	DukeEugene
+T28	ThreatActor 585 595	DukeEugene
+T29	Malware 662 667	ERMAC
+T14	Malware 879 884	ERMAC
+T30	AttackPattern 914 989	usage of different obfuscation techniques and Blowfish encryption algorithm
+R5	uses Arg1:T14 Arg2:T30	
+T13	Malware 1153 1158	ERMAC
+T31	Malware 1170 1178	Cerberus
+R6	variantOf Arg1:T13 Arg2:T31	
+T32	Malware 1266 1274	Cerberus
+T33	Malware 1276 1281	ERMAC
+R7	uses Arg1:T33 Arg2:T6	
+T34	AttackPattern 1684 1730	Triggers opening specified application details
+T35	AttackPattern 1756 1810	Triggers stealing a list of the accounts on the device
+T36	Organization 1836 1848	ThreatFabric
+R8	uses Arg1:T33 Arg2:T34	
+R9	uses Arg1:T33 Arg2:T35	
+T37	Malware 1926 1931	ERMAC
+T38	Location 1950 1956	Poland
+R10	targets Arg1:T37 Arg2:T38	
+T39	Application 2106 2129	banking and mobile apps
+R11	targets Arg1:T37 Arg2:T39	
+T40	Malware 2148 2153	ERMAC
+T41	Malware 2357 2362	ERMAC
+T12	OS 15 22	Android
+R12	targets Arg1:T16 Arg2:T12	
+R2	discoveredIn Arg1:T20 Arg2:T18	
+R13	isA Arg1:T20 Arg2:T19	
+R14	hasAuthor Arg1:T10 Arg2:T11	
+R15	hasAuthor Arg1:T24 Arg2:T11	
+T15	AttackPattern 1297 1343	encryption scheme in communication with the C2
+R16	uses Arg1:T33 Arg2:T15	
+R17	targets Arg1:T20 Arg2:T2	
+T17	MalwareType 655 661	botnet
+R18	isA Arg1:T29 Arg2:T17	
+T42	MalwareType 862 876	banking Trojan
+R19	isA Arg1:T10 Arg2:T42	
+T43	Organization 1226 1238	Threatfabric
+T44	MalwareType 1468 1482	banking Trojan
+R20	isA Arg1:T33 Arg2:T44	
+T45	AttackPattern 1573 1632	clear the content of the cache of the specified application
+R21	uses Arg1:T6 Arg2:T45	
+T46	AttackPattern 1637 1658	steal device accounts
+R22	uses Arg1:T6 Arg2:T46	
+T47	MalwareType 2061 2075	banking trojan
+T48	MalwareType 1185 1191	trojan
+T49	MalwareType 695 701	botnet
+T50	Application 2498 2520	financial institutions
+T51	Application 2473 2487	mobile banking
+T52	OS 687 694	android
+T53	Organization 1886 1902	@malwrhunterteam

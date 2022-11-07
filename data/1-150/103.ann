@@ -1,0 +1,135 @@
+T1	OS 23 30	Android
+T2	OS 109 116	Android
+T3	OS 1204 1211	Android
+T4	OS 3813 3820	Android
+T6	Malware 467 475	Cerberus
+T7	Malware 651 659	Cerberus
+T8	Malware 1030 1038	Cerberus
+T9	Malware 1249 1257	Cerberus
+T10	Malware 1349 1357	Cerberus
+T11	Malware 1459 1467	Cerberus
+T12	Malware 1710 1718	Cerberus
+T13	Malware 1923 1931	Cerberus
+T14	Malware 2284 2292	Cerberus
+T15	Malware 2761 2769	Cerberus
+T16	Malware 2886 2894	Cerberus
+T17	Malware 3153 3161	Cerberus
+T18	Malware 3251 3259	Cerberus
+T19	Malware 3855 3863	Cerberus
+T20	Malware 4871 4879	Cerberus
+T21	Malware 5173 5181	Cerberus
+T22	Malware 5275 5283	Cerberus
+T23	Malware 5853 5861	Cerberus
+T24	Malware 6082 6090	Cerberus
+T25	Malware 6338 6346	Cerberus
+T26	Malware 3578 3584	Anubis
+T27	Application 53 71	Adobe Flash Player
+T29	Application 825 832	Twitter
+T30	Application 2021 2028	Twitter
+T31	Application 2518 2525	Twitter
+T32	Application 4922 4929	Twitter
+T33	Application 5988 5995	Twitter
+T34	Organization 1865 1869	ESET
+T35	Application 2130 2137	twitter
+T36	OS 2211 2218	android
+T38	Person 2007 2015	Stefanko
+T39	Person 2237 2245	Stefanko
+T40	Person 2474 2482	Stefanko
+T41	Person 2617 2625	Stefanko
+T42	Person 2852 2860	Stefanko
+T43	Person 3100 3108	Stefanko
+T44	Organization 4588 4600	ThreatFabric
+T45	Organization 5314 5326	ThreatFabric
+T48	Application 3985 3997	Flash Player
+T49	Organization 5071 5081	VirusTotal
+T51	Location 3208 3212	U.S.
+T52	Location 1808 1814	France
+T53	Location 5719 5725	France
+T54	Person 1890 1904	Lukas Stefanko
+T56	Location 1802 1806	U.S.
+T37	Malware 183 191	Cerberus
+T46	MalwareType 160 174	banking trojan
+R1	isA Arg1:T37 Arg2:T46	
+T28	AttackPattern 217 267	masquerading as an Adobe Flash Player installation
+R2	uses Arg1:T37 Arg2:T28	
+R3	targets Arg1:T37 Arg2:T27	
+R4	targets Arg1:T37 Arg2:T2	
+T47	AttackPattern 303 372	requests accessibility permissions that allow an attack to take place
+R5	uses Arg1:T37 Arg2:T47	
+T57	AttackPattern 386 465	overlays login screens for banking apps, stealing credentials for its operators
+R6	uses Arg1:T37 Arg2:T57	
+T58	AttackPattern 512 624	using the accelerometer on an infected device to ensure the target is real and not a desk-based security analyst
+R7	uses Arg1:T6 Arg2:T58	
+T60	Application 783 790	Twitter
+T61	AttackPattern 1039 1144	infects users when they access a fake website which immediately requests a download of Adobe Flash Player
+R9	uses Arg1:T8 Arg2:T61	
+T62	MalwareType 1212 1226	banking trojan
+R10	isA Arg1:T9 Arg2:T62	
+R11	targets Arg1:T9 Arg2:T3	
+T63	AttackPattern 1489 1514	steal banking credentials
+R12	uses Arg1:T11 Arg2:T63	
+T64	AttackPattern 1552 1655	creating overlays on top of banking apps that capture usernames and passwords as they are being entered
+R13	uses Arg1:T11 Arg2:T64	
+T66	Location 1819 1824	Japan
+R15	targets Arg1:T12 Arg2:T56	
+R16	targets Arg1:T12 Arg2:T52	
+R17	targets Arg1:T12 Arg2:T66	
+T67	Time 1935 1939	June
+R18	discoveredIn Arg1:T13 Arg2:T67	
+R19	targets Arg1:T13 Arg2:T36	
+T68	Malware 2495 2503	Cerberus
+T69	MalwareType 2685 2699	banking Trojan
+R20	isA Arg1:T68 Arg2:T69	
+T70	AttackPattern 2774 2846	spread via a fake website that asked users to install Adobe Flash Player
+R21	uses Arg1:T15 Arg2:T70	
+T71	Location 3217 3222	Japan
+R22	targets Arg1:T17 Arg2:T51	
+R23	targets Arg1:T17 Arg2:T71	
+T73	Organization 3323 3335	ThreatFabric
+T75	Malware 3604 3612	Cerberus
+T76	MalwareType 3628 3642	banking Trojan
+R27	targets Arg1:T19 Arg2:T48	
+T78	AttackPattern 4081 4133	grant itself additional rights to control the device
+T79	AttackPattern 4135 4148	send messages
+T80	AttackPattern 4150 4161	make calls,
+T81	AttackPattern 4162 4194	communicate back to its handlers
+R28	uses Arg1:T19 Arg2:T78	
+R29	uses Arg1:T19 Arg2:T79	
+R30	uses Arg1:T19 Arg2:T80	
+R31	uses Arg1:T19 Arg2:T81	
+T5	Application 4216 4235	Google Play Protect
+T82	Malware 4320 4328	Cerberus
+T83	AttackPattern 4350 4481	avoid detection from desk-based malware analysts by delaying activation until it can confirm the device belongs to a genuine victim
+R32	uses Arg1:T82 Arg2:T83	
+T84	AttackPattern 5341 5357	harvest contacts
+T85	AttackPattern 5359 5372	send messages
+T86	AttackPattern 5374 5391	steal credentials
+R33	uses Arg1:T22 Arg2:T84	
+R34	uses Arg1:T22 Arg2:T85	
+R35	uses Arg1:T22 Arg2:T86	
+T55	Location 5713 5717	U.S.
+T87	Location 5730 5735	Japan
+R36	targets Arg1:T22 Arg2:T55	
+R37	targets Arg1:T22 Arg2:T53	
+R38	targets Arg1:T22 Arg2:T87	
+R39	isA Arg1:T26 Arg2:T76	
+R40	isA Arg1:T75 Arg2:T76	
+T88	Application 236 254	Adobe Flash Player
+R41	uses Arg1:T37 Arg2:T88	
+R43	uses Arg1:T7 Arg2:T60	
+T90	Application 1126 1144	Adobe Flash Player
+R44	uses Arg1:T8 Arg2:T90	
+T91	Application 2828 2846	Adobe Flash Player
+R45	uses Arg1:T15 Arg2:T91	
+T50	MalwareType 4736 4742	Trojan
+T59	Application 5429 5441	banking apps
+R8	targets Arg1:T22 Arg2:T59	
+T92	MalwareType 3737 3752	banking malware
+T93	MalwareType 3774 3789	banking malware
+T94	MalwareType 687 693	trojan
+T95	MalwareType 4541 4547	Trojan
+T96	MalwareType 5221 5227	trojan
+T97	Application 3881 3893	social media
+T98	Application 1580 1592	banking apps
+T99	Application 5016 5025	antivirus
+T100	Organization 1785 1790	banks

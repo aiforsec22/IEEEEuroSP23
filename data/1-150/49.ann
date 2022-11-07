@@ -1,0 +1,303 @@
+T1	OS 52 59	Android
+T4	OS 1702 1709	Android
+T11	OS 2590 2597	Android
+T12	OS 3360 3367	Android
+T14	OS 3653 3660	Android
+T15	OS 3785 3792	Android
+T16	OS 3865 3872	Android
+T17	OS 3982 3989	Android
+T18	OS 4552 4559	Android
+T19	OS 4638 4645	Android
+T22	OS 5743 5750	Android
+T23	OS 6231 6238	Android
+T24	OS 6583 6590	Android
+T26	OS 8652 8659	Android
+T28	OS 141 148	Windows
+T33	OS 3944 3951	Windows
+T37	OS 7842 7849	Windows
+T38	OS 64 67	iOS
+T39	OS 159 162	iOS
+T41	OS 846 849	iOS
+T44	OS 1714 1717	iOS
+T49	OS 2602 2605	iOS
+T50	OS 3161 3164	iOS
+T51	OS 6821 6824	iOS
+T52	OS 6895 6898	iOS
+T53	OS 7219 7222	iOS
+T54	OS 7430 7433	iOS
+T55	OS 7934 7937	iOS
+T57	OS 8124 8127	iOS
+T58	OS 8361 8364	iOS
+T59	OS 8460 8463	iOS
+T63	OS 8862 8865	iOS
+T66	OS 10054 10057	iOS
+T67	OS 10390 10393	iOS
+T68	Malware 1050 1057	DualToy
+T69	Malware 1233 1240	DualToy
+T70	Malware 1652 1659	DualToy
+T71	Malware 2755 2762	DualToy
+T72	Malware 2943 2950	DualToy
+T73	Malware 3212 3219	DualToy
+T74	Malware 3399 3406	DualToy
+T75	Malware 3605 3612	DualToy
+T76	Malware 4940 4947	DualToy
+T77	Malware 5077 5084	DualToy
+T78	Malware 5366 5373	DualToy
+T79	Malware 5579 5586	DualToy
+T80	Malware 6866 6873	DualToy
+T81	Malware 7962 7969	DualToy
+T82	Malware 8170 8177	DualToy
+T83	Malware 8256 8263	DualToy
+T84	Malware 8399 8406	DualToy
+T85	Malware 8669 8676	DualToy
+T86	Malware 8874 8881	DualToy
+T87	Malware 9276 9283	DualToy
+T88	Malware 9606 9613	DualToy
+T89	Indicator 5760 5775	/data/local/tmp
+T90	Indicator 8064 8068	/qn”
+T92	Indicator 6933 6997	f2efc145d7d49b023d97a5857ad144dd03a491b85887312ef401a82b87fb1b84
+T93	Malware 563 573	WireLurker
+T94	MalwareType 659 676	HackTool families
+T96	Application 862 872	BlackBerry
+T97	Malware 779 782	RCS
+T105	Application 7404 7410	iTunes
+T107	Application 7537 7543	iTunes
+T108	Application 7831 7837	iTunes
+T109	Application 7905 7911	iTunes
+T110	Application 8154 8160	iTunes
+T111	Application 8383 8389	iTunes
+T112	Application 8517 8523	iTunes
+T128	Hardware 5849 5852	ARM
+T133	Organization 153 158	Apple
+T135	Organization 8544 8549	Apple
+T139	Malware 2557 2568	AceDeceiver
+T144	MalwareType 648 654	Adware
+T146	OS 3955 3958	Mac
+T155	Indicator 7729 7760	“AppleApplicationSupport64.msi”
+T156	Indicator 7176 7186	insapp.dll
+T157	Indicator 7507 7517	insapp.dll
+T158	Indicator 9838 9907	“pWsbshWBn5XN9kk0twBUECAVt2E.dsE7UfuXZdinV60edM4u1Ul0d6hSf66akdZrmp”.
+T159	Indicator 6271 6291	“com.mgr.micorsoft”.
+T163	Indicator 5282 5290	“adb.exe
+T164	Indicator 4503 4512	tadb.exe,
+T165	Indicator 3565 3578	NewPhone.dll,
+T166	Indicator 4465 4473	adb.exe,
+T169	Indicator 5625 5637	“appdata.exe
+T170	Indicator 4903 4918	%HOME%/.android
+T171	Indicator 10901 10919	proxy.mysjzs[.]com
+T172	Indicator 3579 3589	DevApi.dll
+T174	Indicator 9433 9478	http://www.zaccl[.]com/tool/apple/wj_app.xml.
+T175	Indicator 3593 3601	app.dll.
+T179	Indicator 7983 7996	“msiexec.exe”
+T180	Indicator 9794 9806	kuaiyong.ipa
+T181	Indicator 10211 10223	kuaiyong.ipa
+T182	Indicator 7692 7724	“AppleMobileDeviceSupport64.msi”
+T183	Indicator 4167 4208	http[:]//www.zaccl.com/tool/new_tool.zip)
+T184	Indicator 8288 8310	iTunesMobileDevice.dll
+T185	Indicator 9568 9583	“kuaiyong.ipa”.
+T186	Indicator 5498 5509	appdata.exe
+T188	Indicator 5694 5705	appdata.exe
+T189	Indicator 7335 7346	insapp.ini,
+R1	indicates Arg1:T89 Arg2:T79
+R2	indicates Arg1:T90 Arg2:T81
+R4	indicates Arg1:T92 Arg2:T80
+R7	indicates Arg1:T155 Arg2:T80
+R8	indicates Arg1:T156 Arg2:T80
+R9	indicates Arg1:T157 Arg2:T80
+R10	indicates Arg1:T158 Arg2:T88
+R15	indicates Arg1:T163 Arg2:T77
+R16	indicates Arg1:T164 Arg2:T75
+R17	indicates Arg1:T165 Arg2:T74
+R18	indicates Arg1:T166 Arg2:T75
+R20	indicates Arg1:T169 Arg2:T79
+R22	indicates Arg1:T171 Arg2:T88
+R23	indicates Arg1:T172 Arg2:T74
+R25	indicates Arg1:T174 Arg2:T87
+R26	indicates Arg1:T175 Arg2:T74
+R30	indicates Arg1:T179 Arg2:T81
+R31	indicates Arg1:T180 Arg2:T88
+R32	indicates Arg1:T181 Arg2:T88
+R33	indicates Arg1:T182 Arg2:T80
+R34	indicates Arg1:T183 Arg2:T75
+R35	indicates Arg1:T184 Arg2:T83
+R36	indicates Arg1:T185 Arg2:T87
+R37	indicates Arg1:T186 Arg2:T78
+R38	indicates Arg1:T188 Arg2:T79
+R39	indicates Arg1:T189 Arg2:T80
+T134	Malware 0 7	DualToy
+R43	targets Arg1:T134 Arg2:T1	
+R44	targets Arg1:T134 Arg2:T38	
+T136	Organization 131 140	Microsoft
+T95	ThreatActor 765 776	HackingTeam
+R46	hasAuthor Arg1:T97 Arg2:T95	
+T138	MalwareType 797 804	Spyware
+R47	targets Arg1:T97 Arg2:T41	
+R48	targets Arg1:T97 Arg2:T96	
+T168	Malware 938 945	DualToy
+T2	AttackPattern 953 1040	side loads malicious or risky apps to both Android and iOS devices via a USB connection
+R50	uses Arg1:T168 Arg2:T2	
+T42	Time 1077 1089	January 2015
+T98	Location 1363 1370	Chinese
+R54	targets Arg1:T69 Arg2:T98	
+T187	Location 1445 1458	United States
+T192	Location 1460 1474	United Kingdom
+T193	Location 1476 1484	Thailand
+T194	Location 1486 1491	Spain
+T195	Location 1497 1504	Ireland
+R55	targets Arg1:T69 Arg2:T187	
+R56	targets Arg1:T69 Arg2:T192	
+R57	targets Arg1:T69 Arg2:T193	
+R58	targets Arg1:T69 Arg2:T194	
+R59	targets Arg1:T69 Arg2:T195	
+T30	OS 1545 1552	Windows
+T196	AttackPattern 1572 1589	process injection
+T197	AttackPattern 1591 1617	modifying browser settings
+T198	AttackPattern 1619 1644	displaying advertisements
+R60	uses Arg1:T70 Arg2:T198	
+R61	uses Arg1:T70 Arg2:T197	
+R62	targets Arg1:T70 Arg2:T30	
+R63	targets Arg1:T70 Arg2:T4	
+R64	targets Arg1:T70 Arg2:T44	
+T5	AttackPattern 1730 1810	Downloads and installs Android Debug Bridge (ADB) and iTunes drivers for Windows
+T6	AttackPattern 1812 1929	Uses existing pairing/authorization records on infected PCs to interact with Android and/or iOS devices via USB cable
+T7	AttackPattern 1931 2022	Downloads Android apps and installs them on any connected Android devices in the background
+T8	AttackPattern 2070 2143	Copies native code to a connected Android device and directly executes it
+T31	AttackPattern 2206 2262	download and install more Android apps in the background
+T10	AttackPattern 2264 2365	Steals connected iOS device’s information including IMEI, IMSI, ICCID, serial number and phone number
+T45	AttackPattern 2367 2446	Downloads an iOS app and installs it to connected iOS devices in the background
+T46	AttackPattern 2452 2545	app will ask for an Apple ID with password and send them to a server without user’s knowledge
+R65	uses Arg1:T139 Arg2:T46	
+R66	uses Arg1:T70 Arg2:T5	
+R67	uses Arg1:T70 Arg2:T6	
+R68	uses Arg1:T70 Arg2:T7	
+R69	uses Arg1:T70 Arg2:T8	
+R71	uses Arg1:T70 Arg2:T31	
+R72	uses Arg1:T70 Arg2:T10	
+R73	uses Arg1:T70 Arg2:T45	
+R74	uses Arg1:T70 Arg2:T46	
+T47	Malware 2737 2744	DualToy
+T48	AttackPattern 2960 3049	reuse existing pairing records to directly interact with mobile devices in the background
+R75	uses Arg1:T72 Arg2:T48	
+R77	targets Arg1:T72 Arg2:T50	
+T13	AttackPattern 3422 3503	infecting Android devices connected with the compromised Windows PC via USB cable
+R78	uses Arg1:T74 Arg2:T13	
+R79	targets Arg1:T75 Arg2:T14	
+T32	AttackPattern 4097 4154	download universal Windows ADB drivers from its C2 server
+R13	uses Arg1:T75 Arg2:T32	
+T101	Organization 4542 4549	Tencent
+T102	Time 4631 4635	2013
+R21	indicates Arg1:T170 Arg2:T75	
+T104	AttackPattern 5161 5201	fetch a list of URLs from the C2 server,
+T113	AttackPattern 5202 5273	download the apps, and install them on Android device in the background
+R81	uses Arg1:T77 Arg2:T104	
+R82	uses Arg1:T77 Arg2:T113	
+T115	Malware 6599 6608	RootAngel
+R5	targets Arg1:T115 Arg2:T24	
+R6	indicates Arg1:T159 Arg2:T115	
+T25	AttackPattern 6692 6718	connect with its C2 server
+T117	AttackPattern 6720 6777	download more Android apps and install them in background
+R27	uses Arg1:T115 Arg2:T117	
+R29	targets Arg1:T80 Arg2:T52	
+T119	Time 6910 6922	June 7, 2015
+R85	discoveredIn Arg1:T80 Arg2:T119	
+T120	Time 7009 7013	2016
+R87	targets Arg1:T80 Arg2:T53	
+T106	AttackPattern 7454 7481	Download and install iTunes
+R88	uses Arg1:T80 Arg2:T106	
+T36	Hardware 7673 7690	64-bit Windows PC
+R89	targets Arg1:T80 Arg2:T36	
+T122	Organization 7814 7819	Apple
+R91	targets Arg1:T82 Arg2:T110	
+R92	targets Arg1:T82 Arg2:T57	
+T103	OS 8535 8542	Android
+T60	OS 8606 8611	iOS 7
+T124	AttackPattern 8682 8777	check whether the iOS device was previously paired so that it can reuse existing pairing record
+R93	uses Arg1:T85 Arg2:T124	
+T62	AttackPattern 8887 8963	collect device and system information, encrypt them and send to its C2 serve
+R96	uses Arg1:T86 Arg2:T62	
+T126	AttackPattern 9298 9382	download IPA file(s) from the C2 server and install them on the connected iOS device
+R98	uses Arg1:T87 Arg2:T126	
+T64	Time 9502 9507	April
+T129	Time 9515 9526	August 2016
+T130	Organization 9962 9992	Ningbo Pharmaceutical Co., Ltd
+T131	Application 10415 10425	ZergHelper
+T132	Malware 10469 10480	AceDeceiver
+T141	AttackPattern 11251 11295	sniff network traffic to capture the payload
+T142	AttackPattern 11300 11346	steal the Apple ID and password in the payload
+R101	uses Arg1:T88 Arg2:T141	
+R102	uses Arg1:T88 Arg2:T142	
+T145	AttackPattern 5013 5038	Download and install apps
+R103	uses Arg1:T76 Arg2:T145	
+T147	AttackPattern 5312 5343	Install and execute binary code
+R104	uses Arg1:T77 Arg2:T147	
+T27	MalwareType 13 27	Windows Trojan
+R42	isA Arg1:T134 Arg2:T27	
+T29	MalwareType 913 927	Windows Trojan
+R49	isA Arg1:T168 Arg2:T29	
+T43	Time 1157 1167	six months
+T148	Hardware 1220 1231	iOS devices
+R53	targets Arg1:T68 Arg2:T148	
+T149	OS 996 1003	Android
+T150	OS 1008 1011	iOS
+R52	targets Arg1:T168 Arg2:T149	
+R106	targets Arg1:T168 Arg2:T150	
+R107	targets Arg1:T86 Arg2:T63	
+R108	targets Arg1:T85 Arg2:T26	
+T152	OS 8700 8703	iOS
+R109	targets Arg1:T85 Arg2:T152	
+T151	MalwareType 640 646	Trojan
+T3	AttackPattern 2177 2198	obtain root privilege
+R45	uses Arg1:T70 Arg2:T3	
+R11	uses Arg1:T115 Arg2:T25	
+T9	MalwareType 6591 6597	Trojan
+R12	isA Arg1:T115 Arg2:T9	
+T20	OS 733 736	iOS
+T21	OS 741 751	BlackBerry
+T34	OS 1124 1131	Android
+T35	MalwareType 1322 1328	Trojan
+T40	Application 1784 1790	iTunes
+T56	Application 1753 1773	Android Debug Bridge
+T61	OS 1803 1810	Windows
+T65	OS 1889 1896	Android
+T91	OS 1904 1907	iOS
+T99	OS 1941 1948	Android
+T100	OS 1989 1996	Android
+T114	MalwareType 2050 2058	Riskware
+T116	MalwareType 2062 2068	Adware
+T118	OS 2104 2111	Android
+T123	OS 2232 2239	Android
+T125	OS 2281 2284	iOS
+T127	OS 2380 2383	iOS
+T137	OS 2417 2420	iOS
+T140	Organization 2472 2477	Apple
+T153	Application 3147 3150	ADB
+T154	OS 3432 3439	Android
+T160	OS 3479 3486	Windows
+T161	Application 3621 3624	ADB
+T162	Application 3898 3901	ADB
+T167	Application 4049 4052	ADB
+T173	OS 4116 4123	Windows
+T176	Application 4312 4315	ADB
+T177	OS 4316 4323	Windows
+T178	Application 4365 4368	ADB
+T190	Application 4526 4529	ADB
+T199	Application 4721 4724	ADB
+T200	Application 5050 5053	ADB
+T201	OS 5102 5109	Android
+T202	OS 5241 5248	Android
+T203	OS 6734 6741	Android
+T121	Application 7475 7481	iTunes
+T204	Application 8280 8286	iTunes
+T205	OS 8091 8094	iOS
+T206	OS 8800 8803	iOS
+T207	AttackPattern 8794 8822	Steal iOS device information
+R3	uses Arg1:T85 Arg2:T207	
+T208	Organization 10562 10567	Apple
+T209	Organization 11310 11315	Apple
+T210	Application 10394 10403	App Store
+T211	Application 3672 3675	ADB
+T212	Application 4124 4127	ADB
+T213	Application 4438 4441	ADB
+T214	OS 10747 10752	Apple
+T215	OS 9372 9375	iOS
+T216	OS 9664 9667	iOS

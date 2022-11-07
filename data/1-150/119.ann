@@ -1,0 +1,89 @@
+T1	OS 908 915	Android
+T2	OS 2344 2351	Android
+T3	OS 2877 2884	Android
+T4	OS 3173 3180	Android
+T14	Malware 0 5	Dvmap
+T15	Malware 626 631	Dvmap
+T16	Malware 859 864	Dvmap
+T17	Malware 1037 1042	Dvmap
+T18	Malware 1284 1289	Dvmap
+T19	Malware 1664 1669	Dvmap
+T20	Malware 1860 1865	Dvmap
+T21	Malware 1925 1930	Dvmap
+T22	Malware 3039 3044	Dvmap
+T23	Malware 3110 3115	Dvmap
+T24	Malware 3214 3219	Dvmap
+T25	Organization 122 135	Kaspersky Lab
+T26	Organization 371 384	Kaspersky Lab
+T27	Organization 3074 3087	Kaspersky Lab
+T28	Malware 531 543	Ztorg Trojan
+T31	Organization 1130 1139	Kaspersky
+T32	Organization 1901 1910	Kaspersky
+T35	Indicator 832 854	libandroid_runtime.so.
+T36	Indicator 407 432	Trojan.AndroidOS.Dvmap.a.
+T37	Indicator 819 828	libdmv.so
+T38	Indicator 2177 2203	“com.qualcmm.timeservices.
+T29	MalwareType 26 41	Rooting Malware
+R1	isA Arg1:T14 Arg2:T29	
+T5	Application 79 96	Google Play Store
+R2	targets Arg1:T14 Arg2:T5	
+T30	MalwareType 151 166	rooting malware
+T33	OS 18 25	Android
+R3	targets Arg1:T14 Arg2:T33	
+T6	Application 197 214	Google Play Store
+R4	targets Arg1:T14 Arg2:T6	
+R5	isA Arg1:T14 Arg2:T30	
+T41	AttackPattern 313 369	injects malicious code into the system runtime libraries
+R7	uses Arg1:T14 Arg2:T41	
+R8	indicates Arg1:T36 Arg2:T14	
+T7	Application 482 493	Google Play
+T8	Application 565 582	Google Play Store
+T42	Time 606 620	September 2016
+R9	targets Arg1:T28 Arg2:T8	
+T43	MalwareType 644 659	rooting malware
+R10	isA Arg1:T15 Arg2:T43	
+T44	AttackPattern 761 809	injects malicious code into the system libraries
+R11	indicates Arg1:T37 Arg2:T15	
+R12	indicates Arg1:T35 Arg2:T15	
+R13	uses Arg1:T15 Arg2:T44	
+R14	targets Arg1:T16 Arg2:T1	
+T9	Application 987 1004	Google Play Store
+R15	targets Arg1:T16 Arg2:T9	
+T10	Application 1060 1077	Google Play Store
+T45	AttackPattern 1078 1128	masked as several simple apps such as Puzzle Games
+R16	uses Arg1:T17 Arg2:T45	
+R17	targets Arg1:T17 Arg2:T10	
+T11	Application 1310 1327	Google Play Store
+T47	AttackPattern 1366 1448	uploaded a clean app to the play store and then update it with a malicious version
+R19	uses Arg1:T18 Arg2:T47	
+T12	Application 1521 1532	Google Play
+T34	Time 1622 1630	18 April
+T48	Time 1635 1641	15 May
+T50	AttackPattern 1708 1850	decrypt several archive files from the assets folder of the installation package, and launch an executable file from them with the name “start
+R21	uses Arg1:T19 Arg2:T50	
+T39	OS 1952 1989	32-bit and 64-bit versions of Android
+R22	targets Arg1:T21 Arg2:T39	
+T51	AttackPattern 2025 2055	gain root access on the device
+T52	AttackPattern 2060 2169	tries to install several modules on the system including a few written in Chinese, along with a malicious app
+R23	uses Arg1:T21 Arg2:T51	
+R24	uses Arg1:T21 Arg2:T52	
+R25	indicates Arg1:T38 Arg2:T21	
+T53	AttackPattern 2287 2324	overwrites system’s runtime libraries
+R26	uses Arg1:T21 Arg2:T53	
+R27	targets Arg1:T21 Arg2:T2	
+T54	AttackPattern 2480 2590	turns off “Verify Apps,” feature and modify system setting to allow app installation from 3rd party app stores
+T55	AttackPattern 2640 2754	connecting the infected device to the attacker’s command-and-control server, giving out full control of the device
+R28	uses Arg1:T21 Arg2:T54	
+R29	uses Arg1:T21 Arg2:T55	
+R30	targets Arg1:T23 Arg2:T4	
+T13	Application 3369 3386	Google Play Store
+T56	Application 1116 1128	Puzzle Games
+R31	uses Arg1:T17 Arg2:T56	
+T40	MalwareType 251 257	Trojan
+T46	Organization 1241 1247	Google
+T49	MalwareType 1931 1937	Trojan
+R6	isA Arg1:T21 Arg2:T49	
+T57	Application 2570 2590	3rd party app stores
+T58	Application 3653 3666	antivirus app
+T59	MalwareType 458 473	rooting malware
+T60	MalwareType 2454 2460	Trojan

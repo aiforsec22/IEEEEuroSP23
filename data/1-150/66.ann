@@ -1,0 +1,148 @@
+T1	MalwareType 23 30	Spyware
+T2	OS 311 318	Android
+T3	OS 1052 1059	Android
+T4	OS 4542 4549	Android
+T5	OS 4817 4824	Android
+T6	OS 5566 5573	Android
+T7	OS 5928 5935	Android
+T8	OS 4662 4665	iOS
+T9	OS 4699 4702	iOS
+T10	Malware 7 14	Monokle
+T11	Malware 450 457	Monokle
+T12	Malware 804 811	Monokle
+T13	Malware 1017 1024	Monokle
+T14	Malware 1224 1231	Monokle
+T15	Malware 1404 1411	Monokle
+T16	Malware 3461 3468	Monokle
+T17	Malware 5593 5600	Monokle
+T18	Malware 5869 5876	Monokle
+T19	Malware 5986 5993	Monokle
+T20	Malware 6066 6073	Monokle
+T21	Organization 415 422	Lookout
+T22	Organization 3250 3257	Lookout
+T23	Organization 5024 5031	Lookout
+T24	Organization 5408 5415	Lookout
+T25	Organization 6038 6045	Lookout
+T26	Application 1997 2002	Skype
+T27	Malware 3718 3728	Ahrar Maps
+T28	Organization 3570 3583	Ahrar al-Sham
+T29	Organization 4246 4259	Ahrar al-Sham
+T30	Organization 5217 5248	Special Technology Center (STC)
+T32	Organization 5833 5836	STC
+T33	Organization 6122 6125	STC
+T34	Application 5803 5811	Defender
+T35	Application 5973 5981	Defender
+T38	Location 3519 3527	Caucasus
+T39	Location 4330 4338	Caucasus
+T40	Location 3748 3753	Syria
+T42	MalwareType 5210 5213	RAT
+T45	Location 4515 4527	Uzbekistan.”
+R1	isA Arg1:T10 Arg2:T1	
+T31	MalwareType 280 306	remote access trojan (RAT)
+T36	Malware 326 333	Monokle
+R2	targets Arg1:T36 Arg2:T2	
+T41	AttackPattern 491 567	ability to self-sign trusted certificates to intercept encrypted SSL traffic
+R4	uses Arg1:T11 Arg2:T41	
+T46	AttackPattern 581 646	record a phone’s lockscreen activity in order to obtain passcodes
+T47	AttackPattern 655 725	can leverage accessibility services to gain access to third-party apps
+R5	uses Arg1:T11 Arg2:T46	
+R6	uses Arg1:T11 Arg2:T47	
+T48	MalwareType 786 802	surveillanceware
+R7	isA Arg1:T12 Arg2:T48	
+R8	targets Arg1:T13 Arg2:T3	
+T49	AttackPattern 1253 1353	record the screen during a screen unlock event so as to compromise a user’s PIN, pattern or password
+R9	uses Arg1:T14 Arg2:T49	
+T44	AttackPattern 1086 1131	exfiltrate data from third party applications
+R10	uses Arg1:T13 Arg2:T44	
+T50	AttackPattern 1415 1616	capable of installing additional attacker-specified certificates to the trusted certificates on an infected device, “effectively opening up the target and the device to man-in-the-middle (MITM) attacks
+R11	uses Arg1:T15 Arg2:T50	
+T51	AttackPattern 1864 1916	ability to harvest contacts and calendar information
+T52	AttackPattern 1918 1940	record audio and calls
+T53	AttackPattern 1942 1970	retrieve emails and messages
+T54	Application 1987 1995	WhatsApp
+R12	uses Arg1:T15 Arg2:T51	
+R13	uses Arg1:T15 Arg2:T52	
+R14	uses Arg1:T15 Arg2:T53	
+R15	targets Arg1:T15 Arg2:T54	
+R16	targets Arg1:T15 Arg2:T26	
+T55	AttackPattern 2014 2036	take photos and videos
+R17	uses Arg1:T15 Arg2:T55	
+T56	AttackPattern 2105 2115	keylogging
+T57	AttackPattern 2117 2155	retrieving browsing and call histories
+T58	AttackPattern 2157 2227	interacting with popular office applications to retrieve document text
+T59	AttackPattern 2229 2241	making calls
+T60	AttackPattern 2269 2290	device-fingerprinting
+T61	AttackPattern 2292 2336	retrieving accounts and associated passwords
+T62	AttackPattern 2342 2359	screen recordings
+R18	uses Arg1:T15 Arg2:T56	
+R19	uses Arg1:T15 Arg2:T57	
+R20	uses Arg1:T15 Arg2:T58	
+R21	uses Arg1:T15 Arg2:T59	
+R22	uses Arg1:T15 Arg2:T60	
+R23	uses Arg1:T15 Arg2:T61	
+R24	uses Arg1:T15 Arg2:T62	
+T63	AttackPattern 2367 2420	can also delete arbitrary files and download new ones
+T64	AttackPattern 2422 2470	reboot a device and execute arbitrary shell code
+R25	uses Arg1:T15 Arg2:T63	
+R26	uses Arg1:T15 Arg2:T64	
+T66	Malware 3042 3049	Monokle
+T67	AttackPattern 3115 3248	It is spreading by way of a very limited set of trojanized applications that contain legitimate functionality to avoid user suspicion
+R28	uses Arg1:T66 Arg2:T67	
+T68	Time 3295 3305	March 2016
+T69	Time 3418 3422	2018
+R29	targets Arg1:T16 Arg2:T38	
+T70	Location 3602 3607	Syria
+R30	targets Arg1:T16 Arg2:T28	
+R31	targets Arg1:T16 Arg2:T70	
+T71	Time 3767 3771	2017
+T72	Organization 3841 3854	Ahrar al-Sham
+R32	targets Arg1:T27 Arg2:T40	
+R33	discoveredIn Arg1:T27 Arg2:T71	
+R34	targets Arg1:T27 Arg2:T72	
+T73	Malware 3982 3989	Monokle
+T74	Malware 4137 4144	Monokle
+T75	Location 4278 4283	Syria
+T76	Location 4350 4364	Eastern Europe
+R35	targets Arg1:T74 Arg2:T29	
+R36	targets Arg1:T74 Arg2:T75	
+R37	targets Arg1:T74 Arg2:T39	
+R38	targets Arg1:T74 Arg2:T76	
+T77	Application 4440 4449	UzbekChat
+T78	Location 4467 4480	Central Asian
+R39	targets Arg1:T74 Arg2:T45	
+R40	targets Arg1:T74 Arg2:T77	
+R41	targets Arg1:T74 Arg2:T78	
+T79	Malware 4561 4568	Monokle
+R42	targets Arg1:T79 Arg2:T4	
+R43	targets Arg1:T79 Arg2:T8	
+R44	targets Arg1:T79 Arg2:T5	
+T80	Location 5172 5178	Russia
+R45	targets Arg1:T79 Arg2:T80	
+R46	targets Arg1:T17 Arg2:T6	
+R47	isA Arg1:T79 Arg2:T42	
+R48	targets Arg1:T19 Arg2:T7	
+T37	Application 6082 6109	defensive security software
+T43	Person 5349 5354	Obama
+T81	Location 5317 5321	U.S.
+T82	Time 5379 5383	2016
+T83	OS 15 22	Android
+R49	targets Arg1:T10 Arg2:T83	
+T84	MalwareType 263 279	surveillanceware
+R3	isA Arg1:T36 Arg2:T31	
+R50	isA Arg1:T36 Arg2:T84	
+T85	AttackPattern 378 394	exfiltrate data.
+R51	uses Arg1:T36 Arg2:T85	
+T86	AttackPattern 1136 1222	uses predictive-text dictionaries to get a sense of the topics of interest to a target
+R52	uses Arg1:T13 Arg2:T86	
+T87	AttackPattern 2038 2059	track device location
+T88	AttackPattern 2064 2080	take screenshots
+T89	AttackPattern 2246 2267	sending text messages
+R27	uses Arg1:T15 Arg2:T87	
+R53	uses Arg1:T15 Arg2:T88	
+T90	MalwareType 1836 1843	spyware
+T91	Application 668 690	accessibility services
+T92	Application 1060 1082	accessibility services
+T93	Application 709 725	third-party apps
+T65	Location 5252 5259	Russian
+R54	has Arg1:T30 Arg2:T65	
+T94	Organization 3021 3028	Lookout

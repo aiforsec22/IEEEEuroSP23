@@ -1,0 +1,37 @@
+Dangerous Pegasus Spyware Has Spread to 45 Countries
+The malicious spyware has also been found in use in countries known for targeting human rights.
+
+The infamous Pegasus spyware, which targets iPhones and Android devices, has allegedly infiltrated 45 different countries across the globe — and six of those countries have used surveillance malware in the past to abuse human rights, a group of researchers claimed Tuesday.
+
+Researchers from The Citizen Lab scanned the internet in a massive project that took place between 2016 and 2018, sniffing out servers associated with the Pegasus mobile spyware, attributed to Israel-based company NSO Group as an offering for state-level actors around the world.
+
+“The number of Pegasus servers we detected in our scans ballooned from about 200 in 2016 to almost 600 in 2018.  This may be an indication that NSO Group is scaling up their operations,” Bill Marczak, senior research fellow at The Citizens Lab and one of the researchers on the team, told Threatpost.
+
+The malware has been active since August 2016 when it was discovered that the NSO Group was selling the mobile spyware to governments and third-parties who wanted its surveillance capabilities in order to read texts, track calls, collect passwords, trace phone locations and gather data from apps of victims.
+
+Pegasus is generally spread through a specially crafted exploit link (via phishing techniques) which when clicked delivers a chain of zero-day exploits to penetrate security features on the phone. The Citizen Lab’s latest report shows that Pegasus has grown more widespread – and alleges that it’s being used by certain countries to target human rights.
+
+That includes the expansion of Pegasus usage in Gulf Cooperation Council countries in the Middle East – particularly to track dissidents, such as UAE activist Ahmed Mansoor, who was targeted by the spyware in 2016; and an Amnesty International staffer and Saudi activist in June 2018.
+
+“Our findings paint a bleak picture of the human-rights risks of NSO’s global proliferation,” researchers said in a Tuesday post. “At least six countries with significant Pegasus operations have previously been linked to abusive use of spyware to target civil society, including Bahrain, Kazakhstan, Mexico, Morocco, Saudi Arabia and the United Arab Emirates.”
+
+The spyware has been abused in this way in the past – in 2017, it was discovered that dozens of Mexican journalists and lawyers (and even a child) had their devices infected by Pegasus in a campaign believed to be carried out by the nation’s government.
+
+Marczak, for his part, told us that the spyware’s civil rights abuse is a sign of what’s to come: “Civil society will increasingly find itself the target of this type of sophisticated surveillance unless the governments better regulate the spyware industry,” he said.
+
+Overall, between August 2016 and August 2018, the research team detected 1,091 IP addresses and 1,014 domain names matching the behavior of the exploit link and command-and-control (C2) server associated with Pegasus.
+
+To track various Pegasus operators, researchers at The Citizen Lab also developed a novel technique (dubbed Athena) to cluster matches of the spyware’s servers into 36 distinct Pegasus systems, each one which appears to be run by a separate operator.  Then, the team probed tens of thousands of ISP DNS caches around the world, assuming that infected devices would routinely look up the domain names for the operator’s servers using their ISP’s DNS servers.
+
+“We designed and conducted a global DNS cache probing study on the matching domain names in order to identify in which countries each operator was spying,” researchers said. “Our technique identified a total of 45 countries where Pegasus operators may be conducting surveillance operations. At least 10 Pegasus operators appear to be actively engaged in cross-border surveillance.”
+
+The 45 countries found harboring the spyware are: Algeria, Bahrain, Bangladesh, Brazil, Canada, Cote d’Ivoire, Egypt, France, Greece, India, Iraq, Israel, Jordan, Kazakhstan, Kenya, Kuwait, Kyrgyzstan, Latvia, Lebanon, Libya, Mexico, Morocco, the Netherlands, Oman, Pakistan, Palestine, Poland, Qatar, Rwanda, Saudi Arabia, Singapore, South Africa, Switzerland, Tajikistan, Thailand, Togo, Tunisia, Turkey, the UAE, Uganda, the United Kingdom, the United States, Uzbekistan, Yemen and Zambia.
+
+Interestingly the research team found several infections in United States IP space – but the  Pegasus customers were not linked to the United States, indicating cross-border compromise.
+
+When The Citizen Lab presented their findings to NSO Group, the company released a statement:
+
+“There are multiple problems with Citizen Lab’s latest report. Most significantly, the list of countries in which NSO is alleged to operate is simply inaccurate. NSO does not operate in many of the countries listed. The product is only licensed to operate in countries approved under our Business Ethics Framework and the product will not operate outside of approved countries.”
+
+However, The Citizen Lab researchers refuted those claims and stated, “The continued supply of services to countries with problematic human-rights track records and where highly publicized abuses of spyware have occurred raise serious doubts about the effectiveness of this internal mechanism, if it exists at all.”
+

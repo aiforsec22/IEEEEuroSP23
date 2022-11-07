@@ -1,0 +1,198 @@
+T1	OS 40 47	Android
+T2	OS 581 588	Android
+T3	OS 651 658	Android
+T4	OS 1118 1125	Android
+T5	OS 2005 2012	Android
+T6	OS 3664 3671	Android
+T7	OS 960 963	iOS
+T8	Organization 51 57	Google
+T9	Organization 636 642	Google
+T14	Organization 2287 2293	Google
+T16	Organization 3342 3348	Google
+T17	Malware 915 922	Pegasus
+T18	Indicator 4772 4783	/system/csk
+T19	Indicator 4931 4938	/system
+T20	Indicator 5898 5908	/data/data
+T21	Indicator 6944 6965	/sdcard/MemosForNotes
+T22	Indicator 7259 7323	ade8bef0ac29fa363fc9afd958af0074478aef650adeb0318517b48bd996d5d5
+T23	Indicator 7388 7452	3474625e63d0893fc8f83034e835472d95195254e1e4bdf99153b7c74eb44d86
+T24	Indicator 7701 7765	98ca5f94638768e7b58889bb5df4584bf5b6af56b188da48c10a02648791b30c
+T25	Indicator 7830 7894	5353212b70aa096d918e4eb6b49eb5ad8f59d9bec02d089e88802c01e707c3a1
+T26	Indicator 7963 8027	9fae5d148b89001555132c896879652fe1ca633d35271db34622248e048c78ae
+T27	Indicator 8089 8153	e384694d3d17cd88ec3a66c740c6398e07b8ee401320ca61e26bdf96c20485b4
+T28	Indicator 8215 8279	12e085ab85db887438655feebd249127d813e31df766f8c7b009f9519916e389
+T29	Indicator 8341 8405	6348104f8ef22eba5ac8ee737b192887629de987badbb1642e347d0dd01420f8
+T30	Indicator 7325 7365	44f6d1caa257799e57f0ecaf4e2e216178f4cb3d
+T31	Indicator 7896 7936	44f6d1caa257799e57f0ecaf4e2e216178f4cb3d
+T32	Indicator 7454 7494	516f8f516cc0fd8db53785a48c0a86554f75c3ba
+T33	Indicator 7767 7807	516f8f516cc0fd8db53785a48c0a86554f75c3ba
+T34	Indicator 8029 8069	7771af1ad3a3d9c0b4d9b55260bb47c2692722cf
+T35	Indicator 8155 8195	7771af1ad3a3d9c0b4d9b55260bb47c2692722cf
+T36	Indicator 8281 8321	7771af1ad3a3d9c0b4d9b55260bb47c2692722cf
+T37	Indicator 8407 8447	31a8633c2cd67ae965524d0b2192e9f14d04d016
+T38	Malware 20 28	Chrysaor
+T39	Malware 712 720	Chrysaor
+T40	Malware 873 881	Chrysaor
+T41	Malware 1435 1443	Chrysaor
+T42	Malware 1680 1688	Chrysaor
+T43	Malware 1890 1898	Chrysaor
+T44	Malware 2789 2797	Chrysaor
+T45	Malware 2913 2921	Chrysaor
+T46	Malware 3320 3328	Chrysaor
+T47	Malware 3769 3777	Chrysaor
+T48	Malware 3929 3937	Chrysaor
+T49	Malware 4220 4228	Chrysaor
+T50	Malware 4363 4371	Chrysaor
+T51	Malware 6997 7005	Chrysaor
+T52	Malware 7160 7168	Chrysaor
+T53	Malware 7529 7537	Chrysaor
+T54	Organization 980 991	Citizen Lab
+T55	Organization 8449 8456	Lookout
+T56	Application 1613 1624	Verify Apps
+T57	Application 3585 3596	Verify Apps
+T58	OS 4282 4308	Jellybean (4.3) or earlier
+T59	Hardware 4417 4431	Samsung device
+T60	Application 5882 5887	Skype
+T63	Organization 7063 7073	VirusTotal
+T66	Malware 7938 7961	com.binary.sms.receiver
+T67	Indicator 6359 6399	com.android.internal.view.IInputContext.
+T68	Indicator 6281 6306	/system/lib/libbinder.so,
+T69	Indicator 4382 4401	com.network.android
+T70	Malware 7238 7257	com.network.android
+T71	Malware 7367 7386	com.network.android
+T72	Malware 7680 7699	com.network.android
+T73	Malware 7809 7828	com.network.android
+T76	Malware 8071 8087	com.android.copy
+T77	Malware 8197 8213	com.android.copy
+T78	Malware 8323 8339	com.android.copy
+T79	Indicator 5020 5048	(com.sec.android.fotaclient)
+T80	Indicator 5106 5149	Settings.System.SOFTWARE_UPDATE_AUTO_UPDATE
+R1	indicates Arg1:T18 Arg2:T50
+R2	indicates Arg1:T19 Arg2:T50
+R3	indicates Arg1:T20 Arg2:T50
+R22	indicates Arg1:T67 Arg2:T50
+R23	indicates Arg1:T68 Arg2:T50
+R24	indicates Arg1:T69 Arg2:T50
+R35	indicates Arg1:T80 Arg2:T50
+R36	targets Arg1:T38 Arg2:T1	
+T64	MalwareType 127 166	Potentially Harmful Applications (PHAs)
+T65	Malware 478 486	Chrysaor
+R37	targets Arg1:T65 Arg2:T2	
+T81	Malware 701 709	Chrysaor
+T82	ThreatActor 758 780	NSO Group Technologies
+R38	hasAuthor Arg1:T39 Arg2:T82	
+R39	isA Arg1:T38 Arg2:T64	
+T83	MalwareType 177 180	PHA
+T84	MalwareType 274 277	PHA
+R40	isA Arg1:T38 Arg2:T83	
+R41	isA Arg1:T38 Arg2:T84	
+R43	targets Arg1:T17 Arg2:T7	
+T85	Organization 996 1003	Lookout
+T86	Organization 1078 1085	Lookout
+T87	Malware 1179 1186	Pegasus
+T88	Malware 1203 1211	Chrysaor
+*	hasAlias T88 T87
+*	hasAlias T40 T17
+T10	Application 1263 1274	Google Play
+T89	Application 1336 1347	Verify Apps
+T90	Malware 1669 1677	Chrysaor
+T11	Application 1712 1723	Google Play
+T12	Application 1773 1784	Google Play
+T74	Application 1834 1845	Verify Apps
+T13	Application 2032 2043	Google Play
+T75	MalwareType 2378 2381	PHA
+T91	MalwareType 2504 2507	PHA
+T92	MalwareType 2539 2542	PHA
+T93	MalwareType 2694 2697	PHA
+T94	Malware 2886 2894	Chrysaor
+T95	MalwareType 3157 3160	PHA
+R29	isA Arg1:T45 Arg2:T95	
+T15	Application 3304 3315	Google Play
+T96	Application 3565 3576	Verify Apps
+T97	MalwareType 3754 3757	PHA
+T98	AttackPattern 3981 4050	surveil the victim's activities on the device and within the vicinity
+T99	AttackPattern 4052 4073	leveraging microphone
+T100	AttackPattern 4104 4191	logging and tracking application activities on communication apps such as phone and SMS
+R30	uses Arg1:T48 Arg2:T98	
+R42	uses Arg1:T48 Arg2:T100	
+R44	uses Arg1:T48 Arg2:T99	
+R45	targets Arg1:T49 Arg2:T58	
+R46	targets Arg1:T50 Arg2:T59	
+T101	Indicator 4461 4525	ade8bef0ac29fa363fc9afd958af0074478aef650adeb0318517b48bd996d5d5
+R47	indicates Arg1:T101 Arg2:T50	
+T61	AttackPattern 4552 4604	uses known framaroot exploits to escalate privileges
+T62	AttackPattern 4609 4644	break Android's application sandbox
+R48	uses Arg1:T50 Arg2:T61	
+R49	uses Arg1:T50 Arg2:T62	
+T102	AttackPattern 4719 4753	attempts to use a superuser binary
+R50	uses Arg1:T50 Arg2:T102	
+T103	AttackPattern 4845 4899	immediately protects itself and starts to collect data
+R51	uses Arg1:T50 Arg2:T103	
+T104	AttackPattern 4952 4981	persist across factory resets
+R52	uses Arg1:T50 Arg2:T104	
+T105	AttackPattern 4983 5019	Removing Samsung's system update app
+R34	uses Arg1:T50 Arg2:T105	
+T106	AttackPattern 5053 5099	disabling auto-updates to maintain persistence
+R53	uses Arg1:T50 Arg2:T106	
+T107	AttackPattern 5157 5183	Deleting WAP push messages
+T108	AttackPattern 5188 5217	changing WAP message settings
+R54	uses Arg1:T50 Arg2:T108	
+R55	uses Arg1:T50 Arg2:T107	
+T109	AttackPattern 5256 5352	Starting content observers and the main task loop to receive remote commands and exfiltrate data
+R56	uses Arg1:T50 Arg2:T109	
+T110	AttackPattern 5424 5529	use alarms to periodically repeat actions on the device to expose data, including gathering location data
+T112	Application 5835 5843	WhatsApp
+T113	Application 5845 5852	Twitter
+T114	Application 5854 5862	Facebook
+T115	Application 5864 5869	Kakoa
+T116	Application 5871 5876	Viber
+R57	targets Arg1:T50 Arg2:T116	
+R58	targets Arg1:T50 Arg2:T60	
+R59	targets Arg1:T50 Arg2:T115	
+R60	targets Arg1:T50 Arg2:T114	
+R62	uses Arg1:T50 Arg2:T110	
+R63	targets Arg1:T50 Arg2:T113	
+R64	targets Arg1:T50 Arg2:T112	
+T117	AttackPattern 6141 6205	captures an image of the current screen via the raw frame buffer
+T118	AttackPattern 5603 5823	Data collectors are used in conjunction with repeated commands to collect user data including, SMS settings, SMS messages, Call logs, Browser History, Calendar, Contacts, Emails, and messages from selected messaging apps
+R65	uses Arg1:T50 Arg2:T118	
+R66	uses Arg1:T50 Arg2:T117	
+T119	AttackPattern 6208 6239	Keylogging: record input events
+R67	uses Arg1:T50 Arg2:T119	
+T120	AttackPattern 6410 6481	silently answers a telephone call and stays connected in the background
+T121	AttackPattern 6646 6745	drops the call, resets call settings and prepares for the user to interact with the device normally
+T122	AttackPattern 6769 6782	remove itself
+R68	uses Arg1:T50 Arg2:T120	
+R69	uses Arg1:T50 Arg2:T121	
+R70	uses Arg1:T50 Arg2:T122	
+R4	indicates Arg1:T21 Arg2:T51	
+T123	Organization 7177 7188	Virus Total
+T124	Malware 7609 7617	Chrysaor
+R5	indicates Arg1:T22 Arg2:T70	
+R6	indicates Arg1:T30 Arg2:T70	
+R7	indicates Arg1:T23 Arg2:T71	
+R8	indicates Arg1:T32 Arg2:T71	
+R9	indicates Arg1:T24 Arg2:T72	
+R10	indicates Arg1:T33 Arg2:T72	
+R11	indicates Arg1:T25 Arg2:T73	
+R12	indicates Arg1:T31 Arg2:T73	
+R13	indicates Arg1:T26 Arg2:T66	
+R14	indicates Arg1:T34 Arg2:T66	
+R15	indicates Arg1:T27 Arg2:T76	
+R16	indicates Arg1:T35 Arg2:T76	
+R17	indicates Arg1:T28 Arg2:T77	
+R18	indicates Arg1:T36 Arg2:T77	
+R19	indicates Arg1:T29 Arg2:T78	
+R20	indicates Arg1:T37 Arg2:T78	
+T125	AttackPattern 4075 4081	camera
+T126	AttackPattern 4083 4098	data collection
+R71	uses Arg1:T48 Arg2:T125	
+R72	uses Arg1:T48 Arg2:T126	
+T111	AttackPattern 6012 6125	gather changes in SMS, Calendar, Contacts, Cell info, Email, WhatsApp, Facebook, Twitter, Kakao, Viber, and Skype
+R61	uses Arg1:T50 Arg2:T111	
+T127	MalwareType 517 524	spyware
+T128	MalwareType 724 731	spyware
+T129	MalwareType 923 930	spyware
+T130	Application 6109 6115	Viber,
+T131	Application 6120 6125	Skype
+T132	Application 3349 3353	Play

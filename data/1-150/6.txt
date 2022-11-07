@@ -1,0 +1,46 @@
+Cerberus: A New Android 'Banking Malware For Rent' Emerges
+August 13, 2019
+
+After a few popular Android Trojans like Anubis, Red Alert 2.0, GM bot, and Exobot, quit their malware-as-a-service businesses, a new player has emerged on the Internet with similar capabilities to fill the gap, offering Android bot rental service to the masses.
+Dubbed "Cerberus," the new remote access Trojan allows remote attackers to take total control over the infected Android devices and also comes with banking Trojan capabilities like the use of overlay attacks, SMS control, and contact list harvesting.
+According to the author of this malware, who is surprisingly social on Twitter and mocks security researchers and antivirus industry openly, Cerberus has been coded from scratch and doesn't re-use any code from other existing banking Trojans.
+
+The author also claimed to be using the Trojan for private operations for at least two years before renting it out for anyone interested from the past two months at $2000 for 1 month usage, $7000 for 6 months and up to $12,000 for 12 months.
+
+Cerberus Banking Trojan: Features
+According to security researchers at ThreatFabric who analyzed a sample of Cerberus Trojan, the malware has a pretty common list of features, like:
+taking screenshots
+recording audio
+recording keylogs
+sending, receiving, and deleting SMSes,
+stealing contact lists
+forwarding calls
+collecting device information
+Tracking device location
+stealing account credentials,
+disabling Play Protect
+downloading additional apps and payloads
+removing apps from the infected device
+pushing notifications
+locking device's screen
+Once infected, Cerberus first hides its icon from the application drawer and then asks for the accessibility permission by masquerading itself as Flash Player Service. If granted, the malware automatically registers the compromised device to its command-and-control server, allowing the buyer/attacker to control the device remotely.
+To steal users' credit card numbers, banking credentials and passwords for other online accounts, Cerberus lets attackers launch screen overlay attacks from its remote dashboard.
+
+In screen overlay attack, the Trojan displays an overlay on top of legitimate mobile banking apps and tricks Android users into entering their banking credentials into the fake login screen, just like a phishing attack.
+
+According to researchers, Cerberus already contains overlay attack templates for a total of 30 unique targets, including:
+7 French banking apps
+7 U.S. banking apps
+1 Japanese banking app
+15 non-banking apps
+
+Cerberus Uses Motion-based Evasion Tactic
+Cerberus also uses some interesting techniques to evade detection from antivirus solutions and prevent its analysis, like using the device accelerometer sensor to measure movements of the victim.
+
+The idea is straightforward—as a user moves, their Android device usually generates some amount of motion sensor data. The malware monitors the user's steps through the device motion sensor to check if it is running on a real Android device.
+"The Trojan uses this counter to activate the bot—if aforementioned step counter hits the pre-configured threshold it considers running on the device to be safe," the researchers explain.
+"This simple measure prevents the Trojan from running and being analyzed in dynamic analysis environments (sandboxes) and on the test devices of malware analysts."
+If the user's device lacks sensor data, the malware assumes that the sandbox for scanning malware is an emulator with no motion sensors and will not run the malicious code.
+However, this technique is also not unique and has previously been implemented by the popular Android banking Trojan 'Anubis'.
+It should be noted that Cerberus malware does not exploit any vulnerability to get automatically installed on a targeted device in the first place. Instead, the malware installation relies on social engineering tactics.
+Therefore, to protect yourself from becoming victims to such malware threats, you are recommended to be careful what you download on your phone and definitely think thrice before side-loading stuff as well.

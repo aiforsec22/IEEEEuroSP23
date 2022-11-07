@@ -1,0 +1,82 @@
+T1	OS 106 113	Android
+T2	OS 890 897	Android
+T3	OS 1679 1686	Android
+T4	OS 1767 1774	Android
+T5	OS 3204 3228	Android 8.0 (SDK API 26)
+T6	OS 1350 1357	Windows
+T7	Malware 4875 4884	Skygofree
+T8	ThreatActor 41 52	HackingTeam
+T10	Application 3008 3012	XMPP
+T15	Indicator 5424 5456	70a937b2504b3ad6c623581424c7e53d
+T20	Indicator 3027 3040	url.plus:5223
+T22	Indicator 3093 3110	url.plus/app/pro/
+T23	Malware 0 9	Skygofree
+T24	Time 74 86	October 2017
+T25	MalwareType 114 121	spyware
+T26	Time 389 400	end of 2014
+T27	AttackPattern 525 620	record audio surroundings via the microphone when an infected device is in a specified location
+T9	AttackPattern 626 682	stealing of WhatsApp messages via Accessibility Services
+T28	AttackPattern 703 776	connect an infected device to Wi-Fi networks controlled by cybercriminals
+T29	Time 966 970	2015
+T30	Time 1145 1161	October 31, 2017
+T31	Location 1247 1252	Italy
+T32	MalwareType 1332 1339	spyware
+T33	AttackPattern 1383 1432	exfiltrating sensitive data on a targeted machine
+T34	Time 1472 1489	beginning of 2017
+T35	Malware 1597 1606	Skygofree
+R1	discoveredIn Arg1:T23 Arg2:T24	
+R2	targets Arg1:T23 Arg2:T1	
+R3	isA Arg1:T23 Arg2:T25	
+R4	uses Arg1:T23 Arg2:T27	
+R5	uses Arg1:T23 Arg2:T9	
+R6	uses Arg1:T23 Arg2:T28	
+R7	targets Arg1:T23 Arg2:T2	
+R8	targets Arg1:T23 Arg2:T31	
+R9	uses Arg1:T23 Arg2:T33	
+T36	Time 1805 1816	end of 2014
+T39	Time 2189 2207	September 14, 2017
+T40	AttackPattern 2248 2412	grab a lot of exfiltrated data, like call records, text messages, geolocation, surrounding audio, calendar events, and other memory information stored on the device
+T41	AttackPattern 2441 2486	shows a fake welcome notification to the user
+R10	targets Arg1:T35 Arg2:T4	
+R13	uses Arg1:T35 Arg2:T40	
+R14	uses Arg1:T35 Arg2:T41	
+T42	AttackPattern 2606 2650	hides an icon and starts background services
+R15	uses Arg1:T35 Arg2:T42	
+T17	AttackPattern 2790 2805	Audio recording
+T18	AttackPattern 2733 2767	Uploading last recorded .amr audio
+T43	AttackPattern 2827 2868	Location tracking with movement detection
+T44	AttackPattern 2883 2911	GSM tracking (CID, LAC, PSC)
+T45	AttackPattern 2925 2943	Clipboard stealing
+T46	AttackPattern 2964 2994	Uploading all exfiltrated data
+R16	uses Arg1:T35 Arg2:T18	
+R17	uses Arg1:T35 Arg2:T17	
+R18	uses Arg1:T35 Arg2:T43	
+R19	uses Arg1:T35 Arg2:T44	
+R20	uses Arg1:T35 Arg2:T45	
+R21	uses Arg1:T35 Arg2:T46	
+T47	Application 2996 3007	AndroidPush
+R22	indicates Arg1:T20 Arg2:T35	
+R23	indicates Arg1:T22 Arg2:T35	
+T48	AttackPattern 4010 4075	allows the files of any other installed application to be grabbed
+T19	AttackPattern 4347 4459	creates a new Wi-Fi connection with specified configurations from the command and enable Wi-Fi if it is disabled
+T49	AttackPattern 4591 4726	connect the victim to a Wi-Fi network controlled by the cybercriminals to perform traffic sniffing and man-in-the-middle (MitM) attacks
+T50	AttackPattern 4753 4814	records a video/capture a photo using the front-facing camera
+T12	Hardware 5209 5222	Huawei device
+T13	Hardware 4937 4951	Huawei devices
+T14	Hardware 5358 5372	Huawei devices
+R24	targets Arg1:T7 Arg2:T13	
+R25	targets Arg1:T7 Arg2:T14	
+R26	targets Arg1:T7 Arg2:T12	
+R27	indicates Arg1:T15 Arg2:T7	
+T51	MalwareType 5524 5531	spyware
+R28	isA Arg1:T7 Arg2:T51	
+R31	uses Arg1:T35 Arg2:T48	
+R32	uses Arg1:T35 Arg2:T19	
+R33	uses Arg1:T35 Arg2:T49	
+R34	uses Arg1:T35 Arg2:T50	
+R35	isA Arg1:T35 Arg2:T32	
+T11	AttackPattern 3908 3932	record surrounding audio
+R11	uses Arg1:T35 Arg2:T11	
+T52	MalwareType 2004 2011	spyware
+T53	Application 660 673	Accessibility
+T54	Application 638 646	WhatsApp

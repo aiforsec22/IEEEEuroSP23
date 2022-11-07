@@ -1,0 +1,311 @@
+T1	OS 184 191	Android
+T2	OS 674 681	Android
+T3	OS 1000 1007	Android
+T4	OS 2660 2667	Android
+T5	OS 8547 8554	Android
+T6	OS 13684 13691	Android
+T9	Malware 847 855	Cerberus
+T10	Malware 927 935	Cerberus
+T11	Malware 1549 1557	Cerberus
+T12	Malware 1745 1753	Cerberus
+T13	Malware 2065 2073	Cerberus
+T14	Malware 2814 2822	Cerberus
+T15	Malware 2944 2952	Cerberus
+T16	Malware 3138 3146	Cerberus
+T17	Malware 3252 3260	Cerberus
+T18	Malware 3960 3968	Cerberus
+T19	Malware 5090 5098	Cerberus
+T20	Malware 5714 5722	Cerberus
+T21	Malware 5960 5968	Cerberus
+T22	Malware 6104 6112	Cerberus
+T23	Malware 6194 6202	Cerberus
+T25	Malware 7390 7398	Cerberus
+T26	Malware 7576 7584	Cerberus
+T27	Malware 7620 7628	Cerberus
+T29	Malware 8191 8199	Cerberus
+T30	Malware 9984 9992	Cerberus
+T31	Malware 15299 15307	Cerberus
+T32	Malware 0 5	Alien
+T33	Malware 7248 7253	Alien
+T34	Malware 8101 8106	Alien
+T35	Malware 8277 8282	Alien
+T36	Malware 8348 8353	Alien
+T37	Malware 8401 8406	Alien
+T38	Malware 8455 8460	Alien
+T39	Malware 9221 9226	Alien
+T40	Malware 9974 9979	Alien
+T41	Malware 10206 10211	Alien
+T42	Malware 10325 10330	Alien
+T43	Malware 10576 10581	Alien
+T44	Malware 10731 10736	Alien
+T45	Malware 13159 13164	Alien
+T46	Malware 13285 13290	Alien
+T47	Malware 13880 13885	Alien
+T48	Malware 14735 14740	Alien
+T49	Application 1355 1374	Google Play Protect
+T50	Application 2626 2638	Play Protect
+T51	Application 3824 3834	TeamViewer
+T52	Application 4943 4953	TeamViewer
+T53	Application 9081 9091	TeamViewer
+T57	Application 11315 11325	TeamViewer
+T58	Application 11414 11424	TeamViewer
+T60	Application 11735 11745	TeamViewer
+T61	Application 12156 12166	TeamViewer
+T62	Application 14827 14837	TeamViewer
+T63	Application 5681 5694	Authenticator
+T64	Application 8308 8328	Google Authenticator
+T65	Malware 5821 5830	BlackRock
+T66	Malware 6142 6151	BlackRock
+T67	Malware 6523 6532	BlackRock
+T70	Application 4569 4572	VNC
+T71	Application 4619 4622	VNC
+T73	Location 13463 13472	Australia
+T75	Malware 21 29	Cerberus
+T76	Time 71 75	2020
+T77	Time 95 99	2020
+T78	Organization 214 226	ThreatFabric
+T79	MalwareType 255 269	banking Trojan
+T80	MalwareType 682 696	banking Trojan
+T81	MalwareType 702 722	Remote Access Trojan
+T82	AttackPattern 724 745	notification stealing
+T83	AttackPattern 750 792	authenticator-based 2FA theft capabilities
+T84	Malware 801 806	Alien
+R1	targets Arg1:T84 Arg2:T2	
+R2	isA Arg1:T84 Arg2:T80	
+R3	uses Arg1:T84 Arg2:T82	
+R4	uses Arg1:T84 Arg2:T83	
+T85	Time 937 948	August 2020
+T86	Malware 970 978	Cerberus
+T87	MalwareType 1008 1022	banking Trojan
+R5	targets Arg1:T86 Arg2:T3	
+R6	isA Arg1:T86 Arg2:T87	
+T88	Time 1494 1505	end of July
+T90	Time 2019 2035	August 10th 2020
+T91	Malware 3418 3426	Cerberus
+T92	Malware 3436 3441	Alien
+R8	variantOf Arg1:T92 Arg2:T91	
+T93	Time 3486 3498	January 2020
+T94	Time 4330 4342	January 18th
+T95	Malware 5453 5461	Cerberus
+T96	Time 5754 5766	Mid-February
+T97	Time 5936 5954	February 20th 2020
+T98	Malware 6983 6988	Alien
+T24	Version 7308 7310	v1
+T99	Time 7332 7344	January 2020
+T100	Malware 7380 7388	Cerberus
+T101	Malware 7589 7594	Alien
+T102	Malware 7457 7462	Alien
+T28	Malware 7867 7880	Cerberus (v2)
+T103	Time 7897 7905	May 2020
+T104	AttackPattern 7974 8021	steal 2FA codes from Google’s authenticator app
+R10	uses Arg1:T28 Arg2:T104	
+T105	Time 8117 8130	February 2020
+R11	uses Arg1:T34 Arg2:T104	
+T106	MalwareType 8481 8495	banking Trojan
+R12	isA Arg1:T38 Arg2:T106	
+T107	MalwareType 8555 8569	banking Trojan
+R13	targets Arg1:T38 Arg2:T5	
+T108	AttackPattern 8607 8622	overlay attacks
+T109	AttackPattern 8624 8654	control and steal SMS messages
+T110	AttackPattern 8659 8683	harvest the contact list
+R14	uses Arg1:T38 Arg2:T108	
+R15	uses Arg1:T38 Arg2:T109	
+R16	uses Arg1:T38 Arg2:T110	
+T111	AttackPattern 8692 8726	leverage its keylogger for any use
+T112	AttackPattern 8830 8893	install, start and remove applications from the infected device
+R17	uses Arg1:T38 Arg2:T111	
+R18	uses Arg1:T38 Arg2:T112	
+R19	communicatesWith Arg1:T38 Arg2:T39	
+R20	isA Arg1:T9 Arg2:T80	
+R21	isA Arg1:T84 Arg2:T81	
+T113	AttackPattern 9245 9255	Overlaying
+T114	AttackPattern 9299 9309	Keylogging
+T115	AttackPattern 9311 9324	Remote access
+T116	AttackPattern 9342 9353	SMS listing
+T117	AttackPattern 9371 9385	SMS forwarding
+T118	AttackPattern 9387 9409	Device info collection
+T119	AttackPattern 9411 9434	Contact list collection
+T120	AttackPattern 9436 9455	Application listing
+T121	AttackPattern 9457 9476	Location collection
+T122	AttackPattern 9532 9551	USSD request making
+T123	AttackPattern 9560 9575	Call forwarding
+T124	AttackPattern 9593 9607	App installing
+T125	AttackPattern 9625 9637	App starting
+T126	AttackPattern 9655 9666	App removal
+T127	AttackPattern 9684 9711	Showing arbitrary web pages
+T128	AttackPattern 9729 9743	Screen-locking
+T129	AttackPattern 9760 9778	Push notifications
+T130	AttackPattern 9831 9845	Hiding the App
+T131	AttackPattern 9869 9887	Preventing removal
+T132	AttackPattern 9906 9925	Emulation-detection
+R24	uses Arg1:T39 Arg2:T113	
+R25	uses Arg1:T39 Arg2:T114	
+R26	uses Arg1:T39 Arg2:T115	
+R27	uses Arg1:T39 Arg2:T116	
+R28	uses Arg1:T39 Arg2:T117	
+R29	uses Arg1:T39 Arg2:T118	
+R30	uses Arg1:T39 Arg2:T119	
+R31	uses Arg1:T39 Arg2:T120	
+R32	uses Arg1:T39 Arg2:T121	
+R33	uses Arg1:T39 Arg2:T122	
+R34	uses Arg1:T39 Arg2:T123	
+R35	uses Arg1:T39 Arg2:T124	
+R36	uses Arg1:T39 Arg2:T125	
+R37	uses Arg1:T39 Arg2:T126	
+R38	uses Arg1:T39 Arg2:T127	
+R39	uses Arg1:T39 Arg2:T128	
+R40	uses Arg1:T39 Arg2:T129	
+R41	uses Arg1:T39 Arg2:T130	
+R42	uses Arg1:T39 Arg2:T131	
+R43	uses Arg1:T39 Arg2:T132	
+T133	Malware 10402 10410	Cerberus
+T54	AttackPattern 10425 10479	TeamViewer based remote control of the infected device
+T134	AttackPattern 10488 10518	notification sniffer (stealer)
+R44	uses Arg1:T42 Arg2:T54	
+R45	uses Arg1:T42 Arg2:T134	
+T55	AttackPattern 10992 11048	Provides credentials for the TeamViewer app and launches
+T56	AttackPattern 11070 11097	Launches the TeamViewer app
+T135	AttackPattern 11113 11164	Sends the current settings of RAT service to the C2
+T136	AttackPattern 11175 11237	Gets the list of installed applications on the infected device
+R46	uses Arg1:T44 Arg2:T55	
+R47	uses Arg1:T44 Arg2:T56	
+R48	uses Arg1:T44 Arg2:T135	
+R49	uses Arg1:T44 Arg2:T136	
+R50	uses Arg1:T44 Arg2:T57	
+T59	AttackPattern 11455 11525	uses the Accessibility privileges to access the TeamViewer application
+T137	AttackPattern 11527 11565	logs in using the provided credentials
+T138	AttackPattern 11567 11618	grant any additional permissions it requires to run
+T139	AttackPattern 11623 11666	dismiss any warnings issued (if applicable)
+R51	uses Arg1:T44 Arg2:T59	
+R52	uses Arg1:T44 Arg2:T137	
+R53	uses Arg1:T44 Arg2:T138	
+R54	uses Arg1:T44 Arg2:T139	
+T140	Location 13390 13395	Spain
+T141	Location 13397 13403	Turkey
+T142	Location 13405 13412	Germany
+T72	Location 13414 13438	United States of America
+T143	Location 13440 13445	Italy
+T144	Location 13447 13453	France
+T145	Location 13455 13461	Poland
+T146	Location 13481 13495	United Kingdom
+R56	targets Arg1:T46 Arg2:T140	
+R57	targets Arg1:T46 Arg2:T141	
+R58	targets Arg1:T46 Arg2:T142	
+R59	targets Arg1:T46 Arg2:T72	
+R60	targets Arg1:T46 Arg2:T143	
+R61	targets Arg1:T46 Arg2:T144	
+R62	targets Arg1:T46 Arg2:T145	
+R63	targets Arg1:T46 Arg2:T73	
+R64	targets Arg1:T46 Arg2:T146	
+T147	Time 13524 13528	2020
+T149	Malware 14227 14232	Alien
+T150	AttackPattern 14264 14290	authenticator-code stealer
+T151	AttackPattern 14295 14316	notifications-sniffer
+R65	uses Arg1:T149 Arg2:T150	
+R66	uses Arg1:T149 Arg2:T151	
+R67	targets Arg1:T48 Arg2:T62	
+T152	Time 15181 15185	2020
+T153	Time 13609 13613	2020
+T154	Malware 15433 15441	Cerberus
+T89	AttackPattern 8916 9022	offers a notifications sniffer, allowing it to get the content of all notifications on the infected device
+R7	uses Arg1:T38 Arg2:T89	
+R69	uses Arg1:T38 Arg2:T53	
+T157	Application 10425 10435	TeamViewer
+R71	targets Arg1:T42 Arg2:T157	
+T158	Application 11503 11513	TeamViewer
+R72	targets Arg1:T44 Arg2:T158	
+T68	MalwareType 6569 6575	Trojan
+R68	isA Arg1:T67 Arg2:T68	
+R9	variantOf Arg1:T33 Arg2:T100	
+R73	discoveredIn Arg1:T34 Arg2:T105	
+T69	MalwareType 8200 8206	Trojan
+R74	isA Arg1:T29 Arg2:T69	
+T148	MalwareType 8354 8360	Trojan
+R75	isA Arg1:T36 Arg2:T148	
+T155	MalwareType 10596 10599	RAT
+R70	isA Arg1:T43 Arg2:T155	
+T74	MalwareType 90 93	RAT
+T156	MalwareType 1105 1111	Trojan
+R55	isA Arg1:T86 Arg2:T156	
+T159	Time 1148 1164	August last year
+T160	MalwareType 1314 1320	Trojan
+T7	MalwareType 1895 1901	Trojan
+T161	MalwareType 2210 2216	Trojan
+T162	Malware 3612 3620	Cerberus
+T163	MalwareType 3841 3844	RAT
+T164	MalwareType 3914 3920	Trojan
+T165	MalwareType 4050 4056	Trojan
+T166	MalwareType 4242 4248	Trojan
+T167	MalwareType 4729 4736	Trojans
+T168	MalwareType 4770 4773	RAT
+T169	Application 4788 4791	VNC
+T170	MalwareType 4916 4919	RAT
+T171	AttackPattern 4936 5001	use of TeamViewer to provide remote access to the infected device
+R76	uses Arg1:T18 Arg2:T171	
+R77	uses Arg1:T18 Arg2:T52	
+T172	MalwareType 5139 5145	Trojan
+T173	Time 5349 5357	February
+T174	MalwareType 5515 5521	Trojan
+T175	Time 6719 6726	January
+T176	MalwareType 6903 6909	Trojan
+T177	MalwareType 7115 7121	Trojan
+T178	MalwareType 7165 7171	Trojan
+T179	Malware 7298 7306	Cerberus
+R78	has Arg1:T179 Arg2:T24	
+T180	MalwareType 7677 7683	Trojan
+T8	MalwareType 9030 9033	RAT
+T181	MalwareType 9035 9055	Remote Access Trojan
+T182	AttackPattern 9511 9523	SMS: Sending
+R22	uses Arg1:T39 Arg2:T182	
+T183	MalwareType 10135 10141	Trojan
+T184	MalwareType 10281 10287	Trojan
+T185	MalwareType 10527 10530	RAT
+T186	AttackPattern 10935 10971	Uploads the specified file to the C2
+T187	AttackPattern 10868 10918	Lists files and subfolders in the specified folder
+T188	AttackPattern 10830 10854	Disables the RAT service
+R79	uses Arg1:T44 Arg2:T188	
+R80	uses Arg1:T44 Arg2:T187	
+R81	uses Arg1:T44 Arg2:T186	
+T189	MalwareType 11143 11146	RAT
+T190	MalwareType 11255 11261	Trojan
+T191	MalwareType 11448 11454	Trojan
+T192	Application 11464 11477	Accessibility
+T193	AttackPattern 11870 11903	access and change device settings
+T194	AttackPattern 11905 11928	install and remove apps
+T195	AttackPattern 11942 11977	use any app installed on the device
+T196	Application 11979 11996	bank applications
+T197	Application 11998 12008	messengers
+T198	Application 12013 12028	social networks
+R82	uses Arg1:T44 Arg2:T193	
+T199	MalwareType 10737 10740	RAT
+R83	isA Arg1:T44 Arg2:T199	
+R84	uses Arg1:T44 Arg2:T194	
+R85	uses Arg1:T44 Arg2:T195	
+T200	MalwareType 12433 12439	Trojan
+T201	Application 12753 12766	Accessibility
+R86	uses Arg1:T44 Arg2:T201	
+T202	MalwareType 13886 13892	Trojan
+T203	MalwareType 13692 13706	banking Trojan
+T204	MalwareType 13628 13631	RAT
+T205	MalwareType 13170 13176	Trojan
+T206	MalwareType 13075 13081	Trojan
+T207	MalwareType 14344 14350	Trojan
+T208	MalwareType 14381 14387	Trojan
+T209	MalwareType 14794 14797	RAT
+T210	MalwareType 15042 15048	Trojan
+R23	discoveredIn Arg1:T28 Arg2:T103	
+R87	variantOf Arg1:T28 Arg2:T27	
+T211	MalwareType 13768 13775	Trojans
+T212	MalwareType 5079 5085	Trojan
+T213	MalwareType 8107 8113	Trojan
+T214	MalwareType 10582 10588	Trojan
+T215	MalwareType 15308 15314	Trojan
+T216	MalwareType 14488 14494	botnet
+T217	Application 15703 15725	financial institutions
+T218	Application 15515 15529	online banking
+T219	Application 11021 11031	TeamViewer
+T220	Application 11083 11093	TeamViewer
+T221	MalwareType 8705 8714	keylogger
+T222	MalwareType 10843 10846	RAT
+T223	OS 12455 12462	android
+T224	Organization 15993 15998	banks

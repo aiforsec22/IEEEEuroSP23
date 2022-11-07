@@ -1,0 +1,18 @@
+Cerberus Android Malware Gains Ability to Steal 2FA Tokens, Screen Lock Credentials
+The Cerberus Android malware family has gained the ability to steal its victims’ two-factor authentication (2FA) tokens and screen lock credentials.
+
+According to ThreatFabric, the operators of Cerberus released a new variant of their creation in mid-January 2020. This version came with a new remote-access Trojan (RAT) capability that allowed Cerberus to traverse the file system and download its contents. It also enabled the malware to launch TeamViewer and establish connections to it.
+
+Such functionality granted full access over an infected device to Cerberus’ handlers. As such, they could leverage that functionality to change the device’s settings, install or remove any app, use an app, and conduct espionage on the device’s activity.
+
+Not only that, but the threat actors could use a simple overlay in Cerberus requiring its victims to unlock their device. The overlay analyzed by researchers stole victims’ screen lock codes/credentials, allowing the threat actors to remotely unlock a device for the purpose of performing fraud.
+
+Attackers could also abuse the Accessibility features to steal 2FA codes from the Google Authentication app for the purpose of bypassing authentication services.
+
+A Look Back at Cerberus
+ThreatFabric first came across Cerberus in June 2019. What stuck out for researchers at that time was the fact that Cerberus lacked features that could have helped the malware to avoid detection in the process of abusing stolen information and perpetuating fraud. Not only that, but the malware operators also used a Twitter account at the time to both publish promotional materials for their creation and make fun of the antivirus community.
+
+A few months later in September 2019, security firm Buguroo revealed that it had detected a new version of Cerberus targeting Spanish and Latin American entities.
+
+Defending Against Cerberus Android Malware
+Security professionals can help their organizations defend against Cerberus Android malware and similar threats by investing in a unified endpoint management (UEM) platform for the purpose of monitoring mobile devices and tracking how they report to the network environment. Companies should also leverage artificial intelligence (AI)-powered tools to track threats like Cerberus that use evasion tactics and other techniques to fly under the radar.

@@ -1,0 +1,118 @@
+T1	OS 17 24	Android
+T2	OS 697 704	Android
+T3	OS 1279 1286	Android
+T4	OS 1680 1687	Android
+T5	OS 3465 3472	Android
+T6	OS 3708 3715	Android
+T8	Malware 732 739	Monokle
+T9	Malware 795 802	Monokle
+T10	Malware 1127 1134	Monokle
+T11	Malware 1579 1586	Monokle
+T12	Malware 2037 2044	Monokle
+T13	Malware 2280 2287	Monokle
+T14	Malware 2649 2656	Monokle
+T15	Malware 3416 3423	Monokle
+T16	Malware 3544 3551	Monokle
+T17	Malware 3643 3650	Monokle
+T18	Malware 4061 4068	Monokle
+T19	Malware 4483 4490	Monokle
+T20	ThreatActor 84 114	Special Technology Center (STC
+T22	ThreatActor 296 299	STC
+T23	ThreatActor 748 751	STC
+T24	ThreatActor 1187 1190	STC
+T25	Organization 580 587	Lookout
+T26	Organization 3602 3609	Lookout
+T27	Application 1419 1430	App Control
+T28	Application 1540 1551	App Control
+T29	Application 1869 1877	Defender
+T31	Organization 4236 4249	Ahrar al-Sham
+T32	Organization 193 212	American Government
+T33	Person 262 274	Barack Obama
+T34	Location 4406 4414	Caucasus
+T21	Malware 5 12	Monokle
+T35	AttackPattern 51 82	Stealing and Changing Passwords
+R1	targets Arg1:T21 Arg2:T1	
+R2	uses Arg1:T21 Arg2:T35	
+T36	Location 159 175	Saint Petersburg
+T37	Location 177 183	Russia
+R3	has Arg1:T20 Arg2:T36	
+R4	has Arg1:T37 Arg2:T36	
+T38	Time 256 260	2016
+T39	Time 435 439	2016
+T40	Location 429 432	USA
+R5	targets Arg1:T22 Arg2:T40	
+T41	ThreatActor 537 540	STC
+T42	Malware 720 727	Monokle
+R6	targets Arg1:T42 Arg2:T2	
+R7	hasAuthor Arg1:T42 Arg2:T41	
+R8	hasAuthor Arg1:T8 Arg2:T23	
+T43	Organization 1052 1059	Lookout
+T44	ThreatActor 1138 1141	STC
+R9	hasAuthor Arg1:T10 Arg2:T44	
+T45	Organization 1159 1166	Lookout
+T46	Organization 1334 1361	Russian government agencies
+T47	ThreatActor 1457 1460	STC
+T48	Organization 1490 1497	Lookout
+T49	ThreatActor 1646 1649	STC
+T50	Application 1709 1717	Defender
+T51	Malware 1743 1750	Monokle
+T52	ThreatActor 1957 1960	STC
+T53	Malware 1985 1992	Monokle
+T54	Organization 2000 2007	Lookout
+T55	ThreatActor 2067 2070	STC
+R10	hasAuthor Arg1:T12 Arg2:T55	
+T56	Malware 2226 2233	Monokle
+T57	AttackPattern 2313 2327	log keystrokes
+T58	AttackPattern 2329 2354	delete and download files
+T59	AttackPattern 2356 2369	send messages
+T60	AttackPattern 2371 2488	exfiltrate contacts, device information, emails, login data, lists of installed apps, and call and browsing histories
+R11	uses Arg1:T13 Arg2:T57	
+R12	uses Arg1:T13 Arg2:T58	
+R13	uses Arg1:T13 Arg2:T59	
+R14	uses Arg1:T13 Arg2:T60	
+T61	AttackPattern 2502 2513	take photos
+T62	AttackPattern 2544 2590	if it has root access, it can execute commands
+R15	uses Arg1:T13 Arg2:T61	
+R16	uses Arg1:T13 Arg2:T62	
+T63	OS 2755 2762	Android
+T64	Application 2765 2787	accessibility services
+R17	has Arg1:T64 Arg2:T63	
+T7	AttackPattern 2791 2825	capture and exfiltrate information
+R18	uses Arg1:T14 Arg2:T7	
+T30	Application 2831 2847	Microsoft Office
+T65	Application 2852 2863	Google Docs
+T66	Application 2917 2925	Whatsapp
+T67	Application 2927 2932	Viber
+T68	Application 2934 2942	Snapchat
+R19	targets Arg1:T14 Arg2:T30	
+R20	targets Arg1:T14 Arg2:T65	
+R21	targets Arg1:T14 Arg2:T66	
+R22	targets Arg1:T14 Arg2:T67	
+R23	targets Arg1:T14 Arg2:T68	
+T69	Time 3633 3637	2015
+T70	AttackPattern 3784 3837	trojanized apps distributed on third-party app stores
+R24	uses Arg1:T17 Arg2:T70	
+T71	AttackPattern 3852 3881	impersonate real applications
+R25	uses Arg1:T17 Arg2:T71	
+T72	Location 4268 4273	Syria
+R26	has Arg1:T31 Arg2:T72	
+T73	Location 4344 4354	Uzbekistan
+T74	Location 4425 4439	Eastern Europe
+R27	targets Arg1:T18 Arg2:T31	
+R28	targets Arg1:T18 Arg2:T72	
+R29	targets Arg1:T18 Arg2:T73	
+R30	targets Arg1:T18 Arg2:T34	
+R31	targets Arg1:T18 Arg2:T74	
+T75	Organization 4452 4459	Lookout
+T76	ThreatActor 4514 4541	Russian government agencies
+R32	uses Arg1:T76 Arg2:T19	
+T77	Malware 4684 4691	Monokle
+T78	AttackPattern 2956 3015	make screen recordings even when the device is still locked
+T79	MalwareType 856 879	mobile surveillanceware
+R33	isA Arg1:T9 Arg2:T79	
+T80	AttackPattern 2515 2521	videos
+T81	AttackPattern 2527 2538	screenshots
+R34	uses Arg1:T13 Arg2:T80	
+R35	uses Arg1:T13 Arg2:T81	
+T82	Application 3815 3837	third-party app stores
+T83	Application 1688 1701	antivirus app

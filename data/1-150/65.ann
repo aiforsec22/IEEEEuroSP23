@@ -1,0 +1,139 @@
+T4	Organization 63 69	Google
+T12	Organization 2293 2299	Google
+T17	Organization 5528 5534	Google
+T21	Malware 1138 1144	Exodus
+T22	Malware 1728 1734	Exodus
+T23	Malware 2582 2588	Exodus
+T24	Malware 2602 2608	Exodus
+T25	ThreatActor 3828 3833	eSurv
+T26	ThreatActor 4118 4123	eSurv
+T27	Organization 488 512	Security Without Borders
+T28	Organization 2173 2197	Security Without Borders
+T32	Application 838 855	Google Play Store
+T33	Application 1668 1685	Google Play Store
+T34	Application 1919 1929	Play Store
+T35	Application 2021 2031	Play Store
+T36	Application 2069 2079	Play Store
+T37	Organization 2203 2213	Threatpost
+T39	Application 4091 4102	google play
+T40	Application 4744 4752	LinkedIn
+T41	Application 4762 4769	Twitter
+T42	Malware 5415 5423	MobSTSPY
+T43	Location 4295 4303	Calabria
+T3	Application 0 11	Google Play
+T51	MalwareType 26 33	Spyware
+T1	MalwareType 133 140	spyware
+T5	Application 150 161	Google Play
+T52	ThreatActor 224 236	Italian firm
+T53	Malware 436 442	Exodus
+T54	Location 395 402	Italian
+T55	Malware 558 564	Exodus
+T6	Application 617 628	Google Play
+T7	Application 712 729	Google Play Store
+R1	targets Arg1:T55 Arg2:T6	
+R2	isA Arg1:T53 Arg2:T1	
+R4	targets Arg1:T55 Arg2:T7	
+T56	AttackPattern 731 787	disguised as service applications from mobile operators,
+R5	uses Arg1:T55 Arg2:T56	
+R6	targets Arg1:T55 Arg2:T32	
+T8	Organization 988 994	Google
+T50	Time 1150 1154	2016
+T57	Time 1164 1168	2019
+R7	discoveredIn Arg1:T21 Arg2:T50	
+T58	AttackPattern 1243 1281	scooping up call logs and SMS messages
+T60	AttackPattern 1336 1362	audio-recording the victim
+T29	AttackPattern 1420 1453	retrieve a list of installed apps
+T30	AttackPattern 1455 1493	retrieve the device’s browsing history
+T31	AttackPattern 1495 1531	extract events from the Calendar app
+T59	AttackPattern 1536 1567	access the owner’s address book
+T61	Location 1607 1612	Italy
+T62	Organization 1628 1652	Security Without Borders
+R8	uses Arg1:T21 Arg2:T29	
+R9	uses Arg1:T21 Arg2:T30	
+R10	uses Arg1:T21 Arg2:T31	
+R11	uses Arg1:T21 Arg2:T58	
+R12	uses Arg1:T21 Arg2:T60	
+R13	uses Arg1:T21 Arg2:T59	
+R14	targets Arg1:T21 Arg2:T61	
+R15	targets Arg1:T21 Arg2:T33	
+T9	Application 1786 1797	Google Play
+R16	targets Arg1:T22 Arg2:T9	
+T10	Location 1875 1880	Italy
+R17	targets Arg1:T22 Arg2:T10	
+R18	targets Arg1:T22 Arg2:T34	
+R19	targets Arg1:T22 Arg2:T35	
+R20	targets Arg1:T22 Arg2:T36	
+T11	Application 2269 2280	Google Play
+R21	targets Arg1:T22 Arg2:T11	
+T45	AttackPattern 2923 2982	collect some basic identifying information about the device
+R22	uses Arg1:T24 Arg2:T45	
+T46	AttackPattern 3691 3823	C2 then sends a ZIP archive, with a collection of files and the primary payload, which includes the bulk of the spyware capabilities
+R24	uses Arg1:T24 Arg2:T46	
+T47	ThreatActor 3910 3915	eSurv
+T63	ThreatActor 3887 3902	Italian company
+T64	ThreatActor 3917 3922	eSurv
+T65	Location 3933 3942	Catanzaro
+T66	Location 3947 3955	Calabria
+T67	Location 3957 3962	Italy
+T68	ThreatActor 4180 4185	eSurv
+T69	Location 4314 4319	Italy
+T70	Organization 4516 4521	eSurv
+T71	ThreatActor 4727 4732	eSurv
+T72	ThreatActor 4639 4644	eSurv
+T73	Person 4861 4876	Giuseppe Fasano
+T74	ThreatActor 4887 4892	eSurv
+T75	Person 4898 4914	Salvatore Ansani
+T76	ThreatActor 4927 4932	eSurv
+T13	Application 5017 5028	Google Play
+T14	Application 5096 5107	Google Play
+T15	Application 5231 5242	Google Play
+T2	MalwareType 5400 5407	spyware
+R26	isA Arg1:T42 Arg2:T2	
+T16	Application 5489 5500	Google Play
+T18	Application 5704 5715	Google Play
+T19	Application 5754 5765	Google Play
+T20	Application 5820 5839	Google Play Protect
+R29	targets Arg1:T42 Arg2:T16	
+R30	hasAuthor Arg1:T24 Arg2:T63	
+R31	hasAuthor Arg1:T24 Arg2:T47	
+R32	hasAuthor Arg1:T24 Arg2:T25	
+R33	hasAuthor Arg1:T24 Arg2:T64	
+R35	hasAuthor Arg1:T24 Arg2:T26	
+R36	hasAuthor Arg1:T24 Arg2:T68	
+R37	hasAuthor Arg1:T24 Arg2:T74	
+R38	hasAuthor Arg1:T24 Arg2:T72	
+R39	hasAuthor Arg1:T24 Arg2:T76	
+R40	targets Arg1:T24 Arg2:T19	
+R41	targets Arg1:T24 Arg2:T20	
+R42	targets Arg1:T24 Arg2:T14	
+R43	targets Arg1:T24 Arg2:T39	
+R44	targets Arg1:T24 Arg2:T13	
+R45	targets Arg1:T24 Arg2:T15	
+R46	targets Arg1:T24 Arg2:T18	
+R47	hasAuthor Arg1:T24 Arg2:T71	
+T44	Organization 1716 1722	Google
+R3	targets Arg1:T53 Arg2:T54	
+T49	AttackPattern 1283 1334	Facebook, Gmail and WhatsApp data and conversations
+T77	AttackPattern 1367 1406	extracting GPS coordinates of the phone
+R25	uses Arg1:T21 Arg2:T49	
+R27	uses Arg1:T21 Arg2:T77	
+T38	OS 5392 5399	Android
+R23	targets Arg1:T42 Arg2:T38	
+T78	MalwareType 5315 5330	banking malware
+T79	MalwareType 179 186	spyware
+T80	MalwareType 686 693	spyware
+T81	MalwareType 2245 2252	spyware
+T82	MalwareType 2752 2759	spyware
+T83	MalwareType 3273 3280	spyware
+T84	MalwareType 3443 3450	spyware
+T85	MalwareType 4169 4176	spyware
+T86	MalwareType 5005 5012	spyware
+T87	MalwareType 5556 5562	adware
+T88	Application 744 764	service applications
+T89	Application 1519 1531	Calendar app
+T90	Application 3011 3022	google play
+T91	Application 1303 1311	WhatsApp
+T92	Application 1293 1298	Gmail
+T93	MalwareType 3803 3810	spyware
+T94	OS 125 132	Android
+T95	Organization 4616 4631	Italian company

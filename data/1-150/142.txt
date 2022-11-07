@@ -1,0 +1,21 @@
+ViceLeaker Android malware steals call recordings, photos, videos & texts
+Israeli Citizens are the Primary Target of New Android Mobile Spying Campaign Using ViceLeaker Malware, says Kaspersky.
+Kaspersky Lab researchers discovered an Android malware campaign active since 2016 and still going strong. Dubbed ViceLeaker; researchers claim that it is the product of a group of hackers that is specifically targeting Middle Eastern and Israeli citizens.
+
+ViceLeaker campaign utilizes the notorious surveillance malware called Triout, and Kaspersky researchers detected it for the first time in May 2018. It is worth noting that Bitdefender also reported about the campaign in one of their recent blog posts, therefore, Kaspersky isn’t the only firm to have detected the malware campaign.
+
+Initial analysis revealed that hackers were targeting “dozens of mobile Android devices belonging to Israeli citizens.” The spyware sensors used by Kaspersky detected attack signals from the device belonging to one of the victims along with the hash of an Android application (APK) involved in the attack.
+
+Researchers then tagged a sample of their own to inspect further and discovered that the APK’s inner functionalities included launching a malicious payload, which was already embedded in the APK’s original coding.
+
+This means, it was a customized spyware program developed to extract sensitive data. To disassemble the original application’s code and add the malicious one, attackers have used the Smali injection technique. 
+
+The research findings were released by Kaspersky in a private report to notify and alert citizens regarding the newly discovered campaign. The report reveals that the malware can steal call recordings, photos, videos, text messages, and location data without alerting the user.
+
+Furthermore, what’s worse is that the malware is also equipped with backdoor capabilities such as it can upload/download/delete files, control the camera and record audio files, initiate calls and send out text messages to certain numbers. 
+
+Although it is unclear who is behind the campaign, researchers used an exposed email address to track the attacker’s footsteps to Iran.
+
+What’s most concerning is the fact that malware attacks against Android users are at its peak. In the last couple of days, researchers have already exposed two other campaigns targeting unsuspecting users including cryptomining malware and malware capable of bypassing 2FA and stealing the one-time password.
+
+It is advised that you must refrain from downloading unnecessary apps from Play Store and third-party websites. Moreover, keep your device updated and use reliable anti-virus software at all times.

@@ -1,0 +1,27 @@
+New malware seizes on COVID-19 to target Android users
+A new form of malware that experts are referring to as "TangleBot" is relying on interest in COVID-19 to trick Android users in the U.S and Canada into clicking on a link that will infect their cell phones, according to analysts at the mobile and email security company Cloudmark. 
+
+Cloudmark says the "clever and complicated" malware sends Android users a text message claiming to have the latest COVID-19 guidance in their area or informs them that their third COVID-19 vaccine appointment has been scheduled. When users click on the link provided, they're prompted to update their phone's Adobe Flash player, which instead installs the virus on their phone, according to Cloudmark.
+
+Here's what such a text message might look like, according to Cloudmark:
+"Once that happens, the TangleBot malware can do a ton of different things," Ryan Kalember, executive vice president of cybersecurity at Cloudmark's parent company ProofPoint, told CBS News. "It can access your microphone, it can access your camera, it can access SMS, it can access your call logs, your internet, your GPS so it knows where you are," Kalember added.
+
+Kalember said the hackers have been using TangleBot for "weeks" and that the impact could potentially be "very widespread." However, Android does have some protections in place against the virus. Prior to downloading the malware, users are warned by Android about the dangers of software from "unknown sources" and a series of permission boxes are displayed before the phone is infected.   
+
+"What is making TangleBot fairly interesting right now is that they are using incredibly fresh lures that all map to the sorts of things that we're hearing about in the news with COVID, whether we are talking about the booster or other things that you are likely to see on the front page of whatever news site you go to," Kalember said. 
+
+According to Kalember, the TangleBot malware has the capability to show hacked users an "overlay" screen that appears authentic but is instead a fake window being run by attackers to steal information. These overlays are being used to hack banking credentials because the users might believe they are logging into their mobile banking while typing in their information on a fake screen, which then relays the information to the hackers. 
+
+"I would hope that [users] would remember the Adobe Flash prompt but after that they probably won't see very much from TangleBot," Kalember said. "Like most pieces of mobile malware, it is relatively stealthy in terms of its appearance."
+
+Once the malware is installed on the device, "it is pretty hard to remove it," according to Kalember and the stolen information can be monetized well into the future. Hackers who steal identifying information in this manner often sell it online, rather than using it directly themselves. Cloudmark analysts note "there is a growing market for detailed personal and account data" on the dark web.
+
+"The infected Android devices can be monetized in lots of different ways," Kalember said. "Even if they don't do banking fraud right away, there might be lots of other ways to monetize those stolen credentials," he added.
+
+Kalember added that if an Android user discovers the TangleBot malware and is somehow able to remove it, the attackers can still simply hold onto the stolen information without acting on it immediately, lulling victims into believing their information was not hacked. 
+
+With criminals "increasingly using mobile messaging" as a method of attack, Cloudmark says users should not respond to unsolicited commercial messages and think twice about providing their number to commercial entities. The cyber company's analysts advise that users refrain from clicking on any link provided in text messages and be wary of ones that include a warning or a package delivery notification.  
+
+Kalember stressed that this discovery does not mean there is a security vulnerability with Android. Cloudmark analysts and engineers collaborated with Google to ensure the company can detect the threat and warn users.
+
+"This is exploiting the user's vulnerability," Kalember said. "You are basically being tricked into installing the attacker's code."

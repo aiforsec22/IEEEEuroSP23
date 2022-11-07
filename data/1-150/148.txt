@@ -1,0 +1,30 @@
+400 Banks’ Customers Targeted with Anubis Trojan
+The new campaign masqueraded as an Orange Telecom account management app to deliver the latest iteration of Anubis banking malware.
+
+Customers of Chase, Wells Fargo, Bank of America and Capital One, along with nearly 400 other financial institutions, are being targeted by a malicious app disguised to look like the official account management platform for French telecom company Orange S.A.
+
+Researchers say this is just the beginning.
+
+Once downloaded, the malware – a variant of banking trojan Anubis – steals the user’s personal data to rip them off, researchers at Lookout warned in a new report. And it’s not just customers of big banks at risk, the researchers added: Virtual payment platforms and crypto wallets are also being targeted.
+
+Infosec Insiders Newsletter
+“As a banking trojan malware, Anubis’ goal is to collect significant data about the victim from their mobile device for financial gain,” the Lookout report said. “This is done by intercepting SMSs, keylogging, file exfiltration, screen monitoring, GPS data collection and abuse of the device’s accessibility services.”
+
+The malicious version of the Orange Telecom account management app was submitted to the Google Play store in July 2021 and later removed, but the researchers warned that they believe this campaign was just a test of Google’s antivirus protections and will likely resurface soon.
+
+“We found that obfuscation efforts were only partially implemented within the app and that there were additional developments still occurring with its command-and-control (C2) server,” the report added. “We expect more heavily obfuscated distributions will be submitted in the future.”
+
+New Anubis Tricks
+Once downloaded on the device, the banking trojan makes a connection with the command-and-control (C2) server and downloads another application to initiate the SOCKS5 proxy.
+
+“This proxy allows the attacker to enforce authentication for clients communicating with their server and mask communications between the client and C2. Once retrieved and decrypted, the APK is saved as ‘FR.apk’ in ‘/data/data/fr.orange.serviceapp/app_apk,'” the researchers wrote.
+
+A scam message then pops up asking the user to disable Google Play Protect, giving the attacker full control, the report said.
+
+The analysts found more than 394 unique apps targeted by fr.orange.serviceapp, including banks, reloadable card companies and cryptocurrency wallets. The Lookout team traced the Anubis client to a half-built crypto trading platform.
+
+First identified in 2016, Anubis is widely available on underground forums as open-source code along with instructions for aspiring banking trojan cybercriminals, the report explained. In this latest iteration of Anubis code, the basic banking trojan has added a credential stealer to the mix, Lookout pointed out, meaning that logins for cloud-based platforms like Microsoft 365 are also at risk of compromise.
+
+The Lookout team couldn’t find any successful attack associated with the Orange S.A. campaign, Kristina Balaam, a threat researcher with Lookout, told Threatpost.
+
+“While we can’t be certain whether the app has been used in a successful attack, we do know they are targeting U.S. banks including Bank of America, U.S. Bank, Capital One, Chase, SunTrust and Wells Fargo,” Balaam said.

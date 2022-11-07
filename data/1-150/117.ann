@@ -1,0 +1,117 @@
+T1	OS 151 158	Android
+T2	OS 343 350	Android
+T3	OS 847 854	Android
+T4	OS 1605 1612	Android
+T6	OS 1670 1677	Windows
+T7	Malware 364 371	TrickMo
+T8	Malware 796 803	TrickMo
+T9	Malware 1386 1393	TrickMo
+T10	Malware 2293 2300	TrickMo
+T11	Malware 2647 2654	TrickMo
+T12	Malware 3305 3312	TrickMo
+T13	Malware 3590 3597	TrickMo
+T14	Malware 4381 4388	TrickMo
+T15	Malware 4514 4521	TrickMo
+T16	Malware 0 8	TrickBot
+T17	Malware 106 114	TrickBot
+T18	Malware 525 533	TrickBot
+T19	Malware 586 594	TrickBot
+T20	Malware 1700 1708	TrickBot
+T21	Malware 4212 4220	TrickBot
+T22	Malware 4409 4417	TrickBot
+T23	Malware 4582 4590	TrickBot
+T24	Organization 376 387	IBM X-Force
+T26	Organization 637 640	IBM
+T27	Organization 3740 3743	IBM
+T28	Organization 4313 4316	IBM
+T29	Malware 878 883	ZitMo
+T30	ThreatActor 906 910	Zeus
+T31	Malware 1169 1173	Ryuk
+T33	Organization 1356 1365	CERT-Bund
+T34	Location 545 552	Germany
+T25	MalwareType 115 129	banking Trojan
+R1	isA Arg1:T17 Arg2:T25	
+R2	targets Arg1:T17 Arg2:T1	
+T40	AttackPattern 172 253	intercept one-time authorization codes sent to Internet banking customers via SMS
+T41	Location 458 464	German
+R4	targets Arg1:T18 Arg2:T41	
+R5	targets Arg1:T19 Arg2:T34	
+T42	Time 630 634	2016
+R6	targets Arg1:T7 Arg2:T2	
+R7	targets Arg1:T7 Arg2:T41	
+T43	MalwareType 855 870	banking malware
+R3	isA Arg1:T8 Arg2:T43	
+R8	isA Arg1:T29 Arg2:T43	
+R9	targets Arg1:T8 Arg2:T3	
+R10	targets Arg1:T29 Arg2:T3	
+T44	Time 933 937	2011
+R11	hasAuthor Arg1:T29 Arg2:T30	
+T45	MalwareType 1072 1086	banking trojan
+T46	MalwareType 1174 1184	ransomware
+R12	isA Arg1:T31 Arg2:T46	
+T32	AttackPattern 1196 1208	info stealer
+T47	AttackPattern 1236 1266	harvest emails and credentials
+T48	AttackPattern 1210 1230	loot Bitcoin wallets
+R13	uses Arg1:T31 Arg2:T32	
+R14	uses Arg1:T31 Arg2:T48	
+R15	uses Arg1:T31 Arg2:T47	
+R16	isA Arg1:T31 Arg2:T45	
+R17	isA Arg1:T8 Arg2:T45	
+R18	isA Arg1:T29 Arg2:T45	
+T49	Time 1371 1380	September
+R19	discoveredIn Arg1:T9 Arg2:T49	
+T50	AttackPattern 1412 1570	intercepting a wide range of transaction authentication numbers (TANs), including one-time password (OTP), mobile TAN (mTAN), and pushTAN authentication codes
+R20	uses Arg1:T9 Arg2:T50	
+R21	targets Arg1:T9 Arg2:T4	
+T35	Organization 1623 1632	CERT-Bund
+R22	targets Arg1:T20 Arg2:T6	
+T51	AttackPattern 1709 1884	employed man-in-the-browser (MitB) attacks to ask victims for their online banking mobile phone numbers and device types in order to prompt them to install a fake security app
+R23	uses Arg1:T20 Arg2:T51	
+T52	Malware 1898 1905	TrickMo
+T36	AttackPattern 2365 2399	record a video of the app's screen
+T53	AttackPattern 2401 2440	scrape the data displayed on the screen
+T54	AttackPattern 2442 2480	monitor currently running applications
+T55	AttackPattern 2490 2523	set itself as the default SMS app
+R24	uses Arg1:T10 Arg2:T36	
+R25	uses Arg1:T10 Arg2:T53	
+R26	uses Arg1:T10 Arg2:T54	
+R27	uses Arg1:T10 Arg2:T55	
+T56	AttackPattern 2542 2602	prevents users of infected devices from uninstalling the app
+R28	uses Arg1:T10 Arg2:T56	
+T57	AttackPattern 2674 2749	gaining persistence by starting itself after the device becomes interactive
+R29	uses Arg1:T11 Arg2:T57	
+T58	AttackPattern 2852 2922	lets a remote attacker issue commands to turn on/off specific features
+R30	uses Arg1:T11 Arg2:T58	
+T5	AttackPattern 3412 3481	uses a fake Android update screen to mask its OTP-stealing operations
+R33	uses Arg1:T12 Arg2:T5	
+T37	AttackPattern 3499 3548	comes with self-destruction and removal functions
+R32	uses Arg1:T13 Arg2:T37	
+T38	MalwareType 4255 4270	banking malware
+R34	isA Arg1:T21 Arg2:T38	
+T59	Time 4306 4310	2019
+R35	communicatesWith Arg1:T14 Arg2:T22	
+T60	AttackPattern 4539 4560	app recording feature
+R36	uses Arg1:T15 Arg2:T60	
+T61	AttackPattern 4606 4666	overcome the newer pushTAN app validations deployed by banks
+R37	uses Arg1:T23 Arg2:T61	
+R38	communicatesWith Arg1:T7 Arg2:T19	
+T62	Time 663 667	2020
+T63	Malware 685 693	TrickBot
+T64	Application 1287 1309	Accessibility Features
+T65	OS 1277 1284	Android
+T66	Application 2020 2036	third-party apps
+T67	OS 2314 2321	Android
+T68	Application 2516 2523	SMS app
+T69	AttackPattern 3077 3116	exfiltrates a wide range of information
+R39	uses Arg1:T11 Arg2:T69	
+T70	Application 2975 2982	SMS app
+T71	OS 3424 3431	Android
+T72	Application 4625 4636	pushTAN app
+T73	MalwareType 4221 4227	trojan
+R40	uses Arg1:T17 Arg2:T40	
+R31	isA Arg1:T21 Arg2:T73	
+T74	Application 1867 1884	fake security app
+T75	Application 1777 1791	online banking
+T76	Application 1542 1549	pushTAN
+T77	Organization 2087 2092	banks
+T78	Organization 4661 4666	banks

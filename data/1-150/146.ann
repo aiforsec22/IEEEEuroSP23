@@ -1,0 +1,146 @@
+T1	OS 116 123	Android
+T2	OS 1310 1317	Android
+T7	OS 2611 2618	Android
+T10	OS 3277 3284	Android
+T13	OS 4026 4033	Android
+T15	OS 593 596	iOS
+T16	OS 1212 1215	iOS
+T17	OS 2554 2557	iOS
+T18	OS 2603 2606	iOS
+T19	OS 4037 4040	iOS
+T20	Organization 77 83	Google
+T21	Organization 780 786	Google
+T22	Organization 3736 3742	Google
+T23	Organization 3794 3800	Google
+T24	Organization 3849 3855	Google
+T25	Malware 0 7	Pegasus
+T26	Malware 281 288	Pegasus
+T27	Malware 879 886	Pegasus
+T28	Malware 1487 1494	Pegasus
+T29	Malware 1624 1631	Pegasus
+T30	Malware 1789 1796	Pegasus
+T31	Malware 2199 2206	Pegasus
+T32	Malware 2631 2638	Pegasus
+T33	Malware 2756 2763	Pegasus
+T34	Malware 2814 2821	Pegasus
+T36	Malware 3152 3159	Pegasus
+T37	Malware 3357 3364	Pegasus
+T38	Malware 3556 3563	Pegasus
+T39	Malware 4014 4021	Pegasus
+T40	Malware 4134 4141	Pegasus
+T41	Malware 4263 4270	Pegasus
+T42	Organization 65 72	Lookout
+T43	Organization 461 468	Lookout
+T44	Organization 1082 1089	Lookout
+T45	Organization 1224 1231	Lookout
+T46	Organization 1463 1470	Lookout
+T47	Organization 2773 2780	Lookout
+T48	Organization 3720 3727	Lookout
+T49	Organization 4056 4063	Lookout
+T50	ThreatActor 257 266	NSO Group
+T51	ThreatActor 934 943	NSO Group
+T52	Organization 441 452	Citizen Lab
+T53	Application 2015 2020	Kakao
+T59	OS 12 19	Android
+R1	targets Arg1:T25 Arg2:T59	
+T60	Malware 217 224	Pegasus
+R2	targets Arg1:T60 Arg2:T1	
+R3	hasAuthor Arg1:T26 Arg2:T50	
+T61	AttackPattern 304 366	jailbreaks or roots target devices to surveil specific targets
+R4	uses Arg1:T26 Arg2:T61	
+T62	Location 436 439	UAE
+T63	Malware 495 502	Pegasus
+T64	Time 507 518	August 2016
+T65	Organization 520 527	Lookout
+T66	Organization 534 545	Citizen Lab
+R5	targets Arg1:T63 Arg2:T15	
+T67	Organization 725 742	Mexican activists
+R6	targets Arg1:T63 Arg2:T67	
+T68	Organization 757 775	The New York Times
+T69	Malware 805 813	Chrysaor
+T70	Malware 830 837	Pegasus
+*	hasAlias T70 T69
+R8	hasAuthor Arg1:T27 Arg2:T51	
+R9	targets Arg1:T27 Arg2:T16	
+T72	Application 1471 1485	Security Cloud
+R11	has Arg1:T46 Arg2:T72	
+T73	Location 1657 1663	Israel
+T74	Location 1665 1672	Georgia
+T75	Location 1674 1680	Mexico
+T76	Location 1682 1688	Turkey
+T77	Location 1694 1697	UAE
+R13	targets Arg1:T29 Arg2:T73	
+R14	targets Arg1:T29 Arg2:T74	
+R15	targets Arg1:T29 Arg2:T75	
+R16	targets Arg1:T29 Arg2:T76	
+R17	targets Arg1:T29 Arg2:T77	
+T79	AttackPattern 1818 1828	Keylogging
+T80	AttackPattern 1830 1848	Screenshot capture
+T81	AttackPattern 1850 1868	Live audio capture
+T82	AttackPattern 1870 1907	Remote control of the malware via SMS
+T83	AttackPattern 1909 1961	Messaging data exfiltration from common applications
+T84	Application 1972 1980	WhatsApp
+T85	Application 1982 1987	Skype
+T86	Application 1989 1997	Facebook
+T87	Application 1999 2006	Twitter
+T88	Application 2008 2013	Viber
+T89	AttackPattern 2022 2050	Browser history exfiltration
+T90	AttackPattern 2052 2105	Email exfiltration from Android’s Native Email client
+T91	AttackPattern 2107 2132	Contacts and text message
+T92	AttackPattern 2137 2197	self-destructs if the software feels its position is at risk
+R37	targets Arg1:T32 Arg2:T18	
+R38	targets Arg1:T32 Arg2:T7	
+T8	OS 2646 2653	Android
+R39	targets Arg1:T32 Arg2:T8	
+T54	AttackPattern 2662 2718	does not use zero-day vulnerabilities to root the device
+R7	targets Arg1:T28 Arg2:T2	
+T3	Version 1732 1747	Android version
+T4	AttackPattern 2830 2857	jailbreak the target device
+T5	Malware 2939 2946	Pegasus
+T9	AttackPattern 3386 3460	ask for permissions that would then allow it to access and exfiltrate data
+R12	uses Arg1:T37 Arg2:T9	
+R18	targets Arg1:T39 Arg2:T13	
+R19	targets Arg1:T39 Arg2:T19	
+T11	Malware 4189 4197	Chrysaor
+*	hasAlias T40 T11
+R20	uses Arg1:T3 Arg2:T79	
+R21	uses Arg1:T3 Arg2:T80	
+R22	uses Arg1:T3 Arg2:T81	
+R23	uses Arg1:T3 Arg2:T82	
+R24	uses Arg1:T3 Arg2:T83	
+R25	targets Arg1:T3 Arg2:T84	
+R26	targets Arg1:T3 Arg2:T85	
+R27	targets Arg1:T3 Arg2:T86	
+R28	targets Arg1:T3 Arg2:T87	
+R29	targets Arg1:T3 Arg2:T88	
+R30	targets Arg1:T3 Arg2:T53	
+R31	uses Arg1:T3 Arg2:T89	
+R32	uses Arg1:T3 Arg2:T90	
+R33	uses Arg1:T3 Arg2:T92	
+R10	uses Arg1:T33 Arg2:T4	
+T93	MalwareType 661 668	spyware
+T94	MalwareType 969 976	spyware
+R34	has Arg1:T29 Arg2:T3	
+T6	OS 1499 1506	Android
+R35	targets Arg1:T28 Arg2:T6	
+T12	OS 891 898	Android
+R36	targets Arg1:T27 Arg2:T12	
+T14	OS 1801 1804	iOS
+R40	targets Arg1:T30 Arg2:T14	
+T35	OS 2211 2218	Android
+R41	targets Arg1:T31 Arg2:T35	
+T55	OS 2768 2771	iOS
+R42	targets Arg1:T33 Arg2:T55	
+T56	OS 2951 2958	Android
+R43	targets Arg1:T5 Arg2:T56	
+T57	OS 3164 3167	iOS
+R44	targets Arg1:T36 Arg2:T57	
+T58	OS 3369 3376	Android
+R45	targets Arg1:T37 Arg2:T58	
+T71	OS 3568 3575	Android
+R46	targets Arg1:T38 Arg2:T71	
+T78	OS 4146 4153	Android
+R47	targets Arg1:T40 Arg2:T78	
+T95	OS 4275 4282	Android
+R48	targets Arg1:T41 Arg2:T95	
+T96	OS 1605 1612	Android

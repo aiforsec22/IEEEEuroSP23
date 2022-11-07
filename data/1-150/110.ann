@@ -1,0 +1,123 @@
+T4	Malware 7 13	Rotexy
+T5	Malware 514 520	Rotexy
+T6	Malware 622 628	Rotexy
+T7	Malware 1467 1473	Rotexy
+T8	Malware 3509 3515	Rotexy
+T10	Malware 4165 4171	Rotexy
+T11	Malware 4747 4753	Rotexy
+T12	Malware 5909 5915	Rotexy
+T13	Organization 478 491	Kaspersky Lab
+T14	Organization 695 708	Kaspersky Lab
+T17	Organization 999 1008	Kaspersky
+T19	Person 721 738	Tatyana Shishkova
+T23	Indicator 1714 1745	Trojan-Banker.AndroidOS.Rotexy.
+T25	Indicator 1605 1635	Trojan-Spy.AndroidOS.SmsThief,
+T15	MalwareType 28 38	Ransomware
+T16	MalwareType 40 54	Banking Trojan
+R1	isA Arg1:T4 Arg2:T15	
+R2	isA Arg1:T4 Arg2:T16	
+T27	Time 115 119	2018
+T30	Malware 206 212	Rotexy
+T31	MalwareType 237 244	spyware
+T32	MalwareType 264 278	banking trojan
+R4	isA Arg1:T30 Arg2:T31	
+R5	isA Arg1:T30 Arg2:T32	
+T34	Location 411 417	Russia
+T28	Time 156 162	August
+T35	Time 171 178	October
+T33	Time 360 366	August
+T36	Time 371 378	October
+R6	targets Arg1:T30 Arg2:T34	
+T37	MalwareType 580 587	spyware
+R7	isA Arg1:T5 Arg2:T37	
+T38	Time 557 569	October 2014
+R8	discoveredIn Arg1:T5 Arg2:T38	
+T40	Person 743 753	Lev Pikman
+T41	AttackPattern 806 835	eavesdropping on SMS messages
+R10	uses Arg1:T6 Arg2:T41	
+T42	AttackPattern 857 892	advanced device screen manipulation
+T43	AttackPattern 912 938	stealing bank card numbers
+T44	AttackPattern 948 979	carrying out ransomware attacks
+R11	uses Arg1:T6 Arg2:T42	
+R12	uses Arg1:T6 Arg2:T43	
+R13	uses Arg1:T6 Arg2:T44	
+T45	Malware 1063 1069	Rotexy
+R17	indicates Arg1:T25 Arg2:T7	
+R18	indicates Arg1:T23 Arg2:T7	
+T47	Malware 1749 1755	Rotexy
+T48	AttackPattern 1789 1820	intercept and read SMS messages
+T49	AttackPattern 1833 1897	track a list of all running processes and installed applications
+R19	uses Arg1:T47 Arg2:T48	
+R20	uses Arg1:T47 Arg2:T49	
+T50	AttackPattern 1999 2075	block the devices’ screen to perform either ransomware or phishing functions
+T51	Version 1979 1994	current version
+R22	uses Arg1:T51 Arg2:T50	
+T52	Version 2113 2128	current version
+T53	AttackPattern 2143 2221	spreads via links sent in phishing SMSs that prompt the user to install an app
+R24	uses Arg1:T52 Arg2:T53	
+T54	AttackPattern 2248 2283	equests device administrator rights
+R25	uses Arg1:T52 Arg2:T54	
+T56	AttackPattern 2372 2491	checks to make sure the victim’s device is located in Russia and that it isn’t an emulator used by security researchers
+R27	uses Arg1:T52 Arg2:T56	
+T18	AttackPattern 2546 2615	registers with the mobile notification service Google Cloud Messaging
+R28	uses Arg1:T52 Arg2:T18	
+T3	AttackPattern 2907 3021	If the privileges are revoked successfully, the Trojan relaunches the cycle of requesting administrator privileges
+R30	uses Arg1:T52 Arg2:T3	
+T26	AttackPattern 3056 3101	track when a phone is switched on or rebooted
+T58	AttackPattern 3198 3290	sends the infected device’s International Mobile Equipment Identity (IMEI) to the C&C server
+R31	uses Arg1:T52 Arg2:T26	
+R32	uses Arg1:T52 Arg2:T58	
+T60	AttackPattern 3516 3544	intercepts all incoming SMSs
+R34	uses Arg1:T8 Arg2:T60	
+T62	AttackPattern 3643 3788	when an SMS arrives, the Trojan puts the phone into silent mode and switches off the screen so the user doesn’t notice that a new SMS has arrived
+R36	uses Arg1:T8 Arg2:T62	
+T63	AttackPattern 3816 3925	sends an SMS to the specified phone number with the information it has received from the intercepted message.
+R37	uses Arg1:T8 Arg2:T63	
+T21	Malware 4018 4024	Rotexy
+T9	AttackPattern 4036 4089	block the device’s screen for a “long period of time”
+T64	AttackPattern 4094 4160	displays an extortion page that demands a ransom for unblocking it
+R39	uses Arg1:T21 Arg2:T9	
+R40	uses Arg1:T21 Arg2:T64	
+T67	AttackPattern 4767 4854	intercepting a message from the bank in templates for processing incoming text messages
+R44	uses Arg1:T11 Arg2:T67	
+T22	Application 2593 2615	Google Cloud Messaging
+R45	targets Arg1:T52 Arg2:T22	
+R3	has Arg1:T47 Arg2:T51	
+R9	has Arg1:T47 Arg2:T52	
+T1	AttackPattern 2546 2697	registers with the mobile notification service Google Cloud Messaging and launches a service to check if the trojan has device administrator privileges
+T2	AttackPattern 4177 4288	displays a tricky phishing page purporting to be a bank, that prompts the user to enter their bank card details
+R15	uses Arg1:T10 Arg2:T2	
+T20	MalwareType 657 671	banking Trojan
+T24	MalwareType 676 686	ransomware
+R16	isA Arg1:T6 Arg2:T20	
+R21	isA Arg1:T6 Arg2:T24	
+T29	Application 1260 1288	Google Cloud Messaging (GCM)
+T39	Organization 1391 1397	Google
+T46	Application 1934 1943	antivirus
+T55	Application 1947 1967	banking applications
+T57	MalwareType 2043 2053	ransomware
+T59	AttackPattern 2294 2335	starts communicating with its C&C server.
+R23	uses Arg1:T52 Arg2:T59	
+T61	Location 2426 2432	Russia
+T65	MalwareType 2655 2661	trojan
+T66	MalwareType 2733 2739	Trojan
+T68	MalwareType 2955 2961	Trojan
+T69	AttackPattern 3304 3365	receives a set of rules for processing incoming text messages
+R26	uses Arg1:T8 Arg2:T69	
+T70	MalwareType 3668 3674	Trojan
+T71	MalwareType 4685 4691	trojan
+T72	MalwareType 5727 5733	Trojan
+T73	MalwareType 6253 6259	Trojan
+T74	MalwareType 3958 3968	ransomware
+T75	MalwareType 588 594	trojan
+T76	MalwareType 1580 1586	trojan
+T77	MalwareType 2136 2142	trojan
+T78	MalwareType 2365 2371	trojan
+T79	MalwareType 2539 2545	trojan
+T80	MalwareType 3045 3051	trojan
+T81	MalwareType 3191 3197	trojan
+T82	MalwareType 3809 3815	Trojan
+T83	MalwareType 5553 5559	trojan
+T84	MalwareType 6143 6149	trojan
+T85	Application 3459 3474	payment systems
+T86	MalwareType 961 971	ransomware

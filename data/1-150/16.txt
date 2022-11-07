@@ -1,0 +1,21 @@
+Check Point researchers discovered another widespread malware campaign on Google Play, Google’s official app store. The malware, dubbed “Judy”, is an auto-clicking adware which was found on 41 apps developed by a Korean company. The malware uses infected devices to generate large amounts of fraudulent clicks on advertisements, generating revenues for the perpetrators behind it. The malicious apps reached an astonishing spread between 4.5 million and 18.5 million downloads. Some of the apps we discovered resided on Google Play for several years, but all were recently updated. It is unclear how long the malicious code existed inside the apps, hence the actual spread of the malware remains unknown.
+
+We also found several apps containing the malware, which were developed by other developers on Google Play. The connection between the two campaigns remains unclear, and it is possible that one borrowed code from the other, knowingly or unknowingly. The oldest app of the second campaign was last updated in April 2016, meaning that the malicious code hid for a long time on the Play store undetected. These apps also had a large amount of downloads between 4 and 18 million, meaning the total spread of the malware may have reached between 8.5 and 36.5 million users. Similar to previous malware which infiltrated Google Play, such as FalseGuide and Skinner, Judy relies on the communication with its Command and Control server (C&C) for its operation. After Check Point notified Google about this threat, the apps were swiftly removed from the Play store.
+
+How Judy operates:
+
+To bypass Bouncer, Google Play’s protection, the hackers create a seemingly benign bridgehead app, meant to establish connection to the victim’s device, and insert it into the app store. Once a user downloads a malicious app, it silently registers receivers which establish a connection with the C&C server. The server replies with the actual malicious payload, which includes JavaScript code, a user-agent string and URLs controlled by the malware author. The malware opens the URLs using the user agent that imitates a PC browser in a hidden webpage and receives a redirection to another website. Once the targeted website is launched, the malware uses the JavaScript code to locate and click on banners from the Google ads infrastructure.
+
+Upon clicking the ads, the malware author receives payment from the website developer, which pays for the illegitimate clicks and traffic.
+
+The JavaScript code locates the targeted ads by searching for iframes which contain ads from Google ads infrastructure, as shown in the image below:
+
+The fraudulent clicks generate a large revenue for the perpetrators, especially since the malware reached a presumably wide spread.
+
+Who is behind Judy?
+
+The malicious apps are all developed by a Korean company named Kiniwini, registered on Google Play as ENISTUDIO corp. The company develops mobile apps for both Android and iOS platforms. It is quite unusual to find an actual organization behind mobile malware, as most of them are developed by purely malicious actors. It is important to note that the activity conducted by the malware is not borderline advertising, but definitely an illegitimate use of the users’ mobile devices for generating fraudulent clicks, benefiting the attackers.
+
+In addition to the clicking activity, Judy displays a large amount of advertisements, which in some cases leave users with no option but clicking on the ad itself. Although most apps have positive ratings, some of the users have noticed and reported Judy’s suspicious activities, as seen in the images below:
+
+As seen in previous malware, such as DressCode, a high reputation does not necessarily indicate that the app is safe for use. Hackers can hide their apps’ real intentions or even manipulate users into leaving positive ratings, in some cases unknowingly. Users cannot rely on the official app stores for their safety, and should implement advanced security protections capable of detecting and blocking zero-day mobile malware.

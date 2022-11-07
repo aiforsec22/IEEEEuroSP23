@@ -1,0 +1,173 @@
+The Rotexy mobile Trojan – banker and ransomware
+On the back of a surge in Trojan activity, we decided to carry out an in-depth analysis and track the evolution of some other popular malware families besides Asacub. One of the most interesting and active specimens to date was a mobile Trojan from the Rotexy family. In a three-month period from August to October 2018, it launched over 70,000 attacks against users located primarily in Russia.
+
+An interesting feature of this family of banking Trojans is the simultaneous use of three command sources:
+
+Google Cloud Messaging (GCM) service – used to send small messages in JSON format to a mobile device via Google servers;
+malicious C&C server;
+incoming SMS messages.
+This ‘versatility’ was present in the first version of Rotexy and has been a feature of all the family’s subsequent representatives. During our research we also arrived at the conclusion that this Trojan evolved from an SMS spyware Trojan that was first spotted in October 2014. Back then it was detected as Trojan-Spy.AndroidOS.SmsThief, but later versions were assigned to another family – Trojan-Banker.AndroidOS.Rotexy.
+
+The modern version of Rotexy combines the functions of a banking Trojan and ransomware. It spreads under the name AvitoPay.apk (or similar) and downloads from websites with names like youla9d6h.tk, prodam8n9.tk, prodamfkz.ml, avitoe0ys.tk, etc. These website names are generated according to a clear algorithm: the first few letters are suggestive of popular classified ad services, followed by a random string of characters, followed by a two-letter top-level domain. But before we go into the details of what the latest version of Rotexy can do and why it’s distinctive, we would like to give a summary of the path the Trojan has taken since 2014 up to the present day.
+
+Evolution of Rotexy
+2014–2015
+Since the malicious program was detected in 2014, its main functions and propagation method have not changed: Rotexy spreads via links sent in phishing SMSs that prompt the user to install an app. As it launches, it requests device administrator rights, and then starts communicating with its C&C server.
+
+Until mid-2015, Rotexy used a plain-text JSON format to communicate with its C&C. The C&C address was specified in the code and was also unencrypted:
+
+In some versions, a dynamically generated low-level domain was used as an address:
+
+In its first communication, the Trojan sent the infected device’s IMEI to the C&C, and in return it received a set of rules for processing incoming SMSs (phone numbers, keywords and regular expressions) – these applied mainly to messages from banks, payment systems and mobile network operators. For instance, the Trojan could automatically reply to an SMS and immediately delete it.
+
+Rotexy then sent information about the smartphone to the C&C, including the phone model, number, name of the mobile network operator, versions of the operating system and IMEI.
+
+With each subsequent request, a new subdomain was generated. The algorithm for generating the lowest-level domain name was hardwired in the Trojan’s code.
+
+The Trojan also registered in Google Cloud Messaging (GCM), meaning it could then receive commands via that service. The Trojan’s list of possible commands has remained practically unchanged throughout its life, and will be described below in detail.
+
+The Trojan’s assets folder contained the file data.db with a list of possible values for the User-Agent field for the PAGE command (which downloads the specified webpage). If the value of this field failed to arrive from the C&C, it was selected from the file data.db using a pseudo-random algorithm.
+
+2015–2016
+Starting from mid-2015, the Trojan began using the AES algorithm to encrypt data communicated between the infected device and the C&C:
+
+Also starting with the same version, data is sent in a POST request to the relative address with the format “/[number]” (a pseudo-randomly generated number in the range 0–9999).
+
+In some samples, starting from January 2016, an algorithm has been implemented for unpacking the encrypted executable DEX file from the assets folder. In this version of Rotexy, dynamic generation of lowest-level domains was not used.
+
+2016
+From mid-2016 on, the cybercriminals returned to dynamic generation of lowest-level domains. No other significant changes were observed in the Trojan’s network behavior.
+
+In late 2016, versions of the Trojan emerged that contained the card.html phishing page in the assets/www folder. The page was designed to steal users’ bank card details:
+
+2017–2018
+From early 2017, the HTML phishing pages bank.html, update.html and extortionist.html started appearing in the assets folder. Also, in some versions of the Trojan the file names were random strings of characters.
+
+In 2018, versions of Rotexy emerged that contacted the C&C using its IP address. ‘One-time’ domains also appeared with names made up of random strings of characters and numbers, combined with the top-level domains .cf, .ga, .gq, .ml, or .tk.
+
+At this time, the Trojan also began actively using different methods of obfuscation. For example, the DEX file is packed with garbage strings and/or operations, and contains a key to decipher the main executable file from the APK.
+
+Latest version (2018)
+Let’s now return to the present day and a detailed description of the functionality of a current representative of the Rotexy family (SHA256: ba4beb97f5d4ba33162f769f43ec8e7d1ae501acdade792a4a577cd6449e1a84).
+Application launch
+When launching for the first time, the Trojan checks if it is being launched in an emulation environment, and in which country it is being launched. If the device is located outside Russia or is an emulator, the application displays a stub page:
+In this case, the Trojan’s logs contain records in Russian with grammatical errors and spelling mistakes:
+
+If the check is successful, Rotexy registers with GCM and launches SuperService which tracks if the Trojan has device administrator privileges. SuperService also tracks its own status and relaunches if stopped. It performs a privilege check once every second; if unavailable, the Trojan starts requesting them from the user in an infinite loop:
+
+If the user agrees and gives the application the requested privileges, another stub page is displayed, and the app hides its icon:
+
+If the Trojan detects an attempt to revoke its administrator privileges, it starts periodically switching off the phone screen, trying to stop the user actions. If the privileges are revoked successfully, the Trojan relaunches the cycle of requesting administrator privileges.
+
+If, for some reason, SuperService does not switch off the screen when there is an attempt to revoke the device administrator privileges, the Trojan tries to intimidate the user:
+
+While running, Rotexy tracks the following:
+
+switching on and rebooting of the phone;
+termination of its operation – in this case, it relaunches;
+sending of an SMS by the app – in this case, the phone is switched to silent mode.
+C&C communications
+The default C&C address is hardwired in the Rotexy code:
+
+The relative address to which the Trojan will send information from the device is generated in a pseudo-random manner. Depending on the Trojan version, dynamically generated subdomains can also be used.
+
+The Trojan stores information about C&C servers and the data harvested from the infected device in a local SQLite database.
+
+First off, the Trojan registers in the administration panel and receives the information it needs to operate from the C&C (the SMS interception templates and the text that will be displayed on HTML pages):
+Rotexy intercepts all incoming SMSs and processes them according to the templates it received from the C&C. Also, when an SMS arrives, the Trojan puts the phone into silent mode and switches off the screen so the user doesn’t notice that a new SMS has arrived. When required, the Trojan sends an SMS to the specified phone number with the information it has received from the intercepted message. (It is specified in the interception template whether a reply must be sent, and which text should be sent to which address.) If the application hasn’t received instructions about the rules for processing incoming SMSs, it simply saves all SMSs to a local database and uploads them to the C&C.
+
+Apart from general information about the device, the Trojan sends a list of all the running processes and installed applications to the C&C. It’s possible the threat actors use this list to find running antivirus or banking applications.
+
+Rotexy will perform further actions after it receives the corresponding commands:
+
+START, STOP, RESTART — start, stop, restart SuperService.
+URL — update C&C address.
+MESSAGE – send SMS containing specified text to a specified number.
+UPDATE_PATTERNS – reregister in the administration panel.
+UNBLOCK – unblock the telephone (revoke device administrator privileges from the app).
+UPDATE – download APK file from C&C and install it. This command can be used not just to update the app but to install any other software on the infected device.
+CONTACTS – send text received from C&C to all user contacts. This is most probably how the application spreads.
+CONTACTS_PRO – request unique message text for contacts from the address book.
+PAGE – contact URL received from C&C using User-Agent value that was also received from C&C or local database.
+ALLMSG – send C&C all SMSs received and sent by user, as stored in phone memory.
+ALLCONTACTS – send all contacts from phone memory to C&C.
+ONLINE – send information about Trojan’s current status to C&C: whether it has device administrator privileges, which HTML page is currently displayed, whether screen is on or off, etc.
+NEWMSG – write an SMS to the device memory containing the text and sender number sent from C&C.
+CHANGE_GCM_ID – change GCM ID.
+BLOCKER_BANKING_START – display phishing HTML page for entry of bank card details.
+BLOCKER_EXTORTIONIST_START – display HTML page of the ransomware.
+BLOCKER_UPDATE_START – display fake HTML page for update.
+BLOCKER_STOP – block display of all HTML pages.
+The C&C role for Rotexy can be filled not only by a web server but also by any device that can send SMSs. The Trojan intercepts incoming SMSs and can receive the following commands from them:
+
+“3458” — revoke device administrator privileges from the app;
+“hi”, “ask” — enable and disable mobile internet;
+“privet”, “ru” — enable and disable Wi-Fi;
+“check” — send text “install: [device IMEI]” to phone number from which SMS was sent;
+“stop_blocker” — stop displaying all blocking HTML pages;
+“393838” — change C&C address to that specified in the SMS.
+Information about all actions performed by Rotexy is logged in the local database and sent to the C&C. The server then sends a reply that contains instructions on further actions to be taken.
+
+Displaying HTML pages
+We’ll now look at the HTML pages that Rotexy displays and the actions performed with them.
+
+The Trojan displays a fake HTML update page (update.html) that blocks the device’s screen for a long period of time.
+The Trojan displays the extortion page (extortionist.html) that blocks the device and demands a ransom for unblocking it. The sexually explicit images in this screenshot have been covered with a black box.
+The Trojan displays a phishing page (bank.html) prompting the user to enter their bank card details. This page mimics a legitimate bank form and blocks the device screen until the user enters all the information. It even has its own virtual keyboard that supposedly protects the victim from keyloggers.
+In the areas marked ‘{text}’ Rotexy displays the text it receives from the C&C. Typically, it is a message saying that the user has received a money transfer, and that they must enter their bank card details so the money can be transferred to their account.
+
+The entered data is then checked and the last four digits of the bank card number are also checked against the data sent in the C&C command. The following scenario may play out: according to the templates for processing incoming SMSs, Rotexy intercepts a message from the bank that contains the last four digits of the bank card connected to the phone number. The Trojan sends these digits to the C&C, which in turn sends a command to display a fake data entry window to check the four digits. If the user has provided the details of another card, then the following window is displayed:
+
+The application leaves the user with almost no option but to enter the correct card number, as it checks the entered number against the bank card details the cybercriminals received earlier.
+
+When all the necessary card details are entered and have been checked, all the information is uploaded to the C&C.
+
+How to unblock the phone
+Now for some good news: Rotexy doesn’t have a very well-designed module for processing commands that arrive in SMSs. It means the phone can be unblocked in some cases when it has been blocked by one of the above HTML pages. This is done by sending “3458” in an SMS to the blocked device – this will revoke the administrator privileges from the Trojan. After that it’s necessary to send “stop_blocker” to the same number – this will disable the display of HTML pages that extort money and block the screen. Rotexy may start requesting device administrator privileges again in an infinite loop; in that case, restart the device in safe mode and remove the malicious program.
+
+However, this method may not work if the threat actors react quickly to an attempt to remove the Trojan. In that case, you first need to send the text “393838” in an SMS to the infected device and then repeat all the actions described above; that text message will change the C&C address to “://”, so the phone will no longer receive commands from the real C&C.
+
+Please note that these unblocking instructions are based on an analysis of the current version of Rotexy and have been tested on it. However, it’s possible the set of commands may change in future versions of the Trojan.
+
+Geography of Rotexy attacks
+According to our data, 98% of all Rotexy attacks target users in Russia. Indeed, the Trojan explicitly targets Russian-speaking users. There have also been cases of users in Ukraine, Germany, Turkey and several other countries being affected.
+
+Kaspersky Internet Security for Android and the Sberbank Online app securely protect users against attacks by this Trojan.
+
+IOCs
+SHA256
+0ca09d4fde9e00c0987de44ae2ad51a01b3c4c2c11606fe8308a083805760ee7
+4378f3680ff070a1316663880f47eba54510beaeb2d897e7bbb8d6b45de63f96
+76c9d8226ce558c87c81236a9b95112b83c7b546863e29b88fec4dba5c720c0b
+7cc2d8d43093c3767c7c73dc2b4daeb96f70a7c455299e0c7824b4210edd6386
+9b2fd7189395b2f34781b499f5cae10ec86aa7ab373fbdc2a14ec4597d4799ba
+ac216d502233ca0fe51ac2bb64cfaf553d906dc19b7da4c023fec39b000bc0d7
+b1ccb5618925c8f0dda8d13efe4a1e1a93d1ceed9e26ec4a388229a28d1f8d5b
+ba4beb97f5d4ba33162f769f43ec8e7d1ae501acdade792a4a577cd6449e1a84
+ba9f4d3f4eba3fa7dce726150fe402e37359a7f36c07f3932a92bd711436f88c
+e194268bf682d81fc7dc1e437c53c952ffae55a9d15a1fc020f0219527b7c2ec
+
+С&C
+
+2014–2015:
+
+secondby.ru
+darkclub.net
+holerole.org
+googleapis.link
+2015–2016:
+
+test2016.ru
+blackstar.pro
+synchronize.pw
+lineout.pw
+sync-weather.pw
+2016
+
+freedns.website
+streamout.space
+2017–2018:
+
+streamout.space
+sky-sync.pw
+gms-service.info

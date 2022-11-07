@@ -1,0 +1,305 @@
+T4	OS 1927 1934	Android
+T6	OS 2222 2229	Android
+T7	OS 4119 4126	Android
+T8	OS 4486 4493	Android
+T9	OS 4609 4616	Android
+T10	OS 4829 4836	Android
+T13	OS 13439 13446	Android
+T14	Organization 6495 6501	Google
+T15	Organization 6580 6586	Google
+T16	Organization 7402 7408	Google
+T18	Malware 125 131	Anubis
+T19	Malware 263 269	Anubis
+T20	Malware 649 655	Anubis
+T21	Malware 759 765	Anubis
+T22	Malware 1142 1148	Anubis
+T23	Malware 4013 4019	Anubis
+T24	Malware 5524 5530	Anubis
+T25	Malware 6244 6250	Anubis
+T26	Malware 6353 6359	Anubis
+T27	Malware 6426 6432	Anubis
+T29	Malware 8018 8024	Anubis
+T30	Malware 8097 8107	Anubis 2.5
+T31	Malware 8242 8248	Anubis
+T32	Malware 8373 8379	Anubis
+T33	Malware 8518 8524	Anubis
+T34	Malware 8589 8595	Anubis
+T36	Malware 9016 9022	Anubis
+T37	Malware 9114 9120	Anubis
+T38	Malware 9393 9399	Anubis
+T39	Malware 10503 10509	Anubis
+T40	Malware 10657 10663	Anubis
+T41	Malware 10872 10878	Anubis
+T42	Malware 11090 11096	Anubis
+T43	Malware 11321 11327	Anubis
+T44	Malware 11395 11401	Anubis
+T45	Malware 11417 11423	Anubis
+T46	Malware 11739 11745	Anubis
+T47	Malware 12627 12633	Anubis
+T48	Malware 13736 13742	Anubis
+T49	Malware 13854 13860	Anubis
+T50	Malware 14340 14346	Anubis
+T51	Malware 14497 14503	Anubis
+T52	Malware 14559 14565	Anubis
+T53	Malware 14594 14600	Anubis
+T54	Indicator 14725 14789	84bb0570a862f4a74054629ae6338a4938ffc0fdad100b66fae3a279ab25df6b
+T55	Indicator 14891 14955	fdfba566e0ac5d7b0f5479068487bb4bfa2eb85d5f4eff7a8d1851b83401d850
+T56	Indicator 15048 15112	b8a843bc06ee935059edf3637c717e2f2ef2f42698498df0dfe475bf944f1b08
+T57	Indicator 15215 15279	db766146be531b813aecac731387dd38d710327b60a653a40b9fb28f22bf69eb
+T58	Indicator 15376 15440	2e843554c98ecfad4edef52e332a9e7e4a3d0ba40fa76c5ac9b783aca7219868
+T59	Application 1696 1708	ThreatFabric
+T60	Application 9071 9083	ThreatFabric
+T61	Malware 1857 1864	BankBot
+T62	Malware 5687 5694	BankBot
+T63	Malware 11159 11166	BankBot
+T65	Malware 2635 2642	Bankbot
+T66	Malware 10902 10909	Bankbot
+T67	Malware 2840 2847	LokiBot
+T68	Malware 2967 2973	Razdel
+T69	Malware 3102 3112	MysteryBot
+T70	Malware 3255 3263	CometBot
+T71	Organization 4357 4363	Forbes
+T72	ThreatActor 4029 4036	maza-in
+T73	ThreatActor 4080 4087	maza-in
+T74	ThreatActor 4772 4779	maza-in
+T75	ThreatActor 4997 5004	maza-in
+T76	ThreatActor 5498 5505	maza-in
+T77	ThreatActor 5645 5652	maza-in
+T78	ThreatActor 7750 7757	maza-in
+T79	ThreatActor 8064 8071	maza-in
+T80	ThreatActor 8577 8584	maza-in
+T81	ThreatActor 8694 8701	maza-in
+T82	ThreatActor 8748 8755	maza-in
+T83	ThreatActor 8850 8857	maza-in
+T84	ThreatActor 9278 9285	maza-in
+T85	Application 7307 7317	Play Store
+T86	Malware 9506 9513	Marcher
+T87	Malware 9588 9595	Marcher
+T89	Malware 9843 9850	Marcher
+T90	Malware 10181 10188	Marcher
+T92	ThreatActor 8813 8819	Aldesa
+T98	Location 12107 12111	Asia
+T99	Location 12254 12267	North-America
+T100	Indicator 14691 14715	com.qfoqzju.yrcapztuywyu
+T101	Malware 2428 2456	“Android.BankBot.149.origin”
+T102	Indicator 15176 15205	com.smijezbmbslg.dsznlnztlydj
+T104	Indicator 15015 15038	com.dtimrfrfmlek.umvkez
+T105	Indicator 14859 14881	com.ewsazh.txmypalqtgn
+T106	Indicator 15348 15366	com.jqxltum.dmfkol
+R1	indicates Arg1:T54 Arg2:T53
+R2	indicates Arg1:T55 Arg2:T53
+R3	indicates Arg1:T56 Arg2:T53
+R4	indicates Arg1:T57 Arg2:T53
+R5	indicates Arg1:T58 Arg2:T53
+R6	indicates Arg1:T100 Arg2:T53
+R8	indicates Arg1:T102 Arg2:T53
+R10	indicates Arg1:T104 Arg2:T53
+R11	indicates Arg1:T105 Arg2:T53
+R12	indicates Arg1:T106 Arg2:T53
+T17	Malware 0 9	Anubis II
+T88	Location 67 75	Egyptian
+T1	MalwareType 151 166	banking malware
+R13	isA Arg1:T18 Arg2:T1	
+T107	Time 254 258	2017
+T108	Organization 211 237	300 financial institutions
+R14	targets Arg1:T18 Arg2:T108	
+T2	MalwareType 288 302	banking Trojan
+R15	isA Arg1:T19 Arg2:T2	
+T109	ThreatActor 357 364	maza-in
+R16	hasAuthor Arg1:T19 Arg2:T109	
+T3	MalwareType 703 718	banking Trojans
+R17	isA Arg1:T20 Arg2:T3	
+T110	Time 725 734	late 2017
+T111	MalwareType 742 757	banking malware
+R18	isA Arg1:T21 Arg2:T111	
+T112	AttackPattern 778 936	tricking its victims into providing personal and sensitive information such as online banking credentials, banking security codes and even credit card details
+R19	uses Arg1:T21 Arg2:T112	
+T120	Malware 1741 1747	Anubis
+T121	Time 1878 1882	2016
+T122	ThreatActor 1894 1901	maza-in
+T5	Time 2404 2412	Jan 2017
+T64	Time 2612 2616	2017
+R7	variantOf Arg1:T67 Arg2:T65	
+R27	variantOf Arg1:T68 Arg2:T65	
+R28	variantOf Arg1:T69 Arg2:T65	
+R29	variantOf Arg1:T70 Arg2:T65	
+T123	Organization 3023 3045	Central European banks
+R30	targets Arg1:T68 Arg2:T123	
+T124	AttackPattern 3060 3100	novel trick to implement overlay attacks
+R31	uses Arg1:T68 Arg2:T124	
+T125	Malware 3175 3182	LokiBot
+T126	AttackPattern 3198 3253	novel keylogging approach and on-device fraud technique
+R32	uses Arg1:T69 Arg2:T126	
+T127	Organization 3347 3359	German banks
+R33	targets Arg1:T70 Arg2:T127	
+T128	Time 2849 2853	2017
+T129	Time 2975 2979	2017
+T130	Time 3114 3118	2018
+T131	Time 3265 3269	2019
+T132	AttackPattern 3814 3860	SMS blocking (hiding messages from the victim)
+T133	AttackPattern 3862 3928	SMS sending (capability to send messages from the infected device)
+T134	AttackPattern 3930 4005	SMS harvesting (possibility to send a copy of all message to the C2 server)
+R34	hasAuthor Arg1:T23 Arg2:T72	
+T135	Organization 4397 4403	Google
+R35	hasAuthor Arg1:T24 Arg2:T76	
+R36	hasAuthor Arg1:T62 Arg2:T77	
+T136	Malware 5734 5740	Anubis
+R37	hasAuthor Arg1:T136 Arg2:T77	
+T137	AttackPattern 5745 5782	Overlaying: Static (hardcoded in bot)
+T138	AttackPattern 5784 5814	Overlaying: Dynamic (C2 based)
+T139	AttackPattern 5816 5826	Keylogging
+T140	AttackPattern 5828 5851	Contact list collection
+T141	AttackPattern 5853 5869	Screen streaming
+T142	AttackPattern 5871 5886	Sound recording
+T143	AttackPattern 5888 5918	SMS harvesting: SMS forwarding
+T144	AttackPattern 5920 5932	SMS blocking
+T145	AttackPattern 5934 5945	SMS sending
+T146	AttackPattern 5947 5972	Files/pictures collection
+T147	AttackPattern 5974 6000	Calls: USSD request making
+T148	AttackPattern 6002 6026	Ransomware: Cryptolocker
+T149	AttackPattern 6028 6055	Remote actions: Data-wiping
+T150	AttackPattern 6057 6091	Remote actions: Back-connect proxy
+T151	AttackPattern 6093 6126	Notifications: Push notifications
+R38	uses Arg1:T136 Arg2:T137	
+T152	Person 2393 2400	Dr. Web
+R39	discoveredIn Arg1:T18 Arg2:T107	
+R40	discoveredIn Arg1:T101 Arg2:T5	
+T153	Malware 2510 2517	BankBot
+R41	variantOf Arg1:T101 Arg2:T153	
+R42	variantOf Arg1:T69 Arg2:T125	
+R43	uses Arg1:T65 Arg2:T132	
+R44	uses Arg1:T65 Arg2:T133	
+R45	uses Arg1:T65 Arg2:T134	
+R46	variantOf Arg1:T136 Arg2:T62	
+R47	uses Arg1:T136 Arg2:T138	
+R48	uses Arg1:T136 Arg2:T139	
+R49	uses Arg1:T136 Arg2:T140	
+R50	uses Arg1:T136 Arg2:T141	
+R51	uses Arg1:T136 Arg2:T142	
+R52	uses Arg1:T136 Arg2:T143	
+R53	uses Arg1:T136 Arg2:T144	
+R54	uses Arg1:T136 Arg2:T146	
+R55	uses Arg1:T136 Arg2:T147	
+R56	uses Arg1:T136 Arg2:T148	
+R57	uses Arg1:T136 Arg2:T149	
+R58	uses Arg1:T136 Arg2:T150	
+R59	uses Arg1:T136 Arg2:T151	
+T154	Application 6143 6150	Twitter
+T155	Application 6151 6159	Telegram
+T156	Application 6160 6168	Pastebin
+T28	Malware 7676 7684	Anubis 2
+T157	Time 7713 7726	February 2019
+T158	Time 7699 7706	Q4 2017
+T159	Time 7735 7742	Q1 2019
+T160	Time 8047 8063	December 13 2018
+R9	hasAuthor Arg1:T30 Arg2:T79	
+T103	Time 8226 8241	January 16 2019
+T93	Time 8334 8350	February 14 2019
+T161	Organization 8402 8415	Russian banks
+R60	targets Arg1:T32 Arg2:T161	
+T162	Time 8480 8496	February 25 2019
+R61	hasAuthor Arg1:T34 Arg2:T80	
+T163	Time 8637 8650	March 04 2019
+T164	Time 8795 8805	March 2019
+T35	Malware 8897 8905	Anubis 3
+R62	communicatesWith Arg1:T92 Arg2:T83	
+R63	variantOf Arg1:T35 Arg2:T34	
+R64	hasAuthor Arg1:T38 Arg2:T84	
+T11	MalwareType 9558 9581	Android banking malware
+R65	isA Arg1:T87 Arg2:T11	
+T165	Malware 9648 9654	Anubis
+T91	Malware 9677 9684	Marcher
+T94	Malware 10197 10203	ExoBot
+T166	Malware 10205 10212	Gustuff
+T167	Malware 10214 10224	DiseaseBot
+T168	Malware 10226 10233	Bubabot
+T169	Malware 10235 10241	Neobot
+R66	variantOf Arg1:T94 Arg2:T90	
+R67	variantOf Arg1:T166 Arg2:T90	
+R68	variantOf Arg1:T167 Arg2:T90	
+R69	variantOf Arg1:T168 Arg2:T90	
+R70	variantOf Arg1:T169 Arg2:T90	
+T170	Malware 10402 10408	Anubis
+T95	Malware 10609 10615	Anubis
+R71	variantOf Arg1:T41 Arg2:T66	
+R72	variantOf Arg1:T42 Arg2:T63	
+T12	MalwareType 11219 11234	banking malware
+R73	isA Arg1:T43 Arg2:T12	
+T96	MalwareType 11436 11450	banking Trojan
+R74	isA Arg1:T45 Arg2:T96	
+T97	Location 12099 12105	Europe
+T171	Location 12120 12128	Americas
+T172	Location 12235 12241	Europe
+T173	Location 12243 12252	West-Asia
+T174	Location 12272 12281	Australia
+R75	targets Arg1:T46 Arg2:T172	
+R76	targets Arg1:T46 Arg2:T173	
+R77	targets Arg1:T46 Arg2:T99	
+R78	targets Arg1:T46 Arg2:T171	
+T175	Organization 12555 12561	Google
+T176	Application 12682 12696	“Finance” apps
+T177	MalwareType 12646 12652	banker
+R79	isA Arg1:T47 Arg2:T177	
+R80	targets Arg1:T47 Arg2:T176	
+T178	Application 12844 12874	“Shopping” and “Business” apps
+R81	targets Arg1:T47 Arg2:T178	
+T179	Malware 13514 13520	Anubis
+R82	targets Arg1:T179 Arg2:T13	
+T180	Malware 14249 14255	Anubis
+T181	Time 14643 14654	Mar 19 2019
+T182	Application 14665 14676	FlashPlayer
+R83	targets Arg1:T53 Arg2:T182	
+T183	Time 14805 14816	Mar 18 2019
+T184	Application 14827 14844	Flash_Player_2019
+R84	targets Arg1:T53 Arg2:T184	
+T185	Application 14993 15000	YouTube
+T186	Time 14971 14982	Mar 18 2019
+R85	targets Arg1:T53 Arg2:T185	
+T187	Time 15128 15139	Mar 18 2019
+T188	Application 15150 15161	FlashPlayer
+R86	targets Arg1:T53 Arg2:T188	
+T189	Time 15295 15306	Mar 17 2019
+T190	Application 15317 15333	Sistemi Güncelle
+R87	targets Arg1:T53 Arg2:T190	
+T191	OS 143 150	Android
+R88	targets Arg1:T18 Arg2:T191	
+T192	OS 280 287	Android
+R89	targets Arg1:T19 Arg2:T192	
+T193	OS 695 702	Android
+R90	targets Arg1:T20 Arg2:T193	
+T113	AttackPattern 1038 1122	hides as a third-party app and therefore remains under the radar of the average user
+R20	uses Arg1:T21 Arg2:T113	
+T114	OS 11211 11218	Android
+R21	targets Arg1:T43 Arg2:T114	
+T194	MalwareType 1993 2015	Android banking Trojan
+T195	MalwareType 3638 3653	banking Trojans
+T196	MalwareType 586 601	banking malware
+T197	MalwareType 2985 3000	banking malware
+T198	MalwareType 10686 10701	banking malware
+T199	MalwareType 12391 12406	banking malware
+T200	MalwareType 13256 13271	banking malware
+T201	MalwareType 2288 2302	banking Trojan
+T202	MalwareType 4617 4631	banking Trojan
+T203	MalwareType 2932 2942	ransomware
+T204	MalwareType 2553 2560	Trojans
+T205	MalwareType 10301 10308	Trojans
+T206	MalwareType 14528 14535	Trojans
+T207	MalwareType 3434 3440	Trojan
+T208	MalwareType 4933 4939	Trojan
+T209	MalwareType 5118 5124	Trojan
+T210	MalwareType 5192 5198	Trojan
+T211	MalwareType 6627 6633	Trojan
+T212	MalwareType 9023 9029	Trojan
+T213	MalwareType 9685 9691	Trojan
+T214	MalwareType 9771 9777	Trojan
+T215	MalwareType 10075 10081	Trojan
+T216	MalwareType 11522 11528	Trojan
+T217	MalwareType 12634 12640	Trojan
+T218	MalwareType 13806 13812	Trojan
+T219	Application 12451 12473	financial institutions
+T220	Application 1049 1064	third-party app
+T221	Application 13337 13351	financial apps
+T222	Application 857 871	online banking
+T223	Application 6502 6506	Play
+T224	Application 6587 6591	Play
+T225	Application 7409 7413	Play

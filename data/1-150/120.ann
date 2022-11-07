@@ -1,0 +1,143 @@
+T1	OS 33 40	Android
+T2	OS 303 310	Android
+T4	OS 1135 1142	Android
+T7	OS 2576 2583	Android
+T9	Malware 1172 1179	FakeSpy
+T10	Malware 1572 1579	FakeSpy
+T12	Malware 1754 1761	FakeSpy
+T13	Malware 70 77	XLoader
+T14	Malware 179 186	XLoader
+T15	Malware 270 277	XLoader
+T16	Malware 493 500	XLoader
+T17	Malware 532 539	XLoader
+T18	Malware 873 880	XLoader
+T19	Malware 1062 1069	XLoader
+T20	Malware 1160 1167	XLoader
+T21	Malware 1426 1433	XLoader
+T22	Malware 1560 1567	XLoader
+T24	Malware 1742 1749	XLoader
+T25	Version 1910 1913	6.0
+T26	Malware 1959 1966	XLoader
+T27	Malware 2150 2157	XLoader
+T28	Malware 2267 2274	XLoader
+T29	Version 2342 2345	7.0
+T30	Version 2551 2554	7.0
+T31	Malware 2637 2644	XLoader
+T33	Application 593 601	Facebook
+T35	Application 605 611	Chrome
+T36	ThreatActor 1326 1338	Yanbian Gang
+T38	ThreatActor 1080 1087	Yanbian
+T39	ThreatActor 1245 1257	Yanbian Gang
+T47	Location 1870 1875	Japan
+T40	Malware 0 7	XLoader
+R1	targets Arg1:T40 Arg2:T1	
+T41	Time 99 109	April 2018
+R2	discoveredIn Arg1:T13 Arg2:T41	
+T32	AttackPattern 110 154	posing as legitimate Facebook or Chrome apps
+R3	uses Arg1:T13 Arg2:T32	
+T34	ThreatActor 255 267	Yanbian Gang
+R4	hasAuthor Arg1:T14 Arg2:T34	
+R5	targets Arg1:T15 Arg2:T2	
+T37	MalwareType 283 298	backdoor trojan
+R6	isA Arg1:T15 Arg2:T37	
+T58	AttackPattern 324 398	uses Domain Name System (DNS) spoofing to distribute infected Android apps
+R7	uses Arg1:T15 Arg2:T58	
+T3	AttackPattern 419 488	collect device owners’ personal information and financial information
+R8	uses Arg1:T15 Arg2:T3	
+T59	Time 561 571	April 2018
+R9	discoveredIn Arg1:T17 Arg2:T59	
+R10	targets Arg1:T17 Arg2:T33	
+R11	targets Arg1:T17 Arg2:T35	
+T60	AttackPattern 635 715	distributed via polluted DNS domains that send notifications to victims’ devices
+T61	AttackPattern 783 858	hijack the device and gain persistence via device administrator privileges.
+T62	AttackPattern 885 926	steal device owners’ personal information
+T63	AttackPattern 938 965	download additional malware
+T64	Location 1015 1020	Japan
+T65	Location 1022 1027	Korea
+T66	Location 1029 1034	China
+T67	Location 1036 1042	Taiwan
+T68	Location 1048 1057	Hong Kong
+R12	uses Arg1:T17 Arg2:T60	
+R13	uses Arg1:T17 Arg2:T61	
+R14	uses Arg1:T18 Arg2:T62	
+R15	uses Arg1:T18 Arg2:T63	
+R16	targets Arg1:T18 Arg2:T64	
+R17	targets Arg1:T18 Arg2:T65	
+R18	targets Arg1:T18 Arg2:T66	
+R19	targets Arg1:T18 Arg2:T67	
+R20	targets Arg1:T18 Arg2:T68	
+*	hasAlias T38 T34
+R21	hasAuthor Arg1:T19 Arg2:T38	
+R22	hasAuthor Arg1:T20 Arg2:T39	
+R23	hasAuthor Arg1:T9 Arg2:T39	
+T49	AttackPattern 1442 1471	disguised as a legitimate app
+T50	Time 1525 1534	June 2018
+R24	uses Arg1:T21 Arg2:T49	
+R25	discoveredIn Arg1:T21 Arg2:T50	
+T11	Location 1880 1891	South Korea
+R28	targets Arg1:T22 Arg2:T47	
+R29	targets Arg1:T10 Arg2:T11	
+T23	Version 1986 1989	6.0
+T51	AttackPattern 1996 2039	poses as a security app for Android devices
+T52	AttackPattern 2044 2106	uses a malicious iOS profile to affect iPhone and iPad devices
+R32	uses Arg1:T23 Arg2:T51	
+R33	uses Arg1:T23 Arg2:T52	
+T5	AttackPattern 2170 2216	abuses Twitter profiles to hide its C&C server
+R34	uses Arg1:T27 Arg2:T5	
+T8	Time 2352 2362	April 2019
+R36	discoveredIn Arg1:T29 Arg2:T8	
+T42	Version 2403 2406	7.0
+T43	AttackPattern 2413 2459	poses as a pornography app for Android devices
+R39	uses Arg1:T42 Arg2:T43	
+T6	AttackPattern 2474 2533	abuses Instagram and Tumblr profiles to hide its C&C server
+R40	uses Arg1:T42 Arg2:T6	
+T44	Location 2563 2575	South Korean
+R41	targets Arg1:T30 Arg2:T44	
+R42	targets Arg1:T30 Arg2:T7	
+T45	Application 131 139	Facebook
+T46	Application 143 149	Chrome
+R43	targets Arg1:T13 Arg2:T45	
+R44	targets Arg1:T13 Arg2:T46	
+T48	Application 1483 1513	Japanese home delivery service
+R45	uses Arg1:T21 Arg2:T48	
+T53	Application 2007 2019	security app
+R46	uses Arg1:T23 Arg2:T53	
+T54	OS 2061 2064	iOS
+T55	Hardware 2083 2089	iPhone
+T56	Hardware 2094 2098	iPad
+R47	targets Arg1:T23 Arg2:T54	
+R48	targets Arg1:T23 Arg2:T55	
+R49	targets Arg1:T23 Arg2:T56	
+T57	Application 2424 2439	pornography app
+R50	uses Arg1:T42 Arg2:T57	
+T70	Application 2481 2490	Instagram
+T71	Application 2495 2501	Tumblr
+R51	targets Arg1:T42 Arg2:T70	
+R52	targets Arg1:T42 Arg2:T71	
+T69	Organization 223 243	Chinese hacker group
+T72	OS 386 393	Android
+T73	AttackPattern 501 528	distributed via DNS domains
+R38	uses Arg1:T16 Arg2:T73	
+T74	Organization 1217 1237	Chinese hacker group
+R53	has Arg1:T74 Arg2:T39	
+T75	Location 1483 1491	Japanese
+R54	targets Arg1:T21 Arg2:T75	
+T76	Malware 1615 1622	XLoader
+T77	Malware 1627 1634	FakeSpy
+T78	Location 1663 1668	China
+T79	Malware 1894 1901	XLoader
+R26	has Arg1:T79 Arg2:T25	
+T80	Malware 1976 1983	XLoader
+R27	has Arg1:T80 Arg2:T23	
+T82	Malware 2326 2333	XLoader
+R31	has Arg1:T82 Arg2:T29	
+T83	OS 2444 2451	Android
+T84	Malware 2387 2394	XLoader
+R35	has Arg1:T84 Arg2:T42	
+T85	Malware 2535 2542	XLoader
+R37	has Arg1:T85 Arg2:T30	
+T86	OS 2024 2031	Android
+T81	Application 2177 2184	Twitter
+R55	targets Arg1:T27 Arg2:T81	
+T87	Version 2158 2169	version 6.0
+R56	has Arg1:T27 Arg2:T87	

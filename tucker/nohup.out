@@ -1,0 +1,509 @@
+[I 04:00:24.980 NotebookApp] Serving notebooks from local directory: /home/ma8235/Desktop/kg/TuckER
+[I 04:00:24.980 NotebookApp] The Jupyter Notebook is running at:
+[I 04:00:24.980 NotebookApp] http://localhost:1234/?token=64c4434698756ad9ef0c74efbc1e50a2c278ef14030283c4
+[I 04:00:24.980 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 04:00:24.982 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/ma8235/.local/share/jupyter/runtime/nbserver-292803-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:1234/?token=64c4434698756ad9ef0c74efbc1e50a2c278ef14030283c4
+[I 04:01:37.703 NotebookApp] 302 GET /?token=64c4434698756ad9ef0c74efbc1e50a2c278ef14030283c4 (127.0.0.1) 1.26ms
+/usr/lib/python3.8/json/encoder.py:257: UserWarning: date_default is deprecated since jupyter_client 7.0.0. Use jupyter_client.jsonutil.json_default.
+  return _iterencode(o, 0)
+[W 04:22:50.600 NotebookApp] 404 POST /api/kernels/12defdce-4cda-4762-8bbc-0be6bc881ac0/interrupt (127.0.0.1): Kernel does not exist: 12defdce-4cda-4762-8bbc-0be6bc881ac0
+[W 04:22:50.600 NotebookApp] Kernel does not exist: 12defdce-4cda-4762-8bbc-0be6bc881ac0
+[W 04:22:50.601 NotebookApp] 404 POST /api/kernels/12defdce-4cda-4762-8bbc-0be6bc881ac0/interrupt (127.0.0.1) 2.85ms referer=http://localhost:1234/notebooks/tucker_train.ipynb
+[W 04:22:52.608 NotebookApp] 404 DELETE /api/sessions/0a59dfbf-c4f2-4f8a-a265-cd2cce6165bc (127.0.0.1): Session not found: session_id='0a59dfbf-c4f2-4f8a-a265-cd2cce6165bc'
+[W 04:22:52.608 NotebookApp] Session not found: session_id='0a59dfbf-c4f2-4f8a-a265-cd2cce6165bc'
+[W 04:22:52.609 NotebookApp] 404 DELETE /api/sessions/0a59dfbf-c4f2-4f8a-a265-cd2cce6165bc (127.0.0.1) 2.95ms referer=http://localhost:1234/notebooks/tucker_train.ipynb
+[W 04:22:54.592 NotebookApp] 404 DELETE /api/sessions/0a59dfbf-c4f2-4f8a-a265-cd2cce6165bc (127.0.0.1): Session not found: session_id='0a59dfbf-c4f2-4f8a-a265-cd2cce6165bc'
+[W 04:22:54.592 NotebookApp] Session not found: session_id='0a59dfbf-c4f2-4f8a-a265-cd2cce6165bc'
+[W 04:22:54.593 NotebookApp] 404 DELETE /api/sessions/0a59dfbf-c4f2-4f8a-a265-cd2cce6165bc (127.0.0.1) 3.09ms referer=http://localhost:1234/notebooks/tucker_train.ipynb
+ERROR:asyncio:Exception in callback <TaskWakeupMethWrapper object at 0x7f759f3613d0>(<Future finis...f40"\r\n\r\n'>)
+handle: <Handle <TaskWakeupMethWrapper object at 0x7f759f3613d0>(<Future finis...f40"\r\n\r\n'>)>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/events.py", line 81, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-33' coro=<HTTP1ServerConnection._server_request_loop() running at /home/ma8235/.local/lib/python3.8/site-packages/tornado/http1connection.py:823> wait_for=<Future finished result=b'GET /api/co...ff40"\r\n\r\n'> cb=[IOLoop.add_future.<locals>.<lambda>() at /home/ma8235/.local/lib/python3.8/site-packages/tornado/ioloop.py:688]> while another task <Task pending name='Task-2' coro=<KernelManager._async_start_kernel() running at /home/ma8235/.local/lib/python3.8/site-packages/jupyter_client/manager.py:71>> is being executed.
+ERROR:asyncio:Exception in callback <TaskWakeupMethWrapper object at 0x7f759f361460>(<Future finis...f40"\r\n\r\n'>)
+handle: <Handle <TaskWakeupMethWrapper object at 0x7f759f361460>(<Future finis...f40"\r\n\r\n'>)>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/events.py", line 81, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-58' coro=<HTTP1ServerConnection._server_request_loop() running at /home/ma8235/.local/lib/python3.8/site-packages/tornado/http1connection.py:823> wait_for=<Future finished result=b'GET /kernel...ff40"\r\n\r\n'> cb=[IOLoop.add_future.<locals>.<lambda>() at /home/ma8235/.local/lib/python3.8/site-packages/tornado/ioloop.py:688]> while another task <Task pending name='Task-2' coro=<KernelManager._async_start_kernel() running at /home/ma8235/.local/lib/python3.8/site-packages/jupyter_client/manager.py:71>> is being executed.
+[I 04:22:59.830 NotebookApp] Kernel started: fb57209c-68b8-41c6-853e-49a7019bff5d
+[I 04:24:59.884 NotebookApp] Saving file at /tucker_train.ipynb
+[I 04:26:59.954 NotebookApp] Saving file at /tucker_train.ipynb
+[I 04:28:59.947 NotebookApp] Saving file at /tucker_train.ipynb
+[W 04:38:29.325 NotebookApp] Notebook train_larger.ipynb is not trusted
+[I 04:38:29.689 NotebookApp] Kernel started: 150208f9-7e02-4798-ad99-0dd9d0c7565d
+[I 04:40:29.781 NotebookApp] Saving file at /train_larger.ipynb
+[I 04:42:29.792 NotebookApp] Saving file at /train_larger.ipynb
+[I 04:44:29.944 NotebookApp] Saving file at /train_larger.ipynb
+[I 04:46:29.971 NotebookApp] Saving file at /train_larger.ipynb
+[I 04:48:29.967 NotebookApp] Saving file at /train_larger.ipynb
+[I 04:56:59.985 NotebookApp] Saving file at /tucker_train.ipynb
+[I 04:58:59.957 NotebookApp] Saving file at /tucker_train.ipynb
+[I 05:00:59.986 NotebookApp] Saving file at /tucker_train.ipynb
+[I 05:02:59.977 NotebookApp] Saving file at /tucker_train.ipynb
+[I 05:04:29.715 NotebookApp] Saving file at /train_larger.ipynb
+[I 05:06:29.960 NotebookApp] Saving file at /train_larger.ipynb
+[I 05:08:29.962 NotebookApp] Saving file at /train_larger.ipynb
+[I 05:10:29.965 NotebookApp] Saving file at /train_larger.ipynb
+[I 05:12:29.962 NotebookApp] Saving file at /train_larger.ipynb
+[I 05:14:29.981 NotebookApp] Saving file at /train_larger.ipynb
+[I 05:16:58.976 NotebookApp] Saving file at /train_larger.ipynb
+[I 05:18:58.982 NotebookApp] Saving file at /train_larger.ipynb
+[I 05:32:29.978 NotebookApp] Saving file at /train_larger.ipynb
+[I 05:32:59.910 NotebookApp] Saving file at /tucker_train.ipynb
+[I 05:34:30.041 NotebookApp] Saving file at /train_larger.ipynb
+[I 05:34:59.978 NotebookApp] Saving file at /tucker_train.ipynb
+[I 05:36:29.978 NotebookApp] Saving file at /train_larger.ipynb
+[I 05:37:00.051 NotebookApp] Saving file at /tucker_train.ipynb
+[I 05:38:59.032 NotebookApp] Saving file at /train_larger.ipynb
+[I 05:39:28.869 NotebookApp] Saving file at /tucker_train.ipynb
+[I 05:40:29.979 NotebookApp] Saving file at /train_larger.ipynb
+[I 05:40:59.988 NotebookApp] Saving file at /tucker_train.ipynb
+[I 05:42:30.059 NotebookApp] Saving file at /train_larger.ipynb
+[I 05:42:59.988 NotebookApp] Saving file at /tucker_train.ipynb
+[I 05:44:30.002 NotebookApp] Saving file at /train_larger.ipynb
+[I 05:45:00.044 NotebookApp] Saving file at /tucker_train.ipynb
+[I 05:46:59.007 NotebookApp] Saving file at /train_larger.ipynb
+[I 05:47:59.004 NotebookApp] Saving file at /tucker_train.ipynb
+[I 05:48:29.998 NotebookApp] Saving file at /train_larger.ipynb
+[I 07:13:00.004 NotebookApp] Saving file at /tucker_train.ipynb
+[I 07:14:30.052 NotebookApp] Saving file at /train_larger.ipynb
+[I 07:15:00.069 NotebookApp] Saving file at /tucker_train.ipynb
+[I 07:16:29.825 NotebookApp] Saving file at /train_larger.ipynb
+[I 07:17:00.057 NotebookApp] Saving file at /tucker_train.ipynb
+[I 07:18:30.076 NotebookApp] Saving file at /train_larger.ipynb
+[I 07:18:59.980 NotebookApp] Saving file at /tucker_train.ipynb
+[I 07:20:30.075 NotebookApp] Saving file at /train_larger.ipynb
+[I 07:20:59.972 NotebookApp] Saving file at /tucker_train.ipynb
+[I 07:22:30.071 NotebookApp] Saving file at /train_larger.ipynb
+[I 07:23:00.047 NotebookApp] Saving file at /tucker_train.ipynb
+[I 07:24:30.067 NotebookApp] Saving file at /train_larger.ipynb
+[I 07:25:00.075 NotebookApp] Saving file at /tucker_train.ipynb
+[I 07:26:30.092 NotebookApp] Saving file at /train_larger.ipynb
+[I 07:27:00.052 NotebookApp] Saving file at /tucker_train.ipynb
+[I 07:28:59.053 NotebookApp] Saving file at /train_larger.ipynb
+[I 07:29:59.073 NotebookApp] Saving file at /tucker_train.ipynb
+[I 07:30:59.094 NotebookApp] Saving file at /train_larger.ipynb
+[I 07:31:13.308 NotebookApp] Saving file at /tucker_train.ipynb
+[I 07:32:30.060 NotebookApp] Saving file at /train_larger.ipynb
+[I 07:33:00.068 NotebookApp] Saving file at /tucker_train.ipynb
+[I 07:34:30.077 NotebookApp] Saving file at /train_larger.ipynb
+[I 07:35:00.073 NotebookApp] Saving file at /tucker_train.ipynb
+[I 07:36:59.076 NotebookApp] Saving file at /train_larger.ipynb
+[I 07:37:59.080 NotebookApp] Saving file at /tucker_train.ipynb
+[I 07:38:59.102 NotebookApp] Saving file at /train_larger.ipynb
+[I 07:39:57.688 NotebookApp] Saving file at /tucker_train.ipynb
+[I 07:40:30.090 NotebookApp] Saving file at /train_larger.ipynb
+[I 07:41:00.083 NotebookApp] Saving file at /tucker_train.ipynb
+[I 07:42:30.077 NotebookApp] Saving file at /train_larger.ipynb
+[I 07:43:00.084 NotebookApp] Saving file at /tucker_train.ipynb
+[I 07:44:30.077 NotebookApp] Saving file at /train_larger.ipynb
+[I 07:45:00.086 NotebookApp] Saving file at /tucker_train.ipynb
+[I 07:46:59.165 NotebookApp] Saving file at /train_larger.ipynb
+[I 07:47:59.095 NotebookApp] Saving file at /tucker_train.ipynb
+[I 07:48:29.854 NotebookApp] Saving file at /train_larger.ipynb
+[I 07:49:00.099 NotebookApp] Saving file at /tucker_train.ipynb
+[I 07:50:29.854 NotebookApp] Saving file at /train_larger.ipynb
+[I 07:51:00.076 NotebookApp] Saving file at /tucker_train.ipynb
+[I 07:52:30.077 NotebookApp] Saving file at /train_larger.ipynb
+[I 07:53:00.087 NotebookApp] Saving file at /tucker_train.ipynb
+[I 07:54:30.078 NotebookApp] Saving file at /train_larger.ipynb
+[I 07:56:30.084 NotebookApp] Saving file at /train_larger.ipynb
+[I 07:58:30.102 NotebookApp] Saving file at /train_larger.ipynb
+[I 08:00:30.092 NotebookApp] Saving file at /train_larger.ipynb
+[W 08:16:30.209 NotebookApp] WebSocket ping timeout after 119968 ms.
+[W 08:16:30.263 NotebookApp] WebSocket ping timeout after 119967 ms.
+[I 08:16:35.213 NotebookApp] Starting buffering for 150208f9-7e02-4798-ad99-0dd9d0c7565d:79a1b84cbd24415182e82f51eed82aad
+[I 08:16:35.265 NotebookApp] Starting buffering for fb57209c-68b8-41c6-853e-49a7019bff5d:50220425ba7f45758bc5a5f93c556c9a
+[I 10:36:12.836 NotebookApp] 302 GET /?token=64c4434698756ad9ef0c74efbc1e50a2c278ef14030283c4 (127.0.0.1) 1.11ms
+[W 10:41:14.350 NotebookApp] Notebook train_larger.ipynb is not trusted
+[I 11:24:01.572 NotebookApp] Copying single_combination.py to 
+[I 11:31:49.149 NotebookApp] Saving file at /load_data.py
+[I 11:31:49.539 NotebookApp] Saving file at /load_data.py
+[I 11:32:38.398 NotebookApp] Saving file at /load_data.py
+[I 11:32:38.624 NotebookApp] Saving file at /load_data.py
+[I 11:32:38.867 NotebookApp] Saving file at /load_data.py
+[I 11:32:44.827 NotebookApp] Kernel interrupted: fb57209c-68b8-41c6-853e-49a7019bff5d
+[I 11:34:00.608 NotebookApp] Saving file at /tucker_train.ipynb
+[I 11:35:04.506 NotebookApp] Saving file at /load_data.py
+[I 11:36:31.686 NotebookApp] Saving file at /load_data.py
+[I 11:37:09.825 NotebookApp] Saving file at /load_data.py
+[I 11:37:10.129 NotebookApp] Saving file at /load_data.py
+[I 11:37:10.362 NotebookApp] Saving file at /load_data.py
+[I 11:37:10.622 NotebookApp] Saving file at /load_data.py
+[I 11:37:10.886 NotebookApp] Saving file at /load_data.py
+[I 11:38:01.247 NotebookApp] Saving file at /tucker_train.ipynb
+[I 11:40:01.171 NotebookApp] Saving file at /tucker_train.ipynb
+[I 11:42:01.186 NotebookApp] Saving file at /tucker_train.ipynb
+[I 11:44:01.203 NotebookApp] Saving file at /tucker_train.ipynb
+[I 11:47:53.091 NotebookApp] Saving file at /load_data.py
+[I 11:47:53.345 NotebookApp] Saving file at /load_data.py
+[I 11:47:53.568 NotebookApp] Saving file at /load_data.py
+[I 11:48:10.701 NotebookApp] Kernel interrupted: fb57209c-68b8-41c6-853e-49a7019bff5d
+[I 11:48:17.346 NotebookApp] Saving file at /load_data.py
+[I 11:48:38.025 NotebookApp] Kernel interrupted: fb57209c-68b8-41c6-853e-49a7019bff5d
+[I 11:49:52.239 NotebookApp] Saving file at /single_combination_updated.py
+[I 11:49:54.055 NotebookApp] Saving file at /single_combination_updated.py
+[I 11:49:55.300 NotebookApp] Saving file at /single_combination_updated.py
+[I 11:50:00.577 NotebookApp] Saving file at /tucker_train.ipynb
+[I 11:52:01.195 NotebookApp] Saving file at /tucker_train.ipynb
+[I 11:54:01.286 NotebookApp] Saving file at /tucker_train.ipynb
+[I 11:56:01.225 NotebookApp] Saving file at /tucker_train.ipynb
+[I 11:56:53.959 NotebookApp] Saving file at /tucker_train.ipynb
+[I 11:56:54.283 NotebookApp] Saving file at /tucker_train.ipynb
+[I 11:56:54.622 NotebookApp] Saving file at /tucker_train.ipynb
+[I 11:57:04.068 NotebookApp] Saving file at /tucker_train.ipynb
+[I 11:57:36.647 NotebookApp] Kernel interrupted: fb57209c-68b8-41c6-853e-49a7019bff5d
+[I 11:58:01.204 NotebookApp] Saving file at /tucker_train.ipynb
+[I 11:58:08.107 NotebookApp] Saving file at /single_combination_updated.py
+[I 11:58:08.417 NotebookApp] Saving file at /single_combination_updated.py
+[I 11:58:08.882 NotebookApp] Saving file at /single_combination_updated.py
+[I 11:58:09.448 NotebookApp] Saving file at /single_combination_updated.py
+[I 12:00:01.267 NotebookApp] Saving file at /tucker_train.ipynb
+[I 12:02:01.302 NotebookApp] Saving file at /tucker_train.ipynb
+[I 12:04:01.297 NotebookApp] Saving file at /tucker_train.ipynb
+[I 12:06:01.256 NotebookApp] Saving file at /tucker_train.ipynb
+[I 12:08:01.337 NotebookApp] Saving file at /tucker_train.ipynb
+[I 12:18:00.760 NotebookApp] Saving file at /tucker_train.ipynb
+[I 12:20:01.396 NotebookApp] Saving file at /tucker_train.ipynb
+[I 12:22:01.177 NotebookApp] Saving file at /tucker_train.ipynb
+[I 12:24:04.961 NotebookApp] Saving file at /tucker_train.ipynb
+[I 12:31:14.934 NotebookApp] Saving file at /train_larger.ipynb
+[I 12:33:15.195 NotebookApp] Saving file at /train_larger.ipynb
+[I 12:35:15.214 NotebookApp] Saving file at /train_larger.ipynb
+[I 12:37:15.218 NotebookApp] Saving file at /train_larger.ipynb
+[I 12:39:15.216 NotebookApp] Saving file at /train_larger.ipynb
+[I 12:41:59.291 NotebookApp] Saving file at /train_larger.ipynb
+[I 12:43:59.320 NotebookApp] Saving file at /train_larger.ipynb
+[I 12:45:33.431 NotebookApp] Saving file at /train_larger.ipynb
+[I 12:47:15.315 NotebookApp] Saving file at /train_larger.ipynb
+[I 12:49:15.259 NotebookApp] Saving file at /train_larger.ipynb
+[I 12:51:15.268 NotebookApp] Saving file at /train_larger.ipynb
+[I 12:52:01.528 NotebookApp] Saving file at /tucker_train.ipynb
+[I 12:53:15.280 NotebookApp] Saving file at /train_larger.ipynb
+[I 12:54:01.402 NotebookApp] Saving file at /tucker_train.ipynb
+[I 12:55:15.352 NotebookApp] Saving file at /train_larger.ipynb
+[I 12:56:01.487 NotebookApp] Saving file at /tucker_train.ipynb
+[I 12:57:15.297 NotebookApp] Saving file at /train_larger.ipynb
+[I 12:58:01.477 NotebookApp] Saving file at /tucker_train.ipynb
+[I 12:59:15.300 NotebookApp] Saving file at /train_larger.ipynb
+[I 13:00:01.406 NotebookApp] Saving file at /tucker_train.ipynb
+[I 13:02:01.398 NotebookApp] Saving file at /tucker_train.ipynb
+[I 13:04:01.447 NotebookApp] Saving file at /tucker_train.ipynb
+[I 13:06:01.425 NotebookApp] Saving file at /tucker_train.ipynb
+[I 13:08:59.840 NotebookApp] Saving file at /tucker_train.ipynb
+[I 13:10:15.367 NotebookApp] Saving file at /tucker_train.ipynb
+[I 13:12:01.441 NotebookApp] Saving file at /tucker_train.ipynb
+[I 13:14:01.486 NotebookApp] Saving file at /tucker_train.ipynb
+[I 13:16:01.470 NotebookApp] Saving file at /tucker_train.ipynb
+[I 13:18:21.234 NotebookApp] Saving file at /tucker_train.ipynb
+[I 13:20:01.470 NotebookApp] Saving file at /tucker_train.ipynb
+[I 13:22:01.540 NotebookApp] Saving file at /tucker_train.ipynb
+[I 13:24:32.879 NotebookApp] Saving file at /tucker_train.ipynb
+[I 16:14:00.989 NotebookApp] Saving file at /tucker_train.ipynb
+[I 16:16:01.556 NotebookApp] Saving file at /tucker_train.ipynb
+[I 16:18:00.931 NotebookApp] Saving file at /tucker_train.ipynb
+[I 16:22:01.051 NotebookApp] Saving file at /tucker_train.ipynb
+[I 16:24:01.590 NotebookApp] Saving file at /tucker_train.ipynb
+[I 16:25:15.411 NotebookApp] Saving file at /train_class_specific_1.ipynb
+[I 16:26:01.754 NotebookApp] Saving file at /tucker_train.ipynb
+[I 16:27:15.134 NotebookApp] Saving file at /train_class_specific_1.ipynb
+[I 16:28:15.673 NotebookApp] Copying train_class_specific_1.ipynb to 
+[W 16:28:15.775 NotebookApp] Notebook train_class_specific_1.ipynb is not trusted
+[I 16:29:15.286 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 16:29:48.364 NotebookApp] Kernel interrupted: fb57209c-68b8-41c6-853e-49a7019bff5d
+[I 16:29:52.279 NotebookApp] Starting buffering for fb57209c-68b8-41c6-853e-49a7019bff5d:98a5f65f88924617891f3efdb7cc5156
+[I 16:29:52.811 NotebookApp] Kernel restarted: fb57209c-68b8-41c6-853e-49a7019bff5d
+[I 16:29:52.989 NotebookApp] Restoring connection for fb57209c-68b8-41c6-853e-49a7019bff5d:98a5f65f88924617891f3efdb7cc5156
+[I 16:29:52.990 NotebookApp] Replaying 6 buffered messages
+[I 16:30:00.729 NotebookApp] Saving file at /tucker_train.ipynb
+[I 16:31:15.095 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 16:32:00.774 NotebookApp] Saving file at /tucker_train.ipynb
+[I 16:33:15.346 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 16:34:01.380 NotebookApp] Saving file at /tucker_train.ipynb
+[I 16:35:15.324 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 16:36:01.377 NotebookApp] Saving file at /tucker_train.ipynb
+[I 16:37:15.301 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 16:38:01.333 NotebookApp] Saving file at /tucker_train.ipynb
+[I 16:39:15.489 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 16:40:01.314 NotebookApp] Saving file at /tucker_train.ipynb
+[I 16:41:59.332 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 16:42:59.308 NotebookApp] Saving file at /tucker_train.ipynb
+[I 16:43:59.321 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 16:44:59.313 NotebookApp] Saving file at /tucker_train.ipynb
+[I 16:45:59.336 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 16:46:59.307 NotebookApp] Saving file at /tucker_train.ipynb
+[I 16:47:37.327 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 16:48:59.305 NotebookApp] Saving file at /tucker_train.ipynb
+[I 16:49:59.353 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 16:50:58.324 NotebookApp] Saving file at /tucker_train.ipynb
+[I 16:51:59.421 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 16:52:59.317 NotebookApp] Saving file at /tucker_train.ipynb
+[I 16:53:59.432 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 16:54:59.383 NotebookApp] Saving file at /tucker_train.ipynb
+[I 16:55:59.344 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 16:56:59.419 NotebookApp] Saving file at /tucker_train.ipynb
+[I 16:57:59.357 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 16:58:59.391 NotebookApp] Saving file at /tucker_train.ipynb
+[I 16:59:59.356 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 17:00:59.337 NotebookApp] Saving file at /tucker_train.ipynb
+[I 17:01:59.352 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 17:02:59.438 NotebookApp] Saving file at /tucker_train.ipynb
+[I 17:04:59.347 NotebookApp] Saving file at /tucker_train.ipynb
+[I 17:06:59.345 NotebookApp] Saving file at /tucker_train.ipynb
+[I 17:08:59.428 NotebookApp] Saving file at /tucker_train.ipynb
+[I 17:10:59.377 NotebookApp] Saving file at /tucker_train.ipynb
+[I 17:12:59.372 NotebookApp] Saving file at /tucker_train.ipynb
+[I 17:14:59.370 NotebookApp] Saving file at /tucker_train.ipynb
+[I 17:16:59.358 NotebookApp] Saving file at /tucker_train.ipynb
+[I 17:18:59.382 NotebookApp] Saving file at /tucker_train.ipynb
+[I 17:20:59.370 NotebookApp] Saving file at /tucker_train.ipynb
+[I 17:22:59.387 NotebookApp] Saving file at /tucker_train.ipynb
+[I 17:24:59.374 NotebookApp] Saving file at /tucker_train.ipynb
+[I 17:26:59.393 NotebookApp] Saving file at /tucker_train.ipynb
+[I 17:28:59.379 NotebookApp] Saving file at /tucker_train.ipynb
+[I 17:30:59.373 NotebookApp] Saving file at /tucker_train.ipynb
+[I 17:32:59.376 NotebookApp] Saving file at /tucker_train.ipynb
+[I 17:34:59.378 NotebookApp] Saving file at /tucker_train.ipynb
+[I 17:36:59.390 NotebookApp] Saving file at /tucker_train.ipynb
+[I 17:38:59.381 NotebookApp] Saving file at /tucker_train.ipynb
+[I 17:40:59.395 NotebookApp] Saving file at /tucker_train.ipynb
+[I 17:42:59.393 NotebookApp] Saving file at /tucker_train.ipynb
+[I 17:44:59.390 NotebookApp] Saving file at /tucker_train.ipynb
+[I 17:46:59.397 NotebookApp] Saving file at /tucker_train.ipynb
+[I 17:48:59.474 NotebookApp] Saving file at /tucker_train.ipynb
+[I 17:50:59.399 NotebookApp] Saving file at /tucker_train.ipynb
+[I 17:52:59.393 NotebookApp] Saving file at /tucker_train.ipynb
+[I 17:54:59.401 NotebookApp] Saving file at /tucker_train.ipynb
+[I 17:56:59.432 NotebookApp] Saving file at /tucker_train.ipynb
+[I 17:58:59.426 NotebookApp] Saving file at /tucker_train.ipynb
+[I 18:00:59.416 NotebookApp] Saving file at /tucker_train.ipynb
+[I 18:02:00.825 NotebookApp] Saving file at /tucker_train.ipynb
+[I 18:03:15.198 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 18:04:01.488 NotebookApp] Saving file at /tucker_train.ipynb
+[I 18:05:15.104 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 18:06:01.434 NotebookApp] Saving file at /tucker_train.ipynb
+[I 18:07:15.452 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 18:08:01.445 NotebookApp] Saving file at /tucker_train.ipynb
+[I 18:09:15.415 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 18:10:59.488 NotebookApp] Saving file at /tucker_train.ipynb
+[I 18:11:15.407 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 18:12:59.442 NotebookApp] Saving file at /tucker_train.ipynb
+[I 18:13:59.435 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 18:14:42.483 NotebookApp] Saving file at /tucker_train.ipynb
+[I 18:15:15.430 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 18:16:01.446 NotebookApp] Saving file at /tucker_train.ipynb
+[I 18:17:15.433 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 18:18:01.504 NotebookApp] Saving file at /tucker_train.ipynb
+[I 18:19:17.013 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 18:20:59.538 NotebookApp] Saving file at /tucker_train.ipynb
+[I 18:21:15.518 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 18:22:59.535 NotebookApp] Saving file at /tucker_train.ipynb
+[I 18:23:15.532 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 18:24:59.550 NotebookApp] Saving file at /tucker_train.ipynb
+[I 18:25:22.796 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 18:26:59.490 NotebookApp] Saving file at /tucker_train.ipynb
+[I 18:27:15.450 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 18:28:59.592 NotebookApp] Saving file at /tucker_train.ipynb
+[I 18:29:15.465 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 18:30:59.521 NotebookApp] Saving file at /tucker_train.ipynb
+[I 18:31:15.712 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 18:32:10.537 NotebookApp] Saving file at /tucker_train.ipynb
+[I 18:33:15.565 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 18:34:59.544 NotebookApp] Saving file at /tucker_train.ipynb
+[I 18:35:15.569 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 18:36:03.704 NotebookApp] Saving file at /tucker_train.ipynb
+[I 18:37:15.594 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 18:38:59.619 NotebookApp] Saving file at /tucker_train.ipynb
+[I 18:39:15.512 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 18:40:59.526 NotebookApp] Saving file at /tucker_train.ipynb
+[I 18:41:15.546 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 18:42:59.620 NotebookApp] Saving file at /tucker_train.ipynb
+[I 18:43:59.593 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 18:44:59.623 NotebookApp] Saving file at /tucker_train.ipynb
+[I 18:45:35.562 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 18:46:21.532 NotebookApp] Saving file at /tucker_train.ipynb
+[I 18:47:15.703 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 18:49:15.587 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 18:51:15.566 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 18:53:15.289 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 19:02:01.604 NotebookApp] Saving file at /tucker_train.ipynb
+[I 19:04:01.539 NotebookApp] Saving file at /tucker_train.ipynb
+[I 19:05:15.260 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 19:06:00.968 NotebookApp] Saving file at /tucker_train.ipynb
+[I 19:07:15.604 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 19:08:01.001 NotebookApp] Saving file at /tucker_train.ipynb
+[I 19:09:15.658 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 19:10:00.962 NotebookApp] Saving file at /tucker_train.ipynb
+[I 19:11:59.628 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 19:12:00.970 NotebookApp] Saving file at /tucker_train.ipynb
+[I 19:13:59.583 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 19:14:01.014 NotebookApp] Saving file at /tucker_train.ipynb
+[I 19:15:59.603 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 19:16:01.568 NotebookApp] Saving file at /tucker_train.ipynb
+[I 19:17:59.650 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 19:18:01.680 NotebookApp] Saving file at /tucker_train.ipynb
+[I 19:19:59.697 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 19:20:01.556 NotebookApp] Saving file at /tucker_train.ipynb
+[I 19:21:59.626 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 19:22:59.585 NotebookApp] Saving file at /tucker_train.ipynb
+[I 19:23:59.710 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 19:24:59.604 NotebookApp] Saving file at /tucker_train.ipynb
+[I 19:25:59.643 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 19:26:59.593 NotebookApp] Saving file at /tucker_train.ipynb
+[I 19:27:59.694 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 19:28:59.644 NotebookApp] Saving file at /tucker_train.ipynb
+[I 19:29:59.677 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 19:30:42.690 NotebookApp] Saving file at /tucker_train.ipynb
+[I 19:31:59.634 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 19:32:59.605 NotebookApp] Saving file at /tucker_train.ipynb
+[I 19:33:59.656 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 19:34:59.634 NotebookApp] Saving file at /tucker_train.ipynb
+[I 19:35:59.662 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 19:36:59.593 NotebookApp] Saving file at /tucker_train.ipynb
+[I 19:37:15.700 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 19:38:59.698 NotebookApp] Saving file at /tucker_train.ipynb
+[I 19:39:59.782 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 19:40:59.624 NotebookApp] Saving file at /tucker_train.ipynb
+[I 19:41:59.751 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 19:42:59.614 NotebookApp] Saving file at /tucker_train.ipynb
+[I 19:43:59.703 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 19:44:59.626 NotebookApp] Saving file at /tucker_train.ipynb
+[I 19:45:59.691 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 19:46:59.611 NotebookApp] Saving file at /tucker_train.ipynb
+[I 19:47:59.724 NotebookApp] Saving file at /train_class_specific.ipynb
+[I 19:48:57.108 NotebookApp] Saving file at /tucker_train.ipynb
+[I 19:50:01.615 NotebookApp] Saving file at /tucker_train.ipynb
+[I 19:52:01.608 NotebookApp] Saving file at /tucker_train.ipynb
+[I 19:54:01.012 NotebookApp] Saving file at /tucker_train.ipynb
+[I 19:56:01.019 NotebookApp] Saving file at /tucker_train.ipynb
+[I 19:58:01.028 NotebookApp] Saving file at /tucker_train.ipynb
+[I 20:00:01.029 NotebookApp] Saving file at /tucker_train.ipynb
+[I 20:02:01.024 NotebookApp] Saving file at /tucker_train.ipynb
+[I 20:04:01.026 NotebookApp] Saving file at /tucker_train.ipynb
+[I 20:06:01.646 NotebookApp] Saving file at /tucker_train.ipynb
+[I 20:08:01.700 NotebookApp] Saving file at /tucker_train.ipynb
+[I 20:10:59.709 NotebookApp] Saving file at /tucker_train.ipynb
+[I 20:12:59.663 NotebookApp] Saving file at /tucker_train.ipynb
+[I 20:14:58.649 NotebookApp] Saving file at /tucker_train.ipynb
+[W 20:59:45.169 NotebookApp] WebSocket ping timeout after 119969 ms.
+[I 20:59:50.171 NotebookApp] Starting buffering for 150208f9-7e02-4798-ad99-0dd9d0c7565d:4eac01c4f33c4c5a8276a884898effc6
+[W 20:59:52.991 NotebookApp] WebSocket ping timeout after 119970 ms.
+[I 20:59:57.993 NotebookApp] Starting buffering for fb57209c-68b8-41c6-853e-49a7019bff5d:98a5f65f88924617891f3efdb7cc5156
+[W 07:36:07.120 NotebookApp] Notebook train_class_specific.ipynb is not trusted
+[I 07:48:58.822 NotebookApp] Starting buffering for 150208f9-7e02-4798-ad99-0dd9d0c7565d:bc47c95dd3e0455da513569ed176f1b8
+[I 07:49:11.262 NotebookApp] Kernel shutdown: 150208f9-7e02-4798-ad99-0dd9d0c7565d
+[I 07:49:14.003 NotebookApp] Kernel shutdown: fb57209c-68b8-41c6-853e-49a7019bff5d
+[I 08:05:23.221 NotebookApp] Kernel started: 3ceca630-5c44-4234-b5c0-77ca06f0fbe1
+[I 08:08:52.594 NotebookApp] Kernel started: a12adf83-9899-4bd7-95aa-2f6099108bc7
+[I 08:09:10.630 NotebookApp] Starting buffering for a12adf83-9899-4bd7-95aa-2f6099108bc7:5a8c9d2283dc45c3804312c635b0c2df
+[W 08:09:30.951 NotebookApp] Notebook train_class_specific.ipynb is not trusted
+[I 08:09:33.363 NotebookApp] Kernel started: c1541fe9-fb91-4794-84d8-b321cbec7041
+[I 08:09:41.057 NotebookApp] Starting buffering for c1541fe9-fb91-4794-84d8-b321cbec7041:82670db0136340be92a8e6a5b30c1f2f
+[I 08:09:57.538 NotebookApp] Starting buffering for a12adf83-9899-4bd7-95aa-2f6099108bc7:ab44a0b8bd9c4fb18b5c7e43f8683ff2
+[I 08:10:11.397 NotebookApp] Starting buffering for a12adf83-9899-4bd7-95aa-2f6099108bc7:38813c5b8d95498f8ea939786d315031
+[I 08:13:27.935 NotebookApp] Saving file at /single_combination.py
+[I 08:13:28.293 NotebookApp] Saving file at /single_combination.py
+[I 08:14:40.303 NotebookApp] Saving file at /single_combination.py
+[I 08:14:40.623 NotebookApp] Saving file at /single_combination.py
+[I 08:14:40.817 NotebookApp] Saving file at /single_combination.py
+[I 08:14:47.418 NotebookApp] Saving file at /single_combination.py
+[I 08:15:44.071 NotebookApp] Saving file at /single_combination.py
+[I 08:15:44.322 NotebookApp] Saving file at /single_combination.py
+[I 08:16:09.091 NotebookApp] Saving file at /single_combination.py
+[I 08:16:09.343 NotebookApp] Saving file at /single_combination.py
+[I 08:16:09.608 NotebookApp] Saving file at /single_combination.py
+[I 08:16:13.098 NotebookApp] Saving file at /single_combination.py
+[I 08:16:13.401 NotebookApp] Saving file at /single_combination.py
+[I 08:16:21.966 NotebookApp] Kernel shutdown: c1541fe9-fb91-4794-84d8-b321cbec7041
+[I 08:16:24.503 NotebookApp] Kernel shutdown: a12adf83-9899-4bd7-95aa-2f6099108bc7
+[I 08:17:12.233 NotebookApp] Saving file at /tucker_malkg_usecase.ipynb
+[I 08:17:12.447 NotebookApp] Saving file at /tucker_malkg_usecase.ipynb
+[I 08:18:00.293 NotebookApp] Saving file at /tucker_malkg_usecase.ipynb
+[I 08:18:28.826 NotebookApp] Saving file at /tucker_malkg_usecase.ipynb
+[I 08:20:28.885 NotebookApp] Saving file at /tucker_malkg_usecase.ipynb
+[I 08:55:49.075 NotebookApp] Starting buffering for 3ceca630-5c44-4234-b5c0-77ca06f0fbe1:ec68d8520d8546669fe83236ddb80e97
+[I 08:56:09.226 NotebookApp] Starting buffering for 3ceca630-5c44-4234-b5c0-77ca06f0fbe1:d191546e98b14f629f0c3525ab66da82
+[I 08:58:09.954 NotebookApp] Saving file at /tucker_malkg_usecase.ipynb
+[I 09:00:10.895 NotebookApp] Saving file at /tucker_malkg_usecase.ipynb
+[I 09:02:10.917 NotebookApp] Saving file at /tucker_malkg_usecase.ipynb
+[I 09:04:10.007 NotebookApp] Saving file at /tucker_malkg_usecase.ipynb
+[I 09:06:10.014 NotebookApp] Saving file at /tucker_malkg_usecase.ipynb
+[I 09:08:10.028 NotebookApp] Saving file at /tucker_malkg_usecase.ipynb
+[I 09:10:10.933 NotebookApp] Saving file at /tucker_malkg_usecase.ipynb
+[I 09:12:10.932 NotebookApp] Saving file at /tucker_malkg_usecase.ipynb
+[I 09:22:11.019 NotebookApp] Saving file at /tucker_malkg_usecase.ipynb
+[I 09:24:11.024 NotebookApp] Saving file at /tucker_malkg_usecase.ipynb
+[I 09:26:10.961 NotebookApp] Saving file at /tucker_malkg_usecase.ipynb
+[I 09:28:40.704 NotebookApp] Saving file at /tucker_malkg_usecase.ipynb
+[I 09:38:11.014 NotebookApp] Saving file at /tucker_malkg_usecase.ipynb
+[I 09:40:10.988 NotebookApp] Saving file at /tucker_malkg_usecase.ipynb
+[I 09:42:11.063 NotebookApp] Saving file at /tucker_malkg_usecase.ipynb
+[I 09:44:28.478 NotebookApp] Saving file at /tucker_malkg_usecase.ipynb
+[I 09:48:10.127 NotebookApp] Saving file at /tucker_malkg_usecase.ipynb
+[I 09:50:11.132 NotebookApp] Saving file at /tucker_malkg_usecase.ipynb
+[I 09:52:11.017 NotebookApp] Saving file at /tucker_malkg_usecase.ipynb
+[I 09:54:11.049 NotebookApp] Saving file at /tucker_malkg_usecase.ipynb
+[I 10:54:10.527 NotebookApp] Saving file at /tucker_malkg_usecase.ipynb
+[I 10:56:11.222 NotebookApp] Saving file at /tucker_malkg_usecase.ipynb
+[I 10:58:11.148 NotebookApp] Saving file at /tucker_malkg_usecase.ipynb
+[I 11:00:11.161 NotebookApp] Saving file at /tucker_malkg_usecase.ipynb
+[I 11:02:11.248 NotebookApp] Saving file at /tucker_malkg_usecase.ipynb
+[I 11:16:11.416 NotebookApp] Saving file at /tucker_malkg_usecase.ipynb
+[I 11:18:11.509 NotebookApp] Saving file at /tucker_malkg_usecase.ipynb
+[I 11:20:11.383 NotebookApp] Saving file at /tucker_malkg_usecase.ipynb
+[I 11:22:59.556 NotebookApp] Saving file at /tucker_malkg_usecase.ipynb
+[I 11:42:11.595 NotebookApp] Saving file at /tucker_malkg_usecase.ipynb
+[I 11:44:11.549 NotebookApp] Saving file at /tucker_malkg_usecase.ipynb
+[I 11:46:11.682 NotebookApp] Saving file at /tucker_malkg_usecase.ipynb
+[I 11:48:30.028 NotebookApp] Saving file at /tucker_malkg_usecase.ipynb
+[I 12:37:28.584 NotebookApp] Starting buffering for 3ceca630-5c44-4234-b5c0-77ca06f0fbe1:857672e5a7474d3bb5d7efb830049aac
+[W 12:51:23.069 NotebookApp] WebSocket ping timeout after 119969 ms.
+[I 12:51:28.072 NotebookApp] Starting buffering for 3ceca630-5c44-4234-b5c0-77ca06f0fbe1:87d639de639f4e79886b0ae6929b615e
+[I 04:22:31.968 NotebookApp] Kernel started: 71f6654c-da7e-44b1-acc3-1389abe94957
+[I 06:11:25.840 NotebookApp] Starting buffering for 71f6654c-da7e-44b1-acc3-1389abe94957:d8f3a04c919f43afb9d05065479a991e
+[W 12:09:16.108 NotebookApp] 404 GET /tree (127.0.0.1) 13.55ms referer=None
+[I 12:09:19.455 NotebookApp] 302 GET / (127.0.0.1) 1.16ms
+[W 12:09:19.488 NotebookApp] 404 GET /tree? (127.0.0.1) 3.10ms referer=None
+[C 12:21:04.035 NotebookApp] received signal 15, stopping
+[I 12:21:04.036 NotebookApp] Shutting down 2 kernels
+Traceback (most recent call last):
+  File "/home/ma8235/.local/bin/jupyter-notebook", line 8, in <module>
+    sys.exit(main())
+  File "/home/ma8235/.local/lib/python3.8/site-packages/jupyter_core/application.py", line 264, in launch_instance
+    return super(JupyterApp, cls).launch_instance(argv=argv, **kwargs)
+  File "/home/ma8235/.local/lib/python3.8/site-packages/traitlets/config/application.py", line 846, in launch_instance
+    app.start()
+  File "/home/ma8235/.local/lib/python3.8/site-packages/notebook/notebookapp.py", line 1810, in start
+    self.cleanup_kernels()
+  File "/home/ma8235/.local/lib/python3.8/site-packages/notebook/notebookapp.py", line 1644, in cleanup_kernels
+    self.kernel_manager.shutdown_all()
+  File "/home/ma8235/.local/lib/python3.8/site-packages/jupyter_client/utils.py", line 26, in wrapped
+    raise e
+  File "/home/ma8235/.local/lib/python3.8/site-packages/jupyter_client/utils.py", line 23, in wrapped
+    return loop.run_until_complete(future)
+  File "/home/ma8235/.local/lib/python3.8/site-packages/nest_asyncio.py", line 81, in run_until_complete
+    return f.result()
+  File "/usr/lib/python3.8/asyncio/futures.py", line 178, in result
+    raise self._exception
+  File "/usr/lib/python3.8/asyncio/tasks.py", line 282, in __step
+    result = coro.throw(exc)
+  File "/home/ma8235/.local/lib/python3.8/site-packages/jupyter_client/multikernelmanager.py", line 320, in _async_shutdown_all
+    await asyncio.gather(*futs)
+  File "/usr/lib/python3.8/asyncio/tasks.py", line 349, in __wakeup
+    future.result()
+  File "/usr/lib/python3.8/asyncio/tasks.py", line 280, in __step
+    result = coro.send(None)
+  File "/home/ma8235/.local/lib/python3.8/site-packages/jupyter_client/utils.py", line 34, in ensure_async
+    return await obj
+  File "/home/ma8235/.local/lib/python3.8/site-packages/jupyter_client/multikernelmanager.py", line 239, in _shutdown_kernel_when_ready
+    await ensure_async(self.shutdown_kernel(kernel_id, now=now, restart=restart))
+TypeError: shutdown_kernel() got an unexpected keyword argument 'restart'
+[IPKernelApp] WARNING | Parent appears to have exited, shutting down.
+[IPKernelApp] WARNING | Parent appears to have exited, shutting down.

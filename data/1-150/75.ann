@@ -1,0 +1,99 @@
+T1	OS 1575 1582	Android
+T3	Malware 0 7	FakeSpy
+T4	Malware 727 734	FakeSpy
+T5	Malware 795 802	FakeSpy
+T6	Malware 931 938	FakeSpy
+T7	Malware 2270 2277	FakeSpy
+T8	Malware 2448 2455	FakeSpy
+T9	Malware 2802 2809	FakeSpy
+T10	Malware 2876 2883	FakeSpy
+T11	Malware 3811 3818	FakeSpy
+T12	Malware 4175 4182	FakeSpy
+T13	Organization 736 747	Trend Micro
+T16	AttackPattern 4319 4327	SMiShing
+T24	Indicator 987 1013	(ANDROIDOS_LOADGFISH.HRX).
+T25	Indicator 768 791	ANDROIDOS_FAKESPY.HRX).
+T26	Location 16 24	Japanese
+T27	Location 29 35	Korean
+R1	targets Arg1:T3 Arg2:T26	
+R2	targets Arg1:T3 Arg2:T27	
+T28	AttackPattern 52 91	Spoofing legitimate mobile applications
+T30	AttackPattern 191 208	steal information
+T31	AttackPattern 212 228	deliver payloads
+T32	Malware 376 384	CPUMINER
+T33	Malware 386 393	BankBot
+T34	Malware 399 408	MilkyDoor
+T2	Application 456 467	Google Play
+T35	Application 471 480	App Store
+T36	AttackPattern 697 716	information stealer
+R7	indicates Arg1:T25 Arg2:T4	
+R8	uses Arg1:T4 Arg2:T36	
+T29	AttackPattern 817 839	stealing text messages
+T37	Location 1066 1074	Japanese
+T38	Location 1079 1085	Korean
+T39	Malware 1162 1169	FakeSpy
+R3	uses Arg1:T5 Arg2:T29	
+R4	indicates Arg1:T24 Arg2:T6	
+R5	targets Arg1:T6 Arg2:T37	
+R6	targets Arg1:T6 Arg2:T38	
+T40	AttackPattern 1304 1393	masquerading as a legitimate message from a Japanese logistics and transportation company
+R9	uses Arg1:T39 Arg2:T40	
+T41	Location 1763 1775	South Korean
+T42	Time 1809 1821	October 2017
+R10	targets Arg1:T39 Arg2:T41	
+R11	discoveredIn Arg1:T39 Arg2:T42	
+T43	Location 1826 1832	Korean
+T44	AttackPattern 1982 2122	poses as apps for transportation, logistics, courier, and e-commerce companies, a mobile telecommunications service, and a clothing retailer
+T45	Malware 2149 2156	FakeSpy
+T18	AttackPattern 2359 2413	SMS messages are stolen and uploaded to the C&C server
+T19	Malware 2609 2616	FakeSpy
+R12	targets Arg1:T6 Arg2:T43	
+R13	uses Arg1:T39 Arg2:T44	
+T46	AttackPattern 2283 2351	start monitoring for text messages that the affected device receives
+R14	uses Arg1:T7 Arg2:T46	
+R15	uses Arg1:T7 Arg2:T18	
+T48	AttackPattern 2636 2665	adding contacts to the device
+T49	AttackPattern 2687 2707	resetting the device
+T50	AttackPattern 2709 2737	stealing stored SMS messages
+T51	MalwareType 2828 2842	banking trojan
+R17	isA Arg1:T9 Arg2:T51	
+R18	uses Arg1:T19 Arg2:T48	
+R19	uses Arg1:T19 Arg2:T49	
+R20	uses Arg1:T19 Arg2:T50	
+T52	AttackPattern 2893 2955	check for banking-related applications installed in the device
+R21	uses Arg1:T10 Arg2:T52	
+T53	Malware 2971 2978	FakeSpy
+T56	Application 3450 3469	online banking apps
+R24	targets Arg1:T53 Arg2:T56	
+T57	Application 3504 3530	digital currencies trading
+T58	Application 3535 3545	e-commerce
+R25	targets Arg1:T53 Arg2:T57	
+R26	targets Arg1:T53 Arg2:T58	
+T59	Malware 3571 3578	FakeSpy
+T61	AttackPattern 3653 3756	abuses social media by writing the IP address on a Twitter profile whose handles are regularly modified
+R27	uses Arg1:T59 Arg2:T61	
+T14	AttackPattern 3837 3914	access the Twitter page and parse its contents to retrieve the C&C IP address
+R28	uses Arg1:T11 Arg2:T14	
+R30	uses Arg1:T3 Arg2:T28	
+R31	uses Arg1:T3 Arg2:T30	
+R32	uses Arg1:T3 Arg2:T31	
+R29	uses Arg1:T12 Arg2:T16	
+T15	AttackPattern 852 871	account information
+T17	AttackPattern 873 881	contacts
+T20	AttackPattern 887 899	call records
+R33	uses Arg1:T5 Arg2:T15	
+R34	uses Arg1:T5 Arg2:T17	
+R35	uses Arg1:T5 Arg2:T20	
+T21	AttackPattern 2667 2685	setting it to mute
+T22	AttackPattern 2742 2761	device information,
+T23	AttackPattern 2766 2797	updating its own configurations
+R16	uses Arg1:T19 Arg2:T21	
+R36	uses Arg1:T19 Arg2:T22	
+R37	uses Arg1:T19 Arg2:T23	
+T62	MalwareType 972 986	banking trojan
+T63	Application 259 287	third-party app marketplaces
+T64	Application 3660 3672	social media
+T65	Application 2040 2050	e-commerce
+T66	Application 3704 3711	Twitter
+T67	Application 3848 3855	Twitter
+T68	Organization 129 134	banks

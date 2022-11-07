@@ -1,0 +1,14 @@
+New TangleBot malware is targeting Android devices in the US and Canada
+A cyber security company, Proofpoint/Cloudmark has recently identified a new threat that can take over the victim’s mobile phone through SMS. The threat has been found in the United States and in Canada and as per the reports, Android users are the main target of this malware.
+
+This security threat has been named as the Tangle Bot due to its ability to takeover a number of device’s functions that may include contact list, phone history, camera and microphone along with the ability to use Internet.
+
+This malware works same as the Flu Bot threat which is still out there in the United Kingdom as well as in Europe. Just like the name Tangle, this malware can mislead the target to install the tampered software received by a forged Covid-19 alert. This alert contains information about booster available for Covid-19 vaccine along with the new regulatory policies.
+
+With the ongoing pandemic, which has already created panic, such types of messages can fuel up the target and will somehow trick them to click on the link attached with the message believing that the link will provide more information regarding Boosters as well the governmental policies for Covid-19.
+
+After tapping the highlighted link, the web display will show that the Adobe Flash Player needs to be updated, if the user agrees to update it by tapping the installation button for update, TangleBot will be installed and will start taking over functions including getting control on phone book, recording screen, opening device camera and mic whenever the attacker wants too. According to Proofpoint , TangleBot can even get access to online financial applications by overlaying the screen. Later the victim’s device is used to forward the fake Covid-19 alert.
+
+If the target somehow finds out that the device has been breached by a malware and uninstalls it, the hacker won’t use the stolen information for a time being, tricking the user to believe that nothing was stolen.
+
+This is why the best way to protect a device from falling prey is to avoid opening links being received from unknown numbers and applications should be installed from trusted sources only.

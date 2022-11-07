@@ -1,0 +1,61 @@
+Hacking Team Spying Tool Listens to Calls
+Following news that iOS devices are at risk of spyware related to the Hacking Team, the saga continues into the Android sphere. We found that among the leaked files is the code for Hacking Team’s open-source malware suite RCSAndroid (Remote Control System Android), which was sold by the company as a tool for monitoring targets. (Researchers have been aware of this suite as early as 2014.) The RCSAndroid code can be considered one of the most professionally developed and sophisticated Android malware ever exposed. The leak of its code provides cybercriminals with a new weaponized resource for enhancing their surveillance operations. Based on the leaked code, the RCSAndroid app can do the following intrusive routines to spy on targets:
+Capture screenshots using the “screencap” command and framebuffer direct reading
+Monitor clipboard content
+Collect passwords for Wi-Fi networks and online acco;.unts, including Skype, Facebook, Twitter, Google, WhatsApp, Mail, and LinkedIn
+Record using the microphone
+Collect SMS, MMS, and Gmail messages
+Record location
+Gather device information
+Capture photos using the front and back cameras
+Collect contacts and decode messages from IM accounts, including Facebook Messenger, WhatsApp, Skype, Viber, Line, WeChat, Hangouts, Telegram, and BlackBerry Messenger.
+Capture real-time voice calls in any network or app by hooking into the “mediaserver” system service
+RCSAndroid in the Wild Our analysis reveals that this RCSAndroid (AndroidOS_RCSAgent.HRX) has been in the wild since 2012. Traces of its previous uses in the wild were found inside the configuration file:
+It was configured to use a Command-and-control (C&C) server in the United States; however, the server was bought from a host service provider and is now unavailable.
+It was configured to activate via SMS sent from a Czech Republic number. Attackers can send SMS with certain messages to activate the agent and trigger corresponding action. This can also define what kind of evidences to collect.
+Based on emails leaked in the dump, a number of Czech firms appear to be in business with the Hacking team, including a major IT partner in the Olympic Games.
+Dropping Cluster Bombs RCSAndroid is a threat that works like a cluster bomb in that it deploys multiple dangerous exploits and uses various techniques to easily infect Android devices. While analyzing the code, we found that the whole system consists of four critical components, as follows:
+penetration solutions, ways to get inside the device, either via SMS/email or a legitimate app
+low-level native code, advanced exploits and spy tools beyond Android’s security framework
+high-level Java agent – the app’s malicious APK
+command-and-control (C&C) servers, used to remotely send/receive malicious commands
+Attackers use two methods to get targets to download RCSAndroid. The first method is to send a specially crafted URL to the target via SMS or email. The URL will trigger exploits for arbitrary memory read (CVE-2012-2825) and heap buffer overflow (CVE-2012-2871) vulnerabilities in the default browsers of Android versions 4.0 Ice Cream Sandwich to 4.3 Jelly Bean, allowing another local privilege escalation exploit to execute. When root privilege is gained, a shell backdoor and malicious RCSAndroid agent APK file will be installed.
+The second method is to use a stealthy backdoor app such as ANDROIDOS_HTBENEWS.A, which was designed to bypass Google Play.
+The role of ANDROIDOS_HTBENEWS.A and the malicious APK mentioned in the first method is to exploit a local privilege escalation vulnerability in Android devices. Hacking Team has been known to use both CVE-2014-3153 and CVE-2013-6282 in their attacks. The said exploits will root the device and install a shell backdoor.
+The shell backdoor then installs the RCSAndroid agent. This agent has two core modules, the Evidence Collector and the Event Action Trigger.
+The Evidence Collector module is responsible for the spying routines outlined above. One of its most notable routines is capturing voice calls in real time by hooking into the “mediaserver” system service. The basic idea is to hook the voice call process in mediaserver.
+Take voice call playback process for example. The mediaserver will first builds a new unique track, start to play the track, loop play all audio buffer, then finally stop the playback. The raw wave audio buffer frame can be dumped in the getNextBuffer() function. With the help of the open-source Android Dynamic Binary Instrumentation Toolkit and root privilege, it is possible to intercept any function execution.
+
+The Event Action Trigger module triggers malicious actions based on certain events. These events can be based on time, charging or battery status, location, connectivity, running apps, focused app, SIM card status, SMS received with keywords, and screen turning on.
+According to the configuration pattern, these actions are registered to certain events:
+Sync configuration data, upgrade modules, and download new payload (This uses transport protocol ZProtocol encrypted by AES/CBC/PKCS5Padding algorithm to communicate with the C&C server.)
+Upload and purge collected evidence
+Destroy device by resetting locking password
+Execute shell commands
+Send SMS with defined content or location
+Disable network
+Disable root
+Uninstall bot
+To avoid detection and removal of the agent app in the device memory, the RCSAndroid suite also detects emulators or sandboxes, obfuscates code using DexGuard, uses ELF string obfuscator, and adjusts the OOM (out-of-memory) value. Interestingly, one unused feature of the app is its ability to manipulate data in the Android package manager to add and remove permissions and components as well as hide the app icon.
+
+Recommendations Popular mobile platforms like Android are common targets for organized or commercialized monitoring operations. Attackers know that rooting devices via malware exploits is an effective means to control devices and gather information from them. In a root broken device, security is a fairy tale. Take note of the following best practices to prevent this threat from getting in your device:
+Disable app installations from unknown, third-party sources.
+Constantly update your Android devices to the latest version to help prevent exploits, especially in the case of RCSAndroid which can affect only up to version 4.4.4 KitKat. Note, however, that based on the leak mail from a customer inquiry, Hacking Team was in the process of developing exploits for Android 5.0 Lollipop.
+Install a mobile security solution to secure your device from threats.
+The leaked RCSAndroid code is a commercial weapon now in the wild. Mobile users are called on to be on top of this news and be on guard for signs of monitoring. Some indicators may come in the form of peculiar behavior such as unexpected rebooting, finding unfamiliar apps installed, or instant messaging apps suddenly freezing. Should a device become infected, this backdoor cannot be removed without root privilege. Users may be required the help of their device manufacturer to get support for firmware flashing. Trend Micro offers security for Android mobile devices through Mobile Security for Android™ to protect against these types of attacks. Find out more about the 7 Android Security Hacks You Need to Do Right Now to keep your mobile data safe. Update as of July 23, 2015 1:00 AM PDT (UTC-7) We have added a link to a previous report discussing this threat. Timeline of posts related to the Hacking Team
+DATE UPDATE
+July 5 The Italian company Hacking Team was hacked, with more than 400GB of confidential company data made available to the public.
+July 7 
+Three exploits – two for Flash Player and one for the Windows kernel—were initially found in the information dump. One of these [CVE-2015-5119] was a Flash zero-day.
+
+The Windows kernel vulnerability (CVE-2015-2387) existed in the open type font manager module (ATMFD.dll) and can be exploited to bypass the sandbox mitigation mechanism.
+
+The Flash zero-day exploit (CVE-2015-5119) was added into the Angler Exploit Kit and Nuclear Exploit Pack. It was also used in limited attacks in Korea and Japan.
+
+July 11 Two new Flash zero-day vulnerabilities, CVE-2015-5122 and CVE-2015-5123, were found in the hacking team dump.
+July 13 Further analysis of the hacking team dump revealed that the company used UEFI BIOS rootkit to keep their Remote Control System (RCS) agent installed in their targets’ systems.
+July 14 A new zero-day vulnerability (CVE-2015-2425) was found in Internet Explorer.
+July 16 On the mobile front, a fake news app designed to bypass Google Play was discovered.
+July 20 A new zero-day vulnerability (CVE-2015-2426) was found in Windows, which Microsoft fixed in an out-of-band patch.
+July 21 Analysis of the RCSAndroid spying tool revealed that Hacking Team can listen to calls and roots devices to get in.
+July 28 A recent campaign compromised Taiwan and Hong Kong sites to deliver Flash exploits related to Hacking Team.

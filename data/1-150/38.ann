@@ -1,0 +1,83 @@
+T1	OS 51 58	Android
+T2	OS 471 478	Android
+T5	OS 751 758	Android
+T10	OS 2606 2613	Android
+T11	OS 2725 2732	Android
+T12	OS 2890 2897	Android
+T14	ThreatActor 160 172	Hacking Team
+T15	Organization 521 532	Trend Micro
+T28	ThreatActor 0 12	Hacking Team
+T16	Malware 15 26	RCS Android
+R1	hasAuthor Arg1:T16 Arg2:T28	
+R2	targets Arg1:T16 Arg2:T1	
+T29	MalwareType 253 260	spyware
+R3	isA Arg1:T16 Arg2:T29	
+T30	MalwareType 460 467	spyware
+R4	isA Arg1:T16 Arg2:T30	
+R5	targets Arg1:T16 Arg2:T2	
+T13	Application 507 518	Google Play
+R6	targets Arg1:T16 Arg2:T13	
+T3	Malware 591 602	RCS Android
+T4	Malware 604 633	Remote Control System Android
+*	hasAlias T3 T4
+R7	targets Arg1:T3 Arg2:T5	
+T17	MalwareType 788 795	spyware
+R8	isA Arg1:T3 Arg2:T17	
+T6	OS 986 1025	Android versions 4.0 Ice Cream Sandwich
+T25	OS 1029 1043	4.3 Jelly Bean
+T18	Malware 1152 1163	RCS Android
+T31	AttackPattern 1080 1099	gain root privilege
+R10	uses Arg1:T18 Arg2:T31	
+T7	Malware 1172 1183	RCS Android
+T33	AttackPattern 1313 1341	gathering device information
+T34	AttackPattern 1343 1375	capturing screenshots and photos
+T35	AttackPattern 1377 1426	recording speech by using the devices’ microphone
+T36	AttackPattern 1428 1449	capturing voice calls
+T37	AttackPattern 1451 1469	recording location
+T38	AttackPattern 1471 1515	capturing Wi-Fi and online account passwords
+T22	AttackPattern 1517 1536	collecting contacts
+T39	AttackPattern 1541 1575	decoding messages from IM accounts
+T40	AttackPattern 1588 1627	collecting SMS, MMS, and Gmail messages
+T42	AttackPattern 1822 1843	download new payloads
+T43	AttackPattern 1845 1934	upload the above mentioned collected data to the C&C server, and purge it from the device
+T45	AttackPattern 1960 1992	disable the network, root access
+T46	AttackPattern 1994 2029	reset the device’s locking password
+T48	Malware 2128 2138	RCSAndroid
+T49	AttackPattern 2150 2180	detects emulators or sandboxes
+T50	AttackPattern 2182 2240	obfuscates code using DexGuard, uses ELF string obfuscator
+T52	AttackPattern 2246 2283	adjusts the OOM (out-of-memory) value
+R33	uses Arg1:T48 Arg2:T49	
+R34	uses Arg1:T48 Arg2:T50	
+R36	uses Arg1:T48 Arg2:T52	
+T53	AttackPattern 2377 2468	manipulate data in the Android package manager to add and remove permissions and components
+R38	uses Arg1:T48 Arg2:T53	
+T9	Malware 2518 2529	RCS Android
+R39	targets Arg1:T9 Arg2:T10	
+R40	targets Arg1:T9 Arg2:T11	
+R41	targets Arg1:T9 Arg2:T12	
+R9	targets Arg1:T3 Arg2:T6	
+R11	targets Arg1:T3 Arg2:T25	
+T20	AttackPattern 1105 1147	allow the installation of a shell backdoor
+R12	uses Arg1:T18 Arg2:T20	
+T24	AttackPattern 2480 2497	hide the app icon
+R37	uses Arg1:T48 Arg2:T24	
+R13	uses Arg1:T7 Arg2:T33	
+R14	uses Arg1:T7 Arg2:T34	
+R15	uses Arg1:T7 Arg2:T35	
+R16	uses Arg1:T7 Arg2:T36	
+R17	uses Arg1:T7 Arg2:T37	
+R18	uses Arg1:T7 Arg2:T38	
+R19	uses Arg1:T7 Arg2:T22	
+R20	uses Arg1:T7 Arg2:T39	
+R21	uses Arg1:T7 Arg2:T40	
+R22	uses Arg1:T7 Arg2:T42	
+R23	uses Arg1:T7 Arg2:T43	
+R24	uses Arg1:T7 Arg2:T46	
+R25	uses Arg1:T7 Arg2:T45	
+T8	AttackPattern 1936 1959	execute shell commands;
+R26	uses Arg1:T7 Arg2:T8	
+T19	AttackPattern 2031 2048	uninstall the bot
+R27	uses Arg1:T7 Arg2:T19	
+T21	OS 2400 2407	Android
+T54	Application 966 982	default browsers
+T55	Application 1613 1618	Gmail

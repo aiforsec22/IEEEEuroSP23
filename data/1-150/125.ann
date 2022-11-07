@@ -1,0 +1,89 @@
+T1	OS 5 12	Android
+T2	OS 241 248	Android
+T3	OS 2662 2669	Android
+T4	OS 2870 2877	Android
+T5	OS 4029 4036	Android
+T9	Organization 3764 3770	Google
+T10	Organization 3943 3949	Google
+T11	Malware 625 640	Desert Scorpion
+T12	Malware 1365 1380	Desert Scorpion
+T13	Malware 1917 1932	Desert Scorpion
+T14	Malware 2927 2942	Desert Scorpion
+T15	Malware 3399 3414	Desert Scorpion
+T16	Malware 3575 3590	Desert Scorpion
+T18	Malware 463 471	ViperRAT
+T19	Malware 853 861	ViperRAT
+T20	Malware 3466 3474	ViperRAT
+T21	Organization 1276 1297	Israeli Defense Force
+T22	Malware 1937 1947	FrozenCell
+T23	Organization 1183 1190	Lookout
+T24	Organization 1732 1739	Lookout
+T25	Organization 3743 3750	Lookout
+T26	ThreatActor 2056 2064	APT-C-23
+T28	Application 3871 3875	Play
+T30	Application 3888 3900	Play Protect
+T32	Person 3563 3569	Blaich
+T33	Application 4104 4110	Signal
+T34	Application 4115 4123	WhatsApp
+T6	Application 58 69	Google Play
+T17	Location 301 312	Middle East
+T27	Organization 558 579	Israeli Defense Force
+R1	targets Arg1:T18 Arg2:T27	
+T29	Malware 645 655	FrozenCell
+T35	MalwareType 366 394	surveillance-focused malware
+R2	isA Arg1:T18 Arg2:T35	
+R3	isA Arg1:T11 Arg2:T35	
+R4	isA Arg1:T29 Arg2:T35	
+T36	Location 678 687	Palestine
+R5	targets Arg1:T29 Arg2:T36	
+R6	targets Arg1:T11 Arg2:T36	
+T37	Organization 822 829	Lookout
+T39	AttackPattern 950 968	profile the device
+R8	uses Arg1:T19 Arg2:T39	
+T40	AttackPattern 1390 1488	uses a second-stage payload that downloads malicious components when a user interacts with the app
+R9	uses Arg1:T12 Arg2:T40	
+T41	AttackPattern 1572 1594	grab devices, metadata
+T42	AttackPattern 1596 1620	track a user's locations
+T43	AttackPattern 1622 1635	send messages
+T44	AttackPattern 1637 1661	record surrounding audio
+T45	AttackPattern 1693 1727	running silently in the background
+R10	uses Arg1:T12 Arg2:T41	
+R11	uses Arg1:T12 Arg2:T42	
+R12	uses Arg1:T12 Arg2:T43	
+R13	uses Arg1:T12 Arg2:T44	
+R14	uses Arg1:T12 Arg2:T45	
+T46	ThreatActor 1791 1799	APT-C-23
+R15	hasAuthor Arg1:T12 Arg2:T46	
+T47	Time 2131 2135	2015
+T48	Organization 2215 2220	Hamas
+R16	has Arg1:T26 Arg2:T48	
+T49	Organization 2298 2303	Fatah
+R17	targets Arg1:T26 Arg2:T49	
+T50	AttackPattern 2360 2424	used phishing schemes to trick targets into downloading the apps
+R18	uses Arg1:T13 Arg2:T50	
+R19	uses Arg1:T22 Arg2:T50	
+T7	Application 2532 2543	Google Play
+R20	targets Arg1:T13 Arg2:T7	
+R21	targets Arg1:T22 Arg2:T7	
+T51	Organization 2792 2798	Google
+T8	Person 3051 3057	Blaich
+T54	Malware 3143 3151	ViperRAT
+T55	AttackPattern 3273 3332	obfuscated from view during the app store approval process.
+R24	uses Arg1:T54 Arg2:T55	
+T56	Person 3336 3349	Andrew Blaich
+T57	Organization 3351 3358	Lookout
+T58	Organization 3837 3844	Lookout
+T31	Application 3033 3044	Google Play
+R25	targets Arg1:T14 Arg2:T31	
+T38	AttackPattern 980 1026	download a second-stage surveillance component
+R7	uses Arg1:T19 Arg2:T38	
+T52	AttackPattern 1663 1668	calls
+T53	AttackPattern 1674 1679	video
+R22	uses Arg1:T12 Arg2:T52	
+R23	uses Arg1:T12 Arg2:T53	
+T59	Location 2270 2281	Palestinian
+T60	Application 2801 2810	app store
+T61	Application 2878 2887	app store
+T62	Application 3246 3268	social networking apps
+T63	Application 3797 3806	app store
+T64	Application 3305 3314	app store

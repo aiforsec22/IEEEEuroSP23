@@ -1,0 +1,28 @@
+TangleBot: Advanced mobile malware tricking users
+Mobile malware threats are increasing and evolving across the cyber threat landscape. Cyber criminals use mobile malware to disrupt handsets, to steal personal information, to undermine enterprises, and to turn a profit. According to cyber security researchers, a new mobile malware now threatens to disrupt businesses. 
+
+This malware has been dubbed “TangleBot.” The moniker refers to the obfuscation methods used to take control over entangled device functionalities. Distribution takes place via text message and targets Android owners in North America. In order to gain access to devices, the malware distributors used coronavirus and electricity-themed lures.  For example, one message read, “New regulations about COVID-19 in your region. Read here.” 
+
+TangleBot and Medusa malware
+Researchers report that TangleBot shares a set of characteristics with the Medusa malware. At the same time, there are a few key distinguishing features that heighten the magnitude of the threat that TangleBot presents. For example, TangleBot uses advanced behaviors and transmission capabilities, along with a string decryption routine that helps to obfuscate its presence. 
+
+After device takeover…
+Once a device compromise has occurred, hackers can: 
+
+Silently call contacts and block calls
+Send and receive text messages
+Record the audio, screen or both, then stream them to another device
+Place overlay screens on the device, obscuring apps and screens
+Deploy further device observation or espionage capabilities
+Mitigating TangleBot
+Cyber security experts advocate for mobile users to remain vigilant while attending to text-message warnings and any unsolicited messages. Best practices to follow include:
+
+Staying on the lookout for suspicious messages 
+Weighing whether or not to provide your phone number to any enterprise or commercial entity
+Accessing websites by directly typing a URL into a browser, as opposed to clicking on a link
+Avoiding response to any unknown and unsolicited enterprise or commercial vendor
+Reading install prompts (and information about rights and privileges that the app may request) closely ahead of installing new apps
+The TangleBot twist…
+While a variety of cyber criminals leverage this tactic across assorted malware campaigns, TangleBot operators are known to sit on information for a length of time ahead of selling it on the dark web or otherwise using it nefariously. As a result, those who have been compromised may remain oblivious to the attack for weeks or months and may have trouble pinpointing the attack’s origins.
+
+The TangleBot malware can be problematic for businesses. Many employees now use their personal devices to make business calls or to send and respond to work emails. According to cyber security researchers, in the event that a single employee’s device is infected, the attacker can potentially launch a more widespread attack, harming multiple employees and business operations. Ensure that your organization provides employees with adequate mobile device security.

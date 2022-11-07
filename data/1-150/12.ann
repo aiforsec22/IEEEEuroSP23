@@ -1,0 +1,48 @@
+T1	OS 62 69	Android
+T2	OS 273 280	Android
+T3	OS 530 537	Android
+T4	OS 790 797	Android
+T5	OS 1528 1535	Android
+T6	Malware 35 44	DroidJack
+T7	Malware 1747 1756	DroidJack
+T8	Application 10 20	Pokémon GO
+T9	Application 85 95	Pokémon GO
+T10	Application 231 241	Pokémon GO
+T11	Application 1551 1561	Pokémon GO
+T12	Application 1921 1931	Pokémon GO
+T13	Application 316 342	Real World Gaming Platform
+T14	Organization 735 745	Proofpoint
+T15	Organization 2064 2074	Proofpoint
+T16	Application 2278 2288	Pokemon GO
+T17	Location 206 219	United States
+R1	targets Arg1:T6 Arg2:T8	
+T26	MalwareType 151 169	remote access tool
+T27	Malware 170 179	DroidJack
+R2	isA Arg1:T27 Arg2:T26	
+R3	uses Arg1:T27 Arg2:T9	
+T28	Time 223 229	July 6
+T29	OS 285 291	iPhone
+T30	Organization 306 313	Niantic
+T31	Organization 590 596	Google
+T32	OS 630 637	Android
+T25	Malware 1167 1176	DroidJack
+T34	MalwareType 1180 1198	remote access tool
+R4	isA Arg1:T25 Arg2:T34	
+T36	AttackPattern 1231 1285	gives an attacker full control over an infected device
+R5	uses Arg1:T34 Arg2:T36	
+T37	Organization 1290 1300	Proofpoint
+T38	AttackPattern 1352 1420	start screen appears identical to that of the legitimate application
+R6	uses Arg1:T34 Arg2:T38	
+T39	AttackPattern 1757 1800	requests the ability to modify SMS messages
+R7	uses Arg1:T7 Arg2:T39	
+R8	targets Arg1:T27 Arg2:T1	
+R9	has Arg1:T30 Arg2:T13	
+T18	AttackPattern 1805 1817	record audio
+R11	uses Arg1:T7 Arg2:T18	
+T19	MalwareType 45 48	RAT
+R12	isA Arg1:T6 Arg2:T19	
+T20	Application 374 381	Pokémon
+R13	targets Arg1:T7 Arg2:T12	
+R14	targets Arg1:T7 Arg2:T16	
+T40	MalwareType 1223 1230	trojans
+T41	Application 2510 2520	app stores

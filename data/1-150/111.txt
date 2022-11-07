@@ -1,0 +1,18 @@
+Judy malware may have infected 36 million Android devices. Here's how to protect yourself
+Android malware spread by around 50 apps in the Google Play Store may have infected up to 36 million devices, security researchers at Checkpoint have warned.
+
+Dubbed Judy, due to many of the apps containing a character of the same name, the malicious code was installed when the applications were downloaded. Researchers at Checkpoint spotted the malware and say it was hosted on apps created by Korean developers Kiniwini, registered as ENISTUDIO Corp. These included Animal Judy: Fennec Fox Care, Judy’s Happy House, and Fashion Judy: Frozen Princess.
+
+The Israeli firm says the Judy malware is "an auto-clicking adware" that makes money for its creators by falsifying clicks on online adverts. It adds that the malware is "definitely an illegitimate use of the users' mobile devices for generating fraudulent clicks".
+
+Since the existence of Judy has been publicly disclosed, Google has removed all affected apps from the Play Store. During this sweep, Judy was found on 41 apps from Kiniwinia and nine apps from other creators in total. "The connection between the two campaigns remains unclear, and it is possible that one borrowed code from the other, knowingly or unknowingly," the security company said.
+
+Many of the affected Judy apps have been on the Google Play Store for several years and have all been recently updated, Checkpoint said. As such, it isn't possible to accurately say how many people may have been impacted by the malware. Based on the number of times the apps have been downloaded (using high and low estimates), though, Checkpoint believes it "may have reached between 8.5 and 36.5 million users".
+
+How to protect yourself against Judy and other app malware
+An Android tablet or phone will only have been infected by Judy if one of the apps was downloaded. Checkpoint has published the names of all the affected apps as part of its blog post, found in Appendix 1 and Appendix 2. If you have any of the apps on your phone, they should be deleted immediately – if they haven't already been automatically removed.
+Malware isn't new on the Google Play Store, but the company has done a lot in recent years to curb it being inserted in the apps the store hosts. In 2012, Google introduced project 'Bouncer' that automatically scans products uploaded and blocks software that may be malicious. Despite this, malware does slip through the cracks.
+
+In addition, Google Play Protect automatically checks apps before they are downloaded and will remove harmful apps from devices. The feature, which can be accessed through the Google Play Store's app menu, will provide information about the status of a device.
+
+Other ways to help prevent infection include using a VPN for browsing, checking app permissions when they are downloaded, and mobile security software. It is also important to regularly update any apps and operating systems to the latest versions.

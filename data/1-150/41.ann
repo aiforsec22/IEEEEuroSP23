@@ -1,0 +1,62 @@
+T1	OS 41 48	Android
+T2	OS 167 174	Android
+T3	OS 399 406	Android
+T4	OS 1323 1330	Android
+T5	OS 1440 1447	Android
+T6	OS 3020 3027	Android
+T7	OS 3257 3264	Android
+T8	Organization 4065 4071	Google
+T9	Malware 112 121	TangleBot
+T10	Malware 844 853	TangleBot
+T11	Malware 1232 1241	TangleBot
+T12	Malware 1600 1609	TangleBot
+T13	Malware 1952 1961	TangleBot
+T14	Malware 3284 3293	TangleBot
+T19	Organization 341 350	Cloudmark
+T20	Organization 2895 2904	Cloudmark
+T21	Organization 3579 3588	Cloudmark
+T22	Organization 4014 4023	Cloudmark
+T23	Application 650 668	Adobe Flash player
+T24	Application 2412 2423	Adobe Flash
+T25	Person 1171 1179	Kalember
+T26	Person 1190 1198	Kalember
+T27	Person 1906 1914	Kalember
+T28	Person 2497 2505	Kalember
+T29	Person 2699 2707	Kalember
+T30	Person 3081 3089	Kalember
+T31	Person 3231 3239	Kalember
+T32	Person 3914 3922	Kalember
+T33	Person 4182 4190	Kalember
+T34	Location 188 191	U.S
+T35	Location 196 202	Canada
+R1	targets Arg1:T9 Arg2:T2	
+T15	Organization 326 335	Cloudmark
+R2	targets Arg1:T9 Arg2:T34	
+R3	targets Arg1:T9 Arg2:T35	
+T18	Organization 732 741	Cloudmark
+T39	Organization 808 817	Cloudmark
+T40	Person 897 910	Ryan Kalember
+T41	Organization 957 966	Cloudmark
+T42	Organization 984 994	ProofPoint
+T43	Organization 1001 1009	CBS News
+T44	AttackPattern 1019 1041	access your microphone
+T45	AttackPattern 1050 1068	access your camera
+T46	AttackPattern 1077 1087	access SMS
+T47	AttackPattern 1096 1117	access your call logs
+R4	uses Arg1:T10 Arg2:T44	
+R5	uses Arg1:T10 Arg2:T45	
+R6	uses Arg1:T10 Arg2:T46	
+R7	uses Arg1:T10 Arg2:T47	
+T37	AttackPattern 1992 2029	show hacked users an "overlay" screen
+R8	uses Arg1:T13 Arg2:T37	
+T49	Malware 2485 2494	TangleBot
+R10	targets Arg1:T13 Arg2:T24	
+R11	targets Arg1:T49 Arg2:T7	
+T38	OS 4005 4012	Android
+T51	AttackPattern 570 717	When users click on the link provided, they're prompted to update their phone's Adobe Flash player, which instead installs the virus on their phone
+R14	uses Arg1:T9 Arg2:T51	
+T16	AttackPattern 1119 1132	your internet
+T17	AttackPattern 1134 1142	your GPS
+R12	uses Arg1:T10 Arg2:T16	
+R13	uses Arg1:T10 Arg2:T17	
+T52	Application 2245 2259	mobile banking

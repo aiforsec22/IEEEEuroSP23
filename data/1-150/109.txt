@@ -1,0 +1,47 @@
+Powerful Mobile Malware Rotexy Launched over 70,000 Attacks with Banking Trojan & Ransomware Modules
+A new Mobile malware family called Rotexy, launched over 7000 attacks in wide within 3 months of the period from August to October 2018. It evolved from an SMS based spyware that was active in 2014.
+
+Rotexy malware evaluation was at a peak in 2014 & 2015 and it mainly using the phishing links in order to compromise the users that prompt to install the malicious apps.
+
+It uses the Google Cloud Messaging (GCM) service,  malicious C&C server, and incoming SMS messages to reach the victim’s devices.
+
+The main function of this mobile malware is the banking Trojan and ransomware which is distributed in name of AvitoPay.apk.
+
+It using the various download from various malicious websites including youla9d6h.tk, prodam8n9.tk, prodamfkz.ml, avitoe0ys.tk, etc
+
+Rotexy mobile malware keeps requesting the mobile administrative privilege even users restart the mobile in safe mode even the malicious program will be removed.
+
+Rotexy mainly targeting Russian user’s, up to 98% of its infection in Russia and it also infecting users in Ukraine, Germany, Turkey, and several other countries.
+
+Mobile Malware Rotexy Infection Process
+Initially, once an infection starts, the malware checks the device whether any sandbox environment being detected and which country is the victims belonged.
+
+Once it successfully finished all the checks then the Rotexy registers with GCM and launches SuperService that help to check the devices admin privileges which keep performing each and every second.
+
+Later it displays the application request, requesting root  privileges through an infinite loop to force users to agree and provide the privilege.
+
+According to securelist, “If the Trojan detects an attempt to revoke its administrator privileges, it starts periodically switching off the phone screen, trying to stop the user actions. If the privileges are revoked successfully, the Trojan relaunches the cycle of requesting administrator privileges.”
+
+During the background process of Rotexy in the targeted phone, it can able to switching on and rebooting of the phone, termination of its operation, sending of an SMS by the app – in this case, the phone is switched to silent mode.
+
+Later the malware using local SQLite database, to store the data that harvested from infected mobile and an information about C&C servers.
+
+“Rotexy intercepts all incoming SMSs and processes them according to the templates it received from the C&C. Also, when an SMS arrives, the Trojan puts the phone into silent mode and switches off the screen so the user doesn’t notice that a new SMS has arrived. When required, the Trojan sends an SMS to the specified phone number with the information it has received from the intercepted message.”
+If it doesn’t receive any instruction about rules to process the incoming Messages then it simply stores all the SMS  in local DB and uploads it into the C&C server.
+
+Also, The Trojan displays a phishing page (bank.html) prompting the user to enter their bank card details. This page mimics a legitimate bank form and blocks the device screen until the user enters all the information. It even has its own virtual keyboard that supposedly protects the victim from keyloggers.
+
+This trojan force users to enter only right credentials and it checks all the details against the data that it already received. Once the victim entered all the data then it checks the originality of the data and uploaded into C&C server.
+
+IOCs
+SHA256
+0ca09d4fde9e00c0987de44ae2ad51a01b3c4c2c11606fe8308a083805760ee7
+4378f3680ff070a1316663880f47eba54510beaeb2d897e7bbb8d6b45de63f96
+76c9d8226ce558c87c81236a9b95112b83c7b546863e29b88fec4dba5c720c0b
+7cc2d8d43093c3767c7c73dc2b4daeb96f70a7c455299e0c7824b4210edd6386
+9b2fd7189395b2f34781b499f5cae10ec86aa7ab373fbdc2a14ec4597d4799ba
+ac216d502233ca0fe51ac2bb64cfaf553d906dc19b7da4c023fec39b000bc0d7
+b1ccb5618925c8f0dda8d13efe4a1e1a93d1ceed9e26ec4a388229a28d1f8d5b
+ba4beb97f5d4ba33162f769f43ec8e7d1ae501acdade792a4a577cd6449e1a84
+ba9f4d3f4eba3fa7dce726150fe402e37359a7f36c07f3932a92bd711436f88c
+e194268bf682d81fc7dc1e437c53c952ffae55a9d15a1fc020f0219527b7c2ec

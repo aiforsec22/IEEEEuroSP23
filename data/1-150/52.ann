@@ -1,0 +1,115 @@
+T3	OS 870 877	Android
+T4	OS 2080 2087	Android
+T11	Malware 355 363	Mandrake
+T12	Malware 2354 2362	Mandrake
+T13	Malware 2601 2609	Mandrake
+T14	Malware 2923 2931	Mandrake
+T15	Malware 3551 3559	Mandrake
+T16	Malware 3706 3714	Mandrake
+T17	Malware 4231 4239	Mandrake
+T18	Organization 1038 1049	Bitdefender
+T19	Organization 1834 1845	Bitdefender
+T20	Organization 2550 2561	Bitdefender
+T21	Organization 3830 3841	Bitdefender
+T22	Organization 4040 4051	Bitdefender
+T23	Application 1172 1177	Abfix
+T24	Application 1290 1298	Facebook
+T26	Application 1303 1310	YouTube
+T30	Location 4630 4636	Europe
+T31	Location 4642 4648	Poland
+T32	MalwareType 122 129	spyware
+T33	MalwareType 8 15	spyware
+T34	Time 171 175	2016
+T35	Organization 386 397	Bitdefender
+T36	AttackPattern 399 440	can take "complete control of the device"
+T37	AttackPattern 487 512	break into bank accounts,
+T38	AttackPattern 522 571	factory-reset infected phones to cover its tracks
+R4	uses Arg1:T11 Arg2:T36	
+R5	uses Arg1:T11 Arg2:T37	
+R6	uses Arg1:T11 Arg2:T38	
+T39	Malware 574 582	Mandrake
+T6	Application 623 640	Google Play store
+T40	Organization 712 718	Google
+R7	targets Arg1:T39 Arg2:T6	
+T41	Application 878 892	antivirus apps
+T42	Malware 922 930	Mandrake
+T7	Application 1076 1087	Google Play
+T43	Application 1104 1112	CoinCast
+T44	Application 1114 1135	Currency XE Converter
+T45	Application 1137 1145	Car News
+T46	Application 1147 1156	Horoskope
+T47	Application 1158 1170	SnapTune Vid
+T48	Application 1182 1196	Office Scanner
+R8	targets Arg1:T42 Arg2:T43	
+R9	targets Arg1:T42 Arg2:T44	
+R10	targets Arg1:T42 Arg2:T45	
+R11	targets Arg1:T42 Arg2:T46	
+R12	targets Arg1:T42 Arg2:T47	
+R13	targets Arg1:T42 Arg2:T23	
+R14	targets Arg1:T42 Arg2:T48	
+T8	Application 1231 1242	Google Play
+R15	targets Arg1:T42 Arg2:T24	
+R16	targets Arg1:T42 Arg2:T26	
+R17	targets Arg1:T42 Arg2:T8	
+T49	AttackPattern 1414 1474	collects information about your device and your surroundings
+R18	uses Arg1:T42 Arg2:T49	
+T9	Application 1604 1615	Google Play
+R19	targets Arg1:T42 Arg2:T9	
+T10	Application 1966 1977	Google Play
+R20	targets Arg1:T42 Arg2:T10	
+R22	targets Arg1:T42 Arg2:T4	
+T52	Malware 2572 2580	Mandrake
+T53	AttackPattern 2624 2660	putting fake overlays on your screen
+R24	uses Arg1:T13 Arg2:T53	
+T54	AttackPattern 2932 2980	forwards all your text messages to the attackers
+T55	AttackPattern 2982 3019	forwards phone calls to other numbers
+T56	AttackPattern 3021 3033	blocks calls
+T57	AttackPattern 3035 3058	installs or remove apps
+T58	AttackPattern 3060 3080	steals contact lists
+T59	AttackPattern 3082 3101	hides notifications
+T60	AttackPattern 3103 3126	records screen activity
+T61	AttackPattern 3128 3186	steals passwords to your Facebook and online bank accounts
+T25	AttackPattern 3188 3257	creates phishing pages to leech your credentials for Gmail and Amazon
+T27	AttackPattern 3263 3283	tracks your location
+R25	uses Arg1:T14 Arg2:T54	
+R26	uses Arg1:T14 Arg2:T55	
+R27	uses Arg1:T14 Arg2:T56	
+R28	uses Arg1:T14 Arg2:T57	
+R29	uses Arg1:T14 Arg2:T58	
+R30	uses Arg1:T14 Arg2:T59	
+R31	uses Arg1:T14 Arg2:T60	
+R32	uses Arg1:T14 Arg2:T61	
+R33	uses Arg1:T14 Arg2:T25	
+R34	uses Arg1:T14 Arg2:T27	
+T62	Malware 3350 3357	seppuku
+T64	Indicator 3292 3305	coup de grâce
+T67	Location 4584 4593	Australia
+T68	Location 4607 4620	North America
+T69	Location 4682 4695	South America
+R38	targets Arg1:T17 Arg2:T67	
+R39	targets Arg1:T17 Arg2:T68	
+R40	targets Arg1:T17 Arg2:T30	
+R41	targets Arg1:T17 Arg2:T31	
+R42	targets Arg1:T17 Arg2:T69	
+R43	targets Arg1:T39 Arg2:T3	
+R36	targets Arg1:T42 Arg2:T7	
+R1	isA Arg1:T11 Arg2:T32	
+R2	discoveredIn Arg1:T11 Arg2:T34	
+R3	isA Arg1:T11 Arg2:T33	
+R45	isA Arg1:T11 Arg2:T32	
+R46	targets Arg1:T39 Arg2:T41	
+T28	Application 1253 1264	Tom's Guide
+T29	OS 2804 2811	Android
+R48	targets Arg1:T13 Arg2:T29	
+R50	indicates Arg1:T64 Arg2:T62	
+T66	Location 4270 4276	Russia
+T70	Location 4287 4303	Soviet republics
+T71	Location 4331 4337	Africa
+T72	Organization 4479 4486	Verizon
+T2	OS 0 7	Android
+T5	OS 114 121	Android
+T1	AttackPattern 449 485	steal information and cryptocurrency
+R21	uses Arg1:T11 Arg2:T1	
+T73	Application 3153 3161	Facebook
+T74	Application 3241 3246	Gmail
+T75	OS 4253 4260	Android

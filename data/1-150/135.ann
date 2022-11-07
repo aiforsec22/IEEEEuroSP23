@@ -1,0 +1,94 @@
+T2	OS 45 52	Android
+T4	OS 371 378	Android
+T5	OS 456 463	Android
+T8	OS 2053 2060	Android
+T9	OS 2315 2322	Android
+T10	OS 2593 2600	Android
+T11	OS 2699 2706	Android
+T14	Malware 391 402	DEFENSOR ID
+T15	Malware 759 770	DEFENSOR ID
+T16	Malware 61 72	Defensor ID
+T17	Malware 314 325	Defensor ID
+T18	Organization 419 423	ESET
+T19	Application 526 547	Accessibility Service
+T20	Application 2129 2150	Accessibility Service
+T23	Organization 1386 1393	Sciendo
+T26	Application 1417 1439	Accessibility Services
+T27	Organization 1971 1982	Check Point
+T28	Organization 2281 2291	Cybereason
+T32	Application 1030 1043	Accessibility
+T34	Application 1796 1818	Accessibility Services
+T35	Application 1932 1953	Accessibility Service
+T37	Application 2383 2396	Accessibility
+T38	Organization 2553 2566	McAfee Mobile
+T39	Malware 2616 2636	Android/LeifAccess.A
+R1	targets Arg1:T16 Arg2:T2	
+T1	Application 0 30	Android Accessibility Services
+R2	targets Arg1:T16 Arg2:T1	
+T3	Application 74 104	Android Accessibility Services
+R3	targets Arg1:T17 Arg2:T4	
+T24	Malware 487 498	DEFENSOR ID
+T25	OS 516 523	Android
+R4	has Arg1:T19 Arg2:T25	
+R5	targets Arg1:T24 Arg2:T19	
+R6	targets Arg1:T24 Arg2:T25	
+R7	targets Arg1:T24 Arg2:T5	
+T29	AttackPattern 629 690	wiping out the victim’s cryptocurrency wallet or bank account
+T30	AttackPattern 695 743	taking over their email or social media accounts
+R8	uses Arg1:T24 Arg2:T29	
+R9	uses Arg1:T24 Arg2:T30	
+T31	Time 749 757	May 2020
+T12	Application 1115 1132	Google Play store
+T21	ThreatActor 1178 1188	GAS Brazil
+T22	Organization 1292 1306	GAS Tecnologia
+T33	Location 1325 1334	Brazilian
+R10	targets Arg1:T15 Arg2:T33	
+T36	Time 1862 1866	2020
+T40	Time 1959 1969	April 2020
+T41	Malware 2077 2092	Black Rose Lucy
+R13	targets Arg1:T41 Arg2:T8	
+T42	AttackPattern 2159 2259	fake Streaming Video Optimization (SVO) prompt to install their payload without any user interaction
+R14	uses Arg1:T41 Arg2:T42	
+T43	Malware 2351 2359	Eventbot
+R15	targets Arg1:T43 Arg2:T9	
+R16	targets Arg1:T43 Arg2:T37	
+T44	OS 2373 2380	Android
+R17	targets Arg1:T43 Arg2:T44	
+T45	OS 2119 2126	Android
+R18	targets Arg1:T41 Arg2:T45	
+T46	Application 2649 2654	OAuth
+R19	targets Arg1:T39 Arg2:T46	
+R20	targets Arg1:T39 Arg2:T10	
+T13	Application 2740 2751	Google Play
+R21	targets Arg1:T39 Arg2:T11	
+R22	targets Arg1:T39 Arg2:T13	
+T47	AttackPattern 792 828	pretending as a security application
+T48	AttackPattern 833 898	claiming to increase user security by using end-to-end encryption
+R23	uses Arg1:T15 Arg2:T47	
+R24	uses Arg1:T15 Arg2:T48	
+R25	hasAuthor Arg1:T15 Arg2:T21	
+T49	AttackPattern 505 547	abuses the Android’s Accessibility Service
+R26	uses Arg1:T24 Arg2:T49	
+T50	AttackPattern 990 1051	asked for the permissions to access the Accessibility Service
+R27	uses Arg1:T15 Arg2:T50	
+T51	AttackPattern 2366 2405	abused Android’s Accessibility features
+T52	AttackPattern 2409 2444	steal user data from financial apps
+T53	AttackPattern 2446 2478	read and steal user SMS messages
+R28	uses Arg1:T43 Arg2:T52	
+R29	uses Arg1:T43 Arg2:T53	
+R11	targets Arg1:T15 Arg2:T12	
+T6	AttackPattern 2482 2535	allow the malware to bypass two-factor authentication
+R12	uses Arg1:T43 Arg2:T6	
+T7	Time 2541 2551	March 2020
+T54	AttackPattern 2642 2714	abused OAuth leveraging accessibility services to infect Android devices
+R30	uses Arg1:T39 Arg2:T54	
+T55	AttackPattern 2719 2751	post fake reviews on Google Play
+R31	uses Arg1:T39 Arg2:T55	
+T56	MalwareType 2323 2344	mobile banking Trojan
+T57	MalwareType 2028 2034	botnet
+T58	Application 2666 2688	accessibility services
+T59	Application 1491 1508	social media apps
+T60	Application 1663 1680	social media apps
+T61	Application 722 734	social media
+T62	OS 1769 1776	Android
+T63	OS 1908 1915	Android

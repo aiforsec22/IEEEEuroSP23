@@ -1,0 +1,73 @@
+T1	OS 27 34	Android
+T2	OS 157 164	Android
+T6	OS 2170 2177	Android
+T8	ThreatActor 0 8	APT C-23
+T9	Organization 639 645	Sophos
+T10	ThreatActor 852 860	APT-C-23
+T11	ThreatActor 2196 2204	APT-C-23
+T13	Location 61 72	Middle East
+T14	Location 129 140	Middle East
+T15	Person 664 676	Pankaj Kohli
+T17	Person 2153 2158	Kohli
+T16	MalwareType 35 42	Spyware
+T19	MalwareType 165 172	spyware
+T20	Malware 741 745	VAMP
+T21	Malware 747 757	FrozenCell
+T22	Malware 759 766	GnatSpy
+T23	Malware 772 787	Desert Scorpion
+T24	MalwareType 800 807	spyware
+T25	Time 889 893	2017
+R1	isA Arg1:T23 Arg2:T24	
+R2	isA Arg1:T22 Arg2:T24	
+R3	isA Arg1:T21 Arg2:T24	
+R4	isA Arg1:T20 Arg2:T24	
+*	hasAlias T20 T21 T22 T23
+R5	hasAuthor Arg1:T20 Arg2:T10	
+T26	AttackPattern 932 1015	extended surveillance functionality to vacuum files, images, contacts and call logs
+T27	AttackPattern 1017 1055	read notifications from messaging apps
+T12	AttackPattern 1057 1090	record calls (including WhatsApp)
+T3	AttackPattern 1096 1153	dismiss notifications from built-in Android security apps
+T4	AttackPattern 1192 1231	distributed via fake Android app stores
+R6	targets Arg1:T8 Arg2:T1	
+R7	targets Arg1:T8 Arg2:T13	
+R8	uses Arg1:T20 Arg2:T26	
+R9	uses Arg1:T20 Arg2:T27	
+R10	uses Arg1:T20 Arg2:T12	
+R11	uses Arg1:T20 Arg2:T3	
+R12	uses Arg1:T20 Arg2:T4	
+T28	AttackPattern 1338 1498	take the form of apps that purport to install updates on the target's phone with names such as App Updates, System Apps Updates, and Android Update Intelligence
+R13	uses Arg1:T20 Arg2:T28	
+T5	AttackPattern 1533 1625	deliver the spyware app by sending a download link to the targets through smishing messages.
+R14	uses Arg1:T20 Arg2:T5	
+T29	AttackPattern 1660 1739	requesting for invasive permissions to perform a string of malicious activities
+T7	AttackPattern 1833 1877	changes its icon to hide behind popular apps
+T30	MalwareType 2088 2095	Spyware
+T31	MalwareType 2178 2185	spyware
+R15	uses Arg1:T20 Arg2:T29	
+R16	uses Arg1:T20 Arg2:T7	
+R17	isA Arg1:T20 Arg2:T30	
+T18	Time 704 711	Tuesday
+T32	Application 1081 1089	WhatsApp
+R18	targets Arg1:T23 Arg2:T32	
+T33	Application 1251 1264	AndroidUpdate
+T34	Application 1266 1273	Threema
+T35	Application 1279 1287	Telegram
+R19	uses Arg1:T23 Arg2:T33	
+R20	uses Arg1:T23 Arg2:T34	
+R21	uses Arg1:T23 Arg2:T35	
+T36	Application 1886 1892	Chrome
+T37	Application 1894 1900	Google
+T38	Application 1902 1913	Google Play
+T39	Application 1919 1926	YouTube
+R22	targets Arg1:T23 Arg2:T36	
+R23	targets Arg1:T23 Arg2:T37	
+R24	targets Arg1:T23 Arg2:T38	
+R25	targets Arg1:T23 Arg2:T39	
+T40	AttackPattern 2038 2082	running surveillance tasks in the background
+R26	uses Arg1:T20 Arg2:T40	
+R27	isA Arg1:T23 Arg2:T19	
+T41	OS 1132 1139	Android
+T42	OS 1213 1220	Android
+T43	MalwareType 1545 1552	spyware
+T44	Application 1221 1231	app stores
+T45	OS 1471 1478	Android

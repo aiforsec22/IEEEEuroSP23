@@ -1,0 +1,117 @@
+T2	OS 737 744	Android
+T4	OS 4305 4312	Android
+T6	OS 1475 1478	iOS
+T7	Organization 3990 3996	Google
+T8	Malware 482 489	TrickMo
+T9	Malware 1696 1703	TrickMo
+T10	Malware 4047 4054	TrickMo
+T11	Malware 4525 4532	TrickMo
+T12	Malware 5023 5030	TrickMo
+T13	Malware 5067 5074	TrickMo
+T14	Malware 0 8	TrickBot
+T15	Malware 43 51	TrickBot
+T16	Malware 190 198	TrickBot
+T17	Malware 526 534	TrickBot
+T18	Malware 1116 1124	TrickBot
+T19	Malware 1346 1354	TrickBot
+T20	Malware 2008 2016	TrickBot
+T21	Malware 4678 4686	TrickBot
+T22	Malware 5475 5483	TrickBot
+T23	Organization 1097 1106	CERT-Bund
+T27	Location 2856 2863	Germany
+T36	Location 2830 2836	Europe
+T40	AttackPattern 2037 2062	data-stealing capabilitie
+R1	uses Arg1:T20 Arg2:T40	
+T41	Malware 2173 2180	TrickMo
+R2	communicatesWith Arg1:T41 Arg2:T20	
+T42	AttackPattern 2228 2256	record targeted applications
+T43	AttackPattern 2258 2343	help the trojan obtain a one-time password (OTP) or transaction authentication number
+R3	uses Arg1:T41 Arg2:T42	
+R4	uses Arg1:T41 Arg2:T43	
+T33	Malware 2431 2438	TrickMo
+T44	AttackPattern 2472 2493	app-recording feature
+T45	AttackPattern 2525 2567	overcome the newer pushTAN app validations
+T24	Organization 2576 2588	German banks
+R5	targets Arg1:T33 Arg2:T24	
+R6	uses Arg1:T33 Arg2:T44	
+R7	uses Arg1:T33 Arg2:T45	
+T32	Location 3085 3092	Germany
+T25	OS 3564 3571	Android
+T26	Malware 3723 3730	TrickMo
+T34	AttackPattern 3834 3861	record mobile phone screens
+R8	uses Arg1:T26 Arg2:T34	
+T39	AttackPattern 3896 3936	abuses accessibility services in Android
+R9	uses Arg1:T26 Arg2:T39	
+T47	AttackPattern 4140 4182	preventing users from uninstalling the app
+T48	AttackPattern 4184 4242	becoming the default SMS app (by changing device settings)
+T49	AttackPattern 4244 4271	monitoring any running apps
+T50	AttackPattern 4276 4299	scraping on-screen text
+R11	uses Arg1:T10 Arg2:T47	
+R12	uses Arg1:T10 Arg2:T48	
+R13	uses Arg1:T10 Arg2:T49	
+R14	uses Arg1:T10 Arg2:T50	
+T35	Location 5165 5172	Germany
+R15	targets Arg1:T13 Arg2:T35	
+T37	Malware 5224 5232	TrickBot
+T38	Time 5327 5332	March
+T51	Indicator 5383 5393	rdpScanDLL
+R16	indicates Arg1:T51 Arg2:T37	
+T5	AttackPattern 5484 5546	added a Windows 10 ActiveX control to execute malicious macros
+R17	uses Arg1:T22 Arg2:T5	
+T28	AttackPattern 240 325	bypassing a new kind of two-factor authentication (2FA) security method used by banks
+T29	AttackPattern 331 391	fooling its victims into downloading a malicious Android app
+R18	uses Arg1:T16 Arg2:T28	
+R19	uses Arg1:T16 Arg2:T29	
+T1	Malware 431 438	TrickMo
+R20	communicatesWith Arg1:T8 Arg2:T17	
+T30	Location 546 553	Germany
+R21	targets Arg1:T8 Arg2:T30	
+R22	targets Arg1:T17 Arg2:T30	
+R23	targets Arg1:T8 Arg2:T2	
+T52	Person 941 956	Pavel Asinovsky
+T53	Organization 982 993	IBM X-Force
+T54	Time 1073 1087	September 2019
+R24	discoveredIn Arg1:T8 Arg2:T54	
+T55	AttackPattern 1131 1160	man-in-the-browser techniques
+R25	uses Arg1:T18 Arg2:T55	
+T56	AttackPattern 1359 1462	modifying the pages to ask the victims for their mobile phone numbers and device operating system types
+R26	uses Arg1:T19 Arg2:T56	
+T3	OS 1464 1471	Android
+T57	OS 1526 1533	Android
+T58	AttackPattern 1571 1667	use web injections and social engineering to fool the victim into installing a fake security app
+R27	uses Arg1:T19 Arg2:T58	
+R28	communicatesWith Arg1:T19 Arg2:T9	
+T59	AttackPattern 1737 1771	steals personal device information
+T60	AttackPattern 1773 1796	intercepts SMS messages
+T61	AttackPattern 1798 1813	locks the phone
+T62	AttackPattern 1815 1830	steals pictures
+T63	AttackPattern 1835 1860	records the device screen
+R29	uses Arg1:T9 Arg2:T63	
+R30	uses Arg1:T9 Arg2:T62	
+R31	uses Arg1:T9 Arg2:T61	
+R32	uses Arg1:T9 Arg2:T60	
+R33	uses Arg1:T9 Arg2:T59	
+T64	AttackPattern 1879 2003	has its own kill switch, a feature often used by malware authors to remove traces from a device after a successful operation
+R34	uses Arg1:T9 Arg2:T64	
+T46	OS 380 387	Android
+T65	Application 1650 1667	fake security app
+T66	MalwareType 2267 2273	trojan
+T67	Application 2544 2555	pushTAN app
+T68	Application 3144 3158	mobile banking
+T69	Application 3253 3266	pushTAN” apps
+T70	OS 3929 3936	Android
+T71	Application 4205 4212	SMS app
+T72	MalwareType 4913 4928	banking malware
+T73	MalwareType 5264 5278	banking trojan
+T74	OS 5492 5499	Windows
+T75	MalwareType 199 205	trojan
+T76	MalwareType 1553 1559	trojan
+T77	Application 3903 3925	accessibility services
+T78	Application 4538 4560	accessibility services
+T79	Application 3938 3951	Accessibility
+T80	Application 3276 3283	pushTAN
+T81	Application 3424 3431	pushTAN
+T82	Organization 320 325	banks
+T83	Organization 2404 2409	banks
+T84	Organization 2821 2826	banks
+T85	Organization 4866 4871	banks

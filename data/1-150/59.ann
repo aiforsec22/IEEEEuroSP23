@@ -1,0 +1,123 @@
+T2	OS 550 557	Android
+T3	Malware 0 4	Ginp
+T4	Malware 73 77	Ginp
+T5	Malware 322 326	Ginp
+T6	Malware 619 623	Ginp
+T7	Malware 683 687	Ginp
+T8	Malware 774 778	Ginp
+T9	Malware 992 996	Ginp
+T10	Malware 2102 2106	Ginp
+T11	Malware 2519 2523	Ginp
+T12	Malware 2597 2601	Ginp
+T13	Malware 3476 3480	Ginp
+T14	Malware 4574 4578	Ginp
+T15	Malware 4842 4846	Ginp
+T16	Malware 5359 5363	Ginp
+T17	Malware 5947 5951	Ginp
+T18	Organization 740 748	Trusteer
+T19	Location 61 67	Turkey
+T20	Location 709 715	Turkey
+T21	Location 923 929	Poland
+T28	MalwareType 5893 5896	RAT
+T30	MalwareType 6310 6313	RAT
+R1	targets Arg1:T3 Arg2:T19	
+T31	MalwareType 85 100	banking malware
+R2	isA Arg1:T4 Arg2:T31	
+T32	Time 124 128	2019
+R3	discoveredIn Arg1:T4 Arg2:T32	
+T1	MalwareType 171 186	banking malware
+R4	isA Arg1:T4 Arg2:T1	
+T33	AttackPattern 219 230	SMS stealer
+T34	Organization 350 363	Spanish banks
+T35	Location 486 492	Turkey
+R5	targets Arg1:T5 Arg2:T34	
+R6	targets Arg1:T5 Arg2:T35	
+R7	uses Arg1:T4 Arg2:T33	
+R8	targets Arg1:T7 Arg2:T20	
+T36	Organization 734 737	IBM
+T37	Organization 849 862	Turkish banks
+T38	Location 880 887	Spanish
+T39	Location 938 952	United Kingdom
+R9	targets Arg1:T8 Arg2:T37	
+R10	targets Arg1:T8 Arg2:T38	
+R11	targets Arg1:T8 Arg2:T21	
+R12	targets Arg1:T8 Arg2:T39	
+T40	AttackPattern 1024 1039	overlay attacks
+R13	uses Arg1:T9 Arg2:T40	
+T43	Location 1334 1340	Turkey
+T44	Organization 1445 1458	Turkish banks
+T45	Malware 1541 1545	Ginp
+T46	MalwareType 1591 1606	banking malware
+T47	Location 1665 1672	Turkish
+R16	targets Arg1:T9 Arg2:T43	
+R17	targets Arg1:T9 Arg2:T44	
+R18	isA Arg1:T45 Arg2:T46	
+R19	targets Arg1:T45 Arg2:T47	
+T48	Organization 1992 2005	Turkish banks
+R20	targets Arg1:T45 Arg2:T48	
+T49	Malware 2129 2133	Ginp
+T50	Location 2149 2155	Turkey
+T51	Location 2201 2208	Spanish
+T52	Organization 2321 2334	Spanish banks
+R21	targets Arg1:T49 Arg2:T50	
+R22	targets Arg1:T49 Arg2:T51	
+R23	targets Arg1:T49 Arg2:T52	
+T54	Malware 2453 2457	Ginp
+T55	AttackPattern 2627 2745	obtains information from the victim’s device, such as the state of the device and the currently installed applications
+T56	Application 2871 2890	banking application
+T57	AttackPattern 3041 3075	pop a fake overlay onto the screen
+T59	Malware 3218 3222	Ginp
+T60	AttackPattern 3488 3574	ability to make it appear as if a legitimate SMS message is being received on a device
+R26	uses Arg1:T12 Arg2:T55	
+R27	uses Arg1:T12 Arg2:T57	
+R29	targets Arg1:T12 Arg2:T56	
+R30	uses Arg1:T13 Arg2:T60	
+T61	AttackPattern 3666 3714	mimic the process of receiving a new SMS message
+R31	uses Arg1:T13 Arg2:T61	
+T63	AttackPattern 3995 4029	generating fake push notifications
+R33	uses Arg1:T13 Arg2:T63	
+T64	Application 4160 4171	banking app
+R34	targets Arg1:T13 Arg2:T64	
+T65	Application 4248 4259	banking app
+T66	Application 4320 4331	banking app
+T67	Malware 4347 4351	Ginp
+T70	AttackPattern 4986 5013	Fake SMS Push Notifications
+T71	Time 5044 5057	December 2019
+T72	AttackPattern 5074 5104	faking an incoming SMS message
+R36	targets Arg1:T67 Arg2:T66	
+R38	uses Arg1:T15 Arg2:T70	
+R39	uses Arg1:T15 Arg2:T72	
+R40	targets Arg1:T13 Arg2:T65	
+T73	AttackPattern 5405 5484	allows the malware to block all push notifications from legitimate applications
+R41	uses Arg1:T16 Arg2:T73	
+T74	AttackPattern 5539 5604	block notifications about the fraudulent transaction taking place
+R42	uses Arg1:T16 Arg2:T74	
+T75	AttackPattern 5746 5888	malware operators to steal second-factor authentication codes or collect social media and instant messaging notifications to spy on the target
+R43	uses Arg1:T16 Arg2:T75	
+R44	isA Arg1:T16 Arg2:T28	
+T76	MalwareType 5983 6009	Remote Access Trojan (RAT)
+R45	isA Arg1:T17 Arg2:T76	
+T29	Time 6030 6040	March 2020
+T77	AttackPattern 6127 6211	exfiltrate valuable information that can enable them to circumvent security controls
+R46	uses Arg1:T17 Arg2:T77	
+T78	AttackPattern 6319 6412	allows malware operators to take control of and conduct transactions from the victim’s device
+R47	uses Arg1:T17 Arg2:T78	
+T79	Malware 6503 6507	Ginp
+T80	AttackPattern 6729 6822	overlay pages are similar to the regular ones, but persist on the screen and keep reappearing
+R48	uses Arg1:T79 Arg2:T80	
+T81	AttackPattern 6837 6977	blocks the victim from using his or her phone, even after entering their credentials, until their device is released by the malware operator
+T82	AttackPattern 6992 7102	creates advantages for the attacker by persuading a victim to enter and reveal credentials to unlock the phone
+T83	AttackPattern 7108 7175	preventing a victim from accessing a legitimate banking application
+R49	uses Arg1:T79 Arg2:T81	
+R50	uses Arg1:T79 Arg2:T83	
+R51	uses Arg1:T79 Arg2:T82	
+R52	targets Arg1:T4 Arg2:T2	
+T23	OS 163 170	Android
+R15	targets Arg1:T4 Arg2:T23	
+T22	AttackPattern 5108 5148	push notification from the victim’s bank
+R14	uses Arg1:T15 Arg2:T22	
+T84	Application 3012 3031	banking application
+T85	Application 3927 3946	banking application
+T86	Application 5819 5831	social media
+T87	Application 4500 4507	WebView
+T88	Organization 1325 1330	banks

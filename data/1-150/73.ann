@@ -1,0 +1,79 @@
+T2	OS 176 183	Android
+T3	OS 331 338	Android
+T4	OS 448 455	Android
+T6	Malware 0 10	ViceLeaker
+T7	Malware 123 133	ViceLeaker
+T8	Malware 354 364	ViceLeaker
+T9	Malware 1493 1503	ViceLeaker
+T10	Malware 1731 1741	ViceLeaker
+T11	Malware 1984 1994	ViceLeaker
+T12	Malware 2498 2508	ViceLeaker
+T13	Malware 2816 2826	ViceLeaker
+T14	Malware 2946 2956	ViceLeaker
+T15	Organization 72 81	Kaspersky
+T16	Organization 193 202	Kaspersky
+T17	Organization 1843 1852	Kaspersky
+T18	Organization 2996 3005	Kaspersky
+T19	Application 553 564	Bitdefender
+T20	Application 639 647	Telegram
+T21	Application 2124 2142	Telegram messenger
+T22	Application 652 660	WhatsApp
+T23	Organization 2722 2728	GitHub
+T24	Location 48 59	Middle East
+T25	Location 154 165	Middle East
+T26	Location 274 285	Middle East
+T28	Malware 1936 1949	Conversations
+T1	MalwareType 19 26	spyware
+R1	isA Arg1:T6 Arg2:T1	
+R2	targets Arg1:T6 Arg2:T24	
+R3	targets Arg1:T7 Arg2:T25	
+R4	targets Arg1:T7 Arg2:T2	
+T33	Malware 242 252	ViceLeaker
+R5	targets Arg1:T33 Arg2:T26	
+R6	targets Arg1:T33 Arg2:T3	
+R7	targets Arg1:T8 Arg2:T4	
+T34	Time 405 413	May 2018
+R8	discoveredIn Arg1:T8 Arg2:T34	
+T35	Location 477 484	Israeli
+R9	targets Arg1:T8 Arg2:T35	
+T36	Malware 589 595	Triout
+R10	targets Arg1:T8 Arg2:T20	
+R11	targets Arg1:T8 Arg2:T22	
+T29	Application 750 769	Sex Game For Adults
+T37	AttackPattern 792 873	backdoor legitimate applications with an unusual injection technique dubbed Smali
+T39	AttackPattern 910 1027	inject legitimate mobile applications with a backdoor for persistent access once it has compromised an Android device
+T5	Organization 1307 1316	Kaspersky
+R12	uses Arg1:T8 Arg2:T37	
+R13	uses Arg1:T8 Arg2:T39	
+T27	Indicator 1423 1429	dexlib
+R15	indicates Arg1:T27 Arg2:T8	
+T32	Malware 1916 1927	Jabber/XMPP
+T40	AttackPattern 2001 2080	sends the C2 geographical coordinates every time a message was sent via the app
+R16	variantOf Arg1:T11 Arg2:T28	
+R17	uses Arg1:T28 Arg2:T40	
+R18	targets Arg1:T28 Arg2:T21	
+T41	Application 2299 2316	Conversations app
+T42	Organization 2398 2407	Kaspersky
+T30	Organization 2801 2810	Kaspersky
+T31	AttackPattern 1549 1577	exfiltration of SMS messages
+T43	AttackPattern 1701 1725	record surrounding audio
+R19	uses Arg1:T9 Arg2:T31	
+R20	uses Arg1:T9 Arg2:T43	
+R21	targets Arg1:T10 Arg2:T41	
+T44	OS 11 18	Android
+R23	targets Arg1:T6 Arg2:T44	
+R24	uses Arg1:T36 Arg2:T29	
+T38	AttackPattern 1579 1589	call logs,
+T45	AttackPattern 1594 1612	device information
+R14	uses Arg1:T9 Arg2:T38	
+R25	uses Arg1:T9 Arg2:T45	
+T46	AttackPattern 1680 1695	camera takeover
+T47	AttackPattern 1648 1678	upload, download, delete files
+R26	uses Arg1:T9 Arg2:T47	
+R27	uses Arg1:T9 Arg2:T46	
+*	hasAlias T32 T28
+T48	MalwareType 99 106	spyware
+T49	MalwareType 213 220	spyware
+T50	MalwareType 1531 1538	spyware
+T51	Application 2099 2116	Conversations app
+T52	OS 1013 1020	Android

@@ -1,0 +1,40 @@
+DroidJack: The Stalker's App Targeting Android Users
+An international cybercrime investigation is currently underway to target malicious users of spy software targeting Android users, known as DroidJack.
+
+Europol said that police from five European countries—Germany, France, the U.K., Belgium and Switzerland—as well as U.S. legal officials, carried out a number of property raids and arrests of suspected DroidJack users on Tuesday.
+
+On Friday, the BBC reported that British police had arrested a 28-year-old man from Carlisle, northern England, under the Computer Misuse Act 1990 in relation to the international investigation. A spokesperson for the U.K.'s National Crime Agency confirmed to Newsweek that the arrests were made by officers from the national cybercrime unit and that a number of digital devices were seized from the property. The suspect has now been released on bail.
+
+DroidJack has a large potential victim base—there are reportedly more than one billion Android users across the world. Android recorded a market share of 82.8 percent in the second quarter of 2015, almost six times the size of the user base of Apple's iOS mobile system.
+
+Newsweek spoke to Sean Sullivan, security adviser at international online security company F-Secure, about the malware and how Android users can protect themselves.
+
+What is DroidJack?
+
+In cybersecurity parlance, DroidJack is known as a remote access tool, or RAT. Such tools allow the administrators of large computer networks to obtain access to individual devices from a remote location. However, when they are used maliciously to spy or obtain personal data, they are often referred to as remote access trojans.
+
+DroidJack is available to buy on the internet: the software's site, droidjack.net, advertises a lifetime package of the software for $210. Newsweek reached out to the software's founder, who named only as Sanjeevi and is based in India, about the purpose of the software. "DroidJack is a parental control tool which parents can use to monitor their minors with legal permission," Sanjeevi said via email.
+
+Sullivan says that, despite their potential for abuse, RATs are difficult to legislate against because of their legitimate uses. "Every single day there are legitimate remote access tools that network administrators use to take care of servers," says Sullivan. "It's a very useful tool. It's [like] a hammer—you can use [it] to cleave somebody in the skull, or to build a house."
+
+What happens if someone hacks my phone with DroidJack?
+
+The DroidJack website claims that the software is able to "bind your server APK with any other game or app." In layman's terms, says Sullivan, this means that the software can be packaged in an apparently harmless manner—i.e. hidden within an app or game—and then infiltrate a target's phone once it's downloaded.
+
+Once DroidJack is on a device, it provides the hacker with an almost universal overview of the device user's data and personal information. Hackers can track the user's GPS coordinates, read SMS messages, listen to phone calls, delete contacts, and even activate and record from the device's mic. "Basically, everything the phone can do, they can get access to," says Sullivan. Sanjeevi says that the app asks for the user's permission before gaining access to their messages and other information. However, the user does not know DroidJack has been installed: they simply think the game or app that they installed is asking for permission. Sanjeevi says the secretive nature of the app is necessary as "that is the only way a parent/guardian can convince his/her child to install an app."
+
+According to Sanjeevi, various features were left out of the app to ensure it would not be used by hackers. "Many malicious uses that were provided in other remote administration tools such as keyloggers, password grabbers, fake pop-up asking for passwords for phishing were not implemented in DroidJack," says Sanjeevi. "There were more powerful features that could have given more power to users so I did not implement them either."
+
+Who is using DroidJack?
+
+The nature of access provided by DroidJack makes it an ideal tool for jealous ex-boyfriends and girlfriends or stalkers, according to Sullivan. He suggests the technology may be used to obtain access to personal information or intimate photographs, which may then be used to blackmail the user or simply shared with others. "That...looks quite possibly what this is about. A ring of guys trying to scrape as many photos off of phones from young women just for the sake of bragging rights," says Sullivan.
+
+Additionally, there have been reports of Iranian hackers showing high levels of interest in RATs such as DroidJack and the freely-available AndroRAT, both of which require little technical knowledge to use. Sullivan speculates that such technologies could be the hacking tool of choice for certain governments or state actors who may wish to track disruptive activists.
+
+In light of the Europol investigation and the U.K. arrest, Sanjeevi says he is working on a verification system whereby potential buyers of DroidJack will have to state their purpose for using the tool. On the basis of their stated purpose, they will either be licensed—Sanjeevi says there are currently 230 licensed users—or granted a refund. "I will be logging what the users are doing and if any illegal or suspicious activity is notified then they will be questioned and if they are found to have used it illegally their license will be permanently banned," says Sanjeevi.
+
+How do I protect myself from DroidJack?
+
+Currently, DroidJack is only available via its own website and is not stocked via the Google Play Store, which functions as the official marketplace for Android apps. Sullivan says that the safest way to protect your smartphone is to only download apps through the Play Store and not to accept third-party invitations to download games or other applications. "The primary way that people should protect themselves is that, even if it's a friend or soon-to-be ex-boyfriend inviting you to check out this app, if it's not coming from Google Play, [you should] think twice."
+
+Sanjeevi says the app will not be made available via the Google Play Store "as it could cause confusion and might lead to other people downloading the app." The developer also says he is currently in the process of terminating sales of the software until a secure logging system is set up.

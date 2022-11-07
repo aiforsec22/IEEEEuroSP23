@@ -1,0 +1,60 @@
+Zero-Click Apple Zero-Day Uncovered in Pegasus Spy Attack
+The phones of 36 journalists were infected by four APTs, possibly linked to Saudi Arabia or the UAE.
+
+Four nation-state-backed advanced persistent threats (APTs) hacked Al Jazeera journalists, producers, anchors and executives, in an espionage attack leveraging a zero-day exploit for Apple iPhone, researchers said.
+
+The attack, carried out in July and August, compromised 36 personal phones belonging to the victims, according to Citizen Lab. The firm said that the perpetrators could belong to up to four APTs, including potentially those linked to Saudi Arabia and the United Arab Emirates. All of the operators used the NSO Group’s infamous Pegasus spyware as their final payload.
+
+Pegasus is a mobile phone-surveillance solution that enables customers to remotely exploit and monitor devices. NSO Group has long maintained that its mobile spyware is meant to be a tool for governments to use in fighting crime and terror, and that it’s not complicit in any government’s misuse of it. Critics however say that repressive governments use it for more nefarious purposes to track dissidents, journalists and other members of civil society — and that NSO Group assists them.
+
+The latest version of the Pegasus implant has a number of capabilities, according to Citizen Lab, including: Recording audio from the microphone including both ambient “hot mic” recording and audio of encrypted phone calls; taking pictures; tracking device location; and accessing passwords and stored credentials.
+
+KISMET
+Citizen Lab’s analysis of the attacks, released Sunday, found that the attackers found a footing on the phones from which to install Pegasus by exploiting a zero-day in Apple’s iMessage feature for iPhone.
+
+“The phones were compromised using an exploit chain that we call KISMET, which appears to involve an invisible zero-click exploit in iMessage,” researchers said in the Sunday posting. “In July 2020, KISMET was a zero-day against at least iOS 13.5.1 and could hack Apple’s then-latest iPhone 11.”
+
+Ctizen Lab noted that the zero-day was likely also brokered by NSO Group.
+
+“NSO Group is shifting towards zero-click exploits and network-based attacks that allow its government clients to break into phones without any interaction from the target, and without leaving any visible traces,” researchers said, citing the 2019 WhatsApp breach, where at least 1,400 phones were targeted via an exploit sent through a missed voice call. NSO Group has denied its involvement in that case.
+
+Citizen Lab didn’t release technical details of the zero-day, but did say that the “imagent” process (part of a built-in Apple app handling iMessage and FaceTime) was listed as the responsible process for one of Pegasus’ launch routines, indicating possible exploitation involving iMessage or FaceTime messages or notifications.
+
+Upon further investigation, it turns out that a form of KISMET was also used between October and December 2019 to compromise some of the same targets, as well as the phone of a journalist at London-based Al Araby TV.
+
+“Given the global reach of NSO Group’s customer base and the apparent vulnerability of almost all iPhone devices prior to the iOS 14 update, we suspect that the infections that we observed were a miniscule fraction of the total attacks leveraging this exploit,” according to Citizen Lab.
+
+KISMET likely doesn’t work against iOS 14 and above, which includes new security protections, Citizen Labs noted. Apple meanwhile is looking into the issue.
+
+Inside One Victim’s Attack
+Tamer Almisshal, a well-known investigative journalist for Al Jazeera’s Arabic language channel, in January agreed to installing a VPN application that allowed Citizen Lab researchers to monitor metadata associated with his internet traffic, because he thought he was a likely target for hacking.
+
+“While reviewing his VPN logs, we noticed that on 19 July 2020, his phone visited a website that we had detected in our internet scanning as an installation server for NSO Group’s Pegasus spyware, which is used in the process of infecting a target with Pegasus,” according to Citizen Lab.
+
+In the 54 minutes leading up to that ping, the phone also visited 228 cloud partitions – a highly unusual activity, the firm said. Those cloud connections resulted in a net download of 2.06MB and a net upload of 1.25MB of data. The infrastructure used included servers in Germany, France, U.K., and Italy using cloud providers Aruba, Choopa, CloudSigma and DigitalOcean, according to the firm.
+
+“Because these anomalous iCloud connections occurred—and ceased—immediately prior to Pegasus installation…we believe they represent the initial vector by which Tamer Almisshal’s phone was hacked,” researchers said.
+
+More digging uncovered KISMET, the apparent exploit delivered through Apple’s servers, that served as the initial access vector. In the past, NSO Group delivered malicious SMS messages with links that delivered the payload; in this case, it’s a zero-click process that may involve the attacker merely sending an iMessage to the target — no user interaction required, according to Citizen Lab.
+
+The data exfiltration began swiftly: Just 16 seconds after the last connection was made to the Pegasus installation server, Almisshal’s iPhone contacted three new IP addresses – likely Pegasus command-and-control servers (C2s). It continued to contact the IPs over the next 16 hours, Citizen Lab said, with 270.16MB of data uploaded, and 15.15MB of data downloaded.
+
+Almisshal’s device also showed a large number of random phone crashes between January and July.
+
+“While some of [these] may be benign, they may also indicate earlier attempts to exploit vulnerabilities against his device,” researchers noted.
+
+Attribution
+The phones were hacked via four distinct clusters of servers, which could be attributable to up to four NSO Group operators, according to Citizen Labs.
+
+“An operator that we call Monarchy spied on 18 phones, and an operator that we call Sneaky Kestral spied on 15 phones, including one of the same phones that Monarchy spied on,” Citizen Lab noted. “Two other operators, Center-1 and Center-2, spied on one and three phones, respectively.”
+
+The firm believes with “medium confidence” that Sneaky Kestrel acts on behalf of the UAE. It normally targets individuals inside the UAE, and one target hacked by the group previously received Pegasus links via SMS that “point to the same domain name used in the attacks on UAE activist Ahmed Mansoor.”
+
+It’s also with medium confidence that the researchers assess that Monarchy acts on behalf of the Saudi government. It targets individuals primarily inside Saudi Arabia, and was seen hacking a Saudi Arabian activist.
+
+They weren’t able to determine the identity of Center-1 and Center-2, though both appear to target mainly in the Middle East.
+
+The firm said that it believes that NSO Group is constantly working to develop new vectors of infection.
+
+“Journalists and media outlets should not be forced to confront this situation on their own. Investments in journalist security and education must be accompanied by efforts to regulate the sale, transfer and use of surveillance technology,” Citizen Lab noted. “As the anti-detection features of spyware become more sophisticated, the need for effective regulatory and oversight frameworks becomes increasingly urgent. The abuse of NSO Group’s zero-click iMessage attack to target journalists reinforces the need for a global moratorium on the sale and transfer of surveillance technology.”
+

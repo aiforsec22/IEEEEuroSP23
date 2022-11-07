@@ -1,0 +1,362 @@
+T2	OS 85 92	Android
+T3	OS 377 384	Android
+T4	OS 540 547	Android
+T6	OS 1028 1035	Android
+T7	OS 2341 2348	Android
+T8	OS 2497 2504	Android
+T9	OS 3626 3633	Android
+T10	OS 5392 5399	Android
+T12	OS 7624 7631	Android
+T13	OS 13507 13514	Android
+T14	OS 13618 13629	Android 4.2
+T15	OS 13663 13670	Android
+T17	Application 1976 1993	Google Play store
+T18	Organization 78 84	Google
+T21	Malware 579 588	SpyDealer
+T22	Malware 701 710	SpyDealer
+T23	Malware 1929 1938	SpyDealer
+T24	Malware 2294 2303	SpyDealer
+T25	Malware 2770 2779	SpyDealer
+T26	Malware 3642 3651	SpyDealer
+T27	Malware 4990 4999	SpyDealer
+T28	Malware 5583 5592	SpyDealer
+T29	Malware 7002 7011	SpyDealer
+T30	Malware 7837 7846	SpyDealer
+T31	Malware 8334 8343	SpyDealer
+T32	Malware 8433 8442	SpyDealer
+T33	Malware 8819 8828	SpyDealer
+T34	Malware 9876 9885	SpyDealer
+T35	Malware 10267 10276	SpyDealer
+T36	Malware 10624 10633	SpyDealer
+T37	Malware 10776 10785	SpyDealer
+T38	Malware 11287 11296	SpyDealer
+T39	Malware 12376 12385	SpyDealer
+T40	Malware 12745 12754	SpyDealer
+T41	Malware 13681 13690	SpyDealer
+T42	Malware 14157 14166	SpyDealer
+T43	Malware 14217 14226	SpyDealer
+T44	Malware 14773 14782	SpyDealer
+T45	Malware 15281 15290	SpyDealer
+T58	Application 966 973	QQ Mail
+T59	Application 1167 1169	QQ
+T60	Application 1001 1015	Baidu Net Disk
+T61	Malware 5504 5511	Rootnik
+T66	Version 2890 2895	1.9.2
+T67	Version 5103 5108	1.9.2
+T68	Version 5603 5608	1.9.2
+T79	Indicator 6773 6789	022d251cf509c2f0
+T81	Application 1218 1233	Baidu Easy Root
+T82	Application 5165 5180	Baidu Easy Root
+T83	Application 5641 5656	Baidu Easy Root
+T84	Application 6631 6646	Baidu Easy Root
+T85	Application 6872 6887	Baidu Easy Root
+T86	Application 7102 7117	Baidu Easy Root
+T88	Indicator 7189 7199	busybox_g1
+T89	Indicator 7275 7285	busybox_g1
+T90	Indicator 7765 7775	busybox_g1
+T91	Version 7646 7656	4.0 to 4.3
+T92	Application 9922 9931	Baidu map
+T93	Application 10063 10072	Baidu map
+T94	Indicator 11357 11367	port 39568
+T104	Indicator 6078 6128	http[:]//yangxiu2014.0323.utnvg[.]com/apk/raw.zip.
+T105	Indicator 6248 6298	http[:]//yangxiu2014.0323.utnvg[.]com/apk/md5.txt.
+T108	Indicator 7262 7270	logo.png
+T109	Version 5093 5098	1.9.1
+T110	Version 5593 5598	1.9.1
+T112	Indicator 7744 7753	logo.png,
+T113	Indicator 7382 7423	/data/data/<package_name>/app_bin/toor.sh
+T114	Version 3077 3082	1.9.3
+T117	Indicator 6835 6845	“raw.zip”,
+T120	Version 2900 2906	1.9.3.
+T127	Indicator 6593 6602	“raw.zip”
+T128	Indicator 5937 5976	/data/data/<package_name>/broot/raw.zip
+T129	Version 2883 2888	1.9.1
+T132	Indicator 3993 4004	readme.txt.
+T140	Indicator 8191 8215	/system/bin/update_1.apk
+T141	Indicator 12586 12597	readme.txt,
+T143	Indicator 4338 4348	readme.txt
+R6	indicates Arg1:T79 Arg2:T198
+R7	indicates Arg1:T88 Arg2:T29
+R8	indicates Arg1:T89 Arg2:T29
+R9	indicates Arg1:T90 Arg2:T29
+R10	indicates Arg1:T94 Arg2:T38
+R11	indicates Arg1:T104 Arg2:T28
+R12	indicates Arg1:T105 Arg2:T28
+R15	indicates Arg1:T108 Arg2:T29
+R19	indicates Arg1:T112 Arg2:T29
+R20	indicates Arg1:T113 Arg2:T29
+R22	indicates Arg1:T117 Arg2:T198
+R33	indicates Arg1:T128 Arg2:T28
+R36	indicates Arg1:T132 Arg2:T26
+R43	indicates Arg1:T140 Arg2:T30
+R44	indicates Arg1:T141 Arg2:T39
+R46	indicates Arg1:T143 Arg2:T26
+T69	Malware 0 9	SpyDealer
+T1	MalwareType 19 25	Trojan
+R51	isA Arg1:T69 Arg2:T1	
+R52	has Arg1:T18 Arg2:T2	
+T70	Organization 323 341	Palo Alto Networks
+T71	Malware 406 415	SpyDealer
+T72	AttackPattern 423 470	exfiltrates private data from more than 40 apps
+T73	AttackPattern 475 524	steals sensitive messages from communication apps
+R53	targets Arg1:T71 Arg2:T3	
+R54	uses Arg1:T71 Arg2:T72	
+R55	uses Arg1:T71 Arg2:T73	
+R56	targets Arg1:T71 Arg2:T4	
+T74	AttackPattern 589 655	uses exploits from a commercial rooting app to gain root privilege
+R57	uses Arg1:T21 Arg2:T74	
+T75	AttackPattern 748 802	Exfiltrate private data from more than 40 popular apps
+T76	Application 814 820	WeChat
+T77	Application 832 840	WhatsApp
+T78	Application 822 830	Facebook
+T103	Application 842 847	Skype
+T115	Application 849 853	Line
+T116	Application 855 860	Viber
+T130	Application 862 864	QQ
+T139	Application 866 871	Tango
+T148	Application 873 881	Telegram
+T149	Application 883 893	Sina Weibo
+T150	Application 895 908	Tencent Weibo
+T5	Application 910 932	Android Native Browser
+T151	Application 934 949	Firefox Browser
+T152	Application 951 964	Oupeng Brower
+T153	Application 975 987	NetEase Mail
+T154	Application 989 995	Taobao
+R58	targets Arg1:T22 Arg2:T76	
+R59	targets Arg1:T22 Arg2:T78	
+R60	targets Arg1:T22 Arg2:T77	
+R61	targets Arg1:T22 Arg2:T103	
+R62	targets Arg1:T22 Arg2:T115	
+R63	targets Arg1:T22 Arg2:T116	
+R64	targets Arg1:T22 Arg2:T130	
+R65	targets Arg1:T22 Arg2:T139	
+R66	targets Arg1:T22 Arg2:T148	
+R67	targets Arg1:T22 Arg2:T149	
+R68	targets Arg1:T22 Arg2:T150	
+R69	targets Arg1:T22 Arg2:T5	
+R70	targets Arg1:T22 Arg2:T151	
+R71	targets Arg1:T22 Arg2:T152	
+R72	targets Arg1:T22 Arg2:T58	
+R73	targets Arg1:T22 Arg2:T153	
+R74	targets Arg1:T22 Arg2:T154	
+R75	targets Arg1:T22 Arg2:T60	
+T155	AttackPattern 1017 1136	Abuses the Android Accessibility Service feature to steal sensitive messages from popular communication and social apps
+T156	Application 1145 1151	WeChat
+T157	Application 1153 1158	Skype
+T158	Application 1160 1165	Viber
+R76	uses Arg1:T22 Arg2:T155	
+R77	targets Arg1:T22 Arg2:T156	
+R78	targets Arg1:T22 Arg2:T157	
+R79	targets Arg1:T22 Arg2:T158	
+R80	targets Arg1:T22 Arg2:T59	
+T159	AttackPattern 1171 1257	Takes advantage of the commercial rooting app “Baidu Easy Root” to gain root privilege
+T160	AttackPattern 1262 1308	maintain persistence on the compromised device
+R81	uses Arg1:T22 Arg2:T81	
+R82	uses Arg1:T22 Arg2:T159	
+R83	uses Arg1:T22 Arg2:T160	
+T161	AttackPattern 1310 1489	Harvests an exhaustive list of personal information including phone number, IMEI, IMSI, SMS, MMS, contacts, accounts, phone call history, location, and connected Wi-Fi information
+T162	AttackPattern 1491 1555	Automatically answer incoming phone calls from a specific number
+T95	AttackPattern 1557 1615	Remote control of the device via UDP, TCP and SMS channels
+T163	AttackPattern 1617 1644	Spy on the compromised user
+T164	AttackPattern 1650 1708	Recording the phone call and the surrounding audio & video
+T165	AttackPattern 1711 1759	Taking photos via both the front and rear camera
+T166	AttackPattern 1761 1805	Monitoring the compromised device’s location
+T167	AttackPattern 1807 1825	Taking screenshots
+R84	uses Arg1:T22 Arg2:T161	
+R85	uses Arg1:T22 Arg2:T162	
+R86	uses Arg1:T22 Arg2:T95	
+R87	uses Arg1:T22 Arg2:T163	
+R88	uses Arg1:T22 Arg2:T164	
+R89	uses Arg1:T22 Arg2:T165	
+R90	uses Arg1:T22 Arg2:T166	
+R91	uses Arg1:T22 Arg2:T167	
+T19	Malware 2058 2067	SpyDealer
+T168	Location 2103 2110	Chinese
+R92	targets Arg1:T19 Arg2:T168	
+T169	AttackPattern 2126 2172	infected through compromised wireless networks
+R93	uses Arg1:T19 Arg2:T169	
+T170	Organization 2222 2228	Google
+T20	Application 2272 2291	Google Play Protect
+R94	has Arg1:T170 Arg2:T20	
+T171	Version 2374 2393	between 2.2 and 4.4
+R23	has Arg1:T7 Arg2:T171	
+R45	targets Arg1:T24 Arg2:T171	
+T118	OS 2561 2568	Android
+T142	Time 2691 2700	June 2017
+T172	Malware 2735 2744	SpyDealer
+R95	targets Arg1:T24 Arg2:T8	
+R96	targets Arg1:T24 Arg2:T7	
+T173	AttackPattern 3086 3115	steal targeted apps’ messages
+T174	Indicator 3183 3196	GoogleService
+T175	Indicator 3202 3214	GoogleUpdate
+R41	indicates Arg1:T174 Arg2:T25	
+R97	indicates Arg1:T175 Arg2:T25	
+T176	Time 3272 3281	May, 2017
+T177	Time 3320 3333	October, 2015
+T178	Time 3480 3492	October 2015
+T179	Time 3497 3510	February 2016
+T180	AttackPattern 3652 3677	shows no application icon
+R98	uses Arg1:T26 Arg2:T180	
+T181	AttackPattern 3691 3808	registers two broadcast receivers to listen for events related to the device booting up and network connection status
+R99	uses Arg1:T26 Arg2:T181	
+T182	AttackPattern 3925 3986	retrieves configuration information from the local asset file
+R100	uses Arg1:T26 Arg2:T182	
+T62	AttackPattern 4563 4579	Get call history
+T183	AttackPattern 4611 4627	Get SMS messages
+T184	AttackPattern 4653 4665	Record audio
+T185	AttackPattern 4707 4723	Get GSM location
+T186	AttackPattern 4747 4759	Get contacts
+T187	AttackPattern 4798 4851	Get information and network traffic of installed apps
+T188	AttackPattern 4897 4928	Get device specific information
+T189	AttackPattern 4631 4649	Capture screenshot
+T190	AttackPattern 4669 4703	List files under a given directory
+T191	AttackPattern 4727 4743	Get GPS location
+T192	AttackPattern 4763 4794	Intercept incoming SMS messages
+T193	AttackPattern 4932 4956	Get current running apps
+T194	AttackPattern 4582 4607	Send recorded audio files
+T195	AttackPattern 4855 4893	Do not intercept incoming SMS messages
+R101	uses Arg1:T26 Arg2:T62	
+R102	uses Arg1:T26 Arg2:T194	
+R103	uses Arg1:T26 Arg2:T183	
+R104	uses Arg1:T26 Arg2:T189	
+R105	uses Arg1:T26 Arg2:T190	
+R106	uses Arg1:T26 Arg2:T184	
+R108	uses Arg1:T26 Arg2:T185	
+R109	uses Arg1:T26 Arg2:T191	
+R110	uses Arg1:T26 Arg2:T192	
+R111	uses Arg1:T26 Arg2:T188	
+R112	uses Arg1:T26 Arg2:T195	
+R113	uses Arg1:T26 Arg2:T193	
+T196	AttackPattern 5041 5072	gain root (superuser) privilege
+R114	uses Arg1:T27 Arg2:T196	
+T197	Time 5487 5491	2015
+T11	AttackPattern 5527 5578	abuse the “Root Assistant” tool to gain root access
+R117	uses Arg1:T61 Arg2:T11	
+R120	uses Arg1:T28 Arg2:T84	
+T136	Version 6648 6661	version 2.8.3
+R40	has Arg1:T84 Arg2:T136	
+T198	Malware 6749 6758	SpyDealer
+T199	Indicator 6986 6997	fb_mem_root
+R121	indicates Arg1:T199 Arg2:T198	
+R123	has Arg1:T12 Arg2:T91	
+T200	AttackPattern 7862 7908	maintain persistence on the compromised device
+R124	uses Arg1:T30 Arg2:T200	
+T111	Indicator 8353 8363	AaTService
+R18	indicates Arg1:T111 Arg2:T31	
+T102	AttackPattern 8457 8530	receiving commands from remote servers via a number of different channels
+R24	uses Arg1:T32 Arg2:T102	
+T96	AttackPattern 8830 8966	egisters a broadcast receiver with a higher priority than the default messaging app to listen for the commands via incoming SMS messages
+R125	uses Arg1:T33 Arg2:T96	
+T63	AttackPattern 9270 9320	Get geographical location via GSM cell information
+T64	AttackPattern 9325 9381	Collect the contacts on the device and send back via SMS
+T119	AttackPattern 9386 9510	Gather SMS messages which are created later than a given date in the inbox, outbox and draft box, and then send back via SMS
+T201	AttackPattern 9515 9585	Exfiltrate call histories that are later than a given date through SMS
+T202	AttackPattern 9668 9699	Set the auto reply phone number
+T203	AttackPattern 9718 9805	automatically answer the incoming phone call when the number is the same as the set one
+R126	uses Arg1:T33 Arg2:T63	
+R127	uses Arg1:T33 Arg2:T64	
+R128	uses Arg1:T33 Arg2:T119	
+R129	uses Arg1:T33 Arg2:T201	
+R130	uses Arg1:T33 Arg2:T202	
+R131	uses Arg1:T33 Arg2:T203	
+R132	uses Arg1:T34 Arg2:T92	
+R29	uses Arg1:T34 Arg2:T93	
+T124	AttackPattern 10084 10118	retrieve the geographical location
+R133	uses Arg1:T34 Arg2:T124	
+T204	AttackPattern 10286 10320	set the remote server’s IP address
+R134	uses Arg1:T35 Arg2:T204	
+T205	Indicator 10561 10565	L112
+R135	indicates Arg1:T205 Arg2:T35	
+T65	Indicator 10978 11004	msg:repcall|<phone number>
+R136	indicates Arg1:T65 Arg2:T37	
+T97	AttackPattern 11297 11399	creates a TCP server on the compromised device listening at port 39568 and waits for incoming commands
+R137	uses Arg1:T38 Arg2:T97	
+T98	AttackPattern 11537 11562	Send back the device IMEI
+T99	AttackPattern 11576 11642	Send back device information including IMEI, IMSI and phone number
+T206	AttackPattern 11655 11725	Send back contacts information including contact name and phone number
+T207	AttackPattern 11740 11793	Send back SMS messages in inbox, outbox and draft box
+T208	AttackPattern 11810 11879	Send back call histories including phone call duration, type and date
+T209	AttackPattern 11902 11960	Send back the information of files under a given directory
+R138	uses Arg1:T38 Arg2:T98	
+R139	uses Arg1:T38 Arg2:T99	
+R140	uses Arg1:T38 Arg2:T206	
+R141	uses Arg1:T38 Arg2:T207	
+R142	uses Arg1:T38 Arg2:T208	
+R143	uses Arg1:T38 Arg2:T209	
+T100	AttackPattern 12395 12502	actively connect to the remote server with the configured IP address to ask for commands through UDP or TCP
+R144	uses Arg1:T39 Arg2:T100	
+R39	targets Arg1:T41 Arg2:T15	
+T101	AttackPattern 13697 13734	inserts an SMS message into the inbox
+R145	uses Arg1:T41 Arg2:T101	
+T135	AttackPattern 13860 13889	fakes an incoming SMS message
+R146	uses Arg1:T41 Arg2:T135	
+T210	AttackPattern 14227 14321	divides the original data into multiple groups and each group has no more than 1000 bytes data
+R147	uses Arg1:T43 Arg2:T210	
+T211	AttackPattern 14788 14936	tries to gather data from more than 40 common apps falling in different categories including social, communication, browser, mobile mail client, etc
+R148	uses Arg1:T44 Arg2:T211	
+T138	Version 15266 15279	version 1.9.3
+T212	AttackPattern 15337 15402	steal plain messages by directly extracting texts from the screen
+R149	uses Arg1:T138 Arg2:T212	
+R1	indicates Arg1:T127 Arg2:T28	
+T16	Indicator 7176 7184	logo.png
+R2	indicates Arg1:T16 Arg2:T29	
+T46	Indicator 7324 7358	/data/data/ <package_name>/app_bin
+R13	indicates Arg1:T46 Arg2:T29	
+T47	Indicator 7480 7487	toor.sh
+R14	indicates Arg1:T47 Arg2:T29	
+T48	Indicator 8068 8092	/system/bin/update_1.apk
+R26	indicates Arg1:T48 Arg2:T30	
+T49	Indicator 8219 8241	/system/app/Update.apk
+R27	indicates Arg1:T49 Arg2:T30	
+T50	Version 2921 2926	1.9.3
+T51	AttackPattern 2928 3027	content of configuration files and almost all constant strings in the code are encrypted or encoded
+T52	OS 11 18	Android
+R30	targets Arg1:T69 Arg2:T52	
+R3	has Arg1:T25 Arg2:T129	
+R21	has Arg1:T25 Arg2:T66	
+R25	has Arg1:T25 Arg2:T120	
+R4	has Arg1:T27 Arg2:T109	
+R16	has Arg1:T27 Arg2:T67	
+R32	uses Arg1:T27 Arg2:T82	
+T53	OS 5512 5519	Android
+T54	MalwareType 5520 5526	Trojan
+R34	targets Arg1:T61 Arg2:T53	
+R35	isA Arg1:T61 Arg2:T54	
+R5	has Arg1:T28 Arg2:T110	
+R17	has Arg1:T28 Arg2:T68	
+R37	uses Arg1:T28 Arg2:T83	
+T55	Version 7012 7017	1.9.1
+T56	Version 7019 7024	1.9.2
+T57	Version 7030 7035	1.9.3
+R38	has Arg1:T29 Arg2:T55	
+R47	has Arg1:T29 Arg2:T56	
+R48	has Arg1:T29 Arg2:T57	
+R42	has Arg1:T45 Arg2:T138	
+T80	AttackPattern 528 577	abusing the Android accessibility service feature
+R49	uses Arg1:T71 Arg2:T80	
+R28	has Arg1:T25 Arg2:T50	
+R50	uses Arg1:T50 Arg2:T51	
+R115	uses Arg1:T114 Arg2:T173	
+R31	has Arg1:T25 Arg2:T114	
+R116	targets Arg1:T26 Arg2:T9	
+T87	AttackPattern 10140 10196	compromised device’s location is exposed to the attacker
+R118	uses Arg1:T34 Arg2:T87	
+T106	AttackPattern 13744 13802	posts a notification indicating an SMS message has arrived
+R119	uses Arg1:T41 Arg2:T106	
+T107	AttackPattern 13910 13978	data sent back to the remote server is encrypted using TEA algorithm
+R122	uses Arg1:T41 Arg2:T107	
+T121	AttackPattern 14167 14215	creates an effective session layer on top of UDP
+R150	uses Arg1:T42 Arg2:T121	
+T122	AttackPattern 14690 14736	employ many mechanisms to collect private data
+R151	uses Arg1:T43 Arg2:T122	
+T123	AttackPattern 14594 14617	Private Data Collection
+R152	uses Arg1:T43 Arg2:T123	
+T125	AttackPattern 14982 15009	Accessibility Service Abuse
+R153	uses Arg1:T44 Arg2:T125	
+T126	AttackPattern 15291 15333	implemented an extra accessibility service
+R154	uses Arg1:T45 Arg2:T126	
+T213	MalwareType 8260 8266	Trojan
+T214	Application 1036 1057	Accessibility Service
+T215	Application 14982 15003	Accessibility Service
+T216	Application 1125 1136	social apps
+T217	Application 15135 15146	social apps

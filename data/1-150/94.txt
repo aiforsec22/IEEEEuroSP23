@@ -1,0 +1,15 @@
+Creepy New Android Malware Can Secretly Record Your Conversations
+Security researchers have discovered nasty new Android malware that's purpose-built for blackmail. It's called RedDrop, and it's a bit nastier than run-of-the-mill ransomware.
+
+RedDrop wants your files, but not the way that most of today's malware does. It's not out to encrypt your files and force you to fork over a payment in order to unlock them. Instead, RedDrop wants to steal all the information it can from your phone... just in case, there's something juicy in there that its creators can use against you.
+
+Researchers at U.K.-based Wandera say that RedDrop targets sensitive data like your contacts and photos. It also gathers information about your phone, from the apps you have installed to the WiFi networks you're near. The most frightening thing about RedDrop, however, is that it can hijack your phone's microphone.
+
+That allows it to eavesdrop on conversations you -- or anyone else -- might be having near the infected device. A lot of that audio won't be of any value, but something sensitive is bound to come up eventually. Confirmation codes for banking or transaction details, for example.
+
+Even if that never happens, RedDrop has a backup plan for making money off its victims. It racks up charges by stealthily communicating with a premium-rate SMS system. Messages are erased from the infected phone as soon as they're sent, making the malicious activity that much harder to track.
+
+RedDrop's creators have cast a wide net. Wandera has already discovered more than 50 Android apps infected with the Trojan. Fortunately, they're all being served from third-party app stores based in China. Worryingly, Wandera says that "RedDrop is one of the most sophisticated pieces of Android malware that we have seen in broad distribution."
+
+If you stick to installing apps from Google Play, you don't need to worry about RedDrop eavesdropping on your conversations or stealing your files. Not yet, anyway. Malware authors do manage to avoid detection by Google every now and then, so it's important to not let your guard down.
+

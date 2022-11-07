@@ -1,0 +1,132 @@
+T1	OS 48 55	Android
+T2	OS 100 107	Android
+T3	OS 939 946	Android
+T4	OS 1242 1249	Android
+T5	OS 1544 1551	Android
+T6	OS 2407 2414	Android
+T7	OS 2571 2578	Android
+T8	OS 2982 2989	Android
+T9	OS 3445 3452	Android
+T10	OS 3754 3761	Android
+T11	OS 4123 4130	Android
+T12	OS 400 403	iOS
+T13	OS 2512 2515	iOS
+T14	OS 4134 4137	iOS
+T15	Organization 0 6	Google
+T16	Organization 75 81	Google
+T17	Organization 2297 2303	Google
+T18	Organization 3332 3338	Google
+T19	Organization 3808 3814	Google
+T21	Malware 1217 1224	Pegasus
+T23	Malware 1552 1559	Pegasus
+T24	Malware 2970 2977	Pegasus
+T25	Malware 3251 3258	Pegasus
+T26	Malware 3344 3351	Pegasus
+T27	ThreatActor 550 559	NSO Group
+T28	Organization 3964 3973	NSO Group
+T30	Hardware 1524 1530	iPhone
+T31	Hardware 3032 3038	iPhone
+T33	Organization 641 647	Forbes
+T34	Organization 1338 1345	Lookout
+T35	Organization 1831 1838	Lookout
+T36	Organization 2180 2187	Lookout
+T37	Organization 2285 2292	Lookout
+T38	Organization 3789 3796	Lookout
+T39	Organization 4166 4173	Lookout
+T40	Organization 1466 1477	Citizen Lab
+T43	Person 2947 2955	Flossman
+T44	Person 3182 3190	Flossman
+T45	Person 4251 4259	Flossman
+T47	Location 479 482	UAE
+T48	Location 746 752	Turkey
+T49	Location 3941 3947	Turkey
+T50	Person 1195 1206	Mike Murray
+T57	Malware 119 126	Pegasus
+R1	targets Arg1:T57 Arg2:T2	
+T58	ThreatActor 156 165	NSO Group
+R2	hasAuthor Arg1:T57 Arg2:T58	
+T59	Location 170 177	Israeli
+R3	has Arg1:T58 Arg2:T59	
+T20	Malware 273 291	Pegasus for iPhone
+T29	Time 309 325	August last year
+R4	discoveredIn Arg1:T20 Arg2:T29	
+T60	Location 456 463	Mexican
+T61	Person 492 505	Ahmed Mansoor
+T62	Location 539 548	Abu Dhabi
+R5	targets Arg1:T20 Arg2:T60	
+R6	targets Arg1:T20 Arg2:T47	
+R7	targets Arg1:T20 Arg2:T61	
+T63	Organization 615 633	Francisco Partners
+T64	Organization 831 837	Google
+T65	Time 889 898	late 2016
+T55	Malware 972 979	Pegasus
+R8	targets Arg1:T55 Arg2:T3	
+T66	Time 1025 1029	2014
+T67	Organization 1135 1142	Lookout
+R9	targets Arg1:T21 Arg2:T4	
+T52	Malware 1386 1394	Chrysaor
+*	hasAlias T52 T21
+T68	Organization 1401 1407	Google
+T69	Organization 1442 1463	University of Toronto
+R10	has Arg1:T69 Arg2:T40	
+T22	Malware 1492 1510	Pegasus for iPhone
+T70	AttackPattern 1600 1618	controlled via SMS
+T71	AttackPattern 1623 1648	self-destruct if required
+R11	uses Arg1:T23 Arg2:T70	
+R12	targets Arg1:T23 Arg2:T5	
+R13	uses Arg1:T23 Arg2:T71	
+T72	AttackPattern 1694 1726	grab large amounts of comms data
+T73	AttackPattern 1728 1746	pilfering messages
+T74	AttackPattern 1751 1829	call records from WhatsApp, Facebook, Twitter, Skype and Gmail, amongst others
+R14	uses Arg1:T23 Arg2:T72	
+R15	uses Arg1:T23 Arg2:T73	
+R16	uses Arg1:T23 Arg2:T74	
+T41	Application 1769 1777	WhatsApp
+T75	Application 1779 1787	Facebook
+T76	Application 1789 1796	Twitter
+T77	Application 1798 1803	Skype
+T78	Application 1808 1813	Gmail
+R17	targets Arg1:T23 Arg2:T41	
+R18	targets Arg1:T23 Arg2:T75	
+R19	targets Arg1:T23 Arg2:T76	
+R20	targets Arg1:T23 Arg2:T77	
+R21	targets Arg1:T23 Arg2:T78	
+T79	Time 1868 1874	Monday
+T80	AttackPattern 1890 1923	control the camera and microphone
+T81	AttackPattern 1936 1956	carry out keylogging
+T82	AttackPattern 1961 1977	take screenshots
+R22	uses Arg1:T23 Arg2:T80	
+R23	uses Arg1:T23 Arg2:T81	
+R24	uses Arg1:T23 Arg2:T82	
+T83	ThreatActor 2053 2062	NSO Group
+T84	AttackPattern 1986 2017	"suicide" self-destruct feature
+R25	uses Arg1:T23 Arg2:T84	
+T85	Person 2215 2231	Michael Flossman
+T51	Time 2343 2347	2014
+T86	Malware 2769 2776	Pegasus
+T42	Hardware 2827 2841	Samsung phones
+T87	AttackPattern 2843 2942	removed the manufacturer's system update app to prevent security fixes from disrupting its snooping
+R26	uses Arg1:T86 Arg2:T87	
+R27	targets Arg1:T24 Arg2:T8	
+R28	targets Arg1:T24 Arg2:T31	
+T53	Application 3390 3400	Play store
+T32	Vulnerability 3572 3581	Framaroot
+R29	has Arg1:T9 Arg2:T32	
+T46	Location 3850 3856	Israel
+T88	Location 3924 3931	Georgia
+T89	Location 3933 3939	Mexico
+T90	Location 3956 3959	UAE
+R30	exploits Arg1:T26 Arg2:T32	
+R31	targets Arg1:T26 Arg2:T88	
+R32	targets Arg1:T26 Arg2:T46	
+R33	targets Arg1:T26 Arg2:T89	
+R34	targets Arg1:T26 Arg2:T49	
+R35	targets Arg1:T26 Arg2:T90	
+T91	Organization 4082 4089	Lookout
+T92	Person 4153 4161	Flossman
+T93	ThreatActor 4193 4202	NSO Group
+T54	OS 4386 4393	Android
+T56	MalwareType 137 144	spyware
+R36	isA Arg1:T57 Arg2:T56	
+T94	MalwareType 247 254	spyware
+T95	MalwareType 2372 2379	spyware

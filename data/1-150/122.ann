@@ -1,0 +1,177 @@
+T1	OS 57 64	Android
+T3	OS 515 522	Android
+T4	OS 49 52	iOS
+T6	OS 3307 3310	iOS
+T8	OS 3723 3726	iOS
+T9	OS 3892 3895	iOS
+T10	OS 4171 4174	iOS
+T11	OS 4658 4661	iOS
+T12	OS 4712 4715	iOS
+T13	OS 5117 5120	iOS
+T14	OS 5131 5134	iOS
+T15	OS 5200 5203	iOS
+T16	OS 5489 5492	iOS
+T19	Malware 681 687	Exodus
+T20	Malware 869 875	Exodus
+T21	Malware 964 970	Exodus
+T22	Malware 1853 1859	Exodus
+T23	Malware 1994 2000	Exodus
+T24	Malware 2121 2127	Exodus
+T25	Malware 3441 3447	Exodus
+T26	Malware 4643 4649	Exodus
+T27	Malware 4697 4703	Exodus
+T28	Malware 5169 5175	Exodus
+T29	Malware 6114 6120	Exodus
+T31	ThreatActor 4901 4906	eSurv
+T33	ThreatActor 4997 5002	eSurv
+T35	Organization 839 863	Security without Borders
+T44	Hardware 3551 3557	iPhone
+T48	ThreatActor 4329 4337	Connexxa
+T49	ThreatActor 4420 4428	Connexxa
+T50	ThreatActor 4935 4943	Connexxa
+T51	ThreatActor 5036 5044	Connexxa
+T52	Organization 5840 5847	Lookout
+T2	Malware 488 494	Exodus
+R1	targets Arg1:T2 Arg2:T3	
+T5	AttackPattern 601 649	spread in apps disguised as service applications
+R2	uses Arg1:T2 Arg2:T5	
+T17	Application 774 785	Google Play
+R3	targets Arg1:T19 Arg2:T17	
+T46	OS 336 339	iOS
+T65	OS 344 351	Android
+T66	AttackPattern 1042 1178	collected basic identifying information about the device, such as the IMEI and phone number, and sent it to a command-and-control server
+T69	AttackPattern 1592 1675	encrypted communications with self-signed certificates that were pinned to the apps
+R4	uses Arg1:T21 Arg2:T66	
+R7	uses Arg1:T21 Arg2:T69	
+T36	Hardware 1830 1843	Huawei phones
+R10	targets Arg1:T22 Arg2:T36	
+T73	AttackPattern 2001 2041	gain root control over an infected phone
+T74	Vulnerability 2089 2097	DirtyCOW
+R12	exploits Arg1:T23 Arg2:T74	
+R13	uses Arg1:T23 Arg2:T73	
+T75	AttackPattern 2201 2242	Retrieve a list of installed applications
+T76	AttackPattern 2244 2307	Record surroundings using the built-in microphone in 3gp format
+T37	AttackPattern 2309 2377	Retrieve the browsing history and bookmarks from Chrome and SBrowser
+T38	Application 2404 2418	Samsung phones
+R14	targets Arg1:T24 Arg2:T38	
+R15	uses Arg1:T24 Arg2:T75	
+R16	uses Arg1:T24 Arg2:T76	
+R17	uses Arg1:T24 Arg2:T37	
+T39	AttackPattern 2421 2457	Extract events from the Calendar app
+T40	AttackPattern 2459 2480	Extract the calls log
+T77	AttackPattern 2482 2506	Record phone calls audio
+T78	AttackPattern 2522 2560	Take pictures with the embedded camera
+T79	AttackPattern 2562 2617	Collect information on surrounding cellular towers (BTS
+T80	AttackPattern 2620 2644	Extract the address book
+T41	AttackPattern 2646 2693	Extract the contacts list from the Facebook app
+T42	AttackPattern 2695 2745	Extract logs from Facebook Messenger conversations
+T43	AttackPattern 2747 2789	Take a screenshot of any app in foreground
+T81	AttackPattern 2791 2839	Extract information on pictures from the Gallery
+T82	AttackPattern 2841 2879	Extract information from the Gmail app
+T83	AttackPattern 2881 2917	Dump data from the IMO messenger app
+T53	AttackPattern 2919 2978	Extract call logs, contacts and messages from the Skype app
+T54	AttackPattern 2980 3005	Retrieve all SMS messages
+T55	AttackPattern 3007 3068	Extract messages and the encryption key from the Telegram app
+T56	AttackPattern 3070 3108	Dump data from the Viber messenger app
+T57	AttackPattern 3110 3136	Extract logs from WhatsApp
+T58	AttackPattern 3138 3179	Retrieve media exchanged through WhatsApp
+T59	AttackPattern 3181 3217	Extract the Wi-Fi network's password
+T84	AttackPattern 3219 3247	Extract data from WeChat app
+T85	AttackPattern 3249 3293	Extract current GPS coordinates of the phone
+R18	uses Arg1:T24 Arg2:T39	
+R19	uses Arg1:T24 Arg2:T40	
+R20	uses Arg1:T24 Arg2:T77	
+R21	uses Arg1:T24 Arg2:T78	
+R22	uses Arg1:T24 Arg2:T79	
+R23	uses Arg1:T24 Arg2:T80	
+R24	uses Arg1:T24 Arg2:T41	
+R25	uses Arg1:T24 Arg2:T42	
+R26	uses Arg1:T24 Arg2:T43	
+R27	uses Arg1:T24 Arg2:T81	
+R28	uses Arg1:T24 Arg2:T82	
+R29	uses Arg1:T24 Arg2:T83	
+R30	uses Arg1:T24 Arg2:T53	
+R31	uses Arg1:T24 Arg2:T54	
+R32	uses Arg1:T24 Arg2:T55	
+R33	uses Arg1:T24 Arg2:T56	
+R34	uses Arg1:T24 Arg2:T57	
+R35	uses Arg1:T24 Arg2:T58	
+R36	uses Arg1:T24 Arg2:T59	
+R37	uses Arg1:T24 Arg2:T84	
+R38	uses Arg1:T24 Arg2:T85	
+T86	Malware 3501 3507	Exodux
+T87	Version 3519 3545	iOS version of the malware
+T7	AttackPattern 3583 3675	distributed on phishing sites that masqueraded as Italian and Turkmenistani mobile carriers.
+R40	uses Arg1:T87 Arg2:T7	
+R41	targets Arg1:T87 Arg2:T44	
+T88	AttackPattern 3739 3793	installed using the Apple Developer Enterprise program
+R42	uses Arg1:T87 Arg2:T88	
+T45	Application 3896 3905	App Store
+T47	ThreatActor 4230 4245	Connexxa S.R.L.
+R43	hasAuthor Arg1:T87 Arg2:T47	
+T60	Location 4203 4208	Italy
+T64	ThreatActor 4319 4327	Connexxa
+*	hasAlias T64 T47
+T89	Malware 4410 4416	Exodus
+R44	hasAuthor Arg1:T25 Arg2:T48	
+T90	Malware 4518 4524	Exodus
+R45	hasAuthor Arg1:T90 Arg2:T49	
+T91	ThreatActor 4529 4537	Connexxa
+T30	ThreatActor 4869 4880	eSurv S.R.L
+R46	hasAuthor Arg1:T26 Arg2:T30	
+R47	hasAuthor Arg1:T87 Arg2:T30	
+*	hasAlias T31 T30
+T32	ThreatActor 4962 4973	eSurv S.R.L
+T61	Time 4978 4982	2014
+T62	Time 4987 4991	2016
+T34	ThreatActor 5048 5059	eSurv S.R.L
+T63	Malware 5188 5194	Exodus
+T93	AttackPattern 5329 5367	exfiltrate a variety of sensitive data
+R49	targets Arg1:T87 Arg2:T45	
+R50	uses Arg1:T87 Arg2:T93	
+T95	Organization 5887 5892	Apple
+T96	Hardware 6027 6034	iPhones
+T97	Organization 6148 6154	Google
+T18	Application 6204 6215	Google Play
+R52	targets Arg1:T29 Arg2:T18	
+T98	Application 2358 2364	Chrome
+T99	Application 2369 2377	SBrowser
+R53	targets Arg1:T24 Arg2:T98	
+R54	targets Arg1:T24 Arg2:T99	
+T100	Application 2445 2457	Calendar app
+R55	targets Arg1:T24 Arg2:T100	
+T101	Application 2713 2731	Facebook Messenger
+T102	Application 2681 2689	Facebook
+R56	targets Arg1:T24 Arg2:T102	
+R57	targets Arg1:T24 Arg2:T101	
+T103	Application 2870 2875	Gmail
+T104	Application 2900 2913	IMO messenger
+T105	Application 2969 2974	Skype
+R58	targets Arg1:T24 Arg2:T103	
+R59	targets Arg1:T24 Arg2:T105	
+R60	targets Arg1:T24 Arg2:T104	
+T106	Application 3237 3243	WeChat
+R61	targets Arg1:T24 Arg2:T106	
+R5	has Arg1:T25 Arg2:T87	
+T67	AttackPattern 87 118	stole contacts, audio, location
+T68	AttackPattern 280 318	stealing a variety of data from phones
+R6	uses Arg1:T2 Arg2:T67	
+R8	uses Arg1:T2 Arg2:T68	
+T70	Application 629 649	service applications
+T92	Application 2832 2839	Gallery
+T94	Application 3056 3064	Telegram
+T107	Application 3089 3094	Viber
+T108	Application 3128 3136	WhatsApp
+T109	Application 3171 3179	WhatsApp
+T110	Location 3633 3640	Italian
+T111	Location 3645 3658	Turkmenistani
+R39	targets Arg1:T87 Arg2:T110	
+R48	targets Arg1:T87 Arg2:T111	
+T112	Location 4350 4357	Italian
+T113	Organization 4558 4563	Apple
+T114	Hardware 5088 5095	iPhones
+T115	OS 5511 5516	Apple
+T116	MalwareType 3558 3578	surveillance malware
+T71	Organization 655 679	Italian mobile operators
+R9	targets Arg1:T2 Arg2:T71	
+T117	Application 3759 3785	Apple Developer Enterprise

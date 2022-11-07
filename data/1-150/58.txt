@@ -1,0 +1,26 @@
+Ginp mobile Trojan fakes incoming SMS messages
+Having infiltrated a phone, most mobile banking Trojans try to gain access to SMS messages. They do so to intercept one-time confirmation codes from banks. Armed with such a code, the malware owners can make a payment or siphon off funds without the victim noticing. At the same time, many mobile Trojans use text messages to infect more devices by sending the victim’s contacts a bad download link.
+
+Some malicious apps are more creative, using SMS access to distribute other things in your name, such as offensive text messages. The Ginp malware, which we first detected last fall, can even create incoming texts on the victim’s phone that no one actually sent — and not only texts. But let’s start from the beginning.
+
+What Ginp mobile Trojan is capable of?
+At first, Ginp had a fairly standard skill set for a banking Trojan. It sent all the victim’s contacts to its creators, intercepted text messages, stole bank card data, and overlaid banking apps with phishing windows.
+
+For the latter, the malware exploited Accessibility, a set of Android features for users with visual impairments. That is not uncommon; banking Trojans and many other types of malware use these features because through them they get visual access to everything on the screen and can even “tap” buttons or links — in effect, they can take charge of your phone completely.
+
+But Ginp’s authors did not stop there, repeatedly replenishing its arsenal with more inventive capabilities. For instance, the malware started using push notifications and pop-up messages to get the victim to open certain apps — those that it can overlay with phishing windows. The notifications are cleverly worded to lull the user into expecting to see a form for entering bank card data. Below is an example (in Spanish):
+
+Google Pay: Nos faltan los detalles de su tarjeta de crédito o débito. Utilice Play Store para agregarlos de manera segura.
+(“Google Pay: We are missing your credit or debit card details. Please use the Play Store app to add them securely.”)
+
+In the Play Store app, users see a form for entering card data as expected. However, it’s the Trojan displaying the form, not Google Play — and the input data goes straight to the cybercriminals.
+
+Ginp goes beyond the Play Store, also showing what appear to be notifications from banking apps:
+
+Curiously, the fake notifications provide a real phone number for the bank, so if you call, the voice at the end of the line is likely to report that your account is fine. But if you look into the “suspicious transactions” before calling the bank, the malware overlays the banking app with a fake window and asks for your card details.
+
+Very convincing fake SMS messages
+In early February, our Botnet Attack Tracking system detected another new feature in Ginp: the ability to create fake incoming texts. The purpose is the same as before — to get the user to open an app — but now, the Trojan can generate SMS messages with any text and seemingly from any sender. There is nothing to prevent the attackers from faking messages from banks or Google.
+
+Whereas users often push notifications aside without a glance, they tend to read their incoming SMS messages sooner or later. That means there’s a good chance any given user will open the app to check what is happening with their account. And that’s when the Trojan slips in a fake form for entering card details.
+

@@ -1,0 +1,89 @@
+T1	OS 8 15	Android
+T2	OS 139 146	Android
+T3	OS 677 684	Android
+T4	OS 2323 2330	Android
+T5	Malware 0 7	FakeSpy
+T6	Malware 109 116	FakeSpy
+T7	Malware 710 717	FakeSpy
+T8	Malware 898 905	FakeSpy
+T9	Malware 1793 1800	FakeSpy
+T10	Malware 2092 2099	FakeSpy
+T11	Malware 2285 2292	FakeSpy
+T12	Malware 2838 2845	FakeSpy
+T13	Malware 3100 3107	FakeSpy
+T14	Malware 3995 4002	FakeSpy
+T15	Malware 4510 4517	FakeSpy
+T16	Organization 552 562	Cybereason
+T17	Organization 2551 2561	Cybereason
+T18	Organization 3063 3073	Cybereason
+T19	Organization 3561 3571	Cybereason
+T20	Organization 3937 3947	Cybereason
+T21	Organization 4425 4435	Cybereason
+T22	Organization 4475 4483	Fortinet
+T23	Location 500 505	Japan
+T24	Location 527 538	Switzerland
+T26	Location 1157 1161	U.S.
+T27	Person 1768 1773	Dahan
+T28	Person 4209 4214	Dahan
+T29	Location 3914 3919	China
+T30	Location 4248 4253	China
+T32	AttackPattern 24 60	Disguised as Postal Service Messages
+R1	targets Arg1:T5 Arg2:T1	
+R2	uses Arg1:T5 Arg2:T32	
+R3	targets Arg1:T6 Arg2:T2	
+T33	AttackPattern 161 209	SMS phishing messages to spread the info stealer
+R4	uses Arg1:T6 Arg2:T33	
+T34	Organization 242 252	Cybereason
+T35	AttackPattern 261 349	SMS messages are designed to appear to come from legitimate postal and delivery services
+T25	Organization 365 384	U.S. Postal Service
+T31	Organization 390 405	U.K. Royal Mail
+T36	Organization 407 416	DHL Group
+T38	Location 438 444	Taiwan
+T37	Location 418 424	France
+T39	Organization 427 436	Las Poste
+T40	Organization 447 460	Chunghwa Post
+T41	Location 543 550	Germany
+R5	has Arg1:T39 Arg2:T37	
+R6	has Arg1:T40 Arg2:T38	
+R7	targets Arg1:T7 Arg2:T3	
+T42	Time 949 953	2017
+T43	AttackPattern 765 840	exfiltrating data, including financial and contact details, from the device
+R8	uses Arg1:T7 Arg2:T43	
+T44	Location 1166 1172	Europe
+R9	targets Arg1:T7 Arg2:T26	
+R10	targets Arg1:T7 Arg2:T44	
+T45	Person 1316 1327	Assaf Dahan
+T46	Organization 1376 1386	Cybereason
+T47	Organization 1394 1426	Information Security Media Group
+T48	AttackPattern 2172 2212	notify victims of an undelivered package
+R11	uses Arg1:T10 Arg2:T48	
+T49	AttackPattern 2475 2531	asks them to approve installation from unknown resources
+R12	uses Arg1:T11 Arg2:T49	
+T50	AttackPattern 2854 2886	asks for a number of permissions
+T51	AttackPattern 2913 2944	read the phone's network status
+T52	AttackPattern 2946 2972	compose and send SMS texts
+T53	AttackPattern 2974 3009	access contact and external storage
+T54	AttackPattern 3011 3034	connect to the internet
+T55	AttackPattern 3040 3057	reboot the device
+R13	uses Arg1:T12 Arg2:T50	
+R14	uses Arg1:T12 Arg2:T51	
+R15	uses Arg1:T12 Arg2:T52	
+R16	uses Arg1:T12 Arg2:T53	
+R17	uses Arg1:T12 Arg2:T54	
+R18	uses Arg1:T12 Arg2:T55	
+T56	AttackPattern 3224 3350	stealing the victim's device information, contact details and SMS messages as well as data from banking or cryptocurrency apps
+R19	uses Arg1:T13 Arg2:T56	
+T57	AttackPattern 3385 3480	uses a mobile device feature called sendAll to send SMS messages to the victim's other contacts
+R20	uses Arg1:T13 Arg2:T57	
+T58	AttackPattern 3606 3670	comes with anti-emulator capability to help evade security tools
+R21	uses Arg1:T13 Arg2:T58	
+T59	AttackPattern 3767 3890	detect whether it’s running on an emulated environment or a real mobile device, and can change its code pattern accordingly
+R22	uses Arg1:T13 Arg2:T59	
+T60	ThreatActor 4040 4054	Roaming Mantis
+R23	hasAuthor Arg1:T14 Arg2:T60	
+T61	Location 4086 4091	China
+R24	has Arg1:T60 Arg2:T61	
+T62	Time 4470 4474	2018
+T63	Location 4554 4559	China
+T64	Organization 1492 1507	postal services
+T65	Organization 1083 1093	Cybereason

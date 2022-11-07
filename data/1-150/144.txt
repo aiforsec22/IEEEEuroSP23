@@ -1,0 +1,17 @@
+An old piece of Android malware is back and more dangerous than before
+An old and dangerous piece of Android malware called FakeSpy has resurfaced in a big way, according to a new report from Cybereason. FakeSpy, which was first discovered by security researchers nearly three years ago, is a particularly nasty piece of malware designed to steal a user’s text messages, financial data, bank login information, app data, contact lists, and more.
+
+In its original incarnation, the app targeted users in South Korea and Japan. Recently, though, the app has become far more ambitious and is now starting to target users across the globe. Some of the countries currently targeted by the malware include China, France, Germany, the UK, and the United States. The current iteration of FakeSpy is also said to be more powerful and sophisticated than the original version, which is to say Android users should be particularly vigilant about avoiding suspicious messages.
+
+The manner by which FakeSpy spreads is quite clever and begins with an SMS message that claims to be from a local post office. The message claims that the post office tried to deliver a package but was unable to do so because a user wasn’t home. It then provides a link users can click which directs them to download an app disguised as a legitimate postal service app. Once installed on a device, the app will then send the fake text, along with the malicious link, to a user’s entire contact list.
+
+Once an unsuspecting user downloads the fake app, the malware essentially has full access to a user’s device. Among other things, it can read text messages, send text messages, access contact information, and read from external storage. Beyond that, the app also makes a point to look for any banking or cryptocurrency-related apps so that it can steal login information.
+
+As to where the malware originated from, researchers claim that all signs point to a Chinese group known as “Roaming Mantis.”
+
+Cybereason concludes:
+
+The malware authors seem to be putting a lot of effort into improving this malware, bundling it with numerous new upgrades that make it more sophisticated, evasive, and well-equipped. These improvements render FakeSpy one of the most powerful information stealers on the market. We anticipate this malware to continue to evolve with additional new features; the only question now is when we will see the next wave.
+
+While it should go without saying at this point, Android users should remain suspicious of any text message that comes from an unfamiliar sender.
+

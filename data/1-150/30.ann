@@ -1,0 +1,326 @@
+T1	OS 8 15	Android
+T2	OS 410 417	Android
+T4	OS 6212 6219	Android
+T5	Organization 7102 7108	Google
+T8	Malware 0 7	XLoader
+T9	Malware 751 758	XLoader
+T10	Malware 1232 1239	XLoader
+T11	Malware 1764 1771	XLoader
+T12	Malware 1941 1948	XLoader
+T13	Malware 2532 2539	XLoader
+T14	Malware 3104 3111	XLoader
+T15	Malware 3145 3152	XLoader
+T16	Malware 3370 3377	XLoader
+T17	Malware 3481 3488	XLoader
+T18	Malware 3696 3703	XLoader
+T19	Malware 3847 3854	XLoader
+T20	Malware 3947 3954	XLoader
+T21	Malware 4069 4076	XLoader
+T22	Malware 5779 5786	XLoader
+T24	Malware 5971 5978	XLoader
+T25	Malware 6164 6171	XLoader
+T26	Organization 424 435	Trend Micro
+T28	Application 7799 7807	Facebook
+T29	Application 7889 7897	Facebook
+T30	Application 7980 7988	Facebook
+T31	Application 8070 8078	Facebook
+T32	Application 8161 8169	Facebook
+T33	Application 8251 8259	Facebook
+T34	Application 8348 8356	Facebook
+T35	Application 8438 8446	Facebook
+T36	Application 8528 8536	Facebook
+T37	Application 8619 8627	Facebook
+T38	Application 8714 8722	Facebook
+T39	Application 8810 8818	Facebook
+T40	Application 8906 8914	Facebook
+T41	Application 8996 9004	Facebook
+T42	Application 9092 9100	Facebook
+T43	Application 9188 9196	Facebook
+T44	Application 9279 9287	Facebook
+T45	Application 9370 9378	Facebook
+T46	Application 9460 9468	Facebook
+T48	Application 7437 7443	Chrome
+T49	Application 7530 7536	Chrome
+T50	Application 7617 7623	Chrome
+T51	Application 7710 7716	Chrome
+T53	MalwareType 16 23	Spyware
+T54	MalwareType 3115 3122	Spyware
+T55	Indicator 2244 2279	android.intent.action.PACKAGE_ADDED
+T56	Indicator 2142 2176	android.intent.action.USER_PRESENT
+T58	Indicator 8328 8347	dfg67.as44f.cvx87df
+T59	Indicator 7785 7798	gfdg.qwe.gsdg
+T60	Indicator 8147 8160	gfdg.qwe.gsdg
+T61	Indicator 9265 9278	gfdg.qwe.gsdg
+T62	Indicator 2213 2242	android.net.wifi.SCAN_RESULTS
+T63	Indicator 2178 2211	android.intent.action.PHONE_STATE
+T64	Indicator 2455 2491	android.sms.msg.action.SMS_DELIVERED
+T65	Indicator 8605 8618	tryrt.sdf.bfd
+T66	Indicator 9356 9369	tryrt.sdf.bfd
+T67	Malware 7295 7316	ANDROIDOS_XLOADER.HRX
+T68	Indicator 2065 2101	android.net.conn.CONNECTIVITY_CHANGE
+T69	Indicator 2354 2385	android.intent.action.SCREEN_ON
+T70	Indicator 8791 8809	trghj.asdf.cvxebdf
+T71	Indicator 8887 8905	trghj.asdf.cvxebdf
+T72	Indicator 9073 9091	trghj.asdf.cvxebdf
+T73	Indicator 9169 9187	trghj.asdf.cvxebdf
+T74	Indicator 7876 7888	jfgh.rtw.ghm
+T75	Indicator 8425 8437	jfgh.rtw.ghm
+T76	Indicator 8983 8995	jfgh.rtw.ghm
+T77	Indicator 9447 9459	jfgh.rtw.ghm
+T78	Indicator 2103 2140	android.intent.action.BATTERY_CHANGED
+T79	Indicator 2024 2063	android.provider.Telephony.SMS_RECEIVED
+T80	Indicator 453 475	ANDROIDOS_XLOADER.HRX.
+T81	Indicator 2281 2318	android.intent.action.PACKAGE_REMOVED
+T82	Indicator 7419 7436	fddf.tre.hjgdsgkh
+T83	Indicator 8696 8713	fddf.tre.hjgdsgkh
+T84	Indicator 2387 2420	android.media.RINGER_MODE_CHANGED
+T85	Indicator 7513 7529	fghdf.rtghj.hjkh
+T88	Indicator 7693 7709	gfhd.rewq.cvxbdf
+T89	Indicator 8057 8069	ertt.fgh.nfg
+T90	Indicator 8238 8250	ertt.fgh.nfg
+T91	Indicator 8515 8527	ertt.fgh.nfg
+T93	Indicator 2422 2453	android.sms.msg.action.SMS_SEND
+T94	Indicator 7606 7616	ghd.et.hds
+T95	Indicator 2320 2352	android.intent.action.SCREEN_OFF
+T96	Indicator 7966 7979	gwer.dfdf.cxv
+R2	indicates Arg1:T55 Arg2:T12
+R3	indicates Arg1:T56 Arg2:T12
+R9	indicates Arg1:T62 Arg2:T12
+R10	indicates Arg1:T63 Arg2:T12
+R11	indicates Arg1:T64 Arg2:T12
+R15	indicates Arg1:T68 Arg2:T12
+R16	indicates Arg1:T69 Arg2:T12
+R25	indicates Arg1:T78 Arg2:T12
+R26	indicates Arg1:T79 Arg2:T12
+R28	indicates Arg1:T81 Arg2:T12
+R29	indicates Arg1:T82 Arg2:T67
+R31	indicates Arg1:T84 Arg2:T12
+R40	indicates Arg1:T93 Arg2:T12
+R42	indicates Arg1:T95 Arg2:T12
+T97	MalwareType 28 42	Banking Trojan
+T98	Time 132 143	early March
+T99	Location 175 180	Japan
+T100	Location 182 187	Korea
+T101	Location 189 194	China
+T102	Location 196 202	Taiwan
+T103	Location 208 217	Hong Kong
+T104	AttackPattern 231 288	use Domain Name System (DNS) cache poisoning/DNS spoofing
+R27	targets Arg1:T8 Arg2:T1	
+R44	isA Arg1:T8 Arg2:T53	
+R45	isA Arg1:T8 Arg2:T97	
+T106	AttackPattern 59 71	DNS Spoofing
+R46	uses Arg1:T8 Arg2:T106	
+R47	targets Arg1:T8 Arg2:T99	
+R48	targets Arg1:T8 Arg2:T100	
+R49	targets Arg1:T8 Arg2:T101	
+R50	targets Arg1:T8 Arg2:T102	
+R51	targets Arg1:T8 Arg2:T103	
+R52	uses Arg1:T8 Arg2:T104	
+R54	targets Arg1:T8 Arg2:T2	
+T27	AttackPattern 493 543	pose as legitimate Facebook or Chrome applications
+T86	AttackPattern 768 794	hijack the infected device
+T107	AttackPattern 802 811	send SMSs
+R33	uses Arg1:T9 Arg2:T86	
+R57	uses Arg1:T9 Arg2:T107	
+T108	Time 957 967	late March
+T109	AttackPattern 995 1051	diverting internet traffic to attacker-specified domains
+T110	AttackPattern 1055 1109	compromising and overwriting the router’s DNS settings
+R58	uses Arg1:T9 Arg2:T109	
+R59	uses Arg1:T9 Arg2:T110	
+T111	AttackPattern 1111 1184	A fake alert will notify and urge the user to access the malicious domain
+R60	uses Arg1:T9 Arg2:T111	
+T112	AttackPattern 1336 1380	requests for device administrator privileges
+T113	AttackPattern 1410 1459	hides its icon from the launcher application list
+T114	AttackPattern 1465 1521	starts a service that it keeps running in the background
+R39	uses Arg1:T10 Arg2:T112	
+R61	uses Arg1:T10 Arg2:T113	
+R62	uses Arg1:T10 Arg2:T114	
+T116	AttackPattern 2540 2604	creates a provisional web server to receive the broadcast events
+R65	uses Arg1:T13 Arg2:T116	
+T87	AttackPattern 2692 2773	shows a web phishing page whenever the affected device receives a broadcast event
+R34	uses Arg1:T13 Arg2:T87	
+T118	MalwareType 3127 3141	Banking Trojan
+R67	isA Arg1:T14 Arg2:T54	
+R68	isA Arg1:T14 Arg2:T118	
+T119	AttackPattern 3162 3230	collect information related to usage of apps installed in the device
+T120	AttackPattern 3271 3333	collecting SMSs after receiving an SMS-related broadcast event
+T121	AttackPattern 3338 3368	covertly recording phone calls
+T122	AttackPattern 3387 3443	hijack accounts linked to financial or game-related apps
+T123	AttackPattern 3498 3537	start other attacker-specified packages
+T124	AttackPattern 3575 3638	replacing legitimate apps with repackaged or malicious versions
+T125	AttackPattern 3750 3820	aunch malicious apps without the user’s awareness and explicit consent
+R69	uses Arg1:T15 Arg2:T119	
+R70	uses Arg1:T15 Arg2:T120	
+R71	uses Arg1:T15 Arg2:T121	
+R72	uses Arg1:T16 Arg2:T122	
+R73	uses Arg1:T17 Arg2:T123	
+R74	uses Arg1:T17 Arg2:T124	
+R75	uses Arg1:T18 Arg2:T125	
+T127	AttackPattern 3960 4013	prevents victims from accessing the device’s settings
+R77	uses Arg1:T20 Arg2:T127	
+T128	AttackPattern 4086 4117	load multiple malicious modules
+R78	uses Arg1:T21 Arg2:T128	
+T129	AttackPattern 4282 4317	send SMS/MMS to a specified address
+T130	AttackPattern 4329 4363	enable or disable Wi-Fi connection
+T131	AttackPattern 4373 4406	collect all the device’s contacts
+T3	AttackPattern 4532 4589	collect all contacts from the Android device and SIM card
+T133	AttackPattern 4774 4834	check the device whether a specified app is installed or not
+T134	AttackPattern 4852 4880	set the device’s ringer mode
+T135	AttackPattern 4897 4935	set the device’s ringer mode as silent
+T136	AttackPattern 4948 4987	get a detailed phone connection status,
+T137	AttackPattern 5070 5112	force the device’s back to the home screen
+T138	AttackPattern 5123 5225	get files/content from the folder named NPKI (contains certificates related to financial transactions)
+T139	AttackPattern 5234 5284	access a specified network using HttpURLConnection
+T140	AttackPattern 5303 5332	simulate a number-dialed tone
+T141	AttackPattern 5341 5364	call a specified number
+T142	AttackPattern 5377 5417	get all the apps installed on the device
+T143	AttackPattern 5442 5480	show a full-screen window for phishing
+R79	uses Arg1:T21 Arg2:T129	
+R80	uses Arg1:T21 Arg2:T130	
+R81	uses Arg1:T21 Arg2:T131	
+R82	uses Arg1:T21 Arg2:T3	
+R84	uses Arg1:T21 Arg2:T133	
+R85	uses Arg1:T21 Arg2:T134	
+R86	uses Arg1:T21 Arg2:T135	
+R87	uses Arg1:T21 Arg2:T136	
+R88	uses Arg1:T21 Arg2:T137	
+R89	uses Arg1:T21 Arg2:T138	
+R90	uses Arg1:T21 Arg2:T139	
+R91	uses Arg1:T21 Arg2:T140	
+R92	uses Arg1:T21 Arg2:T141	
+R93	uses Arg1:T21 Arg2:T143	
+T144	Malware 5498 5505	XLoader
+T145	AttackPattern 5508 5539	abuse of the WebSocket protocol
+R94	uses Arg1:T144 Arg2:T145	
+T23	AttackPattern 5881 5969	persistent connection between clients and servers where data can be transported any time
+T146	AttackPattern 5979 6144	abuses the MessagePack (a data interchange format) to package the stolen data and exfiltrate it via the WebSocket protocol for faster and more efficient transmission
+R96	uses Arg1:T24 Arg2:T146	
+T6	Application 7130 7149	Google Play Protect
+T7	Application 7232 7243	Google Play
+T148	Indicator 7351 7369	0F49416B6BCB6E755D
+T149	Indicator 7370 7388	999255FABB4C77C5EA
+T150	Indicator 7389 7406	7DEDEB7E6CDB0925C
+T151	Indicator 7407 7418	4F23C1FB00E
+R14	indicates Arg1:T148 Arg2:T67	
+R98	indicates Arg1:T149 Arg2:T67	
+R99	indicates Arg1:T150 Arg2:T67	
+R100	indicates Arg1:T151 Arg2:T67	
+R101	targets Arg1:T67 Arg2:T48	
+T152	Indicator 7558 7577	948B62C4B5D6E472376
+T153	Indicator 7538 7557	C65318AA58C9091B938
+T154	Indicator 7578 7597	97D8D2F96863F99EF17
+T155	Indicator 7598 7605	7B6818D
+R1	indicates Arg1:T153 Arg2:T67	
+R41	indicates Arg1:T152 Arg2:T67	
+R102	indicates Arg1:T154 Arg2:T67	
+R103	indicates Arg1:T155 Arg2:T67	
+R104	indicates Arg1:T94 Arg2:T67	
+R105	targets Arg1:T67 Arg2:T49	
+R106	targets Arg1:T67 Arg2:T50	
+T52	Indicator 7445 7464	958135E163E0518F24F
+T156	Indicator 7465 7483	BD1AF6EF18C30E30C1
+T157	Indicator 7484 7503	A4DFB383FF47D111930
+T158	Indicator 7504 7512	55D4CDCE
+R32	indicates Arg1:T52 Arg2:T67	
+R107	indicates Arg1:T156 Arg2:T67	
+R108	indicates Arg1:T157 Arg2:T67	
+R109	indicates Arg1:T158 Arg2:T67	
+R110	indicates Arg1:T85 Arg2:T67	
+T159	Indicator 9380 9402	7E49B7C6ED359B4E910E8D
+T160	Indicator 9403 9424	4D2C9436D99CDDEB7F9AF
+T161	Indicator 9425 9446	2E2F1082D0CA45D469566
+R111	indicates Arg1:T159 Arg2:T67	
+R112	indicates Arg1:T160 Arg2:T67	
+R113	indicates Arg1:T161 Arg2:T67	
+R24	indicates Arg1:T77 Arg2:T67	
+R114	targets Arg1:T67 Arg2:T46	
+T162	Indicator 9289 9311	A4031768A9F1AEB227389E
+T163	Indicator 9312 9334	DD99140303420F3A45F0C1
+T164	Indicator 9335 9355	36D3863C703C685CDEF1
+R13	indicates Arg1:T162 Arg2:T67	
+R115	indicates Arg1:T163 Arg2:T67	
+R116	indicates Arg1:T164 Arg2:T67	
+R117	indicates Arg1:T66 Arg2:T67	
+T165	Indicator 9198 9219	6F20F227F79DEBFDAE322
+T166	Indicator 9220 9242	33B59F4DC15C7FAF05036B
+T167	Indicator 9243 9264	21E8CD46B24EBC52F0BF8
+R8	indicates Arg1:T165 Arg2:T67	
+R118	indicates Arg1:T166 Arg2:T67	
+R119	indicates Arg1:T167 Arg2:T67	
+R120	indicates Arg1:T61 Arg2:T67	
+T168	Indicator 9102 9124	065E266016A15BB639C31D
+T169	Indicator 9125 9146	49511DBCD0ADC83261D03
+T170	Indicator 9147 9168	C6652DFBFCAB611B9DB53
+T171	Indicator 9006 9028	3698DF22E8A4656FC53BD2
+T172	Indicator 9029 9050	BDE2DA74DD9DA90083481
+T173	Indicator 9051 9072	29347D5D3E6F976FABA6C
+T174	Indicator 8916 8938	CC2617D7D904986B83BAF7
+T175	Indicator 8939 8962	843DB6969151363000678E8
+T176	Indicator 8963 8982	DA599EDBF6CF23CB827
+T177	Indicator 8820 8843	E1FB10B714420F23F1BB09B
+T178	Indicator 8844 8866	6C4C55B674B6EFD93685EE
+T179	Indicator 8867 8886	7D1D4574C7FA8B39A94
+T180	Indicator 8629 8651	4E32493E6C87B0E2EF3E6A
+T181	Indicator 8652 8674	E32F5C32D75AE36C92524A
+T182	Indicator 8675 8695	185EABC88FEA3C7938C8
+T183	Indicator 8724 8746	82D7A496091BD8B0435359
+T184	Indicator 8747 8768	BAFC9E7C923CF09BE58D3
+T185	Indicator 8769 8790	ECC9C477E29E541811582
+T186	Indicator 8538 8560	E690C05F2AB668A661CD21
+T187	Indicator 8561 8584	9E324291819D5F5646775C2
+T188	Indicator 8585 8604	A17F3B3A03E79332A04
+T189	Indicator 8448 8470	6690FBA689E5AE957E0D01
+T190	Indicator 8471 8493	565BA8F849E0F6AA214F2F
+T191	Indicator 8494 8514	93535D1A7C9C75030BD3
+T192	Indicator 8358 8380	B125EA78FB390950893D14
+T193	Indicator 8381 8404	6A51F513440314BE7648207
+T194	Indicator 8405 8424	B59E5D0A1752740F273
+T195	Indicator 8261 8283	AA183FDA57FDE0137AB931
+T196	Indicator 8284 8307	F3729215956E6F9EE158D90
+T197	Indicator 8308 8327	ED82151948F70DB841B
+T198	Indicator 8171 8193	B8FB1857881F20E8E3223E
+T199	Indicator 8194 8215	390E13E6DD97D47CABB81
+T200	Indicator 8216 8237	870D51421C04631D63FC1
+T201	Indicator 8080 8102	4232B36C2B306A47B6C67D
+T202	Indicator 8103 8125	5D949349024F57CDBC4516
+T203	Indicator 8126 8146	3A2CA7B7DEE304229C2B
+T204	Indicator 7990 8012	B623DA28673A1934BD61DE
+T205	Indicator 8013 8034	A94A88C37E5FBE9999ED3
+T206	Indicator 8035 8056	D6BA311176D65F64C4A4D
+T207	Indicator 7899 7920	AC0C7F59859B5DC3ACBC3
+T208	Indicator 7921 7941	BACA6A6B0FD6ECD05375
+T209	Indicator 7942 7965	D06995D7E28D3F6CB36322A
+T210	Indicator 7625 7644	62312475CF0EC1ED66F
+T211	Indicator 7645 7664	A29938C30D029BA2F02
+T212	Indicator 7665 7683	BCD6B6ED5AC6C0E5DB
+T213	Indicator 7684 7692	E3626BF6
+T214	Indicator 7718 7740	17D1415176121AFF8C0020
+T215	Indicator 7741 7762	C3A094B3D72F9802F5145
+T216	Indicator 7763 7784	C80EBCA47DCFE10CC21F6
+T217	Indicator 7809 7829	1849E8DFD9D1C03DBE6C
+T218	Indicator 7830 7852	1464F9B05492012A6C14A0
+T219	Indicator 7853 7875	A5B63FEB938F1C8B70309B
+T220	Application 512 520	Facebook
+T221	Application 524 530	Chrome
+T126	Application 3891 3914	South Korea-based banks
+T222	Application 3919 3945	game development companies
+R7	targets Arg1:T19 Arg2:T126	
+R12	targets Arg1:T19 Arg2:T222	
+T47	AttackPattern 817 862	sports self-protection/persistence mechanisms
+T105	AttackPattern 871 902	device administrator privileges
+R17	uses Arg1:T9 Arg2:T47	
+R18	uses Arg1:T9 Arg2:T105	
+T57	AttackPattern 4121 4198	receive and execute commands from its remote command-and-control (C&C) server
+R4	uses Arg1:T21 Arg2:T57	
+R19	uses Arg1:T144 Arg2:T23	
+T92	Application 524 530	Chrome
+R5	indicates Arg1:T80 Arg2:T8	
+R6	uses Arg1:T8 Arg2:T27	
+R20	targets Arg1:T8 Arg2:T220	
+R21	targets Arg1:T8 Arg2:T221	
+T115	Malware 1198 1205	XLoader
+*	hasAlias T8 T67
+T223	Application 2895 2907	banking apps
+T224	Application 4031 4040	antivirus
+T225	Malware 5866 5873	XLoader
+T226	OS 4562 4569	Android

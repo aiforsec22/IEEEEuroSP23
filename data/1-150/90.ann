@@ -1,0 +1,87 @@
+T1	OS 294 297	iOS
+T2	OS 1267 1270	iOS
+T3	Organization 149 154	Apple
+T4	Organization 1143 1148	Apple
+T5	Organization 3547 3552	Apple
+T6	Organization 4981 4986	Apple
+T7	Organization 5442 5447	Apple
+T8	Organization 5754 5759	Apple
+T9	Organization 6160 6165	Apple
+T10	Organization 3601 3608	Lookout
+T11	Organization 568 579	Citizen Lab
+T12	Organization 3290 3301	Citizen Lab
+T13	Organization 3585 3596	Citizen Lab
+T14	Organization 5607 5618	Citizen Lab
+T16	Organization 892 901	NSO Group
+T17	ThreatActor 2786 2795	NSO Group
+T18	Organization 3947 3956	NSO Group
+T19	Organization 4011 4020	NSO Group
+T20	ThreatActor 4510 4519	NSO Group
+T21	Organization 950 968	Francisco Partners
+T22	Organization 2736 2740	Post
+T25	Person 2118 2125	Mansoor
+T26	Person 3630 3637	Mansoor
+T27	Person 4097 4104	Mansoor
+T28	Organization 4036 4044	The Post
+T29	Organization 4344 4368	National Security Agency
+T30	Organization 5049 5067	Forrester Research
+T31	Hardware 5207 5213	iPhone
+T32	Hardware 5577 5583	iPhone
+T33	Vulnerability 5802 5826	zero-day vulnerabilities
+T34	Location 925 929	U.S.
+T35	Person 2001 2014	Ahmed Mansoor
+T36	Location 2090 2110	United Arab Emirates
+T37	Location 2297 2300	UAE
+T38	Location 2699 2702	UAE
+T39	Location 3326 3332	Mexico
+T40	Person 5086 5098	Jeff Pollard
+T41	Organization 5167 5170	FBI
+T42	Organization 5271 5274	FBI
+T43	Person 5631 5643	Bill Marczak
+T45	Person 6128 6135	Marczak
+T23	Hardware 56 63	iPhones
+T24	Hardware 107 114	iPhones
+T44	Organization 286 291	Apple
+R1	has Arg1:T44 Arg2:T1	
+T51	Organization 484 491	Lookout
+T52	Organization 587 608	University of Toronto
+T15	Organization 611 640	Munk School of Global Affairs
+R2	has Arg1:T52 Arg2:T15	
+R3	has Arg1:T15 Arg2:T11	
+T53	Person 752 763	Mike Murray
+T54	Organization 804 811	Lookout
+T55	Location 869 876	Israeli
+R4	has Arg1:T16 Arg2:T55	
+R5	has Arg1:T21 Arg2:T16	
+T56	Time 972 976	2014
+T57	Organization 1051 1062	Citizen Lab
+T58	Time 1184 1192	Thursday
+T59	Organization 1604 1613	NSO Group
+T60	Person 1616 1629	Zamir Dahbash
+T61	Organization 2373 2381	The Post
+T47	Organization 2538 2549	Citizen Lab
+T62	Organization 2564 2571	Lookout
+T63	Person 2599 2606	Mansoor
+T64	Person 2834 2841	Mansoor
+T65	Malware 2850 2857	Pegasus
+R6	targets Arg1:T65 Arg2:T64	
+R7	hasAuthor Arg1:T65 Arg2:T17	
+T46	Organization 3005 3016	Citizen Lab
+T66	ThreatActor 3042 3051	NSO Group
+T50	Location 3523 3530	Mexican
+T67	Time 3651 3665	Aug. 10 and 11
+T68	Location 4112 4119	Mexican
+T69	Person 4831 4845	Chris Soghoian
+T70	Organization 4871 4901	American Civil Liberties Union
+T48	Location 5233 5255	San Bernardino, Calif.
+T49	Organization 5327 5332	Apple
+T71	Person 5648 5666	John Scott-Railton
+T72	Organization 6114 6125	Citizen Lab
+R8	has Arg1:T3 Arg2:T24	
+R9	has Arg1:T21 Arg2:T34	
+R10	has Arg1:T7 Arg2:T32	
+T73	MalwareType 217 224	Spyware
+T74	MalwareType 1375 1382	spyware
+T75	MalwareType 1950 1957	spyware
+T76	MalwareType 3975 3982	spyware
+T77	MalwareType 4274 4281	spyware

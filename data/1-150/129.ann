@@ -1,0 +1,80 @@
+T1	OS 64 71	Android
+T2	OS 384 391	Android
+T3	OS 644 651	Android
+T4	OS 1284 1291	Android
+T6	OS 3553 3560	Android
+T7	Malware 361 370	TangleBot
+T8	Malware 445 454	TangleBot
+T9	Malware 634 643	TangleBot
+T10	Malware 1126 1135	TangleBot
+T11	Malware 1198 1207	TangleBot
+T12	Malware 1222 1231	TangleBot
+T13	Malware 1541 1550	TangleBot
+T14	Malware 2305 2314	TangleBot
+T15	Malware 2414 2423	TangleBot
+T16	Malware 2555 2564	TangleBot
+T17	Malware 2754 2763	TangleBot
+T18	Malware 2894 2903	TangleBot
+T19	Malware 3350 3359	TangleBot
+T20	Malware 3434 3443	TangleBot
+T21	Malware 4146 4155	TangleBot
+T22	Malware 4976 4985	TangleBot
+T23	Organization 119 122	NCC
+T24	Organization 3361 3364	NCC
+T25	Organization 3750 3753	NCC
+T26	Organization 591 623	Computer Emergency Response Team
+T28	Malware 2837 2844	FlutBot
+T29	Malware 2983 2990	FlutBot
+T30	Malware 4965 4971	FluBot
+T32	Organization 529 574	New Media and Information Security Department
+T33	Organization 3027 3040	Cybertalk.org
+T35	Malware 0 9	TangleBot
+R1	targets Arg1:T35 Arg2:T1	
+T31	Organization 83 117	Nigerian Communications Commission
+T36	Malware 236 245	TangleBot
+T37	Person 296 316	Dr. Ikechukwu Adinde
+R2	targets Arg1:T7 Arg2:T2	
+T38	Organization 625 631	ngCERT
+R3	targets Arg1:T9 Arg2:T3	
+T27	AttackPattern 663 877	installed when an unsuspecting user clicks on a malicious link disguised as COVID-19 vaccination appointment-related information in an SMS message or information about fake local power outages that are due to occur
+R4	uses Arg1:T8 Arg2:T27	
+T39	Malware 955 962	Pegasus
+T40	Malware 964 970	Medusa
+T41	AttackPattern 1243 1273	distributed via a text message
+R5	uses Arg1:T12 Arg2:T41	
+R6	targets Arg1:T12 Arg2:T4	
+T42	AttackPattern 1360 1495	send messages that are familiar to the user and implore them to read more or find more detailed information by clicking a provided link
+R7	uses Arg1:T12 Arg2:T42	
+T43	AttackPattern 1559 1580	takes over the device
+T44	AttackPattern 1582 1660	providing the fraudsters access to financial information, personal information
+R8	uses Arg1:T13 Arg2:T43	
+R9	uses Arg1:T13 Arg2:T44	
+T45	AttackPattern 1783 1842	tries to send messages that will interest the targeted user
+R10	uses Arg1:T13 Arg2:T45	
+T46	AttackPattern 1857 1908	coronavirus related information or bonanza or gifts
+R11	uses Arg1:T13 Arg2:T46	
+T47	AttackPattern 1994 2069	Recording the audio, screen, or both, then streaming them to another device
+T48	AttackPattern 2072 2138	Placing overlay screens on the device, to obscure apps and screens
+T49	AttackPattern 2141 2186	Silently, calling contacts and blocking calls
+T50	AttackPattern 2189 2224	Sending and receiving text messages
+T51	AttackPattern 2227 2289	Deploying further device observation or espionage capabilities
+R12	uses Arg1:T13 Arg2:T47	
+R13	uses Arg1:T13 Arg2:T48	
+R14	uses Arg1:T13 Arg2:T49	
+R15	uses Arg1:T13 Arg2:T50	
+R16	uses Arg1:T13 Arg2:T51	
+T52	AttackPattern 2424 2454	only operates as text messages
+R17	uses Arg1:T15 Arg2:T52	
+T53	Organization 2748 2751	NCC
+T5	MalwareType 2845 2864	SMS Android malware
+R18	isA Arg1:T28 Arg2:T5	
+T34	Organization 4130 4133	NCC
+T55	AttackPattern 4156 4180	protects itself deletion
+R20	uses Arg1:T21 Arg2:T55	
+T56	AttackPattern 4990 5023	overlay banking or financial apps
+T57	AttackPattern 5028 5075	directly steal the victim’s account credentials
+R21	uses Arg1:T30 Arg2:T56	
+R22	uses Arg1:T22 Arg2:T57	
+T58	Application 2381 2398	social media apps
+T59	Application 5009 5023	financial apps
+T60	Application 4745 4754	app store
