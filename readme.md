@@ -5,6 +5,11 @@ This repository contains implementation fotr the paper "Looking Beyond IoCs: Aut
 ### Install
 Run `pip install -r requirements.txt` on a virtual environment
 
+
+### Demo
+Open the notebook in `notebooks/attack-pattern-extraction.ipynb` in Google colab for demo on attack pattern extraction and mapping from CTI texts.   
+Open the notebook in `notebooks/malware-similarity.ipynb` in Google colab for malware similarity analysis from all triples
+
 ### How to Run
 
 #### Attack Pattern Extraction
